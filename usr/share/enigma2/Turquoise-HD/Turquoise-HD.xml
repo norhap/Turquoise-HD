@@ -3495,7 +3495,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget source="session.CurrentService" render="Label" position="740,689" size="400,60" font="Regular;14" valign="top" halign="left" foregroundColor="#004ccbde" backgroundColor="#11404040" transparent="1" zPosition="5">
 		    <convert type="CryptoInfo">VerboseInfo</convert>
 	    </widget>	  
-        <ePixmap position="372,567" zPosition="2" size="22,22" pixmap="btvadriatico/icons/icon_norec_light.png" alphatest="on"/>
+        <ePixmap position="372,567" zPosition="2" size="22,22" pixmap="Turquoise-HD/icons/icon_norec_light.png" alphatest="on"/>
     </screen>
 	
 

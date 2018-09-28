@@ -54,7 +54,7 @@
 	</screen>
 	<screen name="Titlechannellist">
 		<widget source="Title" render="Label" zPosition="1" position="70,20" foregroundColor="#0000fafa" backgroundColor="black" size="615,50" font="Regular;21" halign="center" valign="center"/>		
-		<ePixmap pixmap="btvadriatico/menu/border_title.png" zPosition="0" position="80,5" size="580,80" alphatest="blend"/>
+		<ePixmap pixmap="Turquoise-HD/menu/border_title.png" zPosition="0" position="80,5" size="580,80" alphatest="blend"/>
 	    <!--widget source="menu_path_compressed" render="Label" zPosition="1" position="0,25" size="820,32" font="Regular;15" halign="center" valign="center" foregroundColor="#0000fafa" backgroundColor="#00000000"/-->
 	</screen>	
 	<!-- ### TEMPLATE PIG + Nombre Evento + Progreso + Reloj LCD 2 Pantallas Izquierda-->
