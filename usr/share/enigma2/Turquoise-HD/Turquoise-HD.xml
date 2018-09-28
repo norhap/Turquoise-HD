@@ -3276,6 +3276,14 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <widget source="session.Event_Now" render="Progress" pixmap="Turquoise-HD/p_bar1.png" position="231,626" size="815,9" zPosition="7" transparent="1">
             <convert type="EventTime">Progress</convert>
         </widget>
+    <!-- Nome Provider - Provider Name -->
+	    <eLabel position="83,567" size="120,1" backgroundColor="grey" zPosition="5"/>
+	    <eLabel position="83,567" size="1,22" backgroundColor="grey" zPosition="5"/>
+	    <eLabel position="83,588" size="120,1" backgroundColor="grey" zPosition="5"/>
+	    <eLabel position="202,567" size="1,22" backgroundColor="grey" zPosition="5"/>	
+        <widget source="session.CurrentService" render="Label" position="83,567" size="120,22" zPosition="2" font="LCD;18" halign="center" valign="center" foregroundColor="#00a1d1ff" transparent="0">
+            <convert type="ServiceName">Provider</convert>
+        </widget>		
 		<widget source="session.CurrentService" render="FixedLabel" text="HBBTV" position="80,557" size="50,22" zPosition="2" font="LCD;18" backgroundColor="background" halign="center" foregroundColor="#00a1d1ff" transparent="1">
 		    <convert type="ServiceInfo">HasHBBTV</convert>
 		    <convert type="ConditionalShowHide"/>
@@ -3290,6 +3298,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         </widget>
 	
     <!-- TIPO TUNER SELECCIONADO -->
+	    <eLabel position="1105,565" size="65,1" backgroundColor="grey" zPosition="5"/>
+	    <eLabel position="1105,565" size="1,20" backgroundColor="grey" zPosition="5"/>
+	    <eLabel position="1105,584" size="65,1" backgroundColor="grey" zPosition="5"/>
+	    <eLabel position="1169,565" size="1,20" backgroundColor="grey" zPosition="5"/>		
         <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-S2" position="1100,550" zPosition="3" size="81,24" font="LCD;17" halign="center" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
               <convert type="FrontendInfo">TYPE</convert>
               <convert type="ValueRange">0,0</convert>
@@ -3310,14 +3322,17 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</widget-->	
 
     <!-- TUNERS DISPONIBLES + DISPOSICION -->
-		<widget source="session.FrontendInfo" render="Label" position="1100,572" size="80,21" font="LCD;19" halign="center" noWrap="1" zPosition="2" transparent="1">
+	    <widget source="session.FrontendInfo" render="Label" position="1100,582" size="80,21" font="LCD;19" halign="center" noWrap="1" zPosition="2" backgroundColor="background" transparent="1">
 		    <convert type="FrontendInfo">STRING</convert>
 	    </widget>		
     <!-- Sezione Numero di cannale - Numero di cannale Section -->
-        <widget source="session.CurrentService" render="ChannelNumber" position="279,555" size="69,26" font="Regular; 24" halign="center" transparent="1" foregroundColor="#004ccbde" backgroundColor="background" zPosition="2"/>
+       <widget source="session.CurrentService" render="ChannelNumber" position="279,567" size="75,26" font="Regular; 20" halign="center" transparent="1" foregroundColor="#004ccbde" backgroundColor="background" zPosition="2"/>
     <!-- Sezione SNR - SNR Section -->
     <!-- eLabel text="Snr :" zPosition="1" position="220,684" size="60,20" halign="left" font="Regular;18" transparent="1" backgroundColor="transpBlack" -->
-        <eLabel text="CPU" zPosition="2" position="740,556" foregroundColor="#0000fafa" backgroundColor="black" size="30,10" font="xRegular;10"/>	
+        <eLabel text="CPU" zPosition="2" position="740,556" foregroundColor="#0000fafa" backgroundColor="black" size="30,10" font="xRegular;10"/>
+	    <widget source="session.CurrentService" render="Label" position="705,572" size="90,22" halign="center" valign="center" font="Regular;16" transparent="1" foregroundColor="#004ccbde" backgroundColor="background" zPosition="2">
+		    <convert type="CpuUsage">$0</convert>
+	    </widget>		
 	<!--  Streaming -->	
 		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/tuner.png" position="778,559" size="18,18" zPosition="2" alphatest="on">
 		    <convert type="ClientsStreaming"/>
@@ -3388,7 +3403,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="265,679" 
+		position="235,689" 
 		size="60,50" 
 		backgroundColor="#11404040" 
 		foregroundColor="#004ccbde" 
@@ -3403,7 +3418,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="325,679" 
+		position="295,689" 
 		size="60,15" 
 		backgroundColor="#11404040" 
 		foregroundColor="foreground" 
@@ -3418,7 +3433,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="381,679" 
+		position="346,689" 
 		size="18,15" 
 		backgroundColor="#11404040" 
 		foregroundColor="foreground" 
@@ -3433,7 +3448,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="403,679" 
+		position="363,689" 
 		size="65,50" 
 		backgroundColor="#11404040" 
 		foregroundColor="#004ccbde" 
@@ -3448,7 +3463,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="460,679" 
+		position="418,689" 
 		size="37,15" 
 		backgroundColor="#11404040" 
 		foregroundColor="foreground" 
@@ -3463,7 +3478,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="496,679" 
+		position="458,689" 
 		size="60,50" 
 		backgroundColor="#11404040" 
 		foregroundColor="#004ccbde" 
@@ -3474,13 +3489,13 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		transparent="1">   
  	    <convert type="PliExtraInfo">TransponderModulation</convert>
 	    </widget>
-	    <widget source="session.CurrentService" render="Label" position="480,679" size="250,24" font="Regular;15" valign="top" halign="right" foregroundColor="#00a1d1ff" backgroundColor="#11404040" transparent="1" zPosition="5">
+	    <widget source="session.CurrentService" render="Label" position="480,689" size="250,24" font="Regular;15" valign="top" halign="right" foregroundColor="#00a1d1ff" backgroundColor="#11404040" transparent="1" zPosition="5">
  		    <convert type="PliExtraInfo">CryptoSpecial</convert>
  	    </widget>
-	    <widget source="session.CurrentService" render="Label" position="750,671" size="400,60" font="Regular;14" valign="top" halign="left" foregroundColor="#004ccbde" backgroundColor="#11404040" transparent="1" zPosition="5">
+	    <widget source="session.CurrentService" render="Label" position="740,689" size="400,60" font="Regular;14" valign="top" halign="left" foregroundColor="#004ccbde" backgroundColor="#11404040" transparent="1" zPosition="5">
 		    <convert type="CryptoInfo">VerboseInfo</convert>
 	    </widget>	  
-        <ePixmap position="372,557" zPosition="2" size="22,22" pixmap="Turquoise-HD/icons/icon_norec_light.png" alphatest="on"/>
+        <ePixmap position="372,567" zPosition="2" size="22,22" pixmap="btvadriatico/icons/icon_norec_light.png" alphatest="on"/>
     </screen>
 	
 
@@ -3529,7 +3544,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
     <!-- Tempo Trascorso - Progress Bar -->
         <widget source="session.Event_Now" render="Progress" pixmap="Turquoise-HD/p_bar1.png" position="231,626" size="815,9" zPosition="7" transparent="1">
             <convert type="EventTime">Progress</convert>
-        </widget>
+        </widget>		
     <!-- ePixmap position="235,613" zPosition="2" size="885,6" pixmap="Turquoise-HD/po_bar.png" alphatest="on" -->
     <!-- Posizione Picon - Picon Position -->
         <widget source="session.CurrentService" render="Picon" position="75,589" size="130,80" zPosition="10" transparent="1" alphatest="blend">
@@ -3537,6 +3552,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         </widget>
 	
     <!-- TIPO TUNER SELECCIONADO -->
+	    <eLabel position="1105,565" size="65,1" backgroundColor="grey" zPosition="5"/>
+	    <eLabel position="1105,565" size="1,20" backgroundColor="grey" zPosition="5"/>
+	    <eLabel position="1105,584" size="65,1" backgroundColor="grey" zPosition="5"/>
+	    <eLabel position="1169,565" size="1,20" backgroundColor="grey" zPosition="5"/>		
         <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-S2" position="1100,550" zPosition="3" size="81,24" font="LCD;17" halign="center" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
             <convert type="FrontendInfo">TYPE</convert>
             <convert type="ValueRange">0,0</convert>
@@ -3554,16 +3573,17 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         </widget>	
 
     <!-- TUNERS DISPONIBLES + DISPOSICION -->
-	    <widget source="session.FrontendInfo" render="Label" position="1100,572" size="80,21" font="LCD;19" halign="center" noWrap="1" zPosition="2" transparent="1">
+	    <widget source="session.FrontendInfo" render="Label" position="1100,582" size="80,21" font="LCD;19" halign="center" noWrap="1" zPosition="2" backgroundColor="background" transparent="1">
 		    <convert type="FrontendInfo">STRING</convert>
 	    </widget>
     <!-- Sezione Numero di cannale - Numero di cannale Section -->
-        <widget source="session.CurrentService" render="ChannelNumber" position="279,555" size="69,26" font="Regular; 24" halign="center" transparent="1" foregroundColor="#004ccbde" backgroundColor="background" zPosition="2"/>
+       <widget source="session.CurrentService" render="ChannelNumber" position="279,567" size="75,26" font="Regular; 20" halign="center" transparent="1" foregroundColor="#004ccbde" backgroundColor="background" zPosition="2"/>
     <!-- Sezione SNR - SNR Section -->
     <!-- eLabel text="Snr :" zPosition="1" position="220,684" size="60,20" halign="left" font="Regular;18" transparent="1" backgroundColor="transpBlack" -->
         <eLabel text="CPU" zPosition="2" position="740,556" foregroundColor="#0000fafa" backgroundColor="black" size="30,10" font="xRegular;10"/>
-    <!-- ePixmap position="273,693" zPosition="2" size="200,6" pixmap="Turquoise-HD/bar_snr_osd.png" alphatest="on" -->
-	<!--  Streaming -->	
+	    <widget source="session.CurrentService" render="Label" position="705,572" size="90,22" halign="center" valign="center" font="Regular;16" transparent="1" foregroundColor="#004ccbde" backgroundColor="background" zPosition="2">
+		    <convert type="CpuUsage">$0</convert>
+	    </widget>	
 		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/tuner.png" position="778,559" size="18,18" zPosition="2" alphatest="on">
 		    <convert type="ClientsStreaming"/>
 		    <convert type="ConditionalShowHide">Blink</convert>
@@ -3589,9 +3609,21 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			<convert type="FrontendInfo">BER</convert> 
 		</widget> 	
 	-->
-    <!-- Nome Provider - Provider Name -->
-        <widget source="session.CurrentService" render="Label" position="69,557" size="159,22" zPosition="2" font="LCD;18" backgroundColor="background" halign="center" foregroundColor="#00a1d1ff" transparent="1">
-            <convert type="ServiceName">Provider</convert>
+		<eLabel position="100,567" size="50,1" backgroundColor="grey" zPosition="5"/>
+	    <eLabel position="100,567" size="1,22" backgroundColor="grey" zPosition="5"/>
+	    <eLabel position="100,588" size="50,1" backgroundColor="grey" zPosition="5"/>
+	    <eLabel position="149,567" size="1,22" backgroundColor="grey" zPosition="5"/>		
+		<widget source="session.CurrentService" render="FixedLabel" text="HBBTV" position="100,567" size="50,22" zPosition="2" font="LCD;18" halign="center" foregroundColor="#00a1d1ff" transparent="0">
+		    <convert type="ServiceInfo">HasHBBTV</convert>
+		    <convert type="ConditionalShowHide"/>
+	    </widget>
+	    <eLabel position="160,567" size="25,1" backgroundColor="grey" zPosition="5"/>
+	    <eLabel position="160,567" size="1,22" backgroundColor="grey" zPosition="5"/>
+	    <eLabel position="160,588" size="25,1" backgroundColor="grey" zPosition="5"/>
+	    <eLabel position="184,567" size="1,22" backgroundColor="grey" zPosition="5"/>		
+        <widget source="session.CurrentService" render="FixedLabel" text="4K" position="160,567" size="25,22" zPosition="2" font="LCD;18" backgroundColor="background" halign="center" foregroundColor="#00a1d1ff" transparent="0">
+            <convert type="ServiceInfo">Is4K</convert>
+            <convert type="ConditionalShowHide"/>
         </widget>
     <!-- Risoluzione Video - Video Resolution -->
 	    <widget source="session.CurrentService" render="Label" zPosition="4" position="95,676" size="93,22" halign="right" font="LCD;19" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
@@ -3649,7 +3681,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="265,679" 
+		position="235,689" 
 		size="60,50" 
 		backgroundColor="#11404040" 
 		foregroundColor="#004ccbde" 
@@ -3664,7 +3696,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="325,679" 
+		position="295,689" 
 		size="60,15" 
 		backgroundColor="#11404040" 
 		foregroundColor="foreground" 
@@ -3679,7 +3711,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="381,679" 
+		position="346,689" 
 		size="18,15" 
 		backgroundColor="#11404040" 
 		foregroundColor="foreground" 
@@ -3694,7 +3726,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="403,679" 
+		position="363,689" 
 		size="65,50" 
 		backgroundColor="#11404040" 
 		foregroundColor="#004ccbde" 
@@ -3709,7 +3741,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="460,679" 
+		position="418,689" 
 		size="37,15" 
 		backgroundColor="#11404040" 
 		foregroundColor="foreground" 
@@ -3724,7 +3756,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="496,679" 
+		position="458,689" 
 		size="60,50" 
 		backgroundColor="#11404040" 
 		foregroundColor="#004ccbde" 
@@ -3735,10 +3767,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		transparent="1">   
  	    <convert type="PliExtraInfo">TransponderModulation</convert>
 	    </widget>
-	    <widget source="session.CurrentService" render="Label" position="480,679" size="250,24" font="Regular;15" valign="top" halign="right" foregroundColor="#00a1d1ff" backgroundColor="#11404040" transparent="1" zPosition="5">
+	    <widget source="session.CurrentService" render="Label" position="480,689" size="250,24" font="Regular;15" valign="top" halign="right" foregroundColor="#00a1d1ff" backgroundColor="#11404040" transparent="1" zPosition="5">
  		    <convert type="PliExtraInfo">CryptoSpecial</convert>
  	    </widget>
-	    <widget source="session.CurrentService" render="Label" position="750,671" size="400,60" font="Regular;14" valign="top" halign="left" foregroundColor="#004ccbde" backgroundColor="#11404040" transparent="1" zPosition="5">
+	    <widget source="session.CurrentService" render="Label" position="740,689" size="400,60" font="Regular;14" valign="top" halign="left" foregroundColor="#004ccbde" backgroundColor="#11404040" transparent="1" zPosition="5">
 		    <convert type="CryptoInfo">VerboseInfo</convert>
 	    </widget>	  
         <ePixmap position="372,557" zPosition="2" size="22,22" pixmap="Turquoise-HD/icons/icon_norec_light.png" alphatest="on"/>	
