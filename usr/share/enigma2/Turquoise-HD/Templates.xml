@@ -1,0 +1,356 @@
+	<!--
+################### © Daconi ##MODE_fogo_Turquoise-HD_EGAMI_All Models ####################
+###################    SKIN COLLECTION 720p FOR EGAMI ALL MODELS     #################### 
+            oooooooooooo   .oooooo.          .o.       ooo        ooooo ooooo
+            `888'     `8  d8P'  `Y8b        .888.      `88.       .888' `888'
+             888         888               .8"888.      888b     d'888   888
+             888oooo8    888              .8' `888.     8 Y88. .P  888   888
+             888    "    888     ooooo   .88ooo8888.    8  `888'   888   888
+             888       o `88.    .88'   .8'     `888.   8    Y     888   888
+             o888ooooood8  `Y8bood8P'   o88o     o8888o o8o        o888o o888o            
+
+   
+                       ??????     ???    ??????  ???????  ??   ?  ??
+                       ?    ??   ?? ??   ??      ??    ?  ???  ?  ??
+                       ?   ???  ???????  ??      ??    ?  ? ?? ?  ??
+                       ??????   ?    ??  ??????  ???????  ?  ???  ??
+					   
+					   ?????? ?????  ????????  ?????
+                       ???    ?? ??  ? ???     ?? ??
+                       ??     ?????  ?????     ?????
+					   
+           Esta piel está protegido por copyright 
+           Puede cambiar este aspecto SOLAMENTE PARA EL USO PERSONAL, PERO NO 'POSIBLE USO
+           CÓDIGO DE GRÁFICOS Y lo mismo para ellos uno nuevo o adaptar este CON LA PIEL
+           diferentes imágenes.
+	
+	################### © Daconi MODE_Turquoise-HD_EGAMI_All Models ###################
+	
+	-->
+	
+
+<skin>
+
+	
+	<!-- ####### TEMPLATES ####### -->	
+	<!-- MENU SORT-->
+	<screen name="menu_sort">
+		<ePixmap position="47,630" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarGYB.png" alphatest="blend" transparent="1"/>
+	    <widget name="green" position="240,600" size="170,80" backgroundColor="#000c0d0e" halign="center" valign="center" zPosition="1" transparent="1" font="Regular;20"/>
+	    <widget name="yellow" position="500,630" size="220,28" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="left"/>
+	    <widget name="blue" position="650,630" size="220,28" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="left"/>
+	</screen>
+
+	<!-- ####### SCROLLBAR BASE TEMPLATE ####### -->
+	<screen name="ScrollBarTemplate">
+	<!-- scrollbar background -->
+		<ePixmap position="780,120" zPosition="3" size="25,470" pixmap="Turquoise-HD/icons/barra470.png" alphatest="blend" transparent="1"/>
+	</screen>	
+	<!-- ### TEMPLATE TITULOS -->
+	<screen name="Title">
+		<widget source="Title" render="Label" zPosition="1" position="15,40" foregroundColor="#004ccbde" backgroundColor="black" size="820,32" font="Regular;28" halign="center" valign="center"/>		
+		<ePixmap pixmap="Turquoise-HD/menu/border_title.png" zPosition="0" position="60,5" size="671,80" alphatest="blend"/>
+	    <!--widget source="menu_path_compressed" render="Label" zPosition="1" position="0,25" size="820,32" font="Regular;15" halign="center" valign="center" foregroundColor="#0000fafa" backgroundColor="#00000000"/-->
+	</screen>
+	<screen name="Titlechannellist">
+		<widget source="Title" render="Label" zPosition="1" position="70,20" foregroundColor="#0000fafa" backgroundColor="black" size="615,50" font="Regular;21" halign="center" valign="center"/>		
+		<ePixmap pixmap="btvadriatico/menu/border_title.png" zPosition="0" position="80,5" size="580,80" alphatest="blend"/>
+	    <!--widget source="menu_path_compressed" render="Label" zPosition="1" position="0,25" size="820,32" font="Regular;15" halign="center" valign="center" foregroundColor="#0000fafa" backgroundColor="#00000000"/-->
+	</screen>	
+	<!-- ### TEMPLATE PIG + Nombre Evento + Progreso + Reloj LCD 2 Pantallas Izquierda-->
+	<screen name="PIG">
+	<!-- PIG -->
+	<!-- Barra Progresso -->	
+		<widget source="session.VideoPicture" render="Pig" position="838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
+		<eLabel position="838,310" size="382,20" backgroundColor="#20101010" zPosition="3"/>
+	<!-- Nombre del Canal - Service Name -->		
+		<widget source="session.CurrentService" render="Label" position="838,310" size="382,25" zPosition="4" foregroundColor="#0000fafa" font="Regular;19" valign="center" halign="center" transparent="1">
+		    <convert type="ServiceName">Name</convert>
+		</widget>		
+	<!-- Barra Progresso -->
+		<widget source="session.Event_Now" render="Progress" pixmap="Turquoise-HD/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="darkgrey" transparent="1">
+			<convert type="EventTime">Progress</convert>
+		</widget>
+	<!-- Evento Corrente - Event Now -->
+		<widget source="session.Event_Now" render="Label" position="835,315" size="70,30" zPosition="4" halign="left" font="Regular;18" foregroundColor="#0000fafa" backgroundColor="background" transparent="1">
+			<convert type="EventTime">StartTime</convert>
+			<convert type="ClockToText">Default</convert>
+		</widget>
+	    <widget font="Regular;20" halign="left" position="835,350" size="390,32" render="Label" noWrap="1" source="session.Event_Now" foregroundColor="#0000baff" backgroundColor="#00000000" transparent="1" zPosition="2">
+		    <convert type="EventName">Name</convert>
+	    </widget>			
+		<widget source="session.Event_Now" render="Label" position="1150,315" zPosition="4" foregroundColor="#00a1d1ff" size="70,30" font="Regular;18" halign="right" backgroundColor="black" transparent="1">
+			<convert type="EventTime">EndTime</convert>
+			<convert type="ClockToText">Default</convert>
+		</widget>			
+                <!-- digital clock -->
+		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00131313" transparent="1">
+            <convert type="ClockToText">Format:%H:%M :%S</convert>
+        </widget>
+	</screen>	
+	<!-- ####### TEMPLATE SIN BOTONES COLORES 2 PANTALLAS IZQUIERDA ####### -->
+	<screen name="PantallaGenericaSinBarraColor2Pantallas">
+	<!-- background -->
+		<ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="Turquoise-HD/menu/fr_main_channels.png"/>
+	<!--ePixmap pixmap="icons/key_ok.png" position="10,660" size="40,22" zPosition="1" alphatest="blend"/-->
+	<!--ePixmap pixmap="icons/key_exit.png" position="10,682" size="40,22" zPosition="1" alphatest="blend"/-->
+	</screen>
+	
+	<!-- ####### Template solo para Lista de Canales ####### -->
+	<screen name="PantallaListaCanales">
+	<!-- background -->
+		<ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="Turquoise-HD/menu/fr_main_channels2.png"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
+		<widget position="5,625" size="250,36" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget position="205,625" size="250,36" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget position="405,625" size="250,36" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget position="600,625" size="250,36" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+	<!--ePixmap pixmap="icons/key_ok.png" position="10,660" size="40,22" zPosition="1" alphatest="blend"/-->
+	<!--ePixmap pixmap="icons/key_exit.png" position="10,682" size="40,22" zPosition="1" alphatest="blend"/-->
+	</screen>		
+	<!-- ####### PANTALLA PARA 4 BOTONES ROJO VERDE AMARILLO AZUL + SOURCE NAME ####### -->
+	<screen name="PantallaGenericaRGYB">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+	<!-- 4 botones -->
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
+	<!-- buttons text widgets -->
+		<widget name="key_red" position="5,617" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget name="key_green" position="205,617" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget name="key_yellow" position="380,610" size="300,50" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget name="key_blue" position="605,617" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+    </screen>
+	<!-- ####### PANTALLA PARA 3 BOTONES ROJO VERDE Y AMARILLO + SOURCE NAME ####### -->
+	<screen name="PantallaGenericaRGY">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+	<!-- 3 botones -->
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarRGY.png" alphatest="blend" transparent="1"/>
+	<!-- buttons text widgets -->
+		<widget name="key_red" position="5,617" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget name="key_green" position="205,617" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget name="key_yellow" position="380,610" size="300,50" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+    </screen>	
+	<!-- ####### PANTALLA PARA 2 BOTONES ROJO Y VERDE + SOURCE NAME ####### -->
+	<screen name="PantallaGenericaRG">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<widget position="5,625" size="250,36" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget position="205,625" size="250,36" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+	<!-- 2 botones -->
+		<ePixmap position="57,625" zPosition="1" size="349,45" pixmap="Turquoise-HD/menu/colorbarRG.png" alphatest="blend" transparent="1"/>
+	<!-- buttons text widgets -->
+    </screen>
+	<!-- ####### PANTALLA PARA 1 BOTON ROJO + SOURCE ####### -->
+	<screen name="PantallaGenericaR">
+         <widget position="5,625" size="250,36" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		 <panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+	<!-- boton rojo -->
+		<ePixmap position="60,635" zPosition="1" size="140,35" pixmap="Turquoise-HD/menu/colorbarR.png" alphatest="blend" transparent="1"/>
+    </screen>
+	<!-- ####### PANTALLA PARA 1 BOTON ROJO + LABEL EXIT ####### -->
+	<screen name="PantallaGenericaRexit">
+	     <panel name="Template-exit"/>
+		 <panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+	<!-- boton rojo -->
+		<ePixmap position="60,635" zPosition="1" size="140,35" pixmap="Turquoise-HD/menu/colorbarR.png" alphatest="blend" transparent="1"/>
+    </screen>
+	<!-- ####### PANTALLAS ESPECIFICAS CON BOTONES ESPECIFICOS ####### -->
+	
+	<screen name="PantallaGenericaRGB">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarRGB.png" alphatest="blend" transparent="1"/>
+		<widget position="5,625" size="250,36" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget position="205,625" size="250,36" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget position="600,625" size="250,36" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+    </screen>
+	<screen name="PantallaGenericaRYB">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarRYB.png" alphatest="blend" transparent="1"/>
+		<widget position="5,625" size="250,36" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget position="405,625" size="250,36" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget position="600,625" size="250,36" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+    </screen>
+	<screen name="PantallaGenericaGY">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarGY.png" alphatest="blend" transparent="1"/>
+		<widget position="205,625" size="250,36" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget position="405,625" size="250,36" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+    </screen>
+	<screen name="PantallaGenerica_sGYB">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<ePixmap position="47,630" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarGYB.png" alphatest="blend" transparent="1"/>
+		<widget source="key_green" render="Label" position="205,617" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget source="key_yellow" render="Label" position="380,610" size="300,50" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget source="key_blue" render="Label" position="605,617" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+	</screen>		
+	<screen name="PantallaGenericaRB">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarRB.png" alphatest="blend" transparent="1"/>		
+		<widget position="5,625" size="250,36" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget position="600,625" size="250,36" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+    </screen>
+	<screen name="PantallaGenericaRY">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarRY.png" alphatest="blend" transparent="1"/>		
+		<widget position="5,625" size="250,36" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+	    <widget name="yellow" position="500,630" size="220,28" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="left"/>
+    </screen>
+	<screen name="PantallaGenericaYB">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarYB.png" alphatest="blend" transparent="1"/>		
+		<widget position="405,625" size="250,36" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+	    <widget name="blue" position="650,630" size="220,28" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="left"/>
+    </screen>
+	<!-- PANTALLAS DON ESTEN LOS DOS CODIGOS WIDGET NAME + SOURCE -->	
+	<screen name="snR">		
+		<widget source="key_red" render="Label" position="5,625" size="250,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
+    </screen>
+	<screen name="snG">		
+		<widget source="key_green" render="Label" position="205,625" size="250,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
+    </screen>
+	<screen name="snY">		
+		<widget source="key_yellow" render="Label" position="405,625" size="250,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>	
+    </screen>	
+	<screen name="snB">	
+        <widget source="key_blue" render="Label" position="605,617" size="250,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>	
+    </screen>
+		
+	<!-- SOURCES COLORES SEGUN PLUGINS Y PANTALLAS -->
+	<screen name="sR">	
+		<widget source="key_red" render="Label" position="5,625" size="250,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
+    </screen>
+	<screen name="sG">	
+		<widget source="key_green" render="Label" position="205,625" size="250,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
+    </screen>
+	<screen name="sY">	
+		<widget source="key_yellow" render="Label" position="405,625" size="250,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
+    </screen>
+	<screen name="sB">
+		<widget source="key_blue" render="Label" position="605,625" size="250,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
+    </screen>	
+	<screen name="sRG">	
+		<widget source="key_red" render="Label" position="5,625" size="250,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
+		<widget source="key_green" render="Label" position="205,625" size="250,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>		
+    </screen>
+	<screen name="sRY">
+		<widget source="key_red" render="Label" position="5,625" size="250,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>	
+		<widget source="key_yellow" render="Label" position="405,625" size="250,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
+    </screen>
+	<screen name="sRGYB">
+		<widget source="key_red" render="Label" position="5,625" size="250,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
+		<widget source="key_green" render="Label" position="205,625" size="250,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>		
+		<widget source="key_yellow" render="Label" position="405,625" size="250,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
+		<widget source="key_blue" render="Label" position="605,625" size="250,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
+    </screen>
+	<screen name="sRGY">
+		<widget source="key_red" render="Label" position="5,625" size="250,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
+		<widget source="key_green" render="Label" position="205,625" size="250,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>		
+		<widget source="key_yellow" render="Label" position="405,625" size="250,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
+    </screen>	
+	<screen name="sRYB">
+		<widget source="key_red" render="Label" position="5,625" size="250,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
+		<widget source="key_yellow" render="Label" position="405,625" size="250,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>		
+		<widget source="key_blue" render="Label" position="605,625" size="250,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
+    </screen>	
+	<screen name="sRGB">
+		<widget source="key_red" render="Label" position="5,625" size="250,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
+		<widget source="key_green" render="Label" position="205,625" size="250,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>		
+		<widget source="key_blue" render="Label" position="605,625" size="250,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
+    </screen>
+	<screen name="sRB">
+		<widget source="key_red" render="Label" position="5,625" size="250,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>		
+		<widget source="key_blue" render="Label" position="605,625" size="250,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
+    </screen>		
+	<screen name="sGY">
+		<widget source="key_green" render="Label" position="205,625" size="250,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>		
+		<widget source="key_yellow" render="Label" position="405,625" size="250,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
+    </screen>
+	<screen name="sYB">
+		<widget source="key_yellow" render="Label" position="405,625" size="250,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>	
+		<widget source="key_blue" render="Label" position="605,625" size="250,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
+    </screen>	
+	<screen name="Template-Cancelar-ok">
+		<widget name="canceltext" position="5,625" zPosition="1" size="250,36" backgroundColor="#000c0d0e" font="Regular;20" halign="center" valign="center" transparent="1"/>
+		<widget name="oktext" position="205,625" size="250,36" zPosition="1" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>		
+	</screen>
+	<screen name="Template-exit">	
+		<eLabel text="Exit" position="5,625" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="1"/>
+    </screen>
+	<screen name="keysSetup">
+		<widget source="key_red" render="Label" position="5,625" size="250,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>	
+		<widget source="key_green" render="Label" position="205,625" size="250,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>		
+		
+    </screen>		
+	<!-- ####### PANTALLAS WIDGETS SOURCES NO NAME ####### -->
+	<screen name="PantallaGenerica_sRGYB">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
+    </screen>
+	<screen name="PantallaGenerica_sRGY">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarRGY.png" alphatest="blend" transparent="1"/>
+    </screen>	
+	<screen name="PantallaGenerica_sRG">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<ePixmap position="57,625" zPosition="1" size="349,45" pixmap="Turquoise-HD/menu/colorbarRG.png" alphatest="blend" transparent="1"/>
+    </screen>
+	<screen name="PantallaGenerica_sR">
+		 <panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<ePixmap position="60,635" zPosition="1" size="140,35" pixmap="Turquoise-HD/menu/colorbarR.png" alphatest="blend" transparent="1"/>
+    </screen>
+	
+	<screen name="PantallaGenerica_sRGB">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarRGB.png" alphatest="blend" transparent="1"/>
+    </screen>
+	<screen name="PantallaGenerica_sRYB">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarRYB.png" alphatest="blend" transparent="1"/>
+    </screen>
+	<screen name="PantallaGenerica_sGY">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarGY.png" alphatest="blend" transparent="1"/>
+    </screen>
+	<screen name="PantallaGenerica_sRB">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarRB.png" alphatest="blend" transparent="1"/>
+    </screen>
+	<screen name="PantallaGenerica_sRY">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarRY.png" alphatest="blend" transparent="1"/>
+    </screen>
+	<screen name="PantallaGenerica_sYB">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarYB.png" alphatest="blend" transparent="1"/>
+    </screen>
+	<screen name="PantallaGenerica_sY">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<ePixmap position="460,635" zPosition="1" size="140,35" pixmap="Turquoise-HD/menu/colorbarY.png" alphatest="blend" transparent="1"/>
+    </screen>
+	<!-- ####### BOTONES ANCHOS ARRIBA Y ABAJO COLOR ####### -->	
+	<screen name="BotonRedAncho">
+		<ePixmap pixmap="buttons/red.png" position="0,e-40" size="140,40" alphatest="on"/>
+		<widget name="key_red" position="0,e-40" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" transparent="1"/>
+	</screen>
+	<screen name="BotonGreenAncho">
+		<ePixmap pixmap="buttons/green.png" position="140,e-40" size="140,40" alphatest="on"/>
+		<widget name="key_green" position="140,e-40" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#1f771f" transparent="1"/>
+	</screen>
+	<screen name="BotonYellowAncho">
+		<ePixmap pixmap="buttons/yellow.png" position="280,e-40" size="140,40" alphatest="on"/>
+		<widget name="key_yellow" position="280,e-40" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#a08500" transparent="1"/>
+	</screen>
+	<screen name="BotonBlueAncho">
+		<ePixmap pixmap="buttons/blue.png" position="420,e-40" size="140,40" alphatest="on"/>
+		<widget name="key_blue" position="420,e-40" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#141484" transparent="1"/>
+	</screen>	
+	<!--  ####### Template PantallaPieTV #######  -->
+	<screen name="PantallaPieTV" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="Title"/>
+        <panel name="PIG"/>
+        <panel name="ScrollBarTemplate"/>		
+		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="Turquoise-HD/menu/fr_main.png"/>	
+	</screen>
+	<!--  ####### LOGO EGAMI #######  -->
+    <screen name="Logo_Egami">	
+		<ePixmap pixmap="menu/logo_egami_menu.png" position="945,460" size="180,180" zPosition="2" alphatest="blend"/>
+	</screen>		
+</skin>
