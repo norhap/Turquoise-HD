@@ -2143,12 +2143,12 @@
 	<!-- ####### MessageBox Template para ambos Mensajes sistema ####### -->	
 	<screen name="MessageBoxTemplate" position="0,0" size="1280,720" flags="wfNoBorder">
         <panel name="PantallaPieTV"/>
-		<widget name="text" position="140,137" size="520,0" font="Regular;22" transparent="1"/>
-		<widget name="ErrorPixmap" pixmap="Turquoise-HD/icons/input_error.png" position="69,137" size="53,53" alphatest="on"/>
-		<widget name="QuestionPixmap" pixmap="Turquoise-HD/icons/input_question.png" position="69,137" size="53,53" alphatest="on"/>
-		<widget name="InfoPixmap" pixmap="Turquoise-HD/icons/input_info.png" position="69,137" size="53,53" alphatest="on"/>
-        <widget name="WarningPixmap" pixmap="Turquoise-HD/icons/input_info.png" position="69,137" size="53,53" alphatest="on"/>		
-		<widget name="list" position="110,100" size="480,375" scrollbarMode="showOnDemand" selectionPixmap="Turquoise-HD/icons/ls680x28.png" transparent="1"/>
+		<widget name="text" position="160,120" size="520,0" font="Regular;22" backgroundColor="black" foregroundColor="#00a1d1ff" transparent="1"/>
+		<widget name="ErrorPixmap" pixmap="icons/input_error.png" position="100,108" size="53,53" alphatest="on"/>
+		<widget name="QuestionPixmap" pixmap="icons/input_question.png" position="100,108" size="53,53" alphatest="on"/>
+		<widget name="InfoPixmap" pixmap="icons/input_info.png" position="100,108" size="53,53" alphatest="on"/>
+        <widget name="WarningPixmap" pixmap="icons/input_info.png" position="100,108" size="53,53" alphatest="on"/>		
+		<widget name="list" position="110,90" size="480,375" scrollbarMode="showOnDemand" selectionPixmap="icons/ls550x26.png" transparent="1"/>
 		<applet type="onLayoutFinish">
 # this should be factored out into some helper code, but currently demonstrates applets.
 from enigma import eSize, ePoint
@@ -2156,11 +2156,11 @@ orgwidth = self.instance.size().width()
 orgpos = self.instance.position()
 textsize = self[&quot;text&quot;].getSize()
 # y size still must be fixed in font stuff...
-textsize = (textsize[0] + 80, textsize[1] + 80)
+textsize = (textsize[0] + 60, textsize[1] + 60)
 offset = 20
 if self.type == self.TYPE_YESNO:
-	offset = 80
-wsizex = textsize[0] + 80
+	offset = 60
+wsizex = textsize[0] + 60
 wsizey = textsize[1] + offset
 if (715 &gt; wsizex):
 	wsizex = 728
@@ -2170,8 +2170,8 @@ wsize = (wsizex, wsizey)
 # resize label
 self[&quot;text&quot;].instance.resize(eSize(*textsize))
 # move list
-listsize = (wsizex - 20, 50)
-self[&quot;list&quot;].instance.move(ePoint(85, textsize[1] + 110))
+listsize = (wsizex - 20, 200)
+self[&quot;list&quot;].instance.move(ePoint(145, textsize[1] + 70))
 self[&quot;list&quot;].instance.resize(eSize(*listsize))
 # center window
 #newwidth = wsize[0]
@@ -5074,13 +5074,15 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap position="1225,675" size="40,22" pixmap="icons/key_info.png" alphatest="blend"/>
 	</screen>	
 	<!-- PLugin EMC Pantalla Lista de Peliculas--> 
- 	<screen name="EMCSelectionOwn" position="fill" flags="wfNoBorder"> 
+ 	<screen name="EMCSelection" position="fill" flags="wfNoBorder"> 
 		<panel name="EMC"/>
-        <widget name="Cover" position="802,150" size="595,365" zPosition="1" alphatest="on"/>
-        <widget name="CoverBgLbl" backgroundColor="#df0b1300" position="0,0" size="0,0" zPosition="0"/>		
+        <widget name="Cover" position="787,150" size="620,365" zPosition="1" alphatest="on"/>
+        <widget name="CoverBgLbl" backgroundColor="#df0b1300" position="0,0" size="0,0" zPosition="0"/>
+        <widget name="CoverBg" backgroundColor="#df0b1300" position="0,0" size="0,0" zPosition="0"/>
+        <widget name="Video" backgroundColor="#df0b1300" position="975,185" size="255,172" zPosition="0"/>		
 		<!--widget name="list" position="50,145" size="598,350" itemHeight="25" CoolFont="Regular;20" CoolSelectFont="Regular;18" CoolDateFont="Regular;20" CoolMoviePos="35" CoolMovieSize="990" CoolFolderSize="990" CoolTitleColor="0" CoolDatePos="1000" CoolDateWidth="160" CoolDateColor="0" CoolHighlightColor="0" CoolProgressPos="1600" CoolBarPos="890" CoolBarHPos="8" CoolBarSize="55,10" CoolBarSizeSa="110,16" DefaultColor="#00FFFFFF" UnwatchedColor="#0000fafa" WatchingColor="#00FFFFFF" FinishedColor="red" RecordingColor="#009F1313" BackColorSel="#000a4b32" foregroundColorSelected="#004ccbde" backgroundColor="black" scrollbarMode="showOnDemand" transparent="1" zPosition="1"/-->
-		<widget name="list" position="70,142" size="891,360" CoolDirInfoWidth="110" CoolCSPos="680" CoolBarHPos="9" CoolBarPos="530" CoolBarSizeSa="85,16" CoolDateColor="1" CoolDateFont="Regular;14" CoolDateHPos="5" CoolDatePos="630" CoolDateWidth="160" CoolFolderSize="620" CoolFont="Regular;16" CoolHighlightColor="1" CoolIconPos="5" CoolIconSize="35,26" CoolMovieHPos="4" CoolMoviePiconPos="100" CoolMoviePiconSize="520" CoolMoviePos="40" CoolMovieSize="470" CoolPiconHPos="2" CoolPiconHeight="20" CoolPiconPos="13" CoolProgressPos="1600" CoolSelNumTxtWidth="10" CoolSelectFont="Regular;12" CoolTitleColor="1" DefaultColor="foreground" itemHeight="30" enableWrapAround="1" scrollbarMode="showOnDemand"/>
-		<ePixmap position="943,143" zPosition="3" size="25,470" pixmap="Turquoise-HD/icons/barra375.png" alphatest="blend" transparent="1"/>
+		<widget name="list" position="55,142" size="905,360" CoolDirInfoWidth="110" CoolCSPos="680" CoolBarHPos="9" CoolBarPos="530" CoolBarSizeSa="85,16" CoolDateColor="1" CoolDateFont="Regular;14" CoolDateHPos="5" CoolDatePos="630" CoolDateWidth="160" CoolFolderSize="620" CoolFont="Regular;16" CoolHighlightColor="1" CoolIconPos="5" CoolIconSize="35,26" CoolMovieHPos="4" CoolMoviePiconPos="100" CoolMoviePiconSize="520" CoolMoviePos="40" CoolMovieSize="470" CoolPiconHPos="2" CoolPiconHeight="20" CoolPiconPos="13" CoolProgressPos="1600" CoolSelNumTxtWidth="10" CoolSelectFont="Regular;12" CoolTitleColor="1" DefaultColor="foreground" itemHeight="30" enableWrapAround="1" scrollbarMode="showOnDemand"/>
+		<ePixmap position="943,143" zPosition="3" size="25,470" pixmap="icons/barra375.png" alphatest="blend" transparent="1"/>
 	</screen>	
 	<!-- PVRState -->
     <screen name="PVRState" position="290,521" zPosition="2" size="100,25" backgroundColor="black" flags="wfNoBorder" transparent="0">
