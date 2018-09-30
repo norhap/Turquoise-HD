@@ -236,160 +236,43 @@
 		foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
     	<convert type="BTVRunning14Events">Event1,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="Label" position="838,467" size="385,21" font="Regular;16" 
-    	options="movetype=running,
-		repeat=2,				
-		startpoint=0,
-		startdelay=5000,
-		oneshot=2000,step=1,
-		steptime=14,
-		always=0,
-		noWrap" 
-		foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
+    	<widget source="ServiceEvent" render="Label" position="838,467" size="385,21" font="Regular;16" foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
     	<convert type="BTVRunning14Events">Event2,onlyStart</convert>
     	</widget>	
-    	<widget source="ServiceEvent" render="Label" position="838,485" size="385,21" font="Regular;16" 
-    	options="movetype=running,
-		repeat=2,				
-		startpoint=0,
-		startdelay=10000,
-		oneshot=2000,step=1,
-		steptime=12,
-		always=0,
-		noWrap" 
-		foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
+    	<widget source="ServiceEvent" render="Label" position="838,485" size="385,21" font="Regular;16" foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
     	<convert type="BTVRunning14Events">Event3,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="Label" position="838,503" size="385,21" font="Regular;16" 
-    	options="movetype=running,
-		repeat=2,				
-		startpoint=0,
-		startdelay=15000,
-		oneshot=2000,step=1,
-		steptime=14,
-		always=0,
-		noWrap" 
-		foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
+    	<widget source="ServiceEvent" render="Label" position="838,503" size="385,21" font="Regular;16" foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
     	<convert type="BTVRunning14Events">Event4,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="Label" position="838,521" size="385,21" font="Regular;16" 
-    	options="movetype=running,
-		repeat=2,				
-		startpoint=0,
-		startdelay=20000,
-		oneshot=2000,step=1,
-		steptime=20,
-		always=0,
-		noWrap" 
-		foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
+    	<widget source="ServiceEvent" render="Label" position="838,521" size="385,21" font="Regular;16" foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
     	<convert type="BTVRunning14Events">Event5,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="Label" position="838,539" size="385,21" font="Regular;16" 
-    	options="movetype=running,
-		repeat=2,				
-		startpoint=0,
-		startdelay=25000,
-		oneshot=2000,step=1,
-		steptime=22,
-		always=0,
-		noWrap" 
-		foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
+    	<widget source="ServiceEvent" render="Label" position="838,539" size="385,21" font="Regular;16" foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
     	<convert type="BTVRunning14Events">Event6,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="Label" position="838,557" size="385,21" font="Regular;16" 
-    	options="movetype=running,
-		repeat=2,				
-		startpoint=0,
-		startdelay=32000,
-		oneshot=2000,step=1,
-		steptime=24,
-		always=0,
-		noWrap" 
-		foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
+    	<widget source="ServiceEvent" render="Label" position="838,557" size="385,21" font="Regular;16" foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
     	<convert type="BTVRunning14Events">Event7,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="Label" position="838,575" size="385,21" font="Regular;16" 
-    	options="movetype=running,
-		repeat=2,			
-		startpoint=0,
-		startdelay=39000,
-		oneshot=2000,step=1,
-		steptime=26,
-		always=0,
-		noWrap" 
-		foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
+    	<widget source="ServiceEvent" render="Label" position="838,575" size="385,21" font="Regular;16" foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
     	<convert type="BTVRunning14Events">Event8,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="Label" position="838,593" size="385,21" font="Regular;16" 
-    	options="movetype=running,
-		repeat=2,			
-		startpoint=0,
-		startdelay=46000,
-		oneshot=2000,step=1,
-		steptime=28,
-		always=0,
-		noWrap" 
-		foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
+    	<widget source="ServiceEvent" render="Label" position="838,593" size="385,21" font="Regular;16" foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
     	<convert type="BTVRunning14Events">Event9,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="Label" position="838,610" size="385,21" font="Regular;16" 
-    	options="movetype=running,
-		repeat=2,	
-		startpoint=0,
-		startdelay=50000,
-		oneshot=2000,step=1,
-		steptime=30,
-		always=0,
-		noWrap" 
-		foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
+    	<widget source="ServiceEvent" render="Label" position="838,610" size="385,21" font="Regular;16" foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
     	<convert type="BTVRunning14Events">Event10,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="Label" position="838,628" size="385,21" font="Regular;16" 
-    	options="movetype=running,
-		repeat=2,			
-		startpoint=0,
-		startdelay=57000,
-		oneshot=2000,step=1,
-		steptime=32,
-		always=0,
-		noWrap" 
-		foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
+    	<widget source="ServiceEvent" render="Label" position="838,628" size="385,21" font="Regular;16" foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
     	<convert type="BTVRunning14Events">Event11,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="Label" position="838,646" size="385,21" font="Regular;16" 
-    	options="movetype=running,
-		repeat=2,			
-		startpoint=0,
-		startdelay=64000,
-		oneshot=2000,step=1,
-		steptime=32,
-		always=0,
-		noWrap" 
-		foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
+    	<widget source="ServiceEvent" render="Label" position="838,646" size="385,21" font="Regular;16" foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
     	<convert type="BTVRunning14Events">Event12,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="Label" position="838,664" size="385,21" font="Regular;16" 
-    	options="movetype=running,
-		repeat=2,			
-		startpoint=0,
-		startdelay=71000,
-		oneshot=2000,step=1,
-		steptime=32,
-		always=0,
-		noWrap" 
-		foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
+    	<widget source="ServiceEvent" render="Label" position="838,664" size="385,21" font="Regular;16" foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
     	<convert type="BTVRunning14Events">Event13,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="Label" position="838,682" size="385,21" font="Regular;16" 
-    	options="movetype=running,
-		repeat=2,			
-		startpoint=0,
-		startdelay=78000,
-		oneshot=2000,step=1,
-		steptime=32,
-		always=0,
-		noWrap" 
-		foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
+    	<widget source="ServiceEvent" render="Label" position="838,682" size="385,21" font="Regular;16" foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
     	<convert type="BTVRunning14Events">Event14,onlyStart</convert>
     	</widget>
 	<!-- epg descripcion -->
@@ -5066,7 +4949,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>			
 		
 	<!-- Record Name -->
-        <widget source="Service" render="Label" position="430,85" size="435,25" font="Regular;20" foregroundColor="yellow" transparent="1" halign="center" valign="top">
+        <widget source="Service" render="Label" position="430,85" size="435,25" font="Regular;20" foregroundColor="yellow" transparent="0" halign="center" valign="top">
             <convert type="EventName">ExtendedDescription</convert>
         </widget>		
 		<ePixmap pixmap="buttons/red.png" position="170,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
