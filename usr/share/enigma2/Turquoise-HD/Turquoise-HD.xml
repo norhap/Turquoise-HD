@@ -679,41 +679,41 @@
     <screen name="GraphicalEPGPIG" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
 		<ePixmap pixmap="menu/fr_main_help.png" position="0,0" size="1280,720" zPosition="-1"/>
 		<ePixmap pixmap="icons/clock.png" position="1185,25" zPosition="1" size="20,20" alphatest="blend"/>
-		<widget source="global.CurrentTime" render="Label" position="1020,5" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00040404" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="1020,18" size="160,40" zPosition="2" font="LCD;24" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00040404" transparent="1">
             <convert type="ClockToText">Format:%H:%M :%S</convert>
         </widget>
 		<widget source="global.CurrentTime" render="Label" position="645,18" size="350,25" halign="right" font="LCD;24" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1">
 		    <convert type="ClockToText">Date</convert>
 		</widget>
-		<widget source="Title" render="Label" position="40,15" size="400,43" font="Regular;32" transparent="1" foregroundColor="#004ccbde" backgroundColor="black" zPosition="1"/>
-		<widget source="Event" render="Label" position="90,130" size="350,20" font="Regular;18" foregroundColor="#0000baff" backgroundColor="black" transparent="1">
-		    <convert type="EventTime">StartTime</convert>
-		    <convert type="ClockToText">Format:%a %d/%m/%y</convert>
-		</widget>		
-		<widget source="Event" render="Label" position="90,160" size="100,28" font="Regular;20" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1">
+		<widget source="Title" render="Label" position="40,15" size="400,43" font="Regular;32" transparent="1" foregroundColor="#004ccbde" backgroundColor="black" zPosition="1"/>		
+		<widget source="Event" render="Label" position="180,69" size="100,28" font="Regular;20" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1">
 		    <convert type="EventTime">StartTime</convert>
 		    <convert type="ClockToText">Format:%H:%M </convert>
 		</widget>
-		<widget  source="Event" render="Label" position="360,160" size="80,28" font="Regular;20" halign="right" foregroundColor="#00a1d1ff" backgroundColor="black" transparent="1">
+		<eLabel position="180,90" size="350,2" backgroundColor="grey"/>
+		<widget source="Event" render="Progress" pixmap="Turquoise-HD/tv_b_bar.png" position="180,90" size="350,3" backgroundColor="grey" borderWidth="0" transparent="1" zPosition="1">
+			<convert type="EventTime">Progress</convert>
+		</widget>
+		<widget  source="Event" render="Label" position="450,69" size="80,28" font="Regular;20" halign="right" foregroundColor="#00a1d1ff" backgroundColor="black" transparent="1">
 		    <convert type="EventTime">EndTime</convert>
 		    <convert type="ClockToText">Format:%H:%M</convert>
-		</widget>			
-		<eLabel position="90,180" size="350,2" backgroundColor="grey"/>
-		<widget source="Event" render="Progress" pixmap="Turquoise-HD/tv_b_bar.png" position="90,180" size="350,3" backgroundColor="grey" borderWidth="0" transparent="1" zPosition="1">
-			<convert type="EventTime">Progress</convert>
-		</widget>			
-		<widget source="Event" render="Label" position="480,100" size="510,125" zPosition="2" font="Regular;18" halign="center" valign="center" foregroundColor="#00a1d1ff" backgroundColor="background" transparent="1">
+		</widget>		
+		<widget source="Event" render="Label" position="600,74" size="350,20" font="Regular;18" foregroundColor="#0000baff" backgroundColor="black" transparent="1">
+		    <convert type="EventTime">StartTime</convert>
+		    <convert type="ClockToText">Format:%a %d/%m/%y</convert>
+		</widget>		
+		<widget source="Event" render="Label" position="90,35" size="750,250" zPosition="2" font="Regular;17" halign="center" valign="center" foregroundColor="#00a1d1ff" backgroundColor="background" transparent="1">
 		     <convert type="EventName">ExtendedDescription</convert>
 		</widget>	
 	<!--panel name="FullscreenTitlePanel" /-->
-		<ePixmap pixmap="buttons/key_8_epg.png" position="210,70" size="35,15" alphatest="blend" zPosition="2"/>
-		<widget name="page" position="255,70" size="200,25" font="xRegular;15" foregroundColor="#0000baff" backgroundColor="black" transparent="1"/>
-		<ePixmap pixmap="buttons/key_9_epg.png" position="445,70" size="35,15" alphatest="blend" zPosition="2"/>
-		<widget name="primetime" position="490,70" size="250,25" font="xRegular;15" foregroundColor="#0000baff" backgroundColor="black" transparent="1"/>
-		<ePixmap pixmap="buttons/key_prev_next.png" position="730,70" size="35,15" alphatest="blend" zPosition="2"/>
-		<widget name="change_bouquet" position="770,70" size="200,25" font="xRegular;15" foregroundColor="#0000baff" backgroundColor="black" transparent="1"/>
-		<ePixmap pixmap="buttons/key_ch.png" position="920,70" size="35,15" alphatest="blend" zPosition="2"/>
-		<widget name="jump" position="960,70" size="200,25" font="xRegular;15" foregroundColor="#0000baff" backgroundColor="black" transparent="1"/>
+		<ePixmap pixmap="buttons/key_8_epg.png" position="830,50" size="35,15" alphatest="blend" zPosition="2"/>
+		<widget name="page" position="875,50" size="200,25" font="xRegular;15" foregroundColor="#0000baff" backgroundColor="black" transparent="1"/>
+		<ePixmap pixmap="buttons/key_9_epg.png" position="1020,50" size="35,15" alphatest="blend" zPosition="2"/>
+		<widget name="primetime" position="1060,50" size="250,25" font="xRegular;15" foregroundColor="#0000baff" backgroundColor="black" transparent="1"/>
+		<ePixmap pixmap="buttons/key_prev_next.png" position="830,70" size="35,15" alphatest="blend" zPosition="2"/>
+		<widget name="change_bouquet" position="870,70" size="200,25" font="xRegular;15" foregroundColor="#0000baff" backgroundColor="black" transparent="1"/>
+		<ePixmap pixmap="buttons/key_ch.png" position="1020,70" size="35,15" alphatest="blend" zPosition="2"/>
+		<widget name="jump" position="1060,70" size="200,25" font="xRegular;15" foregroundColor="#0000baff" backgroundColor="black" transparent="1"/>
 		<widget name="number" position="0,193" size="100,25" foregroundColor="#004ccbde" transparent="1"/>
 		<widget name="lab1" position="0,70" size="1280,615" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0"/>
 		<eLabel position="840,100" size="2,158" backgroundColor="#004ccbde" zPosition="3"/>
