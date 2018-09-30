@@ -30,7 +30,7 @@
 <skin>
 	<!-- ####### HideVBILine embebido ####### -->
     <screen name="HideVBILine" position="0,0" size="1280,2" backgroundColor="#00000000" flags="wfNoBorder">	
-	</screen>	
+	</screen>
 	<!-- ####### MENU Y SUBMENUS PRINCIPALES ####### -->
 	<screen name="Menu" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
@@ -41,7 +41,7 @@
 		<!--panel name="Logo_Egami"/-->		
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 	<!-- menu list -->
-		<widget source="menu" render="Listbox" position="69,145" zPosition="2" size="728,418" backgroundPixmap="Turquoise-HD/icons/butselection.png" selectionPixmap="Turquoise-HD/icons/ls705x38.png" transparent="1" scrollbarMode="showAlways">
+		<widget source="menu" render="Listbox" position="69,145" zPosition="2" size="728,418" backgroundPixmap="Turquoise-HD/icons/butselection1.png" selectionPixmap="Turquoise-HD/icons/ls705x38.png" transparent="1" scrollbarMode="showAlways">
 			<convert type="TemplatedMultiContent">
 			    {"template": [ 
 			    MultiContentEntryText(pos = (51,2), size = (600,38), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	),
@@ -114,10 +114,14 @@
 		<widget name="initialize" position="5,625" size="0,0" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="1"/>
         <panel name="Logo_Egami"/>		
 	</screen>	
-    <!-- restart icons -->
-    <screen name="QuitMainloopScreen" position="fill" backgroundColor="#00637a" flags="wfNoBorder">
-        <ePixmap pixmap="Turquoise-HD/prev.png" position="0,0" size="1280,720" alphatest="blend"/>
-        <widget name="text" position="280,600" size="720,75" foregroundColor="#00ffffff" zPosition="2" transparent="1" font="Regular;30" halign="center"/>
+    <!-- Reiniciar Enigma2 -->
+    <screen name="QuitMainloopScreen" position="fill" backgroundColor="#0003424a" flags="wfNoBorder">
+		<eLabel position="20,10" size="1241,2" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="20,10" size="2,701" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="20,710" size="1242,2" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="1260,10" size="2,701" backgroundColor="#0000fafa" zPosition="1"/>
+        <ePixmap pixmap="icons/input_info.png" position="605,275" size="1280,720" alphatest="blend"/>		
+        <widget name="text" position="280,350" size="720,75" zPosition="2" transparent="1" font="Regular;27" halign="center"/>
     </screen>		
 	<!-- (003) ####### VirtualKeyBoard ####### -->
 	<screen name="VirtualKeyBoard" position="650,335" size="560,350" zPosition="99" title="Virtual KeyBoard">
@@ -170,7 +174,7 @@
 		<panel name="ScrollBarTemplate"/>
         <panel name="Titlechannellist"/>		
 	<!-- Pig -->			
-        <widget source="session.VideoPicture" render="Pig" position="838,216" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
+        <widget source="session.VideoPicture" render="Pig" position="848,216" size="370,218" zPosition="3" backgroundColor="#df0b1300"/>
 		<eLabel position="838,414" size="382,20" backgroundColor="#20101010" zPosition="3"/>
 	<!-- Nombre del Canal - Service Name -->
 		<widget source="session.Event_Now" render="Label" position="835,415" size="70,30" zPosition="4" halign="left" font="Regular;18" foregroundColor="#0000fafa" backgroundColor="background" transparent="1">
@@ -661,8 +665,8 @@
 		<widget name="timeline3" pixmap="epg/timeline.png" position="0,388" size="0,0" zPosition="-1"/>
 		<widget name="timeline4" pixmap="epg/timeline.png" position="0,388" size="0,0" zPosition="-1"/>
 		<widget name="timeline5" pixmap="epg/timeline.png" position="0,388" size="0,0" zPosition="-1"/>
-		<ePixmap pixmap="icons/key_help.png" position="0,669" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_text.png" position="45,669" size="40,22" alphatest="blend"/>	
+		<ePixmap pixmap="icons/key_help.png" position="10,669" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_text.png" position="55,669" size="40,22" alphatest="blend"/>	
 		<ePixmap pixmap="icons/key_menu1.png" position="1148,669" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_epg_single.png" position="1193,669" size="40,22" alphatest="blend"/>		
 		<ePixmap pixmap="icons/key_info.png" position="1238,669" size="40,22" alphatest="blend"/>
@@ -731,8 +735,8 @@
 		<widget name="timeline3" pixmap="epg/timeline.png" position="0,388" size="0,0" zPosition="-1"/>
 		<widget name="timeline4" pixmap="epg/timeline.png" position="0,388" size="0,0" zPosition="-1"/>
 		<widget name="timeline5" pixmap="epg/timeline.png" position="0,388" size="0,0" zPosition="-1"/>
-		<ePixmap pixmap="icons/key_help.png" position="0,669" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_text.png" position="45,669" size="40,22" alphatest="blend"/>	
+		<ePixmap pixmap="icons/key_help.png" position="10,669" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_text.png" position="55,669" size="40,22" alphatest="blend"/>	
 		<ePixmap pixmap="icons/key_menu1.png" position="1148,669" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_epg_single.png" position="1193,669" size="40,22" alphatest="blend"/>		
 		<ePixmap pixmap="icons/key_info.png" position="1238,669" size="40,22" alphatest="blend"/>
@@ -1918,15 +1922,15 @@
 	    <eLabel position="0,0" size="1,180" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="0,179" size="350,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="349,0" size="1,180" backgroundColor="#0000fafa" zPosition="1"/>	
-		<widget name="Dishpixmap" pixmap="icons/dish.png" position="0,25" size="146,146" alphatest="blend"/>
+		<widget name="Dishpixmap" pixmap="icons/dish.png" position="0,10" size="146,146" alphatest="blend"/>
 		<widget name="turnTime" position="170,20" size="120,22" zPosition="1" font="Regular;20" halign="right" transparent="1"/>
-		<widget name="From" position="165,70" size="55,20" zPosition="1" font="Regular;17" halign="right" transparent="1"/>
-		<widget name="posFrom" position="227,70" size="90,20" zPosition="1" font="Regular;19" halign="left" transparent="1"/>
+		<widget name="From" position="165,70" size="65,20" zPosition="1" font="Regular;17" halign="right" transparent="1"/>
+		<widget name="posFrom" position="240,70" size="90,20" zPosition="1" font="Regular;19" halign="left" transparent="1"/>
 		<widget name="Goto" position="165,95" size="55,20" zPosition="1" font="Regular;17" halign="right" transparent="1"/>
-		<widget name="posGoto" position="227,95" size="90,20" zPosition="1" font="Regular;19" halign="left" foregroundColor="yellow" transparent="1"/>
-		<widget name="Tuner" position="158,120" size="60,20" zPosition="2" font="Regular;18" halign="left" transparent="1"/>
-		<widget name="tunerName" position="227,120" size="90,20" zPosition="2" font="Regular;19" halign="left" foregroundColor="#00a1d1ff" transparent="1"/>
-		<widget name="turnSpeed" position="227,142" size="120,20" zPosition="2" font="Regular;18" halign="left" transparent="1"/>
+		<widget name="posGoto" position="240,95" size="90,20" zPosition="1" font="Regular;19" halign="left" foregroundColor="yellow" transparent="1"/>
+		<widget name="Tuner" position="90,142" size="125,20" zPosition="2" font="Regular;18" halign="left" transparent="1"/>
+		<widget name="tunerName" position="215,142" size="135,20" zPosition="2" font="Regular;19" halign="left" foregroundColor="#00a1d1ff" transparent="1"/>
+		<widget name="turnSpeed" position="200,120" size="120,20" zPosition="2" font="Regular;18" halign="left" transparent="1"/>
 		<widget source="session.FrontendStatus" render="Progress" position="170,165" size="130,8" pixmap="bar_snr.png" zPosition="2" borderWidth="2" borderColor="#0000fafa">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>		
@@ -2210,12 +2214,15 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="blue" position="660,634" zPosition="1" size="140,35" pixmap="Turquoise-HD/menu/colorbarB.png" alphatest="blend"/>
         <panel name="Logo_Egami"/>		
 	</screen> 
-	<!-- (049) ####### NumberZap ####### (15-02) -->
-	<screen name="NumberZap" position="center,center" size="300,40" title="Channel" flags="wfNoBorder" backgroundColor="#0003424a">
-		<widget name="channel" position="27,47" size="0,0" zPosition="1" halign="center" valign="center" font="Regular;24" transparent="1" foregroundColor="#00a1d1ff"/>
-		<widget name="number" position="57,72" size="0,0" zPosition="1" halign="center" valign="center" font="Regular;24" transparent="1" foregroundColor="#00a1d1ff"/>
-		<widget name="servicename" position="0,10" size="200,28" zPosition="1" halign="center" valign="center" font="Regular;24" transparent="0" foregroundColor="#00a1d1ff"/>
-		<widget name="servicenumber" position="200,10" size="100,28" zPosition="1" halign="center" valign="center" font="Regular;24" transparent="0" foregroundColor="#00a1d1ff"/>		
+	<!--####### NumberZap ####### -->
+	<screen name="NumberZap" position="center,center" size="415,50" title="Channel" flags="wfNoBorder" backgroundColor="#0003424a">
+	    <eLabel position="0,0" size="415,1" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="0,0" size="1,50" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="0,49" size="415,1" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="414,0" size="1,50" backgroundColor="#0000fafa" zPosition="1"/>
+		<widget name="number" position="115,0" size="200,22" zPosition="1" font="Regular;24" halign="center" foregroundColor="yellow" transparent="1"/>			
+		<widget name="channel" position="2,23" size="75,25" zPosition="1" halign="left" font="Regular;24" backgroundColor="#0003424a" foregroundColor="#00a1d1ff"/>
+		<widget name="servicename" position="85,23" size="335,28" zPosition="1" halign="center" valign="center" font="Regular;24" backgroundColor="#0003424a" foregroundColor="#00a1d1ff"/>		
 	</screen>
 	<!-- (050) ######## Numerical Text Input Help Dialog ####### -->
 	<screen name="NumericalTextInputHelpDialog" position="682,599" title="Help" size="550,108" zPosition="10" flags="wfNoBorder">
