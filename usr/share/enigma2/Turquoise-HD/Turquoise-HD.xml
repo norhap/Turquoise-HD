@@ -2181,7 +2181,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- (058) ####### PLUGIN COMPLEMENTOS ####### (15-02) -->
 	<screen name="PluginBrowser" position="fill" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>		
+		<panel name="PantallaGenericaRGYB"/>
+        <panel name="sYB"/>		
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -3950,9 +3951,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- Temporizadores Cron  -->
 	<screen name="CronTimers" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>
+		<panel name="PantallaGenericaRGB"/>
+		<panel name="sY"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
+		<ePixmap position="460,635" zPosition="1" size="140,35" pixmap="Turquoise-HD/menu/colorbarY.png" alphatest="blend" transparent="1"/>		
 		<widget source="session.VideoPicture" render="Pig" position="848,112" size="370,218" zPosition="3" backgroundColor="#df0b1300"/>
 	<!-- Nombre del Canal - Service Name -->
 		<widget source="session.CurrentService" render="Label" position="832,350" size="393,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="#004ccbde" backgroundColor="background">
