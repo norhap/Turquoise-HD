@@ -4044,16 +4044,13 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap position="930,414" size="200,200" zPosition="2" pixmap="menu/ico_timer.png" alphatest="blend"/>		
 	</screen>
 	<!-- Informacion About OK -->
-	<screen name="AboutOE" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenericaRG"/>
+	<screen name="About" position="0,0" size="1280,720" title="Acerda de..." flags="wfNoBorder">
+		<panel name="PantallaGenericaRexit"/>		
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
-        <panel name="PIG"/>
-	    <widget name="lab1" position="360,108" size="585,40" font="Regular;24" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1"/>
-		<widget position="205,625" size="250,36" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
-		<widget name="AboutScrollLabel" position="80,133" size="718,540" font="Regular;21" backgroundColor="black" transparent="1"/>
-		<ePixmap position="933,416" zPosition="1" size="200,200" pixmap="Turquoise-HD/menu/ico_information.png" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_info.png" position="8,640" size="40,22" zPosition="2" alphatest="blend"/>
+        <panel name="PIG"/>		
+		<ePixmap position="934,416" zPosition="2" size="200,200"  pixmap="menu/ico_information.png" alphatest="blend" transparent="1"/>				
+		<widget name="AboutScrollLabel" position="80,133" size="723,420" font="Regular;21" backgroundColor="black" transparent="1"/>
 	</screen>
 	<!--  About OK->Info->OK -->
 	<screen name="SoftwareUpdateChanges" position="0,0" size="1280,720" flags="wfNoBorder">

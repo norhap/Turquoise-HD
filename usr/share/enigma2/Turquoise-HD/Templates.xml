@@ -114,11 +114,21 @@
 	<!-- 4 botones -->
 		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
 	<!-- buttons text widgets -->
-		<widget name="key_red" position="5,617" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget name="key_green" position="205,617" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget name="key_yellow" position="380,610" size="300,50" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget name="key_blue" position="605,617" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget name="key_red" position="55,612" size="150,45" font="Regular;19" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget name="key_green" position="255,612" size="150,45" font="Regular;19" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget name="key_yellow" position="470,612" size="125,50" font="Regular;19" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget name="key_blue" position="655,612" size="150,45" font="Regular;19" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
     </screen>
+	<screen name="PantallaGenericaRGYB2">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+	<!-- 4 botones -->
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
+	<!-- buttons text widgets -->
+		<widget name="key_red" position="55,570" size="150,136" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget name="key_green" position="205,617" size="250,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget name="key_yellow" position="455,565" size="150,136" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget name="key_blue" position="655,565" size="150,136" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+    </screen>	
 	<!-- ####### PANTALLA PARA 3 BOTONES ROJO VERDE Y AMARILLO + SOURCE NAME ####### -->
 	<screen name="PantallaGenericaRGY">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
@@ -152,6 +162,15 @@
 	<!-- boton rojo -->
 		<ePixmap position="60,635" zPosition="1" size="140,35" pixmap="Turquoise-HD/menu/colorbarR.png" alphatest="blend" transparent="1"/>
     </screen>
+	<screen name="TemplateOK">
+		<ePixmap position="245,625" zPosition="1" size="349,45" pixmap="menu/colorbarG.png" alphatest="blend" transparent="1"/>	
+		<eLabel text="Ok" position="190,615" size="250,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
+    </screen>
+	<!-- ####### PANTALLA OK Y EXIT CON RG ####### -->	
+	<screen name="PantallaGenericaRexit-OK">	
+	<panel name="PantallaGenericaRexit"/>
+	<panel name="TemplateOK"/>	
+    </screen>	
 	<!-- ####### PANTALLAS ESPECIFICAS CON BOTONES ESPECIFICOS ####### -->
 	
 	<screen name="PantallaGenericaRGB">
