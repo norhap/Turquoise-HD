@@ -368,8 +368,18 @@
         <panel name="ScrollBarTemplate"/>		
 		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="Turquoise-HD/menu/fr_main.png"/>	
 	</screen>
-	<!--  ####### LOGO EGAMI #######  -->
-    <screen name="Logo_Egami">	
-		<ePixmap pixmap="menu/logo_egami_menu.png" position="945,460" size="180,180" zPosition="2" alphatest="blend"/>
-	</screen>		
+	<!--  ####### ACCIONES TECLAS OBJECTYPES #######  -->
+    <screen name="acciones_teclas_colores">	
+		<widget objectTypes="key_red,Label,Button" name="key_red" position="5,620" size="250,45" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
+		<widget objectTypes="key_red,StaticText" source="key_red" render="Label" position="5,620" size="250,45" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
+
+		<widget objectTypes="key_green,Label,Button" name="key_green" position="255,610" size="150,45" backgroundColor="black" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
+		<widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="255,610" size="150,45" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
+
+		<widget objectTypes="key_yellow,Label,Button" name="key_yellow" position="385,625" size="300,36" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
+		<widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Label" position="385,625" size="300,36" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
+
+		<widget objectTypes="key_blue,Label,Button" name="key_blue" position="600,620" size="250,45" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
+		<widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="600,620" size="250,45" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
+	</screen>	
 </skin>
