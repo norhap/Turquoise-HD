@@ -6029,8 +6029,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- EGAMI QuickButtonSetup  -->
 	<screen name="ButtonSetup" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica_sRG"/>
-        <panel name="sRG"/>		
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>		
