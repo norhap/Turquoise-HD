@@ -142,8 +142,8 @@
 	<!-- ####### PANTALLA PARA 2 BOTONES ROJO Y VERDE + SOURCE NAME ####### -->
 	<screen name="PantallaGenericaRG">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
-		<widget position="5,625" size="250,36" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget position="205,625" size="250,36" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget name="key_red" position="55,612" size="150,45" font="Regular;19" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget name="key_green" position="255,612" size="150,45" font="Regular;19" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 	<!-- 2 botones -->
 		<ePixmap position="57,625" zPosition="1" size="349,45" pixmap="Turquoise-HD/menu/colorbarRG.png" alphatest="blend" transparent="1"/>
 	<!-- buttons text widgets -->
