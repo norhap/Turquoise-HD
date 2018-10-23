@@ -101,7 +101,7 @@
 		<widget name="bus" position="80,230" size="585,25" font="Regular;24" backgroundColor="black" transparent="1"/>
 		<widget name="initializetext" position="5,625" size="0,0" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="1"/>
 		<widget name="initialize" position="5,625" size="0,0" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="1"/>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
 	</screen>	
     <!-- Reiniciar Enigma2 -->
     <screen name="QuitMainloopScreen" position="fill" backgroundColor="#0003424a" flags="wfNoBorder">
@@ -252,7 +252,7 @@
     	<convert type="BTVRunning14Events">Event14,onlyStart</convert>
     	</widget>
 	<!-- epg descripcion -->
-		<widget source="ServiceEvent" render="Label" position="833,78" size="393,127" zPosition="2" font="Regular;18" halign="center" valign="center" foregroundColor="grey" backgroundColor="background" transparent="1">
+		<widget source="ServiceEvent" render="Label" position="833,78" size="393,105" zPosition="2" font="Regular;18" halign="center" valign="center" foregroundColor="grey" backgroundColor="background" transparent="1">
 		    <convert type="EventName">ExtendedDescription</convert>
 		</widget>				
 	<!-- digital clock -->
@@ -408,7 +408,7 @@
 		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
 	<!-- events list -->
 		<widget name="list" position="60,138" size="745,425" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-		<widget source="Service" render="PiconBg" position="690,15" size="104,63" zPosition="5" alphatest="blend" backgroundColor="#000c0d0e"/>
+		<!--widget source="Service" render="PiconBg" position="690,15" size="104,63" zPosition="5" alphatest="blend" backgroundColor="#000c0d0e"/-->
 		<widget source="Service" render="Picon" position="692,16" size="100,60" zPosition="5" alphatest="blend" backgroundColor="#000c0d0e">
 			<convert type="ServiceName">Reference</convert>
 		</widget>		
@@ -440,7 +440,7 @@
 		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
 	<!-- events list -->
 		<widget name="list" position="70,138" size="721,400" scrollbarMode="showOnDemand" transparent="1" enableWrapAround="1"/>
-		<widget source="Service" render="PiconBg" position="690,15" size="104,63" zPosition="5" alphatest="blend" backgroundColor="#000c0d0e"/>
+		<!--widget source="Service" render="PiconBg" position="690,15" size="104,63" zPosition="5" alphatest="blend" backgroundColor="#000c0d0e"/-->
 		<widget source="Service" render="Picon" position="692,16" size="100,60" zPosition="5" alphatest="blend" backgroundColor="#000c0d0e">
 			<convert type="ServiceName">Reference</convert>
 		</widget>		
@@ -595,7 +595,7 @@
 		<eLabel position="1205,98" size="2,160" backgroundColor="#004ccbde" zPosition="3"/>
 		<eLabel position="840,258" size="367,2" backgroundColor="#004ccbde" zPosition="3"/>
 		<eLabel position="840,98" size="367,2" backgroundColor="#004ccbde" zPosition="3"/>
-		<widget source="session.VideoPicture" render="Pig" position="841,100" size="369,182" zPosition="1" backgroundColor="#df0b1300"/>		
+		<widget source="session.VideoPicture" render="Pig" position="841,100" size="369,172" zPosition="1" backgroundColor="#df0b1300"/>		
 		<widget name="timeline_text" position="75,260" size="1287,35" backgroundColor="black" foregroundColor="#004ccbde" transparent="1" zPosition="2"/>
 		<widget name="bouquetlist" position="75,260" size="1100,365" foregroundColorSelected="#0000fafa" scrollbarMode="showNever" zPosition="2" transparent="0"/>
 		<widget name="list" position="75,285" size="1132,340" backgroundColor="black" RecordForegroundColorSelected="yellow" scrollbarMode="showNever" zPosition="1" transparent="1"/>
@@ -1244,7 +1244,7 @@
 		<panel name="PIG"/>
 	    <panel name="Title"/>
 	    <panel name="sR"/>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
 		<widget source="IFtext" render="Label" position="80,130" size="140,24" zPosition="10" font="Regular;24" foregroundColor="#004ccbde" transparent="1"/>
 		<widget source="IF" render="Label" position="390,130" size="400,24" zPosition="10" font="Regular;24" transparent="1"/>
 		<widget source="LabelBSSID" render="Label" position="80,180" size="300,37" valign="left" foregroundColor="#004ccbde" font="Regular;20" transparent="1"/>
@@ -1519,7 +1519,7 @@
 		<widget name="labstop" position="365,200" size="200,40" font="Regular;22" halign="center" valign="center" backgroundColor="red" zPosition="1"/>
 		<widget name="labrun" position="365,200" size="200,40" font="Regular;22" halign="center" valign="center" backgroundColor="green" zPosition="2"/>
 		<widget position="600,625" size="250,36" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
 	</screen>	
 		
 	<!-- NetWork OpenVPN Setup OK -->
@@ -1533,7 +1533,7 @@
 		<widget name="lab2" position="80,200" size="250,40" font="Regular;22" foregroundColor="#004ccbde" valign="center" transparent="0" zPosition="2"/>
 		<widget name="labstop" position="365,200" size="200,40" font="Regular;22" halign="center" valign="center" backgroundColor="red" zPosition="1"/>
 		<widget name="labrun" position="365,200" size="200,40" font="Regular;22" halign="center" valign="center" backgroundColor="green" zPosition="2"/>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
 	</screen>
 	<!-- Network SABnzbd  -->
 	<screen name="NetworkSABnzbd" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1562,7 +1562,7 @@
 		<widget name="labrun" position="365,200" size="200,40" font="Regular;22" halign="center" valign="center" backgroundColor="green" zPosition="2"/>
 		<widget position="5,625" size="0,0" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget position="600,625" size="0,0" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
 	</screen>		
 		
 	<!-- NetWork uShare OK -->
@@ -1725,7 +1725,7 @@
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>		
         <panel name="PIG"/>
-        <panel name="Logo_Egami"/>	
+        <!--panel name="Logo_Egami"/-->	
 		<widget name="linelist" position="80,140" size="718,425" font="Console;18" scrollbarMode="showOnDemand" transparent="1"/>		
 	</screen>	
 	<!-- (028) ####### clock Display ####### -->
@@ -1927,7 +1927,7 @@
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 		<widget name="list" position="80,138" size="715,425" scrollbarMode="showOnDemand" itemHeight="25" transparent="1"/>
         <widget name="hint" position="845,390" size="380,160" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" transparent="1"/>		
@@ -2020,7 +2020,7 @@
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-        <panel name="Logo_Egami"/>
+        <!--panel name="Logo_Egami"/-->
 		<ePixmap pixmap="icons/key_info.png" position="8,640" size="40,22" alphatest="blend"/>		
 	    <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 		<widget name="list" position="89,136" size="660,175" backgroundColor="black" transparent="1"/>
@@ -2049,7 +2049,7 @@
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-        <panel name="Logo_Egami"/>
+        <!--panel name="Logo_Egami"/-->
 		<eLabel text="Save" position="235,630" size="250,36" foregroundColor="#00ffffff" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
         <eLabel text="OK" position="360,632" size="190,24" zPosition="1" font="Regular;19" backgroundColor="black" halign="left" transparent="1" valign="center"/>		
 	    <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
@@ -2168,7 +2168,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="green" position="260,635" zPosition="1" size="140,35" pixmap="Turquoise-HD/menu/colorbarG.png" alphatest="blend"/>
 		<widget name="yellow" position="460,635" zPosition="1" size="140,35" pixmap="Turquoise-HD/menu/colorbarY.png" alphatest="blend"/>
 		<widget name="blue" position="660,634" zPosition="1" size="140,35" pixmap="Turquoise-HD/menu/colorbarB.png" alphatest="blend"/>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
 	</screen> 
 	<!--####### NumberZap ####### -->
 	<screen name="NumberZap" position="center,center" size="415,50" title="Channel" flags="wfNoBorder" backgroundColor="#0003424a">
@@ -2393,7 +2393,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
 		<widget name="list" position="80,138" size="718,450" scrollbarMode="showOnDemand" transparent="1"/>
 		<ePixmap pixmap="icons/key_epg_single.png" position="645,680" size="40,22" alphatest="blend"/>		
 		<ePixmap pixmap="icons/key_info.png" position="690,680" size="40,22" alphatest="blend"/>
@@ -2454,7 +2454,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="timer1" position="80,140" size="690,50" scrollbarMode="showNever"/>
 		<widget name="timer2" position="80,220" size="690,50" scrollbarMode="showNever"/>
 		<widget name="list" position="80,350" size="690,50" scrollbarMode="showOnDemand" transparent="1"/>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
 	</screen>
 	<!-- (082) ####### TIMER SELECTION ####### (15-02) -->
 	<screen name="TimerSelection" position="0,0" size="1280,720" title="Timer selection" backgroundColor="black" flags="wfNoBorder">
@@ -4092,7 +4092,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-        <panel name="Logo_Egami"/>
+        <!--panel name="Logo_Egami"/-->
 		<widget name="lab1" position="360,110" size="585,40" font="Regular;24" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1"/>
 		<widget source="TunerHeader" render="Label" position="80,130" size="585,40" font="Regular;17" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1"/>
 		<widget source="nims" render="Label" position="80,150" size="585,175" font="Regular;15" halign="left" backgroundColor="black" transparent="1" valign="top" zPosition="1"/>
@@ -4184,7 +4184,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
 		<ePixmap pixmap="icons/key_ok.png" position="10,680" size="40,22" alphatest="blend"/>
   		<widget source="menu" render="Listbox" position="80,140" size="718,440" scrollbarMode="showOnDemand" selectionPixmap="Turquoise-HD/icons/ls705x110.png" backgroundColor="black" transparent="1" zPosition="-1">
   		    <convert type="TemplatedMultiContent">
@@ -4459,7 +4459,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>		
         <panel name="PIG"/>
-        <panel name="Logo_Egami"/>
+        <!--panel name="Logo_Egami"/-->
 		<widget name="filelist" position="80,150" itemHeight="30" size="718,420" scrollbarMode="showOnDemand" transparent="1" zPosition="1"/>
 		<eLabel text="Exit" position="105,635" font="Regular;20" zPosition="1" size="140,35" transparent="1"/>
 		<eLabel text="Save" position="295,635" size="190,24" zPosition="1" font="Regular;20" backgroundColor="black" halign="left" transparent="1" valign="center"/>		
@@ -4698,7 +4698,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>	
 		<widget name="list" scrollbarMode="showOnDemand" position="80,138" size="718,420" backgroundColor="black" transparent="1"/>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
 	</screen>
 
 	<!-- EPG Import Log -->
@@ -4708,7 +4708,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>	
 		<widget name="list" position="80,138" size="718,420" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
 	</screen>
 	<!-- IGNORAR SERVICIOS DE LA LISTA -->	
 	<screen name="filtersServicesSetup" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -4728,7 +4728,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 				}
 			</convert>
 		</widget>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
 	</screen>
 	<!-- LISTA DE SERVICIOS LISTA DE CANALES -->	
 	<screen name="filtersServicesSelection" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -4737,7 +4737,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>	
 		<widget name="list" position="80,138" size="718,420" scrollbarMode="showOnDemand"/>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
 	</screen>	
     <!-- ********** AutoTimer ********** -->
 	<!-- AutoTimer OK -->
@@ -4756,7 +4756,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>		
         <panel name="sRGYB"/>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
 		<widget name="config" position="80,138" size="690,400" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
 	</screen>
 
@@ -5162,7 +5162,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>		
         <panel name="PIG"/>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
 		<widget source="menu" render="Listbox" position="80,138" size="718,400" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1" zPosition="1">
 			<convert type="StringList"/>
 		</widget>
@@ -5189,7 +5189,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>		
         <panel name="PIG"/>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
         <widget name="config" position="80,138" size="690,400" scrollbarMode="showOnDemand" transparent="1" zPosition="1"/>
 		<widget name="cancel" position="90,625" size="250,36" zPosition="1" font="Regular;20" halign="left" valign="center" backgroundColor="black" transparent="1"/>
 		<widget name="save" position="280,625" size="250,36" zPosition="1" font="Regular;20" halign="left" valign="center" backgroundColor="black" transparent="1"/>
@@ -5201,7 +5201,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>		
         <panel name="PIG"/>
-        <panel name="Logo_Egami"/>
+        <!--panel name="Logo_Egami"/-->
         <ePixmap pixmap="icons/key_ok.png" position="235,640" size="74,36" zPosition="2" alphatest="blend"/>		
         <widget name="open" position="290,605" size="210,95" zPosition="1" font="Regular;20" halign="left" valign="center" backgroundColor="black" transparent="1"/>
 		<widget name="filelist" position="80,150" itemHeight="30" size="718,420" scrollbarMode="showOnDemand" transparent="1" zPosition="1"/>
@@ -5393,7 +5393,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
 		<widget name="MainList" position="80,180" size="717,350" zPosition="3" backgroundColor="#00000000" enableWrapAround="1" scrollbarMode="showOnDemand"/>
 		<widget source="Titel" render="Label" position="175,120" zPosition="3" size="978,60" font="Regular;22" valign="center" halign="left" transparent="1" foregroundColor="#004ccbde"/>
 		<widget source="Titel2" render="Label" position="250,120" zPosition="2" size="900,60" font="Regular;22" valign="center" halign="center" transparent="1" foregroundColor="#006da6ff"/>
@@ -5418,7 +5418,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
 		<widget name="Mlist" position="80,170" size="718,365" zPosition="3" backgroundColor="#00000000" enableWrapAround="1" scrollbarMode="showOnDemand"/>
 	    <ePixmap pixmap="icons/key_ok.png" position="53,680" size="40,22" zPosition="2" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_help.png" position="8,680" size="40,22" alphatest="blend"/>		
@@ -5430,7 +5430,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
 		<widget name="Mlist" position="80,150" size="718,430" zPosition="3" backgroundColor="#00000000" enableWrapAround="1" scrollbarMode="showOnDemand"/>		
 	</screen>
 	<!-- Foreca OK->MENU->Continents->Europe->Germany -->	
@@ -5439,7 +5439,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-        <panel name="Logo_Egami"/>			
+        <!--panel name="Logo_Egami"/-->			
 		<widget name="Mlist" position="80,150" size="718,430" zPosition="3" backgroundColor="#00000000" enableWrapAround="1" scrollbarMode="showOnDemand"/>
 	</screen>
 	<!-- Foreca OK->MENU->Parametros (boton azul)-->
@@ -5449,7 +5449,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
 		<widget name="Mlist" position="60,150" size="718,355" zPosition="3" backgroundColor="#00000000" enableWrapAround="1" scrollbarMode="showOnDemand"/>		
 	</screen>	
 	<!-- WHEATHER PLUGIN Subpantallas configuracion busqueda codigo y ciudad tecla menu-->	
@@ -5613,7 +5613,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="sRGYB"/>		
         <panel name="Title"/>
         <panel name="PIG"/>		
-        <panel name="Logo_Egami"/>
+        <!--panel name="Logo_Egami"/-->
 	    <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 	    <ePixmap pixmap="icons/key_menu1.png" position="8,640" size="40,22" zPosition="2" alphatest="blend"/>		
 		<widget name="video" position="838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
@@ -5663,7 +5663,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>		
         <panel name="Title"/>
         <panel name="PIG"/>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
     <!-- List Channel --> 
 		<widget name="title" position="80,120" size="610,220" font="Regular;20" transparent="1" backgroundColor="black" foregroundColor="#0000baff" halign="center" zPosition="1"/>
 	    <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
@@ -5751,7 +5751,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>		
         <panel name="PIG"/>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
 		<widget source="list" render="Listbox" position="80,138" size="715,410" selectionPixmap="Turquoise-HD/icons/ls700x38.png" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [
@@ -5771,7 +5771,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>		
         <panel name="PIG"/>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
 		<widget name="list" position="80,140" size="715,400" font="Regular;18"/>
 	</screen>
     <!-- ## AutoBouquetsMaker Acerca de ## -->	
@@ -5789,7 +5789,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>		
         <panel name="PIG"/>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
 		<widget source="list" render="Listbox" position="67,140" size="720,440" zPosition="3" scrollbarMode="showNever" selectionPixmap="Turquoise-HD/icons/ls700x38.png" backgroundPixmap="Turquoise-HD/icons/butselection1.png" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
@@ -5850,7 +5850,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>		
         <panel name="PIG"/>
-        <panel name="Logo_Egami"/>
+        <!--panel name="Logo_Egami"/-->
 		<widget name="config" position="60,145" size="725,427" scrollbarMode="showOnDemand"/>
         <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 		<widget source="status" render="Label" position="845,425" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
@@ -5868,7 +5868,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>		
         <panel name="PIG"/>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
 		<widget name="text" position="80,145" size="725,427" font="Regular;18" transparent="1"/>
 	</screen>
 	<screen name="CCcamInfoSubMenu" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -5894,7 +5894,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>		
         <panel name="PIG"/>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
 		<widget name="uphops" position="80,145" size="695,45" font="Regular;18" transparent="1"/>
 		<widget name="providers" position="80,200" size="695,45" font="Regular;18" transparent="1"/>
 		<widget name="list" position="80,255" size="695,45" transparent="1"/>
@@ -5907,7 +5907,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>		
         <panel name="PIG"/>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
 		<widget name="list" position="60,145" size="738,425" scrollbarMode="showOnDemand" transparent="1"/>
 	</screen>
 	<screen name="CCcamInfoRemoteBoxMenu" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -5915,7 +5915,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>		
         <panel name="PIG"/>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
 		<widget name="list" position="60,145" size="740,427" transparent="1"/>
 	</screen>
 	<screen name="CCcamInfoConfigSwitcher" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -5923,7 +5923,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>		
         <panel name="PIG"/>
-        <panel name="Logo_Egami"/>
+        <!--panel name="Logo_Egami"/-->
 		<widget name="list" position="60,145" size="725,427" scrollbarMode="showOnDemand"/>
 	</screen>	
 	<screen name="CCcamInfoConfigMenu" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -5931,7 +5931,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>		
         <panel name="PIG"/>
-        <panel name="Logo_Egami"/>
+        <!--panel name="Logo_Egami"/-->
 		<widget name="config" position="60,145" size="725,427" scrollbarMode="showOnDemand"/>
 	</screen>	
 	
@@ -5942,7 +5942,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>		
         <panel name="PIG"/>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
         <widget name="menu" position="80,140" zPosition="1" size="695,420" scrollbarMode="showOnDemand"/>
 	</screen>
 	<!--  EGCCcamConfigEdit -->
@@ -5952,7 +5952,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>		
         <panel name="PIG"/>
-        <panel name="Logo_Egami"/>
+        <!--panel name="Logo_Egami"/-->
         <widget name="menu" position="70,140" zPosition="1" size="728,420" font="Regular;17" scrollbarMode="showOnDemand"/>
         <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
         <widget source="statusbar" render="Label" position="845,395" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
@@ -5973,7 +5973,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>		
         <panel name="PIG"/>
-        <panel name="Logo_Egami"/>
+        <!--panel name="Logo_Egami"/-->
         <widget name="list" position="80,140" zPosition="1" size="695,420" scrollbarMode="showOnDemand"/>
         <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
         <widget name="statuslab" position="845,395" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
@@ -6143,7 +6143,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="slider" position="80,260" borderWidth="2" foregroundColor="#0003424a" size="562,32" zPosition="1"/>
 		<widget source="package" render="Label" position="80,215" size="530,24" font="Regular;20" halign="center" valign="center" backgroundColor="#00101010" transparent="1"/>
 		<widget source="status" render="Label" position="80,265" size="530,100" font="Regular;20" halign="center" valign="center" backgroundColor="#00101010" transparent="1"/>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
 	</screen>
 	<!--  EGAMI Multiboot Primera Pantalla sin Plugin Instalado -->
 	<screen name="EGAMIBootInstallation" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -6154,7 +6154,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="label1" position="200,50" size="515,30" zPosition="1" font="Regular;25" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 		<widget name="label2" position="80,140" size="515,290" zPosition="1" font="Regular;20" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 		<widget name="config" position="80,350" size="718,375" backgroundColor="black" transparent="1"/>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
 	</screen>		
 
 	<!--  EGAMI Boot despues de Instalacion del Plugin -->
@@ -6206,7 +6206,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 				}
 		    </convert>
 		</widget>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
 	</screen>
 	<!--  EGAMI Elegir de la lista de imagen elegida que version de imagen a descargar -->
 	<screen name="DownloadOnLineImage" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -6215,7 +6215,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
 		<widget name="imageList" position="80,138" size="718,375" font="Regular;20" transparent="1" zPosition="1"/>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
 	</screen>			
 	<!--  EGAMI Image Installation OKK -->
 	<screen name="EGAMIBootImageInstall" position="0,0" size="1280,720" title="EGAMIBootImageInstall" flags="wfNoBorder">
@@ -6225,7 +6225,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
 		<widget name="config" position="80,140" size="690,375" scrollbarMode="showOnDemand" transparent="1"/>
 		<widget name="HelpWindow" position="682,599" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
 	</screen>
 	<!--  EGAMI EmuManager OKK -->
 	<screen name="EmuManager" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -6268,7 +6268,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
 		<widget name="list" position="80,138" size="718,400" zPosition="1" scrollbarMode="showOnDemand" itemHeight="50" backgroundColor="black"/>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
     </screen>
 	<!--  Download EGAMI Addons (EGAMI ONLINE ADDONS INSTALLATION) LISTA DENTRO DEL ADDONS EGAMI -->
 	<screen name="EG_PrzegladaczAddonow" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -6288,7 +6288,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
 	    <widget name="status" position="220,110" size="520,30" font="Regular;24" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 	    <widget name="menu" position="80,150" size="718,400" scrollbarMode="showOnDemand" transparent="1"/>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
 	</screen>
 	<!--  EGAMI Internet Addons SUBPANTALLA (VERDE PREVISUALIZAR) -->	
 	<screen name="EGAddonInfo" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -6298,7 +6298,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
 	    <widget name="text" position="80,150" size="690,350" font="Regular;24" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 	    <widget name="image" position="80,500" size="718,110" backgroundColor="black" transparent="1"/>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
 	</screen>	
 	
 	<!-- EGAMI Downloadable Plugins y Remove Plugins  OE -->
@@ -6349,7 +6349,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			    }
 		    </convert>
 		</widget>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
 	</screen>
 	<!--  EGAMI DropBear OKK -->
 	<screen name="EGDropbearConfig" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -6359,7 +6359,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
 		<widget name="state" position="80,140" size="515,25" font="Regular;22" halign="center" noWrap="1" backgroundColor="black" foregroundColor="#004ccbde"/>
 		<widget name="config" position="80,190" size="718,400" scrollbarMode="showOnDemand" transparent="1"/>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
 	</screen>
 
 	<!--  EGAMI EGS StreamInfo OKK  -->
@@ -6369,7 +6369,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
 		<widget name="menu" position="80,140" size="718,400" scrollbarMode="showOnDemand" transparent="1"/>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
 	</screen>
 	<!--  system informations -->
 	<screen name="EGEnigma2ConfigInfo" position="0,0" size="1280,720" title="EGEnigma2ConfigInfo" flags="wfNoBorder">
@@ -6378,7 +6378,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
 		<widget name="menu" position="60,140" size="738,400" zPosition="1" font="Regular;18" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
 	</screen>
 	
 	<!--  EGAMI Kernel Info -->
@@ -6388,7 +6388,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
 		<widget name="menu" position="80,140" size="718,400" zPosition="1" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
 	</screen>
 	
 	<!--  EGAMI Process Info OKK-->
@@ -6398,7 +6398,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
 		<widget name="menu" position="80,140" size="718,400" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
 	</screen>
 
 	<!--  EGAMI DropBear OKK -->
@@ -6413,7 +6413,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget position="205,625" size="250,36" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget position="405,625" size="250,36" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget position="600,625" size="250,36" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
 	</screen>
 	<!--  EGAMI SwapManager -->
 	<screen name="EGAMISwap" position="0,0" size="1280,720" title="EGAMISwap" flags="wfNoBorder">
@@ -6440,7 +6440,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
         <panel name="Title"/>
 		<panel name="ScrollBarTemplate"/>
-        <panel name="Logo_Egami"/>		
+        <!--panel name="Logo_Egami"/-->		
 		<widget name="config" position="56,155" size="739,425" font="Regular;18" scrollbarMode="showAlways" transparent="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 	</screen>
