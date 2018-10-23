@@ -185,7 +185,7 @@
 		    <convert type="ServiceOrbitalPosition"/>
 		</widget>
 	<!-- channels lists -->		
-		<widget name="list" position="80,138" zPosition="1" size="718,450" scrollbarMode="showOnDemand" serviceItemHeight="28"
+		<widget name="list" position="68,140" zPosition="1" size="737,450" scrollbarMode="showOnDemand" serviceItemHeight="28"
 			serviceNumberFont="Regular;22" serviceNameFont="Regular;26" serviceInfoFont="Regular;20" colorServiceDescription="#004ccbde"
 			picServiceEventProgressbar="Turquoise-HD/pl.png" selectionPixmap="Turquoise-HD/icons/ls715x30.png" transparent="1" 
 			foregroundColorEventSelected="#a1d1ff"/>			
@@ -2277,7 +2277,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- (058) ####### PLUGIN COMPLEMENTOS ####### (15-02) -->
 	<screen name="PluginBrowser" position="fill" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>	
+		<panel name="PantallaGenericaRG"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -6029,7 +6029,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- EGAMI QuickButtonSetup  -->
 	<screen name="ButtonSetup" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenericaRG"/>
+		<panel name="PantallaGenerica_sRG"/>
+        <panel name="sRG"/>		
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>		
@@ -6040,7 +6041,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- EGAMI Configuar Botones -->
 	<screen name="ButtonSetupSelect" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenericaRG"/>
+		<panel name="PantallaGenerica_sRG"/>
+        <panel name="sRG"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -6608,7 +6610,34 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="PantallaGenericaR"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
+        <panel name="PIG"/>	
+	</screen>
+	<screen name="VIXMenu" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaRexit"/>	
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
         <panel name="PIG"/>
-        <panel name="Logo_Egami"/>		
+		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
+		<widget source="menu" render="Listbox" position="69,145" zPosition="2" size="728,418" backgroundPixmap="Turquoise-HD/icons/butselection1.png" selectionPixmap="Turquoise-HD/icons/ls705x38.png" transparent="1" scrollbarMode="showAlways">
+			<convert type="TemplatedMultiContent">
+			    {"template": [ 
+			    MultiContentEntryText(pos = (51,2), size = (600,38), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	),
+			    MultiContentEntryPixmapAlphaBlend(pos = (20,2), size = (60,40), png = 2),
+			    ],
+			    "fonts": [gFont("Regular",28)],
+			    "itemHeight": 38
+			    }
+			</convert>
+		</widget>
+		<widget source="menu" render="Listbox" position="855,450" size="350,60" foregroundColor="#0000fafa" scrollbarMode="showNever" selectionDisabled="1" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+				MultiContentEntryText(pos = (0,0),size = (450,60),flags = RT_HALIGN_LEFT|RT_VALIGN_BOTTOM|RT_WRAP,text = 2),# index 0 is the MenuText,
+				],
+				"fonts": [gFont("Regular",20)],
+				"itemHeight": 60
+				}
+			</convert>
+		</widget>
 	</screen>	
 </skin>
