@@ -760,11 +760,11 @@
 
     <!-- digital clock -->
 	<!-- current time -->	
-		<widget source="global.CurrentTime" render="Label" position="640,20" size="350,25" halign="right" font="LCD;24" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1">
+		<widget source="global.CurrentTime" render="Label" position="640,25" size="350,25" halign="right" font="LCD;24" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1">
 		    <convert type="ClockToText">Date</convert>
 		</widget>
-		<ePixmap pixmap="icons/clock.png" position="1195,53" zPosition="1" size="20,20" alphatest="blend"/>
-		<widget source="global.CurrentTime" render="Label" position="1055,20" size="160,25" zPosition="2" font="LCD;24" halign="center" foregroundColor="#004ccbde" backgroundColor="#00040404" transparent="1">
+		<ePixmap pixmap="icons/clock.png" position="1195,35" zPosition="1" size="20,20" alphatest="blend"/>
+		<widget source="global.CurrentTime" render="Label" position="1055,25" size="160,25" zPosition="2" font="LCD;24" halign="center" foregroundColor="#004ccbde" backgroundColor="#00040404" transparent="1">
             <convert type="ClockToText">Format:%H:%M :%S</convert>
         </widget>
 		
@@ -824,11 +824,12 @@
 	    <panel name="Title"/>
 	<!-- background -->
 		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="Turquoise-HD/menu/fr_main_help.png"/>
-	    <widget source="global.CurrentTime" render="Label" position="975,35" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00040404" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="640,25" size="350,25" halign="right" font="LCD;24" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1">
+		    <convert type="ClockToText">Date</convert>
+		</widget>
+		<ePixmap pixmap="icons/clock.png" position="1195,35" zPosition="1" size="20,20" alphatest="blend"/>
+		<widget source="global.CurrentTime" render="Label" position="1055,25" size="160,25" zPosition="2" font="LCD;24" halign="center" foregroundColor="#004ccbde" backgroundColor="#00040404" transparent="1">
             <convert type="ClockToText">Format:%H:%M :%S</convert>
-        </widget>
-		<widget source="global.CurrentTime" render="Label" position="500,35" size="560,35" zPosition="2" font="LCD;35" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00040404" transparent="1">
-            <convert type="ClockToText">Format:%a %d/%m/%y</convert>
         </widget>
 	<!-- title -->
 		<!--ePixmap position="500,0" zPosition="1" size="230,69" pixmap="menu/tx_help.png"/-->
@@ -1688,8 +1689,8 @@
 		<widget source="session.Event_Now" render="Progress" position="885,455" size="340,8" foregroundColor="#004ccbde" transparent="1" borderWidth="1" zPosition="6">
 			<convert type="BTVCpuUsage">$0</convert>
 		</widget>
-        <widget source="session.CurrentService" render="Label" position="885,460" size="450,26" halign="left" valign="center" font="Regular;13" transparent="1" backgroundColor="background" zPosition="6">
-			<convert type="BTVCpuUsage">CPU En Uso:$0 (Core #1: $1, Core #2: $2)</convert>
+        <widget source="session.CurrentService" render="Label" position="885,460" size="325,50" halign="left" valign="center" font="Regular;13" transparent="1" backgroundColor="background" zPosition="6">
+			<convert type="BTVCpuUsage">CPU En Uso:$0 (Core #1: $1 Core #2: $2 Core #3: $3 Core #4: $4)</convert>
 		</widget>
         <ePixmap position="835,495" zPosition="2" size="40,40" pixmap="icons/flash.png" alphatest="blend"/>
 		<widget source="session.Event_Now" render="Progress" position="885,510" size="340,8" foregroundColor="#004ccbde" transparent="1" borderWidth="1" zPosition="6">
