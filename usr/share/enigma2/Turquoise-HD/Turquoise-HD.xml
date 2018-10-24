@@ -5170,11 +5170,12 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- ####### MoviePlayer Standard Reproductor ####### -->
 	<screen name="MoviePlayer" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent2" flags="wfNoBorder">
-		<widget name="statusicon" position="10,2" zPosition="3" size="0,0" alphatest="blend" transparent="0" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png"/>
-		<widget name="speed" position="35,3" size="80,20" font="xRegular;17" halign="left" foregroundColor="#0000fafa" backgroundColor="black" transparent="1" zPosition="4"/>
-		<widget name="state" position="10,2" size="0,0" font="xRegular;17" halign="left" foregroundColor="#0000fafa" backgroundColor="black" transparent="1" zPosition="0"/>
-		<widget name="eventname" position="370,70" size="0,0" font="xRegular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="2"/>
-		<ePixmap position="0,500" zPosition="-1" size="1280,218" pixmap="Turquoise-HD/moviebar.png"/>	
+		<ePixmap position="0,500" zPosition="-1" size="1280,218" pixmap="Turquoise-HD/moviebar.png"/>
+		<eLabel position="270,521" size="50,25" backgroundColor="black" zPosition="0"/>		
+		<widget name="statusicon" position="275,523" zPosition="1" backgroundColor="black" size="50,55" alphatest="blend" transparent="0" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png"/>
+		<widget name="speed" position="305,521" size="80,25" font="xRegular;17" halign="left" foregroundColor="#0000fafa" backgroundColor="black" transparent="0" zPosition="1"/>
+		<widget name="state" position="250,520" size="0,0" font="xRegular;17" halign="left" foregroundColor="#0000fafa" backgroundColor="black" transparent="0" zPosition="0"/>
+		<widget name="eventname" position="370,70" size="0,0" font="xRegular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="2"/>	
 		<widget source="global.CurrentTime" render="Label" position="1050,570" size="130,24" zPosition="2" font="LCD;24" valign="top" halign="right" foregroundColor="#00a1d1ff" backgroundColor="#00232525" transparent="1">
 			<convert type="ClockToText">Format:%d/%m/%y</convert>
 		</widget>
