@@ -4314,14 +4314,14 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
         <!--panel name="Logo_Egami"/-->		
 		<ePixmap pixmap="icons/key_ok.png" position="10,680" size="40,22" alphatest="blend"/>
-  		<widget source="menu" render="Listbox" position="80,140" size="718,440" scrollbarMode="showOnDemand" selectionPixmap="Turquoise-HD/icons/ls705x110.png" backgroundColor="black" transparent="1" zPosition="-1">
+  		<widget source="menu" render="Listbox" position="80,140" size="718,440" scrollbarMode="showOnDemand" selectionPixmap="Turquoise-HD/icons/ls700x110.png" backgroundColor="black" transparent="1" zPosition="-1">
   		    <convert type="TemplatedMultiContent">
                 {"template": [
 				MultiContentEntryText(pos = (80, 0), size = (10, 60), font = 2, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
-				MultiContentEntryText(pos = (100, 0), size = (280, 21), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x0000baff),
-				MultiContentEntryText(pos = (335, 3), size = (60, 21), font = 1, flags = RT_HALIGN_RIGHT | RT_VALIGN_TOP, text = 7, color = 0x006da6ff),						
-				MultiContentEntryText(pos = (100, 20), size = (560, 22), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x006da6ff, color_sel = 0x006da6ff),
-				MultiContentEntryText(pos = (405, 2), size = (280, 17), font = 3, flags = RT_HALIGN_LEFT, text = 5, color = 0x00ffffff, color_sel = 0x006da6ff),
+				MultiContentEntryText(pos = (100, 10), size = (280, 21), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x0000baff),
+				MultiContentEntryText(pos = (300, 15), size = (60, 15), font = 1, flags = RT_HALIGN_RIGHT | RT_VALIGN_TOP, text = 7, color = 0x006da6ff),						
+				MultiContentEntryText(pos = (390, 20), size = (560, 22), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x006da6ff, color_sel = 0x006da6ff),
+				MultiContentEntryText(pos = (390, 8), size = (280, 15), font = 3, flags = RT_HALIGN_LEFT, text = 5, color = 0x00ffffff, color_sel = 0x006da6ff),
 				MultiContentEntryText(pos = (100, 40), size = (593, 67), font = 3, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00a1d1ff, color_sel = 0x00ffffff),
 				MultiContentEntryPixmapAlphaBlend(pos=(0, 25), size=(83, 50), png=6, flags = BT_SCALE)
 				],
