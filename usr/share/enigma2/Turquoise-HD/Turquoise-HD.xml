@@ -2608,14 +2608,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- ####### TEMPORIZADORES + TEMPORIZADORES DE ALIMENTACION (no panel PantallaGenericaRGYB) ####### -->
 	<screen name="TimerEditList" position="0,0" size="1280,720" title="Timer Editor" backgroundColor="black" flags="wfNoBorder">
-		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
-	<!-- 4 botones -->
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
-	<!-- buttons text widgets -->
-		<widget name="key_red" position="5,625" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget name="key_green" position="205,625" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget name="key_yellow" position="380,618" size="300,50" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget name="key_blue" position="605,625" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<panel name="PantallaGenericaRGY"/>
+		<panel name="sRGY"/>		
 		<panel name="ScrollBarTemplate"/>
 		<panel name="Title"/>
 		<panel name="PIG"/>
@@ -3315,7 +3309,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
             <convert type="ClockToText">Format:%d.%m.%Y</convert>
         </widget>
     <!-- Nombre del Canal - Service Name -->
-        <widget source="session.CurrentService" render="Label" position="350,521" size="563,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="0" foregroundColor="#004ccbde" backgroundColor="background">
+        <widget source="session.CurrentService" render="Label" position="350,521" size="563,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="#004ccbde" backgroundColor="background">
             <convert type="ServiceName">Name</convert>
         </widget>
 		<widget font="Regular;24" halign="left" position="317,592" render="Label" noWrap="1" size="620,29" source="session.Event_Now" foregroundColor="#0077d8e6" backgroundColor="background" transparent="1" zPosition="2">
