@@ -190,11 +190,11 @@
 			picServiceEventProgressbar="Turquoise-HD/pl.png" selectionPixmap="Turquoise-HD/icons/ls715x30.png" transparent="1" 
 			foregroundColorEventSelected="#a1d1ff"/>			
 	<!-- current event start, end and progress -->
-		<widget source="ServiceEvent" render="Label" position="840,190" size="67,27" zPosition="2" halign="left" font="Regular;15" noWrap="1" transparent="1" foregroundColor="#0000fafa" backgroundColor="background">
+		<widget source="ServiceEvent" render="Label" position="840,188" size="67,27" zPosition="2" halign="left" font="Regular;15" noWrap="1" transparent="1" foregroundColor="#0000fafa" backgroundColor="background">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="883,190" zPosition="1" size="75,27" font="Regular;15" halign="left" noWrap="1" transparent="1" foregroundColor="#0000fafa" backgroundColor="background">
+		<widget source="ServiceEvent" render="Label" position="883,188" zPosition="1" size="75,27" font="Regular;15" halign="left" noWrap="1" transparent="1" foregroundColor="#0000fafa" backgroundColor="background">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:-%H:%M</convert>
 		</widget>		
@@ -205,54 +205,180 @@
         <widget source="session.Event_Now" render="Progress" pixmap="Turquoise-HD/tv_b_bar.png" size="340,2" position="837,439" zPosition="5" backgroundColor="darkgrey" transparent="1">
             <convert type="EventTime">Progress</convert>
         </widget>	
-		<widget source="ServiceEvent" render="Label" position="833,54" size="393,25" zPosition="2" halign="center" font="Regular;19" foregroundColor="#004ccbde" transparent="1" backgroundColor="#00333333">
+		<widget source="ServiceEvent" render="RunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" position="833,54" size="393,25" zPosition="2" halign="center" font="Regular;19" foregroundColor="#004ccbde" transparent="0" backgroundColor="background">
 			<convert type="EventName">Name</convert>
 		</widget>
     <!--widget source="ServiceEvent" render="SingleEpgList" position="840,500" size="387,200" font="Regular;16" halign="left" transparent="1" foregroundColor="#0000baff" backgroundColor="background" zPosition="2" noWrap="1" valign="top"/-->
-     	<widget source="ServiceEvent" render="Label" position="838,449" size="385,21" font="Regular;16" foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
+    	<widget source="ServiceEvent" render="DRRunningText" position="838,449" size="385,21" font="Regular;16" 
+    	options="movetype=running,
+		repeat=2,				
+		startpoint=0,
+		startdelay=1000,
+		oneshot=2000,step=1,
+		steptime=12,
+		always=0,
+		noWrap" 
+		foregroundColor="#0000baff" backgroundColor="background" transparent="0" zPosition="2">
     	<convert type="BTVRunning14Events">Event1,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="Label" position="838,467" size="385,21" font="Regular;16" foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
+    	<widget source="ServiceEvent" render="DRRunningText" position="838,467" size="385,21" font="Regular;16" 
+    	options="movetype=running,
+		repeat=2,				
+		startpoint=0,
+		startdelay=5000,
+		oneshot=2000,step=1,
+		steptime=14,
+		always=0,
+		noWrap" 
+		foregroundColor="#0000baff" backgroundColor="background" transparent="0" zPosition="2">
     	<convert type="BTVRunning14Events">Event2,onlyStart</convert>
     	</widget>	
-    	<widget source="ServiceEvent" render="Label" position="838,485" size="385,21" font="Regular;16" foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
+    	<widget source="ServiceEvent" render="DRRunningText" position="838,485" size="385,21" font="Regular;16" 
+    	options="movetype=running,
+		repeat=2,				
+		startpoint=0,
+		startdelay=10000,
+		oneshot=2000,step=1,
+		steptime=12,
+		always=0,
+		noWrap" 
+		foregroundColor="#0000baff" backgroundColor="background" transparent="0" zPosition="2">
     	<convert type="BTVRunning14Events">Event3,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="Label" position="838,503" size="385,21" font="Regular;16" foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
+    	<widget source="ServiceEvent" render="DRRunningText" position="838,503" size="385,21" font="Regular;16" 
+    	options="movetype=running,
+		repeat=2,				
+		startpoint=0,
+		startdelay=15000,
+		oneshot=2000,step=1,
+		steptime=14,
+		always=0,
+		noWrap" 
+		foregroundColor="#0000baff" backgroundColor="background" transparent="0" zPosition="2">
     	<convert type="BTVRunning14Events">Event4,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="Label" position="838,521" size="385,21" font="Regular;16" foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
+    	<widget source="ServiceEvent" render="DRRunningText" position="838,521" size="385,21" font="Regular;16" 
+    	options="movetype=running,
+		repeat=2,				
+		startpoint=0,
+		startdelay=20000,
+		oneshot=2000,step=1,
+		steptime=20,
+		always=0,
+		noWrap" 
+		foregroundColor="#0000baff" backgroundColor="background" transparent="0" zPosition="2">
     	<convert type="BTVRunning14Events">Event5,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="Label" position="838,539" size="385,21" font="Regular;16" foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
+    	<widget source="ServiceEvent" render="DRRunningText" position="838,539" size="385,21" font="Regular;16" 
+    	options="movetype=running,
+		repeat=2,				
+		startpoint=0,
+		startdelay=25000,
+		oneshot=2000,step=1,
+		steptime=22,
+		always=0,
+		noWrap" 
+		foregroundColor="#0000baff" backgroundColor="background" transparent="0" zPosition="2">
     	<convert type="BTVRunning14Events">Event6,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="Label" position="838,557" size="385,21" font="Regular;16" foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
+    	<widget source="ServiceEvent" render="DRRunningText" position="838,557" size="385,21" font="Regular;16" 
+    	options="movetype=running,
+		repeat=2,				
+		startpoint=0,
+		startdelay=32000,
+		oneshot=2000,step=1,
+		steptime=24,
+		always=0,
+		noWrap" 
+		foregroundColor="#0000baff" backgroundColor="background" transparent="0" zPosition="2">
     	<convert type="BTVRunning14Events">Event7,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="Label" position="838,575" size="385,21" font="Regular;16" foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
+    	<widget source="ServiceEvent" render="DRRunningText" position="838,575" size="385,21" font="Regular;16" 
+    	options="movetype=running,
+		repeat=2,			
+		startpoint=0,
+		startdelay=39000,
+		oneshot=2000,step=1,
+		steptime=26,
+		always=0,
+		noWrap" 
+		foregroundColor="#0000baff" backgroundColor="background" transparent="0" zPosition="2">
     	<convert type="BTVRunning14Events">Event8,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="Label" position="838,593" size="385,21" font="Regular;16" foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
+    	<widget source="ServiceEvent" render="DRRunningText" position="838,593" size="385,21" font="Regular;16" 
+    	options="movetype=running,
+		repeat=2,			
+		startpoint=0,
+		startdelay=46000,
+		oneshot=2000,step=1,
+		steptime=28,
+		always=0,
+		noWrap" 
+		foregroundColor="#0000baff" backgroundColor="background" transparent="0" zPosition="2">
     	<convert type="BTVRunning14Events">Event9,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="Label" position="838,610" size="385,21" font="Regular;16" foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
+    	<widget source="ServiceEvent" render="DRRunningText" position="838,610" size="385,21" font="Regular;16" 
+    	options="movetype=running,
+		repeat=2,	
+		startpoint=0,
+		startdelay=50000,
+		oneshot=2000,step=1,
+		steptime=30,
+		always=0,
+		noWrap" 
+		foregroundColor="#0000baff" backgroundColor="background" transparent="0" zPosition="2">
     	<convert type="BTVRunning14Events">Event10,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="Label" position="838,628" size="385,21" font="Regular;16" foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
+    	<widget source="ServiceEvent" render="DRRunningText" position="838,628" size="385,21" font="Regular;16" 
+    	options="movetype=running,
+		repeat=2,			
+		startpoint=0,
+		startdelay=57000,
+		oneshot=2000,step=1,
+		steptime=32,
+		always=0,
+		noWrap" 
+		foregroundColor="#0000baff" backgroundColor="background" transparent="0" zPosition="2">
     	<convert type="BTVRunning14Events">Event11,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="Label" position="838,646" size="385,21" font="Regular;16" foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
+    	<widget source="ServiceEvent" render="DRRunningText" position="838,646" size="385,21" font="Regular;16" 
+    	options="movetype=running,
+		repeat=2,			
+		startpoint=0,
+		startdelay=64000,
+		oneshot=2000,step=1,
+		steptime=32,
+		always=0,
+		noWrap" 
+		foregroundColor="#0000baff" backgroundColor="background" transparent="0" zPosition="2">
     	<convert type="BTVRunning14Events">Event12,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="Label" position="838,664" size="385,21" font="Regular;16" foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
+    	<widget source="ServiceEvent" render="DRRunningText" position="838,664" size="385,21" font="Regular;16" 
+    	options="movetype=running,
+		repeat=2,			
+		startpoint=0,
+		startdelay=71000,
+		oneshot=2000,step=1,
+		steptime=32,
+		always=0,
+		noWrap" 
+		foregroundColor="#0000baff" backgroundColor="background" transparent="0" zPosition="2">
     	<convert type="BTVRunning14Events">Event13,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="Label" position="838,682" size="385,21" font="Regular;16" foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
+    	<widget source="ServiceEvent" render="DRRunningText" position="838,682" size="385,18" font="Regular;16" 
+    	options="movetype=running,
+		repeat=2,			
+		startpoint=0,
+		startdelay=78000,
+		oneshot=2000,step=1,
+		steptime=32,
+		always=0,
+		noWrap" 
+		foregroundColor="#0000baff" backgroundColor="background" transparent="0" zPosition="2">
     	<convert type="BTVRunning14Events">Event14,onlyStart</convert>
     	</widget>
 	<!-- epg descripcion -->
-		<widget source="ServiceEvent" render="Label" position="833,78" size="393,105" zPosition="2" font="Regular;18" halign="center" valign="center" foregroundColor="grey" backgroundColor="background" transparent="1">
+		<widget source="ServiceEvent" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="833,78" size="393,105" zPosition="2" font="Regular;18" halign="center" valign="center" foregroundColor="grey" backgroundColor="background" transparent="0">
 		    <convert type="EventName">ExtendedDescription</convert>
 		</widget>				
 	<!-- digital clock -->
@@ -423,7 +549,7 @@
 		<ePixmap pixmap="icons/key_menu1.png" position="690,680" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_info.png" position="735,680" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_help.png" position="780,680" size="40,22" alphatest="blend"/>
-		<widget source="Event" render="Label" position="843,390" size="383,25" valign="center" halign="center" font="Regular;19" foregroundColor="#004ccbde" transparent="1" backgroundColor="#00333333">
+		<widget source="Event" render="RunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" position="843,390" size="383,25" valign="center" halign="center" font="Regular;19" foregroundColor="#004ccbde" transparent="1" backgroundColor="#00333333">
 			<convert type="EventName">Name</convert>
 		</widget>		
 		<widget source="Event" render="Label" position="843,420" size="380,210" font="Regular;18" halign="center" foregroundColor="grey" backgroundColor="#00333333" transparent="1">
@@ -454,7 +580,7 @@
 		<ePixmap pixmap="icons/key_menu1.png" position="690,680" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_info.png" position="735,680" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_help.png" position="780,680" size="40,22" alphatest="blend"/>
-		<widget source="Event" render="Label" position="843,390" size="383,25" valign="center" halign="center" font="Regular;19" foregroundColor="#004ccbde" transparent="1" backgroundColor="#00333333">
+		<widget source="Event" render="RunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" position="843,390" size="383,25" valign="center" halign="center" font="Regular;19" foregroundColor="#004ccbde" transparent="1" backgroundColor="#00333333">
 			<convert type="EventName">Name</convert>
 		</widget>		
 		<widget source="Event" render="Label" position="843,420" size="380,210" font="Regular;18" valign="center" halign="center" foregroundColor="grey" backgroundColor="#00333333" transparent="1">
@@ -497,31 +623,31 @@
             <convert type="ClockToText">Format:%H:%M :%S</convert>
         </widget>
 		<widget source="Title" render="Label" position="40,15" size="400,43" font="Regular;32" transparent="1" foregroundColor="#004ccbde" backgroundColor="black" zPosition="1"/>
-		<widget source="Event" render="Label" position="450,95" size="100,28" font="Regular;20" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1">
+		<widget source="Event" render="Label" position="180,225" size="100,28" font="Regular;20" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1">
 		    <convert type="EventTime">StartTime</convert>
 		    <convert type="ClockToText">Format:%H:%M </convert>
-		</widget>	
-		<widget  source="Event" render="Label" position="720,95" size="80,28" font="Regular;20" halign="right" foregroundColor="#00a1d1ff" backgroundColor="black" transparent="1">
+		</widget>
+		<eLabel position="180,246" size="350,2" backgroundColor="grey"/>
+		<widget source="Event" render="Progress" pixmap="Turquoise-HD/tv_b_bar.png" position="180,246" size="350,3" backgroundColor="grey" borderWidth="0" transparent="1" zPosition="1">
+			<convert type="EventTime">Progress</convert>
+		</widget>
+		<widget  source="Event" render="Label" position="450,225" size="80,28" font="Regular;20" halign="right" foregroundColor="#00a1d1ff" backgroundColor="black" transparent="1">
 		    <convert type="EventTime">EndTime</convert>
 		    <convert type="ClockToText">Format:%H:%M</convert>
-		</widget>
-		<widget source="Event" render="Label" position="830,100" size="350,20" font="Regular;18" foregroundColor="#0000baff" backgroundColor="black" transparent="1">
+		</widget>		
+		<widget source="Event" render="Label" position="600,227" size="350,20" font="Regular;18" foregroundColor="#0000baff" backgroundColor="black" transparent="1">
 		    <convert type="EventTime">StartTime</convert>
 		    <convert type="ClockToText">Format:%a %d/%m/%y</convert>
 		</widget>			
-		<eLabel position="450,115" size="350,2" backgroundColor="grey"/>
-		<widget source="Event" render="Progress" pixmap="Turquoise-HD/tv_b_bar.png" position="450,115" size="350,3" backgroundColor="grey" borderWidth="0" transparent="1" zPosition="1">
-			<convert type="EventTime">Progress</convert>
-		</widget>			
 	<!--panel name="FullscreenTitlePanel" /-->
-		<ePixmap pixmap="buttons/key_8_epg.png" position="815,55" size="35,15" alphatest="blend" zPosition="2"/>
-		<widget name="page" position="855,55" size="200,25" font="Regular;15" foregroundColor="#0000baff" backgroundColor="black" transparent="1"/>
-		<ePixmap pixmap="buttons/key_9_epg.png" position="1020,55" size="35,15" alphatest="blend" zPosition="2"/>
-		<widget name="primetime" position="1060,55" size="250,25" font="Regular;15" foregroundColor="#0000baff" backgroundColor="black" transparent="1"/>
-		<ePixmap pixmap="buttons/key_prev_next.png" position="815,75" size="35,15" alphatest="blend" zPosition="2"/>
-		<widget name="change_bouquet" position="855,75" size="200,25" font="Regular;15" foregroundColor="#0000baff" backgroundColor="black" transparent="1"/>
-		<ePixmap pixmap="buttons/key_ch.png" position="1020,75" size="35,15" alphatest="blend" zPosition="2"/>
-		<widget name="jump" position="1060,75" size="200,25" font="Regular;15" foregroundColor="#0000baff" backgroundColor="black" transparent="1"/>
+		<eLabel text="8" position="300,55" size="10,17" backgroundColor="black" zPosition="1" transparent="1" font="Regular;17" halign="left"/>
+		<widget name="page" position="330,55" size="200,25" font="Regular;15" foregroundColor="#0000baff" backgroundColor="black" transparent="1"/>
+		<eLabel text="9" position="530,55" size="10,17" backgroundColor="black" zPosition="1" transparent="1" font="Regular;17" halign="left"/>
+		<widget name="primetime" position="560,55" size="250,25" font="Regular;15" foregroundColor="#0000baff" backgroundColor="black" transparent="1"/>
+		<eLabel text="PREV NEXT" position="300,75" size="80,17" backgroundColor="black" zPosition="1" transparent="1" font="Regular;14" halign="left"/>
+		<widget name="change_bouquet" position="380,75" size="200,25" font="Regular;15" foregroundColor="#0000baff" backgroundColor="black" transparent="1"/>
+		<eLabel text="C H" position="530,75" size="25,17" backgroundColor="black" zPosition="1" transparent="1" font="Regular;14" halign="left"/>
+		<widget name="jump" position="560,75" size="200,25" font="Regular;15" foregroundColor="#0000baff" backgroundColor="black" transparent="1"/>
 		<widget name="number" position="0,193" size="100,25" foregroundColor="#004ccbde" transparent="1"/>
 		<widget name="lab1" position="0,70" size="1280,615" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0"/>
 		<widget name="timeline_text" position="90,130" size="1280,35" backgroundColor="black" foregroundColor="#004ccbde" transparent="1" zPosition="0"/>
@@ -561,34 +687,34 @@
             <convert type="ClockToText">Format:%H:%M :%S</convert>
         </widget>
 		<widget source="Title" render="Label" position="40,15" size="400,43" font="Regular;32" transparent="1" foregroundColor="#004ccbde" backgroundColor="black" zPosition="1"/>		
-		<widget source="Event" render="Label" position="180,69" size="100,28" font="Regular;20" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1">
+		<widget source="Event" render="Label" position="180,225" size="100,28" font="Regular;20" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1">
 		    <convert type="EventTime">StartTime</convert>
 		    <convert type="ClockToText">Format:%H:%M </convert>
 		</widget>
-		<eLabel position="180,90" size="350,2" backgroundColor="grey"/>
-		<widget source="Event" render="Progress" pixmap="Turquoise-HD/tv_b_bar.png" position="180,90" size="350,3" backgroundColor="grey" borderWidth="0" transparent="1" zPosition="1">
+		<eLabel position="180,246" size="350,2" backgroundColor="grey"/>
+		<widget source="Event" render="Progress" pixmap="Turquoise-HD/tv_b_bar.png" position="180,246" size="350,3" backgroundColor="grey" borderWidth="0" transparent="1" zPosition="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-		<widget  source="Event" render="Label" position="450,69" size="80,28" font="Regular;20" halign="right" foregroundColor="#00a1d1ff" backgroundColor="black" transparent="1">
+		<widget  source="Event" render="Label" position="450,225" size="80,28" font="Regular;20" halign="right" foregroundColor="#00a1d1ff" backgroundColor="black" transparent="1">
 		    <convert type="EventTime">EndTime</convert>
 		    <convert type="ClockToText">Format:%H:%M</convert>
 		</widget>		
-		<widget source="Event" render="Label" position="600,74" size="350,20" font="Regular;18" foregroundColor="#0000baff" backgroundColor="black" transparent="1">
+		<widget source="Event" render="Label" position="600,227" size="350,20" font="Regular;18" foregroundColor="#0000baff" backgroundColor="black" transparent="1">
 		    <convert type="EventTime">StartTime</convert>
 		    <convert type="ClockToText">Format:%a %d/%m/%y</convert>
 		</widget>		
-		<widget source="Event" render="Label" position="90,35" size="750,250" zPosition="2" font="Regular;17" halign="center" valign="center" foregroundColor="#00a1d1ff" backgroundColor="background" transparent="1">
+		<widget source="Event" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="150,105" size="690,115" zPosition="2" font="Regular;17" halign="center" valign="center" foregroundColor="#00a1d1ff" backgroundColor="black" transparent="0">
 		     <convert type="EventName">ExtendedDescription</convert>
 		</widget>	
 	<!--panel name="FullscreenTitlePanel" /-->
-		<ePixmap pixmap="buttons/key_8_epg.png" position="815,55" size="35,15" alphatest="blend" zPosition="2"/>
-		<widget name="page" position="855,55" size="200,25" font="Regular;15" foregroundColor="#0000baff" backgroundColor="black" transparent="1"/>
-		<ePixmap pixmap="buttons/key_9_epg.png" position="1020,55" size="35,15" alphatest="blend" zPosition="2"/>
-		<widget name="primetime" position="1060,55" size="250,25" font="Regular;15" foregroundColor="#0000baff" backgroundColor="black" transparent="1"/>
-		<ePixmap pixmap="buttons/key_prev_next.png" position="815,75" size="35,15" alphatest="blend" zPosition="2"/>
-		<widget name="change_bouquet" position="855,75" size="200,25" font="Regular;15" foregroundColor="#0000baff" backgroundColor="black" transparent="1"/>
-		<ePixmap pixmap="buttons/key_ch.png" position="1020,75" size="35,15" alphatest="blend" zPosition="2"/>
-		<widget name="jump" position="1060,75" size="200,25" font="Regular;15" foregroundColor="#0000baff" backgroundColor="black" transparent="1"/>
+		<eLabel text="8" position="300,55" size="10,17" backgroundColor="black" zPosition="1" transparent="1" font="Regular;17" halign="left"/>
+		<widget name="page" position="330,55" size="200,25" font="Regular;15" foregroundColor="#0000baff" backgroundColor="black" transparent="1"/>
+		<eLabel text="9" position="530,55" size="10,17" backgroundColor="black" zPosition="1" transparent="1" font="Regular;17" halign="left"/>
+		<widget name="primetime" position="560,55" size="250,25" font="Regular;15" foregroundColor="#0000baff" backgroundColor="black" transparent="1"/>
+		<eLabel text="PREV NEXT" position="300,75" size="80,17" backgroundColor="black" zPosition="1" transparent="1" font="Regular;14" halign="left"/>
+		<widget name="change_bouquet" position="380,75" size="200,25" font="Regular;15" foregroundColor="#0000baff" backgroundColor="black" transparent="1"/>
+		<eLabel text="C H" position="530,75" size="25,17" backgroundColor="black" zPosition="1" transparent="1" font="Regular;14" halign="left"/>
+		<widget name="jump" position="560,75" size="200,25" font="Regular;15" foregroundColor="#0000baff" backgroundColor="black" transparent="1"/>
 		<widget name="number" position="0,193" size="100,25" foregroundColor="#004ccbde" transparent="1"/>
 		<widget name="lab1" position="0,70" size="1280,615" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0"/>
 		<eLabel position="840,100" size="2,158" backgroundColor="#004ccbde" zPosition="3"/>
@@ -2379,13 +2505,14 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- (071) ####### SKIN SELECTOR ####### (15-02) -->
 	<screen name="SkinSelector" position="0,0" size="1280,720" flags="wfNoBorder">
-        <panel name="PantallaPieTV"/>		
-		<ePixmap position="57,625" zPosition="1" size="151,38" pixmap="Turquoise-HD/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
-		<widget name="SkinList" position="87,147" size="677,388" scrollbarMode="showOnDemand" selectionPixmap="Turquoise-HD/icons/ls680x28.png" transparent="1"/>
-		<widget name="Preview" position="836,112" size="387,221" alphatest="on" zPosition="5"/>	
-		<widget source="key_red" render="Label" position="9,625" size="250,40" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1"/>
+		<panel name="PantallaGenerica_sR"/>
+		<panel name="sR"/>		
+        <panel name="PIG"/>
+        <panel name="Title"/>
+		<panel name="ScrollBarTemplate"/>
+		<widget name="SkinList" position="87,147" size="677,388" scrollbarMode="showOnDemand" selectionPixmap="btvadriatico/icons/ls680x28.png" transparent="1"/>
+		<widget name="Preview" position="838,388" size="385,240" alphatest="on" zPosition="5"/>
 		<ePixmap pixmap="icons/key_info.png" position="8,640" size="40,22" alphatest="blend"/>		
-        <ePixmap pixmap="icons/key_info2.png" position="370,450" size="74,36" zPosition="2" alphatest="blend"/>		
 	    <widget source="introduction" render="Label" position="169,500" size="600,28" zPosition="10" font="Regular;24" halign="left" valign="center" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1"/>	
 	</screen>
 	<!-- (072) ####### AÑADIR DE LISTA DE CANALES UN CANAL PARA AUTOTEMPORIZADOR (eventos en amarillo) ####### -->
@@ -3192,10 +3319,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
             <convert type="ClockToText">Format:%d.%m.%Y</convert>
         </widget>
     <!-- Nombre del Canal - Service Name -->
-        <widget source="session.CurrentService" render="Label" position="350,521" size="563,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="#004ccbde" backgroundColor="background">
+        <widget source="session.CurrentService" render="Label" position="350,521" size="563,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="0" foregroundColor="#004ccbde" backgroundColor="background">
             <convert type="ServiceName">Name</convert>
         </widget>
-		<widget font="Regular;24" halign="left" position="317,592" render="Label" noWrap="1" size="620,29" source="session.Event_Now" foregroundColor="#0077d8e6" backgroundColor="#00333333" transparent="1" zPosition="2">
+		<widget font="Regular;24" halign="left" position="317,592" render="Label" noWrap="1" size="620,29" source="session.Event_Now" foregroundColor="#0077d8e6" backgroundColor="background" transparent="1" zPosition="2">
 		    <convert type="EventName">Name</convert>
 	    </widget>	
     <!-- Evento Corrente - Event Now -->
@@ -3212,7 +3339,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
             <convert type="EventTime">StartTime</convert>
             <convert type="ClockToText">Default</convert>
         </widget>
-		<widget font="Regular;24" halign="left" noWrap="1" position="317,640" render="Label" size="625,29" source="session.Event_Next" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1" zPosition="2">
+		<widget font="Regular;24" halign="left" noWrap="1" position="317,640" render="Label" size="625,29" source="session.Event_Next" foregroundColor="#00a1d1ff" backgroundColor="background" transparent="1" zPosition="2">
 		    <convert type="EventName">Name</convert>
 	    </widget>	
         <widget source="session.Event_Next" render="Label" position="957,640" size="89,28" zPosition="2" halign="right" font="Regular;22" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
@@ -3428,10 +3555,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		transparent="1">   
  	    <convert type="PliExtraInfo">TransponderModulation</convert>
 	    </widget>
-	    <widget source="session.CurrentService" render="Label" position="480,687" size="250,24" font="Regular;15" valign="top" halign="right" foregroundColor="#00a1d1ff" backgroundColor="#11404040" transparent="1" zPosition="5">
+	    <widget source="session.CurrentService" render="Label" position="480,685" size="250,24" font="Regular;15" valign="top" halign="right" foregroundColor="#00a1d1ff" backgroundColor="#11404040" transparent="1" zPosition="5">
  		    <convert type="PliExtraInfo">CryptoSpecial</convert>
  	    </widget>
-	    <widget source="session.CurrentService" render="Label" position="740,687" size="400,60" font="Regular;14" valign="top" halign="left" foregroundColor="#004ccbde" backgroundColor="#11404040" transparent="1" zPosition="5">
+	    <widget source="session.CurrentService" render="Label" position="740,685" size="400,60" font="Regular;14" valign="top" halign="left" foregroundColor="#004ccbde" backgroundColor="#11404040" transparent="1" zPosition="5">
 		    <convert type="CryptoInfo">VerboseInfo</convert>
 	    </widget>
     </screen>
@@ -3718,7 +3845,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
   	    <widget source="session.Event_Now" render="Label" position="65,60" size="70,24" font="Regular;22" halign="left" noWrap="1" foregroundColor="#00a1d1ff" backgroundColor="background" transparent="1" zPosition="1">
 		    <convert type="EventName">NameNow</convert>
 		</widget>
-		<widget font="Regular;22" halign="left" valign="center" noWrap="1" position="140,60" render="Label" size="465,24" source="session.Event_Now" foregroundColor="#004ccbde" backgroundColor="background" transparent="1" zPosition="1">
+		<widget font="Regular;22" halign="left" valign="center" position="140,60" render="RunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" size="465,24" source="session.Event_Now" foregroundColor="#004ccbde" backgroundColor="background" transparent="0" zPosition="1">
 			<convert type="EventName">Name</convert>
 		</widget>		
 		<widget source="session.Event_Now" render="Label" position="95,100" size="70,35" font="Regular;22" foregroundColor="#004ccbde" backgroundColor="background" transparent="1" zPosition="1" halign="right" noWrap="1" valign="top">
@@ -3741,7 +3868,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="session.Event_Next" render="Label" position="645,60" size="102,24" font="Regular;22" halign="left" foregroundColor="#004ccbde" backgroundColor="background" noWrap="1" transparent="1" zPosition="1">
 		    <convert type="EventName">NameNext</convert>
 		</widget>
-		<widget font="Regular;22" halign="left" valign="center" noWrap="1" position="760,60" render="Label" size="415,24" source="session.Event_Next" foregroundColor="#00a1d1ff" backgroundColor="background" transparent="1" zPosition="1">
+		<widget font="Regular;22" halign="left" valign="center" position="760,60" render="RunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" size="415,24" source="session.Event_Next" foregroundColor="#00a1d1ff" backgroundColor="background" transparent="0" zPosition="1">
 			<convert type="EventName">Name</convert>
 		</widget>		
 		<widget source="session.Event_Next" render="Label" position="690,100" size="70,35" font="Regular;22" foregroundColor="#00a1d1ff" backgroundColor="background" transparent="1" zPosition="1" halign="right" noWrap="1" valign="top">
