@@ -530,7 +530,7 @@
 	<!-- image for colored buttons -->
 		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
 	<!-- events list -->
-		<widget name="list" position="60,138" size="745,425" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="list" position="60,138" size="737,425" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
 		<!--widget source="Service" render="PiconBg" position="690,15" size="104,63" zPosition="5" alphatest="blend" backgroundColor="#000c0d0e"/-->
 		<widget source="Service" render="Picon" position="692,16" size="100,60" zPosition="5" alphatest="blend" backgroundColor="#000c0d0e">
 			<convert type="ServiceName">Reference</convert>
@@ -562,7 +562,7 @@
 	<!-- image for colored buttons -->
 		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
 	<!-- events list -->
-		<widget name="list" position="70,138" size="721,400" scrollbarMode="showOnDemand" transparent="1" enableWrapAround="1"/>
+		<widget name="list" position="60,138" size="737,425" scrollbarMode="showOnDemand" transparent="1" enableWrapAround="1"/>
 		<!--widget source="Service" render="PiconBg" position="690,15" size="104,63" zPosition="5" alphatest="blend" backgroundColor="#000c0d0e"/-->
 		<widget source="Service" render="Picon" position="692,16" size="100,60" zPosition="5" alphatest="blend" backgroundColor="#000c0d0e">
 			<convert type="ServiceName">Reference</convert>
@@ -2231,7 +2231,7 @@
 		<widget name="ErrorPixmap" pixmap="icons/input_error.png" position="100,108" size="53,53" alphatest="on"/>
 		<widget name="QuestionPixmap" pixmap="icons/input_question.png" position="100,108" size="53,53" alphatest="on"/>
 		<widget name="InfoPixmap" pixmap="icons/input_info.png" position="100,108" size="53,53" alphatest="on"/>
-        <widget name="WarningPixmap" pixmap="icons/input_info.png" position="100,108" size="53,53" alphatest="on"/>		
+        <!--widget name="WarningPixmap" pixmap="icons/input_info.png" position="100,108" size="53,53" alphatest="on"/-->		
 		<widget name="list" position="110,90" size="480,375" scrollbarMode="showOnDemand" selectionPixmap="icons/ls550x26.png" transparent="1"/>
 		<applet type="onLayoutFinish">
 # this should be factored out into some helper code, but currently demonstrates applets.
