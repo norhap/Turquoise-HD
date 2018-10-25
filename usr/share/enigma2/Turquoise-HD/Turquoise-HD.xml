@@ -1295,7 +1295,8 @@
 		<panel name="PIG"/>
         <panel name="sRGY"/>		
         <panel name="PantallaGenerica_sRGY"/>
-		<panel name="ScrollBarTemplate"/>		
+		<panel name="ScrollBarTemplate"/>
+		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 		<widget name="AdapterInfo_OK" position="290,152" size="38,31" zPosition="2" pixmap="skin_default/icons/lock_on.png" alphatest="blend"/>
 		<widget name="Adaptertext" position="80,150" size="610,25" zPosition="1" font="Regular;22" foregroundColors="#0000fafa,#00ffffff" backgroundColor="black" transparent="1"/>
 		<widget name="Adapter" position="340,150" size="610,25" zPosition="1" font="Regular;22" foregroundColors="#0000fafa,#00ff0d0d,#00ffffff" backgroundColor="black" transparent="1"/>
@@ -1321,7 +1322,7 @@
 		<widget name="IPInfo_Text" position="580,300" size="318,50" zPosition="2" font="Regular;22" transparent="1" foregroundColors="#0000fafa,#0073c6ff,#00009a00" backgroundColor="black"/>
 		<widget name="DNSInfo" position="755,350" size="318,50" zPosition="1" pixmaps="skin_default/icons/lock_off.png,icons/lock_on.png" alphatest="blend"/>
 		<widget name="DNSInfo_Text" position="580,350" size="318,50" zPosition="2" font="Regular;22" transparent="1" foregroundColors="#0000fafa,#0073c6ff,#00009a00" backgroundColor="black"/>
-		<widget name="InfoText" position="125,345" size="585,300" zPosition="2" font="Regular;18" transparent="1" valign="center" halign="center" foregroundColor="#0000fafa" backgroundColor="black"/>
+		<widget name="InfoText" position="845,435" size="380,160" zPosition="2" font="Regular;16" transparent="1" valign="center" halign="center" foregroundColor="#0000fafa" backgroundColor="black"/>
 		<widget name="InfoTextBorder" position="120,340" size="595,310" zPosition="2"/>
 		<widget name="EditSettingsButton" pixmaps="menu/colorbarB.png,menu/colorbarB.png" alphatest="blend" position="660,634" size="140,30" zPosition="1"/>
 		<widget name="EditSettings_Text" position="655,610" size="150,50" valign="center" halign="center" zPosition="2" font="Regular;22" transparent="1" foregroundColors="#00ffffff,#00ffffff,#00ffffff" backgroundColor="black"/>
@@ -4803,8 +4804,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>		
 		<widget name="config" position="80,138" size="690,420" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
-		<widget name="status" position="845,370" size="380,160" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
-		<widget name="statusbar" position="845,405" size="380,160" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
+		<widget name="status" position="845,380" size="380,160" zPosition="10" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
+		<widget name="statusbar" position="845,445" size="380,160" zPosition="10" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 		<ePixmap pixmap="icons/key_menu1.png" position="8,640" size="40,22" alphatest="blend"/>
         <ePixmap pixmap="menu/logo_egami_menu.png" position="945,485" size="180,180" zPosition="2" alphatest="blend"/>		
 	</screen>
