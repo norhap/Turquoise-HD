@@ -1798,7 +1798,7 @@
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
         <!--widget name="windowtitle" position="80,580" size="0,0" font="Regular;22" transparent="1"/-->				
 		<panel name="ScrollBarTemplate"/>		
-		<widget name="list" position="80,138" size="718,300" scrollbarMode="showOnDemand" selectionPixmap="icons/ls725x26.png" transparent="1"/>
+		<widget name="list" position="80,138" size="718,415" scrollbarMode="showOnDemand" selectionPixmap="icons/ls700x30-h.png" transparent="1"/>
 		<widget name="text" position="80,440" size="560,335" font="Regular;20" transparent="1"/>
 	    <ePixmap position="835,390" zPosition="2" size="40,35" pixmap="icons/ram.png" alphatest="blend"/>
 		<widget source="session.CurrentService" render="Label" position="780,10" size="500,62" halign="center" valign="center" font="Regular;18" transparent="1" foregroundColor="#0000fafa" backgroundColor="black" zPosition="1">
@@ -6912,7 +6912,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
 		<widget name="lab1" position="80,270" size="170,25" font="Regular;22" halign="right" zPosition="2" backgroundColor="black" transparent="0" valign="center"/>
-		<widget name="list" position="265,271" size="240,150" backgroundColor="black" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1"/>
+		<widget name="list" position="265,271" size="330,150" backgroundColor="black" transparent="0" selectionPixmap="icons/ls330x26.png" scrollbarMode="showOnDemand" enableWrapAround="1"/>
 		<widget name="lab2" position="80,140" size="170,25" font="Regular;22" halign="right" zPosition="2" backgroundColor="black" transparent="0"/>
 		<widget name="activecam" position="265,142" size="240,75" font="Regular;20" halign="left" zPosition="2" backgroundColor="black" transparent="0" noWrap="1"/>
 		<ePixmap pixmap="icons/key_menu1.png" position="690,680" size="40,22" alphatest="blend"/>
