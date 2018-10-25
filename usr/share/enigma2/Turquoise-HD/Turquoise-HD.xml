@@ -44,7 +44,6 @@
 			<convert type="TemplatedMultiContent">
 			    {"template": [ 
 			    MultiContentEntryText(pos = (51,2), size = (600,38), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	),
-			    MultiContentEntryPixmapAlphaBlend(pos = (20,2), size = (60,40), png = 2),
 			    ],
 			    "fonts": [gFont("Regular",28)],
 			    "itemHeight": 38
@@ -65,7 +64,7 @@
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
-        <widget name="description" position="845,430" size="380,185" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" transparent="1"/>
+        <widget name="description" position="845,415" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 		<widget name="footnote" position="880,610" size="300,50" zPosition="1" font="Regular;20" foregroundColor="#00bab329" backgroundColor="black" halign="center" transparent="1" valign="top"/>		
 	</screen>	
 	<!-- ####### SETUP ServiceApp ####### -->
@@ -77,7 +76,7 @@
         <panel name="sRG"/>		
 		<widget name="config" position="56,155" size="739,425" font="Regular;18" scrollbarMode="showAlways" transparent="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
-        <widget name="description" position="845,430" size="380,185" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" transparent="1"/>
+        <widget name="description" position="845,415" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 	</screen>	
 	<!--  Harddisk selection -->
 	<screen name="HarddiskSelection" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1123,7 +1122,12 @@
 		<eLabel position="79,259" size="564,34" backgroundColor="#004ccbde"/>
 		<widget name="slider" position="80,260" borderWidth="2" foregroundColor="#0003424a" size="562,32" zPosition="1"/>
 		<widget source="package" render="Label" position="80,215" size="530,24" font="Regular;20" halign="center" valign="center" backgroundColor="#00101010" transparent="1"/>
-		<widget source="status" render="Label" position="80,300" size="530,100" font="Regular;20" halign="center" valign="center" backgroundColor="#00101010" transparent="1"/>		
+		<widget source="status" render="Label" position="80,300" size="530,50" font="Regular;20" halign="center" valign="center" backgroundColor="#00101010" transparent="1"/>
+		<widget name="tl_off" render="Label" position="80,360" size="530,25" font="Regular;20" halign="center" valign="center" backgroundColor="#00101010" transparent="1"/>
+		<widget name="tl_red" render="Label" position="80,390" size="530,25" font="Regular;20" halign="center" valign="center" backgroundColor="#00101010" transparent="1"/>
+		<widget name="tl_yellow" render="Label" position="80,420" size="530,25" font="Regular;20" halign="center" valign="center" backgroundColor="#00101010" transparent="1"/>
+		<widget name="tl_green" render="Label" position="80,445" size="530,25" font="Regular;20" halign="center" valign="center" backgroundColor="#00101010" transparent="1"/>
+		<widget name="feedStatusMSG" render="Label" position="80,470" size="530,25" font="Regular;20" halign="center" valign="center" backgroundColor="#00101010" transparent="1"/>		
 	</screen>	
 	<!-- ####### MANEJAR SOFTWARE->Opciones Avandas->Advanded restore ####### -->
 	<screen name="RestoreMenu" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1247,7 +1251,7 @@
 		<widget source="IF" render="Label" position="186,135" size="400,24" zPosition="10" font="Regular;24" foregroundColor="#004ccbde" transparent="1"/>
 		<widget name="menulist" position="70,200" size="710,375" scrollbarMode="showOnDemand" selectionPixmap="Turquoise-HD/icons/ls680x26.png" transparent="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
-		<widget source="description" render="Label" position="842,426" size="370,132" zPosition="10" font="Regular;22" halign="center" valign="center" foregroundColor="#004ccbde" transparent="1"/>
+		<widget name="description" position="845,415" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 		<widget source="Statustext" render="Label" position="70,500" foregroundColor="#004ccbde" size="150,40" zPosition="10" font="Regular;24" transparent="1"/>
 		<widget name="statuspic" position="195,500" size="60,40" pixmaps="Turquoise-HD/buttons/key_green.png,Turquoise-HD/buttons/button_green_off1.png" zPosition="10" transparent="1" alphatest="on"/>
 	</screen>	
@@ -2018,12 +2022,12 @@
 	</screen>
 	<!-- (042) ####### TUNER SELECTION CHOOSE TUNER####### (12-02) -->
 	<screen name="NimSelection" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica_sRGYB"/>	
+		<panel name="PantallaGenerica_sRGY"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
-        <panel name="sRGB"/>
-        <widget name="key_yellow" position="405,625" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
-		<widget source="nimlist" render="Listbox" position="80,138" size="715,400" selectionPixmap="Turquoise-HD/icons/ls620x90.png" transparent="1">
+        <panel name="PIG"/>		
+        <panel name="sRGY"/>		
+		<widget source="nimlist" render="Listbox" position="80,138" size="715,400" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				MultiContentEntryText(pos = (10,5), size = (860,50), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
@@ -2043,7 +2047,7 @@
         <panel name="Title"/>
         <panel name="PIG"/>	
 		<widget name="config" position="80,160" size="690,400" transparent="1"/>
-        <widget name="description" position="845,435" size="380,160" zPosition="10" font="Regular;22" halign="center" valign="center" foregroundColor="#004ccbde" transparent="1"/>
+        <widget name="description" position="845,415" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 	</screen>
 	<!-- (068) ####### Seleccion Satelites Tuner ####### -->	
@@ -2069,8 +2073,7 @@
         <panel name="PIG"/>
         <panel name="sRG"/>		
 		<widget name="config" position="55,150" font="Regular;16" size="725,400" transparent="1"/>
-		<widget name="footer" position="845,435" size="380,160" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
-        <widget name="header" position="80,580" size="0,0" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>		
+		<widget name="footer" position="845,435" size="380,160" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>		
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 	</screen>
 	<!-- (067) ####### Busqueda Manual ####### -->
@@ -2081,8 +2084,7 @@
         <panel name="PIG"/>
         <panel name="sRG"/>	
 		<widget name="config" position="80,138" size="690,400" transparent="1"/>
-		<widget name="introduction" position="845,435" size="380,160" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
-        <widget name="header" position="80,580" size="0,0" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>				 
+		<widget name="introduction" position="845,435" size="380,160" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>				 
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 	</screen>	
 	<!-- (069) ####### Servicio escaneo canales barra progreso ####### -->
@@ -2221,8 +2223,7 @@
 			<convert type="ConditionalShowHide">Invert</convert>
 		</widget>
 		<widget name="config" position="80,275" size="695,400" scrollbarMode="showOnDemand" transparent="1"/>
-	    <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
-		<widget name="header" position="780,435" size="500,25" foregroundColor="#004ccbde" halign="center" font="Regular;18" transparent="1"/>		
+	    <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 		<widget name="introduction" position="870,470" size="320,20" font="Regular;18" halign="center" transparent="1" foregroundColor="#004ccbde" backgroundColor="black"/>
 	</screen>	
 	<!-- ####### MessageBox Template para ambos Mensajes sistema ####### -->	
@@ -2285,14 +2286,14 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <!--panel name="logo_openboxtv"/-->		
 		<widget name="text" position="230,105" size="500,27" font="Regular;23" foregroundColor="#004ccbde" transparent="1"/>
 		<widget name="target" position="68,150" size="700,27" valign="center" font="Regular;24" backgroundColor="#0003424a"/>
-		<widget name="filelist" position="68,180" zPosition="1" size="735,278" scrollbarMode="showOnDemand" selectionPixmap="btvadriatico/icons/ls700x30.png" selectionDisabled="1" transparent="1"/>
+		<widget name="filelist" position="68,180" zPosition="1" size="735,278" scrollbarMode="showOnDemand" selectionPixmap="icons/ls700x30.png" selectionDisabled="1" transparent="1"/>
 		<widget name="textbook" position="68,465" size="700,27" valign="center" font="Regular;24" backgroundColor="#0003424a"/>
-		<widget name="booklist" position="68,493" zPosition="2" size="730,100" scrollbarMode="showOnDemand" selectionPixmap="btvadriatico/icons/ls700x30-h.png" transparent="1"/>
+		<widget name="booklist" position="68,493" zPosition="2" size="730,100" scrollbarMode="showOnDemand" selectionPixmap="icons/ls700x30-h.png" transparent="1"/>
 		<ePixmap position="8,640" size="40,22" pixmap="icons/key_menu1.png" transparent="1" alphatest="blend"/>		
-		<widget name="red" position="60,635" zPosition="1" size="140,35" pixmap="btvadriatico/menu/colorbarR.png" alphatest="blend"/>
-		<widget name="green" position="260,635" zPosition="1" size="140,35" pixmap="btvadriatico/menu/colorbarG.png" alphatest="blend"/>
-		<widget name="yellow" position="460,635" zPosition="1" size="140,35" pixmap="btvadriatico/menu/colorbarY.png" alphatest="blend"/>
-		<widget name="blue" position="660,634" zPosition="1" size="140,35" pixmap="btvadriatico/menu/colorbarB.png" alphatest="blend"/>		
+		<widget name="red" position="60,635" zPosition="1" size="140,35" pixmap="menu/colorbarR.png" alphatest="blend"/>
+		<widget name="green" position="260,635" zPosition="1" size="140,35" pixmap="menu/colorbarG.png" alphatest="blend"/>
+		<widget name="yellow" position="460,635" zPosition="1" size="140,35" pixmap="menu/colorbarY.png" alphatest="blend"/>
+		<widget name="blue" position="660,634" zPosition="1" size="140,35" pixmap="menu/colorbarB.png" alphatest="blend"/>		
 	</screen> 
 	<!--####### NumberZap ####### -->
 	<screen name="NumberZap" position="center,center" size="415,50" title="Channel" flags="wfNoBorder" backgroundColor="#0003424a">
@@ -2342,7 +2343,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
 		<panel name="sRGYB"/>
 		<widget name="config" position="69,137" size="728,427" zPosition="2" scrollbarMode="showAlways" transparent="1"/>
-		<widget name="description" position="845,435" size="380,160" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
+		<widget name="description" position="845,415" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
         <widget name="footnote" position="80,500" size="503,25" zPosition="1" font="Regular;20" foregroundColor="#00bab329" backgroundColor="black" halign="left" transparent="1" valign="top"/>				
 		<widget name="HelpWindow" position="682,599" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
@@ -2416,8 +2417,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<!-- Barra Progresso -->
 		<widget source="session.Event_Now" render="Progress" pixmap="Turquoise-HD/tv_b_bar.png" size="340,2" position="837,338" zPosition="5" backgroundColor="darkgrey" transparent="1">
 			<convert type="EventTime">Progress</convert>
-		</widget>	
-		<widget name="green" position="244,612" zPosition="2" size="170,45" font="Regular;18" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
+		</widget>
     <!-- digital clock -->
 		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00131313" transparent="1">
             <convert type="ClockToText">Format:%H:%M :%S</convert>
@@ -2507,7 +2507,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
         <panel name="Title"/>
 		<panel name="ScrollBarTemplate"/>
-		<widget name="SkinList" position="87,147" size="677,388" scrollbarMode="showOnDemand" selectionPixmap="btvadriatico/icons/ls680x28.png" transparent="1"/>
+		<widget name="SkinList" position="87,147" size="677,388" scrollbarMode="showOnDemand" selectionPixmap="icons/ls680x28.png" transparent="1"/>
 		<widget name="Preview" position="838,388" size="385,240" alphatest="on" zPosition="5"/>
 		<ePixmap pixmap="icons/key_info.png" position="8,640" size="40,22" alphatest="blend"/>		
 	    <widget source="introduction" render="Label" position="169,500" size="600,28" zPosition="10" font="Regular;24" halign="left" valign="center" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1"/>	
@@ -2605,7 +2605,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
-        <widget name="description" position="845,430" size="380,185" zPosition="10" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" transparent="1"/>		
+        <widget name="description" position="845,415" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>		
 	</screen>
 	<!-- ####### TEMPORIZADORES + TEMPORIZADORES DE ALIMENTACION (no panel PantallaGenericaRGYB) ####### -->
 	<screen name="TimerEditList" position="0,0" size="1280,720" title="Timer Editor" backgroundColor="black" flags="wfNoBorder">
@@ -3126,7 +3126,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>
 		<widget name="footnote" position="80,600" size="300,50" zPosition="1" font="Regular;20" foregroundColor="#00bab329" backgroundColor="black" halign="left" transparent="1" valign="top"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
-        <widget name="description" position="845,430" size="380,180" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" transparent="1"/>				
+        <widget name="description" position="845,415" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>				
 	</screen>		
 	<!--####### InputDeviceSelection (Dispositivos de Entrada) #######-->
 	<screen name="InputDeviceSelection" position="center,center" size="1280,720" flags="wfNoBorder">
@@ -3904,7 +3904,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget name="key_yellow" position="0,0" size="0,0" zPosition="1" transparent="1" valign="center" noWrap="1" backgroundColor="black"/>
 
 	    <widget name="key_blue" position="0,0" size="0,0" zPosition="1" transparent="1" valign="center" noWrap="1" backgroundColor="black"/>
-		<widget name="FullDescription" position="85,122" size="0,0" font="Regular;22" halign="left"  zPosition="3" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1"/>
 		<widget name="epg_description" position="85,122" size="0,0" font="Regular;22" halign="left"  zPosition="3" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1"/>
         <widget name="channel" position="0,0" size="0,0" font="Regular;28" halign="center" valign="center" zPosition="3" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1"/>		
 	
@@ -4212,7 +4211,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
         <!--panel name="Logo_Egami"/-->
-		<widget name="lab1" position="360,110" size="585,40" font="Regular;24" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1"/>
 		<widget source="TunerHeader" render="Label" position="80,130" size="585,40" font="Regular;17" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1"/>
 		<widget source="nims" render="Label" position="80,150" size="585,175" font="Regular;15" halign="left" backgroundColor="black" transparent="1" valign="top" zPosition="1"/>
 		<widget source="HDDHeader" render="Label" position="80,320" size="585,40" font="Regular;17" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1"/>
@@ -4241,8 +4239,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="PantallaGenericaRexit"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
-        <panel name="PIG"/>		
-		<widget name="lab1" position="360,140" size="585,40" font="Regular;24" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
+        <panel name="PIG"/>
 		<widget name="AboutScrollLabel" position="80,180" size="690,450" font="Regular;22" backgroundColor="black" transparent="1"/>
 		<widget source="IFtext" render="Label" position="80,470" size="120,25" font="Regular;22" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 		<widget source="IF" render="Label" position="245,470" size="400,25" font="Regular;22" halign="left" transparent="1" backgroundColor="black" zPosition="10"/>
@@ -4281,7 +4278,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-	    <widget name="lab1" position="360,108" size="585,40" font="Regular;24" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1"/>
 	    <widget name="ScrollLabel" position="80,150" size="715,510" font="Regular;24" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1"/>		
 		<ePixmap position="933,416" zPosition="1" size="200,200" pixmap="Turquoise-HD/menu/ico_information.png" alphatest="blend"/>
 	</screen>	
@@ -4355,7 +4351,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="sRG"/>
 		<widget position="600,625" size="250,36" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
 		<widget name="config" zPosition="2" position="60,140" size="715,400" scrollbarMode="showOnDemand" transparent="1"/>
-		<widget name="description" position="845,435" size="380,160" font="Regular;22" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
+		<widget name="description" position="845,415" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 		<widget name="text" position="845,465" size="380,160" font="Regular;22" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 		<widget name="HelpTextHeader1" position="60,275" size="730,50" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 		<widget name="HelpText1" position="60,300" size="715,150" font="Regular;17" halign="left" foregroundColor="#00a1d1ff" backgroundColor="black" transparent="1"/>
@@ -4446,8 +4442,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<!--panel name="Logo_Egami"/-->		
 		<widget source="job_name" render="Label" position="80,140" size="715,80" font="Regular;24" foregroundColor="#0000fafa" backgroundColor="#00000000" transparent="1"/>
 		<widget source="job_task" render="Label" position="80,340" size="585,80" font="Regular;24" foregroundColor="#004ccbde" backgroundColor="#00000000" transparent="1"/>
-		<widget source="job_progress" render="Progress" position="80,300" borderWidth="1" size="560,40" pixmap="jobview.png" borderColor="#00cccccc"/>
-		<widget source="job_progress" render="Label" position="10,305" size="250,32" font="xRegular;24" halign="center" transparent="1">
+		<widget source="job_progress" render="Progress" position="80,300" borderWidth="2" foregroundColor="#0003424a" size="560,40" borderColor="#00cccccc"/>
+		<widget source="job_progress" render="Label" position="10,307" size="250,32" font="xRegular;24" halign="center" transparent="1">
 		    <convert type="ProgressToText"/>
 		</widget>
 		<widget source="job_status" render="Label" position="80,380" size="585,26" font="Regular;23" backgroundColor="#00000000" transparent="1"/>
@@ -4467,7 +4463,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="backgroundable" render="Pixmap" pixmap="menu/colorbarB.png" position="640,632" size="140,40" alphatest="blend">
 		    <convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="backgroundable" render="FixedLabel" text="Continue in background" position="650,605" size="135,52" font="Regular;23" halign="left" backgroundColor="black" zPosition="1" transparent="1">
+		<widget source="backgroundable" render="FixedLabel" text="Continuar Segundo Plano" position="650,605" size="155,52" font="Regular;23" halign="left" backgroundColor="black" zPosition="1" transparent="1">
 		    <convert type="ConditionalShowHide"/>
 		</widget>  		
 	</screen>	
@@ -4806,8 +4802,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 		<widget name="status" position="845,380" size="380,160" zPosition="10" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 		<widget name="statusbar" position="845,445" size="380,160" zPosition="10" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
-		<ePixmap pixmap="icons/key_menu1.png" position="8,640" size="40,22" alphatest="blend"/>
-        <ePixmap pixmap="menu/logo_egami_menu.png" position="945,485" size="180,180" zPosition="2" alphatest="blend"/>		
+		<ePixmap pixmap="icons/key_menu1.png" position="8,640" size="40,22" alphatest="blend"/>		
 	</screen>
 
 	<!-- EPG Import Sources -->
@@ -6153,7 +6148,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>		
-	    <widget name="description" position="845,435" size="380,160" halign="center" valign="center" font="Regular;20" backgroundColor="background" foregroundColor="#004ccbde" transparent="1"/>
+	    <widget name="description" position="845,435" size="380,160" halign="center" valign="center" font="Regular;18" backgroundColor="background" foregroundColor="#004ccbde" transparent="1"/>
 	    <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 		<widget name="list" position="80,190" size="718,390" selectionPixmap="Turquoise-HD/icons/ls700x30.png" itemHeight="30" scrollbarMode="showOnDemand" transparent="1"/>
 		<widget name="choosen" position="350,130" size="400,50" foregroundColor="#0000baff" transparent="1"/>
@@ -6783,7 +6778,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
-        <widget name="description" position="845,430" size="380,185" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" transparent="1"/>
+        <widget name="description" position="845,415" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 		<widget name="footnote" position="880,610" size="300,50" zPosition="1" font="Regular;20" foregroundColor="#00bab329" backgroundColor="black" halign="center" transparent="1" valign="top"/>	
 	</screen>
 	<screen name="XtraPluginsSelection" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -6888,7 +6883,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>	
 		<widget name="list" position="80,145" size="670,350" selectionPixmap="icons/ls530x30.png" backgroundColor="black" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1"/>
-		<widget name="lab1" position="80,145" size="670,50" font="Regular;20" zPosition="2" transparent="0" halign="center"/>
 	</screen>
 	<screen name="VIXSwap" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaRGYB"/>
@@ -6965,5 +6959,13 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
 		<widget name="connect" position="260,220" size="64,64" zPosition="2" pixmaps="/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy1.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy2.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy3.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy4.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy5.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy6.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy7.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy8.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy9.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy9.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy10.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy11.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy12.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy13.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy14.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy15.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy17.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy18.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy19.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy20.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy21.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy22.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy23.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy24.png" transparent="1" alphatest="blend"/>
 		<widget name="lab1" position="80,145" halign="center" size="503,60" zPosition="1" font="Regular;20" valign="top" transparent="0"/>
+	</screen>
+	<screen name="LogManager" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaRGYB"/>
+		<!--panel name="sRGB"/-->		
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+		<widget name="LogsSize" position="80,145" halign="center" size="503,60" zPosition="1" font="Regular;20" valign="top" transparent="0"/>
 	</screen>	
 </skin>
