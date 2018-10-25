@@ -4442,6 +4442,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<!--panel name="Logo_Egami"/-->		
 		<widget source="job_name" render="Label" position="80,140" size="715,80" font="Regular;24" foregroundColor="#0000fafa" backgroundColor="#00000000" transparent="1"/>
 		<widget source="job_task" render="Label" position="80,340" size="585,80" font="Regular;24" foregroundColor="#004ccbde" backgroundColor="#00000000" transparent="1"/>
+		<eLabel position="80,300" size="560,2" backgroundColor="#004ccbde"/>
+		<eLabel position="80,300" size="2,40" backgroundColor="#004ccbde"/>
+		<eLabel position="80,338" size="560,2" backgroundColor="#004ccbde"/>
+		<eLabel position="638,300" size="2,40" backgroundColor="#004ccbde"/>		
 		<widget source="job_progress" render="Progress" position="80,300" borderWidth="2" foregroundColor="#0003424a" size="560,40" borderColor="#00cccccc"/>
 		<widget source="job_progress" render="Label" position="10,307" size="250,32" font="xRegular;24" halign="center" transparent="1">
 		    <convert type="ProgressToText"/>
@@ -4463,7 +4467,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="backgroundable" render="Pixmap" pixmap="menu/colorbarB.png" position="640,632" size="140,40" alphatest="blend">
 		    <convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="backgroundable" render="FixedLabel" text="Continuar Segundo Plano" position="650,605" size="155,52" font="Regular;23" halign="left" backgroundColor="black" zPosition="1" transparent="1">
+		<widget source="backgroundable" render="FixedLabel" text="Continuar Segundo Plano" position="650,605" size="175,52" font="Regular;23" valign="center" halign="left" backgroundColor="black" zPosition="1" transparent="1">
 		    <convert type="ConditionalShowHide"/>
 		</widget>  		
 	</screen>	
