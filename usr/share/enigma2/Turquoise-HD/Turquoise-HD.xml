@@ -6784,6 +6784,21 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
         <widget name="description" position="845,430" size="380,185" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" transparent="1"/>
 		<widget name="footnote" position="880,610" size="300,50" zPosition="1" font="Regular;20" foregroundColor="#00bab329" backgroundColor="black" halign="center" transparent="1" valign="top"/>	
+	</screen>
+	<screen name="XtraPluginsSelection" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenerica_sRG"/>
+		<panel name="sRG"/>		
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+		<widget name="checkList" position="80,145" size="725,400" backgroundColor="black" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1"/>
+	</screen>
+	<screen name="RestoreMenu" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaRG"/>	
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+		<widget name="filelist" position="80,145" size="725,400" backgroundColor="black" transparent="0" scrollbarMode="showOnDemand"/>
 	</screen>	
 	<screen name="VIXImageManager" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaRGYB"/>	
