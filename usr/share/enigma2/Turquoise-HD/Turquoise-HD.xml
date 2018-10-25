@@ -5023,14 +5023,13 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
 	<!-- Lista  -->
 		<widget name="waitingtext" position="97,140" size="650,380" zPosition="4" font="Regular;22" halign="right" valign="center" transparent="1"/>
-		<widget name="list" zPosition="1" position="60,146" size="738,399" scrollbarMode="showOnDemand" transparent="1"/>
-		<ePixmap position="135,560" zPosition="4" size="40,30" pixmap="Turquoise-HD/icons/key_info2.png" transparent="1" alphatest="blend"/>
-		<widget name="freeDiskSpace" position="180,565" halign="center" valign="center" zPosition="4" size="200,25" font="Regular;22" foregroundColor="#004ccbde" transparent="1"/>
-        <widget name="TrashcanSize" position="400,515" size="300,120" font="Regular;20" foregroundColor="#0000fafa" backgroundColor="black" valign="center" halign="left" zPosition="2" transparent="1"/>				
+		<widget name="list" zPosition="1" position="60,146" size="738,420" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="freeDiskSpace" position="210,115" halign="center" valign="center" zPosition="4" size="200,25" font="Regular;22" foregroundColor="#004ccbde" transparent="1"/>
+        <widget name="TrashcanSize" position="430,65" size="300,120" font="Regular;20" foregroundColor="#0000fafa" backgroundColor="black" halign="center" valign="center" zPosition="2" transparent="1"/>				
 		<widget name="DescriptionBorder" position="10,400" size="503,0" zPosition="3" transparent="1"/>
         <widget name="chosenletter" position="845,345" size="380,185" font="Regular;50" halign="center" valign="center" transparent="1" zPosition="4"/>
-        <widget name="movie_sort" position="100,125" size="35,20" pixmaps="skin_default/icons/ask.png,skin_default/icons/movielist.png,skin_default/icons/quit.png,skin_default/icons/pause.png,skin_default/icons/playlist.png,skin_default/icons/playlistquit.png,skin_default/icons/loop.png,skin_default/icons/rep.png"	zPosition="10" transparent="1" alphatest="on"/>
-        <widget name="movie_off" position="140,125" size="35,20" pixmaps="skin_default/icons/ask.png,skin_default/icons/movielist.png,skin_default/icons/quit.png,skin_default/icons/pause.png,skin_default/icons/playlist.png,skin_default/icons/playlistquit.png,skin_default/icons/loop.png,skin_default/icons/rep.png"	zPosition="10" transparent="1" alphatest="on"/>	
+        <widget name="movie_sort" position="100,120" size="35,20" pixmaps="skin_default/icons/ask.png,skin_default/icons/movielist.png,skin_default/icons/quit.png,skin_default/icons/pause.png,skin_default/icons/playlist.png,skin_default/icons/playlistquit.png,skin_default/icons/loop.png,skin_default/icons/rep.png"	zPosition="10" transparent="1" alphatest="on"/>
+        <widget name="movie_off" position="140,120" size="35,20" pixmaps="skin_default/icons/ask.png,skin_default/icons/movielist.png,skin_default/icons/quit.png,skin_default/icons/pause.png,skin_default/icons/playlist.png,skin_default/icons/playlistquit.png,skin_default/icons/loop.png,skin_default/icons/rep.png"	zPosition="10" transparent="1" alphatest="on"/>	
 	<!-- Info de Pelicula -->
         <widget source="Service" render="Label" position="845,390" zPosition="4" size="370,208" font="Regular;20" foregroundColor="#00a1d1ff" transparent="1" halign="center" valign="top">
             <convert type="EventName">ExtendedDescription</convert>
@@ -5165,9 +5164,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<!-- ####### MoviePlayer Standard Reproductor ####### -->
 	<screen name="MoviePlayer" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent2" flags="wfNoBorder">
 		<ePixmap position="0,500" zPosition="-1" size="1280,218" pixmap="Turquoise-HD/moviebar.png"/>
-		<eLabel position="270,521" size="50,25" backgroundColor="black" zPosition="0"/>		
-		<widget name="statusicon" position="275,523" zPosition="1" backgroundColor="black" size="50,55" alphatest="blend" transparent="0" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png"/>
-		<widget name="speed" position="305,521" size="80,25" font="xRegular;17" halign="left" foregroundColor="#0000fafa" backgroundColor="black" transparent="0" zPosition="1"/>
+		<eLabel position="270,521" size="110,25" backgroundColor="black" zPosition="0"/>		
+		<widget name="statusicon" position="275,523" zPosition="1" backgroundColor="black" size="50,55" alphatest="blend" transparent="1" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png"/>
+		<widget name="speed" position="305,523" size="80,25" font="xRegular;17" halign="left" foregroundColor="#0000fafa" backgroundColor="black" transparent="1" zPosition="1"/>
 		<widget name="state" position="250,520" size="0,0" font="xRegular;17" halign="left" foregroundColor="#0000fafa" backgroundColor="black" transparent="0" zPosition="0"/>
 		<widget name="eventname" position="370,70" size="0,0" font="xRegular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="2"/>	
 		<widget source="global.CurrentTime" render="Label" position="1050,570" size="130,24" zPosition="2" font="LCD;24" valign="top" halign="right" foregroundColor="#00a1d1ff" backgroundColor="#00232525" transparent="1">
