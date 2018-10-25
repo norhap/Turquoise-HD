@@ -187,6 +187,13 @@
 		<widget position="405,625" size="250,36" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget position="600,625" size="250,36" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
     </screen>
+	<screen name="PantallaGenericaGYB">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarGYB.png" alphatest="blend" transparent="1"/>
+		<widget position="205,625" size="250,36" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget position="405,625" size="250,36" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget position="600,625" size="250,36" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+    </screen>	
 	<screen name="PantallaGenericaGY">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarGY.png" alphatest="blend" transparent="1"/>

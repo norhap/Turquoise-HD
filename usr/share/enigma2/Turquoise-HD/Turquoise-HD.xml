@@ -6765,12 +6765,26 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
 		<widget name="lab1" position="80,145" size="670,50" font="Regular;20" zPosition="2" transparent="0" halign="center"/>
 		<widget name="list" position="80,230" size="670,350" selectionPixmap="icons/ls530x30.png" backgroundColor="black" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1"/>
+		<ePixmap pixmap="icons/key_menu1.png" position="10,638" size="40,22" alphatest="blend"/>		
         <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>			
 		<widget name="backupstatus" render="Label" position="835,460" size="390,25" foregroundColor="#004ccbde" font="Regular;20" backgroundColor="black" transparent="1" halign="center" valign="center"/>
 		<applet type="onLayoutFinish">
 			self["list"].instance.setItemHeight(25)
 		</applet>
 	</screen>
+	<screen name="VIXBackupManagerMenu" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaRGYB"/>	
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+		<widget name="HelpWindow" position="682,599" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
+		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,680" zPosition="2" size="40,22" transparent="1" alphatest="on">
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
+        <widget name="description" position="845,430" size="380,185" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" transparent="1"/>
+		<widget name="footnote" position="880,610" size="300,50" zPosition="1" font="Regular;20" foregroundColor="#00bab329" backgroundColor="black" halign="center" transparent="1" valign="top"/>	
+	</screen>	
 	<screen name="VIXImageManager" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaRGYB"/>	
 		<panel name="ScrollBarTemplate"/>
@@ -6793,5 +6807,147 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<applet type="onLayoutFinish">
 			self["list"].instance.setItemHeight(25)
 		</applet>
+	</screen>
+	<screen name="VIXIPKInstaller" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaRGY"/>	
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+		<widget name="lab1" position="80,145" size="670,50" font="Regular;20" zPosition="2" transparent="0" halign="center"/>
+		<widget name="list" position="80,230" size="670,350" selectionPixmap="icons/ls530x30.png" backgroundColor="black" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1"/>
+		<applet type="onLayoutFinish">
+			self["list"].instance.setItemHeight(30)
+		</applet>
+	</screen>
+	<screen name="VIXDevicesPanel" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaGYB"/>	
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+		<widget source="list" render="Listbox" position="80,145" size="670,350" backgroundColor="black" transparent="0" scrollbarMode="showOnDemand">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+				MultiContentEntryText(pos = (160, 0), size = (413, 30), font=0, text = 0),
+				MultiContentEntryText(pos = (165, 30), size = (408, 50), font=1, flags = RT_VALIGN_TOP, text = 1),
+				MultiContentEntryPixmapAlphaBlend(pos = (0, 0), size = (80, 80), png = 2),
+				],
+				"fonts": [gFont("Regular", 22),gFont("Regular", 16)],
+				"itemHeight": 85
+				}
+			</convert>
+		</widget>
+		<widget name="lab1" position="80,145" size="670,50" font="Regular;20" zPosition="2" transparent="0" halign="center"/>
+	</screen>
+	<screen name="VIXDevicePanelConf" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaRG"/>	
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>	
+		<widget name="config" position="70,145" size="715,275" scrollbarMode="showOnDemand"/>
+		<widget name="Linconn" position="70,420" size="840,20" font="Regular;18" halign="center" valign="center" backgroundColor="black"/>
+	</screen>
+	<screen name="VIXPartitionPanelConf" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaRG"/>	
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>	
+		<widget source="list" render="Listbox" position="70,230" size="725,350" selectionPixmap="icons/ls530x30.png" backgroundColor="black" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+				MultiContentEntryText(pos = (90, 0), size = (368, 30), font=0, text = 0),
+				MultiContentEntryText(pos = (110, 30), size = (348, 50), font=1, flags = RT_VALIGN_TOP, text = 1),
+				MultiContentEntryPixmapAlphaBlend(pos = (0, 0), size = (80, 80), png = 2),
+				],
+				"fonts": [gFont("Regular", 22),gFont("Regular", 18)],
+				"itemHeight": 85
+				}
+			</convert>
+		</widget>
+		<widget name="lab1" position="80,145" size="670,50" font="Regular;20" zPosition="2" transparent="0" halign="center"/>
+	</screen>
+	<screen name="VIXScriptRunner" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenerica_sRGB"/>
+		<panel name="sRGB"/>		
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>	
+		<widget name="list" position="80,145" size="670,350" selectionPixmap="icons/ls530x30.png" backgroundColor="black" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1"/>
+		<widget name="lab1" position="80,145" size="670,50" font="Regular;20" zPosition="2" transparent="0" halign="center"/>
+	</screen>
+	<screen name="VIXSwap" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaRGYB"/>
+		<!--panel name="sRGB"/-->		
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>	
+		<widget name="autostart_off" position="80,183" zPosition="1" pixmap="icons/lock_off.png" size="32,32" alphatest="on"/>
+		<widget name="autostart_on" position="80,183" zPosition="2" pixmap="icons/lock_on.png" size="32,32" alphatest="on"/>
+		<widget name="lab1" position="130,183" size="400,30" font="Regular;20" valign="center" transparent="0" backgroundColor="black"/>
+		<widget name="lab2" position="80,253" size="150,30" font="Regular;20" valign="center" transparent="0"/>
+		<widget name="labplace" position="230,253" size="320,30" font="Regular;20" valign="center" backgroundColor="#0003424a"/>
+		<widget name="lab3" position="80,323" size="150,30" font="Regular;20" valign="center" transparent="0"/>
+		<widget name="labsize" position="230,323" size="320,30" font="Regular;20" valign="center" backgroundColor="#0003424a"/>
+		<widget name="lab4" position="80,393" size="150,30" font="Regular;20" valign="center" transparent="0"/>
+		<widget name="inactive" position="230,393" size="100,30" font="Regular;20" valign="center" halign="center" backgroundColor="red"/>
+		<widget name="active" position="230,393" size="100,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green"/>
+	</screen>
+	<screen name="VIXSoftcamManager" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaRGYB"/>
+		<!--panel name="sRGB"/-->		
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+		<widget name="lab1" position="80,270" size="170,25" font="Regular;22" halign="right" zPosition="2" backgroundColor="black" transparent="0" valign="center"/>
+		<widget name="list" position="265,271" size="240,150" backgroundColor="black" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1"/>
+		<widget name="lab2" position="80,140" size="170,25" font="Regular;22" halign="right" zPosition="2" backgroundColor="black" transparent="0"/>
+		<widget name="activecam" position="265,142" size="240,75" font="Regular;20" halign="left" zPosition="2" backgroundColor="black" transparent="0" noWrap="1"/>
+		<ePixmap pixmap="icons/key_menu1.png" position="690,680" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_info.png" position="735,680" size="40,22" alphatest="blend"/>
+		<applet type="onLayoutFinish">
+			self["list"].instance.setItemHeight(25)
+		</applet>
+	</screen>
+	<screen name="VIXSoftcamLog" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaRexit"/>
+		<!--panel name="sRGB"/-->		
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+		<widget name="list" position="80,145" size="725,400" font="Regular;14" backgroundColor="black" transparent="0"/>
+	</screen>
+	<screen name="VIXAutoStartCam" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaRGYB"/>
+		<!--panel name="sRGB"/-->		
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+		<widget name="connect" position="280,220" size="64,64" zPosition="2" pixmaps="/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy1.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy2.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy3.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy4.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy5.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy6.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy7.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy8.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy9.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy9.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy10.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy11.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy12.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy13.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy14.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy15.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy17.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy18.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy19.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy20.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy21.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy22.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy23.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy24.png" transparent="1" alphatest="blend"/>
+		<widget name="lab1" position="80,133" halign="center" size="503,60" zPosition="1" font="Regular;20" valign="top" transparent="0"/>
+	</screen>
+	<screen name="VIXSoftcamMenu" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaRGYB"/>
+		<!--panel name="sRGB"/-->		
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+		<panel name="HalfscreenConfig532"/>
+	</screen>
+	<screen name="VIXStartCam" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaRGYB"/>
+		<!--panel name="sRGB"/-->		
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+		<widget name="connect" position="260,235" size="64,64" zPosition="2" pixmaps="/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy1.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy2.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy3.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy4.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy5.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy6.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy7.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy8.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy9.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy9.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy10.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy11.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy12.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy13.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy14.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy15.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy17.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy18.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy19.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy20.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy21.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy22.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy23.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy24.png" transparent="1" alphatest="blend"/>
+		<widget name="lab1" position="80,145" halign="center" size="503,60" zPosition="1" font="Regular;20" valign="top" transparent="0"/>
+	</screen>
+	<screen name="VIXStopCam" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaRGYB"/>
+		<!--panel name="sRGB"/-->		
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+		<widget name="connect" position="260,220" size="64,64" zPosition="2" pixmaps="/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy1.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy2.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy3.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy4.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy5.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy6.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy7.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy8.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy9.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy9.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy10.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy11.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy12.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy13.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy14.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy15.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy17.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy18.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy19.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy20.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy21.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy22.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy23.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy24.png" transparent="1" alphatest="blend"/>
+		<widget name="lab1" position="80,145" halign="center" size="503,60" zPosition="1" font="Regular;20" valign="top" transparent="0"/>
 	</screen>	
 </skin>
