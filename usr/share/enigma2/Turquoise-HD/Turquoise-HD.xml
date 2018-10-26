@@ -976,7 +976,7 @@
 	</screen>
 	<!-- (041) ####### LANGUAGE SELECTION ####### (12-02) -->
 	<screen name="LanguageSelection" position="0,0" size="1280,720" title="Language selection" flags="wfNoBorder">
-		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<panel name="PantallaGenericaRG"/>
 		<panel name="Title"/>
         <panel name="PIG"/>
         <panel name="ScrollBarTemplate"/>
@@ -1111,7 +1111,7 @@
 			</convert>			
 		</widget>			
 	</screen>	
-	<!-- ####### MANEJAR SOFTWARE->Actualizar Software ####### -->
+	<!-- ####### Actualizar Software ####### -->
 	<screen name="UpdatePlugin" position="0,0" size="1280,720" title="Software update" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>	
 		<panel name="ScrollBarTemplate"/>
@@ -1123,6 +1123,22 @@
 		<widget name="slider" position="80,260" borderWidth="2" foregroundColor="#0003424a" size="562,32" zPosition="1"/>
 		<widget source="package" render="Label" position="80,215" size="530,24" font="Regular;20" halign="center" valign="center" backgroundColor="#00101010" transparent="1"/>
 		<widget source="status" render="Label" position="80,300" size="530,50" font="Regular;20" halign="center" valign="center" backgroundColor="#00101010" transparent="1"/>
+		<widget name="tl_off" render="Label" position="80,360" size="530,25" font="Regular;20" halign="center" valign="center" backgroundColor="#00101010" transparent="1"/>
+		<widget name="tl_red" render="Label" position="80,390" size="530,25" font="Regular;20" halign="center" valign="center" backgroundColor="#00101010" transparent="1"/>
+		<widget name="tl_yellow" render="Label" position="80,420" size="530,25" font="Regular;20" halign="center" valign="center" backgroundColor="#00101010" transparent="1"/>
+		<widget name="tl_green" render="Label" position="80,445" size="530,25" font="Regular;20" halign="center" valign="center" backgroundColor="#00101010" transparent="1"/>
+		<widget name="feedStatusMSG" render="Label" position="80,470" size="530,25" font="Regular;20" halign="center" valign="center" backgroundColor="#00101010" transparent="1"/>		
+	</screen>
+	<!-- ####### Actualizar Software LOG ####### -->	
+	<screen name="SoftwareUpdateChoices" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<!--panel name="sRGB"/-->		
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+		<widget name="list" position="70,145" size="720,250" font="Regular;14" selectionPixmap="icons/ls700x30-h.png" backgroundColor="black" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1"/>
+        <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>			
+		<widget name="text" render="Label" position="835,460" size="390,25" foregroundColor="#004ccbde" font="Regular;20" backgroundColor="black" transparent="1" halign="center" valign="center"/>
 		<widget name="tl_off" render="Label" position="80,360" size="530,25" font="Regular;20" halign="center" valign="center" backgroundColor="#00101010" transparent="1"/>
 		<widget name="tl_red" render="Label" position="80,390" size="530,25" font="Regular;20" halign="center" valign="center" backgroundColor="#00101010" transparent="1"/>
 		<widget name="tl_yellow" render="Label" position="80,420" size="530,25" font="Regular;20" halign="center" valign="center" backgroundColor="#00101010" transparent="1"/>
@@ -1333,8 +1349,15 @@
 		<!--panel name="Logo_Egami"/-->  
 	</screen>
 	<!-- (109) ####### Network Wizard ####### -->
-	<screen name="NetworkWizard" position="0,0" size="1280,720" flags="wfNoBorder">
-	    <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="Turquoise-HD/menu/fr_main_help.png"/>
+	<screen name="NetworkWizard" position="0,0" size="1280,720" title="Red Configuración Inicial" flags="wfNoBorder">
+		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="Turquoise-HD/menu/fr_main_help.png"/>
+		<widget source="global.CurrentTime" render="Label" position="640,25" size="350,25" halign="right" font="LCD;24" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1">
+		    <convert type="ClockToText">Date</convert>
+		</widget>
+		<ePixmap pixmap="icons/clock.png" position="1195,35" zPosition="1" size="20,20" alphatest="blend"/>
+		<widget source="global.CurrentTime" render="Label" position="1055,25" size="160,25" zPosition="2" font="LCD;24" halign="center" foregroundColor="#004ccbde" backgroundColor="#00040404" transparent="1">
+            <convert type="ClockToText">Format:%H:%M :%S</convert>
+        </widget>		
 		<panel name="Title"/>
 		<widget name="text" position="350,110" foregroundColor="#004ccbde" size="340,400" font="Regular;24"/>
 		<widget source="list" render="Listbox" position="350,470" size="440,180" scrollbarMode="showOnDemand" transparent="1">
@@ -1352,7 +1375,8 @@
 		<widget name="HelpWindow" position="682,599" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
 		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,680" zPosition="2" size="40,22" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
-		</widget>		
+		</widget>
+		<widget name="key_red" position="70,645" size="120,50" backgroundColor="#000c0d0e" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>		
 	</screen>	
     <!-- Network MacAdress Setup -->
 	<screen name="NetworkMacSetup" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1756,7 +1780,7 @@
 		<widget source="key_blue" render="Pixmap" pixmap="Turquoise-HD/buttons/key_blue.png" position="80,225" size="35,25" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="streams" render="Listbox" scrollbarMode="showOnDemand" itemHeight="30" selectionPixmap="icons/ls700x26.png" position="70,280" size="695,375" zPosition="3" transparent="1">
+		<widget source="streams" render="Listbox" scrollbarMode="showOnDemand" itemHeight="30" selectionPixmap="icons/ls700x30-h.png" position="70,280" size="695,375" zPosition="3" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"templates":
 				{"default": (25, [ 
@@ -1779,9 +1803,6 @@
 				}
 			</convert>
 		</widget>
-		<widget name="switchdescription" foregroundColor="#004ccbde" position="250,450" size="560,25" font="Regular;20" transparent="1"/>
-		<widget name="key_right" position="80,460" size="560,20" transparent="1"/>
-		<widget name="key_left" position="80,480" size="560,20" transparent="1"/>
 	</screen>
 	<!--  Menu Rapido Subtitulos con subtitulos activado Subtitulos ok-> boton rojo-->
 		<screen name="QuickSubtitlesConfigMenu" position="30,75" size="560,290" title="Subtitle settings">
@@ -2597,9 +2618,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="oktext" position="355,625" size="250,36" zPosition="1" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>			
 		<widget name="cancel" pixmap="menu/colorbarR.png" position="60,635" size="140,35" alphatest="blend" backgroundColor="black"/>
 		<widget name="ok" pixmap="menu/colorbarG.png" position="410,635" size="140,35" alphatest="blend" backgroundColor="black"/>		
-		<widget name="config" position="60,145" size="715,450" font="Regular;17" itemHeight="30" transparent="1"/>
-		<widget name="locationfreespace" position="95,100" size="470,50" font="Regular;22" foregroundColor="#0000fafa" halign="center" valign="center" zPosition="2" transparent="1"/>
-		<widget name="locationdescription" position="560,105" size="250,40" font="Regular;22" foregroundColor="#0000fafa" halign="center" valign="center" zPosition="2" transparent="1"/>		
+		<widget name="config" position="60,145" size="715,450" font="Regular;17" itemHeight="30" transparent="1"/>		
 		<widget name="HelpWindow" position="682,599" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
 		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,680" zPosition="2" size="40,22" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
@@ -4189,8 +4208,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-	    <widget name="text" position="80,138" size="718,450" font="Regular;18" halign="left" backgroundColor="black" scrollbarMode="showOnDemand" transparent="1" zPosition="1"/>		
-		<ePixmap position="933,416" zPosition="1" size="200,200" pixmap="Turquoise-HD/menu/ico_information.png" alphatest="blend"/>
+		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
+        <widget name="HintText" position="845,415" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 	</screen>	
 	 
 	<!-- Translations OK (translation information)-->	
@@ -6740,7 +6759,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			<convert type="TemplatedMultiContent">
 			    {"template": [ 
 			    MultiContentEntryText(pos = (51,2), size = (600,38), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	),
-			    MultiContentEntryPixmapAlphaBlend(pos = (20,2), size = (60,40), png = 2),
 			    ],
 			    "fonts": [gFont("Regular",28)],
 			    "itemHeight": 38
@@ -6767,7 +6785,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="list" position="80,230" size="670,350" selectionPixmap="icons/ls530x30.png" backgroundColor="black" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1"/>
 		<ePixmap pixmap="icons/key_menu1.png" position="10,638" size="40,22" alphatest="blend"/>		
         <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>			
-		<widget name="backupstatus" render="Label" position="835,460" size="390,25" foregroundColor="#004ccbde" font="Regular;20" backgroundColor="black" transparent="1" halign="center" valign="center"/>
+		<widget name="backupstatus" position="835,460" size="390,25" foregroundColor="#004ccbde" font="Regular;20" backgroundColor="black" transparent="1" halign="center" valign="center"/>
 		<applet type="onLayoutFinish">
 			self["list"].instance.setItemHeight(25)
 		</applet>
