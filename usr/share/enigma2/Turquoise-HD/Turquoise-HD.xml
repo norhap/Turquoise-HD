@@ -1763,14 +1763,14 @@
 				MultiContentEntryText(pos = (10, 0),   size = (50, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # key,
 				MultiContentEntryText(pos = (90, 0),  size = (70, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # number,
 				MultiContentEntryText(pos = (190, 0), size = (160, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
-				MultiContentEntryText(pos = (350, 0), size = (160, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language,
+				MultiContentEntryText(pos = (350, 0), size = (320, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language,
 				MultiContentEntryText(pos = (570, 0), size = (100, 25),  font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
 				], True, "showNever"),
 				"notselected": (25, [ 
 				MultiContentEntryText(pos = (10, 0),   size = (50, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # key,
 				MultiContentEntryText(pos = (90, 0),  size = (70, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # number,
 				MultiContentEntryText(pos = (190, 0), size = (160, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
-				MultiContentEntryText(pos = (350, 0), size = (160, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language,
+				MultiContentEntryText(pos = (350, 0), size = (320, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language,
 				MultiContentEntryText(pos = (570, 0), size = (100, 25),  font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
 				], False, "showNever")
 				},
