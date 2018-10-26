@@ -58,7 +58,7 @@
         <panel name="Title"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="sRG"/>		
-		<widget name="config" position="56,155" size="739,425" font="Regular;18" scrollbarMode="showAlways" transparent="1"/>
+		<widget name="config" position="56,155" size="741,425" font="Regular;18" scrollbarMode="showAlways" transparent="1"/>
 		<widget name="HelpWindow" position="682,599" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
 		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,680" zPosition="2" size="40,22" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
@@ -963,7 +963,7 @@
 		<widget name="long_key" position="680,100" zPosition="2" size="250,25" foregroundColor="#004ccbde" font="Regular;18" halign="center" backgroundColor="black" transparent="1"/>
 		
 	<!-- options lists -->
-		<widget name="list" position="80,130" zPosition="1" size="845,457" scrollbarMode="showOnDemand" selectionPixmap="Turquoise-HD/icons/ls800x38.png" transparent="1"/>
+		<widget name="list" position="80,130" zPosition="1" size="843,457" scrollbarMode="showOnDemand" selectionPixmap="Turquoise-HD/icons/ls800x38.png" transparent="1"/>
 		
 	<!-- scrollbar background -->
 		<ePixmap position="905,124" zPosition="2" size="33,470" pixmap="Turquoise-HD/icons/barra470.png" alphatest="blend" transparent="1"/>
@@ -2593,8 +2593,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>	
 	<!-- (081) ####### Conflicto Temporizadores Tuners no disponibles para ambos Temporizadores ####### -->
 	<screen name="TimerSanityConflict" position="0,0" size="1280,720" zPosition="-1" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>	
-		<panel name="ScrollBarTemplate"/>
+		<panel name="PantallaGenerica_sRYB"/>	
+		<panel name="sRYB"/>
+		<panel name="ScrollBarTemplate"/>		
         <panel name="Title"/>
         <panel name="PIG"/>
 		<widget name="timer1" position="80,140" size="690,50" scrollbarMode="showNever"/>
