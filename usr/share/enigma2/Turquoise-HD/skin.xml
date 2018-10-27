@@ -1,6 +1,6 @@
 <skin>
 	<!--
-################### © Daconi ##MODE_fogo_Turquoise-HD_EGAMI_All Models ####################
+################### © Daconi ##MODE_fogo_U5PVR-HD_EGAMI_All Models ####################
 ###################    SKIN COLLECTION 720p FOR EGAMI ALL MODELS     #################### 
             oooooooooooo   .oooooo.          .o.       ooo        ooooo ooooo
             `888'     `8  d8P'  `Y8b        .888.      `88.       .888' `888'
@@ -25,7 +25,7 @@
            CÓDIGO DE GRÁFICOS Y lo mismo para ellos uno nuevo o adaptar este CON LA PIEL
            diferentes imágenes.
 	
-	################### © Daconi MODE_Turquoise-HD_EGAMI_All Models ###################
+	################### © Daconi MODE_U5PVR-HD_EGAMI_All Models ###################
 	
 	-->
 	
@@ -63,10 +63,10 @@
 	</colors>	
 	<!-- Fonts -->
 	<fonts>
-	    <font filename="/usr/share/enigma2/Turquoise-HD/fonts/Verdana_R.ttf" name="Regular" scale="95"/>
-        <font filename="/usr/share/enigma2/Turquoise-HD/fonts/digital-Bold.ttf" name="LCD2" scale="100"/>
-		<font filename="/usr/share/enigma2/Turquoise-HD/fonts/digital-watch.ttf" name="LCD" scale="100"/>
-		<font filename="/usr/share/enigma2/Turquoise-HD/fonts/nmsbd2.ttf" name="oledRegular" scale="90"/>
+	    <font filename="/usr/share/enigma2/U5PVR-HD/fonts/Verdana_R.ttf" name="Regular" scale="95"/>
+        <font filename="/usr/share/enigma2/U5PVR-HD/fonts/digital-Bold.ttf" name="LCD2" scale="100"/>
+		<font filename="/usr/share/enigma2/U5PVR-HD/fonts/digital-watch.ttf" name="LCD" scale="100"/>
+		<font filename="/usr/share/enigma2/U5PVR-HD/fonts/nmsbd2.ttf" name="oledRegular" scale="90"/>
 		<font filename="tuxtxt.ttf" name="Console" scale="100"/>
 		<font filename="ae_AlMateen.ttf" name="Replacement" scale="90" replacement="1"/>
 		<font filename="nmsbd.ttf" name="Display" scale="100"/>
@@ -88,22 +88,22 @@
 		<color name="WindowTitleBackground" color="black"/>
 	<!-- Main screen border png's -->
 	<borderset name="bsWindow">
-	    <pixmap pos="bpTopLeft" filename="Turquoise-HD/bs_tl.png"/>
-		<pixmap pos="bpTop" filename="Turquoise-HD/bs_t.png"/>
-		<pixmap pos="bpTopRight" filename="Turquoise-HD/bs_tr.png"/>
-		<pixmap pos="bpLeft" filename="Turquoise-HD/bs_l.png"/>
-		<pixmap pos="bpRight" filename="Turquoise-HD/bs_r.png"/>
-		<pixmap pos="bpBottomLeft" filename="Turquoise-HD/bs_bl.png"/>
-		<pixmap pos="bpBottom" filename="Turquoise-HD/bs_b.png"/>
-		<pixmap pos="bpBottomRight" filename="Turquoise-HD/bs_br.png"/>
+	    <pixmap pos="bpTopLeft" filename="U5PVR-HD/bs_tl.png"/>
+		<pixmap pos="bpTop" filename="U5PVR-HD/bs_t.png"/>
+		<pixmap pos="bpTopRight" filename="U5PVR-HD/bs_tr.png"/>
+		<pixmap pos="bpLeft" filename="U5PVR-HD/bs_l.png"/>
+		<pixmap pos="bpRight" filename="U5PVR-HD/bs_r.png"/>
+		<pixmap pos="bpBottomLeft" filename="U5PVR-HD/bs_bl.png"/>
+		<pixmap pos="bpBottom" filename="U5PVR-HD/bs_b.png"/>
+		<pixmap pos="bpBottomRight" filename="U5PVR-HD/bs_br.png"/>
 	</borderset>
 	<borderset name="bsListboxEntry">
-	    <pixmap pos="bpTop" filename="Turquoise-HD/def-bar.png"/>
-	    <pixmap pos="bpBottom" filename="Turquoise-HD/def-bar.png"/>
+	    <pixmap pos="bpTop" filename="U5PVR-HD/def-bar.png"/>
+	    <pixmap pos="bpBottom" filename="U5PVR-HD/def-bar.png"/>
 	</borderset>
 	</windowstyle>
-	    <include filename="/usr/share/enigma2/Turquoise-HD/Turquoise-HD.xml"/>
-	    <include filename="/usr/share/enigma2/Turquoise-HD/Templates.xml"/>
+	    <include filename="/usr/share/enigma2/U5PVR-HD/U5PVR-HD.xml"/>
+	    <include filename="/usr/share/enigma2/U5PVR-HD/Templates.xml"/>
 	<!-- Menu Horizontal -->	
 	<screen name="Animmain" position="0,575" size="1280,265" title="Mainmenu">	
 	    <eLabel position="0,25" size="252,1" backgroundColor="#0000fafa" zPosition="1"/>
@@ -138,7 +138,7 @@
 	    <widget source="label3" render="Label" position="535,22" size="210,91" font="Regular;18" halign="center" valign="top" foregroundColor="#0000fafa" zPosition="2" transparent="1"/>
 	    <widget source="label4" render="Label" position="795,22" size="210,80" font="Regular;17" halign="center" valign="center" zPosition="2" transparent="1"/> 
 	    <widget source="label5" render="Label" position="1040,22" size="210,80" font="Regular;18" halign="center" valign="center" zPosition="2" transparent="1"/>
-		<ePixmap position="95,90" zPosition="1" size="600,45" pixmap="Turquoise-HD/menu/colorbarRG.png" alphatest="blend" transparent="1"/>		
+		<ePixmap position="95,90" zPosition="1" size="600,45" pixmap="U5PVR-HD/menu/colorbarRG.png" alphatest="blend" transparent="1"/>		
 		<widget name="red" position="98,105" zPosition="2" size="140,20" font="Regular;16" transparent="1"/>
 		<widget name="green" position="298,105" zPosition="2" size="140,20" font="Regular;16" transparent="1"/>
 		<widget name="yellow" position="498,105" zPosition="2" size="0,0" font="Regular;16" transparent="1"/>
@@ -203,7 +203,7 @@
 		<widget source="label6" render="Label" position="1065,20" size="210,95" font="Regular;20" halign="center" valign="center" zPosition="2" transparent="1"/> 
 		<widget source="label6s" render="Label" position="1065,20" size="210,95" font="Regular;20" halign="center" valign="top" zPosition="2" foregroundColor="#0000fafa" transparent="1"/> 
 		<!--widget name="pixmap6" position="1065,35" size="320,70" zPosition="1" alphatest="on"/-->		
-		<ePixmap position="50,103" zPosition="1" size="600,45" pixmap="Turquoise-HD/menu/colorbarRG.png" alphatest="blend" transparent="1"/>		
+		<ePixmap position="50,103" zPosition="1" size="600,45" pixmap="U5PVR-HD/menu/colorbarRG.png" alphatest="blend" transparent="1"/>		
 		<widget name="red" position="55,118" zPosition="2" size="140,20" font="Regular;16" transparent="1"/>
 		<widget name="green" position="255,118" zPosition="2" size="140,20" font="Regular;16" transparent="1"/>
 		<widget name="yellow" position="455,118" zPosition="2" size="0,0" font="Regular;16" transparent="1"/>

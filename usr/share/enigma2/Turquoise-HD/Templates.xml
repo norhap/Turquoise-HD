@@ -35,7 +35,7 @@
 	<!-- ####### TEMPLATES ####### -->	
 	<!-- MENU SORT-->
 	<screen name="menu_sort">
-		<ePixmap position="47,630" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarGYB.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="47,630" zPosition="1" size="750,45" pixmap="U5PVR-HD/menu/colorbarGYB.png" alphatest="blend" transparent="1"/>
 	    <widget name="green" position="240,600" size="170,80" backgroundColor="#000c0d0e" halign="center" valign="center" zPosition="1" transparent="1" font="Regular;20"/>
 	    <widget name="yellow" position="500,630" size="220,28" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="left"/>
 	    <widget name="blue" position="650,630" size="220,28" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="left"/>
@@ -44,17 +44,17 @@
 	<!-- ####### SCROLLBAR BASE TEMPLATE ####### -->
 	<screen name="ScrollBarTemplate">
 	<!-- scrollbar background -->
-		<ePixmap position="780,120" zPosition="3" size="25,470" pixmap="Turquoise-HD/icons/barra470.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="780,120" zPosition="3" size="25,470" pixmap="U5PVR-HD/icons/barra470.png" alphatest="blend" transparent="1"/>
 	</screen>	
 	<!-- ### TEMPLATE TITULOS -->
 	<screen name="Title">
 		<widget source="Title" render="Label" zPosition="1" position="70,20" foregroundColor="#0000fafa" backgroundColor="black" size="615,50" font="Regular;24" halign="center" valign="center"/>		
-		<ePixmap pixmap="Turquoise-HD/menu/border_title.png" zPosition="0" position="80,5" size="580,80" alphatest="blend"/>
+		<ePixmap pixmap="U5PVR-HD/menu/border_title.png" zPosition="0" position="80,5" size="580,80" alphatest="blend"/>
 	    <!--widget source="menu_path_compressed" render="Label" zPosition="1" position="0,25" size="820,32" font="Regular;15" halign="center" valign="center" foregroundColor="#0000fafa" backgroundColor="#00000000"/-->
 	</screen>
 	<screen name="Titlechannellist">
 		<widget source="Title" render="Label" zPosition="1" position="70,20" foregroundColor="#0000fafa" backgroundColor="black" size="615,50" font="Regular;21" halign="center" valign="center"/>		
-		<ePixmap pixmap="Turquoise-HD/menu/border_title.png" zPosition="0" position="80,5" size="580,80" alphatest="blend"/>
+		<ePixmap pixmap="U5PVR-HD/menu/border_title.png" zPosition="0" position="80,5" size="580,80" alphatest="blend"/>
 	    <!--widget source="menu_path_compressed" render="Label" zPosition="1" position="0,25" size="820,32" font="Regular;15" halign="center" valign="center" foregroundColor="#0000fafa" backgroundColor="#00000000"/-->
 	</screen>	
 	<!-- ### TEMPLATE PIG + Nombre Evento + Progreso + Reloj LCD 2 Pantallas Izquierda-->
@@ -68,7 +68,7 @@
 		    <convert type="ServiceName">Name</convert>
 		</widget>		
 	<!-- Barra Progresso -->
-		<widget source="session.Event_Now" render="Progress" pixmap="Turquoise-HD/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="darkgrey" transparent="1">
+		<widget source="session.Event_Now" render="Progress" pixmap="U5PVR-HD/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="darkgrey" transparent="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
 	<!-- Evento Corrente - Event Now -->
@@ -91,7 +91,7 @@
 	<!-- ####### TEMPLATE SIN BOTONES COLORES 2 PANTALLAS IZQUIERDA ####### -->
 	<screen name="PantallaGenericaSinBarraColor2Pantallas">
 	<!-- background -->
-		<ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="Turquoise-HD/menu/fr_main_channels.png"/>
+		<ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="U5PVR-HD/menu/fr_main_channels.png"/>
 	<!--ePixmap pixmap="icons/key_ok.png" position="10,660" size="40,22" zPosition="1" alphatest="blend"/-->
 	<!--ePixmap pixmap="icons/key_exit.png" position="10,682" size="40,22" zPosition="1" alphatest="blend"/-->
 	</screen>
@@ -99,8 +99,8 @@
 	<!-- ####### Template solo para Lista de Canales ####### -->
 	<screen name="PantallaListaCanales">
 	<!-- background -->
-		<ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="Turquoise-HD/menu/fr_main_channels2.png"/>
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="U5PVR-HD/menu/fr_main_channels2.png"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="U5PVR-HD/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
 		<widget position="5,625" size="250,36" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget position="205,625" size="250,36" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget position="405,625" size="250,36" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
@@ -112,7 +112,7 @@
 	<screen name="PantallaGenericaRGYB">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 	<!-- 4 botones -->
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="U5PVR-HD/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
 	<!-- buttons text widgets -->
 		<widget name="key_red" position="55,612" size="150,45" font="Regular;19" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget name="key_green" position="255,612" size="150,45" font="Regular;19" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
@@ -133,7 +133,7 @@
 	<screen name="PantallaGenericaRGY">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 	<!-- 3 botones -->
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarRGY.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="U5PVR-HD/menu/colorbarRGY.png" alphatest="blend" transparent="1"/>
 	<!-- buttons text widgets -->
 		<widget name="key_red" position="5,617" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget name="key_green" position="205,617" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
@@ -145,7 +145,7 @@
 		<widget name="key_red" position="55,612" size="150,45" font="Regular;19" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget name="key_green" position="255,612" size="150,45" font="Regular;19" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 	<!-- 2 botones -->
-		<ePixmap position="57,625" zPosition="1" size="349,45" pixmap="Turquoise-HD/menu/colorbarRG.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="57,625" zPosition="1" size="349,45" pixmap="U5PVR-HD/menu/colorbarRG.png" alphatest="blend" transparent="1"/>
 	<!-- buttons text widgets -->
     </screen>
 	<!-- ####### PANTALLA PARA 1 BOTON ROJO + SOURCE ####### -->
@@ -153,14 +153,14 @@
          <widget position="5,625" size="250,36" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		 <panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 	<!-- boton rojo -->
-		<ePixmap position="60,635" zPosition="1" size="140,35" pixmap="Turquoise-HD/menu/colorbarR.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="60,635" zPosition="1" size="140,35" pixmap="U5PVR-HD/menu/colorbarR.png" alphatest="blend" transparent="1"/>
     </screen>
 	<!-- ####### PANTALLA PARA 1 BOTON ROJO + LABEL EXIT ####### -->
 	<screen name="PantallaGenericaRexit">
 	     <panel name="Template-exit"/>
 		 <panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 	<!-- boton rojo -->
-		<ePixmap position="60,635" zPosition="1" size="140,35" pixmap="Turquoise-HD/menu/colorbarR.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="60,635" zPosition="1" size="140,35" pixmap="U5PVR-HD/menu/colorbarR.png" alphatest="blend" transparent="1"/>
     </screen>
 	<screen name="TemplateOK">
 		<ePixmap position="245,625" zPosition="1" size="349,45" pixmap="menu/colorbarG.png" alphatest="blend" transparent="1"/>	
@@ -175,53 +175,53 @@
 	
 	<screen name="PantallaGenericaRGB">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarRGB.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="U5PVR-HD/menu/colorbarRGB.png" alphatest="blend" transparent="1"/>
 		<widget position="5,625" size="250,36" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget position="205,625" size="250,36" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget position="600,625" size="250,36" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
     </screen>
 	<screen name="PantallaGenericaRYB">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarRYB.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="U5PVR-HD/menu/colorbarRYB.png" alphatest="blend" transparent="1"/>
 		<widget position="5,625" size="250,36" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget position="405,625" size="250,36" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget position="600,625" size="250,36" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
     </screen>
 	<screen name="PantallaGenericaGYB">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarGYB.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="U5PVR-HD/menu/colorbarGYB.png" alphatest="blend" transparent="1"/>
 		<widget position="205,625" size="250,36" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget position="405,625" size="250,36" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget position="600,625" size="250,36" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
     </screen>	
 	<screen name="PantallaGenericaGY">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarGY.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="U5PVR-HD/menu/colorbarGY.png" alphatest="blend" transparent="1"/>
 		<widget position="205,625" size="250,36" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget position="405,625" size="250,36" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
     </screen>
 	<screen name="PantallaGenerica_sGYB">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
-		<ePixmap position="47,630" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarGYB.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="47,630" zPosition="1" size="750,45" pixmap="U5PVR-HD/menu/colorbarGYB.png" alphatest="blend" transparent="1"/>
 		<widget source="key_green" render="Label" position="205,617" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget source="key_yellow" render="Label" position="380,610" size="300,50" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget source="key_blue" render="Label" position="605,617" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 	</screen>		
 	<screen name="PantallaGenericaRB">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarRB.png" alphatest="blend" transparent="1"/>		
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="U5PVR-HD/menu/colorbarRB.png" alphatest="blend" transparent="1"/>		
 		<widget position="5,625" size="250,36" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget position="600,625" size="250,36" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
     </screen>
 	<screen name="PantallaGenericaRY">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarRY.png" alphatest="blend" transparent="1"/>		
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="U5PVR-HD/menu/colorbarRY.png" alphatest="blend" transparent="1"/>		
 		<widget position="5,625" size="250,36" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 	    <widget name="yellow" position="500,630" size="220,28" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="left"/>
     </screen>
 	<screen name="PantallaGenericaYB">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarYB.png" alphatest="blend" transparent="1"/>		
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="U5PVR-HD/menu/colorbarYB.png" alphatest="blend" transparent="1"/>		
 		<widget position="405,625" size="250,36" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 	    <widget name="blue" position="650,630" size="220,28" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="left"/>
     </screen>
@@ -308,48 +308,48 @@
 	<!-- ####### PANTALLAS WIDGETS SOURCES NO NAME ####### -->
 	<screen name="PantallaGenerica_sRGYB">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="U5PVR-HD/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
     </screen>
 	<screen name="PantallaGenerica_sRGY">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarRGY.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="U5PVR-HD/menu/colorbarRGY.png" alphatest="blend" transparent="1"/>
     </screen>	
 	<screen name="PantallaGenerica_sRG">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
-		<ePixmap position="57,625" zPosition="1" size="349,45" pixmap="Turquoise-HD/menu/colorbarRG.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="57,625" zPosition="1" size="349,45" pixmap="U5PVR-HD/menu/colorbarRG.png" alphatest="blend" transparent="1"/>
     </screen>
 	<screen name="PantallaGenerica_sR">
 		 <panel name="PantallaGenericaSinBarraColor2Pantallas"/>
-		<ePixmap position="60,635" zPosition="1" size="140,35" pixmap="Turquoise-HD/menu/colorbarR.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="60,635" zPosition="1" size="140,35" pixmap="U5PVR-HD/menu/colorbarR.png" alphatest="blend" transparent="1"/>
     </screen>
 	
 	<screen name="PantallaGenerica_sRGB">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarRGB.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="U5PVR-HD/menu/colorbarRGB.png" alphatest="blend" transparent="1"/>
     </screen>
 	<screen name="PantallaGenerica_sRYB">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarRYB.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="U5PVR-HD/menu/colorbarRYB.png" alphatest="blend" transparent="1"/>
     </screen>
 	<screen name="PantallaGenerica_sGY">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarGY.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="U5PVR-HD/menu/colorbarGY.png" alphatest="blend" transparent="1"/>
     </screen>
 	<screen name="PantallaGenerica_sRB">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarRB.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="U5PVR-HD/menu/colorbarRB.png" alphatest="blend" transparent="1"/>
     </screen>
 	<screen name="PantallaGenerica_sRY">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarRY.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="U5PVR-HD/menu/colorbarRY.png" alphatest="blend" transparent="1"/>
     </screen>
 	<screen name="PantallaGenerica_sYB">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Turquoise-HD/menu/colorbarYB.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="U5PVR-HD/menu/colorbarYB.png" alphatest="blend" transparent="1"/>
     </screen>
 	<screen name="PantallaGenerica_sY">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
-		<ePixmap position="460,635" zPosition="1" size="140,35" pixmap="Turquoise-HD/menu/colorbarY.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="460,635" zPosition="1" size="140,35" pixmap="U5PVR-HD/menu/colorbarY.png" alphatest="blend" transparent="1"/>
     </screen>
 	<!-- ####### BOTONES ANCHOS ARRIBA Y ABAJO COLOR ####### -->	
 	<screen name="BotonRedAncho">
@@ -373,7 +373,7 @@
 		<panel name="Title"/>
         <panel name="PIG"/>
         <panel name="ScrollBarTemplate"/>		
-		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="Turquoise-HD/menu/fr_main.png"/>	
+		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="U5PVR-HD/menu/fr_main.png"/>	
 	</screen>
 	<!--  ####### ACCIONES TECLAS OBJECTYPES #######  -->
     <screen name="acciones_teclas_colores">	
