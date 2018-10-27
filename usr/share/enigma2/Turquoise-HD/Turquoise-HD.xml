@@ -1959,7 +1959,7 @@
 		<widget name="portpic" position="300,300" zPosition="10" size="150,150" transparent="1" alphatest="on"/>
     </screen>	 	
 	<!-- (074) ####### COMIENZO DEL ASISTENTE HASTA INICIAR IMAGEN ####### -->	
-    <screen name="StartWizard" position="15,65" size="1280,720" zPosition="-1" backgroundColor="#03424a" title="Welcome...">
+    <screen name="StartWizard" position="15,65" size="1280,720" zPosition="-1" backgroundColor="#03424a" title="Bienvenido...">
 		<ePixmap pixmap="buttons/key_red.png" position="830,15" zPosition="0" size="35,25" transparent="1" alphatest="blend"/>	
         <widget name="languagetext" zPosition="15" position="870,0" size="500,55" font="Regular;20" halign="left" valign="center" transparent="1"/>
         <widget name="text" position="770,100" size="325,450" zPosition="15" font="Regular;23" halign="center" valign="center" transparent="1"/>		
@@ -1979,7 +1979,7 @@
 		</widget>
 		<widget name="config" zPosition="1" position="15,5" size="750,600" backgroundColor="#03424a" scrollbarMode="showOnDemand" transparent="1"/> 
     </screen>
-	<screen name="InstallWizard" position="15,65" size="1280,720" zPosition="-1" backgroundColor="#03424a" title="Welcome...">
+	<screen name="InstallWizard" position="15,65" size="1280,720" zPosition="-1" backgroundColor="#03424a" title="Bienvenido...">
 		<widget name="config" zPosition="1" position="15,5" size="750,600" backgroundColor="#03424a" scrollbarMode="showOnDemand" transparent="1"/> 
     </screen>
 	<screen name="InstallWizardIpkgUpdater" position="fill" backgroundColor="#0003424a" flags="wfNoBorder">
