@@ -1913,7 +1913,11 @@
 	</screen>		
 	<!-- (032) ####### LENGUAJE WIZARD ####### -->
 	<screen name="LanguageWizard" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="Title"/>		
+		<panel name="Title"/>
+		<ePixmap pixmap="buttons/red.png" position="170,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
+		<widget name="key_red" position="170,625" size="150,85" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22"/>
+		<ePixmap pixmap="buttons/green.png" position="420,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
+		<widget name="key_green" position="395,625" size="200,85" halign="center" valign="center" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22"/>		
 	    <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="menu/fr_main_help.png"/>
 		<widget source="global.CurrentTime" render="Label" position="640,43" size="350,25" halign="right" font="LCD;24" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1">
 		    <convert type="ClockToText">Date</convert>
@@ -1986,7 +1990,21 @@
         <ePixmap pixmap="icons/input_info.png" position="605,275" size="1280,720" alphatest="blend"/>		
         <ePixmap pixmap="menu/logo_openboxtv.png" position="582,180" size="100,100" alphatest="blend"/>	
 		<widget source="statusbar" render="Label" position="280,350" size="720,75" foregroundColor="#00ffffff" zPosition="2" transparent="1" font="Regular;25" halign="center"/>
-	</screen>		
+	</screen>
+	<screen name="MessageBoxWizard" position="15,65" size="1280,720" zPosition="-1" backgroundColor="#03424a" title="Restaurar Configuración Completa">
+		<widget source="global.CurrentTime" render="Label" position="1100,37" size="100,28" font="Regular;26" halign="right" transparent="1" backgroundColor="#03424a" zPosition="13">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="850,67" size="350,25" font="Regular;20" halign="right" transparent="1" backgroundColor="#03424a" zPosition="13">
+			<convert type="ClockToText">Date</convert>
+		</widget>
+		<widget name="text" position="150,140" size="730,250" font="Regular;23" transparent="1" backgroundColor="#03424a"/>
+		<widget name="ErrorPixmap" pixmap="icons/input_error.png" position="100,140" size="53,53" alphatest="blend"/>
+		<widget name="QuestionPixmap" pixmap="icons/input_question.png" position="100,140" size="53,53" alphatest="blend"/>
+		<widget name="InfoPixmap" pixmap="icons/input_info.png" position="100,140" size="53,53" alphatest="blend"/>
+		<widget name="list" position="150,400" size="730,220" transparent="1" backgroundColor="#03424a"/>
+		<widget name="rc" pixmap="rc.png" position="950,140" zPosition="10" size="154,500" transparent="0" alphatest="blend"/>
+	</screen>	
 	<!-- ####### WIZARD ####### -->
 	<screen name="DefaultWizard" position="0,0" size="1280,720" flags="wfNoBorder">
 	    <ePixmap position="0,0" zPosition="0" size="1280,720" pixmap="menu/fr_main_help.png"/>
