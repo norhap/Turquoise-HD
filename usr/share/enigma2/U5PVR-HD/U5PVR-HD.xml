@@ -5184,7 +5184,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<!-- PLugin EMC Pantalla Lista de Peliculas--> 
  	<screen name="EMCSelectionOwn" position="fill" flags="wfNoBorder"> 
 		<panel name="EMC"/>
-        <widget name="Cover" position="787,150" size="620,365" zPosition="1" alphatest="on"/>
+        <widget name="Cover" position="965,150" size="270,365" backgroundColor="black" zPosition="1" alphatest="on"/>
         <widget name="CoverBgLbl" backgroundColor="#df0b1300" position="0,0" size="0,0" zPosition="0"/>
         <widget name="CoverBg" backgroundColor="#df0b1300" position="0,0" size="0,0" zPosition="0"/>
         <widget name="Video" backgroundColor="#df0b1300" position="975,185" size="255,172" zPosition="0"/>		
