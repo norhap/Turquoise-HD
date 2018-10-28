@@ -938,7 +938,7 @@
 	    <eLabel position="0,0" size="1,55" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="0,54" size="355,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="354,0" size="1,55" backgroundColor="#0000fafa" zPosition="1"/>	
-		<widget name="windowtitle" position="230,15" foregroundColor="#00bab329" backgroundColor="#0003424a" size="200,25" font="Regular;20"/>
+		<!--widget name="windowtitle" position="230,15" foregroundColor="#00bab329" backgroundColor="#0003424a" size="200,25" font="Regular;20"/-->
 		<widget name="text" position="0,0" size="0,0" font="Regular;22"/>
 		<widget name="list" position="0,3" size="210,50" backgroundColor="#0003424a" scrollbarMode="showOnDemand" borderWidth="1"/>
         <ePixmap position="195,0" zPosition="3" size="20,55" pixmap="U5PVR-HD/icons/barra20-55.png" alphatest="blend"/>		
