@@ -52,6 +52,11 @@
 		<ePixmap pixmap="U5PVR-HD/menu/border_title.png" zPosition="0" position="80,5" size="580,80" alphatest="blend"/>
 	    <!--widget source="menu_path_compressed" render="Label" zPosition="1" position="0,25" size="820,32" font="Regular;15" halign="center" valign="center" foregroundColor="#0000fafa" backgroundColor="#00000000"/-->
 	</screen>
+	<screen name="Titlerunning">
+		<widget source="Title" render="RunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" zPosition="1" position="70,20" foregroundColor="#0000fafa" backgroundColor="black" size="615,50" font="Regular;24" halign="center" valign="center"/>		
+		<ePixmap pixmap="U5PVR-HD/menu/border_title.png" zPosition="0" position="80,5" size="580,80" alphatest="blend"/>
+	    <!--widget source="menu_path_compressed" render="Label" zPosition="1" position="0,25" size="820,32" font="Regular;15" halign="center" valign="center" foregroundColor="#0000fafa" backgroundColor="#00000000"/-->
+	</screen>	
 	<screen name="Titlechannellist">
 		<widget source="Title" render="Label" zPosition="1" position="70,20" foregroundColor="#0000fafa" backgroundColor="black" size="615,50" font="Regular;21" halign="center" valign="center"/>		
 		<ePixmap pixmap="U5PVR-HD/menu/border_title.png" zPosition="0" position="80,5" size="580,80" alphatest="blend"/>
@@ -261,10 +266,10 @@
 		<widget source="key_yellow" render="Label" position="405,625" size="250,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
     </screen>
 	<screen name="sRGYB">
-		<widget source="key_red" render="Label" position="5,625" size="250,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
-		<widget source="key_green" render="Label" position="205,625" size="250,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>		
-		<widget source="key_yellow" render="Label" position="405,625" size="250,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
-		<widget source="key_blue" render="Label" position="605,625" size="250,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
+		<widget source="key_red" render="Label" position="55,612" size="150,45" font="Regular;19" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget source="key_green" render="Label" position="255,612" size="150,45" font="Regular;19" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
+		<widget source="key_yellow" render="Label" position="470,612" size="125,50" font="Regular;19" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget source="key_blue" render="Label" position="655,612" size="150,45" font="Regular;19" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
     </screen>
 	<screen name="sRGY">
 		<widget source="key_red" render="Label" position="5,617" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>

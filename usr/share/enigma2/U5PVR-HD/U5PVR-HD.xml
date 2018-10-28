@@ -441,7 +441,8 @@
 	<!-- event info -->
 		<widget name="FullDescription" position="85,122" size="0,0" font="Regular;22" halign="left"  zPosition="3" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1"/>
 		<widget name="epg_description" position="85,122" size="0,0" font="Regular;22" halign="left"  zPosition="3" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1"/>
-		<widget source="Event" render="Label" zPosition="1" position="75,153" size="720,405" font="Regular;26" foregroundColor="#00ffffff" backgroundColor="black" transparent="1">
+		<widget name="epg_eventname" position="85,460" size="690,30" font="Regular;22" halign="left"  zPosition="3" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1"/>
+		<widget source="Event" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" zPosition="1" position="75,153" size="720,405" font="Regular;20" backgroundColor="black" transparent="0">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
         <widget name="channel" position="205,122" size="380,28" font="Regular;28" halign="center" valign="center" zPosition="3" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1"/>		
@@ -454,6 +455,7 @@
 	
 	<!-- (033) ####### EVENT VIEW entre otros desde InfobarEPG->unico####### -->
 	<screen name="EventView" position="0,0"	size="1280,720" flags="wfNoBorder">
+        <panel name="Titlerunning"/>	
 	    <!--ePixmap position="57,625" zPosition="1" size="750,45" pixmap="U5PVR-HD/menu/colorbarRGYB.png" alphatest="blend" transparent="1" /-->	
 		<ePixmap position="0,0" zPosition="0" size="1280,720" pixmap="U5PVR-HD/menu/fr_main_channels.png"/>	
 		<widget name="key_red" position="5,625" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
@@ -488,7 +490,7 @@
 		<widget name="epg_description" position="85,122" size="0,0" font="Regular;22" halign="left"  zPosition="3" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1"/>
 		<widget name="summary_description" position="85,122" size="0,0" font="Regular;22" halign="left"  zPosition="3" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1"/>		
 	<!--widget name="FullDescription" position="75,153" size="720,399" font="Regular;26" backgroundColor="transpBlack" transparent="1" /-->
-		<widget source="Event" render="Label" zPosition="1" position="75,153" size="710,405" font="Regular;26" foregroundColor="#00ffffff" backgroundColor="black" transparent="1">
+		<widget source="Event" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" zPosition="1" position="70,153" font="Regular;20" size="710,405" backgroundColor="black" transparent="0">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>		
 		<widget name="datetime" position="839,351" size="380,28" font="Regular;24" halign="left"  zPosition="3" backgroundColor="#00333333" transparent="1"/>
@@ -508,14 +510,14 @@
 		<widget name="epg_description" position="85,122" size="0,0" font="Regular;22" halign="left"  zPosition="1" foregroundColor="#004ccbde" backgroundColor="#14101010" transparent="1"/>
 		<widget name="channel" position="5,3" size="360,20" font="xRegular;15" valign="center" halign="center"  zPosition="1" foregroundColor="#0000baff" backgroundColor="#14101010" transparent="1"/>				
 		<widget source="Title" render="Label" position="10,20" size="0,0" font="Regular;14" transparent="1" foregroundColor="#004ccbde" backgroundColor="#14101010" zPosition="1"/>
-		<widget source="Event" render="Label" position="10,15" size="350,25" valign="center" halign="center" font="Regular;19" foregroundColor="#0000fafa" transparent="1" backgroundColor="#00333333">
+		<widget source="Event" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="10,15" size="350,25" valign="center" halign="center" font="Regular;19" foregroundColor="#0000fafa" transparent="0" backgroundColor="#00333333">
 			<convert type="EventName">Name</convert>
 		</widget>
         <widget name="summary_description" position="10,62" size="0,0" font="Regular;18" valign="center" halign="center" zPosition="3" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1"/>		
 		<widget name="datetime" position="70,38" size="250,26" font="xRegular;17" foregroundColor="#006da6ff" backgroundColor="#14101010" transparent="1" noWrap="1" valign="top" halign="left"/>
 		<widget name="duration" position="235,38" size="150,26" font="xRegular;17" foregroundColor="#006da6ff" backgroundColor="#14101010" transparent="1" noWrap="1" valign="top" halign="left"/>
 	<!--widget name="FullDescription" render="Label" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="10,50" size="1260,140" font="Regular;22" foregroundColor="#00ffffff" backgroundColor="black" transparent="1"/-->
-		<widget source="Event" render="Label" position="10,55" size="350,187" font="Regular;18" valign="center" halign="center" foregroundColor="#00a1d1ff" backgroundColor="#14101010" transparent="1">
+		<widget source="Event" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="10,55" size="350,187" font="Regular;18" valign="center" halign="center" foregroundColor="#00a1d1ff" backgroundColor="#14101010" transparent="0">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>		
 	</screen>	
@@ -2194,20 +2196,24 @@
 		<eLabel text="SNR:" position="80,360" size="80,24" font="Regular;21" backgroundColor="black" transparent="1"/>
 		<widget name="snr_bar" position="150,360" size="280,20" borderWidth="1" pixmap="bar_snr_finder.png" backgroundColor="black" transparent="1"/>
 		<widget name="snr_percentage" position="440,360" size="80,24" font="Regular;21" foregroundColor="#0000fafa" backgroundColor="black" transparent="1"/>
-		<eLabel text="BER:" position="80,390" size="80,24" font="Regular;21" backgroundColor="black" transparent="1"/>
-		<widget name="ber_bar" position="150,390" size="280,20" borderWidth="1" pixmap="bar_snr_finder.png" backgroundColor="black" transparent="1"/>
-		<widget name="ber_value" position="440,390" size="80,24" font="Regular;21" backgroundColor="black" transparent="1"/>
-		<eLabel text="Lock:" position="80,420" size="80,24" font="Regular;21" backgroundColor="black" transparent="1"/>
-		<widget name="lock_state" position="150,420" size="200,24" font="Regular;21" backgroundColor="black" transparent="1"/>
+		<eLabel text="AGC:" position="80,390" size="80,24" font="Regular;21" backgroundColor="black" transparent="1"/>		
+		<widget name="agc_bar" position="150,390" size="280,20" borderWidth="1" pixmap="bar_snr_finder.png" backgroundColor="black" transparent="1"/>
+		<widget name="agc_percentage" position="440,390" size="80,24" font="Regular;21" foregroundColor="#0000fafa" backgroundColor="black" transparent="1"/>	
+		<eLabel text="BER:" position="80,420" size="80,24" font="Regular;21" backgroundColor="black" transparent="1"/>
+		<widget name="ber_bar" position="150,420" size="280,20" borderWidth="1" pixmap="bar_snr_finder.png" backgroundColor="black" transparent="1"/>
+		<widget name="ber_value" position="440,420" size="80,24" font="Regular;21" backgroundColor="black" transparent="1"/>
+		<eLabel text="Lock:" position="80,450" size="80,24" font="Regular;21" backgroundColor="black" transparent="1"/>
+		<widget name="lock_state" position="150,450" size="200,24" font="Regular;21" backgroundColor="black" transparent="1"/>
 		<eLabel text="Frequency:" position="505,360" size="150,24" font="Regular;21" backgroundColor="black" transparent="1"/>
 		<widget name="frequency_value" position="660,360" size="100,24" font="Regular;21" backgroundColor="black" transparent="1"/>
 		<eLabel text="Symbolrate:" position="505,390" size="150,24" font="Regular;21" backgroundColor="black" transparent="1"/>
 		<widget name="symbolrate_value" position="660,390" size="100,24" font="Regular;21" backgroundColor="black" transparent="1"/>
 		<eLabel text="FEC:" position="505,420" size="150,24" font="Regular;21" backgroundColor="black" transparent="1"/>
 		<widget name="fec_value" position="660,420" size="100,24" font="Regular;21" backgroundColor="black" transparent="1"/>
-		<eLabel text="Polarisation:" position="80,460" size="125,22" font="Regular;19" backgroundColor="black" transparent="1"/>		
-		<widget name="polarisation" position="205,460" size="125,22" font="Regular;21" foregroundColor="#0000fafa" backgroundColor="black" transparent="1"/>
-		<widget name="status_bar" position="865,435" size="320,500" font="Regular;18" halign="center" transparent="1" foregroundColor="#004ccbde" backgroundColor="black"/>
+		<eLabel text="Polarisation:" position="80,490" size="125,22" font="Regular;19" backgroundColor="black" transparent="1"/>		
+		<widget name="polarisation" position="205,490" size="125,22" font="Regular;21" foregroundColor="#0000fafa" backgroundColor="black" transparent="1"/>
+		<widget name="status_bar" position="865,485" size="320,500" font="Regular;18" halign="center" transparent="1" foregroundColor="#004ccbde" backgroundColor="black"/>
+	    <widget name="rotorstatus" position="845,435" size="380,40" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>	
 	</screen>
 	<!--  ####### Configuracion sintonizador->sintonizar boton rojo #######  -->	
 	<screen name="TunerScreen" position="0,0" size="1280,720" title="Tuner Screen" flags="wfNoBorder">
@@ -2647,8 +2653,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- ####### TEMPORIZADORES + TEMPORIZADORES DE ALIMENTACION (no panel PantallaGenericaRGYB) ####### -->
 	<screen name="TimerEditList" position="0,0" size="1280,720" title="Timer Editor" backgroundColor="black" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGY"/>
-		<panel name="sRGY"/>		
+		<panel name="PantallaGenericaRGYB"/>
+		<panel name="sRGYB"/>		
 		<panel name="ScrollBarTemplate"/>
 		<panel name="Title"/>
 		<panel name="PIG"/>
@@ -5167,7 +5173,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>			
 		
 	<!-- Record Name -->
-        <widget source="Service" render="Label" position="430,85" size="435,25" font="Regular;20" foregroundColor="yellow" transparent="0" halign="center" valign="top">
+        <widget source="Service" render="RunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" position="430,85" size="435,25" font="Regular;20" foregroundColor="yellow" transparent="0" halign="center" valign="top">
             <convert type="EventName">ExtendedDescription</convert>
         </widget>		
 		<ePixmap pixmap="buttons/red.png" position="170,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
