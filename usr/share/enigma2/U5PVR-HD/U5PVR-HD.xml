@@ -441,7 +441,7 @@
 	<!-- event info -->
 		<widget name="FullDescription" position="85,122" size="0,0" font="Regular;22" halign="left"  zPosition="3" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1"/>
 		<widget name="epg_description" position="85,122" size="0,0" font="Regular;22" halign="left"  zPosition="3" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1"/>
-		<widget name="epg_eventname" position="85,460" size="690,30" font="Regular;22" halign="left"  zPosition="3" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1"/>
+		<widget name="epg_eventname" zPosition="1" position="75,153" size="720,405" font="Regular;20" backgroundColor="black" transparent="0"/>		
 		<widget source="Event" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" zPosition="1" position="75,153" size="720,405" font="Regular;20" backgroundColor="black" transparent="0">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
@@ -455,7 +455,8 @@
 	
 	<!-- (033) ####### EVENT VIEW entre otros desde InfobarEPG->unico####### -->
 	<screen name="EventView" position="0,0"	size="1280,720" flags="wfNoBorder">
-        <panel name="Titlerunning"/>	
+        <panel name="Titlerunning"/>		
+		<panel name="ScrollBarTemplate"/>		
 	    <!--ePixmap position="57,625" zPosition="1" size="750,45" pixmap="U5PVR-HD/menu/colorbarRGYB.png" alphatest="blend" transparent="1" /-->	
 		<ePixmap position="0,0" zPosition="0" size="1280,720" pixmap="U5PVR-HD/menu/fr_main_channels.png"/>	
 		<widget name="key_red" position="5,625" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
@@ -465,10 +466,7 @@
 		<widget name="red" position="60,635" zPosition="1" size="140,35" pixmap="U5PVR-HD/menu/colorbarR.png" alphatest="blend"/>
 		<widget name="green" position="260,635" zPosition="1" size="140,35" pixmap="U5PVR-HD/menu/colorbarG.png" alphatest="blend"/>
 		<widget name="yellow" position="460,635" zPosition="1" size="140,35" pixmap="U5PVR-HD/menu/colorbarY.png" alphatest="blend"/>
-		<widget name="blue" position="660,634" zPosition="1" size="140,35" pixmap="U5PVR-HD/menu/colorbarB.png" alphatest="blend"/>
-		
-		<panel name="ScrollBarTemplate"/>
-        <panel name="Title"/>	
+		<widget name="blue" position="660,634" zPosition="1" size="140,35" pixmap="U5PVR-HD/menu/colorbarB.png" alphatest="blend"/>	
     <!-- pig -->
 		 <widget source="session.VideoPicture" render="Pig" position="848,112" size="370,218" zPosition="3" backgroundColor="#df0b1300"/>
 
@@ -486,6 +484,7 @@
         </widget>	
 	<!-- event info -->
 		<widget name="channel" position="205,122" size="380,28" font="Regular;28" halign="center" valign="center" zPosition="3" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1"/>
+		<widget name="epg_eventname" zPosition="1" position="70,153" font="Regular;20" size="710,405" backgroundColor="black" transparent="0"/>		
 		<widget name="FullDescription" position="85,122" size="0,0" font="Regular;22" halign="left"  zPosition="3" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1"/>
 		<widget name="epg_description" position="85,122" size="0,0" font="Regular;22" halign="left"  zPosition="3" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1"/>
 		<widget name="summary_description" position="85,122" size="0,0" font="Regular;22" halign="left"  zPosition="3" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1"/>		
@@ -510,7 +509,8 @@
 		<widget name="epg_description" position="85,122" size="0,0" font="Regular;22" halign="left"  zPosition="1" foregroundColor="#004ccbde" backgroundColor="#14101010" transparent="1"/>
 		<widget name="channel" position="5,3" size="360,20" font="xRegular;15" valign="center" halign="center"  zPosition="1" foregroundColor="#0000baff" backgroundColor="#14101010" transparent="1"/>				
 		<widget source="Title" render="Label" position="10,20" size="0,0" font="Regular;14" transparent="1" foregroundColor="#004ccbde" backgroundColor="#14101010" zPosition="1"/>
-		<widget source="Event" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="10,15" size="350,25" valign="center" halign="center" font="Regular;19" foregroundColor="#0000fafa" transparent="0" backgroundColor="#00333333">
+        <widget name="epg_eventname" zPosition="1" position="10,15" size="350,25" valign="center" halign="center" font="Regular;19" foregroundColor="#0000fafa" transparent="0" backgroundColor="#14101010"/>		
+		<widget source="Event" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="10,15" size="350,25" valign="center" halign="center" font="Regular;19" foregroundColor="#0000fafa" transparent="0" backgroundColor="#14101010">
 			<convert type="EventName">Name</convert>
 		</widget>
         <widget name="summary_description" position="10,62" size="0,0" font="Regular;18" valign="center" halign="center" zPosition="3" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1"/>		
@@ -753,7 +753,7 @@
 		<widget source="global.CurrentTime" render="Label" position="1160,5" size="100,28" font="Regular;20" foregroundColor="#0000baff" backgroundColor="black" halign="right" transparent="1" zPosition="1">
 		    <convert type="ClockToText">Format %H:%M:%S</convert>
 		</widget>
-		<ePixmap pixmap="icons/marco.png" position="0,0" size="35,30" zPosition="1" alphatest="blend"/>
+		<ePixmap pixmap="icons/marco.png" position="0,0" size="70,42" zPosition="1" alphatest="blend"/>
 		<widget source="Title" render="Label" position="35,0" size="500,43" font="Regular;30" transparent="1" foregroundColor="#004ccbde" backgroundColor="black" zPosition="1"/>
 		<widget source="Event" render="Label" position="475,5" size="100,28" font="Regular;18" halign="left" zPosition="1" foregroundColor="#004ccbde" backgroundColor="black" transparent="1">
 		    <convert type="EventTime">StartTime</convert>
@@ -794,19 +794,19 @@
 		<widget name="timeline3" pixmap="epg/timeline.png" position="0,388" size="0,0" zPosition="-1"/>
 		<widget name="timeline4" pixmap="epg/timeline.png" position="0,388" size="0,0" zPosition="-1"/>
 		<widget name="timeline5" pixmap="epg/timeline.png" position="0,388" size="0,0" zPosition="-1"/>
-		<widget name="timeline_now" position="0,55" zPosition="3" size="9,130" pixmap="epg/timeline-now-infobar-epg.png" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_text.png" position="0,185" size="40,22" alphatest="blend"/>		
-		<ePixmap pixmap="icons/key_help.png" position="45,185" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_epg_single.png" position="90,185" size="40,22" alphatest="blend"/>		
-		<ePixmap pixmap="icons/key_menu1.png" position="135,185" size="40,22" alphatest="blend"/>		
-		<ePixmap pixmap="icons/key_info.png" position="180,185" size="40,22" alphatest="blend"/>		
-		<ePixmap pixmap="buttons/red.png" position="235,203" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
+		<widget name="timeline_now" position="0,55" zPosition="3" size="9,130" pixmap="epg/timeline-now-infobar-epg.png" alphatest="on"/>
+		<ePixmap pixmap="icons/key_text.png" position="5,185" size="40,22" alphatest="blend"/>		
+		<ePixmap pixmap="icons/key_help.png" position="50,185" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_epg_single.png" position="95,185" size="40,22" alphatest="blend"/>		
+		<ePixmap pixmap="icons/key_menu1.png" position="140,185" size="40,22" alphatest="blend"/>		
+		<ePixmap pixmap="icons/key_info.png" position="185,185" size="40,22" alphatest="blend"/>		
+		<ePixmap pixmap="buttons/red.png" position="235,203" size="140,3" alphatest="blend" zPosition="1"/>
 		<widget name="key_red" position="190,180" size="240,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;18" valign="center"/>
-		<ePixmap pixmap="buttons/green.png" position="480,203" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
+		<ePixmap pixmap="buttons/green.png" position="480,203" size="140,3" alphatest="blend" zPosition="1"/>
 		<widget name="key_green" position="430,180" size="240,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;18" valign="center"/>
-		<ePixmap pixmap="buttons/yellow.png" position="720,203" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
+		<ePixmap pixmap="buttons/yellow.png" position="720,203" size="140,3" alphatest="blend" zPosition="1"/>
 		<widget name="key_yellow" position="675,180" size="240,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;18" valign="center"/>
-		<ePixmap pixmap="buttons/blue.png" position="1015,203" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
+		<ePixmap pixmap="buttons/blue.png" position="1015,203" size="140,3" alphatest="blend" zPosition="1"/>
 		<widget name="key_blue" position="870,180" size="440,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;18" valign="center"/>
 	</screen>
 	    <!-- QuickEPG -->
