@@ -984,7 +984,7 @@
         <panel name="ScrollBarTemplate"/>
 		<ePixmap position="860,414" zPosition="1" size="300,220" pixmap="U5PVR-HD/menu/ico_flags.png" alphatest="blend" transparent="1"/>	
 	<!-- languages list -->
-		<widget source="languages" render="Listbox" position="77,135" size="725,400" zPosition="1" scrollbarMode="showOnDemand" selectionPixmap="U5PVR-HD/icons/ls680x50.png" transparent="1">
+		<widget source="languages" render="Listbox" position="77,135" size="720,400" zPosition="1" scrollbarMode="showOnDemand" selectionPixmap="U5PVR-HD/icons/ls680x50.png" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				MultiContentEntryText(pos = (150, 10), size = (670, 30), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
@@ -1350,35 +1350,41 @@
 		<widget name="EditSettings_Text" position="655,610" size="150,50" valign="center" halign="center" zPosition="2" font="Regular;22" transparent="1" foregroundColors="#00ffffff,#00ffffff,#00ffffff" backgroundColor="black"/>
 		<!--panel name="Logo_Egami"/-->  
 	</screen>
-	<!-- (109) ####### Network Wizard ####### -->
-	<screen name="NetworkWizard" position="0,0" size="1280,720" title="Red Configuración Inicial" flags="wfNoBorder">
-		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="U5PVR-HD/menu/fr_main_help.png"/>
-		<widget source="global.CurrentTime" render="Label" position="640,25" size="350,25" halign="right" font="LCD;24" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1">
+
+	<!-- (074) ####### WIZARD ASISTENTE BASICO NO RESTAURACION Y ASISTENTE DE RED ####### -->	
+    <screen name="NetworkWizard" position="10,65" size="1280,720" zPosition="-1" backgroundColor="#03424a" title="Bienvenido...">
+		<widget source="global.CurrentTime" render="Label" position="830,5" size="350,25" font="LCD;24" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1">
 		    <convert type="ClockToText">Date</convert>
 		</widget>
-		<ePixmap pixmap="icons/clock.png" position="1195,35" zPosition="1" size="20,20" alphatest="blend"/>
-		<widget source="global.CurrentTime" render="Label" position="1055,25" size="160,25" zPosition="2" font="LCD;24" halign="center" foregroundColor="#004ccbde" backgroundColor="#00040404" transparent="1">
+		<ePixmap pixmap="icons/clock.png" position="1220,15" zPosition="1" size="20,20" alphatest="blend"/>
+		<widget source="global.CurrentTime" render="Label" position="1090,5" size="160,25" zPosition="2" font="LCD;24" halign="center" foregroundColor="#004ccbde" backgroundColor="#00040404" transparent="1">
             <convert type="ClockToText">Format:%H:%M :%S</convert>
-        </widget>		
-		<panel name="Title"/>
-		<widget name="text" position="350,110" foregroundColor="#004ccbde" size="340,400" font="Regular;24"/>
-		<widget source="list" render="Listbox" position="350,470" size="440,180" scrollbarMode="showOnDemand" transparent="1">
-			<convert type="StringList"/>
-		</widget>		
-		<widget name="config" position="333,410" zPosition="1" size="440,180" transparent="1" scrollbarMode="showOnDemand"/>
-		<ePixmap pixmap="U5PVR-HD/buttons/key_red.png" position="90,354" zPosition="0" size="35,25" transparent="1" alphatest="blend"/>
-		<widget name="languagetext" position="130,355" size="150,30" font="Regular;20"/>
-		<widget name="wizard" pixmap="U5PVR-HD/wizard.png" position="90,140" zPosition="10" size="140,188" alphatest="blend"/>
-		<widget name="rc" pixmaps="rc.png,rcold.png" position="950,110" zPosition="10" size="154,500" alphatest="blend" transparent="1"/>
-		<widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend"/>
-		<widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend"/>
-		<widget name="arrowup" pixmap="arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend"/>
-		<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend"/>	
+        </widget>	
+		<ePixmap pixmap="buttons/key_red.png" position="830,65" zPosition="0" size="35,25" transparent="1" alphatest="blend"/>	
+        <widget name="languagetext" zPosition="15" position="875,47" size="500,55" font="Regular;20" halign="left" valign="center" transparent="1"/>
+        <widget name="text" position="250,170" size="625,450" zPosition="15" font="Regular;23" halign="center" valign="center" transparent="1"/>		
+		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="1095,100" zPosition="11" size="154,500" alphatest="blend" transparent="1"/>
+		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
+        <widget name="wizard" pixmap="wizard.png" position="920,100" zPosition="10" size="140,188" alphatest="blend"/>		
+		<widget source="list" render="Listbox" position="25,130" size="750,600" transparent="1" backgroundColor="black" scrollbarMode="showOnDemand" zPosition="3">
 		<widget name="HelpWindow" position="682,599" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
 		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,680" zPosition="2" size="40,22" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
+		</widget>		
+			<convert type="StringList"/>
 		</widget>
-		<widget name="key_red" position="70,645" size="120,50" backgroundColor="#000c0d0e" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>		
+		<widget name="config" zPosition="1" position="15,50" size="750,600" backgroundColor="#03424a" scrollbarMode="showOnDemand" transparent="1"/> 
+    </screen>
+	<screen name="InstallWizard" position="15,65" size="1280,720" zPosition="-1" backgroundColor="#03424a" title="Bienvenido...">
+		<widget name="config" zPosition="1" position="15,5" size="750,600" backgroundColor="#03424a" scrollbarMode="showOnDemand" transparent="1"/> 
+    </screen>
+	<screen name="InstallWizardIpkgUpdater" position="fill" backgroundColor="#0003424a" flags="wfNoBorder">
+        <ePixmap pixmap="icons/input_info.png" position="605,275" size="1280,720" alphatest="blend"/>		
+        <ePixmap pixmap="menu/logo_openboxtv.png" position="582,180" size="100,100" alphatest="blend"/>	
+		<widget source="statusbar" render="Label" position="280,350" size="720,75" foregroundColor="#00ffffff" zPosition="2" transparent="1" font="Regular;25" halign="center"/>
 	</screen>	
     <!-- Network MacAdress Setup -->
 	<screen name="NetworkMacSetup" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1934,7 +1940,7 @@
 		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>		
 		<widget name="text" position="600,150" size="450,240" zPosition="10" font="Regular;23" halign="center" valign="center" transparent="1"/>
-		<widget source="languages" render="Listbox" position="100,135" size="500,450" zPosition="10" scrollbarMode="showOnDemand" transparent="1">
+		<widget source="languages" render="Listbox" position="100,135" size="497,450" zPosition="10" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				MultiContentEntryText(pos = (80, 10), size = (200, 50), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
@@ -1949,16 +1955,23 @@
         <widget name="wizard" pixmap="wizard.png" position="850,350" zPosition="10" size="140,188" alphatest="blend"/>		
 	</screen>
 	<!-- (074) ####### HDMI Y COMPONENTES ####### -->	
-	<screen name="VideoWizard" position="15,65" size="1280,720" zPosition="-1" backgroundColor="#03424a" title="Bienvenido...">			
-		<ePixmap pixmap="buttons/key_red.png" position="830,15" zPosition="0" size="35,25" transparent="1" alphatest="blend"/>	
-        <widget name="languagetext" zPosition="15" position="870,0" size="500,55" font="Regular;20" halign="left" valign="center" transparent="1"/>
+	<screen name="VideoWizard" position="15,65" size="1280,720" zPosition="-1" backgroundColor="#03424a" title="Bienvenido...">
+		<widget source="global.CurrentTime" render="Label" position="830,5" size="350,25" font="LCD;24" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1">
+		    <convert type="ClockToText">Date</convert>
+		</widget>
+		<ePixmap pixmap="icons/clock.png" position="1220,15" zPosition="1" size="20,20" alphatest="blend"/>
+		<widget source="global.CurrentTime" render="Label" position="1090,5" size="160,25" zPosition="2" font="LCD;24" halign="center" foregroundColor="#004ccbde" backgroundColor="#00040404" transparent="1">
+            <convert type="ClockToText">Format:%H:%M :%S</convert>
+        </widget>	
+		<ePixmap pixmap="buttons/key_red.png" position="830,65" zPosition="0" size="35,25" transparent="1" alphatest="blend"/>	
+        <widget name="languagetext" zPosition="15" position="870,50" size="500,55" font="Regular;20" halign="left" valign="center" transparent="1"/>
         <widget name="text" position="400,350" size="620,300" zPosition="15" font="Regular;23" halign="center" valign="center" transparent="1"/>		
 		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="1095,60" zPosition="11" size="154,500" alphatest="blend" transparent="1"/>
 		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
-        <widget name="wizard" pixmap="wizard.png" position="870,30" zPosition="10" size="140,188" alphatest="blend"/>
+        <widget name="wizard" pixmap="wizard.png" position="870,90" zPosition="10" size="140,188" alphatest="blend"/>
 		<widget source="list" render="Listbox" position="80,170" size="750,220" transparent="1" backgroundColor="black" scrollbarMode="showOnDemand" zPosition="3">
 			<convert type="StringList"/>
 		</widget>
@@ -1966,15 +1979,22 @@
     </screen>	 	
 	<!-- (074) ####### COMIENZO DEL ASISTENTE HASTA INICIAR IMAGEN ####### -->	
     <screen name="StartWizard" position="15,65" size="1280,720" zPosition="-1" backgroundColor="#03424a" title="Bienvenido...">
-		<ePixmap pixmap="buttons/key_red.png" position="830,15" zPosition="0" size="35,25" transparent="1" alphatest="blend"/>	
-        <widget name="languagetext" zPosition="15" position="870,0" size="500,55" font="Regular;20" halign="left" valign="center" transparent="1"/>
-        <widget name="text" position="770,100" size="325,450" zPosition="15" font="Regular;23" halign="center" valign="center" transparent="1"/>		
+		<widget source="global.CurrentTime" render="Label" position="830,5" size="350,25" font="LCD;24" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1">
+		    <convert type="ClockToText">Date</convert>
+		</widget>
+		<ePixmap pixmap="icons/clock.png" position="1220,15" zPosition="1" size="20,20" alphatest="blend"/>
+		<widget source="global.CurrentTime" render="Label" position="1090,5" size="160,25" zPosition="2" font="LCD;24" halign="center" foregroundColor="#004ccbde" backgroundColor="#00040404" transparent="1">
+            <convert type="ClockToText">Format:%H:%M :%S</convert>
+        </widget>	
+		<ePixmap pixmap="buttons/key_red.png" position="830,45" zPosition="0" size="35,25" transparent="1" alphatest="blend"/>	
+        <widget name="languagetext" zPosition="15" position="870,30" size="500,55" font="Regular;20" halign="left" valign="center" transparent="1"/>
+        <widget name="text" position="770,125" size="325,450" zPosition="15" font="Regular;23" halign="center" valign="center" transparent="1"/>		
 		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="1095,60" zPosition="11" size="154,500" alphatest="blend" transparent="1"/>
 		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
-        <widget name="wizard" pixmap="wizard.png" position="870,30" zPosition="10" size="140,188" alphatest="blend"/>
+        <widget name="wizard" pixmap="wizard.png" position="870,60" zPosition="10" size="140,188" alphatest="blend"/>
         <widget name="stepslider" position="770,575" size="450,40" foregroundColor="#0000fafa" zPosition="15" font="Regular;23" halign="center" valign="center" transparent="1"/>
 	    <eLabel position="770,575" size="450,1" backgroundColor="#0000fafa" zPosition="16"/>
 	    <eLabel position="770,575" size="1,40" backgroundColor="#0000fafa" zPosition="16"/>
