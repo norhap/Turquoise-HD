@@ -492,25 +492,26 @@
 		<ePixmap pixmap="icons/key_info.png" position="670,674" size="40,22" alphatest="blend"/>		
     </screen>
 	<!-- Info desde InfobarEPG->Multiple -->	
-	<screen name="InfoBarEventView" position="900,7" size="365,247" flags="wfNoBorder">
-		<ePixmap pixmap="U5PVR-HD/menu/backbox.png" zPosition="-1" position="0,0" size="365,247" alphatest="on"/>		
+	<screen name="InfoBarEventView" position="5,7" size="365,247" flags="wfNoBorder">
+		<!--ePixmap pixmap="U5PVR-HD/menu/backbox.png" zPosition="-1" position="0,0" size="365,247" alphatest="on"/-->		
 	    <eLabel position="2,2" size="361,1" backgroundColor="#0000fafa" zPosition="0"/>
 	    <eLabel position="2,2" size="1,242" backgroundColor="#0000fafa" zPosition="0"/>
 	    <eLabel position="363,2" size="1,243" backgroundColor="#0000fafa" zPosition="0"/>
 	    <eLabel position="2,244" size="361,1" backgroundColor="#0000fafa" zPosition="0"/>		
 		<widget name="FullDescription" position="85,122" size="0,0" font="Regular;22" halign="left"  zPosition="1" foregroundColor="#004ccbde" backgroundColor="#14101010" transparent="1"/>		
 		<widget name="epg_description" position="85,122" size="0,0" font="Regular;22" halign="left"  zPosition="1" foregroundColor="#004ccbde" backgroundColor="#14101010" transparent="1"/>
-		<widget name="channel" position="5,3" size="360,20" font="xRegular;15" valign="center" halign="center"  zPosition="1" foregroundColor="#0000baff" backgroundColor="#14101010" transparent="1"/>				
+		<widget name="channel" position="5,3" size="356,17" font="xRegular;15" valign="center" halign="center"  zPosition="1" foregroundColor="#0000baff" backgroundColor="#14101010" transparent="0"/>				
 		<widget source="Title" render="Label" position="10,20" size="0,0" font="Regular;14" transparent="1" foregroundColor="#004ccbde" backgroundColor="#14101010" zPosition="1"/>
         <widget name="epg_eventname" zPosition="1" position="10,15" size="350,25" valign="center" halign="center" font="Regular;19" foregroundColor="#0000fafa" transparent="0" backgroundColor="#14101010"/>		
-		<widget source="Event" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="10,15" size="350,25" valign="center" halign="center" font="Regular;19" foregroundColor="#0000fafa" transparent="0" backgroundColor="#14101010">
+		<widget source="Event" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="5,15" size="356,25" valign="center" halign="center" font="Regular;19" foregroundColor="#0000fafa" transparent="0" backgroundColor="#14101010">
 			<convert type="EventName">Name</convert>
 		</widget>
-        <widget name="summary_description" position="10,62" size="0,0" font="Regular;18" valign="center" halign="center" zPosition="3" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1"/>		
-		<widget name="datetime" position="70,38" size="250,26" font="xRegular;17" foregroundColor="#006da6ff" backgroundColor="#14101010" transparent="1" noWrap="1" valign="top" halign="left"/>
-		<widget name="duration" position="235,38" size="150,26" font="xRegular;17" foregroundColor="#006da6ff" backgroundColor="#14101010" transparent="1" noWrap="1" valign="top" halign="left"/>
+        <widget name="summary_description" position="10,62" size="0,0" font="Regular;18" valign="center" halign="center" zPosition="3" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1"/>
+	    <eLabel position="5,38" size="66,25" backgroundColor="#14101010" zPosition="0"/>		
+		<widget name="datetime" position="70,38" size="251,26" font="xRegular;17" foregroundColor="#006da6ff" backgroundColor="#14101010" transparent="0" noWrap="1" valign="top" halign="left"/>
+		<widget name="duration" position="235,38" size="151,26" font="xRegular;17" foregroundColor="#006da6ff" backgroundColor="#14101010" transparent="0" noWrap="1" valign="top" halign="left"/>
 	<!--widget name="FullDescription" render="Label" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="10,50" size="1260,140" font="Regular;22" foregroundColor="#00ffffff" backgroundColor="black" transparent="1"/-->
-		<widget source="Event" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="10,55" size="350,187" font="Regular;18" valign="center" halign="center" foregroundColor="#00a1d1ff" backgroundColor="#14101010" transparent="0">
+		<widget source="Event" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="5,55" size="356,187" font="Regular;18" valign="center" halign="center" foregroundColor="#00a1d1ff" backgroundColor="#14101010" transparent="0">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>		
 	</screen>	
@@ -787,7 +788,7 @@
 		<widget name="timeline3" pixmap="epg/timeline.png" position="0,388" size="0,0" zPosition="-1"/>
 		<widget name="timeline4" pixmap="epg/timeline.png" position="0,388" size="0,0" zPosition="-1"/>
 		<widget name="timeline5" pixmap="epg/timeline.png" position="0,388" size="0,0" zPosition="-1"/>
-		<widget name="timeline_now" position="0,55" zPosition="3" size="9,130" pixmap="epg/timeline-now-infobar-epg.png" alphatest="on"/>
+		<widget name="timeline_now" position="0,55" zPosition="3" size="9,130" pixmap="epg/timeline-now-infobar-epg.png" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_text.png" position="5,185" size="40,22" alphatest="blend"/>		
 		<ePixmap pixmap="icons/key_help.png" position="50,185" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_epg_single.png" position="95,185" size="40,22" alphatest="blend"/>		
