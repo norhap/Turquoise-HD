@@ -201,5 +201,9 @@
 		<widget name="yellow" position="455,118" zPosition="2" size="0,0" font="Regular;16" transparent="1"/>
 		<widget name="blue" position="655,118" zPosition="2" size="140,20" font="Regular;16" transparent="1"/>
 		<ePixmap position="1155,117" zPosition="1" size="45,25" pixmap="icons/cursores_derecha_izquierda_arriba_abajo.png" alphatest="blend" transparent="1"/>			
-	</screen>	
+	</screen>
+	<switchpixmap>
+		<pixmap name="menu_on" filename="U5PVR-HD/menu/menu_on.png" />
+		<pixmap name="menu_off" filename="U5PVR-HD/menu/menu_off.png" />
+	</switchpixmap>	
 </skin>
