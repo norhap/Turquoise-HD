@@ -46,8 +46,8 @@
 	    <widget source="menu_path_compressed" render="Label" zPosition="2" position="80,50" size="725,32" font="Regular;15" halign="center" valign="center" foregroundColor="#0000fafa" backgroundColor="#00000000"/>
 	</screen>
 	<screen name="Titlerunning">
-		<widget source="Title" render="RunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" zPosition="2" position="70,20" foregroundColor="#0000fafa" backgroundColor="black" size="615,50" font="Regular;24" halign="center" valign="center"/>		
-		<ePixmap pixmap="U5PVR-HD/menu/border_title.png" zPosition="1" position="80,5" size="580,80" alphatest="blend"/>
+		<widget source="Title" render="RunningText" options="movetype=running,startpoint=0,startdelay=3000,wrap=0,always=0,repeat=2,oneshot=1" zPosition="2" position="70,20" foregroundColor="#0000fafa" backgroundColor="black" size="615,50" font="Regular;24" halign="center" valign="center"/>		
+		<ePixmap pixmap="U5PVR-HD/menu/border_title.png" zPosition="1" position="80,5" size="580,90" alphatest="blend"/>
 	    <!--widget source="menu_path_compressed" render="Label" zPosition="1" position="0,25" size="820,32" font="Regular;15" halign="center" valign="center" foregroundColor="#0000fafa" backgroundColor="#00000000"/-->
 	</screen>	
 	<screen name="Titlechannellist">
