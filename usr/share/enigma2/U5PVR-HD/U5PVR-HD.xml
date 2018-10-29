@@ -3897,12 +3897,12 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		    <convert type="CryptoInfo">VerboseInfo</convert>
 	    </widget>	  
         <ePixmap position="372,557" zPosition="2" size="22,22" pixmap="U5PVR-HD/icons/icon_norec_light.png" alphatest="on"/>	
-  	    <widget source="session.Event_Now" render="Label" position="65,60" size="70,24" font="Regular;22" halign="left" noWrap="1" foregroundColor="#00a1d1ff" backgroundColor="background" transparent="1" zPosition="1">
+  	    <widget source="session.Event_Now" render="RunningText" options="movetype=running,startpoint=0,startdelay=5000,wrap=0,always=0,repeat=2,oneshot=1" position="65,60" size="570,24" font="Regular;22" halign="left" noWrap="1" foregroundColor="#00a1d1ff" backgroundColor="background" transparent="0" zPosition="1">
 		    <convert type="EventName">NameNow</convert>
 		</widget>
-		<widget font="Regular;22" halign="left" valign="center" position="140,60" render="RunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" size="465,24" source="session.Event_Now" foregroundColor="#004ccbde" backgroundColor="background" transparent="0" zPosition="1">
+		<!--widget font="Regular;22" halign="left" valign="center" position="150,60" render="RunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" size="465,24" source="session.Event_Now" foregroundColor="#004ccbde" backgroundColor="background" transparent="0" zPosition="1">
 			<convert type="EventName">Name</convert>
-		</widget>		
+		</widget-->		
 		<widget source="session.Event_Now" render="Label" position="95,100" size="70,35" font="Regular;22" foregroundColor="#004ccbde" backgroundColor="background" transparent="1" zPosition="1" halign="right" noWrap="1" valign="top">
 		    <convert type="EventTime">StartTime</convert>
 		    <convert type="ClockToText">
@@ -3920,12 +3920,12 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		    <convert type="EventName">ExtendedDescription</convert>
 		</widget>		
 	<!-- Event Next -->
-		<widget source="session.Event_Next" render="Label" position="645,60" size="102,24" font="Regular;22" halign="left" foregroundColor="#004ccbde" backgroundColor="background" noWrap="1" transparent="1" zPosition="1">
+		<widget source="session.Event_Next" render="RunningText" options="movetype=running,startpoint=0,startdelay=5000,wrap=0,always=0,repeat=2,oneshot=1" position="642,60" size="573,24" font="Regular;22" halign="left" foregroundColor="#004ccbde" backgroundColor="background" noWrap="1" transparent="0" zPosition="1">
 		    <convert type="EventName">NameNext</convert>
 		</widget>
-		<widget font="Regular;22" halign="left" valign="center" position="760,60" render="RunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" size="415,24" source="session.Event_Next" foregroundColor="#00a1d1ff" backgroundColor="background" transparent="0" zPosition="1">
+		<!--widget font="Regular;22" halign="left" valign="center" position="775,60" render="RunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" size="415,24" source="session.Event_Next" foregroundColor="#00a1d1ff" backgroundColor="background" transparent="0" zPosition="1">
 			<convert type="EventName">Name</convert>
-		</widget>		
+		</widget-->		
 		<widget source="session.Event_Next" render="Label" position="690,100" size="70,35" font="Regular;22" foregroundColor="#00a1d1ff" backgroundColor="background" transparent="1" zPosition="1" halign="right" noWrap="1" valign="top">
 		    <convert type="EventTime">StartTime</convert>
 		    <convert type="ClockToText">
