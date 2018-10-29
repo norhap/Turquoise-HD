@@ -5066,8 +5066,12 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>
 		<widget name="config" position="80,405" size="690,220" itemHeight="30" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" zPosition="1"/>
 		<widget name="arrowup2" position="90,520" size="210,24" backgroundColor="black" transparent="1"/>
-		<widget name="step" position="85,535" size="210,24" font="Regular;20" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
-		<widget name="stepslider" position="85,565" size="210,24" foregroundColor="#0000fafa" backgroundColor="black" transparent="1"/>
+		<widget name="step" position="95,535" size="210,24" font="Regular;20" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
+		<widget name="stepslider" position="95,565" size="210,24" foregroundColor="#0000fafa" backgroundColor="black" transparent="1"/>
+	    <eLabel position="95,565" size="210,1" backgroundColor="#0000fafa" zPosition="16"/>
+	    <eLabel position="95,565" size="1,24" backgroundColor="#0000fafa" zPosition="16"/>
+	    <eLabel position="95,588" size="210,1" backgroundColor="#0000fafa" zPosition="16"/>
+	    <eLabel position="305,565" size="1,24" backgroundColor="#0000fafa" zPosition="16"/>			
 		<widget name="wizard" pixmap="U5PVR-HD/wizard.png" position="330,240" zPosition="10" size="140,188" alphatest="blend"/>
 		<widget name="rc" pixmaps="rc.png,rcold.png" position="600,120" zPosition="10" size="0,0" alphatest="blend"/>
 		<widget name="arrowdown" pixmap="U5PVR-HD/arrowdown.png" position="-100,-100" zPosition="11" size="0,0" alphatest="blend"/>
@@ -5553,20 +5557,20 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<screen name="IMDB" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaRGY"/>
 		<panel name="ScrollBarTemplate"/>
-        <panel name="Title"/>
         <panel name="PIG"/>
+        <panel name="Title"/>		
 	    <ePixmap pixmap="icons/key_menu1.png" position="8,640" size="40,22" zPosition="2" alphatest="blend"/>		
 		<ePixmap position="660,634" zPosition="1" size="140,35" pixmap="U5PVR-HD/menu/colorbarB.png" alphatest="blend" transparent="1"/>		
 		<widget position="650,555" size="170,156" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
-	    <widget name="ratinglabel" position="80,135" size="250,25" font="Regular;20" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>		
-		<widget name="titellabel" position="350,105" size="330,45" foregroundColor="#004ccbde" valign="center" transparent="1" font="Regular;20"/>		
-		<widget name="statusbar" position="255,50" size="585,26" zPosition="2" font="Regular;22" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
+	    <widget name="ratinglabel" position="85,145" size="250,25" font="Regular;20" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>		
+		<widget name="titellabel" position="280,105" size="330,45" foregroundColor="#004ccbde" halign="center" valign="center" transparent="1" font="Regular;18"/>		
+		<widget name="statusbar" position="100,30" halign="center" valign="center" size="585,26" zPosition="2" font="Regular;22" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 		<ePixmap position="965,405" size="380,180" pixmap="menu/imdb.png" zPosition="1"/>
-		<widget name="menu" position="80,150" size="718,275" zPosition="3" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
-		<widget name="poster" position="930,395" size="182,190" alphatest="on" zPosition="2"/>
-		<widget name="castlabel" position="80,180" size="715,270" font="Regular;20" backgroundColor="black" transparent="1"/>
-		<widget name="extralabel" position="80,180" size="715,270" font="Regular;20" backgroundColor="black" transparent="1"/>
-		<widget name="detailslabel" position="80,425" size="715,180" font="Regular;20" foregroundColor="#004ccbde" transparent="1"/>
+		<widget name="menu" position="80,150" size="722,275" zPosition="3" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
+		<widget name="poster" position="930,395" size="182,190" alphatest="blend" zPosition="2"/>
+		<widget name="castlabel" position="80,180" size="717,270" font="Regular;20" backgroundColor="black" transparent="1"/>
+		<widget name="extralabel" position="80,180" size="717,270" font="Regular;20" backgroundColor="black" transparent="1"/>
+		<widget name="detailslabel" position="85,430" size="715,180" font="Regular;20" foregroundColor="#004ccbde" transparent="1"/>
 		<widget name="starsbg" position="920,590" size="250,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty.png" zPosition="0" transparent="1" alphatest="on"/>
 		<widget name="stars" position="920,590" size="250,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" zPosition="1" alphatest="on" transparent="1"/>
 	</screen>
