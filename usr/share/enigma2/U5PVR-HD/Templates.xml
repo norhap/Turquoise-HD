@@ -45,6 +45,10 @@
 		<ePixmap pixmap="U5PVR-HD/menu/border_title.png" zPosition="0" position="140,5" size="580,90"/>
 	    <widget source="menu_path_compressed" render="Label" zPosition="2" position="80,50" size="725,32" font="Regular;15" halign="center" valign="center" foregroundColor="#0000fafa" backgroundColor="#00000000"/>
 	</screen>
+	<screen name="Title_not_menu_path">
+		<widget source="Title" render="Label" zPosition="2" position="88,20" foregroundColor="#0000fafa" backgroundColor="black" size="700,30" font="Regular;24" halign="center" valign="center"/>		
+		<ePixmap pixmap="U5PVR-HD/menu/border_title.png" zPosition="0" position="140,5" size="580,90"/>
+	</screen>	
 	<screen name="Titlerunning">
 		<widget source="Title" render="RunningText" options="movetype=running,startpoint=0,startdelay=3000,wrap=0,always=0,repeat=2,oneshot=1" zPosition="2" position="70,20" foregroundColor="#0000fafa" backgroundColor="black" size="615,50" font="Regular;24" halign="center" valign="center"/>		
 		<ePixmap pixmap="U5PVR-HD/menu/border_title.png" zPosition="1" position="80,5" size="580,90" alphatest="blend"/>
@@ -368,7 +372,7 @@
 	</screen>	
 	<!--  ####### Template PantallaPieTV #######  -->
 	<screen name="PantallaPieTV" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="Title"/>
+		<panel name="Title_not_menu_path"/>
         <panel name="PIG"/>
         <panel name="ScrollBarTemplate"/>		
 		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="U5PVR-HD/menu/fr_main.png"/>	
