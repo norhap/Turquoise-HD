@@ -3360,10 +3360,18 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <widget source="session.CurrentService" render="Label" position="350,521" size="563,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="#004ccbde" backgroundColor="background">
             <convert type="ServiceName">Name</convert>
         </widget>
+    <!-- ONLINE UPDATE -->		
+		<ePixmap pixmap="/usr/share/enigma2/skin_default/icons/icon_update_off.png" position="830,525" size="20,20" zPosition="4" alphatest="blend"/>
+		<widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="/usr/share/enigma2/skin_default/icons/icon_stableupdate.png" position="830,525" size="20,20" zPosition="5" alphatest="blend">
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+		<widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="/usr/share/enigma2/skin_default/icons/icon_unstableupdate.png" position="830,525" size="20,20" zPosition="5" alphatest="blend">
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+    <!-- Evento Corrente - Event Now -->		
 		<widget font="Regular;24" halign="left" position="317,592" render="Label" noWrap="1" size="620,29" source="session.Event_Now" foregroundColor="#0077d8e6" backgroundColor="background" transparent="1" zPosition="2">
 		    <convert type="EventName">Name</convert>
-	    </widget>	
-    <!-- Evento Corrente - Event Now -->
+	    </widget>
         <widget source="session.Event_Now" render="Label" position="232,592" size="82,28" zPosition="2" halign="left" font="Regular;24" foregroundColor="#0077d8e6" backgroundColor="#00333333" transparent="1">
             <convert type="EventTime">StartTime</convert>
             <convert type="ClockToText">Default</convert>
@@ -4064,7 +4072,14 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		transparent="1">   
  	    <convert type="ServiceInfo">VideoPid</convert>
 	    </widget>
-		
+    <!-- ONLINE UPDATE -->		
+		<ePixmap pixmap="/usr/share/enigma2/skin_default/icons/icon_update_off.png" position="830,525" size="20,20" zPosition="4" alphatest="blend"/>
+		<widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="/usr/share/enigma2/skin_default/icons/icon_stableupdate.png" position="830,525" size="20,20" zPosition="5" alphatest="blend">
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+		<widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="/usr/share/enigma2/skin_default/icons/icon_unstableupdate.png" position="830,525" size="20,20" zPosition="5" alphatest="blend">
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>		
 	</screen>
 
 
