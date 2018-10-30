@@ -878,7 +878,7 @@
 
     <!-- digital clock -->
 	<!-- current time -->	
-		<widget source="global.CurrentTime" render="Label" position="640,25" size="350,25" halign="right" font="LCD;24" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1">
+		<widget source="global.CurrentTime" render="Label" position="670,25" size="350,25" halign="right" font="LCD;24" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1">
 		    <convert type="ClockToText">Date</convert>
 		</widget>
 		<ePixmap pixmap="icons/clock.png" position="1195,35" zPosition="1" size="20,20" alphatest="blend"/>
@@ -942,7 +942,7 @@
 	    <panel name="Title"/>
 	<!-- background -->
 		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="U5PVR-HD/menu/fr_main_help.png"/>
-		<widget source="global.CurrentTime" render="Label" position="640,25" size="350,25" halign="right" font="LCD;24" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1">
+		<widget source="global.CurrentTime" render="Label" position="670,25" size="350,25" halign="right" font="LCD;24" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1">
 		    <convert type="ClockToText">Date</convert>
 		</widget>
 		<ePixmap pixmap="icons/clock.png" position="1195,35" zPosition="1" size="20,20" alphatest="blend"/>
