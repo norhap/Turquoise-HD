@@ -407,7 +407,7 @@
 		<widget name="key_blue" position="605,625" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<ePixmap position="660,634" zPosition="1" size="140,35" pixmap="U5PVR-HD/menu/colorbarB.png" alphatest="blend" transparent="1"/>			
 		<panel name="ScrollBarTemplate"/>
-        <panel name="Title"/>
+        <panel name="Title_not_menu_path"/>
     <!-- pig -->
 		 <widget source="session.VideoPicture" render="Pig" position="848,112" size="370,218" zPosition="3" backgroundColor="#df0b1300"/>
 	<!-- decorative elements -->
@@ -1534,7 +1534,7 @@
 	<screen name="ScanIP" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sRGY"/>	
 		<panel name="ScrollBarTemplate"/>
-        <panel name="Title"/>
+        <panel name="Title_not_menu_path"/>
         <panel name="PIG"/>
 		<panel name="sRGY"/>
 		<widget name="config" position="80,150" size="650,420" scrollbarMode="showOnDemand" transparent="1"/>
@@ -2329,7 +2329,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<screen name="LocationBox" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaRGYB"/>
 		<panel name="ScrollBarTemplate"/>
-        <panel name="Title"/>
+        <panel name="Title_not_menu_path"/>
         <panel name="PIG"/>
         <!--panel name="logo_openboxtv"/-->		
 		<widget name="text" position="230,105" size="500,27" font="Regular;23" foregroundColor="#004ccbde" transparent="1"/>
@@ -2564,7 +2564,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<screen name="SimpleChannelSelection" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaRGYB"/>	
 		<panel name="ScrollBarTemplate"/>
-        <panel name="Title"/>
+        <panel name="Title_not_menu_path"/>
         <panel name="PIG"/>
         <!--panel name="Logo_Egami"/-->		
 		<widget name="list" position="80,138" size="718,450" scrollbarMode="showOnDemand" transparent="1"/>
@@ -2659,7 +2659,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="PantallaGenericaRGYB"/>
 		<panel name="sRGYB"/>		
 		<panel name="ScrollBarTemplate"/>
-		<panel name="Title"/>
+		<panel name="Title_not_menu_path"/>
 		<panel name="PIG"/>
 		<ePixmap pixmap="icons/key_info.png" position="8,640" size="40,22" alphatest="blend" transparent="1" zPosition="2"/>		
 		<widget name="timerlist" position="70,145" size="705,425" itemHeight="70" rowSplit="40" setEventNameFont="Regular;20" setServiceNameFont="Regular;20" setFont="Regular;15" satPosLeft="400" transparent="1" enableWrapAround="1" zPosition="1"/>
@@ -4369,7 +4369,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<screen name="EventViewContextMenu" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
-        <panel name="Title"/>
+        <panel name="Title_not_menu_path"/>
         <panel name="PIG"/>
 		<widget name="menu" position="80,138" size="718,420" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="black" transparent="1">
 		    <convert type="TemplatedMultiContent">
@@ -4879,7 +4879,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<screen name="filtersServicesSetup" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaRGYB"/>
 		<panel name="ScrollBarTemplate"/>
-        <panel name="Title"/>
+        <panel name="Title_not_menu_path"/>
         <panel name="PIG"/>	
 		<widget source="list" render="Listbox" position="80,138" size="715,330" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
@@ -4899,7 +4899,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<screen name="filtersServicesSelection" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaRGYB"/>
 		<panel name="ScrollBarTemplate"/>
-        <panel name="Title"/>
+        <panel name="Title_not_menu_path"/>
         <panel name="PIG"/>	
 		<widget name="list" position="80,138" size="718,420" scrollbarMode="showOnDemand"/>
         <!--panel name="Logo_Egami"/-->		
@@ -5541,7 +5541,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="PantallaGenericaRGY"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="PIG"/>
-        <panel name="Title"/>		
+        <panel name="Title_not_menu_path"/>		
 	    <ePixmap pixmap="icons/key_menu1.png" position="8,640" size="40,22" zPosition="2" alphatest="blend"/>		
 		<ePixmap position="660,634" zPosition="1" size="140,35" pixmap="U5PVR-HD/menu/colorbarB.png" alphatest="blend" transparent="1"/>		
 		<widget position="650,555" size="170,156" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
@@ -5561,7 +5561,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<screen name="ForecaPreview" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sRGYB"/>
 		<panel name="ScrollBarTemplate"/>
-        <panel name="Title"/>
+        <panel name="Title_not_menu_path"/>
         <panel name="PIG"/>
         <!--panel name="Logo_Egami"/-->		
 		<widget name="MainList" position="80,180" size="717,350" zPosition="3" backgroundColor="#00000000" enableWrapAround="1" scrollbarMode="showOnDemand"/>
@@ -5586,7 +5586,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<screen name="CityPanel" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sGYB"/>		
 		<panel name="ScrollBarTemplate"/>
-        <panel name="Title"/>
+        <panel name="Title_not_menu_path"/>
         <panel name="PIG"/>
         <!--panel name="Logo_Egami"/-->		
 		<widget name="Mlist" position="80,170" size="718,365" zPosition="3" backgroundColor="#00000000" enableWrapAround="1" scrollbarMode="showOnDemand"/>
@@ -5598,7 +5598,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="PantallaGenerica_sRGYB"/>
         <panel name="sRGYB"/>		
 		<panel name="ScrollBarTemplate"/>
-        <panel name="Title"/>
+        <panel name="Title_not_menu_path"/>
         <panel name="PIG"/>
         <!--panel name="Logo_Egami"/-->		
 		<widget name="Mlist" position="80,150" size="718,430" zPosition="3" backgroundColor="#00000000" enableWrapAround="1" scrollbarMode="showOnDemand"/>		
@@ -5607,7 +5607,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<screen name="SatPanelb" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
-        <panel name="Title"/>
+        <panel name="Title_not_menu_path"/>
         <panel name="PIG"/>
         <!--panel name="Logo_Egami"/-->			
 		<widget name="Mlist" position="80,150" size="718,430" zPosition="3" backgroundColor="#00000000" enableWrapAround="1" scrollbarMode="showOnDemand"/>
@@ -5617,7 +5617,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="PantallaGenerica_sRG"/>
         <panel name="sRG"/>		
 		<panel name="ScrollBarTemplate"/>
-        <panel name="Title"/>
+        <panel name="Title_not_menu_path"/>
         <panel name="PIG"/>
         <!--panel name="Logo_Egami"/-->		
 		<widget name="Mlist" position="60,150" size="718,355" zPosition="3" backgroundColor="#00000000" enableWrapAround="1" scrollbarMode="showOnDemand"/>		
@@ -6232,6 +6232,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<applet type="onLayoutFinish">
 			self["list"].instance.setItemHeight(25)
 		</applet>
+		<ePixmap pixmap="icons/key_menu1.png" position="10,638" size="40,22" alphatest="blend"/>		
 	</screen>
 	<screen name="ImageManagerDownload" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaRG"/>	
@@ -6254,6 +6255,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<applet type="onLayoutFinish">
 			self["list"].instance.setItemHeight(30)
 		</applet>
+		<ePixmap pixmap="icons/key_menu1.png" position="10,638" size="40,22" alphatest="blend"/>		
 	</screen>
 	<screen name="VIXDevicesPanel" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaGYB"/>	
@@ -6273,6 +6275,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			</convert>
 		</widget>
 		<widget name="lab1" position="80,145" size="670,50" font="Regular;20" zPosition="2" transparent="0" halign="center"/>
+		<ePixmap pixmap="icons/key_menu1.png" position="10,638" size="40,22" alphatest="blend"/>		
 	</screen>
 	<screen name="VIXDevicePanelConf" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaRG"/>	
@@ -6306,7 +6309,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="sRGB"/>		
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
-        <panel name="PIG"/>	
+        <panel name="PIG"/>
+		<ePixmap pixmap="icons/key_menu1.png" position="10,638" size="40,22" alphatest="blend"/>		
 		<widget name="list" position="80,145" size="670,350" selectionPixmap="icons/ls530x30.png" backgroundColor="black" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1"/>
 	</screen>
 	<screen name="VIXSwap" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -6314,7 +6318,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<!--panel name="sRGB"/-->		
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
-        <panel name="PIG"/>	
+        <panel name="PIG"/>
+		<ePixmap pixmap="icons/key_menu1.png" position="8,638" size="40,22" alphatest="blend"/>		
 		<widget name="autostart_off" position="80,183" zPosition="1" pixmap="icons/lock_off.png" size="32,32" alphatest="on"/>
 		<widget name="autostart_on" position="80,183" zPosition="2" pixmap="icons/lock_on.png" size="32,32" alphatest="on"/>
 		<widget name="lab1" position="130,183" size="400,30" font="Regular;20" valign="center" transparent="0" backgroundColor="black"/>
