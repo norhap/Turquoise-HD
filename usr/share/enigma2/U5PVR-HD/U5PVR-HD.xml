@@ -4253,7 +4253,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>		
 		<ePixmap position="934,416" zPosition="2" size="200,200"  pixmap="menu/ico_information.png" alphatest="blend" transparent="1"/>				
-		<widget name="AboutScrollLabel" position="80,133" size="723,420" font="Regular;21" backgroundColor="black" transparent="1"/>
+		<widget name="AboutScrollLabel" position="100,140" size="723,420" font="Regular;21" backgroundColor="black" transparent="1"/>
 	</screen>
 	<!--  About OK->Info->OK -->
 	<screen name="SoftwareUpdateChanges" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -4302,7 +4302,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
 		<widget name="lab1" position="360,140" size="585,40" font="Regular;24" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 	<!--widget source="lab2" render="Label" position="40,130" size="585,26" font="Regular;20" halign="left" backgroundColor="black" transparent="1"/-->
-		<widget name="AboutScrollLabel" position="80,180" size="718,450" font="Regular;22" zPosition="1" backgroundColor="black" transparent="1"/>
+		<widget name="AboutScrollLabel" position="100,140" size="718,450" font="Regular;22" zPosition="1" backgroundColor="black" transparent="1"/>
 		<ePixmap position="933,416" zPosition="1" size="200,200" pixmap="U5PVR-HD/menu/ico_flash.png" alphatest="blend"/>
 	</screen>		
 		
@@ -4312,12 +4312,12 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-		<widget name="AboutScrollLabel" position="80,180" size="690,450" font="Regular;22" backgroundColor="black" transparent="1"/>
-		<widget source="IFtext" render="Label" position="80,470" size="120,25" font="Regular;22" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
-		<widget source="IF" render="Label" position="245,470" size="400,25" font="Regular;22" halign="left" transparent="1" backgroundColor="black" zPosition="10"/>
-		<widget source="Statustext" render="Label" position="80,520" size="120,25" font="Regular;22" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
-		<widget name="devicepic" position="525,460" size="40,40" pixmaps="icons/network_wired.png,icons/network_wireless.png,icons/network_wired-active.png,icons/network_wired-inactive.png,icons/network_wireless-active.png,icons/network_wireless-inactive.png" zPosition="10" transparent="1"/>		
-		<widget name="statuspic" position="240,520" size="30,25" pixmaps="U5PVR-HD/buttons/key_green.png,U5PVR-HD/buttons/button_green_off1.png" alphatest="on" transparent="1"/>
+		<widget name="AboutScrollLabel" position="80,230" size="690,450" font="Regular;22" backgroundColor="black" transparent="1"/>
+		<widget source="IFtext" render="Label" position="80,135" size="120,25" font="Regular;22" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
+		<widget source="IF" render="Label" position="245,135" size="400,25" font="Regular;22" halign="left" transparent="1" backgroundColor="black" zPosition="10"/>
+		<widget source="Statustext" render="Label" position="80,185" size="120,25" font="Regular;22" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
+		<widget name="devicepic" position="525,125" size="40,40" pixmaps="icons/network_wired.png,icons/network_wireless.png,icons/network_wired-active.png,icons/network_wired-inactive.png,icons/network_wireless-active.png,icons/network_wireless-inactive.png" zPosition="10" transparent="1"/>		
+		<widget name="statuspic" position="240,185" size="30,25" pixmaps="U5PVR-HD/buttons/key_green.png,U5PVR-HD/buttons/button_green_off1.png" alphatest="on" transparent="1"/>
 		<ePixmap position="925,414" size="256,256" pixmap="menu/ico_wlan.png" alphatest="blend"/>
 	</screen>
 	<!-- (059) ####### CANAL SERVICE INFO - INFORMATIONS ####### (15-02) -->
