@@ -2073,13 +2073,13 @@
         <panel name="Title"/>
         <panel name="PIG"/>		
         <panel name="sRGY"/>		
-		<widget source="nimlist" render="Listbox" position="80,138" size="715,400" transparent="1">
+		<widget source="nimlist" render="Listbox" position="80,138" size="715,400" selectionPixmap="icons/ls700x90.png" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-				MultiContentEntryText(pos = (10,5), size = (860,50), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
-				MultiContentEntryText(pos = (50,37), size = (820,50), font = 1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is a description of the nim settings,
+				MultiContentEntryText(pos = (10,3), size = (860,23), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
+				MultiContentEntryText(pos = (10,28), size = (650,53), font = 1, flags = RT_HALIGN_LEFT|RT_WRAP, text = 2), # index 2 is a description of the nim settings,
 				],
-				"fonts": [gFont("Regular", 22), gFont("Regular", 18)],
+				"fonts": [gFont("Regular", 20), gFont("Regular", 16)],
 				"itemHeight": 90
 				}
 			</convert>
@@ -2092,7 +2092,7 @@
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>	
-		<widget name="config" position="80,160" size="690,400" transparent="1"/>
+		<widget name="config" position="80,160" size="718,400" scrollbarMode="showOnDemand" transparent="1"/>
         <widget name="description" position="845,415" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 	</screen>
