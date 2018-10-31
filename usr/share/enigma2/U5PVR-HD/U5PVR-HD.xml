@@ -516,7 +516,7 @@
 	<!-- events list -->
 		<widget name="list" position="60,138" size="737,425" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
 		<!--widget source="Service" render="PiconBg" position="690,15" size="104,63" zPosition="5" alphatest="blend" backgroundColor="#000c0d0e"/-->
-		<widget source="Service" render="Picon" position="692,16" size="100,60" zPosition="5" alphatest="blend" backgroundColor="#000c0d0e">
+		<widget source="Service" render="Picon" position="692,30" size="100,60" zPosition="5" alphatest="blend" backgroundColor="#000c0d0e">
 			<convert type="ServiceName">Reference</convert>
 		</widget>		
         <widget name="lab1" position="60,145" size="745,425" transparent="1"/>
@@ -530,10 +530,10 @@
 		<ePixmap pixmap="icons/key_menu1.png" position="690,680" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_info.png" position="735,680" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_help.png" position="780,680" size="40,22" alphatest="blend"/>
-		<widget source="Event" render="RunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" position="843,390" size="383,25" valign="center" halign="center" font="Regular;19" foregroundColor="#004ccbde" transparent="1" backgroundColor="#00333333">
+		<widget source="Event" render="RunningText" options="movetype=running,startpoint=0,startdelay=5000,wrap=0,always=0,repeat=2,oneshot=1" position="843,390" size="383,25" valign="center" halign="center" font="Regular;19" foregroundColor="#004ccbde" transparent="1" backgroundColor="#00333333">
 			<convert type="EventName">Name</convert>
 		</widget>		
-		<widget source="Event" render="Label" position="843,420" size="380,210" font="Regular;18" halign="center" foregroundColor="grey" backgroundColor="#00333333" transparent="1">
+		<widget source="Event" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="843,420" size="380,210" font="Regular;18" halign="center" foregroundColor="grey" backgroundColor="#00333333" transparent="1">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 	</screen>
@@ -548,7 +548,7 @@
 	<!-- events list -->
 		<widget name="list" position="60,138" size="737,425" scrollbarMode="showOnDemand" transparent="1" enableWrapAround="1"/>
 		<!--widget source="Service" render="PiconBg" position="690,15" size="104,63" zPosition="5" alphatest="blend" backgroundColor="#000c0d0e"/-->
-		<widget source="Service" render="Picon" position="692,16" size="100,60" zPosition="5" alphatest="blend" backgroundColor="#000c0d0e">
+		<widget source="Service" render="Picon" position="692,30" size="100,60" zPosition="5" alphatest="blend" backgroundColor="#000c0d0e">
 			<convert type="ServiceName">Reference</convert>
 		</widget>		
         <widget name="number" position="270,100" size="450,30" transparent="1"/>
@@ -561,10 +561,10 @@
 		<ePixmap pixmap="icons/key_menu1.png" position="690,680" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_info.png" position="735,680" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_help.png" position="780,680" size="40,22" alphatest="blend"/>
-		<widget source="Event" render="RunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" position="843,390" size="383,25" valign="center" halign="center" font="Regular;19" foregroundColor="#004ccbde" transparent="1" backgroundColor="#00333333">
+		<widget source="Event" render="RunningText" options="movetype=running,startpoint=0,startdelay=5000,wrap=0,always=0,repeat=2,oneshot=1" position="843,390" size="383,25" valign="center" halign="center" font="Regular;19" foregroundColor="#004ccbde" transparent="1" backgroundColor="#00333333">
 			<convert type="EventName">Name</convert>
 		</widget>		
-		<widget source="Event" render="Label" position="843,420" size="380,210" font="Regular;18" valign="center" halign="center" foregroundColor="grey" backgroundColor="#00333333" transparent="1">
+		<widget source="Event" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="843,420" size="380,210" font="Regular;18" halign="center" foregroundColor="grey" backgroundColor="#00333333" transparent="1">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 	</screen>
