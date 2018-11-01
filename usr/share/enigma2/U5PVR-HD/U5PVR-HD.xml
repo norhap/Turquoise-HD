@@ -515,7 +515,7 @@
 	<!-- image for colored buttons -->
 		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="U5PVR-HD/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
 	<!-- events list -->
-		<widget name="list" position="60,138" size="737,425" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="list" position="60,143" size="737,420" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
 		<!--widget source="Service" render="PiconBg" position="690,15" size="104,63" zPosition="5" alphatest="blend" backgroundColor="#000c0d0e"/-->
 		<widget source="Service" render="Picon" position="692,30" size="100,60" zPosition="5" alphatest="blend" backgroundColor="#000c0d0e">
 			<convert type="ServiceName">Reference</convert>
@@ -546,7 +546,7 @@
 	<!-- image for colored buttons -->
 		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="U5PVR-HD/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
 	<!-- events list -->
-		<widget name="list" position="60,138" size="737,425" scrollbarMode="showOnDemand" transparent="1" enableWrapAround="1"/>
+		<widget name="list" position="60,143" size="737,420" scrollbarMode="showOnDemand" transparent="1" enableWrapAround="1"/>
 		<!--widget source="Service" render="PiconBg" position="690,15" size="104,63" zPosition="5" alphatest="blend" backgroundColor="#000c0d0e"/-->
 		<widget source="Service" render="Picon" position="692,30" size="100,60" zPosition="5" alphatest="blend" backgroundColor="#000c0d0e">
 			<convert type="ServiceName">Reference</convert>
@@ -1106,8 +1106,8 @@
 		<widget name="activityslider" borderWidth="2" foregroundColor="#004ccbde" position="80,165" size="562,32" backgroundColor="black"/>
 		<eLabel position="79,259" size="564,34" backgroundColor="#004ccbde"/>
 		<widget name="slider" position="80,260" borderWidth="2" foregroundColor="#0003424a" size="562,32" zPosition="1"/>
-		<widget source="package" render="Label" position="80,215" size="530,24" backgroundColor="#00101010" transparent="1"/>
-		<widget source="status" render="Label" position="80,300" size="530,50" backgroundColor="#00101010" transparent="1"/>
+		<widget source="package" render="Label" position="80,215" size="530,24" font="Regular;16" backgroundColor="#00101010" transparent="1"/>
+		<widget source="status" render="Label" position="80,300" size="530,50" font="Regular;16" backgroundColor="#00101010" transparent="1"/>
 		<widget name="tl_off" position="80,360" size="530,25" backgroundColor="#00101010" transparent="1"/>
 		<widget name="tl_red" position="80,390" size="530,25" backgroundColor="#00101010" transparent="1"/>
 		<widget name="tl_yellow" position="80,420" size="530,25" backgroundColor="#00101010" transparent="1"/>
@@ -1148,7 +1148,7 @@
         <panel name="ScrollBarTemplate"/>
         <panel name="sRGY"/>
         <!--panel name="logo_openboxtv"/-->		
-		<widget name="checkList" position="75,140" size="725,425" scrollbarMode="showOnDemand" selectionPixmap="U5PVR-HD/icons/ls700x30-h.png" transparent="1"/>		
+		<widget name="checkList" position="75,140" size="723,425" scrollbarMode="showOnDemand" selectionPixmap="U5PVR-HD/icons/ls700x30-h.png" transparent="1"/>		
 	</screen>
 	<!-- ####### MANEJAR SOFTWARE->Opciones Avandas->Manejo de paquetes ####### -->
 	<screen name="PacketManager" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -4253,7 +4253,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>		
 		<ePixmap position="934,416" zPosition="2" size="200,200"  pixmap="menu/ico_information.png" alphatest="blend" transparent="1"/>				
-		<widget name="AboutScrollLabel" position="100,140" size="723,420" font="Regular;21" backgroundColor="black" transparent="1"/>
+		<widget name="AboutScrollLabel" position="100,140" size="697,420" font="Regular;21" backgroundColor="black" transparent="1"/>
 	</screen>
 	<!--  About OK->Info->OK -->
 	<screen name="SoftwareUpdateChanges" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -5088,7 +5088,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="arrowup" pixmap="U5PVR-HD/arrowup.png" position="-100,-100" zPosition="11" size="0,0" alphatest="blend"/>
 		<widget name="arrowdown2" pixmap="U5PVR-HD/arrowdown.png" position="-100,-100" zPosition="11" size="0,0" alphatest="blend"/>		
 		<widget name="HelpWindow" position="682,599" size="1,1" pixmap="/usr/share/enigma2/skin_default/buttons/vkey_icon.png" transparent="1" zPosition="1" alphatest="blend"/>
-		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,680" zPosition="2" size="40,22" transparent="1" alphatest="on">
+		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,680" zPosition="2" size="0,0" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
         <widget name="languagetext" position="95,630" size="150,30" transparent="1" font="Regular;20"/>
@@ -5582,7 +5582,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="extralabel" position="80,180" size="717,270" font="Regular;20" backgroundColor="black" transparent="1"/>
 		<widget name="detailslabel" position="85,430" size="715,180" font="Regular;20" foregroundColor="#004ccbde" transparent="1"/>
 		<widget name="starsbg" position="920,590" size="250,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty.png" zPosition="0" transparent="1" alphatest="on"/>
-		<widget name="stars" position="920,590" size="250,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" zPosition="1" alphatest="on" transparent="1"/>
+		<widget name="stars" position="920,590" size="250,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" zPosition="1" transparent="1"/>
 	</screen>
 	<!-- Foreca -->
 	<screen name="ForecaPreview" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -5940,7 +5940,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title_not_menu_path"/>		
         <panel name="PIG"/>
-		<widget source="list" render="Listbox" position="80,138" size="715,410" selectionPixmap="U5PVR-HD/icons/ls700x38.png" scrollbarMode="showOnDemand">
+		<widget source="list" render="Listbox" position="80,138" size="717,410" selectionPixmap="U5PVR-HD/icons/ls700x38.png" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				MultiContentEntryText(pos = (50, 5), size = (440, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
@@ -5960,7 +5960,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title_not_menu_path"/>		
         <panel name="PIG"/>
         <!--panel name="Logo_Egami"/-->		
-		<widget source="list" render="Listbox" position="80,138" size="715,410" selectionPixmap="U5PVR-HD/icons/ls700x38.png" scrollbarMode="showOnDemand">
+		<widget source="list" render="Listbox" position="80,138" size="717,410" selectionPixmap="U5PVR-HD/icons/ls700x38.png" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				MultiContentEntryPixmapAlphaBlend(pos = (15, 5), size = (32, 32), png = 0),
@@ -6225,6 +6225,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
+		<widget name="config" position="56,155" size="741,425" font="Regular;18" scrollbarMode="showAlways" transparent="1"/>		
 		<widget name="HelpWindow" position="682,599" size="1,1" pixmap="/usr/share/enigma2/skin_default/buttons/vkey_icon.png" transparent="1" zPosition="1" alphatest="blend"/>
 		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,680" zPosition="2" size="40,22" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
@@ -6255,7 +6256,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
 		<widget name="lab1" position="80,145" size="670,50" font="Regular;20" zPosition="2" transparent="0" halign="center"/>
 		<widget name="list" position="80,230" size="670,350" selectionPixmap="icons/ls530x30.png" backgroundColor="black" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1"/>
-		<widget name="backupstatus" render="Label" position="835,460" size="390,25" foregroundColor="#004ccbde" font="Regular;20" backgroundColor="black" transparent="1" halign="center" valign="center"/>
+		<widget name="backupstatus" position="835,460" size="390,25" foregroundColor="#004ccbde" font="Regular;20" backgroundColor="black" transparent="1" halign="center" valign="center"/>
 		<applet type="onLayoutFinish">
 			self["list"].instance.setItemHeight(25)
 		</applet>
@@ -6285,7 +6286,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="icons/key_menu1.png" position="10,638" size="40,22" alphatest="blend"/>		
 	</screen>
 	<screen name="VIXDevicesPanel" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenericaGYB"/>	
+		<panel name="PantallaGenericaRGYB"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -6309,7 +6310,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>	
-		<widget name="config" position="70,145" size="715,275" scrollbarMode="showOnDemand"/>
+		<widget name="config" position="70,145" size="727,275" scrollbarMode="showOnDemand"/>
 		<widget name="Linconn" position="70,420" size="840,20" font="Regular;18" halign="center" valign="center" backgroundColor="black"/>
 	</screen>
 	<screen name="VIXPartitionPanelConf" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -6424,6 +6425,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title_not_menu_path"/>
         <panel name="PIG"/>
 		<widget name="LogsSize" position="80,145" halign="center" size="503,60" zPosition="1" font="Regular;20" valign="top" transparent="0"/>
-		<widget name="list" position="80,138" size="718,415" scrollbarMode="showOnDemand" selectionPixmap="icons/ls700x30-h.png" transparent="1"/>		
+		<widget name="list" position="80,225" size="717,415" scrollbarMode="showOnDemand" selectionPixmap="icons/ls700x30-h.png" transparent="1"/>		
 	</screen>	
 </skin>
