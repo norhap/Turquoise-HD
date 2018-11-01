@@ -594,13 +594,13 @@
 	<!-- GRAPHICAL EPG -->
     <screen name="GraphicalEPG" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
 		<ePixmap pixmap="menu/fr_main_help.png" position="0,0" size="1280,720" zPosition="-1"/>
-		<ePixmap pixmap="icons/clock.png" position="1185,30" zPosition="1" size="20,20" alphatest="blend"/>
+		<ePixmap pixmap="icons/clock.png" position="1187,30" zPosition="1" size="20,20" alphatest="blend"/>
     <!-- digital clock -->
 	<!-- current time -->	
-		<widget source="global.CurrentTime" render="Label" position="640,20" size="350,25" halign="right" font="LCD;24" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1">
+		<widget source="global.CurrentTime" render="Label" position="690,20" size="350,25" halign="right" font="LCD;24" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1">
 		    <convert type="ClockToText">Date</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1055,20" size="160,25" zPosition="2" font="LCD;24" halign="center" foregroundColor="#004ccbde" backgroundColor="#00040404" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="1057,20" size="160,25" zPosition="2" font="LCD;24" halign="center" foregroundColor="#004ccbde" backgroundColor="#00040404" transparent="1">
             <convert type="ClockToText">Format:%H:%M :%S</convert>
         </widget>
 		<widget source="Title" render="Label" position="40,15" size="400,43" font="Regular;32" transparent="1" foregroundColor="#004ccbde" backgroundColor="black" zPosition="1"/>
@@ -634,7 +634,7 @@
 		<widget name="timeline_text" position="90,130" size="1280,35" backgroundColor="black" foregroundColor="#004ccbde" transparent="1" zPosition="0"/>
 		<widget name="bouquetlist" position="90,160" size="1100,440" foregroundColorSelected="#0000fafa" scrollbarMode="showNever" zPosition="2" transparent="0"/>
 		<widget name="list" position="90,160" size="1100,440" backgroundColor="black" RecordForegroundColorSelected="yellow" scrollbarMode="showNever" zPosition="1" transparent="1"/>
-		<widget name="timeline_now" position="0,155" zPosition="3" size="25,593" pixmap="epg/timeline-now.png" alphatest="blend"/>
+		<widget name="timeline_now" position="0,157" zPosition="3" size="25,593" pixmap="epg/timeline-now.png" alphatest="blend"/>
 		<widget name="timeline0" pixmap="epg/timeline.png" position="0,388" size="0,0" zPosition="-1"/>
 		<widget name="timeline1" pixmap="epg/timeline.png" position="0,388" size="0,0" zPosition="-1"/>
 		<widget name="timeline2" pixmap="epg/timeline.png" position="0,388" size="0,0" zPosition="-1"/>
@@ -658,13 +658,13 @@
 	<!-- GRAPHICAL EPG-PIG -->
     <screen name="GraphicalEPGPIG" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
 		<ePixmap pixmap="menu/fr_main_help.png" position="0,0" size="1280,720" zPosition="-1"/>
-		<ePixmap pixmap="icons/clock.png" position="1185,30" zPosition="1" size="20,20" alphatest="blend"/>
+		<ePixmap pixmap="icons/clock.png" position="1187,30" zPosition="1" size="20,20" alphatest="blend"/>
     <!-- digital clock -->
 	<!-- current time -->	
-		<widget source="global.CurrentTime" render="Label" position="640,20" size="350,25" halign="right" font="LCD;24" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1">
+		<widget source="global.CurrentTime" render="Label" position="690,20" size="350,25" halign="right" font="LCD;24" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1">
 		    <convert type="ClockToText">Date</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1055,20" size="160,25" zPosition="2" font="LCD;24" halign="center" foregroundColor="#004ccbde" backgroundColor="#00040404" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="1057,20" size="160,25" zPosition="2" font="LCD;24" halign="center" foregroundColor="#004ccbde" backgroundColor="#00040404" transparent="1">
             <convert type="ClockToText">Format:%H:%M :%S</convert>
         </widget>
 		<widget source="Title" render="Label" position="40,15" size="400,43" font="Regular;32" transparent="1" foregroundColor="#004ccbde" backgroundColor="black" zPosition="1"/>		
