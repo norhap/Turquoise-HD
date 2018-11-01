@@ -3521,11 +3521,16 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <widget source="session.RecordState" render="Pixmap" pixmap="U5PVR-HD/icons/icon_rec_light.png" position="372,557" zPosition="3" size="22,22" alphatest="on">
             <convert type="ConditionalShowHide">Blink</convert>
         </widget>
-	
+	    <widget source="session.CurrentService" render="Label" position="235,672" size="400,60" font="Regular;14" valign="top" halign="left" foregroundColor="#004ccbde" backgroundColor="#11404040" transparent="1" zPosition="5">
+		    <convert type="CryptoInfo">VerboseInfo</convert>
+	    </widget>		
+	    <widget source="session.CurrentService" render="Label" position="480,685" size="250,24" font="Regular;15" valign="top" halign="right" foregroundColor="#00a1d1ff" backgroundColor="#11404040" transparent="1" zPosition="5">
+ 		    <convert type="PliExtraInfo">CryptoSpecial</convert>
+ 	    </widget>	
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="235,687" 
+		position="790,685" 
 		size="60,50" 
 		backgroundColor="#11404040" 
 		foregroundColor="#004ccbde" 
@@ -3540,7 +3545,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="295,687" 
+		position="855,685" 
 		size="60,15" 
 		backgroundColor="#11404040" 
 		foregroundColor="foreground" 
@@ -3555,7 +3560,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="352,687" 
+		position="915,685" 
 		size="18,15" 
 		backgroundColor="#11404040" 
 		foregroundColor="foreground" 
@@ -3570,7 +3575,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="368,687" 
+		position="930,685" 
 		size="65,50" 
 		backgroundColor="#11404040" 
 		foregroundColor="#004ccbde" 
@@ -3585,7 +3590,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="418,687" 
+		position="980,685" 
 		size="37,15" 
 		backgroundColor="#11404040" 
 		foregroundColor="foreground" 
@@ -3600,7 +3605,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="458,687" 
+		position="1020,685" 
 		size="60,50" 
 		backgroundColor="#11404040" 
 		foregroundColor="#004ccbde" 
@@ -3610,12 +3615,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		zPosition="5" 
 		transparent="1">   
  	    <convert type="PliExtraInfo">TransponderModulation</convert>
-	    </widget>
-	    <widget source="session.CurrentService" render="Label" position="480,685" size="250,24" font="Regular;15" valign="top" halign="right" foregroundColor="#00a1d1ff" backgroundColor="#11404040" transparent="1" zPosition="5">
- 		    <convert type="PliExtraInfo">CryptoSpecial</convert>
- 	    </widget>
-	    <widget source="session.CurrentService" render="Label" position="740,685" size="400,60" font="Regular;14" valign="top" halign="left" foregroundColor="#004ccbde" backgroundColor="#11404040" transparent="1" zPosition="5">
-		    <convert type="CryptoInfo">VerboseInfo</convert>
 	    </widget>
     </screen>
 	
@@ -3801,11 +3800,16 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <widget source="session.RecordState" render="Pixmap" pixmap="U5PVR-HD/icons/icon_rec_light.png" position="372,557" zPosition="3" size="22,22" alphatest="on">
             <convert type="ConditionalShowHide">Blink</convert>
         </widget>
-	
+	    <widget source="session.CurrentService" render="Label" position="235,672" size="400,60" font="Regular;14" valign="top" halign="left" foregroundColor="#004ccbde" backgroundColor="#11404040" transparent="1" zPosition="5">
+		    <convert type="CryptoInfo">VerboseInfo</convert>
+	    </widget>		
+	    <widget source="session.CurrentService" render="Label" position="480,685" size="250,24" font="Regular;15" valign="top" halign="right" foregroundColor="#00a1d1ff" backgroundColor="#11404040" transparent="1" zPosition="5">
+ 		    <convert type="PliExtraInfo">CryptoSpecial</convert>
+ 	    </widget>	
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="235,687" 
+		position="790,685" 
 		size="60,50" 
 		backgroundColor="#11404040" 
 		foregroundColor="#004ccbde" 
@@ -3820,7 +3824,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="295,687" 
+		position="855,685" 
 		size="60,15" 
 		backgroundColor="#11404040" 
 		foregroundColor="foreground" 
@@ -3835,7 +3839,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="352,687" 
+		position="915,685" 
 		size="18,15" 
 		backgroundColor="#11404040" 
 		foregroundColor="foreground" 
@@ -3850,7 +3854,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="368,687" 
+		position="930,685" 
 		size="65,50" 
 		backgroundColor="#11404040" 
 		foregroundColor="#004ccbde" 
@@ -3865,7 +3869,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="418,687" 
+		position="980,685" 
 		size="37,15" 
 		backgroundColor="#11404040" 
 		foregroundColor="foreground" 
@@ -3880,7 +3884,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="458,687" 
+		position="1020,685" 
 		size="60,50" 
 		backgroundColor="#11404040" 
 		foregroundColor="#004ccbde" 
@@ -3890,13 +3894,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		zPosition="5" 
 		transparent="1">   
  	    <convert type="PliExtraInfo">TransponderModulation</convert>
-	    </widget>
-	    <widget source="session.CurrentService" render="Label" position="480,687" size="250,24" font="Regular;15" valign="top" halign="right" foregroundColor="#00a1d1ff" backgroundColor="#11404040" transparent="1" zPosition="5">
- 		    <convert type="PliExtraInfo">CryptoSpecial</convert>
- 	    </widget>
-	    <widget source="session.CurrentService" render="Label" position="740,687" size="400,60" font="Regular;14" valign="top" halign="left" foregroundColor="#004ccbde" backgroundColor="#11404040" transparent="1" zPosition="5">
-		    <convert type="CryptoInfo">VerboseInfo</convert>
-	    </widget>	  
+	    </widget>  
         <ePixmap position="372,557" zPosition="2" size="22,22" pixmap="U5PVR-HD/icons/icon_norec_light.png" alphatest="on"/>	
   	    <widget source="session.Event_Now" render="RunningText" options="movetype=running,startpoint=0,startdelay=5000,wrap=0,always=0,repeat=2,oneshot=1" position="65,60" size="570,24" font="Regular;22" halign="left" noWrap="1" foregroundColor="#00a1d1ff" backgroundColor="background" transparent="0" zPosition="1">
 		    <convert type="EventName">NameNow</convert>
