@@ -4330,7 +4330,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget position="650,555" size="170,156" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
 		<ePixmap position="934,416" zPosition="2" size="200,200"  pixmap="U5PVR-HD/menu/ico_sat.png" alphatest="blend" transparent="1"/>
 		<widget name="infolist" position="80,180" size="690,520" font="Regular;19" selectionDisabled="1" transparent="1"/>
-		<widget source="session.CurrentService" render="Label" foregroundColor="#0000fafa" position="250,137" size="585,20" font="Regular;20" transparent="1" zPosition="1">
+		<widget source="session.CurrentService" render="Label" foregroundColor="#0000fafa" position="140,100" size="585,50" halign="center" valign="center" font="Regular;18" transparent="1" zPosition="1">
 		    <convert type="ServiceInfo">HasHBBTV</convert>
 		</widget>
 	</screen>
