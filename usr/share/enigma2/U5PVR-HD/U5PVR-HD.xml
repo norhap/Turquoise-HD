@@ -827,7 +827,7 @@
 		<widget source="Service" render="Picon" position="30,0" size="70,42" zPosition="2" alphatest="blend">
 		    <convert type="ServiceName">Reference</convert>
 		</widget>		
-		<widget name="number" position="475,0" size="400,40" zPosition="1" font="Regular;18" foregroundColor="#0000fafa" transparent="1"/>		
+		<widget name="number" position="475,0" size="400,40" zPosition="1" font="Regular;18" foregroundColor="#0000fafa" backgroundColor="#0003424a" transparent="1"/>		
 		<widget name="lab1" position="20,30" size="1280,115" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0"/>		
 		<ePixmap pixmap="icons/marco.png" position="0,0" size="35,42" zPosition="1" alphatest="blend"/>	
 		<ePixmap pixmap="icons/barra_quickEPG.png" position="765,40" size="15,120" zPosition="2" alphatest="blend"/>
