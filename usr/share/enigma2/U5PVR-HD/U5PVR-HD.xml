@@ -886,9 +886,9 @@
 		<widget name="now_button_sel" pixmap="U5PVR-HD/pointer.png" position="530,142" zPosition="3" size="26,16" alphatest="on"/>
 		<widget name="next_button_sel" pixmap="U5PVR-HD/pointer.png" position="820,142" zPosition="3" size="26,16" alphatest="on"/>
 		<widget name="more_button_sel" pixmap="U5PVR-HD/pointer.png" position="1060,142" zPosition="3" size="26,16" alphatest="on"/>
-		<widget name="now_text" position="366,135" zPosition="4" size="250,28" text="AHORA" font="Regular;24" halign="center" foregroundColor="#0077d8e6" transparent="1"/>
-		<widget name="next_text" position="618,135" zPosition="4" size="250,28" text="SIGUIENTE" font="Regular;24" halign="center" foregroundColor="#0077d8e6" transparent="1"/>
-		<widget name="more_text" position="870,135" zPosition="4" size="250,28" text="MAS" font="Regular;24" halign="center" foregroundColor="#0077d8e6" transparent="1"/>
+		<widget name="now_text" position="366,135" zPosition="4" size="250,28" text="NOW" font="Regular;24" halign="center" foregroundColor="#0077d8e6" transparent="1"/>
+		<widget name="next_text" position="618,135" zPosition="4" size="250,28" text="NEXT" font="Regular;24" halign="center" foregroundColor="#0077d8e6" transparent="1"/>
+		<widget name="more_text" position="870,135" zPosition="4" size="250,28" text="MORE" font="Regular;24" halign="center" foregroundColor="#0077d8e6" transparent="1"/>
 		<widget name="date" position="78,135" size="300,28" font="Regular;24" valign="center" halign="center" foregroundColor="#0077d8e6" backgroundColor="black" transparent="1"/>
 		<widget name="number" position="150,30" size="300,28" font="Regular;24" valign="center" halign="center" foregroundColor="#0077d8e6" backgroundColor="black" transparent="1"/>			
 		<widget source="key_red" render="Label" position="70,645" size="120,50" backgroundColor="#000c0d0e" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
