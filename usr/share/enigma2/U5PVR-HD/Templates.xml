@@ -119,7 +119,7 @@
 		<widget name="key_red" position="55,612" size="150,45" font="Regular;19" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget name="key_green" position="255,612" size="150,45" font="Regular;19" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget name="key_yellow" position="470,612" size="125,50" font="Regular;19" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget name="key_blue" position="655,612" size="150,45" font="Regular;19" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget name="key_blue" position="655,612" size="165,45" font="Regular;19" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
     </screen>
 	<screen name="PantallaGenericaRGYB2">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>

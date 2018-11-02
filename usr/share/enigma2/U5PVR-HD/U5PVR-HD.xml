@@ -508,25 +508,19 @@
 	
 	<!-- (034) ####### EPG Selection - busqueda de todos los eventos de canal unico ####### (12-02) -->
 	<screen name="EPGSelection" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<panel name="PantallaGenericaRGYB"/>
         <panel name="PIG"/>
         <panel name="Title_not_menu_path"/>
-		<panel name="ScrollBarTemplate"/>		
-	<!-- image for colored buttons -->
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="U5PVR-HD/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
+		<panel name="ScrollBarTemplate"/>
 	<!-- events list -->
-		<widget name="list" position="60,148" size="737,420" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="list" position="60,148" size="737,420" zPosition="3" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="0"/>
 		<!--widget source="Service" render="PiconBg" position="690,15" size="104,63" zPosition="5" alphatest="blend" backgroundColor="#000c0d0e"/-->
 		<widget source="Service" render="Picon" position="692,30" size="100,60" zPosition="5" alphatest="blend" backgroundColor="#000c0d0e">
 			<convert type="ServiceName">Reference</convert>
 		</widget>		
-        <widget name="lab1" position="60,145" size="745,425" transparent="1"/>
-        <widget name="number" position="60,145" size="745,425" transparent="1"/>		
-	<!-- buttons text widgets -->
-		<widget position="70,613" size="120,50" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget position="265,608" size="130,50" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget position="475,608" size="120,50" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget position="630,608" size="200,50" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
+        <widget name="lab1" position="60,148" size="737,420" transparent="1"/>
+        <widget name="number" position="60,148" size="737,420" transparent="1"/>		
+	<!-- buttons text widgets -->		
 		<ePixmap pixmap="icons/key_menu1.png" position="665,680" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_info.png" position="710,680" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_help.png" position="755,680" size="40,22" alphatest="blend"/>
@@ -537,37 +531,29 @@
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 	</screen>
-	<!-- (034) ####### EPG Search - busqueda de evento unico ####### (12-02) -->
 	<screen name="EPGSearch" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<panel name="PantallaGenericaRGYB"/>
         <panel name="PIG"/>
         <panel name="Title_not_menu_path"/>
-		<panel name="ScrollBarTemplate"/>		
-	<!-- image for colored buttons -->
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="U5PVR-HD/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
+		<panel name="ScrollBarTemplate"/>
 	<!-- events list -->
-		<widget name="list" position="60,148" size="737,420" scrollbarMode="showOnDemand" transparent="1" enableWrapAround="1"/>
+		<widget name="list" position="60,148" size="737,420" zPosition="3" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="0"/>
 		<!--widget source="Service" render="PiconBg" position="690,15" size="104,63" zPosition="5" alphatest="blend" backgroundColor="#000c0d0e"/-->
 		<widget source="Service" render="Picon" position="692,30" size="100,60" zPosition="5" alphatest="blend" backgroundColor="#000c0d0e">
 			<convert type="ServiceName">Reference</convert>
-		</widget>		
-        <widget name="number" position="270,100" size="450,30" transparent="1"/>
-	<!-- buttons text widgets -->
-		<widget position="70,613" size="120,50" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget position="265,608" size="130,50" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget position="475,608" size="120,50" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget position="630,608" size="200,50" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<ePixmap pixmap="icons/key_epg_single.png" position="645,680" size="40,22" alphatest="blend"/>		
-		<ePixmap pixmap="icons/key_menu1.png" position="690,680" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_info.png" position="735,680" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_help.png" position="780,680" size="40,22" alphatest="blend"/>
+		</widget>
+        <widget name="number" position="60,148" size="737,420" transparent="1"/>		
+	<!-- buttons text widgets -->		
+		<ePixmap pixmap="icons/key_menu1.png" position="665,680" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_info.png" position="710,680" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_help.png" position="755,680" size="40,22" alphatest="blend"/>
 		<widget source="Event" render="RunningText" options="movetype=running,startpoint=0,startdelay=5000,wrap=0,always=0,repeat=2,oneshot=1" position="843,390" size="383,25" valign="center" halign="center" font="Regular;19" foregroundColor="#004ccbde" transparent="1" backgroundColor="#00333333">
 			<convert type="EventName">Name</convert>
 		</widget>		
 		<widget source="Event" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="843,420" size="380,210" font="Regular;18" halign="center" foregroundColor="grey" backgroundColor="#00333333" transparent="1">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
-	</screen>
+	</screen>	
     <!-- ## EPGRefreshSetup ->OK ## -->
 	<screen name="EPGRefreshConfiguration" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sRGYB"/>
