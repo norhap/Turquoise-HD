@@ -2940,7 +2940,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="sRGY"/>
         <ePixmap pixmap="icons/key_menu1.png" position="8,640" size="40,22" alphatest="blend"/>			
 		<ePixmap position="933,416" zPosition="1" size="256,256" pixmap="U5PVR-HD/menu/ico_picplayer.png" alphatest="blend" transparent="1"/>
-		<widget name="filelist" position="76,145" size="720,415" zPosition="2" scrollbarMode="showOnDemand" selectionPixmap="U5PVR-HD/icons/ls615x26.png" backgroundColor="black" transparent="1"/>
+		<widget name="filelist" position="76,145" size="721,415" zPosition="2" scrollbarMode="showOnDemand" selectionPixmap="U5PVR-HD/icons/ls615x26.png" backgroundColor="black" transparent="1"/>
 		<widget source="label" render="Label" position="828,349" size="400,160" font="Regular;22" halign="center" transparent="1"/>
 		<widget name="thn" position="839,112" size="382,218" alphatest="on"/>	
 	</screen>
