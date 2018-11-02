@@ -2087,13 +2087,13 @@
 		</widget>
 		<!--panel name="Logo_Egami"/-->  
 	</screen>
-	<!-- (043) ####### NimSetup Reception Settings ####### -->
+	<!-- (043) ####### NimSetup Modo Configuracion boton amarillo ####### -->
 	<screen name="NimSetup" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaRGYB"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>	
-		<widget name="config" position="80,160" size="718,400" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="config" position="63,160" size="733,400" scrollbarMode="showOnDemand" transparent="1"/>
         <widget name="description" position="845,415" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 	</screen>
