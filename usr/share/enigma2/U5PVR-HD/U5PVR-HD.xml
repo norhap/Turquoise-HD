@@ -1242,7 +1242,7 @@
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 		<widget name="description" position="845,415" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 		<widget source="Statustext" render="Label" position="70,500" foregroundColor="#004ccbde" backgroundColor="black" size="150,40" zPosition="10" font="Regular;24" transparent="0"/>
-		<widget name="statuspic" position="195,502" size="60,40" pixmaps="U5PVR-HD/buttons/key_green.png,U5PVR-HD/buttons/button_green_off1.png" zPosition="10" transparent="1" alphatest="blend"/>
+		<widget name="statuspic" position="195,502" size="25,24" pixmaps="U5PVR-HD/icons/lock_on.png,U5PVR-HD/icons/lock_off.png" zPosition="10" transparent="1" alphatest="blend"/>
 	</screen>	
 	<!-- Configuracion del Adaptador->OK WLAN O LAN RED LOCAL -->
 	<screen name="AdapterSetup" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1394,7 +1394,7 @@
 		<widget source="enc" render="Label" position="390,455" size="495,37" valign="center" font="Regular;20" transparent="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 		<widget source="Statustext" render="Label" position="80,530" foregroundColor="#004ccbde" size="150,40" zPosition="10" font="Regular;24" transparent="1"/>
-		<widget name="statuspic" position="385,530" size="60,40" pixmaps="U5PVR-HD/buttons/key_green.png,U5PVR-HD/buttons/button_green_off1.png" zPosition="10" transparent="1" alphatest="on"/>
+		<widget name="statuspic" position="385,530" size="25,24" pixmaps="U5PVR-HD/icons/lock_on.png,U5PVR-HD/icons/lock_off.png" zPosition="10" transparent="1" alphatest="on"/>
 	</screen>
 	
 	<!--  Configuracion de Montajes OK -->
@@ -4302,7 +4302,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="IF" render="Label" position="245,135" size="400,25" font="Regular;22" halign="left" transparent="1" backgroundColor="black" zPosition="10"/>
 		<widget source="Statustext" render="Label" position="80,185" size="120,25" font="Regular;22" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 		<widget name="devicepic" position="525,125" size="40,40" pixmaps="icons/network_wired.png,icons/network_wireless.png,icons/network_wired-active.png,icons/network_wired-inactive.png,icons/network_wireless-active.png,icons/network_wireless-inactive.png" zPosition="10" transparent="1"/>		
-		<widget name="statuspic" position="240,185" size="30,25" pixmaps="U5PVR-HD/buttons/key_green.png,U5PVR-HD/buttons/button_green_off1.png" alphatest="on" transparent="1"/>
+		<widget name="statuspic" position="240,185" size="25,24" pixmaps="U5PVR-HD/icons/lock_on.png,U5PVR-HD/icons/lock_off.png" alphatest="on" transparent="1"/>
 		<ePixmap position="925,414" size="256,256" pixmap="menu/ico_wlan.png" alphatest="blend"/>
 	</screen>
 	<!-- (059) ####### CANAL SERVICE INFO - INFORMATIONS ####### (15-02) -->
