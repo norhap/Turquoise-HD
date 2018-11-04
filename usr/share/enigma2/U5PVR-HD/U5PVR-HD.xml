@@ -633,13 +633,13 @@
 		<ePixmap pixmap="icons/key_epg_single.png" position="1193,669" size="40,22" alphatest="blend"/>		
 		<ePixmap pixmap="icons/key_info.png" position="1238,669" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="buttons/red.png" position="170,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
-		<widget name="key_red" position="170,625" size="150,85" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22"/>
+		<widget name="key_red" position="170,635" size="150,85" backgroundColor="black" zPosition="1" transparent="1" font="Regular;20"/>
 		<ePixmap pixmap="buttons/green.png" position="420,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
-		<widget name="key_green" position="395,625" size="200,85" halign="center" valign="center" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22"/>
+		<widget name="key_green" position="395,635" size="200,85" halign="center" valign="center" backgroundColor="black" zPosition="1" transparent="1" font="Regular;20"/>
 		<ePixmap pixmap="buttons/yellow.png" position="675,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
-		<widget name="key_yellow" position="685,625" size="120,85" halign="center" valign="center" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22"/>
+		<widget name="key_yellow" position="685,635" size="120,85" halign="center" valign="center" backgroundColor="black" zPosition="1" transparent="1" font="Regular;20"/>
 		<ePixmap pixmap="buttons/blue.png" position="935,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
-		<widget name="key_blue" position="880,565" size="250,205" halign="center" valign="center" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22"/>
+		<widget name="key_blue" position="880,575" size="250,205" halign="center" valign="center" backgroundColor="black" zPosition="1" transparent="1" font="Regular;20"/>
 	</screen>
 	<!-- GRAPHICAL EPG-PIG -->
     <screen name="GraphicalEPGPIG" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
@@ -705,13 +705,13 @@
 		<ePixmap pixmap="icons/key_epg_single.png" position="1193,669" size="40,22" alphatest="blend"/>		
 		<ePixmap pixmap="icons/key_info.png" position="1238,669" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="buttons/red.png" position="170,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
-		<widget name="key_red" position="170,625" size="150,85" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22"/>
+		<widget name="key_red" position="170,635" size="150,85" backgroundColor="black" zPosition="1" transparent="1" font="Regular;20"/>
 		<ePixmap pixmap="buttons/green.png" position="420,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
-		<widget name="key_green" position="395,625" size="200,85" halign="center" valign="center" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22"/>
+		<widget name="key_green" position="395,635" size="200,85" halign="center" valign="center" backgroundColor="black" zPosition="1" transparent="1" font="Regular;20"/>
 		<ePixmap pixmap="buttons/yellow.png" position="675,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
-		<widget name="key_yellow" position="685,625" size="120,85" halign="center" valign="center" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22"/>
+		<widget name="key_yellow" position="685,635" size="120,85" halign="center" valign="center" backgroundColor="black" zPosition="1" transparent="1" font="Regular;20"/>
 		<ePixmap pixmap="buttons/blue.png" position="935,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
-		<widget name="key_blue" position="880,565" size="250,205" halign="center" valign="center" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22"/>
+		<widget name="key_blue" position="880,575" size="250,205" halign="center" valign="center" backgroundColor="black" zPosition="1" transparent="1" font="Regular;20"/>
 	</screen>
 	<!-- GraphicalInfoBarEPG -->
 	<screen name="GraphicalInfoBarEPG" position="0,500" size="1280,240" flags="wfNoBorder">
@@ -877,14 +877,14 @@
 		<widget name="more_text" position="870,135" zPosition="4" size="250,28" text="MORE" font="Regular;24" halign="center" foregroundColor="#0077d8e6" transparent="1"/>
 		<widget name="date" position="78,135" size="300,28" font="Regular;24" valign="center" halign="center" foregroundColor="#0077d8e6" backgroundColor="black" transparent="1"/>
 		<widget name="number" position="150,30" size="300,28" font="Regular;24" valign="center" halign="center" foregroundColor="#0077d8e6" backgroundColor="black" transparent="1"/>			
-		<widget source="key_red" render="Label" position="70,645" size="120,50" backgroundColor="#000c0d0e" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
-		<widget source="key_green" render="Label" position="265,640" size="130,50" backgroundColor="#000c0d0e" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>		
-		<widget source="key_yellow" render="Label" position="470,640" size="120,50" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
-		<widget source="key_blue" render="Label" position="630,640" size="200,50" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>	
-		<widget name="key_red" position="0,660" size="0,0" backgroundColor="#000c0d0e" zPosition="1" transparent="1" halign="center" valign="center"/>
-		<widget name="key_green" position="200,660" size="0,0" backgroundColor="#000c0d0e" zPosition="1" transparent="1" halign="center" valign="center"/>		
-		<widget name="key_yellow" position="400,660" size="0,0" backgroundColor="#000c0d0e" zPosition="1" transparent="1" halign="center" valign="center"/>
-		<widget name="key_blue" position="630,660" size="0,0" backgroundColor="#000c0d0e" zPosition="1" transparent="1" halign="center" valign="center"/>
+		<widget source="key_red" render="Label" position="80,655" size="120,50" backgroundColor="#000c0d0e" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
+		<widget source="key_green" render="Label" position="265,645" size="130,50" backgroundColor="#000c0d0e" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>		
+		<widget source="key_yellow" render="Label" position="470,655" size="120,50" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
+		<widget source="key_blue" render="Label" position="630,655" size="200,50" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>	
+		<widget name="key_red" position="10,670" size="0,0" backgroundColor="#000c0d0e" zPosition="1" transparent="1" halign="center" valign="center"/>
+		<widget name="key_green" position="200,665" size="0,0" backgroundColor="#000c0d0e" zPosition="1" transparent="1" halign="center" valign="center"/>		
+		<widget name="key_yellow" position="400,665" size="0,0" backgroundColor="#000c0d0e" zPosition="1" transparent="1" halign="center" valign="center"/>
+		<widget name="key_blue" position="630,665" size="0,0" backgroundColor="#000c0d0e" zPosition="1" transparent="1" halign="center" valign="center"/>
 		<ePixmap pixmap="icons/key_epg_single.png" position="910,685" size="40,22" alphatest="blend"/>		
 		<ePixmap pixmap="icons/key_menu1.png" position="955,685" size="40,22" alphatest="blend"/>		
 		<ePixmap pixmap="icons/key_info.png" position="1000,685" size="40,22" alphatest="blend"/>		
