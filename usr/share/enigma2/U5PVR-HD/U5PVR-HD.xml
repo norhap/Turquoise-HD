@@ -82,11 +82,11 @@
         <!--panel name="Logo_Egami"/-->		
 	</screen>	
     <!-- Reiniciar Enigma2 -->
-    <screen name="QuitMainloopScreen" position="fill" backgroundColor="#0003424a" flags="wfNoBorder">
-		<eLabel position="20,10" size="1241,2" backgroundColor="#0000fafa" zPosition="1"/>
-	    <eLabel position="20,10" size="2,701" backgroundColor="#0000fafa" zPosition="1"/>
-	    <eLabel position="20,710" size="1242,2" backgroundColor="#0000fafa" zPosition="1"/>
-	    <eLabel position="1260,10" size="2,701" backgroundColor="#0000fafa" zPosition="1"/>
+    <screen name="QuitMainloopScreen" position="fill" backgroundColor="#0003424a" flags="wfNoBorder">	
+		<eLabel position="5,5" size="1270,1" backgroundColor="#0000fafa" zPosition="1"/>		
+	    <eLabel position="5,5" size="1,710" backgroundColor="#0000fafa" zPosition="1"/>		
+	    <eLabel position="5,715" size="1270,1" backgroundColor="#0000fafa" zPosition="1"/>	
+	    <eLabel position="1275,5" size="1,710" backgroundColor="#0000fafa" zPosition="1"/>
         <ePixmap pixmap="icons/input_info.png" position="605,275" size="1280,720" alphatest="blend"/>		
         <widget name="text" position="280,350" size="720,75" zPosition="2" transparent="1" font="Regular;27" halign="center"/>
     </screen>		
@@ -3517,7 +3517,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="790,685" 
+		position="800,685" 
 		size="60,50" 
 		backgroundColor="#11404040" 
 		foregroundColor="#004ccbde" 
@@ -3532,7 +3532,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="855,685" 
+		position="860,685" 
 		size="60,15" 
 		backgroundColor="#11404040" 
 		foregroundColor="foreground" 
@@ -3547,7 +3547,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="915,685" 
+		position="920,685" 
 		size="18,15" 
 		backgroundColor="#11404040" 
 		foregroundColor="foreground" 
@@ -3562,7 +3562,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="930,685" 
+		position="935,685" 
 		size="65,50" 
 		backgroundColor="#11404040" 
 		foregroundColor="#004ccbde" 
@@ -3577,7 +3577,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="980,685" 
+		position="985,685" 
 		size="37,15" 
 		backgroundColor="#11404040" 
 		foregroundColor="foreground" 
@@ -3796,7 +3796,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="790,685" 
+		position="800,685" 
 		size="60,50" 
 		backgroundColor="#11404040" 
 		foregroundColor="#004ccbde" 
@@ -3811,7 +3811,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="855,685" 
+		position="860,685" 
 		size="60,15" 
 		backgroundColor="#11404040" 
 		foregroundColor="foreground" 
@@ -3826,7 +3826,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="915,685" 
+		position="920,685" 
 		size="18,15" 
 		backgroundColor="#11404040" 
 		foregroundColor="foreground" 
@@ -3841,7 +3841,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="930,685" 
+		position="935,685" 
 		size="65,50" 
 		backgroundColor="#11404040" 
 		foregroundColor="#004ccbde" 
@@ -3856,7 +3856,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="980,685" 
+		position="985,685" 
 		size="37,15" 
 		backgroundColor="#11404040" 
 		foregroundColor="foreground" 
@@ -3881,7 +3881,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		zPosition="5" 
 		transparent="1">   
  	    <convert type="PliExtraInfo">TransponderModulation</convert>
-	    </widget>  
+	    </widget> 
         <ePixmap position="372,557" zPosition="2" size="22,22" pixmap="U5PVR-HD/icons/icon_norec_light.png" alphatest="on"/>	
   	    <widget source="session.Event_Now" render="RunningText" options="movetype=running,startpoint=0,startdelay=5000,wrap=0,always=0,repeat=2,oneshot=1" position="65,60" size="570,24" font="Regular;22" halign="left" noWrap="1" foregroundColor="#00a1d1ff" backgroundColor="background" transparent="0" zPosition="1">
 		    <convert type="EventName">NameNow</convert>
