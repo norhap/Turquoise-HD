@@ -3179,7 +3179,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <panel name="Title"/>
 	    <panel name="PIG"/>
 	    <panel name="sRG"/>				
-		<widget source="list" render="Listbox" position="69,137" size="715,427" zPosition="2" scrollbarMode="showOnDemand" selectionPixmap="icons/ls700x90.png" transparent="1" backgroundColor="#00030303">
+		<widget source="list" render="Listbox" position="69,137" size="715,427" zPosition="2" scrollbarMode="showOnDemand" transparent="1" backgroundColor="#00030303">
 		    <convert type="TemplatedMultiContent">
 		<!-- device, description, devicepng, divpng -->
 			    {"template": [
