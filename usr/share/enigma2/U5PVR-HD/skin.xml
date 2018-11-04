@@ -55,7 +55,7 @@
 	</colors>	
 	<!-- Fonts -->
 	<fonts>
-	    <font filename="/usr/share/enigma2/U5PVR-HD/fonts/Verdana_R.ttf" name="Regular" scale="95"/>
+	    <font filename="/usr/share/enigma2/U5PVR-HD/fonts/Verdana_R.ttf" name="Regular" scale="88"/>
         <font filename="/usr/share/enigma2/U5PVR-HD/fonts/digital-Bold.ttf" name="LCD2" scale="100"/>
 		<font filename="/usr/share/enigma2/U5PVR-HD/fonts/digital-watch.ttf" name="LCD" scale="100"/>
 		<font filename="/usr/share/enigma2/U5PVR-HD/fonts/nmsbd2.ttf" name="oledRegular" scale="90"/>
