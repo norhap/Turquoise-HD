@@ -1404,8 +1404,8 @@
         <panel name="Title"/>
         <panel name="PIG"/>
         <panel name="sR"/>		
-		<widget name="menulist" position="70,155" size="715,400" itemHeight="45" scrollbarMode="showOnDemand" selectionPixmap="U5PVR-HD/icons/ls705x38.png" backgroundColor="black" transparent="1" zPosition="2"/>
-		<widget source="introduction" render="Label" position="845,435" size="380,160" halign="center" valign="center" font="Regular;21" foregroundColor="#004ccbde" backgroundColor="background" transparent="1" zPosition="2"/>
+		<widget name="menulist" position="70,155" size="715,400" itemHeight="45" font="Regular;24" scrollbarMode="showOnDemand" selectionPixmap="U5PVR-HD/icons/ls705x38.png" backgroundColor="black" transparent="1" zPosition="2"/>
+		<widget source="introduction" render="Label" position="845,435" size="380,160" halign="center" valign="center" font="Regular;20" foregroundColor="#004ccbde" backgroundColor="background" transparent="1" zPosition="2"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 	</screen>
 	<!-- (125) ####### (Administrador de Montajes) ####### -->
