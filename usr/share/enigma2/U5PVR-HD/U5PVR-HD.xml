@@ -6224,7 +6224,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-		<widget name="checkList" position="75,145" size="725,400" backgroundColor="black" transparent="0" scrollbarMode="showOnDemand" selectionPixmap="U5PVR-HD/icons/ls700x30-h.png" enableWrapAround="1"/>
+		<widget name="checkList" position="75,140" size="723,425" scrollbarMode="showOnDemand" selectionPixmap="U5PVR-HD/icons/ls700x30-h.png" transparent="1"/>		
 	</screen>
 	<screen name="RestoreMenu" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaRG"/>	
