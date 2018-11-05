@@ -33,13 +33,13 @@
 		<!--panel name="Logo_Egami"/-->		
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 	<!-- menu list -->
-		<widget source="menu" render="Listbox" position="69,145" zPosition="2" size="728,418" backgroundPixmap="U5PVR-HD/icons/butselection1.png" selectionPixmap="U5PVR-HD/icons/ls705x38.png" transparent="1" scrollbarMode="showAlways">
+		<widget source="menu" render="Listbox" position="69,145" zPosition="2" size="728,445" backgroundPixmap="U5PVR-HD/icons/butselection1.png" selectionPixmap="U5PVR-HD/icons/ls705x38.png" transparent="1" scrollbarMode="showAlways">
 			<convert type="TemplatedMultiContent">
 			    {"template": [ 
 			    MultiContentEntryText(pos = (51,2), size = (600,38), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	),
 			    ],
 			    "fonts": [gFont("Regular",30)],
-			    "itemHeight": 38
+			    "itemHeight": 37
 			    }
 			</convert>
 		</widget>		
