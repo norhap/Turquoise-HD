@@ -797,6 +797,10 @@
 		    <convert type="EventTime">StartTime</convert>
 		    <convert type="ClockToText">Format:%H:%M </convert>
 		</widget>
+		<widget source="Event" render="Label" position="880,7" size="250,20" zPosition="1" font="Regular;14" foregroundColor="#0000baff" backgroundColor="#0003424a" transparent="1">
+		    <convert type="EventTime">StartTime</convert>
+		    <convert type="ClockToText">Format:%a %d/%m/%y</convert>
+		</widget>		
 		<widget source="Event" render="Label" position="1020,7" size="80,28" zPosition="1" font="Regular;20" halign="right" foregroundColor="#00a1d1ff" backgroundColor="#0003424a" transparent="1">
 		    <convert type="EventTime">EndTime</convert>
 		    <convert type="ClockToText">Format:%H:%M</convert>
@@ -806,11 +810,11 @@
 			<convert type="EventTime">Progress</convert>
 		</widget>		
 		<ePixmap pixmap="icons/clock.png" position="1130,13" zPosition="1" size="20,20" alphatest="blend"/>
-		<widget source="global.CurrentTime" render="Label" position="1148,8" size="100,28" font="Regular;22" foregroundColor="#0000fafa" backgroundColor="black" halign="right" transparent="1" zPosition="1">
+		<widget source="global.CurrentTime" render="Label" position="1148,8" size="100,28" font="Regular;22" foregroundColor="#0000fafa" backgroundColor="#0003424a" halign="right" transparent="1" zPosition="1">
 		    <convert type="ClockToText">Format %H:%M:%S</convert>
 		</widget>
 		<widget name="list" position="15,40" size="762,120" foregroundColor="#004ccbde" scrollbarMode="showOnDemand" font="Regular;20" backgroundColor="black"/>
-		<widget source="Service" render="Picon" position="30,0" size="70,42" zPosition="2" alphatest="blend">
+		<widget source="Service" render="Picon" position="30,0" size="70,42" backgroundColor="#0003424a" zPosition="2" alphatest="blend">
 		    <convert type="ServiceName">Reference</convert>
 		</widget>		
 		<widget name="number" position="475,0" size="400,40" zPosition="1" font="Regular;18" foregroundColor="#0000fafa" backgroundColor="#0003424a" transparent="1"/>		
