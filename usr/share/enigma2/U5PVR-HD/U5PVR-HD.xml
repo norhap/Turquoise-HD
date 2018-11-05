@@ -3361,14 +3361,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <widget source="session.CurrentService" render="Label" position="350,521" size="563,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="#004ccbde" backgroundColor="background">
             <convert type="ServiceName">Name</convert>
         </widget>
-    <!-- ONLINE UPDATE -->		
-		<ePixmap pixmap="/usr/share/enigma2/skin_default/icons/icon_update_off.png" position="830,525" size="20,20" zPosition="4" alphatest="blend"/>
-		<widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="/usr/share/enigma2/skin_default/icons/icon_stableupdate.png" position="830,525" size="20,20" zPosition="5" alphatest="blend">
-			<convert type="ConditionalShowHide">Blink</convert>
-		</widget>
-		<widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="/usr/share/enigma2/skin_default/icons/icon_unstableupdate.png" position="830,525" size="20,20" zPosition="5" alphatest="blend">
-			<convert type="ConditionalShowHide">Blink</convert>
-		</widget>
     <!-- Evento Corrente - Event Now -->		
 		<widget font="Regular;24" halign="left" position="317,592" render="Label" noWrap="1" size="620,29" source="session.Event_Now" foregroundColor="#0077d8e6" backgroundColor="background" transparent="1" zPosition="2">
 		    <convert type="EventName">Name</convert>
@@ -3440,6 +3432,19 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    </widget>		
     <!-- Sezione Numero di cannale - Numero di cannale Section -->
        <widget source="session.CurrentService" render="ChannelNumber" position="279,557" size="75,26" font="Regular; 20" halign="center" transparent="1" foregroundColor="#004ccbde" backgroundColor="background" zPosition="2"/>
+    <!-- Icone Registrazione - Icons Recorder -->
+        <ePixmap position="363,557" zPosition="2" size="22,22" pixmap="U5PVR-HD/icons/icon_norec_light.png" alphatest="on"/>	
+        <widget source="session.RecordState" render="Pixmap" pixmap="U5PVR-HD/icons/icon_rec_light.png" position="363,557" zPosition="3" size="22,22" alphatest="on">
+            <convert type="ConditionalShowHide">Blink</convert>
+        </widget>		
+    <!-- ONLINE UPDATE -->		
+		<ePixmap pixmap="/usr/share/enigma2/skin_default/icons/icon_update_off.png" position="385,559" size="20,20" zPosition="4" alphatest="blend"/>
+		<widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="/usr/share/enigma2/skin_default/icons/icon_stableupdate.png" position="385,559" size="20,20" zPosition="5" alphatest="blend">
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+		<widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="/usr/share/enigma2/skin_default/icons/icon_unstableupdate.png" position="385,559" size="20,20" zPosition="5" alphatest="blend">
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>	   
     <!-- Sezione SNR - SNR Section -->
     <!-- eLabel text="Snr :" zPosition="1" position="220,684" size="60,20" halign="left" font="Regular;18" transparent="1" backgroundColor="transpBlack" -->
         <eLabel text="CPU" zPosition="2" position="740,556" foregroundColor="#0000fafa" backgroundColor="black" size="30,10" font="xRegular;10"/>
@@ -3498,19 +3503,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
             <convert type="ServiceInfo">IsCrypted</convert>
             <convert type="ConditionalShowHide"/>
         </widget>
-    <!-- Icone Registrazione - Icons Recorder -->
-        <widget source="session.RecordState" render="Pixmap" pixmap="U5PVR-HD/icons/icon_rec_light.png" position="372,557" zPosition="3" size="22,22" alphatest="on">
-            <convert type="ConditionalShowHide">Blink</convert>
-        </widget>
-        <ePixmap position="372,557" zPosition="2" size="22,22" pixmap="U5PVR-HD/icons/icon_norec_light.png" alphatest="on"/>
     <!-- Icone Sottotitoli - Subtitle Icons-->
 		<widget source="session.CurrentService" render="Pixmap" pixmap="U5PVR-HD/icons/icon_sub.png" position="726,555" zPosition="4" size="49,28" alphatest="on">
 		    <convert type="ServiceInfo">SubservicesAvailable</convert>
 		    <convert type="ConditionalShowHide"/>
-        </widget>
-    <!-- Icone Registrazione - Icons Recorder -->
-        <widget source="session.RecordState" render="Pixmap" pixmap="U5PVR-HD/icons/icon_rec_light.png" position="372,557" zPosition="3" size="22,22" alphatest="on">
-            <convert type="ConditionalShowHide">Blink</convert>
         </widget>
 	    <widget source="session.CurrentService" render="Label" position="235,672" size="400,60" font="Regular;14" valign="top" halign="left" foregroundColor="#004ccbde" backgroundColor="#11404040" transparent="1" zPosition="5">
 		    <convert type="CryptoInfo">VerboseInfo</convert>
@@ -3692,6 +3688,19 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    </widget>
     <!-- Sezione Numero di cannale - Numero di cannale Section -->
        <widget source="session.CurrentService" render="ChannelNumber" position="279,557" size="75,26" font="Regular; 20" halign="center" transparent="1" foregroundColor="#004ccbde" backgroundColor="background" zPosition="2"/>
+    <!-- Icone Registrazione - Icons Recorder -->
+        <ePixmap position="363,557" zPosition="2" size="22,22" pixmap="U5PVR-HD/icons/icon_norec_light.png" alphatest="on"/>	
+        <widget source="session.RecordState" render="Pixmap" pixmap="U5PVR-HD/icons/icon_rec_light.png" position="363,557" zPosition="3" size="22,22" alphatest="on">
+            <convert type="ConditionalShowHide">Blink</convert>
+        </widget>		
+    <!-- ONLINE UPDATE -->		
+		<ePixmap pixmap="/usr/share/enigma2/skin_default/icons/icon_update_off.png" position="385,559" size="20,20" zPosition="4" alphatest="blend"/>
+		<widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="/usr/share/enigma2/skin_default/icons/icon_stableupdate.png" position="385,559" size="20,20" zPosition="5" alphatest="blend">
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+		<widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="/usr/share/enigma2/skin_default/icons/icon_unstableupdate.png" position="385,559" size="20,20" zPosition="5" alphatest="blend">
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>	   
     <!-- Sezione SNR - SNR Section -->
     <!-- eLabel text="Snr :" zPosition="1" position="220,684" size="60,20" halign="left" font="Regular;18" transparent="1" backgroundColor="transpBlack" -->
         <eLabel text="CPU" zPosition="2" position="740,556" foregroundColor="#0000fafa" backgroundColor="black" size="30,10" font="xRegular;10"/>
@@ -3776,20 +3785,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <widget source="session.CurrentService" render="Pixmap" pixmap="U5PVR-HD/icons/crypt_on.png" position="621,554" zPosition="4" size="49,28" alphatest="on">
             <convert type="ServiceInfo">IsCrypted</convert>
             <convert type="ConditionalShowHide"/>
-        </widget>
-    <!-- Icone Registrazione - Icons Recorder -->
-        <widget source="session.RecordState" render="Pixmap" pixmap="U5PVR-HD/icons/icon_rec_light.png" position="372,557" zPosition="3" size="22,22" alphatest="on">
-            <convert type="ConditionalShowHide">Blink</convert>
-        </widget>
-        <ePixmap position="372,557" zPosition="2" size="22,22" pixmap="U5PVR-HD/icons/icon_norec_light.png" alphatest="on"/>
+        </widget>		
     <!-- Icone Sottotitoli - Subtitle Icons-->
 	    <widget source="session.CurrentService" render="Pixmap" pixmap="U5PVR-HD/icons/icon_sub.png" position="726,555" zPosition="4" size="49,28" alphatest="on">
 		    <convert type="ServiceInfo">SubservicesAvailable</convert>
 		    <convert type="ConditionalShowHide"/>
-        </widget>
-    <!-- Icone Registrazione - Icons Recorder -->
-        <widget source="session.RecordState" render="Pixmap" pixmap="U5PVR-HD/icons/icon_rec_light.png" position="372,557" zPosition="3" size="22,22" alphatest="on">
-            <convert type="ConditionalShowHide">Blink</convert>
         </widget>
 	    <widget source="session.CurrentService" render="Label" position="235,672" size="400,60" font="Regular;14" valign="top" halign="left" foregroundColor="#004ccbde" backgroundColor="#11404040" transparent="1" zPosition="5">
 		    <convert type="CryptoInfo">VerboseInfo</convert>
@@ -3885,8 +3885,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		zPosition="5" 
 		transparent="1">   
  	    <convert type="PliExtraInfo">TransponderModulation</convert>
-	    </widget> 
-        <ePixmap position="372,557" zPosition="2" size="22,22" pixmap="U5PVR-HD/icons/icon_norec_light.png" alphatest="on"/>	
+	    </widget>	
   	    <widget source="session.Event_Now" render="RunningText" options="movetype=running,startpoint=0,startdelay=5000,wrap=0,always=0,repeat=2,oneshot=1" position="65,60" size="570,24" font="Regular;22" halign="left" noWrap="1" foregroundColor="#00a1d1ff" backgroundColor="background" transparent="0" zPosition="1">
 		    <convert type="EventName">NameNow</convert>
 		</widget>
@@ -4070,15 +4069,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		zPosition="5" 
 		transparent="1">   
  	    <convert type="ServiceInfo">VideoPid</convert>
-	    </widget>
-    <!-- ONLINE UPDATE -->		
-		<ePixmap pixmap="/usr/share/enigma2/skin_default/icons/icon_update_off.png" position="830,525" size="20,20" zPosition="4" alphatest="blend"/>
-		<widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="/usr/share/enigma2/skin_default/icons/icon_stableupdate.png" position="830,525" size="20,20" zPosition="5" alphatest="blend">
-			<convert type="ConditionalShowHide">Blink</convert>
-		</widget>
-		<widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="/usr/share/enigma2/skin_default/icons/icon_unstableupdate.png" position="830,525" size="20,20" zPosition="5" alphatest="blend">
-			<convert type="ConditionalShowHide">Blink</convert>
-		</widget>		
+	    </widget>		
 	</screen>
 
 
