@@ -80,18 +80,18 @@
 		<color name="WindowTitleBackground" color="black"/>
 	<!-- Main screen border png's -->
 	<borderset name="bsWindow">
-	    <pixmap pos="bpTopLeft" filename="U5PVR-HD/bs_tl.png"/>
-		<pixmap pos="bpTop" filename="U5PVR-HD/bs_t.png"/>
-		<pixmap pos="bpTopRight" filename="U5PVR-HD/bs_tr.png"/>
-		<pixmap pos="bpLeft" filename="U5PVR-HD/bs_l.png"/>
-		<pixmap pos="bpRight" filename="U5PVR-HD/bs_r.png"/>
-		<pixmap pos="bpBottomLeft" filename="U5PVR-HD/bs_bl.png"/>
-		<pixmap pos="bpBottom" filename="U5PVR-HD/bs_b.png"/>
-		<pixmap pos="bpBottomRight" filename="U5PVR-HD/bs_br.png"/>
+	    <pixmap pos="bpTopLeft" filename="icons/bs_tl.png"/>
+		<pixmap pos="bpTop" filename="icons/bs_t.png"/>
+		<pixmap pos="bpTopRight" filename="icons/bs_tr.png"/>
+		<pixmap pos="bpLeft" filename="icons/bs_l.png"/>
+		<pixmap pos="bpRight" filename="icons/bs_r.png"/>
+		<pixmap pos="bpBottomLeft" filename="icons/bs_bl.png"/>
+		<pixmap pos="bpBottom" filename="icons/bs_b.png"/>
+		<pixmap pos="bpBottomRight" filename="icons/bs_br.png"/>
 	</borderset>
 	<borderset name="bsListboxEntry">
-	    <pixmap pos="bpTop" filename="U5PVR-HD/def-bar.png"/>
-	    <pixmap pos="bpBottom" filename="U5PVR-HD/def-bar.png"/>
+	    <pixmap pos="bpTop" filename="icons/def-bar.png"/>
+	    <pixmap pos="bpBottom" filename="icons/def-bar.png"/>
 	</borderset>
 	</windowstyle>
 	    <include filename="/usr/share/enigma2/U5PVR-HD/U5PVR-HD.xml"/>
