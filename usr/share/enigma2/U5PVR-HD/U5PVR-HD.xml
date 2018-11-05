@@ -51,7 +51,7 @@
         <panel name="Title"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="sRG"/>		
-		<widget name="config" position="59,155" size="738,425" font="Regular;21" scrollbarMode="showAlways" transparent="1"/>
+		<widget name="config" position="59,155" size="738,425" font="Regular;22" scrollbarMode="showAlways" transparent="1"/>
 		<widget name="HelpWindow" position="682,599" size="1,1" pixmap="/usr/share/enigma2/skin_default/buttons/vkey_icon.png" transparent="1" zPosition="1" alphatest="blend"/>
 		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,680" zPosition="2" size="40,22" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
@@ -2070,7 +2070,7 @@
 				MultiContentEntryText(pos = (10,3), size = (860,23), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
 				MultiContentEntryText(pos = (10,28), size = (650,53), font = 1, flags = RT_HALIGN_LEFT|RT_WRAP, text = 2), # index 2 is a description of the nim settings,
 				],
-				"fonts": [gFont("Regular", 20), gFont("Regular", 16)],
+				"fonts": [gFont("Regular", 22), gFont("Regular", 18)],
 				"itemHeight": 90
 				}
 			</convert>
@@ -4272,7 +4272,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
         <!--panel name="Logo_Egami"/-->
-		<widget source="TunerHeader" render="Label" position="80,130" size="585,40" font="Regular;17" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1"/>
+		<widget source="TunerHeader" render="Label" position="80,130" size="585,40" font="Regular;19" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1"/>
 		<widget source="nims" render="Label" position="80,150" size="585,175" font="Regular;15" halign="left" backgroundColor="black" transparent="1" valign="top" zPosition="1"/>
 		<widget source="HDDHeader" render="Label" position="80,320" size="585,40" font="Regular;17" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1"/>
 		<widget source="hdd" render="Label" position="80,336" size="690,102" font="Regular;15" halign="left" backgroundColor="black" transparent="1" valign="top"/>
