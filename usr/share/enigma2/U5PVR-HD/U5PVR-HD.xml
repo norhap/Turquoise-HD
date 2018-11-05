@@ -5564,7 +5564,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="poster" position="930,395" size="182,190" alphatest="blend" zPosition="2"/>
 		<widget name="castlabel" position="80,180" size="717,270" font="Regular;20" backgroundColor="black" transparent="1"/>
 		<widget name="extralabel" position="80,180" size="717,270" font="Regular;20" backgroundColor="black" transparent="1"/>
-		<widget name="detailslabel" position="85,430" size="715,180" font="Regular;20" foregroundColor="#004ccbde" transparent="1"/>
+		<widget name="detailslabel" position="85,445" size="715,180" font="Regular;20" foregroundColor="#004ccbde" transparent="1"/>
 		<widget name="starsbg" position="920,590" size="250,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty.png" zPosition="0" transparent="1" alphatest="on"/>
 		<widget name="stars" position="920,590" size="250,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" zPosition="1" transparent="1"/>
 	</screen>
