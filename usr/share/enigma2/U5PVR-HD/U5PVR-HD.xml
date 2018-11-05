@@ -2207,7 +2207,7 @@
 		<eLabel text="FEC:" position="505,420" size="150,24" font="Regular;21" backgroundColor="black" transparent="1"/>
 		<widget name="fec_value" position="660,420" size="100,24" font="Regular;21" backgroundColor="black" transparent="1"/>
 		<eLabel text="Polarisation:" position="80,490" size="125,22" font="Regular;19" backgroundColor="black" transparent="1"/>		
-		<widget name="polarisation" position="205,490" size="125,22" font="Regular;21" foregroundColor="#0000fafa" backgroundColor="black" transparent="1"/>
+		<widget name="polarisation" position="205,488" size="125,22" font="Regular;21" foregroundColor="#0000fafa" backgroundColor="black" transparent="1"/>
 		<widget name="status_bar" position="865,485" size="320,500" font="Regular;18" halign="center" transparent="1" foregroundColor="#004ccbde" backgroundColor="black"/>
 	    <widget name="rotorstatus" position="845,435" size="380,40" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>	
 	</screen>
