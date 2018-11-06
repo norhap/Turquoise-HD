@@ -1096,8 +1096,8 @@
 		<widget name="activityslider" borderWidth="2" foregroundColor="#004ccbde" position="80,165" size="562,32" backgroundColor="black"/>
 		<eLabel position="79,259" size="564,34" backgroundColor="#004ccbde"/>
 		<widget name="slider" position="80,260" borderWidth="2" foregroundColor="#0003424a" size="562,32" zPosition="1"/>
-		<widget source="package" render="Label" position="80,215" size="530,24" font="Regular;16" backgroundColor="#00101010" transparent="1"/>
-		<widget source="status" render="Label" position="80,300" size="530,50" font="Regular;16" backgroundColor="#00101010" transparent="1"/>
+		<widget source="package" render="Label" position="80,215" size="530,24" font="Regular;17" backgroundColor="#00101010" transparent="1"/>
+		<widget source="status" render="Label" position="80,300" size="530,50" font="Regular;17" backgroundColor="#00101010" transparent="1"/>
 		<widget name="tl_off" position="80,360" size="530,25" backgroundColor="#00101010" transparent="1"/>
 		<widget name="tl_red" position="80,390" size="530,25" backgroundColor="#00101010" transparent="1"/>
 		<widget name="tl_yellow" position="80,420" size="530,25" backgroundColor="#00101010" transparent="1"/>
