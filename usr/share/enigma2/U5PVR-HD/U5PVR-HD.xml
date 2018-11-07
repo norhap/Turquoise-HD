@@ -5259,6 +5259,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			<convert type="ValueRange">721,1980</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
+       <widget render="FixedLabel" text="4K" position="325,575" size="25,20" font="Regular;18" backgroundColor="#002d2d2f" source="session.CurrentService" zPosition="20">
+            <convert type="ServiceInfo">VideoWidth</convert>
+            <convert type="ValueRange">1921,4096</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>		
     <!-- Resolucion -->		
 	    <widget source="session.CurrentService" render="Label" zPosition="4" position="1095,668" size="93,22" halign="left" font="LCD;19" foregroundColor="#00a1d1ff" backgroundColor="#00232525" transparent="1">
 	        <convert type="PliExtraInfo">ResolutionString</convert>
@@ -5310,6 +5315,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			<convert type="ValueRange">721,1980</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
+       <widget render="FixedLabel" text="4K" position="325,575" size="25,20" font="Regular;18" backgroundColor="#002d2d2f" source="session.CurrentService" zPosition="20">
+            <convert type="ServiceInfo">VideoWidth</convert>
+            <convert type="ValueRange">1921,4096</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>		
     <!-- Resolucion -->		
 	    <widget source="session.CurrentService" render="Label" zPosition="4" position="1095,668" size="93,22" halign="left" font="LCD;19" foregroundColor="#00a1d1ff" backgroundColor="#00232525" transparent="1">
 	        <convert type="PliExtraInfo">ResolutionString</convert>
