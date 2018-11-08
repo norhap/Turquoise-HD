@@ -188,7 +188,7 @@
 			<convert type="EventName">Name</convert>
 		</widget>
     <!--widget source="ServiceEvent" render="SingleEpgList" position="840,500" size="387,200" font="Regular;16" halign="left" transparent="1" foregroundColor="#0000baff" backgroundColor="background" zPosition="2" noWrap="1" valign="top"/-->
-    	<widget source="ServiceEvent" render="DRRunningText" position="838,447" size="385,19" font="Regular;16" 
+    	<widget source="ServiceEvent" render="DRRunningText" position="838,447" size="385,19" font="Regular;17" 
     	options="movetype=running,
 		repeat=2,				
 		startpoint=0,
@@ -200,7 +200,7 @@
 		foregroundColor="#0000fafa" backgroundColor="black" transparent="0" zPosition="2">
     	<convert type="BTVRunning14Events">Event1,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="DRRunningText" position="838,465" size="385,19" font="Regular;16" 
+    	<widget source="ServiceEvent" render="DRRunningText" position="838,465" size="385,19" font="Regular;17" 
     	options="movetype=running,
 		repeat=2,				
 		startpoint=0,
@@ -212,7 +212,7 @@
 		foregroundColor="#0000fafa" backgroundColor="black" transparent="0" zPosition="2">
     	<convert type="BTVRunning14Events">Event2,onlyStart</convert>
     	</widget>	
-    	<widget source="ServiceEvent" render="DRRunningText" position="838,483" size="385,19" font="Regular;16" 
+    	<widget source="ServiceEvent" render="DRRunningText" position="838,483" size="385,19" font="Regular;17" 
     	options="movetype=running,
 		repeat=2,				
 		startpoint=0,
@@ -224,7 +224,7 @@
 		foregroundColor="#0000fafa" backgroundColor="black" transparent="0" zPosition="2">
     	<convert type="BTVRunning14Events">Event3,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="DRRunningText" position="838,501" size="385,19" font="Regular;16" 
+    	<widget source="ServiceEvent" render="DRRunningText" position="838,501" size="385,19" font="Regular;17" 
     	options="movetype=running,
 		repeat=2,				
 		startpoint=0,
@@ -236,7 +236,7 @@
 		foregroundColor="#0000fafa" backgroundColor="black" transparent="0" zPosition="2">
     	<convert type="BTVRunning14Events">Event4,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="DRRunningText" position="838,519" size="385,19" font="Regular;16" 
+    	<widget source="ServiceEvent" render="DRRunningText" position="838,519" size="385,19" font="Regular;17" 
     	options="movetype=running,
 		repeat=2,				
 		startpoint=0,
@@ -248,7 +248,7 @@
 		foregroundColor="#0000fafa" backgroundColor="black" transparent="0" zPosition="2">
     	<convert type="BTVRunning14Events">Event5,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="DRRunningText" position="838,537" size="385,19" font="Regular;16" 
+    	<widget source="ServiceEvent" render="DRRunningText" position="838,537" size="385,19" font="Regular;17" 
     	options="movetype=running,
 		repeat=2,				
 		startpoint=0,
@@ -260,7 +260,7 @@
 		foregroundColor="#0000fafa" backgroundColor="black" transparent="0" zPosition="2">
     	<convert type="BTVRunning14Events">Event6,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="DRRunningText" position="838,555" size="385,19" font="Regular;16" 
+    	<widget source="ServiceEvent" render="DRRunningText" position="838,555" size="385,19" font="Regular;17" 
     	options="movetype=running,
 		repeat=2,				
 		startpoint=0,
@@ -272,7 +272,7 @@
 		foregroundColor="#0000fafa" backgroundColor="black" transparent="0" zPosition="2">
     	<convert type="BTVRunning14Events">Event7,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="DRRunningText" position="838,573" size="385,19" font="Regular;16" 
+    	<widget source="ServiceEvent" render="DRRunningText" position="838,573" size="385,19" font="Regular;17" 
     	options="movetype=running,
 		repeat=2,			
 		startpoint=0,
@@ -284,7 +284,7 @@
 		foregroundColor="#0000fafa" backgroundColor="black" transparent="0" zPosition="2">
     	<convert type="BTVRunning14Events">Event8,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="DRRunningText" position="838,591" size="385,19" font="Regular;16" 
+    	<widget source="ServiceEvent" render="DRRunningText" position="838,591" size="385,19" font="Regular;17" 
     	options="movetype=running,
 		repeat=2,			
 		startpoint=0,
@@ -296,7 +296,7 @@
 		foregroundColor="#0000fafa" backgroundColor="black" transparent="0" zPosition="2">
     	<convert type="BTVRunning14Events">Event9,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="DRRunningText" position="838,608" size="385,19" font="Regular;16" 
+    	<widget source="ServiceEvent" render="DRRunningText" position="838,608" size="385,19" font="Regular;17" 
     	options="movetype=running,
 		repeat=2,	
 		startpoint=0,
@@ -308,7 +308,7 @@
 		foregroundColor="#0000fafa" backgroundColor="black" transparent="0" zPosition="2">
     	<convert type="BTVRunning14Events">Event10,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="DRRunningText" position="838,626" size="385,19" font="Regular;16" 
+    	<widget source="ServiceEvent" render="DRRunningText" position="838,626" size="385,19" font="Regular;17" 
     	options="movetype=running,
 		repeat=2,			
 		startpoint=0,
@@ -320,7 +320,7 @@
 		foregroundColor="#0000fafa" backgroundColor="black" transparent="0" zPosition="2">
     	<convert type="BTVRunning14Events">Event11,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="DRRunningText" position="838,644" size="385,19" font="Regular;16" 
+    	<widget source="ServiceEvent" render="DRRunningText" position="838,644" size="385,19" font="Regular;17" 
     	options="movetype=running,
 		repeat=2,			
 		startpoint=0,
@@ -332,7 +332,7 @@
 		foregroundColor="#0000fafa" backgroundColor="black" transparent="0" zPosition="2">
     	<convert type="BTVRunning14Events">Event12,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="DRRunningText" position="838,662" size="385,19" font="Regular;16" 
+    	<widget source="ServiceEvent" render="DRRunningText" position="838,662" size="385,19" font="Regular;17" 
     	options="movetype=running,
 		repeat=2,			
 		startpoint=0,
@@ -344,7 +344,7 @@
 		foregroundColor="#0000fafa" backgroundColor="black" transparent="0" zPosition="2">
     	<convert type="BTVRunning14Events">Event13,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="DRRunningText" position="838,680" size="385,19" font="Regular;16" 
+    	<widget source="ServiceEvent" render="DRRunningText" position="838,680" size="385,19" font="Regular;17" 
     	options="movetype=running,
 		repeat=2,			
 		startpoint=0,
