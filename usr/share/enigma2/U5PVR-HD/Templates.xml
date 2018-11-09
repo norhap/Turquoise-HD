@@ -390,5 +390,16 @@
 
 		<widget objectTypes="key_blue,Label,Button" name="key_blue" position="600,620" size="250,45" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
 		<widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="600,620" size="250,45" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
+	</screen>
+	<!--  ####### DESCARGA MODO BARRA #######  -->	
+	<screen name="DownloadBar">
+		<widget name="action" position="5,3" size="435,25" font="Regular;22" backgroundColor="#0003424a"/>
+		<widget name="status" position="465,5" size="435,25" font="Regular;22" halign="center" backgroundColor="#0003424a"/>
+		<widget source="progress_text" render="Label" position="1005,5" size="135,25" font="Regular;22" halign="left" backgroundColor="#0003424a">
+			<convert type="ProgressToText">InText</convert>
+		</widget>
+		<widget source="progress_text" render="Label" position="1135,5" size="140,25" font="Regular;22" halign="left" backgroundColor="#0003424a">
+			<convert type="ProgressToText">InPercent</convert>
+		</widget>
 	</screen>	
 </skin>
