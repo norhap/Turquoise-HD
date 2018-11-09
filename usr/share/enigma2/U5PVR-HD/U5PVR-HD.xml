@@ -2439,10 +2439,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="list" position="73,137" size="730,400" scrollbarMode="showOnDemand" selectionPixmap="U5PVR-HD/icons/ls680x50.png" transparent="1"/>
 	<!-- Widget Pig -->
 		 <widget source="session.VideoPicture" render="Pig" position="848,112" size="370,218" zPosition="3" backgroundColor="#df0b1300"/>
-	<!-- Nombre del Canal - Service Name -->
-		<widget source="session.CurrentService" render="Label" position="832,350" size="393,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="#004ccbde" backgroundColor="background">
-			<convert type="ServiceName">Name</convert>
-		</widget>
 	<!-- Barra Progresso -->
 		<widget source="session.Event_Now" render="Progress" pixmap="icons/tv_b_bar.png" size="340,2" position="837,338" zPosition="5" backgroundColor="darkgrey" transparent="1">
 			<convert type="EventTime">Progress</convert>
