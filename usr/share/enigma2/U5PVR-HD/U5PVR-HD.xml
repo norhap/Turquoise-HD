@@ -195,7 +195,7 @@
 		steptime=12,
 		always=0,
 		noWrap" 
-		foregroundColor="grey" backgroundColor="black" transparent="0" zPosition="2">
+		foregroundColor="#004ccbde" backgroundColor="black" transparent="0" zPosition="2">
     	<convert type="BTVRunning14Events">Event1,onlyStart</convert>
     	</widget>
     	<widget source="ServiceEvent" render="DRRunningText" position="838,465" size="385,19" font="Regular;17" 
@@ -207,7 +207,7 @@
 		steptime=14,
 		always=0,
 		noWrap" 
-		foregroundColor="grey" backgroundColor="black" transparent="0" zPosition="2">
+		foregroundColor="#004ccbde" backgroundColor="black" transparent="0" zPosition="2">
     	<convert type="BTVRunning14Events">Event2,onlyStart</convert>
     	</widget>	
     	<widget source="ServiceEvent" render="DRRunningText" position="838,483" size="385,19" font="Regular;17" 
@@ -219,7 +219,7 @@
 		steptime=12,
 		always=0,
 		noWrap" 
-		foregroundColor="grey" backgroundColor="black" transparent="0" zPosition="2">
+		foregroundColor="#004ccbde" backgroundColor="black" transparent="0" zPosition="2">
     	<convert type="BTVRunning14Events">Event3,onlyStart</convert>
     	</widget>
     	<widget source="ServiceEvent" render="DRRunningText" position="838,501" size="385,19" font="Regular;17" 
@@ -231,7 +231,7 @@
 		steptime=14,
 		always=0,
 		noWrap" 
-		foregroundColor="grey" backgroundColor="black" transparent="0" zPosition="2">
+		foregroundColor="#004ccbde" backgroundColor="black" transparent="0" zPosition="2">
     	<convert type="BTVRunning14Events">Event4,onlyStart</convert>
     	</widget>
     	<widget source="ServiceEvent" render="DRRunningText" position="838,519" size="385,19" font="Regular;17" 
@@ -243,7 +243,7 @@
 		steptime=20,
 		always=0,
 		noWrap" 
-		foregroundColor="grey" backgroundColor="black" transparent="0" zPosition="2">
+		foregroundColor="#004ccbde" backgroundColor="black" transparent="0" zPosition="2">
     	<convert type="BTVRunning14Events">Event5,onlyStart</convert>
     	</widget>
     	<widget source="ServiceEvent" render="DRRunningText" position="838,537" size="385,19" font="Regular;17" 
@@ -255,7 +255,7 @@
 		steptime=22,
 		always=0,
 		noWrap" 
-		foregroundColor="grey" backgroundColor="black" transparent="0" zPosition="2">
+		foregroundColor="#004ccbde" backgroundColor="black" transparent="0" zPosition="2">
     	<convert type="BTVRunning14Events">Event6,onlyStart</convert>
     	</widget>
     	<widget source="ServiceEvent" render="DRRunningText" position="838,555" size="385,19" font="Regular;17" 
@@ -267,7 +267,7 @@
 		steptime=24,
 		always=0,
 		noWrap" 
-		foregroundColor="grey" backgroundColor="black" transparent="0" zPosition="2">
+		foregroundColor="#004ccbde" backgroundColor="black" transparent="0" zPosition="2">
     	<convert type="BTVRunning14Events">Event7,onlyStart</convert>
     	</widget>
     	<widget source="ServiceEvent" render="DRRunningText" position="838,573" size="385,19" font="Regular;17" 
@@ -279,7 +279,7 @@
 		steptime=26,
 		always=0,
 		noWrap" 
-		foregroundColor="grey" backgroundColor="black" transparent="0" zPosition="2">
+		foregroundColor="#004ccbde" backgroundColor="black" transparent="0" zPosition="2">
     	<convert type="BTVRunning14Events">Event8,onlyStart</convert>
     	</widget>
     	<widget source="ServiceEvent" render="DRRunningText" position="838,591" size="385,19" font="Regular;17" 
@@ -291,7 +291,7 @@
 		steptime=28,
 		always=0,
 		noWrap" 
-		foregroundColor="grey" backgroundColor="black" transparent="0" zPosition="2">
+		foregroundColor="#004ccbde" backgroundColor="black" transparent="0" zPosition="2">
     	<convert type="BTVRunning14Events">Event9,onlyStart</convert>
     	</widget>
     	<widget source="ServiceEvent" render="DRRunningText" position="838,608" size="385,19" font="Regular;17" 
@@ -303,7 +303,7 @@
 		steptime=30,
 		always=0,
 		noWrap" 
-		foregroundColor="grey" backgroundColor="black" transparent="0" zPosition="2">
+		foregroundColor="#004ccbde" backgroundColor="black" transparent="0" zPosition="2">
     	<convert type="BTVRunning14Events">Event10,onlyStart</convert>
     	</widget>
     	<widget source="ServiceEvent" render="DRRunningText" position="838,626" size="385,19" font="Regular;17" 
@@ -315,7 +315,7 @@
 		steptime=32,
 		always=0,
 		noWrap" 
-		foregroundColor="grey" backgroundColor="black" transparent="0" zPosition="2">
+		foregroundColor="#004ccbde" backgroundColor="black" transparent="0" zPosition="2">
     	<convert type="BTVRunning14Events">Event11,onlyStart</convert>
     	</widget>
     	<widget source="ServiceEvent" render="DRRunningText" position="838,644" size="385,19" font="Regular;17" 
@@ -327,7 +327,7 @@
 		steptime=32,
 		always=0,
 		noWrap" 
-		foregroundColor="grey" backgroundColor="black" transparent="0" zPosition="2">
+		foregroundColor="#004ccbde" backgroundColor="black" transparent="0" zPosition="2">
     	<convert type="BTVRunning14Events">Event12,onlyStart</convert>
     	</widget>
     	<widget source="ServiceEvent" render="DRRunningText" position="838,662" size="385,19" font="Regular;17" 
@@ -339,7 +339,7 @@
 		steptime=32,
 		always=0,
 		noWrap" 
-		foregroundColor="grey" backgroundColor="black" transparent="0" zPosition="2">
+		foregroundColor="#004ccbde" backgroundColor="black" transparent="0" zPosition="2">
     	<convert type="BTVRunning14Events">Event13,onlyStart</convert>
     	</widget>
     	<widget source="ServiceEvent" render="DRRunningText" position="838,680" size="385,19" font="Regular;17" 
@@ -351,11 +351,11 @@
 		steptime=32,
 		always=0,
 		noWrap" 
-		foregroundColor="grey" backgroundColor="black" transparent="0" zPosition="2">
+		foregroundColor="#004ccbde" backgroundColor="black" transparent="0" zPosition="2">
     	<convert type="BTVRunning14Events">Event14,onlyStart</convert>
     	</widget>
 	<!-- epg descripcion -->
-		<widget source="ServiceEvent" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="833,78" size="393,110" zPosition="2" font="Regular;18" halign="center" valign="center" foregroundColor="grey" backgroundColor="black" transparent="0">
+		<widget source="ServiceEvent" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="833,78" size="393,110" zPosition="2" font="Regular;18" halign="center" valign="center" foregroundColor="#00a1d1ff" backgroundColor="black" transparent="0">
 		    <convert type="EventName">ExtendedDescription</convert>
 		</widget>				
 	<!-- digital clock -->
