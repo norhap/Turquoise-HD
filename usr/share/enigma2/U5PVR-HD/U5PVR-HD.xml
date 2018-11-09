@@ -1851,7 +1851,7 @@
 	<screen name="Console" position="0,0" size="1280,720">
         <panel name="PantallaPieTV"/>
         <panel name="Title"/>	
-		<widget name="text" position="110,125" size="688,445" font="Regular;14" transparent="0"/>
+		<widget name="text" position="110,125" size="693,430" font="Regular;14" transparent="0"/>
 	</screen>
 	<!--  EGAMI Execute -->
 	<screen name="EGExecute" position="0,0" size="1280,720" flags="wfNoBorder">
