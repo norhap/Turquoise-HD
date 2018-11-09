@@ -5974,7 +5974,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title_not_menu_path"/>		
         <panel name="PIG"/>
         <!--panel name="Logo_Egami"/-->		
-		<widget name="list" position="80,140" size="720,400" font="Regular;18"/>
+		<widget name="list" position="80,140" size="722,400" font="Regular;18"/>
 	</screen>
     <!-- ## AutoBouquetsMaker Acerca de ## -->	
 	<screen name="AutoBouquetsMaker_About" position="0,0" size="1280,720" flags="wfNoBorder">
