@@ -2591,7 +2591,24 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
             <widget source="key_menu_img" render="Pixmap" pixmap="icons/key_menu1.png" position="8,640" size="40,22" transparent="1" alphatest="on">
                 <convert type="ConditionalShowHide"/>
             </widget>	
-	</screen>	
+	</screen>
+	<!--####### SubsSupport Settings ####### -->
+	<screen name="SubsSupportSettings" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>		
+        <panel name="PIG"/>
+        <panel name="Title_not_menu_path"/>
+		<panel name="ScrollBarTemplate"/>
+            <widget source="menuList" render="Listbox" scrollbarMode="showOnDemand" backgroundPixmap="U5PVR-HD/icons/butselection1.png" selectionPixmap="U5PVR-HD/icons/ls705x38.png" position="80,145" size="722,400" zPosition="3" transparent="1" >
+                <convert type="TemplatedMultiContent">
+			        {"template": [ 
+			        MultiContentEntryText(pos = (51,0), size = (600,38), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	),
+			        ],
+			       "fonts": [gFont("Regular",30)],
+			       "itemHeight": 37
+			        }
+                </convert>
+            </widget>
+    </screen>	
 	<!-- (062) ####### Channel selection - Radio ####### -->
 	<screen name="ChannelSelectionRadio" position="60,80" size="1160,410" title="Channel Selection">
 		<ePixmap position="1122,10" zPosition="3" size="27,400" pixmap="U5PVR-HD/icons/barra400.png" alphatest="blend" transparent="1"/>	
