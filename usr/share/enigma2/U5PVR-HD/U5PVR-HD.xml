@@ -1234,7 +1234,8 @@
 		<panel name="ScrollBarTemplate"/>		
 		<panel name="PIG"/>
 	    <panel name="Title"/>
-	    <panel name="sR"/>		
+	    <panel name="sR"/>
+		<ePixmap pixmap="icons/key_help.png" position="8,640" size="40,22" alphatest="blend"/>		
 		<widget source="IFtext" render="Label" position="69,140" size="140,24" zPosition="10" font="Regular;24" backgroundColor="black" transparent="0"/>
 		<widget source="IF" render="Label" position="186,140" size="400,24" zPosition="10" font="Regular;24" foregroundColor="#004ccbde" backgroundColor="black" transparent="0"/>
 		<widget name="devicepic" position="525,130" size="40,40" pixmaps="icons/network_wired.png,icons/network_wireless.png,icons/network_wired-active.png,icons/network_wired-inactive.png,icons/network_wireless-active.png,icons/network_wireless-inactive.png" zPosition="10" transparent="1"/>		
@@ -1401,7 +1402,8 @@
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-        <panel name="sR"/>		
+        <panel name="sR"/>
+		<ePixmap pixmap="icons/key_help.png" position="8,640" size="40,22" alphatest="blend"/>		
 		<widget name="menulist" position="70,155" size="715,400" itemHeight="45" font="Regular;24" scrollbarMode="showOnDemand" selectionPixmap="U5PVR-HD/icons/ls705x38.png" backgroundColor="black" transparent="1" zPosition="2"/>
 		<widget source="introduction" render="Label" position="845,435" size="380,160" halign="center" valign="center" font="Regular;20" foregroundColor="#004ccbde" backgroundColor="background" transparent="1" zPosition="2"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
@@ -2307,7 +2309,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="filelist" position="68,180" zPosition="1" size="735,278" scrollbarMode="showOnDemand" selectionPixmap="icons/ls700x30.png" selectionDisabled="1" transparent="1"/>
 		<widget name="textbook" position="68,465" size="700,27" valign="center" font="Regular;24" backgroundColor="#0003424a"/>
 		<widget name="booklist" position="68,493" zPosition="2" size="730,100" scrollbarMode="showOnDemand" selectionPixmap="icons/ls700x30-h.png" transparent="1"/>
-		<ePixmap position="8,640" size="40,22" pixmap="icons/key_menu1.png" transparent="1" alphatest="blend"/>		
+		<ePixmap pixmap="icons/key_menu1.png" position="690,680" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_help.png" position="735,680" size="40,22" alphatest="blend"/>		
 		<widget name="red" position="60,635" zPosition="1" size="140,35" pixmap="menu/colorbarR.png" alphatest="blend"/>
 		<widget name="green" position="260,635" zPosition="1" size="140,35" pixmap="menu/colorbarG.png" alphatest="blend"/>
 		<widget name="yellow" position="460,635" zPosition="1" size="140,35" pixmap="menu/colorbarY.png" alphatest="blend"/>
@@ -3269,6 +3272,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			    }	
 		    </convert>
 		</widget>
+        <ePixmap pixmap="icons/key_help.png" position="8,640" size="40,22" zPosition="2" alphatest="blend"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 		<widget source="introduction" render="Label" position="845,435" size="380,160" zPosition="2" halign="center" valign="center" font="Regular;24" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 	</screen>
