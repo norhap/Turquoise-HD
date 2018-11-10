@@ -5166,8 +5166,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="Service" render="Label" position="1135,610" size="100,25" font="Regular;20" valign="center" foregroundColor="#0000baff" backgroundColor="black" transparent="1" zPosition="4">
 		    <convert type="MovieInfo">FileSize</convert>
 		</widget>
-		<ePixmap position="10,680" zPosition="4" size="40,22" pixmap="U5PVR-HD/icons/key_info.png" transparent="1" alphatest="blend"/>
-		<ePixmap position="55,680" zPosition="4" size="40,22" pixmap="U5PVR-HD/icons/key_menu1.png" transparent="1" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_menu1.png" position="665,680" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_text.png" position="710,680" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_help.png" position="755,680" size="40,22" alphatest="blend"/>		
 	</screen>	
 		<!-- ####### MediaPlayer Lista De Peliculas ####### -->	
 	<screen name="MediaPlayer" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">	
