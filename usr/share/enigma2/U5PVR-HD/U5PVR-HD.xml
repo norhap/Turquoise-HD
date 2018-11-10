@@ -137,8 +137,8 @@
 	<!-- (025) ####### Channel selection - TV #######  -->
 	<screen name="ChannelSelection" position="0,0" size="1280,720" title="Channel Selection" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="PantallaListaCanales"/>
-		<panel name="ScrollBarTemplate"/>
-        <panel name="Titlechannellist"/>		
+        <panel name="Titlechannellist"/>
+		<ePixmap position="790,120" zPosition="3" size="25,470" pixmap="U5PVR-HD/icons/barra470.png" alphatest="blend" transparent="1"/>		
 	<!-- Pig -->			
         <widget source="session.VideoPicture" render="Pig" position="848,216" size="370,218" zPosition="3" backgroundColor="#df0b1300"/>
 		<eLabel position="838,414" size="382,20" backgroundColor="#20101010" zPosition="3"/>
@@ -162,7 +162,7 @@
 		    <convert type="ServiceOrbitalPosition"/>
 		</widget>
 	<!-- channels lists -->		
-		<widget name="list" position="68,140" zPosition="1" size="735,450" scrollbarMode="showOnDemand" serviceItemHeight="28"
+		<widget name="list" position="68,140" zPosition="1" size="740,450" scrollbarMode="showOnDemand" serviceItemHeight="28"
 			serviceNumberFont="Regular;22" serviceNameFont="Regular;26" serviceInfoFont="Regular;20" colorServiceDescription="#004ccbde"
 			picServiceEventProgressbar="icons/pl.png" selectionPixmap="U5PVR-HD/icons/ls715x30.png" transparent="1" 
 			foregroundColorEventSelected="#a1d1ff"/>			
