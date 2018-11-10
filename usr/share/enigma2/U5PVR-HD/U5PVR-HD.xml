@@ -685,7 +685,7 @@
 		<eLabel position="1205,98" size="2,160" backgroundColor="#004ccbde" zPosition="3"/>
 		<eLabel position="840,258" size="367,2" backgroundColor="#004ccbde" zPosition="3"/>
 		<eLabel position="840,98" size="367,2" backgroundColor="#004ccbde" zPosition="3"/>
-		<widget source="session.VideoPicture" render="Pig" position="846,100" size="369,172" zPosition="1" backgroundColor="#df0b1300"/>		
+		<widget source="session.VideoPicture" render="Pig" position="849,100" size="360,162" zPosition="0" backgroundColor="#df0b1300"/>		
 		<widget name="timeline_text" position="75,260" size="1287,35" backgroundColor="black" foregroundColor="#004ccbde" transparent="1" zPosition="2"/>
 		<widget name="bouquetlist" position="75,260" size="1100,365" foregroundColorSelected="#0000fafa" scrollbarMode="showNever" zPosition="2" transparent="0"/>
 		<widget name="list" position="75,285" size="1132,340" backgroundColor="black" RecordForegroundColorSelected="yellow" scrollbarMode="showNever" zPosition="1" transparent="1"/>
