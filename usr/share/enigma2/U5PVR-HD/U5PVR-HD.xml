@@ -1536,7 +1536,7 @@
 		<widget name="labactive" position="200,140" size="530,40" font="Regular;22" halign="center" valign="center" transparent="0" backgroundColor="black" zPosition="2"/>
 		<widget name="lab2" position="80,200" size="250,40" font="Regular;22" foregroundColor="#004ccbde" valign="center" transparent="0" zPosition="2"/>
 		<widget name="labstop" position="365,200" size="200,40" font="Regular;22" halign="center" valign="center" backgroundColor="red" zPosition="1"/>
-		<widget name="labrun" position="365,200" size="200,40" font="Regular;22" halign="center" valign="center" foregroundColor="black" backgroundColor="green" zPosition="2"/>  
+		<widget name="labrun" position="365,200" size="200,40" font="Regular;22" halign="center" valign="center" backgroundColor="green" zPosition="2"/>  
 	</screen>	
 	<!-- ********** Configuracion FTP Samba y CIFS ********** -->
 	<screen name="NetworkSamba" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1548,7 +1548,7 @@
 		<widget name="labactive" position="200,140" size="530,40" font="Regular;22" halign="center" valign="center" transparent="0" backgroundColor="black" zPosition="2"/>
 		<widget name="lab2" position="80,200" size="250,40" font="Regular;22" foregroundColor="#004ccbde" valign="center" transparent="0" zPosition="2"/>
 		<widget name="labstop" position="365,200" size="200,40" font="Regular;22" halign="center" valign="center" backgroundColor="red" zPosition="1"/>
-		<widget name="labrun" position="365,200" size="200,40" font="Regular;22" halign="center" valign="center" foregroundColor="black" backgroundColor="green" zPosition="2"/>  
+		<widget name="labrun" position="365,200" size="200,40" font="Regular;22" halign="center" valign="center" backgroundColor="green" zPosition="2"/>  
 	</screen>
 	<!-- Network Inadyn Setup OK -->
 	<screen name="NetworkInadyn" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1558,10 +1558,10 @@
         <panel name="PIG"/>
 		<widget name="autostart" position="80,140" size="130,24" font="Regular;22" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 		<widget name="labdisabled" position="230,140" size="140,24" font="Regular;22" halign="center" valign="center" backgroundColor="red" zPosition="1"/>
-		<widget name="labactive" position="230,140" size="140,24" font="Regular;22" halign="center" valign="center" foregroundColor="black" backgroundColor="green" zPosition="2"/>
+		<widget name="labactive" position="230,140" size="140,24" font="Regular;22" halign="center" valign="center" backgroundColor="green" zPosition="2"/>
 		<widget name="status" position="400,140" size="200,24" font="Regular;22" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 		<widget name="labstop" position="550,140" size="130,24" font="Regular;22" halign="center" backgroundColor="red" zPosition="1"/>
-		<widget name="labrun" position="550,140" size="130,24" font="Regular;22" halign="center" foregroundColor="black" backgroundColor="green" zPosition="2"/>
+		<widget name="labrun" position="550,140" size="130,24" font="Regular;22" halign="center" backgroundColor="green" zPosition="2"/>
 		<widget name="time" position="80,185" size="200,50" font="Regular;20" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 		<widget name="labtime" position="290,200" size="430,30" font="Regular;20" valign="center" backgroundColor="#0003424a"/>
 		<widget name="username" position="80,240" size="230,30" font="Regular;20" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
@@ -1607,10 +1607,10 @@
         <panel name="PIG"/>
 		<widget name="autostart" position="80,140" size="130,24" font="Regular;22" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 		<widget name="labdisabled" position="230,140" size="140,24" font="Regular;22" halign="center" valign="center" backgroundColor="red" zPosition="1"/>
-		<widget name="labactive" position="230,140" size="140,24" font="Regular;22" halign="center" valign="center" foregroundColor="black" backgroundColor="green" zPosition="2"/>
+		<widget name="labactive" position="230,140" size="140,24" font="Regular;22" halign="center" valign="center" backgroundColor="green" zPosition="2"/>
 		<widget name="status" position="400,140" size="200,24" font="Regular;22" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 		<widget name="labstop" position="550,140" size="130,24" font="Regular;22" halign="center" backgroundColor="red" zPosition="1"/>
-		<widget name="labrun" position="550,140" size="130,24" font="Regular;22" halign="center" foregroundColor="black" backgroundColor="green" zPosition="2"/>
+		<widget name="labrun" position="550,140" size="130,24" font="Regular;22" halign="center" backgroundColor="green" zPosition="2"/>
 		<widget name="username" position="80,200" size="150,30" font="Regular;22" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 		<widget name="labuser" position="250,200" size="410,30" font="Regular;22" valign="center" backgroundColor="#0003424a"/>
 		<widget name="iface" position="80,240" size="150,30" font="Regular;22" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
@@ -1642,7 +1642,7 @@
 		<widget name="labactive" position="200,140" size="530,40" font="Regular;22" halign="center" valign="center" transparent="0" backgroundColor="black" zPosition="2"/>
 		<widget name="lab2" position="80,200" size="250,40" font="Regular;22" foregroundColor="#004ccbde" valign="center" transparent="0" zPosition="2"/>
 		<widget name="labstop" position="365,200" size="200,40" font="Regular;22" halign="center" valign="center" backgroundColor="red" zPosition="1"/>
-		<widget name="labrun" position="365,200" size="200,40" font="Regular;22" halign="center" valign="center" foregroundColor="black" backgroundColor="green" zPosition="2"/>
+		<widget name="labrun" position="365,200" size="200,40" font="Regular;22" halign="center" valign="center" backgroundColor="green" zPosition="2"/>
 		<widget position="600,625" size="250,36" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
 	</screen>	
 		
@@ -1656,7 +1656,7 @@
 		<widget name="labactive" position="200,140" size="530,40" font="Regular;22" halign="center" valign="center" transparent="0" backgroundColor="black" zPosition="2"/>
 		<widget name="lab2" position="80,200" size="250,40" font="Regular;22" foregroundColor="#004ccbde" valign="center" transparent="0" zPosition="2"/>
 		<widget name="labstop" position="365,200" size="200,40" font="Regular;22" halign="center" valign="center" backgroundColor="red" zPosition="1"/>
-		<widget name="labrun" position="365,200" size="200,40" font="Regular;22" halign="center" valign="center" foregroundColor="black" backgroundColor="green" zPosition="2"/>		
+		<widget name="labrun" position="365,200" size="200,40" font="Regular;22" halign="center" valign="center" backgroundColor="green" zPosition="2"/>		
 	</screen>
 	<!-- Network SABnzbd  -->
 	<screen name="NetworkSABnzbd" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1668,7 +1668,7 @@
 		<widget name="labactive" position="200,140" size="530,40" font="Regular;22" halign="center" valign="center" transparent="0" backgroundColor="black" zPosition="2"/>
 		<widget name="lab2" position="80,200" size="250,40" font="Regular;22" foregroundColor="#004ccbde" valign="center" transparent="0" zPosition="2"/>
 		<widget name="labstop" position="365,200" size="200,40" font="Regular;22" halign="center" valign="center" backgroundColor="red" zPosition="1"/>
-		<widget name="labrun" position="365,200" size="200,40" font="Regular;22" halign="center" valign="center" foregroundColor="black" backgroundColor="green" zPosition="2"/>  
+		<widget name="labrun" position="365,200" size="200,40" font="Regular;22" halign="center" valign="center" backgroundColor="green" zPosition="2"/>  
 	</screen>	
 	
 	<!-- Network Service Setup Configuracion TELNET-->
@@ -1681,7 +1681,7 @@
 		<widget name="labactive" position="200,140" size="530,40" font="Regular;22" halign="center" valign="center" transparent="0" backgroundColor="black" zPosition="2"/>
 		<widget name="lab2" position="80,200" size="250,40" font="Regular;22" foregroundColor="#004ccbde" valign="center" transparent="0" zPosition="2"/>
 		<widget name="labstop" position="365,200" size="200,40" font="Regular;22" halign="center" valign="center" backgroundColor="red" zPosition="1"/>
-		<widget name="labrun" position="365,200" size="200,40" font="Regular;22" halign="center" valign="center" foregroundColor="black" backgroundColor="green" zPosition="2"/>
+		<widget name="labrun" position="365,200" size="200,40" font="Regular;22" halign="center" valign="center" backgroundColor="green" zPosition="2"/>
 		<widget position="5,625" size="0,0" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget position="600,625" size="0,0" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
 	</screen>		
@@ -1694,10 +1694,10 @@
         <panel name="PIG"/>
 		<widget name="autostart" position="80,140" size="130,24" font="Regular;22" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 		<widget name="labdisabled" position="230,140" size="140,24" font="Regular;22" halign="center" valign="center" backgroundColor="red" zPosition="1"/>
-		<widget name="labactive" position="230,140" size="140,24" font="Regular;22" halign="center" valign="center" foregroundColor="black" backgroundColor="green" zPosition="2"/>
+		<widget name="labactive" position="230,140" size="140,24" font="Regular;22" halign="center" valign="center" backgroundColor="green" zPosition="2"/>
 		<widget name="status" position="400,140" size="200,24" font="Regular;22" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 		<widget name="labstop" position="550,140" size="130,24" font="Regular;22" halign="center" backgroundColor="red" zPosition="1"/>
-		<widget name="labrun" position="550,140" size="130,24" font="Regular;22" halign="center" foregroundColor="black" backgroundColor="green" zPosition="2"/>
+		<widget name="labrun" position="550,140" size="130,24" font="Regular;22" halign="center" backgroundColor="green" zPosition="2"/>
 		<widget name="username" position="80,185" size="160,50" font="Regular;22" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 		<widget name="labuser" position="250,200" size="410,30" font="Regular;22" valign="center" backgroundColor="#0003424a"/>
 		<widget name="iface" position="80,240" size="160,30" font="Regular;22" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
@@ -4262,26 +4262,13 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="PantallaGenericaRGYB"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
-		<ePixmap position="460,635" zPosition="1" size="140,35" pixmap="U5PVR-HD/menu/colorbarY.png" alphatest="blend" transparent="1"/>		
-		<widget source="session.VideoPicture" render="Pig" position="848,112" size="370,218" zPosition="3" backgroundColor="#df0b1300"/>
-	<!-- Nombre del Canal - Service Name -->
-		<widget source="session.CurrentService" render="Label" position="832,350" size="393,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="#004ccbde" backgroundColor="background">
-			<convert type="ServiceName">Name</convert>
-		</widget>
-	<!-- Barra Progresso -->
-		<widget source="session.Event_Now" render="Progress" pixmap="icons/tv_b_bar.png" size="340,2" position="837,338" zPosition="5" backgroundColor="darkgrey" transparent="1">
-			<convert type="EventTime">Progress</convert>
-		</widget>
-    <!-- digital clock -->
-		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00131313" transparent="1">
-            <convert type="ClockToText">Format:%H:%M :%S</convert>
-        </widget>		
+        <panel name="PIG"/>		
 		<widget name="lab1" position="80,123" size="150,30" font="Regular;20" valign="center" transparent="1"/>
 		<widget name="labdisabled" position="265,123" size="150,30" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="1"/>
-		<widget name="labactive" position="265,123" size="150,30" zPosition="1" font="Regular;20" valign="center" halign="center" foregroundColor="black" backgroundColor="green"/>		
+		<widget name="labactive" position="265,123" size="150,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green"/>		
 		<widget name="lab2" position="80,158" size="150,30" font="Regular;20" valign="center" transparent="1"/>
 		<widget name="labstop" position="265,158" size="150,30" font="Regular;20" valign="center" halign="center" backgroundColor="red"/>
-		<widget name="labrun" position="265,158" size="150,30" zPosition="1" font="Regular;20" valign="center" halign="center" foregroundColor="black" backgroundColor="green"/>
+		<widget name="labrun" position="265,158" size="150,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green"/>
 		<widget source="list" render="Listbox" scrollbarMode="showOnDemand" position="80,200" size="718,380" font="Regular;18" transparent="1">
 		    <convert type="StringList"/>
 		</widget>
@@ -6387,7 +6374,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="labsize" position="230,323" size="320,30" font="Regular;20" valign="center" backgroundColor="#0003424a"/>
 		<widget name="lab4" position="80,393" size="150,30" font="Regular;20" valign="center" transparent="0"/>
 		<widget name="inactive" position="230,393" size="100,30" font="Regular;20" valign="center" halign="center" backgroundColor="red"/>
-		<widget name="active" position="230,393" size="100,30" zPosition="1" font="Regular;20" valign="center" halign="center" foregroundColor="black" backgroundColor="green"/>
+		<widget name="active" position="230,393" size="100,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green"/>
 	</screen>
 	<screen name="VIXSoftcamManager" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaRGYB"/>
