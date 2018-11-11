@@ -55,10 +55,10 @@
 	</colors>	
 	<!-- Fonts -->
 	<fonts>
-	    <font filename="/usr/share/enigma2/U5PVR-HD/fonts/Verdana_R.ttf" name="Regular" scale="84"/>
-        <font filename="/usr/share/enigma2/U5PVR-HD/fonts/digital-Bold.ttf" name="LCD2" scale="100"/>
-		<font filename="/usr/share/enigma2/U5PVR-HD/fonts/digital-watch.ttf" name="LCD" scale="100"/>
-		<font filename="/usr/share/enigma2/U5PVR-HD/fonts/nmsbd2.ttf" name="oledRegular" scale="90"/>
+	    <font filename="/usr/share/enigma2/ViX-Turquoise-HD/fonts/Verdana_R.ttf" name="Regular" scale="84"/>
+        <font filename="/usr/share/enigma2/ViX-Turquoise-HD/fonts/digital-Bold.ttf" name="LCD2" scale="100"/>
+		<font filename="/usr/share/enigma2/ViX-Turquoise-HD/fonts/digital-watch.ttf" name="LCD" scale="100"/>
+		<font filename="/usr/share/enigma2/ViX-Turquoise-HD/fonts/nmsbd2.ttf" name="oledRegular" scale="90"/>
 		<font filename="tuxtxt.ttf" name="Console" scale="100"/>
 		<font filename="ae_AlMateen.ttf" name="Replacement" scale="90" replacement="1"/>
 		<font filename="nmsbd.ttf" name="Display" scale="100"/>
@@ -94,8 +94,8 @@
 	    <pixmap pos="bpBottom" filename="icons/def-bar.png"/>
 	</borderset>
 	</windowstyle>
-	    <include filename="/usr/share/enigma2/U5PVR-HD/U5PVR-HD.xml"/>
-	    <include filename="/usr/share/enigma2/U5PVR-HD/Templates.xml"/>
+	    <include filename="/usr/share/enigma2/ViX-Turquoise-HD/ViX-Turquoise-HD.xml"/>
+	    <include filename="/usr/share/enigma2/ViX-Turquoise-HD/Templates.xml"/>
 	<!-- Menu Horizontal -->	
 	<screen name="Animmain" position="0,575" size="1280,265" title="Mainmenu">	
 	    <eLabel position="0,25" size="252,1" backgroundColor="#0000fafa" zPosition="1"/>
@@ -130,7 +130,7 @@
 	    <widget source="label3" render="Label" position="535,22" size="210,91" font="Regular;18" halign="center" valign="top" foregroundColor="#0000fafa" zPosition="2" transparent="1"/>
 	    <widget source="label4" render="Label" position="795,22" size="210,80" font="Regular;17" halign="center" valign="center" zPosition="2" transparent="1"/> 
 	    <widget source="label5" render="Label" position="1040,22" size="210,80" font="Regular;18" halign="center" valign="center" zPosition="2" transparent="1"/>
-		<ePixmap position="95,90" zPosition="1" size="600,45" pixmap="U5PVR-HD/menu/colorbarRG.png" alphatest="blend" transparent="1"/>		
+		<ePixmap position="95,90" zPosition="1" size="600,45" pixmap="ViX-Turquoise-HD/menu/colorbarRG.png" alphatest="blend" transparent="1"/>		
 		<widget name="red" position="98,105" zPosition="2" size="140,20" font="Regular;16" transparent="1"/>
 		<widget name="green" position="298,105" zPosition="2" size="140,20" font="Regular;16" transparent="1"/>
 		<widget name="yellow" position="498,105" zPosition="2" size="0,0" font="Regular;16" transparent="1"/>
@@ -195,7 +195,7 @@
 		<widget source="label6" render="Label" position="1065,20" size="210,95" font="Regular;20" halign="center" valign="center" zPosition="2" transparent="1"/> 
 		<widget source="label6s" render="Label" position="1065,20" size="210,95" font="Regular;20" halign="center" valign="top" zPosition="2" foregroundColor="#0000fafa" transparent="1"/> 
 		<!--widget name="pixmap6" position="1065,35" size="320,70" zPosition="1" alphatest="on"/-->		
-		<ePixmap position="50,103" zPosition="1" size="600,45" pixmap="U5PVR-HD/menu/colorbarRG.png" alphatest="blend" transparent="1"/>		
+		<ePixmap position="50,103" zPosition="1" size="600,45" pixmap="ViX-Turquoise-HD/menu/colorbarRG.png" alphatest="blend" transparent="1"/>		
 		<widget name="red" position="55,118" zPosition="2" size="140,20" font="Regular;16" transparent="1"/>
 		<widget name="green" position="255,118" zPosition="2" size="140,20" font="Regular;16" transparent="1"/>
 		<widget name="yellow" position="455,118" zPosition="2" size="0,0" font="Regular;16" transparent="1"/>
@@ -203,7 +203,7 @@
 		<ePixmap position="1155,117" zPosition="1" size="45,25" pixmap="icons/cursores_derecha_izquierda_arriba_abajo.png" alphatest="blend" transparent="1"/>			
 	</screen>
 	<switchpixmap>
-		<pixmap name="menu_on" filename="U5PVR-HD/menu/menu_on.png" />
-		<pixmap name="menu_off" filename="U5PVR-HD/menu/menu_off.png" />
+		<pixmap name="menu_on" filename="ViX-Turquoise-HD/menu/menu_on.png" />
+		<pixmap name="menu_off" filename="ViX-Turquoise-HD/menu/menu_off.png" />
 	</switchpixmap>	
 </skin>
