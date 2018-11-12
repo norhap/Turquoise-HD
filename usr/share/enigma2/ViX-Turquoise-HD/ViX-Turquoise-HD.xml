@@ -96,7 +96,7 @@
 		<widget name="text" position="10,40" size="630,46" font="Regular;32" backgroundColor="#0003424a" transparent="0" noWrap="1" halign="right"/>
 		<widget name="list" position="10,100" size="640,225" selectionDisabled="1" transparent="1"/>
 		<widget name="locale" position="10,360" size="570,25" font="Regular;20" transparent="1" valign="center"/>		
-		<widget name="mode" position="585,360" size="60,25" font="Regular;20" halign="right" transparent="1" valign="center"/>
+		<widget name="mode" position="580,360" size="60,25" font="Regular;20" halign="right" transparent="1" valign="center"/>
 		<widget name="language" position="0,0" size="0,0" font="Regular;20" halign="right" transparent="1" valign="center"/>
 		<ePixmap pixmap="buttons/key_red.png" position="5,410" size="35,25" alphatest="blend" transparent="1"/>		
 		<widget source="key_red" render="Label" position="45,410" size="125,24" font="Regular;20" halign="left" noWrap="1" transparent="1" valign="center" zPosition="2"/>
