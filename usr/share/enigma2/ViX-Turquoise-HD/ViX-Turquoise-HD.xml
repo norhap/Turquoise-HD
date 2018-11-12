@@ -94,10 +94,10 @@
 		<!--ePixmap pixmap="icons/vkey_text.png" position="9,35" zPosition="-4" size="642,52" alphatest="on"/-->
 		<widget name="prompt" position="10,4" size="500,26" font="Regular;22" backgroundColor="#0003424a" transparent="1" noWrap="1"/>
 		<widget name="text" position="10,40" size="630,46" font="Regular;32" backgroundColor="#0003424a" transparent="1" noWrap="1" halign="right"/>
-		<eLabel position="10,39" size="630,1" backgroundColor="#0000fafa" zPosition="1"/>		
-	    <eLabel position="10,39" size="1,47" backgroundColor="#0000fafa" zPosition="1"/>		
+		<eLabel position="10,35" size="630,1" backgroundColor="#0000fafa" zPosition="1"/>		
+	    <eLabel position="10,35" size="1,51" backgroundColor="#0000fafa" zPosition="1"/>		
 	    <eLabel position="10,86" size="630,1" backgroundColor="#0000fafa" zPosition="1"/>	
-	    <eLabel position="640,39" size="1,48" backgroundColor="#0000fafa" zPosition="1"/>		
+	    <eLabel position="640,35" size="1,52" backgroundColor="#0000fafa" zPosition="1"/>		
 		<widget name="list" position="10,100" size="640,225" backgroundColor="#0003424a" selectionDisabled="1" transparent="1"/>
 		<widget name="locale" position="10,360" size="570,25" font="Regular;20" backgroundColor="#0003424a" transparent="1" valign="center"/>		
 		<widget name="mode" position="580,360" size="60,25" font="Regular;20" backgroundColor="#0003424a" halign="right" transparent="1" valign="center"/>
