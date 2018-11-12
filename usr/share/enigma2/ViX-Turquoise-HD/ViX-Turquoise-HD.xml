@@ -2345,7 +2345,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<!-- (050) ######## Numerical Text Input Help Dialog ####### -->
 	<screen name="NumericalTextInputHelpDialog" position="682,599" title="Help" size="550,108" zPosition="10" flags="wfNoBorder">
 		<ePixmap position="0,0" zPosition="-1" size="550,108" pixmap="icons/NumericalTextInputHelpDialog.png"/>
-		<widget name="key1" position="0,5" size="200,20" font="Console;17" halign="left" valign="top" backgroundColor="transpBlack" transparent="1"/>
+		<widget name="key1" position="0,7" size="200,20" font="Console;17" halign="left" valign="top" backgroundColor="transpBlack" transparent="1"/>
 		<widget name="key2" position="170,5" size="200,20" font="Console;20" halign="center" valign="top" backgroundColor="transpBlack" transparent="1"/>
 		<widget name="key3" position="365,5" size="200,20" font="Console;20" halign="center" valign="top" backgroundColor="transpBlack" transparent="1"/>
 		<widget name="key4" position="15,35" size="200,20" font="Console;20" halign="left" valign="top" backgroundColor="transpBlack" transparent="1"/>
