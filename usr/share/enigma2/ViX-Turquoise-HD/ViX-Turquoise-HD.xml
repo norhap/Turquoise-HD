@@ -6264,12 +6264,12 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
 		<widget name="lab1" position="80,145" size="670,50" font="Regular;20" zPosition="2" transparent="0" halign="center"/>
-		<widget name="list" position="90,230" size="712,350" selectionPixmap="ViX-Turquoise-HD/icons/ls530x30.png" font="Regular;22" backgroundColor="black" transparent="0" scrollbarMode="showAlways" enableWrapAround="1"/>
+		<widget name="list" position="80,230" size="722,350" selectionPixmap="ViX-Turquoise-HD/icons/ls705x38.png" font="Regular;22" backgroundColor="black" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1"/>
 		<ePixmap pixmap="icons/key_menu1.png" position="10,638" size="40,22" alphatest="blend"/>		
         <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>			
 		<widget name="backupstatus" position="835,460" size="390,25" foregroundColor="#004ccbde" font="Regular;20" backgroundColor="black" transparent="1" halign="center" valign="center"/>
 		<applet type="onLayoutFinish">
-			self["list"].instance.setItemHeight(25)
+			self["list"].instance.setItemHeight(28)
 		</applet>
 	</screen>
 	<screen name="VIXBackupManagerMenu" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -6307,7 +6307,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
 		<widget name="lab1" position="80,145" size="670,50" font="Regular;20" zPosition="2" transparent="0" halign="center"/>
-		<widget name="list" position="90,230" size="712,350" selectionPixmap="ViX-Turquoise-HD/icons/ls530x30.png" font="Regular;22" backgroundColor="black" transparent="0" scrollbarMode="showAlways" enableWrapAround="1"/>
+		<widget name="list" position="80,230" size="722,350" selectionPixmap="ViX-Turquoise-HD/icons/ls705x38.png" font="Regular;22" backgroundColor="black" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1"/>
 		<widget name="backupstatus" position="835,460" size="390,25" foregroundColor="#004ccbde" font="Regular;20" backgroundColor="black" transparent="1" halign="center" valign="center"/>
 		<applet type="onLayoutFinish">
 			self["list"].instance.setItemHeight(25)
