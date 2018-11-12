@@ -92,18 +92,18 @@
 	<!-- (003) ####### VirtualKeyBoard ####### -->
 	<screen name="VirtualKeyBoard" position="590,165" size="660,450" backgroundColor="#0003424a" zPosition="99" title="Virtual KeyBoard">
 		<!--ePixmap pixmap="icons/vkey_text.png" position="9,35" zPosition="-4" size="642,52" alphatest="on"/-->
-		<widget name="prompt" position="10,4" size="500,26" font="Regular;22" backgroundColor="#0003424a" transparent="1" noWrap="1"/>
-		<widget name="text" position="10,40" size="630,46" font="Regular;32" backgroundColor="#0003424a" transparent="1" noWrap="1" halign="right"/>
-		<eLabel position="10,35" size="630,1" backgroundColor="#0000fafa" zPosition="1"/>		
-	    <eLabel position="10,35" size="1,51" backgroundColor="#0000fafa" zPosition="1"/>		
-	    <eLabel position="10,86" size="630,1" backgroundColor="#0000fafa" zPosition="1"/>	
-	    <eLabel position="640,35" size="1,52" backgroundColor="#0000fafa" zPosition="1"/>		
-		<widget name="list" position="10,100" size="640,225" backgroundColor="#0003424a" selectionDisabled="1" transparent="1"/>
-		<widget name="locale" position="10,360" size="570,25" font="Regular;20" backgroundColor="#0003424a" transparent="1" valign="center"/>		
-		<widget name="mode" position="580,360" size="60,25" font="Regular;20" backgroundColor="#0003424a" halign="right" transparent="1" valign="center"/>
-		<widget name="language" position="0,0" size="0,0" font="Regular;20" backgroundColor="#0003424a" halign="right" transparent="1" valign="center"/>
-		<ePixmap pixmap="buttons/key_red.png" position="5,410" size="35,25" alphatest="blend" transparent="1"/>		
-		<widget source="key_red" render="Label" position="45,410" size="125,24" backgroundColor="#0003424a" font="Regular;20" halign="left" noWrap="1" transparent="1" valign="center" zPosition="2"/>
+		<widget name="prompt" position="15,4" size="500,26" font="Regular;22" backgroundColor="#0003424a" transparent="1" noWrap="1"/>
+		<widget name="text" position="15,40" size="630,46" font="Regular;32" backgroundColor="#0003424a" transparent="1" noWrap="1" halign="right"/>
+		<eLabel position="15,35" size="630,1" backgroundColor="#0000fafa" zPosition="1"/>		
+	    <eLabel position="15,35" size="1,51" backgroundColor="#0000fafa" zPosition="1"/>		
+	    <eLabel position="15,86" size="630,1" backgroundColor="#0000fafa" zPosition="1"/>	
+	    <eLabel position="645,35" size="1,52" backgroundColor="#0000fafa" zPosition="1"/>		
+		<widget name="list" position="15,100" size="640,225" backgroundColor="#0003424a" selectionDisabled="1" transparent="1"/>
+		<widget name="locale" position="15,360" size="570,25" font="Regular;20" backgroundColor="#0003424a" transparent="1" valign="center"/>		
+		<widget name="mode" position="585,360" size="60,25" font="Regular;20" backgroundColor="#0003424a" halign="right" transparent="1" valign="center"/>
+		<widget name="language" position="5,0" size="0,0" font="Regular;20" backgroundColor="#0003424a" halign="right" transparent="1" valign="center"/>
+		<ePixmap pixmap="buttons/key_red.png" position="10,410" size="35,25" alphatest="blend" transparent="1"/>		
+		<widget source="key_red" render="Label" position="50,410" size="125,24" backgroundColor="#0003424a" font="Regular;20" halign="left" noWrap="1" transparent="1" valign="center" zPosition="2"/>
 		<ePixmap pixmap="buttons/key_green.png" position="169,410" size="35,25" alphatest="blend" transparent="1"/>
 		<widget source="key_green" render="Label" position="210,410" size="125,24" backgroundColor="#0003424a" font="Regular;20" halign="left" noWrap="1" transparent="1" valign="center" zPosition="2"/>
 		<ePixmap pixmap="buttons/key_yellow.png" position="320,410" size="35,25" alphatest="blend" transparent="1"/>
