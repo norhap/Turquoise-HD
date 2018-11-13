@@ -4959,7 +4959,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title_not_menu_path"/>
         <panel name="PIG"/>	
-		<widget name="list" position="75,145" size="723,420" font="Regular;16" backgroundColor="black" transparent="1"/>		
+		<widget name="list" position="75,145" size="727,420" font="Regular;16" backgroundColor="black" transparent="1"/>		
 	</screen>
 	<!-- IGNORAR SERVICIOS DE LA LISTA -->	
 	<screen name="filtersServicesSetup" position="0,0" size="1280,720" flags="wfNoBorder">
