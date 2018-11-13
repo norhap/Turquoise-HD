@@ -792,10 +792,10 @@
 	</screen>
 	    <!-- QuickEPG -->
 		<screen name="QuickEPG" position="0,e-200" size="1280,200" title="InfoBar" transparent="0" flags="wfNoBorder">		
-		<ePixmap pixmap="icons/key_help.png" position="0,160" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_epg_single.png" position="45,160" size="40,22" alphatest="blend"/>		
-		<ePixmap pixmap="icons/key_menu1.png" position="90,160" size="40,22" alphatest="blend"/>		
-		<ePixmap pixmap="icons/key_info.png" position="135,160" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_help.png" position="15,162" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_epg_single.png" position="60,162" size="40,22" alphatest="blend"/>		
+		<ePixmap pixmap="icons/key_menu1.png" position="105,162" size="40,22" alphatest="blend"/>		
+		<ePixmap pixmap="icons/key_info.png" position="150,162" size="40,22" alphatest="blend"/>
 	    <eLabel position="0,0" size="1280,1" backgroundColor="#0000fafa" zPosition="0"/>
         <eLabel position="0,1" size="1280,39" backgroundColor="#0003424a" zPosition="0"/>			
         <eLabel position="0,40" size="1280,1" backgroundColor="#0000fafa" zPosition="0"/>		
