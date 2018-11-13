@@ -1802,7 +1802,7 @@
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
         <!--widget name="windowtitle" position="80,580" size="0,0" font="Regular;22" transparent="1"/-->				
 		<panel name="ScrollBarTemplate"/>		
-		<widget name="list" position="75,145" size="728,420" scrollbarMode="showOnDemand" selectionPixmap="icons/ls700x30-h.png" transparent="1"/>
+		<widget name="list" position="75,145" size="728,350" scrollbarMode="showOnDemand" selectionPixmap="icons/ls700x30-h.png" transparent="1"/>
 		<widget name="text" position="75,440" size="555,335" font="Regular;20" transparent="1"/>
 	    <ePixmap position="835,390" zPosition="2" size="40,35" pixmap="icons/ram.png" alphatest="blend"/>
 		<widget source="session.CurrentService" render="Label" position="780,10" size="500,62" halign="center" valign="center" font="Regular;18" transparent="1" foregroundColor="#0000fafa" backgroundColor="black" zPosition="1">
@@ -1844,7 +1844,8 @@
 		</widget>
         <widget source="session.CurrentService" render="Label" position="885,610" size="450,26" halign="left" valign="center" font="Regular;15" transparent="1" backgroundColor="background" zPosition="6">
 		    <convert type="BTVDevicesInfo">UsbInfo</convert>
-		</widget>		
+		</widget>
+        <widget name="description" position="75,505" size="728,70" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>		
 	</screen>
 	<!-- (027) ####### Console ver log backup full instalacion plugins etc  ####### -->
 	<screen name="Console" position="0,0" size="1280,720">
