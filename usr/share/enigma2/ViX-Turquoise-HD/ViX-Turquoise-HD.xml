@@ -2116,7 +2116,7 @@
 	<screen name="ServiceScan" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaRG"/>	
 		<panel name="ScrollBarTemplate"/>
-        <panel name="Title"/>
+        <panel name="Title_not_menu_path"/>
 		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00131313" transparent="1">
             <convert type="ClockToText">Format:%H:%M :%S</convert>
         </widget>
@@ -2220,7 +2220,8 @@
 	</screen>
 	<!-- (065) ####### Satfinder ####### (15-02) -->
 	<screen name="Satfinder" position="0,0" size="1280,720" title="Satfinder">
-		<panel name="PantallaGenericaRexit"/>	
+		<panel name="PantallaGenerica_sRGY"/>
+		<panel name="sRGY"/>		
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>	
@@ -2258,9 +2259,24 @@
 			<convert type="FrontendInfo">LOCK</convert>
 			<convert type="ConditionalShowHide">Invert</convert>
 		</widget>
-		<widget name="config" position="80,275" size="700,400" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="config" position="75,330" size="725,220" scrollbarMode="showOnDemand" transparent="1"/>
+		<eLabel text="TSID:" position="300,250" size="80,22" font="Regular;21" transparent="0" halign="right"/>
+		<widget source="tsid" render="Label" position="405,250" size="100,25" font="Regular;21" foregroundColor="#004ccbde" backgroundColor="black" halign="left" transparent="1" zPosition="1"/>
+		<eLabel text="ONID:" position="300,275" size="80,25" font="Regular;21" transparent="0" halign="right"/>
+		<widget source="onid" render="Label" position="405,275" size="100,25" font="Regular;21" foregroundColor="#004ccbde" backgroundColor="black" halign="left" transparent="1" zPosition="1"/>
+		<eLabel text="Orb Pos:" position="300,300" size="100,25" font="Regular;21" transparent="0" halign="right"/>
+		<widget source="pos" render="Label" position="405,300" size="100,25" font="Regular;21" foregroundColor="#004ccbde" backgroundColor="black" halign="left" transparent="1" zPosition="1"/>		
 	    <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 		<widget name="introduction" position="870,470" size="320,20" font="Regular;18" halign="center" transparent="1" foregroundColor="#004ccbde" backgroundColor="black"/>
+	</screen>
+	<!--  ####### ServiceList boton amarillo signalfinder-> información #######  -->	
+	<screen name="ServicesFound" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenerica_sR"/>
+		<panel name="sR"/>		
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title_not_menu_path"/>
+        <panel name="PIG"/>
+		<widget name="servicesfound" position="80,145" size="722,450" font="Regular;18" backgroundColor="black" transparent="1"/>
 	</screen>	
 	<!-- ####### MessageBox Template para ambos Mensajes sistema ####### -->	
 	<screen name="MessageBoxTemplate" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -2454,6 +2470,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
+		<ePixmap pixmap="icons/key_menu1.png" position="8,640" size="40,22" alphatest="blend"/>
 		<ePixmap position="57,625" zPosition="1" size="349,45" pixmap="ViX-Turquoise-HD/menu/colorbarRG.png" alphatest="blend" transparent="1"/>		
 		<widget name="list" position="73,137" size="730,400" scrollbarMode="showOnDemand" selectionPixmap="ViX-Turquoise-HD/icons/ls680x50.png" transparent="1"/>
 	<!-- Widget Pig -->
@@ -5996,7 +6013,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title_not_menu_path"/>		
         <panel name="PIG"/>
-		<widget source="list" render="Listbox" position="75,145" size="717,410" selectionPixmap="ViX-Turquoise-HD/icons/ls700x38.png" scrollbarMode="showOnDemand">
+		<widget source="list" render="Listbox" position="75,145" size="727,410" selectionPixmap="ViX-Turquoise-HD/icons/ls700x38.png" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				MultiContentEntryText(pos = (50, 5), size = (440, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
@@ -6034,7 +6051,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title_not_menu_path"/>		
         <panel name="PIG"/>		
-		<widget name="list" position="80,140" size="722,400" font="Regular;18"/>
+		<widget name="list" position="80,140" size="722,420" font="Regular;18"/>
 	</screen>
     <!-- ## AutoBouquetsMaker Acerca de ## -->	
 	<screen name="AutoBouquetsMaker_About" position="0,0" size="1280,720" flags="wfNoBorder">

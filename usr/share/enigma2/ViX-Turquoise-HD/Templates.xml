@@ -41,22 +41,22 @@
 	</screen>	
 	<!-- ### TEMPLATE TITULOS -->
 	<screen name="Title">
-		<widget source="Title" render="Label" zPosition="2" position="88,20" foregroundColor="#0000fafa" backgroundColor="black" size="700,30" font="Regular;24" halign="center" valign="center"/>		
-		<ePixmap pixmap="ViX-Turquoise-HD/menu/border_title.png" zPosition="0" position="140,0" size="580,90"/>
-	    <widget source="menu_path_compressed" render="Label" zPosition="2" position="80,50" size="725,32" font="Regular;17" halign="center" valign="center" foregroundColor="#0000fafa" backgroundColor="#00000000"/>
+		<widget source="Title" render="Label" zPosition="2" position="78,18" foregroundColor="#0000fafa" backgroundColor="black" size="700,30" transparent="1" font="Regular;24" halign="center" valign="center"/>		
+		<ePixmap pixmap="ViX-Turquoise-HD/menu/border_title.png" zPosition="0" position="110,0" size="580,90"/>
+	    <widget source="menu_path_compressed" render="Label" zPosition="2" position="70,48" size="725,32" transparent="1" font="Regular;17" halign="center" valign="center" foregroundColor="#0000fafa" backgroundColor="#00000000"/>
 	</screen>
 	<screen name="Title_not_menu_path">
-		<widget source="Title" render="Label" zPosition="2" position="88,20" foregroundColor="#0000fafa" backgroundColor="black" size="700,30" font="Regular;24" halign="center" valign="center"/>		
-		<ePixmap pixmap="ViX-Turquoise-HD/menu/border_title.png" zPosition="0" position="140,0" size="580,90"/>
+		<widget source="Title" render="Label" zPosition="2" position="78,30" foregroundColor="#0000fafa" backgroundColor="black" size="700,30" transparent="1" font="Regular;24" halign="center" valign="center"/>		
+		<ePixmap pixmap="ViX-Turquoise-HD/menu/border_title.png" zPosition="0" position="110,0" size="580,90"/>
 	</screen>	
 	<screen name="Titlerunning">
-		<widget source="Title" render="RunningText" options="movetype=running,startpoint=0,startdelay=3000,wrap=0,always=0,repeat=2,oneshot=1" zPosition="2" position="70,20" foregroundColor="#0000fafa" backgroundColor="black" size="615,50" font="Regular;24" halign="center" valign="center"/>		
-		<ePixmap pixmap="ViX-Turquoise-HD/menu/border_title.png" zPosition="1" position="80,0" size="580,90" alphatest="blend"/>
+		<widget source="Title" render="RunningText" options="movetype=running,startpoint=0,startdelay=3000,wrap=0,always=0,repeat=2,oneshot=1" zPosition="2" position="120,20" foregroundColor="#0000fafa" backgroundColor="black" size="615,50" transparent="0" font="Regular;24" halign="center" valign="center"/>		
+		<ePixmap pixmap="ViX-Turquoise-HD/menu/border_title.png" zPosition="1" position="110,0" size="580,90" alphatest="blend"/>
 	    <!--widget source="menu_path_compressed" render="Label" zPosition="1" position="0,25" size="820,32" font="Regular;15" halign="center" valign="center" foregroundColor="#0000fafa" backgroundColor="#00000000"/-->
 	</screen>	
 	<screen name="Titlechannellist">
-		<widget source="Title" render="Label" zPosition="1" position="70,20" foregroundColor="#0000fafa" backgroundColor="black" size="615,50" font="Regular;21" halign="center" valign="center"/>		
-		<ePixmap pixmap="ViX-Turquoise-HD/menu/border_title.png" zPosition="0" position="80,0" size="580,90" alphatest="blend"/>
+		<widget source="Title" render="Label" zPosition="1" position="78,20" foregroundColor="#0000fafa" backgroundColor="black" size="615,50" transparent="1" font="Regular;21" halign="center" valign="center"/>		
+		<ePixmap pixmap="ViX-Turquoise-HD/menu/border_title.png" zPosition="0" position="58,0" size="580,90" alphatest="blend"/>
 	    <!--widget source="menu_path_compressed" render="Label" zPosition="1" position="0,25" size="820,32" font="Regular;15" halign="center" valign="center" foregroundColor="#0000fafa" backgroundColor="#00000000"/-->
 	</screen>	
 	<!-- ### TEMPLATE PIG + Nombre Evento + Progreso + Reloj LCD 2 Pantallas Izquierda-->
