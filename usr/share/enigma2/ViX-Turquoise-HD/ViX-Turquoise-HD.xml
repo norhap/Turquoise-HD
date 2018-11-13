@@ -6433,7 +6433,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-		<widget name="list" position="80,145" size="722,35" font="Regular;14" backgroundColor="black" transparent="0"/>
+		<widget name="list" position="80,145" size="722,425" font="Regular;14" backgroundColor="black" transparent="0"/>
 	</screen>
 	<screen name="VIXAutoStartCam" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaRGYB"/>
