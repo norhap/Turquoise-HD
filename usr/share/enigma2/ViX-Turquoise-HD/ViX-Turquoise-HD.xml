@@ -619,13 +619,13 @@
 		</widget>			
 	<!--panel name="FullscreenTitlePanel" /-->
 		<eLabel text="8" position="300,55" size="10,17" backgroundColor="black" zPosition="1" transparent="1" font="Regular;17" halign="left"/>
-		<widget name="page" position="330,55" size="200,25" font="Regular;15" foregroundColor="#0000baff" backgroundColor="black" transparent="1"/>
+		<widget name="page" position="330,55" size="200,25" font="Regular;15" foregroundColor="#0000fafa" backgroundColor="black" transparent="1"/>
 		<eLabel text="9" position="530,55" size="10,17" backgroundColor="black" zPosition="1" transparent="1" font="Regular;17" halign="left"/>
-		<widget name="primetime" position="560,55" size="250,25" font="Regular;15" foregroundColor="#0000baff" backgroundColor="black" transparent="1"/>
+		<widget name="primetime" position="560,55" size="250,25" font="Regular;15" foregroundColor="#0000fafa" backgroundColor="black" transparent="1"/>
 		<eLabel text="PREV NEXT" position="300,75" size="80,17" backgroundColor="black" zPosition="1" transparent="1" font="Regular;14" halign="left"/>
-		<widget name="change_bouquet" position="380,75" size="200,25" font="Regular;15" foregroundColor="#0000baff" backgroundColor="black" transparent="1"/>
+		<widget name="change_bouquet" position="380,75" size="200,25" font="Regular;15" foregroundColor="#0000fafa" backgroundColor="black" transparent="1"/>
 		<eLabel text="C H" position="530,75" size="25,17" backgroundColor="black" zPosition="1" transparent="1" font="Regular;14" halign="left"/>
-		<widget name="jump" position="560,75" size="200,25" font="Regular;15" foregroundColor="#0000baff" backgroundColor="black" transparent="1"/>
+		<widget name="jump" position="560,75" size="200,25" font="Regular;15" foregroundColor="#0000fafa" backgroundColor="black" transparent="1"/>
 		<widget name="number" position="0,193" size="100,25" foregroundColor="#004ccbde" transparent="1"/>
 		<widget name="lab1" position="0,70" size="1280,615" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0"/>
 		<widget name="timeline_text" position="90,130" size="1280,35" backgroundColor="black" foregroundColor="#004ccbde" transparent="1" zPosition="0"/>
@@ -677,22 +677,22 @@
 		    <convert type="EventTime">EndTime</convert>
 		    <convert type="ClockToText">Format:%H:%M</convert>
 		</widget>		
-		<widget source="Event" render="Label" position="600,227" size="350,20" font="Regular;18" foregroundColor="#0000baff" backgroundColor="black" transparent="1">
+		<widget source="Event" render="Label" position="600,227" size="350,20" font="Regular;18" foregroundColor="#0000fafa" backgroundColor="black" transparent="1">
 		    <convert type="EventTime">StartTime</convert>
 		    <convert type="ClockToText">Format:%a %d/%m/%y</convert>
 		</widget>		
-		<widget source="Event" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="150,105" size="690,115" zPosition="2" font="Regular;17" halign="center" valign="center" foregroundColor="#00a1d1ff" backgroundColor="black" transparent="0">
+		<widget source="Event" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="110,105" size="690,120" zPosition="2" font="Regular;17" halign="center" valign="center" foregroundColor="#00a1d1ff" backgroundColor="black" transparent="0">
 		     <convert type="EventName">ExtendedDescription</convert>
 		</widget>	
 	<!--panel name="FullscreenTitlePanel" /-->
 		<eLabel text="8" position="300,55" size="10,17" backgroundColor="black" zPosition="1" transparent="1" font="Regular;17" halign="left"/>
-		<widget name="page" position="330,55" size="200,25" font="Regular;15" foregroundColor="#0000baff" backgroundColor="black" transparent="1"/>
+		<widget name="page" position="330,55" size="200,25" font="Regular;15" foregroundColor="#0000fafa" backgroundColor="black" transparent="1"/>
 		<eLabel text="9" position="530,55" size="10,17" backgroundColor="black" zPosition="1" transparent="1" font="Regular;17" halign="left"/>
-		<widget name="primetime" position="560,55" size="250,25" font="Regular;15" foregroundColor="#0000baff" backgroundColor="black" transparent="1"/>
+		<widget name="primetime" position="560,55" size="250,25" font="Regular;15" foregroundColor="#0000fafa" backgroundColor="black" transparent="1"/>
 		<eLabel text="PREV NEXT" position="300,75" size="80,17" backgroundColor="black" zPosition="1" transparent="1" font="Regular;14" halign="left"/>
-		<widget name="change_bouquet" position="380,75" size="200,25" font="Regular;15" foregroundColor="#0000baff" backgroundColor="black" transparent="1"/>
+		<widget name="change_bouquet" position="380,75" size="200,25" font="Regular;15" foregroundColor="#0000fafa" backgroundColor="black" transparent="1"/>
 		<eLabel text="C H" position="530,75" size="25,17" backgroundColor="black" zPosition="1" transparent="1" font="Regular;14" halign="left"/>
-		<widget name="jump" position="560,75" size="200,25" font="Regular;15" foregroundColor="#0000baff" backgroundColor="black" transparent="1"/>
+		<widget name="jump" position="560,75" size="200,25" font="Regular;15" foregroundColor="#0000fafa" backgroundColor="black" transparent="1"/>
 		<widget name="number" position="0,193" size="100,25" foregroundColor="#004ccbde" transparent="1"/>
 		<widget name="lab1" position="0,70" size="1280,615" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0"/>
 		<eLabel position="840,100" size="2,158" backgroundColor="#004ccbde" zPosition="3"/>
@@ -5629,21 +5629,21 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="PantallaGenericaRGY"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="PIG"/>
-        <panel name="Title_not_menu_path"/>		
-	    <ePixmap pixmap="icons/key_menu1.png" position="8,640" size="40,22"/>		
-		<ePixmap position="660,634" zPosition="1" size="140,35" pixmap="ViX-Turquoise-HD/menu/colorbarB.png" alphatest="blend" transparent="1"/>		
-		<widget position="650,555" size="170,156" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
-	    <widget name="ratinglabel" position="85,145" size="250,25" font="Regular;20" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>		
-		<widget name="titellabel" position="280,105" size="330,45" foregroundColor="#004ccbde" halign="center" valign="center" transparent="1" font="Regular;18"/>		
-		<widget name="statusbar" position="100,30" halign="center" valign="center" size="585,26" zPosition="2" font="Regular;22" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
+        <panel name="Title_not_menu_path"/>
+		<widget name="statusbar" position="100,25" halign="center" valign="center" size="585,26" zPosition="2" font="Regular;22" foregroundColor="#0000fafa" backgroundColor="black" transparent="1"/>
+		<widget name="titellabel" position="150,100" size="500,45" backgroundColor="black" foregroundColor="#0000fafa" halign="center" valign="center" transparent="1" font="Regular;18"/>		
+	    <widget name="ratinglabel" position="85,150" size="700,25" font="Regular;20" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 		<ePixmap position="965,405" size="380,180" pixmap="menu/imdb.png" zPosition="1"/>
 		<widget name="menu" position="80,150" size="723,275" zPosition="3" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
+		<widget position="650,555" size="170,156" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
 		<widget name="poster" position="930,395" size="182,190" alphatest="blend" zPosition="2"/>
 		<widget name="castlabel" position="80,180" size="723,270" font="Regular;20" backgroundColor="black" transparent="1"/>
 		<widget name="extralabel" position="80,180" size="723,270" font="Regular;20" backgroundColor="black" transparent="1"/>
 		<widget name="detailslabel" position="85,445" size="723,180" font="Regular;20" foregroundColor="#004ccbde" transparent="1"/>
 		<widget name="starsbg" position="920,590" size="250,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty.png" zPosition="0" transparent="1" alphatest="on"/>
 		<widget name="stars" position="920,590" size="250,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" zPosition="1" transparent="1"/>
+	    <ePixmap pixmap="icons/key_menu1.png" position="8,640" size="40,22"/>		
+		<ePixmap position="660,634" zPosition="1" size="140,35" pixmap="ViX-Turquoise-HD/menu/colorbarB.png" alphatest="blend" transparent="1"/>		
 	</screen>
 	<!-- Foreca -->
 	<screen name="ForecaPreview" position="0,0" size="1280,720" flags="wfNoBorder">
