@@ -1849,8 +1849,7 @@
 	</screen>
 	<!-- (027) ####### Console ver log backup full instalacion plugins etc  ####### -->
 	<screen name="Console" position="0,0" size="1280,720">
-        <panel name="PantallaPieTV"/>
-        <panel name="Title"/>	
+        <panel name="PantallaPieTV"/>	
 		<widget name="text" position="110,125" size="693,430" font="Regular;14" transparent="0"/>
 	</screen>	
 	<!-- (028) ####### clock Display ####### -->
@@ -4630,7 +4629,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<!-- YouTube TV Setup Complementos -->	
     <screen name="YoutubeTVSettings" position="0,0" size="1280,720"  zPosition="1" flags="wfNoBorder">
         <panel name="PantallaPieTV"/>
-        <panel name="Title"/>
         <panel name="sRG"/>
         <widget name="config" position="80,170" zPosition="3" size="695,60" scrollbarMode="showOnDemand"/>		
         <ePixmap position="63,160" zPosition="2" size="712,537" pixmap="ViX-Turquoise-HD/menu/bx_youtube.png" alphatest="blend"/>
@@ -4639,7 +4637,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<!-- YouTube TV  MENU PRINCIPAL -->
     <screen name="YoutubeTVWindow" position="0,0" size="1280,720"  zPosition="1" flags="wfNoBorder">
         <panel name="PantallaPieTV"/>
-        <panel name="Title"/>
         <panel name="Template-exit"/>
         <panel name="sG"/>
         <widget name="helpdesc" position="80,410" font="Regular;20" foregroundColor="#004ccbde" transparent="1" zPosition="4" size="350,25"/>
