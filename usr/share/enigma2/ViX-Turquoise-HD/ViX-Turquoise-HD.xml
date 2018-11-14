@@ -57,7 +57,7 @@
 		</widget>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
         <widget name="description" position="845,415" size="380,160" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
-		<widget name="footnote" position="880,610" size="300,50" zPosition="1" font="Regular;20" foregroundColor="#00bab329" backgroundColor="black" halign="center" transparent="1" valign="top"/>		
+		<widget name="footnote" position="880,610" size="300,50" zPosition="1" font="Regular;20" foregroundColor="#00bab329" backgroundColor="#050606" halign="center" transparent="1" valign="top"/>		
 	</screen>	
 	<!--  Harddisk selection -->
 	<screen name="HarddiskSelection" position="0,0" size="1280,720" flags="wfNoBorder">
