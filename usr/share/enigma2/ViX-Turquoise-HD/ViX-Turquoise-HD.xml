@@ -857,8 +857,7 @@
 	</screen>	
 	<!-- (035) ####### EPG SELECTION MULTI ####### (12-02) -->
 	<screen name="EPGSelectionMulti" position="0,0"	size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica_sRGYB"/>
-        <panel name="sRGYB"/>		
+		<panel name="PantallaGenericaRGYB"/>		
         <panel name="PIG"/>
         <panel name="Title_not_menu_path"/>
 		<panel name="ScrollBarTemplate"/>
