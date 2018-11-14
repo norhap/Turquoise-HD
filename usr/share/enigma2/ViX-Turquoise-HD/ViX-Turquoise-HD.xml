@@ -887,7 +887,7 @@
 		<eLabel text="PREV NEXT" position="945,490" size="150,17" zPosition="1" transparent="1" font="Regular;18" halign="left"/>
 		<eLabel text="Change Bouquet" position="1040,490" size="150,25" font="Regular;18" zPosition="1" foregroundColor="#004ccbde" transparent="1"/>
 		<eLabel text="C H" position="945,515" size="80,17" zPosition="1" transparent="1" font="Regular;18" halign="left"/>
-		<eLabel text="Page" position="990,515" size="100,25" font="Regular;18" zPosition="1" foregroundColor="#004ccbde" transparent="1"/>		
+		<eLabel text="Page" position="985,515" size="100,25" font="Regular;18" zPosition="1" foregroundColor="#004ccbde" transparent="1"/>		
 	</screen>
 	<!-- (023) ####### BOUQUET SELECTOR Seleccion de grupo ver grupos desde GraphicalEPG ####### (23-10) -->
 	<screen name="BouquetSelector" position="0,0" size="1280,720" flags="wfNoBorder">
