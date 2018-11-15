@@ -1009,8 +1009,7 @@
         <panel name="Title"/>		
         <panel name="PIG"/>
         <panel name="ScrollBarTemplate"/>
-        <panel name="sRG"/>
-        <!--panel name="logo_openboxtv"/-->		
+        <panel name="sRG"/>		
 		<widget source="author" render="Label" position="80,140" size="500,25" foregroundColor="#004ccbde" font="Regular;21" transparent="1"/>
 		<widget name="statuspic" position="710,130" size="48,48" alphatest="on"/>
 		<widget name="divpic" position="80,175" size="670,2" alphatest="on"/>
@@ -1083,7 +1082,7 @@
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-        <!--panel name="logo_openboxtv"/-->		
+        <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 		<widget name="activityslider" borderWidth="2" foregroundColor="#004ccbde" position="80,165" size="562,32" backgroundColor="black"/>
 		<eLabel position="79,259" size="564,34" backgroundColor="#004ccbde"/>
 		<widget name="slider" position="80,260" borderWidth="2" foregroundColor="#0003424a" size="562,32" zPosition="1"/>
@@ -1093,7 +1092,7 @@
 		<widget name="tl_red" position="80,390" size="530,25" backgroundColor="#00101010" transparent="1"/>
 		<widget name="tl_yellow" position="80,420" size="530,25" backgroundColor="#00101010" transparent="1"/>
 		<widget name="tl_green" position="80,445" size="530,25" backgroundColor="#00101010" transparent="1"/>
-		<widget name="feedStatusMSG" position="80,470" size="530,25" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00101010" transparent="1"/>		
+		<widget name="feedStatusMSG" position="845,435" size="380,25" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00101010" transparent="1"/>		
 	</screen>
 	<!-- ####### Actualizar Software LOG ####### -->	
 	<screen name="SoftwareUpdateChoices" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1102,16 +1101,16 @@
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
+        <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 		<ePixmap position="8,640" size="40,22" pixmap="icons/key_menu1.png" transparent="1" alphatest="blend"/>		
-		<widget name="list" position="70,145" size="725,250" font="Regular;14" backgroundColor="black" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1"/>
-        <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>			
+		<widget name="list" position="70,145" size="725,250" font="Regular;14" backgroundColor="black" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1"/>			
 		<widget name="text" position="845,415" size="380,160" foregroundColor="#004ccbde" font="Regular;20" backgroundColor="black" transparent="1" halign="center" valign="center"/>
 		<widget name="tl_off" position="80,360" size="530,25" backgroundColor="#00101010" transparent="1"/>
 		<widget name="tl_red" position="80,390" size="530,25" backgroundColor="#00101010" transparent="1"/>
 		<widget name="tl_yellow" position="80,420" size="530,25" backgroundColor="#00101010" transparent="1"/>
 		<widget name="tl_green" position="80,445" size="530,25" backgroundColor="#00101010" transparent="1"/>
-		<widget name="feedStatusMSG" position="80,470" size="530,25" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00101010" transparent="1"/>
-		<widget name="description" position="845,580" size="380,25" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>		
+		<widget name="feedStatusMSG" position="845,435" size="380,25" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00101010" transparent="1"/>
+		<widget name="description" position="845,600" size="380,25" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>		
 	</screen>	
 	<!-- ####### MANEJAR SOFTWARE->Opciones Avandas->Advanded restore ####### -->
 	<screen name="RestoreMenu" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1119,8 +1118,7 @@
         <panel name="Title"/>		
         <panel name="PIG"/>
         <panel name="ScrollBarTemplate"/>
-        <panel name="sRGY"/>
-        <!--panel name="logo_openboxtv"/-->		
+        <panel name="sRGY"/>		
 		<widget name="filelist" position="75,140" size="720,425" scrollbarMode="showOnDemand" selectionPixmap="ViX-Turquoise-HD/icons/ls725x26.png" transparent="1"/>
 	</screen>
 	<!-- ####### MANEJAR SOFTWARE->Opciones Avandas->Seleccion de carpetas y archivos del backup (Select backukp files) ####### -->
@@ -1129,8 +1127,7 @@
         <panel name="Title"/>		
         <panel name="PIG"/>
         <panel name="ScrollBarTemplate"/>
-        <panel name="sRGY"/>
-        <!--panel name="logo_openboxtv"/-->		
+        <panel name="sRGY"/>		
 		<widget name="checkList" position="75,140" size="728,425" scrollbarMode="showOnDemand" selectionPixmap="ViX-Turquoise-HD/icons/ls700x30-h.png" transparent="1"/>		
 	</screen>
 	<!-- ####### MANEJAR SOFTWARE->Opciones Avandas->Manejo de paquetes ####### -->
@@ -1139,8 +1136,7 @@
         <panel name="PIG"/>
         <panel name="Title"/>
 		<panel name="ScrollBarTemplate"/>
-        <panel name="sRG"/>
-        <!--panel name="logo_openboxtv"/-->		
+        <panel name="sRG"/>		
 		<widget source="list" render="Listbox" position="75,140" size="728,400" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
@@ -1161,8 +1157,7 @@
         <panel name="Title"/>		
         <panel name="PIG"/>
         <panel name="ScrollBarTemplate"/>
-        <panel name="sRG"/>
-        <!--panel name="logo_openboxtv"/-->		
+        <panel name="sRG"/>		
 		<widget name="filelist" position="75,140" size="720,425" scrollbarMode="showOnDemand" selectionPixmap="ViX-Turquoise-HD/icons/ls725x26.png" transparent="1"/>
 	</screen>
 	<!-- ####### MANEJAR SOFTWARE->TECLA MENU #######  -->
@@ -1172,7 +1167,6 @@
         <panel name="PIG"/>
         <panel name="ScrollBarTemplate"/>
         <panel name="sRG"/>
-        <!--panel name="logo_openboxtv"/-->
 		<widget name="config" position="80,140" size="710,425" transparent="1" scrollbarMode="showOnDemand"/>		
 	</screen>	
 	<!-- (019) ####### Buscar redes inhalambricas ->OK-titulo seleccionar red inhalambrica ####### -->	
@@ -2316,8 +2310,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="PantallaGenericaRGYB"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title_not_menu_path"/>
-        <panel name="PIG"/>
-        <!--panel name="logo_openboxtv"/-->		
+        <panel name="PIG"/>		
 		<widget name="text" position="230,105" size="500,27" font="Regular;23" foregroundColor="#004ccbde" transparent="1"/>
 		<widget name="target" position="68,150" size="700,27" valign="center" font="Regular;24" backgroundColor="#0003424a"/>
 		<widget name="filelist" position="68,180" zPosition="1" size="735,278" scrollbarMode="showOnDemand" selectionPixmap="icons/ls700x30.png" selectionDisabled="1" transparent="1"/>
