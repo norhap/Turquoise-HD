@@ -3429,8 +3429,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         </widget>
 	</screen>
     <!-- INFOBAR OSD -->
-    <screen name="InfoBar" flags="wfNoBorder" position="0,-5" size="1280,720" title="InfoBar" backgroundColor="transparent">
-        <ePixmap position="-1,520" zPosition="1" size="1292,253" pixmap="icons/infobar_light.png" transparent="1"/>
+    <screen name="InfoBar" flags="wfNoBorder" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent">
+        <ePixmap position="0,520" zPosition="1" size="1292,253" pixmap="icons/infobar_light.png" transparent="1"/>
 
 	    <widget name="key_red" position="0,0" size="0,0" zPosition="1" transparent="1" valign="center" noWrap="1" backgroundColor="black"/>
 
@@ -3701,7 +3701,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 
 	<!-- PANEL EVENTOS SEGUNDA BARRA INFOBAR-->  
   	<screen name="SecondInfobarPanelEvents">
-        <ePixmap position="-1,520" zPosition="1" size="1292,253" pixmap="icons/infobar_light.png" transparent="1"/>
+        <ePixmap position="0,520" zPosition="0" size="1280,250" pixmap="icons/infobar_light.png"/>
+		<ePixmap position="0,0" zPosition="0" size="1280,100" pixmap="icons/extrabar.png" transparent="1"/>
     <!-- Orologio Digitale - Digital Clock -->
         <widget source="global.CurrentTime" render="Label" position="1071,621" size="84,48" zPosition="2" font="LCD;34" valign="top" halign="right" foregroundColor="#00dcdcdc" backgroundColor="#00333333" transparent="1">
             <convert type="ClockToText">Default</convert>
@@ -4033,13 +4034,12 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <panel name="SecondInfobarPanelEvents"/>
 	    <!--panel name="msnPanel"/-->		
 	    <!--eLabel position="53,50" size="585,580" backgroundColor="#00000000" zPosition="0"/-->
-        <ePixmap pixmap="ViX-Turquoise-HD/menu/backbox.png" zPosition="0" position="55,0" size="1170,720" alphatest="on"/>		
+        <ePixmap pixmap="ViX-Turquoise-HD/menu/backbox.png" position="55,90" size="1167,437"/>		
 	    <!--eLabel position="639,50" size="585,580" backgroundColor="#14101010" zPosition="0"/-->
-	    <eLabel position="55,95" size="1,425" backgroundColor="#0000fafa" zPosition="1"/>		
-	    <eLabel position="55,95" size="1169,1" backgroundColor="#0000fafa" zPosition="1"/>
-	    <eLabel position="55,519" size="1169,1" backgroundColor="#0000fafa" zPosition="1"/>
-	    <eLabel position="1224,95" size="1,425" backgroundColor="#0000fafa" zPosition="1"/>	
-		<ePixmap position="0,0" zPosition="0" size="1280,95" pixmap="icons/extrabar.png" transparent="1"/>
+	    <eLabel position="55,90" size="1,437" backgroundColor="#0000fafa" zPosition="1"/>		
+	    <eLabel position="55,90" size="1167,1" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="55,526" size="1167,1" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="1222,90" size="1,437" backgroundColor="#0000fafa" zPosition="1"/>	
 	    <widget name="key_red" position="0,0" size="0,0" zPosition="1" transparent="1" valign="center" noWrap="1" backgroundColor="black"/>
 
 	    <widget name="key_green" position="0,0" size="0,0" zPosition="1" transparent="1" valign="center" noWrap="1" backgroundColor="black"/>
