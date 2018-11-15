@@ -4039,7 +4039,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <eLabel position="55,95" size="1169,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="55,519" size="1169,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="1224,95" size="1,425" backgroundColor="#0000fafa" zPosition="1"/>	
-		<ePixmap position="-1,0" zPosition="0" size="1280,95" pixmap="icons/extrabar.png" transparent="1"/>
+		<ePixmap position="0,0" zPosition="0" size="1280,95" pixmap="icons/extrabar.png" transparent="1"/>
 	    <widget name="key_red" position="0,0" size="0,0" zPosition="1" transparent="1" valign="center" noWrap="1" backgroundColor="black"/>
 
 	    <widget name="key_green" position="0,0" size="0,0" zPosition="1" transparent="1" valign="center" noWrap="1" backgroundColor="black"/>
