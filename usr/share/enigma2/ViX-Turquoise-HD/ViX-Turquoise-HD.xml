@@ -1963,9 +1963,9 @@
 			<convert type="ClockToText">Date</convert>
 		</widget>
 		<widget name="text" position="150,140" size="730,250" font="Regular;23" transparent="1" backgroundColor="#03424a"/>
-		<widget name="ErrorPixmap" pixmap="icons/input_error.png" position="100,140" size="53,53" alphatest="blend"/>
-		<widget name="QuestionPixmap" pixmap="icons/input_question.png" position="100,140" size="53,53" alphatest="blend"/>
-		<widget name="InfoPixmap" pixmap="icons/input_info.png" position="100,140" size="53,53" alphatest="blend"/>
+		<widget name="ErrorPixmap" pixmap="icons/input_error.png" position="95,125" size="53,53" alphatest="blend"/>
+		<widget name="QuestionPixmap" pixmap="icons/input_question.png" position="95,125" size="53,53" alphatest="blend"/>
+		<widget name="InfoPixmap" pixmap="icons/input_info.png" position="95,125" size="53,53" alphatest="blend"/>
 		<widget name="list" position="150,400" size="730,220" transparent="1" backgroundColor="#03424a"/>
 		<widget name="rc" pixmap="rc.png" position="950,120" zPosition="10" size="154,500" transparent="0" alphatest="blend"/>
 	</screen>	
