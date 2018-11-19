@@ -891,10 +891,10 @@
 	<screen name="BouquetSelector" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>	
 		<panel name="ScrollBarTemplate"/>
-        <panel name="Title"/>
+        <panel name="Title_not_menu_path"/>
         <panel name="PIG"/>
 		<ePixmap position="930,405" zPosition="1" size="200,200" pixmap="ViX-Turquoise-HD/menu/ico_sat.png" alphatest="blend" transparent="1"/>
-		<widget name="menu" position="77,137" size="720,430" scrollbarMode="showOnDemand" selectionPixmap="ViX-Turquoise-HD/icons/ls680x28.png" transparent="1"/>
+		<widget name="menu" position="77,137" size="725,430" scrollbarMode="showOnDemand" selectionPixmap="ViX-Turquoise-HD/icons/ls680x28.png" transparent="1"/>
 	</screen>	
 	<!-- ####### Editar ELIMINAR temporizador en EPG ####### -->	
 	<screen name="RecordTimerQuestion" position="center,center" size="355,55" backgroundColor="#0003424a" zPosition="5" flags="wfNoBorder">
@@ -4154,7 +4154,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="PantallaGenericaRG"/>
         <panel name="PIG"/>
 		<panel name="ScrollBarTemplate"/>		
-        <ePixmap position="220,0" zPosition="-1" size="421,69" pixmap="ViX-Turquoise-HD/menu/tx_crossepg.png"/>
+		<panel name="Title_not_menu_path"/>
 		<widget name="config" position="65,150" size="720,250" scrollbarMode="showOnDemand" zPosition="1" backgroundColor="#00333333" transparent="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 		<widget position="405,625" size="250,36" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
@@ -4166,9 +4166,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<screen name="CrossEPG_Menu" position="0,0" size="1280,720" title="CrossEPG Menu" flags="wfNoBorder">
 		<panel name="PantallaGenericaRG"/>
         <panel name="PIG"/>
-		<panel name="ScrollBarTemplate"/>		
-        <ePixmap position="860,414" size="370,204" zPosition="1" pixmap="ViX-Turquoise-HD/menu/ico_crossepg.png" alphatest="on"/>
-        <ePixmap position="220,0" zPosition="-1" size="421,69" pixmap="ViX-Turquoise-HD/menu/tx_crossepg.png"/>
+		<panel name="ScrollBarTemplate"/>
+		<panel name="Title_not_menu_path"/>
+        <ePixmap position="860,414" size="370,204" zPosition="1" pixmap="ViX-Turquoise-HD/menu/ico_crossepg.png" alphatest="on"/>		
 		<widget source="list" render="Listbox" position="66,145" size="730,440" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="#00333333" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
@@ -4208,7 +4208,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
  		<panel name="PantallaGenericaRGYB"/>
         <panel name="PIG"/>
 		<panel name="ScrollBarTemplate"/>		
-        <ePixmap position="220,0" zPosition="-1" size="421,69" pixmap="ViX-Turquoise-HD/menu/tx_crossepg.png"/>		
+		<panel name="Title_not_menu_path"/>		
 		<ePixmap position="860,414" size="370,204" zPosition="1" pixmap="ViX-Turquoise-HD/menu/ico_crossepg.png" alphatest="on"/>
 		<widget source="list" render="Listbox" position="60,145" size="730,450" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="#00333333" transparent="1">
 			<convert type="TemplatedMultiContent">
@@ -4232,7 +4232,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
  		<panel name="PantallaGenerica_sR"/>
 		<panel name="ScrollBarTemplate"/>		
         <panel name="PIG"/>
-        <ePixmap position="220,0" zPosition="-1" size="421,69" pixmap="ViX-Turquoise-HD/menu/tx_crossepg.png"/>		
+		<panel name="Title_not_menu_path"/>		
 		<ePixmap position="860,414" size="370,204" zPosition="1" pixmap="ViX-Turquoise-HD/menu/ico_crossepg.png" alphatest="on"/>
 		<widget name="version" position="94,120" size="720,28" font="Regular;26" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1"/>
 		<ePixmap position="70,150" zPosition="2" size="720,4" pixmap="ViX-Turquoise-HD/menu/line.png"/>
@@ -4260,8 +4260,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="PantallaGenerica_sR"/>
         <panel name="PIG"/>
 		<panel name="ScrollBarTemplate"/>		
+		<panel name="Title_not_menu_path"/>
         <ePixmap position="860,414" size="370,204" zPosition="1" pixmap="ViX-Turquoise-HD/menu/ico_crossepg.png" alphatest="on"/>		
-        <ePixmap position="220,0" zPosition="-1" size="421,69" pixmap="ViX-Turquoise-HD/menu/tx_crossepg.png"/>
 		<widget name="about" position="83,127" size="700,350" font="Regular;16" backgroundColor="#00333333" transparent="1"/>
 		<widget name="rytec_pix" position="83,490" size="70,70" backgroundColor="#00333333" transparent="1"/>
 		<widget name="rytec_text" position="83,565" size="70,70" backgroundColor="black" transparent="1"/>		
@@ -6191,7 +6191,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="PantallaGenerica_sRG"/>
         <panel name="sRG"/>
 		<panel name="ScrollBarTemplate"/>
-        <panel name="Title"/>
+        <panel name="Title_not_menu_path"/>
         <panel name="PIG"/>
 		<widget name="description" position="865,435" size="320,500" font="Regular;18" halign="center" backgroundColor="background" foregroundColor="#004ccbde" transparent="1"/>
 	    <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
