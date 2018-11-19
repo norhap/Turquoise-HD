@@ -393,14 +393,18 @@
 	</screen>
 	<!--  ####### DESCARGA MODO BARRA #######  -->	
 	<screen name="DownloadBar">
-		<widget name="action" position="5,3" size="435,25" font="Regular;22" backgroundColor="#0003424a"/>
-		<widget name="status" position="465,5" size="435,25" font="Regular;22" halign="center" backgroundColor="#0003424a"/>
+		<widget name="action" position="5,3" size="335,25" font="Regular;22" backgroundColor="#0003424a"/>
+		<widget name="status" position="350,5" size="435,25" font="Regular;22" halign="center" backgroundColor="#0003424a"/>
 		<widget name="background" position="365,5" size="0,0" backgroundColor="#0003424a"/>
-		<widget name="progress" position="470,5" size="135,25" foregroundColor="#004ccbde" backgroundColor="#0003424a"/>		
-		<widget source="progress_text" render="Label" position="1005,5" size="135,25" font="Regular;22" halign="left" backgroundColor="#0003424a">
+		<widget name="progress" position="895,5" size="135,25" foregroundColor="#004ccbde" backgroundColor="#0003424a"/>
+	    <eLabel position="895,5" size="135,1" backgroundColor="#0000fafa" zPosition="16"/>
+	    <eLabel position="895,5" size="1,25" backgroundColor="#0000fafa" zPosition="16"/>
+	    <eLabel position="895,29" size="135,1" backgroundColor="#0000fafa" zPosition="16"/>
+	    <eLabel position="1030,5" size="1,25" backgroundColor="#0000fafa" zPosition="16"/>		
+		<widget source="progress_text" render="Label" position="1045,5" size="135,25" font="Regular;22" halign="left" backgroundColor="#0003424a">
 			<convert type="ProgressToText">InText</convert>
 		</widget>
-		<widget source="progress_text" render="Label" position="1135,5" size="140,25" font="Regular;22" halign="left" backgroundColor="#0003424a">
+		<widget source="progress_text" render="Label" position="1180,5" size="140,25" font="Regular;22" halign="left" backgroundColor="#0003424a">
 			<convert type="ProgressToText">InPercent</convert>
 		</widget>
 	</screen>	
