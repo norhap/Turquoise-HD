@@ -5132,41 +5132,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>
         <widget name="languagetext" position="95,630" size="150,30" transparent="1" font="Regular;20"/>
 	</screen>	
-	<!-- (048) ####### Movie Selection Lista de Peliculas (MoviePlayer Standard)  ####### -->	
-	<screen name="MovieSelection" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>
-		<panel name="ScrollBarTemplate"/>
-        <panel name="Title_not_menu_path"/>		
-        <panel name="PIG"/>
-	<!-- Lista  -->
-		<widget name="waitingtext" position="97,140" size="650,380" zPosition="4" font="Regular;22" halign="right" valign="center" transparent="1"/>
-		<widget name="list" zPosition="1" position="60,146" size="743,420" scrollbarMode="showOnDemand" transparent="1"/>
-		<widget name="freeDiskSpace" position="210,115" halign="center" valign="center" zPosition="4" size="200,25" font="Regular;22" foregroundColor="#004ccbde" transparent="1"/>
-        <widget name="TrashcanSize" position="430,65" size="300,120" font="Regular;20" foregroundColor="#0000fafa" backgroundColor="black" halign="center" valign="center" zPosition="2" transparent="1"/>				
-		<widget name="DescriptionBorder" position="10,400" size="503,0" zPosition="3" transparent="1"/>
-        <widget name="chosenletter" position="845,345" size="380,185" font="Regular;50" halign="center" valign="center" transparent="1" zPosition="4"/>
-        <widget name="movie_sort" position="100,120" size="35,20" pixmaps="skin_default/icons/ask.png,skin_default/icons/movielist.png,skin_default/icons/quit.png,skin_default/icons/pause.png,skin_default/icons/playlist.png,skin_default/icons/playlistquit.png,skin_default/icons/loop.png,skin_default/icons/rep.png"	zPosition="10" transparent="1" alphatest="on"/>
-        <widget name="movie_off" position="140,120" size="35,20" pixmaps="skin_default/icons/ask.png,skin_default/icons/movielist.png,skin_default/icons/quit.png,skin_default/icons/pause.png,skin_default/icons/playlist.png,skin_default/icons/playlistquit.png,skin_default/icons/loop.png,skin_default/icons/rep.png"	zPosition="10" transparent="1" alphatest="on"/>	
-	<!-- Info de Pelicula -->
-        <widget source="Service" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="845,390" zPosition="4" size="370,208" font="Regular;20" foregroundColor="#00a1d1ff" transparent="1" halign="center" valign="top">
-            <convert type="EventName">ExtendedDescription</convert>
-        </widget>
-	<!-- Info de Pelicula -->	
-		<widget source="Service" render="Label" position="845,610" size="290,25" font="Regular;20" foregroundColor="#0000baff" backgroundColor="black" transparent="1" zPosition="4">
-		    <convert type="ServiceTime">StartTime</convert>
-		    <convert type="ClockToText">ShortDate</convert>
-		</widget>
-		<widget source="Service" render="Label" position="1000,610" zPosition="6" foregroundColor="#0000fafa" size="340,26" font="Regular;22" halign="left" transparent="1"> 
-			<convert type="ServiceTime">Duration</convert>
-			<convert type="ClockToText">AsLength</convert>
-		</widget>		
-		<widget source="Service" render="Label" position="1135,610" size="100,25" font="Regular;20" valign="center" foregroundColor="#0000baff" backgroundColor="black" transparent="1" zPosition="4">
-		    <convert type="MovieInfo">FileSize</convert>
-		</widget>
-		<ePixmap pixmap="icons/key_menu1.png" position="665,680" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_text.png" position="710,680" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_help.png" position="755,680" size="40,22" alphatest="blend"/>		
-	</screen>	
 		<!-- ####### MediaPlayer Lista De Peliculas ####### -->	
 	<screen name="MediaPlayer" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">	
 		<widget source="global.CurrentTime" render="Label" position="870,50" size="170,50" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1">
@@ -5196,6 +5161,49 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="icons/key_menu1.png" position="20,676" size="40,22" alphatest="blend" transparent="1" zPosition="1"/>
         <widget name="PositionGauge" position="377,628" size="0,0" pointer="icons/pointer.png:13,3" seek_pointer="icons/pointer.png:13,3" zPosition="3" transparent="1"/>		
 	</screen>
+	<!-- (048) ####### Movie Selection Lista de Peliculas (MoviePlayer Standard)  ####### -->	
+	<screen name="MovieSelection" title="Movie Selection" position="0,0" size="1280,720" flags="wfNoBorder">
+		<ePixmap pixmap="menu/fr_mplayer.png" position="0,0" size="1280,720" zPosition="-1"/>
+	<!-- Lista  -->
+		<widget name="waitingtext" position="430,85" size="435,25" font="Regular;20" foregroundColor="yellow" transparent="0" halign="center" valign="top"/>
+		<widget name="list" zPosition="1" position="55,142" size="770,360" scrollbarMode="showOnDemand" transparent="0"/>
+		<ePixmap position="807,132" zPosition="3" size="25,470" pixmap="icons/barra375.png" alphatest="blend" transparent="1"/>
+        <widget name="TrashcanSize" position="405,70" size="300,120" font="Regular;20" foregroundColor="#0000fafa" backgroundColor="black" halign="center" valign="center" zPosition="2" transparent="1"/>
+		<widget name="freeDiskSpace" position="865,490" halign="center" valign="center" zPosition="4" size="370,25" font="Regular;19" foregroundColor="#004ccbde" transparent="1"/>		
+		<widget source="session.VideoPicture" render="Pig" position="875,150" size="315,172" zPosition="3" backgroundColor="#df0b1300"/>		
+		<widget name="DescriptionBorder" position="10,400" size="503,0" zPosition="3" transparent="1"/>
+        <widget name="chosenletter" position="845,345" size="380,185" font="Regular;50" halign="center" valign="center" transparent="1" zPosition="4"/>
+        <widget name="movie_sort" position="100,115" size="35,20" pixmaps="skin_default/icons/ask.png,skin_default/icons/movielist.png,skin_default/icons/quit.png,skin_default/icons/pause.png,skin_default/icons/playlist.png,skin_default/icons/playlistquit.png,skin_default/icons/loop.png,skin_default/icons/rep.png"	zPosition="10" transparent="1" alphatest="on"/>
+        <widget name="movie_off" position="140,115" size="35,20" pixmaps="skin_default/icons/ask.png,skin_default/icons/movielist.png,skin_default/icons/quit.png,skin_default/icons/pause.png,skin_default/icons/playlist.png,skin_default/icons/playlistquit.png,skin_default/icons/loop.png,skin_default/icons/rep.png"	zPosition="10" transparent="1" alphatest="on"/>	
+	<!-- Info de Pelicula -->
+        <widget source="Service" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="845,310" zPosition="4" size="370,173" font="Regular;20" foregroundColor="#00a1d1ff" backgroundColor="black" transparent="0" halign="center" valign="top">
+            <convert type="EventName">ExtendedDescription</convert>
+        </widget>
+	<!-- Info de Pelicula -->	
+		<widget source="Service" render="Label" position="1143,94" size="290,25" font="Regular;20" foregroundColor="#0000baff" backgroundColor="black" transparent="1" zPosition="4">
+		    <convert type="ServiceTime">StartTime</convert>
+		    <convert type="ClockToText">ShortDate</convert>
+		</widget>
+		<widget source="Service" render="Label" position="1157,113" zPosition="6" foregroundColor="#0000fafa" size="340,20" font="Regular;22" halign="left" transparent="1"> 
+			<convert type="ServiceTime">Duration</convert>
+			<convert type="ClockToText">AsLength</convert>
+		</widget>		
+		<widget source="Service" render="Label" position="1155,136" size="100,20" font="Regular;20" valign="center" foregroundColor="#0000baff" backgroundColor="black" transparent="1" zPosition="4">
+		    <convert type="MovieInfo">FileSize</convert>
+		</widget>
+		<ePixmap pixmap="icons/key_menu1.png" position="665,639" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_text.png" position="710,639" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_help.png" position="755,639" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_info.png" position="800,639" size="40,22" alphatest="blend"/>		
+		<ePixmap pixmap="buttons/red.png" position="170,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
+		<widget name="key_red" position="210,665" size="240,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
+		<ePixmap pixmap="buttons/green.png" position="440,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
+		<widget name="key_green" position="485,650" size="200,50" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
+		<ePixmap pixmap="buttons/yellow.png" position="685,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
+		<widget name="key_yellow" position="715,665" size="240,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
+		<ePixmap pixmap="buttons/blue.png" position="935,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
+		<widget name="key_blue" position="970,665" size="440,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>		
+	</screen>	
 	<!-- Template para Plugin EMC LISTA DE PELICULAS -->
 	<screen name="EMC" title="Movie Selection" position="0,0" size="1280,720" flags="wfNoBorder">
 		<ePixmap pixmap="menu/fr_mplayer.png" position="0,0" size="1280,720" zPosition="-1"/>
@@ -5247,7 +5255,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>			
 		
 	<!-- Record Name -->
-        <widget source="Service" render="RunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" position="430,85" size="435,25" font="Regular;20" foregroundColor="yellow" transparent="0" halign="center" valign="top">
+        <widget source="Service" render="RunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" position="430,85" size="435,25" font="Regular;20" foregroundColor="yellow" backgroundColor="black" transparent="0" halign="center" valign="top">
             <convert type="EventName">ExtendedDescription</convert>
         </widget>		
 		<ePixmap pixmap="buttons/red.png" position="170,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
