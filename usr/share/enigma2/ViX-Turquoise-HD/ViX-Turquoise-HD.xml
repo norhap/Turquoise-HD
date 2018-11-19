@@ -5184,11 +5184,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		    <convert type="ServiceTime">StartTime</convert>
 		    <convert type="ClockToText">ShortDate</convert>
 		</widget>
-		<widget source="Service" render="Label" position="1157,110" zPosition="6" foregroundColor="#0000fafa" size="340,20" font="Regular;22" halign="left" transparent="1"> 
+		<widget source="Service" render="Label" position="1157,100" zPosition="6" foregroundColor="#0000fafa" size="340,20" font="Regular;22" halign="left" transparent="1"> 
 			<convert type="ServiceTime">Duration</convert>
 			<convert type="ClockToText">AsLength</convert>
 		</widget>		
-		<widget source="Service" render="Label" position="1155,136" size="100,20" font="Regular;20" valign="center" foregroundColor="#0000baff" backgroundColor="black" transparent="1" zPosition="4">
+		<widget source="Service" render="Label" position="1155,126" size="100,20" font="Regular;20" valign="center" foregroundColor="#0000baff" backgroundColor="black" transparent="1" zPosition="4">
 		    <convert type="MovieInfo">FileSize</convert>
 		</widget>
 		<ePixmap pixmap="icons/key_menu1.png" position="665,639" size="40,22" alphatest="blend"/>
