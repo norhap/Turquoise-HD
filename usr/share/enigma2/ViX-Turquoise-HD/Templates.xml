@@ -300,7 +300,7 @@
 		<widget name="oktext" position="205,625" size="250,36" zPosition="1" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>		
 	</screen>
 	<screen name="Template-exit">	
-		<eLabel text="Exit" position="5,625" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" zPosition="1"/>
+		<eLabel text="Exit" position="5,625" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" zPosition="1" transparent="1"/>
     </screen>
 	<screen name="keysSetup">
 		<widget source="key_red" render="Label" position="5,625" size="250,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>	
@@ -395,6 +395,8 @@
 	<screen name="DownloadBar">
 		<widget name="action" position="5,3" size="435,25" font="Regular;22" backgroundColor="#0003424a"/>
 		<widget name="status" position="465,5" size="435,25" font="Regular;22" halign="center" backgroundColor="#0003424a"/>
+		<widget name="background" position="365,5" size="0,0" backgroundColor="#0003424a"/>
+		<widget name="progress" position="470,5" size="135,25" foregroundColor="#004ccbde" backgroundColor="#0003424a"/>		
 		<widget source="progress_text" render="Label" position="1005,5" size="135,25" font="Regular;22" halign="left" backgroundColor="#0003424a">
 			<convert type="ProgressToText">InText</convert>
 		</widget>
