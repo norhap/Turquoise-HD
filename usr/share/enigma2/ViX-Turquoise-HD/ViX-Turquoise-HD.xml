@@ -5166,7 +5166,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<screen name="MovieSelection" title="Movie Selection" position="0,0" size="1280,720" flags="wfNoBorder">
 		<ePixmap pixmap="menu/fr_mplayer.png" position="0,0" size="1280,720" zPosition="-1"/>
 	<!-- Lista  -->
-		<widget name="waitingtext" position="415,85" size="435,25" font="Regular;20" foregroundColor="yellow" transparent="0" halign="center" valign="top"/>
+		<widget name="waitingtext" position="415,90" size="435,20" font="Regular;20" foregroundColor="yellow" backgroundColor="black" transparent="1" halign="center" valign="top"/>
 		<widget name="list" zPosition="1" position="55,142" size="770,360" scrollbarMode="showOnDemand" transparent="0"/>
 		<ePixmap position="807,132" zPosition="3" size="25,470" pixmap="icons/barra375.png" alphatest="blend" transparent="1"/>
         <widget name="TrashcanSize" position="405,70" size="300,120" font="Regular;20" foregroundColor="#0000fafa" backgroundColor="black" halign="center" valign="center" zPosition="2" transparent="1"/>	
