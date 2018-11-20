@@ -5169,7 +5169,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="waitingtext" position="415,90" size="435,20" font="Regular;20" foregroundColor="yellow" backgroundColor="black" transparent="1" halign="center" valign="top"/>
 		<widget name="list" zPosition="1" position="55,142" size="770,360" scrollbarMode="showOnDemand" transparent="0"/>
 		<ePixmap position="807,132" zPosition="3" size="25,470" pixmap="icons/barra375.png" alphatest="blend" transparent="1"/>
-        <widget name="TrashcanSize" position="405,70" size="300,120" font="Regular;20" foregroundColor="#0000fafa" backgroundColor="black" halign="center" valign="center" zPosition="2" transparent="1"/>	
+        <widget name="TrashcanSize" position="395,70" size="300,120" font="Regular;20" foregroundColor="#0000fafa" backgroundColor="black" halign="center" valign="center" zPosition="2" transparent="1"/>	
 		<widget source="session.VideoPicture" render="Pig" position="870,145" size="335,172" zPosition="3" backgroundColor="#df0b1300"/>
 		<eLabel position="861,145" size="1,173" backgroundColor="#004ccbde" zPosition="3"/>
 		<eLabel position="1191,145" size="1,173" backgroundColor="#004ccbde" zPosition="3"/>
@@ -5185,7 +5185,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         </widget>
 		<widget name="freeDiskSpace" position="845,492" halign="center" valign="center" zPosition="4" size="370,25" font="Regular;19" foregroundColor="#004ccbde" transparent="1"/>			
 	<!-- Info de Pelicula -->	
-		<widget source="Service" render="Label" position="700,120" size="290,25" font="Regular;20" foregroundColor="#0000baff" backgroundColor="black" transparent="1" zPosition="4">
+		<widget source="Service" render="Label" position="673,120" size="290,25" font="Regular;20" foregroundColor="#0000baff" backgroundColor="black" transparent="1" zPosition="4">
 		    <convert type="ServiceTime">StartTime</convert>
 		    <convert type="ClockToText">ShortDate</convert>
 		</widget>
