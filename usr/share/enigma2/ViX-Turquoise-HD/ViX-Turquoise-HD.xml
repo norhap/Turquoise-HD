@@ -5178,10 +5178,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap position="885,112" zPosition="3" size="25,470" pixmap="icons/barra400.png" alphatest="blend" transparent="1"/>
         <widget name="TrashcanSize" position="380,70" size="300,120" font="Regular;20" foregroundColor="#0000fafa" backgroundColor="black" halign="center" valign="center" zPosition="2" transparent="1"/>	
 		<widget source="session.VideoPicture" render="Pig" position="912,145" size="320,172" zPosition="3" backgroundColor="#df0b1300"/>
-		<eLabel position="906,144" size="1,174" backgroundColor="#004ccbde" zPosition="3"/>
+		<eLabel position="910,144" size="1,174" backgroundColor="#004ccbde" zPosition="3"/>
 		<eLabel position="1233,144" size="1,174" backgroundColor="#004ccbde" zPosition="3"/>
-		<eLabel position="906,317" size="328,1" backgroundColor="#004ccbde" zPosition="3"/>
-		<eLabel position="906,144" size="328,1" backgroundColor="#004ccbde" zPosition="3"/>		
+		<eLabel position="910,317" size="324,1" backgroundColor="#004ccbde" zPosition="3"/>
+		<eLabel position="910,144" size="324,1" backgroundColor="#004ccbde" zPosition="3"/>		
 		<widget name="DescriptionBorder" position="10,400" size="503,0" zPosition="3" transparent="1"/>
         <widget name="chosenletter" position="845,345" size="380,185" font="Regular;50" halign="center" valign="center" transparent="1" zPosition="4"/>
         <widget name="movie_sort" position="55,110" size="35,20" pixmaps="skin_default/icons/ask.png,skin_default/icons/movielist.png,skin_default/icons/quit.png,skin_default/icons/pause.png,skin_default/icons/playlist.png,skin_default/icons/playlistquit.png,skin_default/icons/loop.png,skin_default/icons/rep.png"	zPosition="10" transparent="1" alphatest="on"/>
@@ -5278,11 +5278,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="key_yellow" position="685,625" size="240,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
 		<ePixmap pixmap="buttons/blue.png" position="900,650" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
 		<widget name="key_blue" position="920,625" size="440,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
-		<ePixmap pixmap="icons/key_menu1.png" position="905,670" size="40,22" alphatest="blend"/>			
-		<ePixmap pixmap="icons/key_info.png" position="950,670" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_epg_single.png" position="995,670" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_help.png" position="1040,670" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_text.png" position="1085,670" size="40,22" alphatest="blend"/>		
+		<ePixmap pixmap="icons/key_menu1.png" position="915,680" size="40,22" alphatest="blend"/>			
+		<ePixmap pixmap="icons/key_info.png" position="960,680" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_epg_single.png" position="1005,680" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_help.png" position="1050,680" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_text.png" position="1090,680" size="40,22" alphatest="blend"/>		
 	</screen>	
 	<!-- PLugin EMC Pantalla Lista de Peliculas--> 
  	<screen name="EMCSelectionOwn" position="fill" flags="wfNoBorder"> 
