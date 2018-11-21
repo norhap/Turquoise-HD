@@ -417,7 +417,6 @@
 	<!-- (033) ####### EVENT VIEW boton info desde MoviePlayer->EMC + epg search boton info ####### -->
 	<screen name="EventViewSimple" position="0,0"	size="1280,720" flags="wfNoBorder">
 		<ePixmap position="0,0" zPosition="0" size="1280,720" pixmap="ViX-Turquoise-HD/menu/fr_main_channels.png"/>
-		<widget name="key_blue" position="605,625" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<ePixmap position="660,634" zPosition="1" size="140,35" pixmap="ViX-Turquoise-HD/menu/colorbarB.png" alphatest="blend" transparent="1"/>			
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title_not_menu_path"/>
@@ -446,6 +445,8 @@
 		<ePixmap pixmap="icons/key_exit.png" position="760,674" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_menu1.png" position="715,674" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_info.png" position="670,674" size="40,22" alphatest="blend"/>
+		<!-- BOTON INFO DESDE EMC -->
+		<widget name="key_blue" position="605,625" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
     </screen>
 	
 	<!-- (033) ####### EVENT VIEW entre otros desde InfobarEPG->unico####### -->
@@ -4391,8 +4392,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>	
 	<!-- StreamingClientsInfo OK -->
 	<screen name="StreamingClientsInfo" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica_sRB"/>
-        <panel name="sRB"/>
+		<panel name="PantallaGenericaRB"/>
+        <panel name="sB"/>		
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -5174,7 +5175,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         </widget>		
 	<!-- Lista  -->
 		<widget name="waitingtext" position="415,90" size="435,20" font="Regular;20" foregroundColor="yellow" backgroundColor="black" transparent="1" halign="center" valign="top"/>
-		<widget name="list" zPosition="1" position="55,162" size="848,340" scrollbarMode="showOnDemand" transparent="0"/>
+		<widget name="list" zPosition="1" position="55,162" size="848,342" scrollbarMode="showOnDemand" transparent="0"/>
 		<ePixmap position="885,112" zPosition="3" size="25,470" pixmap="icons/barra400.png" alphatest="blend" transparent="1"/>
         <widget name="TrashcanSize" position="380,70" size="300,120" font="Regular;20" foregroundColor="#0000fafa" backgroundColor="black" halign="center" valign="center" zPosition="2" transparent="1"/>	
 		<widget source="session.VideoPicture" render="Pig" position="912,145" size="320,172" zPosition="3" backgroundColor="#df0b1300"/>
