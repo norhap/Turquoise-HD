@@ -2604,6 +2604,22 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
                 <convert type="ConditionalShowHide"/>
             </widget>	
 	</screen>
+	<!--####### SubsSupport downloader busqueda->tecla MENU ####### -->	
+    <screen name="SubsSearchContextMenu" position="835,387" size="393,244" zPosition="5" flags="wfNoBorder">
+        <widget source="subtitle_release" render="Label" position="5,5" size="390,50" valign="center" halign="center" font="Regular;19" foregroundColor="#66BFFF" zPosition="1"/>
+        <widget source="context_menu" render="Listbox" position="5,60" size="390,285" scrollbarMode="showNever" zPosition="1">
+            <convert type="TemplatedMultiContent">
+                {"templates":
+                    {"default": (22, [
+                    MultiContentEntryText(pos = (5, 0),   size = (380, 22),  font = 0, color = 0xffffff, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,  text = 0), # langname,
+                    ], True, "showOnDemand"),
+                    },
+                "fonts": [gFont("Regular", 19)],
+                    "itemHeight":22,
+                }
+            </convert>
+        </widget>
+    </screen>	
 	<!--####### SubsSupport Settings ####### -->
 	<screen name="SubsSupportSettings" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>		
