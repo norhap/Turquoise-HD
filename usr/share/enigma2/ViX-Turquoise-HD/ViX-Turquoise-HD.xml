@@ -4432,7 +4432,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
   	<screen name="HistoryZapSelector" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
-        <panel name="Title"/>
+        <panel name="Title_not_menu_path"/>
         <panel name="PIG"/>
   		<widget source="menu" render="Listbox" position="80,140" size="723,440" scrollbarMode="showOnDemand" selectionPixmap="ViX-Turquoise-HD/icons/ls700x110.png" backgroundColor="black" transparent="1" zPosition="-1">
   		    <convert type="TemplatedMultiContent">
