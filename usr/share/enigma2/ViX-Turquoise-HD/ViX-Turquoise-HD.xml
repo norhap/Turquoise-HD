@@ -1231,7 +1231,7 @@
 		<ePixmap pixmap="icons/key_help.png" position="8,640" size="40,22" alphatest="blend"/>		
 		<widget source="IFtext" render="Label" position="69,140" size="140,24" zPosition="10" font="Regular;24" backgroundColor="black" transparent="0"/>
 		<widget source="IF" render="Label" position="186,140" size="400,24" zPosition="10" font="Regular;24" foregroundColor="#004ccbde" backgroundColor="black" transparent="0"/>
-		<widget name="devicepic" position="525,130" size="40,40" pixmaps="icons/network_wired.png,icons/network_wireless.png,icons/network_wired-active.png,icons/network_wired-inactive.png,icons/network_wireless-active.png,icons/network_wireless-inactive.png" zPosition="10" transparent="1"/>		
+		<widget name="devicepic" position="525,130" size="40,40" pixmaps="icons/network_wired.png,icons/network_wireless.png,icons/network_wired-active.png,icons/network_wired-inactive.png,icons/network_wireless-active.png,icons/network_wireless-inactive.png" zPosition="10" alphatest="blend" transparent="1"/>		
 		<widget name="menulist" position="70,200" size="710,375" scrollbarMode="showOnDemand" selectionPixmap="ViX-Turquoise-HD/icons/ls680x26.png" transparent="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 		<widget name="description" position="845,415" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
@@ -3038,6 +3038,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="label" render="Label" position="828,349" size="400,160" font="Regular;22" halign="center" transparent="1"/>
 		<widget name="thn" position="839,112" size="382,218" alphatest="on"/>	
 	</screen>
+	
 	<!-- (105) ####### Pic_Exif (Picture) ####### (31-10) -->
 	<screen name="Pic_Exif" position="center,center" size="710,340" title="Info">
 		<ePixmap pixmap="ViX-Turquoise-HD/menu/backbox.png" zPosition="-1" position="0,0" size="710,340" alphatest="on"/>
@@ -3172,10 +3173,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
-        <panel name="PIG"/>
-		<ePixmap pixmap="icons/key_exit.png" position="10,682" size="40,22" zPosition="1" alphatest="blend"/>		
-		<widget name="text" position="80,137" size="715,32" font="Regular;24" transparent="1" foregroundColor="#004ccbde" backgroundColor="#00030303"/>  
-		<widget name="entries" position="80,177" size="715,400" zPosition="0" scrollbarMode="showOnDemand" transparent="1"/>  
+        <panel name="PIG"/>		
+		<widget name="text" position="95,137" size="722,32" font="Regular;24" transparent="1" foregroundColor="#004ccbde" backgroundColor="black"/>  
+		<widget name="entries" position="80,177" size="722,400" zPosition="0" scrollbarMode="showOnDemand" transparent="1" backgroundColor="black"/>  
 	</screen>
 	 <!-- (131) ####### CIselectMainMenu ####### -->
 	<screen name="CIselectMainMenu" position="center,center" size="710,240" title="CI Assignment">
@@ -3286,12 +3286,12 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <panel name="Title"/>
 	    <panel name="PIG"/>
 	    <panel name="sRG"/>				
-		<widget source="list" render="Listbox" position="69,137" size="715,427" zPosition="2" scrollbarMode="showOnDemand" transparent="1" backgroundColor="#00030303">
+		<widget source="list" render="Listbox" position="80,145" size="722,427" zPosition="2" scrollbarMode="showOnDemand" transparent="1" backgroundColor="#00030303">
 		    <convert type="TemplatedMultiContent">
 		<!-- device, description, devicepng, divpng -->
 			    {"template": [
 			    MultiContentEntryPixmapAlphaTest(pos = (2, 8), size = (54, 54), png = 2), # index 3 is the interface pixmap
-			    MultiContentEntryText(pos = (85, 6), size = (980, 54), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text = 1), # index 1 is the interfacename
+			    MultiContentEntryText(pos = (85, 6), size = (717, 54), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text = 1), # index 1 is the interfacename
 			    ],
 			    "fonts": [gFont("Regular", 26),gFont("Regular", 20)],
 			    "itemHeight": 70
@@ -3309,9 +3309,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <panel name="Title"/>
 	    <panel name="PIG"/>
 	    <panel name="sRG"/>		
-		<widget name="config" position="80,138" size="715,400" scrollbarMode="showAlways"/>
+		<widget name="config" position="80,138" size="722,400" scrollbarMode="showAlways"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
-		<widget source="introduction" render="Label" position="845,435" size="380,160" zPosition="2" halign="center" valign="center" font="Regular;24" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
+		<widget source="introduction" render="Label" position="845,435" size="380,160" zPosition="2" halign="center" valign="center" font="Regular;21" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 	</screen>
 	<!-- (158) ####### TempFanControl ####### -->	
 	<screen name="TempFanControl" position="center,center" size="950,280" title="Fan Control">
@@ -4378,7 +4378,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="IFtext" render="Label" position="80,135" size="120,25" font="Regular;22" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 		<widget source="IF" render="Label" position="245,135" size="400,25" font="Regular;22" halign="left" transparent="1" backgroundColor="black" zPosition="10"/>
 		<widget source="Statustext" render="Label" position="80,185" size="120,25" font="Regular;22" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
-		<widget name="devicepic" position="525,125" size="40,40" pixmaps="icons/network_wired.png,icons/network_wireless.png,icons/network_wired-active.png,icons/network_wired-inactive.png,icons/network_wireless-active.png,icons/network_wireless-inactive.png" zPosition="10" transparent="1"/>		
+		<widget name="devicepic" position="525,125" size="40,40" pixmaps="icons/network_wired.png,icons/network_wireless.png,icons/network_wired-active.png,icons/network_wired-inactive.png,icons/network_wireless-active.png,icons/network_wireless-inactive.png" zPosition="10" alphatest="blend" transparent="1"/>		
 		<widget name="statuspic" position="240,185" size="25,24" pixmaps="ViX-Turquoise-HD/icons/lock_on.png,ViX-Turquoise-HD/icons/lock_off.png" alphatest="on" transparent="1"/>
 		<ePixmap position="925,414" size="256,256" pixmap="menu/ico_wlan.png" alphatest="blend"/>
 	</screen>
@@ -4420,13 +4420,13 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<!-- ********** HDMI-CEC Setup ********** -->
 	<screen name="HdmiCECSetupScreen" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sRGYB"/>
+		<panel name="sRGYB"/>		
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
-        <panel name="PIG"/>
-        <panel name="sRGYB"/>		
-		<widget name="config" position="60,145" size="723,510" backgroundColor="black" transparent="1"/>
-		<widget source="current_address" render="Label" position="60,500" size="585,30" zPosition="2" font="Regular;21" halign="left" valign="center" foregroundColor="#00a1d1ff" backgroundColor="black" transparent="1"/>
-		<widget source="fixed_address" render="Label" position="60,540" size="700,30" zPosition="2" font="Regular;21" halign="left" valign="center" foregroundColor="#00a1d1ff" backgroundColor="black" transparent="1"/>
+        <panel name="PIG"/>		
+		<widget name="config" position="75,145" size="725,510" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
+		<widget source="current_address" render="Label" position="90,500" size="585,30" zPosition="2" font="Regular;21" halign="left" valign="center" foregroundColor="#00a1d1ff" backgroundColor="black" transparent="1"/>
+		<widget source="fixed_address" render="Label" position="90,540" size="700,30" zPosition="2" font="Regular;21" halign="left" valign="center" foregroundColor="#00a1d1ff" backgroundColor="black" transparent="1"/>
 		<ePixmap position="890,380" size="270,270" pixmap="menu/ico_hdmi.png" alphatest="blend"/>
 	</screen>
 	<!-- Historia Zapeo OK -->
@@ -4452,6 +4452,14 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
   		    </convert>
   		</widget>
   	</screen>
+	<!-- ********** ZAPEAR EL PIP ********** -->	
+	<screen name="PictureInPictureZapping" flags="wfNoBorder" backgroundColor="#0003424a" position="20,25" size="180,39" title="PiPZap" zPosition="2">
+	    <eLabel position="0,0" size="180,1" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="0,0" size="1,39" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="0,38" size="180,1" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="179,0" size="1,39" backgroundColor="#0000fafa" zPosition="1"/>		
+		<eLabel text="Zap-PiP" position="60,8" size="250,39" backgroundColor="#0003424a" transparent="1" font="Regular;20"/>
+	</screen>	
 	<!-- Event View Context Menu OK -->
 	<screen name="EventViewContextMenu" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
@@ -5308,7 +5316,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <widget name="Cover" position="947,150" size="285,365" backgroundColor="black" zPosition="1" alphatest="on"/>
         <widget name="CoverBgLbl" backgroundColor="#df0b1300" position="0,0" size="0,0" zPosition="0"/>
         <widget name="CoverBg" backgroundColor="#df0b1300" position="0,0" size="0,0" zPosition="0"/>
-        <widget name="Video" backgroundColor="#df0b1300" position="965,185" size="255,172" zPosition="0"/>		
+        <widget name="Video" backgroundColor="#df0b1300" position="955,185" size="255,172" zPosition="0"/>		
 		<!--widget name="list" position="50,145" size="598,350" itemHeight="25" CoolFont="Regular;20" CoolSelectFont="Regular;18" CoolDateFont="Regular;20" CoolMoviePos="35" CoolMovieSize="990" CoolFolderSize="990" CoolTitleColor="0" CoolDatePos="1000" CoolDateWidth="160" CoolDateColor="0" CoolHighlightColor="0" CoolProgressPos="1600" CoolBarPos="890" CoolBarHPos="8" CoolBarSize="55,10" CoolBarSizeSa="110,16" DefaultColor="#00FFFFFF" UnwatchedColor="#0000fafa" WatchingColor="#00FFFFFF" FinishedColor="red" RecordingColor="#009F1313" BackColorSel="#000a4b32" foregroundColorSelected="#004ccbde" backgroundColor="black" scrollbarMode="showOnDemand" transparent="1" zPosition="1"/-->
 		<widget name="list" position="70,167" size="875,333" CoolDirInfoWidth="110" CoolCSPos="680" CoolBarHPos="9" CoolBarPos="530" CoolBarSizeSa="85,16" CoolDateColor="1" CoolDateFont="Regular;14" CoolDateHPos="5" CoolDatePos="630" CoolDateWidth="160" CoolFolderSize="620" CoolFont="Regular;16" CoolHighlightColor="1" CoolIconPos="5" CoolIconSize="35,26" CoolMovieHPos="4" CoolMoviePiconPos="100" CoolMoviePiconSize="520" CoolMoviePos="40" CoolMovieSize="470" CoolPiconHPos="2" CoolPiconHeight="20" CoolPiconPos="13" CoolProgressPos="1600" CoolSelNumTxtWidth="10" CoolSelectFont="Regular;12" CoolTitleColor="1" DefaultColor="foreground" itemHeight="30" enableWrapAround="1" scrollbarMode="showOnDemand"/>
 		<ePixmap position="927,110" zPosition="3" size="25,470" pixmap="icons/barra400.png" alphatest="blend" transparent="1"/>
@@ -5645,8 +5653,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="oldversion" position="400,200" size="100,25" font="Regular;20" backgroundColor="black" foregroundColor="#0056c856"/>
 		<widget name="newversion_label" position="100,230" size="290,25" foregroundColor="#004ccbde" font="Regular;20" backgroundColor="black"/>
 		<widget name="newversion" position="400,230" size="100,25" font="Regular;20" backgroundColor="black" foregroundColor="#00ff4a3c"/>
-		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
-		<widget source="status" render="Label" position="835,440" size="390,25" foregroundColor="#004ccbde" font="Regular;20" backgroundColor="black" transparent="1" valign="center"/>
+		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
+		<widget source="status" render="Label" position="845,415" size="380,160" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 	</screen>		
 	<!-- ********** IMDB ********** -->
 	<screen name="IMDB" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -6366,9 +6374,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="list" render="Listbox" position="80,145" size="722,420" backgroundColor="black" selectionPixmap="icons/ls700x90.png" transparent="0" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-				MultiContentEntryText(pos = (160, 0), size = (413, 30), font=0, text = 0),
-				MultiContentEntryText(pos = (165, 30), size = (408, 50), font=1, flags = RT_VALIGN_TOP, text = 1),
-				MultiContentEntryPixmapAlphaBlend(pos = (0, 0), size = (80, 80), png = 2),
+				MultiContentEntryText(pos = (160, 10), size = (413, 30), font=0, text = 0),
+				MultiContentEntryText(pos = (165, 45), size = (408, 50), font=1, flags = RT_VALIGN_TOP, text = 1),
+				MultiContentEntryPixmapAlphaBlend(pos = (5, 0), size = (80, 80), png = 2),
 				],
 				"fonts": [gFont("Regular", 22),gFont("Regular", 17)],
 				"itemHeight": 85
