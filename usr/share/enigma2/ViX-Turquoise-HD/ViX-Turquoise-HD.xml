@@ -155,8 +155,8 @@
         <panel name="Titlechannellist"/>
 		<ePixmap position="790,120" zPosition="3" size="25,470" pixmap="ViX-Turquoise-HD/icons/barra470.png" alphatest="blend" transparent="1"/>		
 	<!-- Pig -->			
-        <widget source="session.VideoPicture" render="Pig" position="848,216" size="370,218" zPosition="3" backgroundColor="#df0b1300"/>
-		<eLabel position="838,414" size="382,20" backgroundColor="#20101010" zPosition="3"/>
+		<widget source="session.VideoPicture" render="Pig" position="840,215" size="370,215" zPosition="3" backgroundColor="#df0b1300"/>
+		<eLabel position="840,410" size="370,20" backgroundColor="#20101010" zPosition="3"/>
 	<!-- Nombre del Canal - Service Name -->
 		<widget source="session.Event_Now" render="Label" position="835,415" size="70,30" zPosition="4" halign="left" font="Regular;18" foregroundColor="#0000fafa" backgroundColor="background" transparent="1">
 			<convert type="EventTime">StartTime</convert>
@@ -697,11 +697,7 @@
 		<widget name="jump" position="560,75" size="200,25" font="Regular;15" foregroundColor="#0000fafa" backgroundColor="black" transparent="1"/>
 		<widget name="number" position="0,193" size="100,25" foregroundColor="#004ccbde" transparent="1"/>
 		<widget name="lab1" position="0,70" size="1280,615" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0"/>
-		<eLabel position="840,100" size="2,158" backgroundColor="#004ccbde" zPosition="3"/>
-		<eLabel position="1205,98" size="2,160" backgroundColor="#004ccbde" zPosition="3"/>
-		<eLabel position="840,258" size="367,2" backgroundColor="#004ccbde" zPosition="3"/>
-		<eLabel position="840,98" size="367,2" backgroundColor="#004ccbde" zPosition="3"/>
-		<widget source="session.VideoPicture" render="Pig" position="848,100" size="360,162" zPosition="0" backgroundColor="#df0b1300"/>		
+		<widget source="session.VideoPicture" render="Pig" position="848,110" size="350,150" zPosition="0" backgroundColor="#df0b1300"/>		
 		<widget name="timeline_text" position="65,260" size="1297,35" backgroundColor="black" foregroundColor="#004ccbde" transparent="1" zPosition="2"/>
 		<widget name="bouquetlist" position="65,260" size="1100,365" foregroundColorSelected="#0000fafa" scrollbarMode="showNever" zPosition="2" transparent="0"/>
 		<widget name="list" position="65,285" size="1142,340" backgroundColor="black" RecordForegroundColorSelected="yellow" scrollbarMode="showNever" zPosition="1" transparent="1"/>
@@ -2450,16 +2446,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="icons/key_menu1.png" position="8,640" size="40,22" alphatest="blend"/>
 		<ePixmap position="57,625" zPosition="1" size="349,45" pixmap="ViX-Turquoise-HD/menu/colorbarRG.png" alphatest="blend" transparent="1"/>		
 		<widget name="list" position="73,137" size="730,400" scrollbarMode="showOnDemand" selectionPixmap="ViX-Turquoise-HD/icons/ls680x50.png" transparent="1"/>
-	<!-- Widget Pig -->
-		 <widget source="session.VideoPicture" render="Pig" position="848,112" size="370,218" zPosition="3" backgroundColor="#df0b1300"/>
-	<!-- Barra Progresso -->
-		<widget source="session.Event_Now" render="Progress" pixmap="icons/tv_b_bar.png" size="340,2" position="837,338" zPosition="5" backgroundColor="darkgrey" transparent="1">
-			<convert type="EventTime">Progress</convert>
-		</widget>
-    <!-- digital clock -->
-		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00131313" transparent="1">
-            <convert type="ClockToText">Format:%H:%M :%S</convert>
-        </widget>
 	</screen>
 	<!-- (060) ####### PLUGINS DOWNLOAD ####### -->
 	<screen name="PluginDownloadBrowser" position="center,center" size="800,460" title="Downloadable plugins">
@@ -5203,7 +5189,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="list" zPosition="1" position="55,162" size="848,342" scrollbarMode="showOnDemand" transparent="0"/>
 		<ePixmap position="885,112" zPosition="3" size="25,470" pixmap="icons/barra400.png" alphatest="blend" transparent="1"/>
         <widget name="TrashcanSize" position="380,70" size="300,120" font="Regular;20" foregroundColor="#0000fafa" backgroundColor="black" halign="center" valign="center" zPosition="2" transparent="1"/>	
-		<widget source="session.VideoPicture" render="Pig" position="903,150" size="320,172" zPosition="3" backgroundColor="#df0b1300"/>
+		<widget source="session.VideoPicture" render="Pig" position="903,150" size="320,165" zPosition="3" backgroundColor="#df0b1300"/>
 		<eLabel position="910,144" size="1,174" backgroundColor="#004ccbde" zPosition="3"/>
 		<eLabel position="1233,144" size="1,174" backgroundColor="#004ccbde" zPosition="3"/>
 		<eLabel position="910,317" size="324,1" backgroundColor="#004ccbde" zPosition="3"/>
