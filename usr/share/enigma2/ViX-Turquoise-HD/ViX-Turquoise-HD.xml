@@ -162,7 +162,7 @@
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="835,410" size="382,25" zPosition="4" foregroundColor="#0000fafa" font="Regular;19" valign="center" halign="center" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="835,410" size="382,25" zPosition="4" foregroundColor="#0000fafa" backgroundColor="#20101010" font="Regular;19" valign="center" halign="center" transparent="1">
 		    <convert type="ServiceName">Name</convert>
 		</widget>
 		<widget source="session.Event_Now" render="Label" position="1150,415" zPosition="4" foregroundColor="#00a1d1ff" size="70,30" font="Regular;18" halign="right" backgroundColor="black" transparent="1">
