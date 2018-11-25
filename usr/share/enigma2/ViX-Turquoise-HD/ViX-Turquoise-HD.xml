@@ -697,7 +697,7 @@
 		<widget name="jump" position="560,75" size="200,25" font="Regular;15" foregroundColor="#0000fafa" backgroundColor="black" transparent="1"/>
 		<widget name="number" position="0,193" size="100,25" foregroundColor="#004ccbde" transparent="1"/>
 		<widget name="lab1" position="0,70" size="1280,615" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0"/>
-		<widget source="session.VideoPicture" render="Pig" position="848,110" size="350,150" zPosition="0" backgroundColor="#df0b1300"/>		
+		<widget source="session.VideoPicture" render="Pig" position="848,100" size="360,180" zPosition="0" backgroundColor="#df0b1300"/>		
 		<widget name="timeline_text" position="65,260" size="1297,35" backgroundColor="black" foregroundColor="#004ccbde" transparent="1" zPosition="2"/>
 		<widget name="bouquetlist" position="65,260" size="1100,365" foregroundColorSelected="#0000fafa" scrollbarMode="showNever" zPosition="2" transparent="0"/>
 		<widget name="list" position="65,285" size="1142,340" backgroundColor="black" RecordForegroundColorSelected="yellow" scrollbarMode="showNever" zPosition="1" transparent="1"/>

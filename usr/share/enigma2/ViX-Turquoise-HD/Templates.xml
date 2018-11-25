@@ -42,25 +42,25 @@
 	<!-- ### TEMPLATE TITULOS -->
 	<screen name="Title">
 	    <panel name="menu_path_compressed" conditional="menu_path_compressed"/>
-		<widget source="Title" render="Label" zPosition="2" position="78,15" foregroundColor="#0000fafa" backgroundColor="#040404" size="700,50" transparent="1" font="Regular;24" halign="center" valign="top"/>		
-		<ePixmap pixmap="ViX-Turquoise-HD/menu/border_title.png" zPosition="0" position="110,0" size="580,90"/>
+		<widget source="Title" render="Label" zPosition="2" position="78,20" foregroundColor="#0000fafa" backgroundColor="#040404" size="700,50" transparent="1" font="Regular;24" halign="center" valign="top"/>		
+		<ePixmap pixmap="ViX-Turquoise-HD/menu/border_title.png" zPosition="0" position="110,5" size="580,90"/>
 	    <!--widget source="menu_path_compressed" render="Label" zPosition="2" position="70,48" size="725,32" transparent="1" font="Regular;17" halign="center" valign="center" foregroundColor="#0000fafa" backgroundColor="#00000000"/-->
 	</screen>
 	<screen name="menu_path_compressed">
-	    <widget source="menu_path_compressed" render="Label" zPosition="2" position="70,48" size="725,32" transparent="1" font="Regular;17" halign="center" valign="center" foregroundColor="#0000fafa" backgroundColor="#00000000"/>
+	    <widget source="menu_path_compressed" render="Label" zPosition="2" position="70,53" size="725,32" transparent="1" font="Regular;17" halign="center" valign="center" foregroundColor="#0000fafa" backgroundColor="#00000000"/>
 	</screen>		
 	<screen name="Title_not_menu_path">
-		<widget source="Title" render="Label" zPosition="2" position="78,20" foregroundColor="#0000fafa" backgroundColor="#040404" size="700,40" transparent="1" font="Regular;24" halign="center" valign="center"/>		
-		<ePixmap pixmap="ViX-Turquoise-HD/menu/border_title.png" zPosition="0" position="110,0" size="580,90"/>
+		<widget source="Title" render="Label" zPosition="2" position="78,25" foregroundColor="#0000fafa" backgroundColor="#040404" size="700,40" transparent="1" font="Regular;24" halign="center" valign="center"/>		
+		<ePixmap pixmap="ViX-Turquoise-HD/menu/border_title.png" zPosition="0" position="110,5" size="580,90"/>
 	</screen>	
 	<screen name="Titlerunning">
-		<widget source="Title" render="RunningText" options="movetype=running,startpoint=0,startdelay=3000,wrap=0,always=0,repeat=2,oneshot=1" zPosition="2" position="120,20" foregroundColor="#0000fafa" backgroundColor="#040404" size="615,50" transparent="0" font="Regular;24" halign="center" valign="center"/>		
-		<ePixmap pixmap="ViX-Turquoise-HD/menu/border_title.png" zPosition="1" position="110,0" size="580,90" alphatest="blend"/>
+		<widget source="Title" render="RunningText" options="movetype=running,startpoint=0,startdelay=3000,wrap=0,always=0,repeat=2,oneshot=1" zPosition="2" position="120,25" foregroundColor="#0000fafa" backgroundColor="#040404" size="615,50" transparent="0" font="Regular;24" halign="center" valign="center"/>		
+		<ePixmap pixmap="ViX-Turquoise-HD/menu/border_title.png" zPosition="1" position="110,5" size="580,90" alphatest="blend"/>
 	    <!--widget source="menu_path_compressed" render="Label" zPosition="1" position="0,25" size="820,32" font="Regular;15" halign="center" valign="center" foregroundColor="#0000fafa" backgroundColor="#00000000"/-->
 	</screen>	
 	<screen name="Titlechannellist">
-		<widget source="Title" render="Label" zPosition="1" position="78,20" foregroundColor="#0000fafa" backgroundColor="#040404" size="615,50" transparent="1" font="Regular;21" halign="center" valign="center"/>		
-		<ePixmap pixmap="ViX-Turquoise-HD/menu/border_title.png" zPosition="0" position="58,0" size="580,90" alphatest="blend"/>
+		<widget source="Title" render="Label" zPosition="1" position="78,25" foregroundColor="#0000fafa" backgroundColor="#040404" size="615,50" transparent="1" font="Regular;21" halign="center" valign="center"/>		
+		<ePixmap pixmap="ViX-Turquoise-HD/menu/border_title.png" zPosition="0" position="58,5" size="580,90" alphatest="blend"/>
 	    <!--widget source="menu_path_compressed" render="Label" zPosition="1" position="0,25" size="820,32" font="Regular;15" halign="center" valign="center" foregroundColor="#0000fafa" backgroundColor="#00000000"/-->
 	</screen>	
 	<!-- ### TEMPLATE PIG + Nombre Evento + Progreso + Reloj LCD 2 Pantallas Izquierda-->
@@ -70,7 +70,7 @@
 	    <widget source="session.VideoPicture" render="Pig" position="840,115" size="370,215" zPosition="3" backgroundColor="#df0b1300"/>
 		<eLabel position="840,310" size="370,20" backgroundColor="#20101010" zPosition="3"/>
 	<!-- Nombre del Canal - Service Name -->		
-		<widget source="session.CurrentService" render="Label" position="838,310" size="382,25" zPosition="4" foregroundColor="#0000fafa" backgroundColor="#20101010" font="Regular;20" valign="center" halign="center" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="838,310" size="382,25" zPosition="4" foregroundColor="#0000fafa" font="Regular;20" valign="center" halign="center" transparent="1">
 		    <convert type="ServiceName">Name</convert>
 		</widget>		
 	<!-- Barra Progresso -->
