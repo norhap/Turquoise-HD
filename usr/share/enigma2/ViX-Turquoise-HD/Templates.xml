@@ -59,8 +59,8 @@
 	    <!--widget source="menu_path_compressed" render="Label" zPosition="1" position="0,25" size="820,32" font="Regular;15" halign="center" valign="center" foregroundColor="#0000fafa" backgroundColor="#00000000"/-->
 	</screen>	
 	<screen name="Titlechannellist">
-		<widget source="Title" render="Label" zPosition="1" position="78,25" foregroundColor="#0000fafa" backgroundColor="#040404" size="615,50" transparent="1" font="Regular;21" halign="center" valign="center"/>		
-		<ePixmap pixmap="ViX-Turquoise-HD/menu/border_title.png" zPosition="0" position="58,5" size="580,90" alphatest="blend"/>
+		<widget source="Title" render="Label" zPosition="1" position="78,22" foregroundColor="#0000fafa" backgroundColor="#040404" size="615,50" transparent="1" font="Regular;21" halign="center" valign="center"/>		
+		<ePixmap pixmap="ViX-Turquoise-HD/menu/border_title.png" zPosition="0" position="58,2" size="580,90" alphatest="blend"/>
 	    <!--widget source="menu_path_compressed" render="Label" zPosition="1" position="0,25" size="820,32" font="Regular;15" halign="center" valign="center" foregroundColor="#0000fafa" backgroundColor="#00000000"/-->
 	</screen>	
 	<!-- ### TEMPLATE PIG + Nombre Evento + Progreso + Reloj LCD 2 Pantallas Izquierda-->
