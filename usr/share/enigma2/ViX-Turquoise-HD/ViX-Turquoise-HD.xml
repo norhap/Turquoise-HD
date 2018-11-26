@@ -890,8 +890,23 @@
 		<!--widget name="windowtitle" position="230,15" foregroundColor="#00bab329" backgroundColor="#0003424a" size="200,25" font="Regular;20"/-->
 		<widget name="text" position="0,0" size="0,0" font="Regular;22"/>
 		<widget name="list" position="0,3" size="210,50" backgroundColor="#0003424a" scrollbarMode="showOnDemand" borderWidth="1"/>
-        <ePixmap position="195,0" zPosition="3" size="20,55" pixmap="ViX-Turquoise-HD/icons/barra20-55.png" alphatest="blend"/>		
-	</screen>	
+        <ePixmap position="195,0" zPosition="3" size="20,55" pixmap="ViX-Turquoise-HD/icons/barra20-55.png" alphatest="blend"/>
+        <widget name="description" position="75,505" size="728,70" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>		
+	</screen>
+	<screen name="RemoveTimerQuestion" position="center,center" size="355,55" backgroundColor="#0003424a" zPosition="5" flags="wfNoBorder">
+	    <eLabel position="0,0" size="355,1" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="0,0" size="1,55" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="0,54" size="355,1" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="354,0" size="1,55" backgroundColor="#0000fafa" zPosition="1"/>	
+		<!--widget name="windowtitle" position="230,15" foregroundColor="#00bab329" backgroundColor="#0003424a" size="200,25" font="Regular;20"/-->
+		<widget name="text" position="0,0" size="0,0" font="Regular;22"/>
+		<widget name="list" position="0,3" size="210,50" backgroundColor="#0003424a" scrollbarMode="showOnDemand" borderWidth="1"/>
+        <ePixmap position="195,0" zPosition="3" size="20,55" pixmap="ViX-Turquoise-HD/icons/barra20-55.png" alphatest="blend"/>
+        <widget name="description" position="75,505" size="728,70" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>	
+		<applet type="onLayoutFinish">
+self.autoResize()
+		</applet>
+	</screen>		
 	<!-- (040) ####### MENU HELP ####### (12-02) -->
 	<screen name="HelpMenu" position="fill" title="Help Menu" flags="wfNoBorder">
 	    <panel name="Title_not_menu_path"/>
@@ -1805,8 +1820,7 @@
 		</widget>
         <widget source="session.CurrentService" render="Label" position="885,610" size="450,26" halign="left" valign="center" font="Regular;15" transparent="1" backgroundColor="background" zPosition="6">
 		    <convert type="BTVDevicesInfo">UsbInfo</convert>
-		</widget>
-        <widget name="description" position="75,505" size="728,70" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>		
+		</widget>		
 	</screen>
 	<!-- (027) ####### Console ver log backup full instalacion plugins etc  ####### -->
 	<screen name="Console" position="fill">
