@@ -654,15 +654,15 @@
             <convert type="ClockToText">Format:%H:%M :%S</convert>
         </widget>
 		<widget source="Title" render="Label" position="40,15" size="400,43" font="Regular;32" transparent="1" foregroundColor="#004ccbde" backgroundColor="black" zPosition="1"/>		
-		<widget source="Event" render="Label" position="280,225" size="100,28" font="Regular;20" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1">
+		<widget source="Event" render="Label" position="280,237" size="100,28" font="Regular;20" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1">
 		    <convert type="EventTime">StartTime</convert>
 		    <convert type="ClockToText">Format:%H:%M </convert>
 		</widget>
-		<eLabel position="280,246" size="350,2" backgroundColor="grey"/>
-		<widget source="Event" render="Progress" pixmap="icons/tv_b_bar.png" position="280,246" size="350,3" backgroundColor="grey" borderWidth="0" transparent="1" zPosition="1">
+		<!--eLabel position="280,246" size="350,2" backgroundColor="grey"/-->
+		<widget source="Event" render="Progress" pixmap="icons/tv_b_bar.png" position="280,256" size="350,3" backgroundColor="grey" borderWidth="0" transparent="1" zPosition="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-		<widget  source="Event" render="Label" position="550,225" size="80,28" font="Regular;20" halign="right" foregroundColor="#00a1d1ff" backgroundColor="black" transparent="1">
+		<widget  source="Event" render="Label" position="550,237" size="80,28" font="Regular;20" halign="right" foregroundColor="#00a1d1ff" backgroundColor="black" transparent="1">
 		    <convert type="EventTime">EndTime</convert>
 		    <convert type="ClockToText">Format:%H:%M</convert>
 		</widget>		
