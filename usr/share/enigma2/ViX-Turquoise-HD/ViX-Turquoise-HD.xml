@@ -1817,7 +1817,8 @@ self.autoResize()
 		</widget>
         <widget source="session.CurrentService" render="Label" position="885,610" size="450,26" halign="left" valign="center" font="Regular;15" transparent="1" backgroundColor="background" zPosition="6">
 		    <convert type="BTVDevicesInfo">UsbInfo</convert>
-		</widget>		
+		</widget>
+		<widget name="description" conditional="description" position="845,415" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>/>		
 	</screen>
 	<!-- (027) ####### Console ver log backup full instalacion plugins etc  ####### -->
 	<screen name="Console" position="fill">
@@ -2725,7 +2726,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
 		<widget name="timer1" position="80,140" size="690,50" scrollbarMode="showNever"/>
 		<widget name="timer2" position="80,220" size="690,50" scrollbarMode="showNever"/>
-		<widget name="list" position="80,350" size="695,50" scrollbarMode="showOnDemand" transparent="1"/>		
+		<widget name="list" position="80,350" size="722,250" scrollbarMode="showOnDemand" transparent="1"/>		
 	</screen>
 	<!-- (082) ####### TIMER SELECTION ####### (15-02) -->
 	<screen name="TimerSelection" position="fill" title="Timer selection" backgroundColor="black" flags="wfNoBorder">
