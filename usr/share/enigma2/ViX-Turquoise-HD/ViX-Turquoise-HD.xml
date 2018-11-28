@@ -4308,8 +4308,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
-		<widget name="AboutScrollLabel" position="100,140" size="702,420" font="Regular;21" backgroundColor="black" transparent="1"/>		
+		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
+		<widget source="lab1" render="Label" position="235,110" size="400,25" font="Regular;24" foregroundColor="#0000fafa" backgroundColor="black" halign="center" valign="center" transparent="1" zPosition="3"/>
+		<widget source="lab2" render="Label" position="235,145" size="400,25" font="Regular;22" foregroundColor="#0000baff" backgroundColor="black" halign="center" valign="center" transparent="1" zPosition="3"/>
+		<widget source="lab3" render="Label" position="190,175" size="500,25" font="Regular;22" backgroundColor="black" halign="center" valign="center" transparent="1" zPosition="3"/>		
+		<widget name="AboutScrollLabel" position="100,220" size="702,420" font="Regular;21" backgroundColor="black" transparent="1"/>			
 	</screen>
 	<!-- OE-A Core boton azul Acerda de -->
 	<screen name="CommitInfo" position="fill" flags="wfNoBorder">
