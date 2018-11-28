@@ -1314,7 +1314,7 @@ self.autoResize()
 	</screen>
 
 	<!-- (074) ####### WIZARD ASISTENTE BASICO NO RESTAURACION Y ASISTENTE DE RED ####### -->	
-    <screen name="NetworkWizard" position="5,55" size="1265,720" zPosition="-1" backgroundColor="#03424a" title="Bienvenido...">
+    <screen name="NetworkWizard" position="5,55" size="1265,720" zPosition="-1" backgroundColor="#03424a" title="Welcome...">
 		<widget source="global.CurrentTime" render="Label" position="830,5" size="350,25" font="LCD;24" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1">
 		    <convert type="ClockToText">Date</convert>
 		</widget>
@@ -1894,7 +1894,7 @@ self.autoResize()
         <widget name="wizard" pixmap="icons/wizard.png" position="850,350" zPosition="10" size="140,188" alphatest="blend"/>		
 	</screen>
 	<!-- (074) ####### HDMI Y COMPONENTES ####### -->	
-	<screen name="VideoWizard" position="25,70" size="1225,720" zPosition="-1" backgroundColor="#03424a" title="Bienvenido...">
+	<screen name="VideoWizard" position="25,70" size="1225,720" zPosition="-1" backgroundColor="#03424a" title="Welcome...">
 		<widget source="global.CurrentTime" render="Label" position="900,0" size="350,25" font="LCD;24" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1">
 		    <convert type="ClockToText">Date</convert>
 		</widget>
@@ -1917,7 +1917,7 @@ self.autoResize()
 		<widget name="portpic" position="300,300" zPosition="10" size="150,150" transparent="1" alphatest="on"/>
     </screen>	 	
 	<!-- (074) ####### COMIENZO DEL ASISTENTE HASTA INICIAR IMAGEN ####### -->	
-    <screen name="StartWizard" position="25,70" size="1225,720" zPosition="-1" backgroundColor="#03424a" title="Bienvenido...">
+    <screen name="StartWizard" position="25,70" size="1225,720" zPosition="-1" backgroundColor="#03424a" title="Welcome...">
 		<widget source="global.CurrentTime" render="Label" position="900,0" size="350,25" font="LCD;24" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1">
 		    <convert type="ClockToText">Date</convert>
 		</widget>
@@ -1944,7 +1944,7 @@ self.autoResize()
 		</widget>
 		<widget name="config" zPosition="1" position="15,5" size="755,600" backgroundColor="#03424a" scrollbarMode="showOnDemand" transparent="1"/> 
     </screen>
-	<screen name="InstallWizard" position="15,70" size="1280,720" zPosition="-1" backgroundColor="#03424a" title="Bienvenido...">
+	<screen name="InstallWizard" position="15,70" size="1280,720" zPosition="-1" backgroundColor="#03424a" title="Welcome...">
 		<widget name="config" zPosition="1" position="15,5" size="755,600" backgroundColor="#03424a" scrollbarMode="showOnDemand" transparent="1"/> 
     </screen>
 	<screen name="InstallWizardIpkgUpdater" position="fill" backgroundColor="#0003424a" flags="wfNoBorder">
@@ -1952,7 +1952,7 @@ self.autoResize()
         <ePixmap pixmap="menu/logo_openboxtv.png" position="582,180" size="100,100" alphatest="blend"/>	
 		<widget source="statusbar" render="Label" position="280,350" size="720,75" foregroundColor="#00ffffff" zPosition="2" transparent="1" font="Regular;25" halign="center"/>
 	</screen>
-	<screen name="MessageBoxWizard" position="25,70" size="1225,720" zPosition="-1" backgroundColor="#03424a" title="">
+	<screen name="MessageBoxWizard" position="25,70" size="1225,720" zPosition="-1" backgroundColor="#03424a" title="Restore Wizard">
 		<widget source="global.CurrentTime" render="Label" position="1100,37" size="100,28" font="Regular;26" halign="right" transparent="1" backgroundColor="#03424a" zPosition="13">
 			<convert type="ClockToText">Default</convert>
 		</widget>
