@@ -58,7 +58,7 @@
 	</screen>	
 	<!--  Harddisk inicio-formatear + comprobar del sistema de archivos comprobar -->
 	<screen name="HarddiskSetup" position="fill" title="Harddisk" flags="wfNoBorder">
-		<panel name="PantallaGenericaRG"/>
+		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>				
@@ -509,7 +509,7 @@
 	
 	<!-- (034) ####### EPG Selection - busqueda de todos los eventos de canal unico ####### (12-02) -->
 	<screen name="EPGSelection" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>
+		<panel name="PantallaGenericaConfig"/>
         <panel name="PIG"/>
         <panel name="Title_not_menu_path"/>
 		<panel name="ScrollBarTemplate"/>
@@ -533,7 +533,7 @@
 		</widget>
 	</screen>
 	<screen name="EPGSearch" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>
+		<panel name="PantallaGenericaConfig"/>
         <panel name="PIG"/>
         <panel name="Title_not_menu_path"/>
 		<panel name="ScrollBarTemplate"/>
@@ -841,7 +841,7 @@
 	</screen>	
 	<!-- (035) ####### EPG SELECTION MULTI ####### (12-02) -->
 	<screen name="EPGSelectionMulti" position="0,0"	size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>		
+		<panel name="PantallaGenericaConfig"/>		
         <panel name="PIG"/>
         <panel name="Title_not_menu_path"/>
 		<panel name="ScrollBarTemplate"/>
@@ -942,7 +942,7 @@ self.autoResize()
 	</screen>
 	<!-- (041) ####### LANGUAGE SELECTION ####### (12-02) -->
 	<screen name="LanguageSelection" position="fill" title="Language selection" flags="wfNoBorder">
-		<panel name="PantallaGenericaRG"/>
+		<panel name="PantallaGenericaConfig"/>
 		<panel name="Title"/>
         <panel name="PIG"/>
         <panel name="ScrollBarTemplate"/>
@@ -1132,7 +1132,7 @@ self.autoResize()
 	</screen>
 	<!-- ####### MANEJAR SOFTWARE->Opciones Avandas->Manejo de paquetes ####### -->
 	<screen name="PacketManager" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRG"/>
+		<panel name="PantallaGenericaConfig"/>
         <panel name="PIG"/>
         <panel name="Title"/>
 		<panel name="ScrollBarTemplate"/>
@@ -1332,7 +1332,7 @@ self.autoResize()
 		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
         <widget name="wizard" pixmap="icons/wizard.png" position="920,100" zPosition="10" size="140,188" alphatest="blend"/>		
 		<widget source="list" render="Listbox" position="25,130" size="750,600" transparent="1" backgroundColor="black" scrollbarMode="showOnDemand" zPosition="3">
-		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="125,170" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
+		<widget name="HelpWindow" pixmap="icons/key_text.png" position="125,170" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
 		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,680" zPosition="2" size="40,22" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>		
@@ -1518,7 +1518,7 @@ self.autoResize()
 	</screen>
 	<!-- Network AFP  -->
 	<screen name="NetworkAfp" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>	
+		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>		
@@ -1530,7 +1530,7 @@ self.autoResize()
 	</screen>	
 	<!-- ********** Configuracion FTP Samba y CIFS ********** -->
 	<screen name="NetworkSamba" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>	
+		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>		
@@ -1542,7 +1542,7 @@ self.autoResize()
 	</screen>
 	<!-- Network Inadyn Setup OK -->
 	<screen name="NetworkInadyn" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>	
+		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -1568,7 +1568,7 @@ self.autoResize()
 		
 	<!-- NetWork Inadyn Setup OK -->
 	<screen name="InadynSetup" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>	
+		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -1591,7 +1591,7 @@ self.autoResize()
 	</screen>
 	<!-- NetWork MiniDLNA OK -->
 	<screen name="NetworkMiniDLNA" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>	
+		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -1638,7 +1638,7 @@ self.autoResize()
 		
 	<!-- NetWork OpenVPN Setup OK -->
 	<screen name="NetworkOpenvpn" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>	
+		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -1650,7 +1650,7 @@ self.autoResize()
 	</screen>
 	<!-- Network SABnzbd  -->
 	<screen name="NetworkSABnzbd" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>	
+		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>		
@@ -1678,7 +1678,7 @@ self.autoResize()
 		
 	<!-- NetWork uShare OK -->
 	<screen name="NetworkuShare" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>	
+		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -1713,7 +1713,7 @@ self.autoResize()
 	</screen>
 	<!-- NetWork uShare Selection OK -->
 	<screen name="uShareSelection" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>	
+		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -2041,7 +2041,7 @@ self.autoResize()
 	</screen>
 	<!-- (043) ####### NimSetup Modo Configuracion boton amarillo ####### -->
 	<screen name="NimSetup" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>	
+		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>	
@@ -2051,7 +2051,7 @@ self.autoResize()
 	</screen>
 	<!-- (068) ####### Seleccion Satelites Tuner ####### -->	
 	<screen name="SelectSatsEntryScreen" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>	
+		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>		
@@ -2087,7 +2087,7 @@ self.autoResize()
 	</screen>	
 	<!-- (069) ####### Servicio escaneo canales barra progreso ####### -->
 	<screen name="ServiceScan" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRG"/>	
+		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title_not_menu_path"/>
 		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00131313" transparent="1">
@@ -2132,7 +2132,7 @@ self.autoResize()
 	</screen>
 	<!-- Busqueda de Cable OK -->
 	<screen name="CableScanStatus" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>	
+		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>	
@@ -2141,7 +2141,7 @@ self.autoResize()
 	</screen>
 	<!-- ####### CONFIGURACION DEL POSICIONADOR ####### -->  
 	<screen name="PositionerSetup" position="fill" title="Positioner setup" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>	
+		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title_not_menu_path"/>
         <panel name="PIG"/>
@@ -2312,7 +2312,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- ####### MENU PARA CONFIGURAR RUTAS DE GRABACION MARCADORES ENTRE OTRAS ####### -->	
 	<screen name="LocationBox" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>
+		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title_not_menu_path"/>
         <panel name="PIG"/>		
@@ -2446,7 +2446,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>	
 	<!-- (058) ####### PLUGIN COMPLEMENTOS ####### (15-02) -->
 	<screen name="PluginBrowser" position="fill" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="PantallaGenericaRG"/>	
+		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -2662,7 +2662,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- (072) ####### AÑADIR DE LISTA DE CANALES UN CANAL PARA AUTOTEMPORIZADOR (eventos en amarillo) ####### -->
 	<screen name="SimpleChannelSelection" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>	
+		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title_not_menu_path"/>
         <panel name="PIG"/>		
@@ -2708,11 +2708,13 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="apply" position="210,240" size="250,35"/>
 	</screen>
 	<!-- (080) ####### TEMPORIZADORES LISTA DE EVENTOS PARA GRABAR BOTON->INFO ####### -->
-	<screen name="TimerLog" position="fill">
-		<panel name="PantallaGenericaRGYB"/>	
+	<screen name="TimerLog" position="fill" zPosition="-1" flags="wfNoBorder">
+		<panel name="PantallaGenericaRB"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
-        <panel name="PIG"/>	
+        <panel name="PIG"/>
+		<widget name="key_green" objectTypes="key_green,Label,Button" position="255,614" size="150,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget name="key_yellow" objectTypes="key_green,Label,Button" position="470,614" size="125,50" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
 		<widget name="loglist" position="62,155" size="735,425" font="Regular;16" scrollbarMode="showOnDemand" transparent="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
         <widget name="logentry" position="845,435" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>		
@@ -2754,9 +2756,31 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 	</screen>
 	<!-- ####### TEMPORIZADORES + TEMPORIZADORES DE ALIMENTACION (no panel PantallaGenericaRGYB) ####### -->
-	<screen name="TimerEditList" position="fill" title="Timer Editor" backgroundColor="black" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>
-		<panel name="sRGYB"/>		
+	<screen name="TimerEditList" position="fill" backgroundColor="black" flags="wfNoBorder">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<!-- Rojo button -->		
+		<ePixmap objectTypes="key_red,Button,Label" pixmap="menu/colorbarR.png" position="60,635" size="140,35" alphatest="blend" transparent="1"/>
+		<widget source="key_red" objectTypes="key_red,StaticText" render="Pixmap" pixmap="menu/colorbarR.png" position="60,635" size="140,35" alphatest="blend" transparent="1">
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget name="key_red" objectTypes="key_green,Label,Button" position="55,614" size="150,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget source="key_red" render="Label" objectTypes="key_red,StaticText" position="55,614" size="150,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<!-- Verde button -->
+		<ePixmap objectTypes="key_green,Button,Label" pixmap="menu/colorbarG.png" position="260,635" size="140,35" alphatest="blend" transparent="1"/>
+		<widget source="key_green" objectTypes="key_green,StaticText" render="Pixmap" pixmap="menu/colorbarG.png" position="260,635" size="140,35" alphatest="blend" transparent="1">
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget name="key_green" objectTypes="key_green,Label,Button" position="255,614" size="150,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget source="key_green" render="Label" objectTypes="key_green,StaticText" position="255,614" size="150,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<!-- Amarillo button -->			
+		<ePixmap objectTypes="key_yellow,Button,Label" pixmap="menu/colorbarY.png" position="460,635" size="140,35" alphatest="blend" transparent="1"/>
+		<widget source="key_yellow" objectTypes="key_yellow,StaticText" render="Pixmap" pixmap="menu/colorbarY.png" position="460,635" size="140,35" alphatest="blend" transparent="1">
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget name="key_yellow" objectTypes="key_yellow,Label,Button" position="470,614" size="125,50" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget source="key_yellow" render="Label" objectTypes="key_yellow,StaticText" position="470,614" size="125,50" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget name="key_blue" objectTypes="key_blue,Label,Button" position="655,614" size="165,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget source="key_blue" render="Label" objectTypes="key_blue,StaticText" position="655,614" size="165,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
 		<panel name="ScrollBarTemplate"/>
 		<panel name="Title_not_menu_path"/>
 		<panel name="PIG"/>
@@ -4163,7 +4187,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
   	<!-- CrossEPG Configuration -->
 
 	<screen name="CrossEPG_Setup" position="fill" title="CrossEPG Configuration" flags="wfNoBorder">
-		<panel name="PantallaGenericaRG"/>
+		<panel name="PantallaGenericaConfig"/>
         <panel name="PIG"/>
 		<panel name="ScrollBarTemplate"/>		
 		<panel name="Title_not_menu_path"/>
@@ -4176,7 +4200,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 
 	<!-- Menu -->
 	<screen name="CrossEPG_Menu" position="fill" title="CrossEPG Menu" flags="wfNoBorder">
-		<panel name="PantallaGenericaRG"/>
+		<panel name="PantallaGenericaConfig"/>
         <panel name="PIG"/>
 		<panel name="ScrollBarTemplate"/>
 		<panel name="Title_not_menu_path"/>
@@ -4217,7 +4241,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 
 	<!-- Order List -->
 	<screen name="CrossEPG_Ordering" position="fill" title="CrossEPG Order Download List" backgroundColor="transparent" flags="wfNoBorder">
- 		<panel name="PantallaGenericaRGYB"/>
+ 		<panel name="PantallaGenericaConfig"/>
         <panel name="PIG"/>
 		<panel name="ScrollBarTemplate"/>		
 		<panel name="Title_not_menu_path"/>		
@@ -4286,7 +4310,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- Temporizadores Cron  -->
 	<screen name="CronTimers" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>
+		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>		
@@ -4304,7 +4328,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- Informacion About OK -->
 	<screen name="AboutOE" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>		
+		<panel name="PantallaGenericaConfig"/>		
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -4403,7 +4427,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>
 	</screen>
 	<screen name="ServiceInfoSimple" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRG"/>
+		<panel name="PantallaGenericaConfig"/>
 		<panel name="Title"/>
         <panel name="PIG"/>
         <panel name="ScrollBarTemplate"/>	
@@ -4513,7 +4537,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- OpenWebIf -->
 	<screen name="OpenWebifConfig" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRG"/>
+		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title_not_menu_path"/>
         <panel name="PIG"/>
@@ -4946,7 +4970,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	
 	<!-- EPG Import Configuration -->
 	<screen name="EPGImportConfig" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>
+		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title_not_menu_path"/>
         <panel name="PIG"/>		
@@ -4959,24 +4983,25 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 
 	<!-- EPG Import Sources -->
 	<screen name="EPGImportSources" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>
+		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title_not_menu_path"/>
         <panel name="PIG"/>	
-		<widget name="list" scrollbarMode="showOnDemand" position="75,145" size="723,420" backgroundColor="black" transparent="1"/>		
+		<widget name="list" scrollbarMode="showOnDemand" position="80,145" size="723,420" backgroundColor="black" transparent="1"/>		
 	</screen>
 
 	<!-- EPG Import Log -->
 	<screen name="EPGImportLog" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>
+		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title_not_menu_path"/>
         <panel name="PIG"/>	
-		<widget name="list" position="75,145" size="727,420" font="Regular;16" backgroundColor="black" transparent="1"/>		
+		<widget name="list" position="75,145" size="727,420" font="Regular;16" backgroundColor="black" transparent="1"/>
+		<ePixmap pixmap="icons/key_menu1.png" position="8,640" size="40,22" alphatest="blend"/>		
 	</screen>
 	<!-- IGNORAR SERVICIOS DE LA LISTA -->	
 	<screen name="filtersServicesSetup" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>
+		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title_not_menu_path"/>
         <panel name="PIG"/>	
@@ -4997,7 +5022,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- LISTA DE SERVICIOS LISTA DE CANALES -->	
 	<screen name="filtersServicesSelection" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>
+		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title_not_menu_path"/>
         <panel name="PIG"/>	
@@ -5037,7 +5062,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- dont saw this screen, may be later -->
 	<screen name="AutoTimerOverviewSummary" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>
+		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title_not_menu_path"/>		
         <panel name="PIG"/>
@@ -5566,7 +5591,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>	
 	<!-- EMC- CONFIGURACION DE BUSCAR CARATULA -->	
 	<screen name="imdbSetup" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRG"/>
+		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title_not_menu_path"/>		
         <panel name="PIG"/>
@@ -5592,7 +5617,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- (TMDB)-> MENU-->
  	<screen name="MovieInfoSetup" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRG"/>
+		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
 		<panel name="PIG"/>		
         <panel name="Title_not_menu_path"/>		
@@ -5640,7 +5665,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- Softcam Setup OK -->
 	<screen name="SoftcamSetup" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRG"/>
+		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title_not_menu_path"/>
         <panel name="PIG"/>	
@@ -5899,7 +5924,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- ####### SETUP ServiceApp ####### -->
 	<screen name="ServiceAppSettings" position="fill" title="ServiceApp Settings" flags="wfNoBorder">
-		<panel name="PantallaGenericaRG"/>
+		<panel name="PantallaGenericaConfig"/>
         <panel name="PIG"/>
         <panel name="Title_not_menu_path"/>
 		<panel name="ScrollBarTemplate"/>
@@ -6016,7 +6041,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>	
     <!-- ## AutoBouquetsMaker ->OK configurar + Proveedores ## -->
 	<screen name="AutoBouquetsMaker_Setup" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRG"/>
+		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title_not_menu_path"/>		
         <panel name="PIG"/>
@@ -6027,7 +6052,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
     <!-- ## AutoBouquetsMaker Orden Proveedores## -->	
 	<screen name="AutoBouquetsMaker_Ordering" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>
+		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title_not_menu_path"/>		
         <panel name="PIG"/>
@@ -6046,7 +6071,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>	
     <!-- ## AutoBouquetsMaker Ocultar Secciones## -->	
 	<screen name="AutoBouquetsMaker_HideSections" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRG"/>
+		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title_not_menu_path"/>		
         <panel name="PIG"/>		
@@ -6065,7 +6090,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
     <!-- ## AutoBouquetsMaker Mostrar Log ## -->
 	<screen name="AutoBouquetsMaker_Log" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRG"/>
+		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title_not_menu_path"/>		
         <panel name="PIG"/>		
@@ -6082,7 +6107,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>	
     <!-- ## AutoBouquetsMaker MENU ## -->	
 	<screen name="AutoBouquetsMaker_Menu" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRG"/>
+		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title_not_menu_path"/>		
         <panel name="PIG"/>		
@@ -6203,21 +6228,21 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="title" position="80,420" size="695,45" font="Regular;18" transparent="1"/>		
 	</screen>
 	<screen name="CCcamInfoShareInfo" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>	
+		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title_not_menu_path"/>		
         <panel name="PIG"/>		
 		<widget name="list" position="60,145" size="743,425" scrollbarMode="showOnDemand" transparent="1"/>
 	</screen>
 	<screen name="CCcamInfoRemoteBoxMenu" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>	
+		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title_not_menu_path"/>		
         <panel name="PIG"/>		
 		<widget name="list" position="60,145" size="740,427" transparent="1"/>
 	</screen>
 	<screen name="CCcamInfoConfigSwitcher" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>
+		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title_not_menu_path"/>		
         <panel name="PIG"/>
@@ -6243,7 +6268,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- Configuar Botones -->
 	<screen name="ButtonSetupSelect" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRG"/>
+		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title_not_menu_path"/>
         <panel name="PIG"/>
@@ -6308,7 +6333,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</applet>
 	</screen>
 	<screen name="VIXBackupManagerMenu" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>	
+		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -6330,14 +6355,14 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="checkList" position="75,140" size="728,425" scrollbarMode="showOnDemand" selectionPixmap="ViX-Turquoise-HD/icons/ls700x30-h.png" transparent="1"/>		
 	</screen>
 	<screen name="RestoreMenu" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRG"/>	
+		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
 		<widget name="filelist" position="80,145" size="722,400" backgroundColor="black" transparent="0" scrollbarMode="showOnDemand"/>
 	</screen>	
 	<screen name="VIXImageManager" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>	
+		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -6350,7 +6375,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="icons/key_menu1.png" position="10,638" size="40,22" alphatest="blend"/>		
 	</screen>
 	<screen name="ImageManagerDownload" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRG"/>	
+		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -6373,7 +6398,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="icons/key_menu1.png" position="10,638" size="40,22" alphatest="blend"/>		
 	</screen>
 	<screen name="VIXDevicesPanel" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>	
+		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -6393,7 +6418,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="icons/key_menu1.png" position="10,638" size="40,22" alphatest="blend"/>		
 	</screen>
 	<screen name="VIXDevicePanelConf" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRG"/>	
+		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>	
@@ -6401,7 +6426,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="Linconn" position="65,420" size="840,20" font="Regular;18" halign="center" valign="center" backgroundColor="black"/>
 	</screen>
 	<screen name="VIXPartitionPanelConf" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRG"/>	
+		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>	
@@ -6429,7 +6454,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="list" position="80,145" size="722,420" selectionPixmap="icons/ls530x30.png" backgroundColor="black" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1"/>
 	</screen>
 	<screen name="VIXSwap" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>
+		<panel name="PantallaGenericaConfig"/>
 		<!--panel name="sRGB"/-->		
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
@@ -6447,7 +6472,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="active" position="230,393" size="100,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green"/>
 	</screen>
 	<screen name="VIXSoftcamManager" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>
+		<panel name="PantallaGenericaConfig"/>
 		<!--panel name="sRGB"/-->		
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
@@ -6471,7 +6496,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="list" position="80,145" size="722,425" font="Regular;14" backgroundColor="black" transparent="0"/>
 	</screen>
 	<screen name="VIXAutoStartCam" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>
+		<panel name="PantallaGenericaConfig"/>
 		<!--panel name="sRGB"/-->		
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
@@ -6480,7 +6505,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="lab1" position="80,133" halign="center" size="503,60" zPosition="1" font="Regular;20" valign="top" transparent="0"/>
 	</screen>
 	<screen name="VIXSoftcamMenu" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>
+		<panel name="PantallaGenericaConfig"/>
 		<!--panel name="sRGB"/-->		
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
@@ -6488,7 +6513,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="HalfscreenConfig532"/>
 	</screen>
 	<screen name="VIXStartCam" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>
+		<panel name="PantallaGenericaConfig"/>
 		<!--panel name="sRGB"/-->		
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
@@ -6497,7 +6522,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="lab1" position="80,145" halign="center" size="503,60" zPosition="1" font="Regular;20" valign="top" transparent="0"/>
 	</screen>
 	<screen name="VIXStopCam" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>
+		<panel name="PantallaGenericaConfig"/>
 		<!--panel name="sRGB"/-->		
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
@@ -6506,7 +6531,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="lab1" position="80,145" halign="center" size="503,60" zPosition="1" font="Regular;20" valign="top" transparent="0"/>
 	</screen>
 	<screen name="LogManager" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>
+		<panel name="PantallaGenericaConfig"/>
 		<!--panel name="sRGB"/-->		
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title_not_menu_path"/>
