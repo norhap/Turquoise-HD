@@ -110,7 +110,10 @@
 		</widget>
 		<widget name="introduction" conditional="introduction" position="0,0" size="0,0"/>		
 		<widget name="footnote" conditional="footnote" position="880,610" size="300,50" zPosition="1" font="Regular;20" foregroundColor="#00bab329" backgroundColor="#050606" halign="center" transparent="1" valign="top"/>
-	</screen>	
+	</screen>
+	<screen name="HelpWindow">	
+		<widget name="HelpWindow" conditional="HelpWindow" position="682,599" size="1,1" pixmap="/usr/share/enigma2/skin_default/buttons/vkey_icon.png" transparent="1" zPosition="1" alphatest="blend"/>
+	</screen>		
 	<!-- ####### TEMPLATE SIN BOTONES COLORES 2 PANTALLAS IZQUIERDA ####### -->
 	<screen name="PantallaGenericaSinBarraColor2Pantallas">
 	<!-- background -->

@@ -1303,6 +1303,7 @@ self.autoResize()
 
 	<!-- (074) ####### WIZARD ASISTENTE BASICO NO RESTAURACION Y ASISTENTE DE RED ####### -->	
     <screen name="NetworkWizard" position="5,55" size="1265,720" zPosition="-1" backgroundColor="#03424a" title="Welcome...">
+		<panel name="HelpWindow"/>	
 		<widget source="global.CurrentTime" render="Label" position="830,5" size="350,25" font="LCD;24" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1">
 		    <convert type="ClockToText">Date</convert>
 		</widget>
@@ -1320,7 +1321,6 @@ self.autoResize()
 		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
         <widget name="wizard" pixmap="icons/wizard.png" position="920,100" zPosition="10" size="140,188" alphatest="blend"/>		
 		<widget source="list" render="Listbox" position="25,130" size="750,600" transparent="1" backgroundColor="black" scrollbarMode="showOnDemand" zPosition="3">
-		<widget name="HelpWindow" pixmap="icons/key_text.png" position="125,170" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
 		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,680" zPosition="2" size="40,22" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>		
