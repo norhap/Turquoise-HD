@@ -800,7 +800,7 @@
 		<widget source="Event" render="Progress" pixmap="icons/tv_b_bar.png" position="775,35" size="225,2" backgroundColor="white" borderWidth="0" transparent="0" zPosition="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>		
-		<ePixmap pixmap="icons/clock.png" position="1130,13" zPosition="1" size="20,20" alphatest="blend"/>
+		<ePixmap pixmap="icons/clock.png" position="1255,14" zPosition="1" size="20,20" alphatest="blend"/>
 		<widget source="global.CurrentTime" render="Label" position="1148,8" size="100,28" font="Regular;22" foregroundColor="#0000fafa" backgroundColor="#0003424a" halign="right" transparent="1" zPosition="1">
 		    <convert type="ClockToText">Format %H:%M:%S</convert>
 		</widget>
