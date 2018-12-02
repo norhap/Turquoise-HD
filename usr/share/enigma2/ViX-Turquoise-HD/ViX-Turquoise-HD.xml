@@ -1914,18 +1914,18 @@ self.autoResize()
 		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
         <widget name="wizard" pixmap="icons/wizard.png" position="870,60" zPosition="10" size="140,188" alphatest="blend"/>
-        <widget name="stepslider" position="775,575" size="440,40" foregroundColor="#0000fafa" zPosition="15" font="Regular;23" halign="center" valign="center" transparent="1"/>
-	    <eLabel position="775,575" size="440,1" backgroundColor="#0000fafa" zPosition="16"/>
-	    <eLabel position="775,575" size="1,40" backgroundColor="#0000fafa" zPosition="16"/>
-	    <eLabel position="775,614" size="440,1" backgroundColor="#0000fafa" zPosition="16"/>
-	    <eLabel position="1214,575" size="1,40" backgroundColor="#0000fafa" zPosition="16"/>		
-		<widget source="list" render="Listbox" position="25,80" size="750,600" transparent="1" backgroundColor="black" scrollbarMode="showOnDemand" zPosition="3">
+        <widget name="stepslider" position="780,575" size="440,40" foregroundColor="#0000fafa" zPosition="15" font="Regular;23" halign="center" valign="center" transparent="1"/>
+	    <eLabel position="780,575" size="440,1" backgroundColor="#0000fafa" zPosition="16"/>
+	    <eLabel position="780,575" size="1,40" backgroundColor="#0000fafa" zPosition="16"/>
+	    <eLabel position="780,614" size="440,1" backgroundColor="#0000fafa" zPosition="16"/>
+	    <eLabel position="1219,575" size="1,40" backgroundColor="#0000fafa" zPosition="16"/>		
+		<widget source="list" render="Listbox" position="10,80" size="770,600" transparent="1" backgroundColor="black" scrollbarMode="showOnDemand" zPosition="3">
 			<convert type="StringList"/>
 		</widget>
-		<widget name="config" zPosition="1" position="15,5" size="755,600" backgroundColor="#03424a" scrollbarMode="showOnDemand" transparent="1"/> 
+		<widget name="config" zPosition="1" position="10,65" size="770,600" backgroundColor="black" scrollbarMode="showOnDemand" transparent="1"/> 
     </screen>
 	<screen name="InstallWizard" position="15,70" size="1280,720" zPosition="-1" backgroundColor="#03424a" title="Welcome...">
-		<widget name="config" zPosition="1" position="15,5" size="755,600" backgroundColor="#03424a" scrollbarMode="showOnDemand" transparent="1"/> 
+		<widget name="config" zPosition="1" position="10,65" size="770,600" backgroundColor="black" scrollbarMode="showOnDemand" transparent="1"/> 
     </screen>
 	<screen name="InstallWizardIpkgUpdater" position="fill" backgroundColor="#0003424a" flags="wfNoBorder">
         <ePixmap pixmap="icons/input_info.png" position="605,275" size="1280,720" alphatest="blend"/>
