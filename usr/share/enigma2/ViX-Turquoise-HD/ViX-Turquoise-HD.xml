@@ -772,10 +772,10 @@
 	</screen>
 	    <!-- QuickEPG -->
 		<screen name="QuickEPG" position="0,e-200" size="1280,200" title="InfoBar" transparent="0" flags="wfNoBorder">		
-		<ePixmap pixmap="icons/key_help.png" position="15,163" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_epg_single.png" position="60,163" size="40,22" alphatest="blend"/>		
-		<ePixmap pixmap="icons/key_menu1.png" position="105,163" size="40,22" alphatest="blend"/>		
-		<ePixmap pixmap="icons/key_info.png" position="150,163" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_help.png" position="15,163" size="40,22" zPosition="1" backgroundColor="#0003424a" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_epg_single.png" position="60,163" size="40,22" zPosition="1" backgroundColor="#0003424a" alphatest="blend"/>		
+		<ePixmap pixmap="icons/key_menu1.png" position="105,163" size="40,22" zPosition="1" backgroundColor="#0003424a" alphatest="blend"/>		
+		<ePixmap pixmap="icons/key_info.png" position="150,163" size="40,22" zPosition="1" backgroundColor="#0003424a" alphatest="blend"/>
 	    <eLabel position="0,0" size="1280,1" backgroundColor="#0000fafa" zPosition="0"/>
         <eLabel position="0,1" size="1280,39" backgroundColor="#0003424a" zPosition="0"/>			
         <eLabel position="0,40" size="1280,1" backgroundColor="#0000fafa" zPosition="0"/>		
@@ -812,14 +812,16 @@
 		<widget name="lab1" position="20,30" size="1280,115" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0"/>		
 		<ePixmap pixmap="icons/marco.png" position="0,0" size="35,42" zPosition="1" alphatest="blend"/>	
 		<ePixmap pixmap="icons/barra_quickEPG.png" position="765,41" size="15,120" zPosition="2" alphatest="blend"/>
-		<ePixmap pixmap="buttons/red.png" position="235,183" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
-		<widget name="key_red" position="190,160" size="240,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;18" valign="center"/>
-		<ePixmap pixmap="buttons/green.png" position="480,183" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
-		<widget name="key_green" position="430,160" size="240,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;18" valign="center"/>
-		<ePixmap pixmap="buttons/yellow.png" position="720,183" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
-		<widget name="key_yellow" position="675,160" size="240,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;18" valign="center"/>
+        <eLabel position="0,163" size="1280,1" backgroundColor="#0000fafa" zPosition="0"/>
+        <eLabel position="0,165" size="1280,25" backgroundColor="#0003424a" zPosition="0"/>		
+		<ePixmap pixmap="buttons/red.png" position="250,183" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
+		<widget name="key_red" position="200,160" size="240,25" backgroundColor="#0003424a" zPosition="1" transparent="1" font="Regular;18" valign="center"/>
+		<ePixmap pixmap="buttons/green.png" position="495,183" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
+		<widget name="key_green" position="445,160" size="240,25" backgroundColor="#0003424a" zPosition="1" transparent="1" font="Regular;18" valign="center"/>
+		<ePixmap pixmap="buttons/yellow.png" position="765,183" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
+		<widget name="key_yellow" position="720,160" size="240,25" backgroundColor="#0003424a" zPosition="1" transparent="1" font="Regular;18" valign="center"/>
 		<ePixmap pixmap="buttons/blue.png" position="1015,183" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
-		<widget name="key_blue" position="870,160" size="440,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;18" valign="center"/>
+		<widget name="key_blue" position="870,160" size="440,25" backgroundColor="#0003424a" zPosition="1" transparent="1" font="Regular;18" valign="center"/>
     </screen>	
 	    <!-- TimeDateInput Pantalla "Text" desde GraphicalEPG -->
 	<screen name="TimeDateInput" position="fill" flags="wfNoBorder" title="TimeDateInput">
