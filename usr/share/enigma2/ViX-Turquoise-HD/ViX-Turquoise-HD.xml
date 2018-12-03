@@ -6460,8 +6460,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title_not_menu_path"/>
         <panel name="PIG"/>
-		<widget name="LogsSize" position="80,145" halign="center" size="503,60" zPosition="1" font="Regular;20" valign="top" transparent="0"/>
-		<widget name="list" position="80,225" size="722,415" scrollbarMode="showOnDemand" selectionPixmap="icons/ls700x30-h.png" transparent="1"/>		
+		<widget name="LogsSize" position="180,135" halign="center" size="503,25" zPosition="1" font="Regular;20" valign="top" transparent="0"/>
+		<widget name="list" position="80,175" size="722,375" scrollbarMode="showOnDemand" selectionPixmap="icons/ls700x30-h.png" transparent="1"/>		
 	</screen>
 	<screen name="LogManagerViewLog" position="5,55" size="1265,720" backgroundColor="#03424a" title="">
 		<widget name="list" position="10,0" backgroundColor="#03424a" transparent="0" size="1260,600" font="Regular;20"/>
