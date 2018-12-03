@@ -2427,8 +2427,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-		<ePixmap pixmap="icons/key_menu1.png" position="8,640" size="40,22" alphatest="blend"/>
-		<ePixmap position="57,625" zPosition="1" size="349,45" pixmap="ViX-Turquoise-HD/menu/colorbarRG.png" alphatest="blend" transparent="1"/>		
+		<ePixmap pixmap="icons/key_menu1.png" position="8,640" size="40,22" alphatest="blend"/>		
 		<widget name="list" position="73,137" size="730,400" scrollbarMode="showOnDemand" selectionPixmap="ViX-Turquoise-HD/icons/ls680x50.png" transparent="1"/>
 	</screen>
 	<!-- (060) ####### PLUGINS DOWNLOAD ####### -->
