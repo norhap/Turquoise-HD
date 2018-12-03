@@ -80,11 +80,11 @@
 	<screen name="VirtualKeyBoard" position="590,165" size="660,450" backgroundColor="#0003424a" zPosition="99" title="Virtual KeyBoard">
 		<!--ePixmap pixmap="icons/vkey_text.png" position="9,35" zPosition="-4" size="642,52" alphatest="on"/-->
 		<widget name="prompt" position="15,4" size="500,26" font="Regular;22" backgroundColor="#0003424a" transparent="1" noWrap="1"/>
-		<widget name="text" position="15,40" size="630,46" font="Regular;32" backgroundColor="#0003424a" transparent="1" noWrap="1" halign="right"/>
-		<eLabel position="15,35" size="630,1" backgroundColor="#0000fafa" zPosition="1"/>		
-	    <eLabel position="15,35" size="1,45" backgroundColor="#0000fafa" zPosition="1"/>		
+		<widget name="text" position="15,40" size="630,38" font="Regular;32" backgroundColor="#0003424a" transparent="1" noWrap="1" halign="right"/>
+		<eLabel position="15,37" size="630,1" backgroundColor="#0000fafa" zPosition="1"/>		
+	    <eLabel position="15,37" size="1,43" backgroundColor="#0000fafa" zPosition="1"/>		
 	    <eLabel position="15,80" size="630,1" backgroundColor="#0000fafa" zPosition="1"/>	
-	    <eLabel position="645,35" size="1,46" backgroundColor="#0000fafa" zPosition="1"/>		
+	    <eLabel position="645,37" size="1,44" backgroundColor="#0000fafa" zPosition="1"/>		
 		<widget name="list" position="15,100" size="640,225" backgroundColor="#0003424a" selectionDisabled="1" transparent="1"/>
 		<widget name="locale" position="15,360" size="570,25" font="Regular;20" backgroundColor="#0003424a" transparent="1" valign="center"/>		
 		<widget name="mode" position="585,360" size="60,25" font="Regular;20" backgroundColor="#0003424a" halign="right" transparent="1" valign="center"/>
@@ -1167,17 +1167,17 @@ self.autoResize()
 	    <panel name="Title"/>
 		<panel name="PIG"/>
 		<panel name="ScrollBarTemplate"/>
-		<widget source="list" render="Listbox" position="80,140" size="690,375" scrollbarMode="showOnDemand" transparent="1">
+		<widget source="list" render="Listbox" position="80,140" size="722,375" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				MultiContentEntryText(pos = (0, 0), size = (550, 30), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the essid
 				MultiContentEntryText(pos = (0, 30), size = (175, 20), font=1, flags = RT_HALIGN_LEFT, text = 5), # index 5 is the interface
-				MultiContentEntryText(pos = (175, 30), size = (175, 20), font=1, flags = RT_HALIGN_LEFT, text = 4), # index 0 is the encryption
-				MultiContentEntryText(pos = (350, 0), size = (200, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 0 is the signal
-				MultiContentEntryText(pos = (350, 30), size = (200, 20), font=1, flags = RT_HALIGN_LEFT, text = 3), # index 0 is the maxrate
+				MultiContentEntryText(pos = (275, 30), size = (175, 20), font=1, flags = RT_HALIGN_LEFT, text = 4), # index 0 is the encryption
+				MultiContentEntryText(pos = (500, 0), size = (200, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 0 is the signal
+				MultiContentEntryText(pos = (500, 30), size = (200, 20), font=1, flags = RT_HALIGN_LEFT, text = 3), # index 0 is the maxrate
 				MultiContentEntryPixmapAlphaTest(pos = (0, 52), size = (550, 2), png = 6), # index 6 is the div pixmap
 				],
-				"fonts": [gFont("Regular", 28),gFont("Regular", 18)],
+				"fonts": [gFont("Regular", 26),gFont("Regular", 18)],
 				"itemHeight": 54
 				}
 			</convert>
@@ -1192,7 +1192,7 @@ self.autoResize()
 		<panel name="PIG"/>
         <panel name="sRGB"/>
 		<panel name="ScrollBarTemplate"/>		
-		<widget source="list" render="Listbox" position="80,140" size="690,375" zPosition="1" scrollbarMode="showOnDemand" transparent="1">
+		<widget source="list" render="Listbox" position="80,140" size="722,375" zPosition="1" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="TemplatedMultiContent"> <!-- iface, name, description, interfacepng, defaultpng, activepng, divpng -->
 				{"template": [
 				MultiContentEntryText(pos = (85, 6), size = (410, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1), # index 1 is the interfacename
@@ -1352,22 +1352,22 @@ self.autoResize()
 		<panel name="ScrollBarTemplate"/>		
 		<panel name="PIG"/>
 	    <panel name="Title"/>		
-		<widget source="IFtext" render="Label" position="80,130" size="140,24" zPosition="10" font="Regular;24" foregroundColor="#004ccbde" transparent="1"/>
-		<widget source="IF" render="Label" position="390,130" size="400,24" zPosition="10" font="Regular;24" transparent="1"/>
-		<widget source="LabelBSSID" render="Label" position="80,180" size="300,37" valign="left" foregroundColor="#004ccbde" font="Regular;20" transparent="1"/>
-		<widget source="LabelESSID" render="Label" position="80,225" size="300,37" valign="center" foregroundColor="#004ccbde" font="Regular;20" transparent="1"/>
-		<widget source="LabelQuality" render="Label" position="80,275" size="300,37" valign="center" foregroundColor="#004ccbde" font="Regular;20" transparent="1"/>
-		<widget source="LabelSignal" render="Label" position="80,335" size="300,37" valign="center" foregroundColor="#004ccbde" font="Regular;20" transparent="1"/>
-		<widget source="LabelBitrate" render="Label" position="80,395" size="300,37" valign="center" foregroundColor="#004ccbde" font="Regular;20" transparent="1"/>
-		<widget source="LabelEnc" render="Label" position="80,455" size="300,37" valign="center" foregroundColor="#004ccbde" font="Regular;20" transparent="1"/>
-		<widget source="BSSID" render="Label" position="390,175" size="495,37" valign="center" font="Regular;20" transparent="1"/>
-		<widget source="ESSID" render="Label" position="390,225" size="495,37" valign="center" font="Regular;20" transparent="1"/>
-		<widget source="quality" render="Label" position="390,275" size="495,37" valign="center" font="Regular;20" transparent="1"/>
-		<widget source="signal" render="Label" position="390,335" size="495,37" valign="center" font="Regular;20" transparent="1"/>
-		<widget source="bitrate" render="Label" position="390,395" size="495,37" valign="center" font="Regular;20" transparent="1"/>
-		<widget source="enc" render="Label" position="390,455" size="495,37" valign="center" font="Regular;20" transparent="1"/>
+		<widget source="IFtext" render="Label" position="80,130" size="140,24" zPosition="10" font="Regular;24" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
+		<widget source="IF" render="Label" position="390,130" size="400,24" zPosition="10" font="Regular;24" backgroundColor="black" transparent="1"/>
+		<widget source="LabelBSSID" render="Label" position="80,180" size="300,37" valign="center" foregroundColor="#004ccbde" backgroundColor="black" font="Regular;20" transparent="1"/>
+		<widget source="LabelESSID" render="Label" position="80,225" size="300,37" valign="center" foregroundColor="#004ccbde" backgroundColor="black" font="Regular;20" transparent="1"/>
+		<widget source="LabelQuality" render="Label" position="80,275" size="300,37" valign="center" foregroundColor="#004ccbde" backgroundColor="black" font="Regular;20" transparent="1"/>
+		<widget source="LabelSignal" render="Label" position="80,335" size="300,37" valign="center" foregroundColor="#004ccbde" backgroundColor="black" font="Regular;20" transparent="1"/>
+		<widget source="LabelBitrate" render="Label" position="80,395" size="300,37" valign="center" foregroundColor="#004ccbde" backgroundColor="black" font="Regular;20" transparent="1"/>
+		<widget source="LabelEnc" render="Label" position="80,455" size="300,37" valign="center" foregroundColor="#004ccbde" backgroundColor="black" font="Regular;20" transparent="1"/>
+		<widget source="BSSID" render="Label" position="390,175" size="495,37" valign="center" font="Regular;20" backgroundColor="black" transparent="1"/>
+		<widget source="ESSID" render="Label" position="390,225" size="495,37" valign="center" font="Regular;20" backgroundColor="black" transparent="1"/>
+		<widget source="quality" render="Label" position="390,275" size="495,37" valign="center" font="Regular;20" backgroundColor="black" transparent="1"/>
+		<widget source="signal" render="Label" position="390,335" size="495,37" valign="center" font="Regular;20" backgroundColor="black" transparent="1"/>
+		<widget source="bitrate" render="Label" position="390,395" size="495,37" valign="center" font="Regular;20" backgroundColor="black" transparent="1"/>
+		<widget source="enc" render="Label" position="390,455" size="495,37" valign="center" font="Regular;20" backgroundColor="black" transparent="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
-		<widget source="Statustext" render="Label" position="80,530" foregroundColor="#004ccbde" size="150,40" zPosition="10" font="Regular;24" transparent="1"/>
+		<widget source="Statustext" render="Label" position="80,530" foregroundColor="#004ccbde" backgroundColor="black" size="150,40" zPosition="10" font="Regular;24" transparent="1"/>
 		<widget name="statuspic" position="385,530" size="25,24" pixmaps="ViX-Turquoise-HD/icons/lock_on.png,ViX-Turquoise-HD/icons/lock_off.png" zPosition="10" transparent="1" alphatest="on"/>
 	</screen>
 	
