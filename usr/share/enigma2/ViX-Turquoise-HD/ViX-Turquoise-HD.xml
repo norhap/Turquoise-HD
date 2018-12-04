@@ -1264,7 +1264,7 @@ self.autoResize()
 		<widget source="introduction" render="Label" position="845,435" size="380,160" halign="center" valign="center" font="Regular;21" foregroundColor="#004ccbde" backgroundColor="#030303" transparent="1" zPosition="2"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,400" size="74,36" zPosition="2" alphatest="blend"/>
 	</screen>	
-	<!--  (021) ####### NETWORK ADAPTER TEST (size 1160x560) ######## (12-02) -->
+	<!-- ####### NETWORK ADAPTER TEST  ######## -->
 	<screen name="NetworkAdapterTest" position="fill" flags="wfNoBorder">
 	    <panel name="Title"/>
 		<panel name="PIG"/>
@@ -4343,10 +4343,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
 		<widget name="AboutScrollLabel" position="80,230" size="690,450" font="Regular;22" backgroundColor="black" transparent="1"/>
 		<widget source="IFtext" render="Label" position="80,135" size="120,25" font="Regular;22" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
-		<widget source="IF" render="Label" position="245,135" size="400,25" font="Regular;22" halign="left" transparent="1" backgroundColor="black" zPosition="10"/>
+		<widget source="IF" render="Label" position="230,135" size="400,25" font="Regular;22" halign="left" transparent="1" backgroundColor="black" zPosition="10"/>
 		<widget source="Statustext" render="Label" position="80,185" size="120,25" font="Regular;22" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 		<widget name="devicepic" position="525,125" size="40,40" pixmaps="icons/network_wired.png,icons/network_wireless.png,icons/network_wired-active.png,icons/network_wired-inactive.png,icons/network_wireless-active.png,icons/network_wireless-inactive.png" zPosition="10" alphatest="blend" transparent="1"/>		
-		<widget name="statuspic" position="240,185" size="25,24" pixmaps="ViX-Turquoise-HD/icons/lock_on.png,ViX-Turquoise-HD/icons/lock_off.png" alphatest="on" transparent="1"/>
+		<widget name="statuspic" position="230,185" size="25,24" pixmaps="ViX-Turquoise-HD/icons/lock_on.png,ViX-Turquoise-HD/icons/lock_off.png" alphatest="on" transparent="1"/>
 		<ePixmap position="925,414" size="256,256" pixmap="menu/ico_wlan.png" alphatest="blend"/>
 	</screen>
 	<!-- (059) ####### CANAL SERVICE INFO - INFORMATIONS ####### (15-02) -->
