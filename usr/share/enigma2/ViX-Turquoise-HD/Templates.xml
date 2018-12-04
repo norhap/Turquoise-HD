@@ -36,7 +36,6 @@
 
 	<!-- ####### SCROLLBAR BASE TEMPLATE ####### -->
 	<screen name="ScrollBarTemplate">
-	<!-- scrollbar background -->
 		<ePixmap position="785,120" zPosition="3" size="25,470" pixmap="ViX-Turquoise-HD/icons/barra470.png" alphatest="blend" transparent="1"/>
 	</screen>	
 	<!-- ### TEMPLATE TITULOS -->
@@ -44,7 +43,6 @@
 	    <panel name="menu_path_compressed" conditional="menu_path_compressed"/>
 		<widget source="Title" render="Label" zPosition="2" position="78,20" foregroundColor="#0000fafa" backgroundColor="#040404" size="700,50" transparent="1" font="Regular;24" halign="center" valign="top"/>		
 		<ePixmap pixmap="ViX-Turquoise-HD/menu/border_title.png" zPosition="0" position="110,5" size="580,90"/>
-	    <!--widget source="menu_path_compressed" render="Label" zPosition="2" position="70,48" size="725,32" transparent="1" font="Regular;17" halign="center" valign="center" foregroundColor="#0000fafa" backgroundColor="#00000000"/-->
 	</screen>
 	<screen name="menu_path_compressed">
 	    <widget source="menu_path_compressed" render="Label" zPosition="2" position="70,53" size="725,32" transparent="1" font="Regular;17" halign="center" valign="center" foregroundColor="#0000fafa" backgroundColor="#00000000"/>
@@ -56,17 +54,14 @@
 	<screen name="Titlerunning">
 		<widget source="Title" render="RunningText" options="movetype=running,startpoint=0,startdelay=3000,wrap=0,always=0,repeat=2,oneshot=1" zPosition="2" position="120,25" foregroundColor="#0000fafa" backgroundColor="#040404" size="615,50" transparent="0" font="Regular;24" halign="center" valign="center"/>		
 		<ePixmap pixmap="ViX-Turquoise-HD/menu/border_title.png" zPosition="1" position="110,5" size="580,90" alphatest="blend"/>
-	    <!--widget source="menu_path_compressed" render="Label" zPosition="1" position="0,25" size="820,32" font="Regular;15" halign="center" valign="center" foregroundColor="#0000fafa" backgroundColor="#00000000"/-->
 	</screen>	
 	<screen name="Titlechannellist">
 		<widget source="Title" render="Label" zPosition="1" position="78,22" foregroundColor="#0000fafa" backgroundColor="#040404" size="615,50" transparent="1" font="Regular;21" halign="center" valign="center"/>		
 		<ePixmap pixmap="ViX-Turquoise-HD/menu/border_title.png" zPosition="0" position="58,2" size="580,90" alphatest="blend"/>
-	    <!--widget source="menu_path_compressed" render="Label" zPosition="1" position="0,25" size="820,32" font="Regular;15" halign="center" valign="center" foregroundColor="#0000fafa" backgroundColor="#00000000"/-->
 	</screen>	
-	<!-- ### TEMPLATE PIG + Nombre Evento + Progreso + Reloj LCD 2 Pantallas Izquierda-->
+	<!-- ### TEMPLATE PIG + Nombre Evento + Progreso + Reloj LCD 2 Pantallas Izquierda ### -->
 	<screen name="PIG">
-	<!-- PIG -->
-	<!-- Barra Progresso -->	
+	<!-- PIG -->	
 	    <widget source="session.VideoPicture" render="Pig" position="840,115" size="370,215" zPosition="3" backgroundColor="#df0b1300"/>
 		<eLabel position="840,310" size="370,20" backgroundColor="#20101010" zPosition="3"/>
 	<!-- Nombre del Canal - Service Name -->		
@@ -77,7 +72,7 @@
 		<widget source="session.Event_Now" render="Progress" pixmap="icons/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="darkgrey" transparent="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-	<!-- Evento Corrente - Event Now -->
+	<!-- Evento Ahora -->
 		<widget source="session.Event_Now" render="Label" position="835,315" size="70,30" zPosition="4" halign="left" font="Regular;18" foregroundColor="#0000fafa" backgroundColor="background" transparent="1">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
@@ -116,10 +111,7 @@
 	</screen>		
 	<!-- ####### TEMPLATE SIN BOTONES COLORES 2 PANTALLAS IZQUIERDA ####### -->
 	<screen name="PantallaGenericaSinBarraColor2Pantallas">
-	<!-- background -->
 		<ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="ViX-Turquoise-HD/menu/fr_main_channels.png"/>
-	<!--ePixmap pixmap="icons/key_ok.png" position="10,660" size="40,22" zPosition="1" alphatest="blend"/-->
-	<!--ePixmap pixmap="icons/key_exit.png" position="10,682" size="40,22" zPosition="1" alphatest="blend"/-->
 	</screen>
 	
 	<!-- ####### Template solo para Lista de Canales ####### -->
@@ -131,8 +123,6 @@
 		<widget position="205,625" size="250,36" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget position="405,625" size="250,36" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget position="600,625" size="250,36" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-	<!--ePixmap pixmap="icons/key_ok.png" position="10,660" size="40,22" zPosition="1" alphatest="blend"/-->
-	<!--ePixmap pixmap="icons/key_exit.png" position="10,682" size="40,22" zPosition="1" alphatest="blend"/-->
 	</screen>	
 	<!-- ####### PANTALLA PARA 3 BOTONES ROJO VERDE Y AMARILLO + SOURCE NAME ####### -->
 	<screen name="PantallaGenericaRGY">
@@ -382,8 +372,8 @@
     </screen>
 	<!-- ####### PANTALLA OK Y EXIT CON RG ####### -->	
 	<screen name="PantallaGenericaRexit-OK">	
-	<panel name="PantallaGenericaRexit"/>
-	<panel name="TemplateOK"/>	
+	    <panel name="PantallaGenericaRexit"/>
+	    <panel name="TemplateOK"/>	
     </screen>	
 	<!-- ####### PANTALLAS ESPECIFICAS CON BOTONES ESPECIFICOS ####### -->
 	
@@ -593,13 +583,10 @@
     <screen name="acciones_teclas_colores">	
 		<widget objectTypes="key_red,Label,Button" name="key_red" position="5,620" size="250,45" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
 		<widget objectTypes="key_red,StaticText" source="key_red" render="Label" position="5,620" size="250,45" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
-
 		<widget objectTypes="key_green,Label,Button" name="key_green" position="255,610" size="150,45" backgroundColor="black" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
 		<widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="255,610" size="150,45" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
-
 		<widget objectTypes="key_yellow,Label,Button" name="key_yellow" position="385,625" size="300,36" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
 		<widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Label" position="385,625" size="300,36" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
-
 		<widget objectTypes="key_blue,Label,Button" name="key_blue" position="600,620" size="250,45" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
 		<widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="600,620" size="250,45" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
 	</screen>
