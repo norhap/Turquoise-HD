@@ -710,8 +710,8 @@
 	    <eLabel position="0,0" size="1280,1" backgroundColor="#0000fafa" zPosition="0"/>
         <eLabel position="0,2" size="1280,32" backgroundColor="#0003424a" zPosition="0"/>			
         <eLabel position="0,34" size="1280,1" backgroundColor="#0000fafa" zPosition="0"/>
-		<!--ePixmap pixmap="icons/clock.png" position="1150,10" zPosition="1" size="20,20" alphatest="blend"/-->
-		<widget source="global.CurrentTime" render="Label" position="1160,5" size="100,28" font="Regular;20" foregroundColor="#0000baff" backgroundColor="#0003424a" halign="right" transparent="1" zPosition="1">
+		<ePixmap pixmap="icons/clock.png" position="1260,9" zPosition="1" size="20,20" alphatest="blend"/>
+		<widget source="global.CurrentTime" render="Label" position="1155,5" size="100,28" font="Regular;20" foregroundColor="#0000baff" backgroundColor="#0003424a" halign="right" transparent="1" zPosition="1">
 		    <convert type="ClockToText">Format %H:%M:%S</convert>
 		</widget>
 		<ePixmap pixmap="icons/marco.png" position="0,0" size="70,42" zPosition="1" alphatest="blend"/>
