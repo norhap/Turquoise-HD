@@ -173,8 +173,8 @@
 		<widget source="key_blue" objectTypes="key_blue,StaticText" render="Pixmap" pixmap="menu/colorbarB.png" position="660,634" size="140,35" alphatest="blend" transparent="1">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget name="key_blue" objectTypes="key_blue,Label,Button" position="655,614" size="165,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget source="key_blue" render="Label" objectTypes="key_blue,StaticText" position="655,614" size="165,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget name="key_blue" objectTypes="key_blue,Label,Button" position="650,614" size="165,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget source="key_blue" render="Label" objectTypes="key_blue,StaticText" position="650,614" size="165,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
     </screen>
 	<!-- ####### PANTALLAS PARA SETUP ESPECIFICAS BOTONES ROJO + 4 TECLAS SOURCE + NAME ####### -->		
 	<screen name="PantallaGenericaConfig_s4_ButtonsR">
@@ -199,8 +199,8 @@
 		<widget source="key_blue" objectTypes="key_blue,StaticText" render="Pixmap" pixmap="menu/colorbarB.png" position="660,634" size="140,35" alphatest="blend" transparent="1">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget name="key_blue" objectTypes="key_blue,Label,Button" position="655,614" size="165,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget source="key_blue" render="Label" objectTypes="key_blue,StaticText" position="655,614" size="165,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget name="key_blue" objectTypes="key_blue,Label,Button" position="650,614" size="165,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget source="key_blue" render="Label" objectTypes="key_blue,StaticText" position="650,614" size="165,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
     </screen>	
 	<!-- ####### PANTALLAS PARA SETUP ESPECIFICAS BOTONES ROJO VERDE + 4 TECLAS SOURCE + NAME ####### -->		
 	<screen name="PantallaGenericaConfig_s4_ButtonsRG">
@@ -227,8 +227,8 @@
 		<widget source="key_blue" objectTypes="key_blue,StaticText" render="Pixmap" pixmap="menu/colorbarB.png" position="660,634" size="140,35" alphatest="blend" transparent="1">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget name="key_blue" objectTypes="key_blue,Label,Button" position="655,614" size="165,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget source="key_blue" render="Label" objectTypes="key_blue,StaticText" position="655,614" size="165,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget name="key_blue" objectTypes="key_blue,Label,Button" position="650,614" size="165,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget source="key_blue" render="Label" objectTypes="key_blue,StaticText" position="650,614" size="165,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
     </screen>	
 	<!-- ####### PANTALLAS PARA SETUP ESPECIFICAS BOTONES ROJO AZUL + 4 TECLAS SOURCE + NAME ####### -->		
 	<screen name="PantallaGenericaConfig_s4_ButtonsRB">
@@ -255,8 +255,8 @@
 		<widget source="key_blue" objectTypes="key_blue,StaticText" render="Pixmap" pixmap="menu/colorbarB.png" position="660,634" size="140,35" alphatest="blend" transparent="1">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget name="key_blue" objectTypes="key_blue,Label,Button" position="655,614" size="165,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget source="key_blue" render="Label" objectTypes="key_blue,StaticText" position="655,614" size="165,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget name="key_blue" objectTypes="key_blue,Label,Button" position="650,614" size="165,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget source="key_blue" render="Label" objectTypes="key_blue,StaticText" position="650,614" size="165,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
     </screen>
 	<!-- ####### PANTALLA PLUGINS ESPECIFICOS INSTALADOS EMC->evento->info AZUL ####### -->		
 	<screen name="PantallaGenericaConfig_s4_ButtonsB">
@@ -281,8 +281,8 @@
 		<widget source="key_blue" objectTypes="key_blue,StaticText" render="Pixmap" pixmap="menu/colorbarB.png" position="660,634" size="140,35" alphatest="blend" transparent="1">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget name="key_blue" objectTypes="key_blue,Label,Button" position="655,614" size="165,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget source="key_blue" render="Label" objectTypes="key_blue,StaticText" position="655,614" size="165,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget name="key_blue" objectTypes="key_blue,Label,Button" position="650,614" size="165,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget source="key_blue" render="Label" objectTypes="key_blue,StaticText" position="650,614" size="165,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
     </screen>		
 	<!-- ####### PANTALLAS PARA SETUP ESPECIFICAS BOTONES ROJO VERDE AMARILLO + 4 TECLAS SOURCE + NAME ####### -->	
 	<screen name="PantallaGenericaConfig_s4_ButtonsRGY">
@@ -308,8 +308,8 @@
 		</widget>
 		<widget name="key_yellow" objectTypes="key_yellow,Label,Button" position="470,614" size="125,50" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget source="key_yellow" render="Label" objectTypes="key_yellow,StaticText" position="470,614" size="125,50" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget name="key_blue" objectTypes="key_blue,Label,Button" position="655,614" size="165,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget source="key_blue" render="Label" objectTypes="key_blue,StaticText" position="655,614" size="165,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget name="key_blue" objectTypes="key_blue,Label,Button" position="650,614" size="165,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget source="key_blue" render="Label" objectTypes="key_blue,StaticText" position="650,614" size="165,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
     </screen>
 	<!-- ####### PANTALLAS PARA SETUP ESPECIFICAS BOTONES ROJO VERDE AZUL + 4 TECLAS SOURCE + NAME ####### -->	
 	<screen name="PantallaGenericaConfig_s4_ButtonsRGB">
@@ -335,8 +335,8 @@
 		<widget source="key_yellow" render="Label" objectTypes="key_yellow,StaticText" position="470,614" size="125,50" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<!-- Azul button -->			
 		<ePixmap objectTypes="key_blue,Button,Label" pixmap="menu/colorbarB.png" position="660,634" size="140,35" alphatest="blend" transparent="1"/>		
-		<widget name="key_blue" objectTypes="key_blue,Label,Button" position="655,614" size="165,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget source="key_blue" render="Label" objectTypes="key_blue,StaticText" position="655,614" size="165,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget name="key_blue" objectTypes="key_blue,Label,Button" position="650,614" size="165,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget source="key_blue" render="Label" objectTypes="key_blue,StaticText" position="650,614" size="165,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
     </screen>	
 	<!-- ####### PANTALLAS PARA SETUP ESPECIFICAS BOTONES VERDE AMARILLO + 4 TECLAS SOURCE + NAME ####### -->	
 	<screen name="PantallaGenericaConfig_s4_ButtonsGY">
@@ -360,8 +360,8 @@
 		</widget>
 		<widget name="key_yellow" objectTypes="key_yellow,Label,Button" position="470,614" size="125,50" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget source="key_yellow" render="Label" objectTypes="key_yellow,StaticText" position="470,614" size="125,50" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget name="key_blue" objectTypes="key_blue,Label,Button" position="655,614" size="165,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget source="key_blue" render="Label" objectTypes="key_blue,StaticText" position="655,614" size="165,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget name="key_blue" objectTypes="key_blue,Label,Button" position="650,614" size="165,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget source="key_blue" render="Label" objectTypes="key_blue,StaticText" position="650,614" size="165,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
     </screen>
 	<!-- ####### PANTALLAS PARA SETUP ESPECIFICAS BOTONES ROJO AMARILLO + 4 TECLAS SOURCE + NAME ####### -->	
 	<screen name="PantallaGenericaConfig_s4_ButtonsRY">
@@ -385,8 +385,8 @@
 		</widget>
 		<widget name="key_yellow" objectTypes="key_yellow,Label,Button" position="470,614" size="125,50" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget source="key_yellow" render="Label" objectTypes="key_yellow,StaticText" position="470,614" size="125,50" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget name="key_blue" objectTypes="key_blue,Label,Button" position="655,614" size="165,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget source="key_blue" render="Label" objectTypes="key_blue,StaticText" position="655,614" size="165,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget name="key_blue" objectTypes="key_blue,Label,Button" position="650,614" size="165,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget source="key_blue" render="Label" objectTypes="key_blue,StaticText" position="650,614" size="165,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
     </screen>	
 	<!-- ####### PANTALLA PARA 1 BOTON ROJO + SOURCE ####### -->
 	<screen name="PantallaGenericaR">
