@@ -815,13 +815,13 @@
 		<widget name="lab1" position="78,150" size="1130,400" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0"/>
 	<!-- events -->
 		<widget name="date" position="75,135" size="150,28" font="Regular;24" halign="left" foregroundColor="#0077d8e6" backgroundColor="black" transparent="1"/>		
-		<widget name="now_text" position="395,135" zPosition="4" size="85,28" text="NOW" font="Regular;24" halign="center" foregroundColor="#0077d8e6" transparent="1"/>
-		<widget name="now_button" pixmap="icons/pointer1.png" position="485,142" zPosition="3" size="26,16" alphatest="on"/>		
-		<widget name="now_button_sel" pixmap="icons/pointer.png" position="485,142" zPosition="3" size="26,16" alphatest="on"/>		
-		<widget name="next_text" position="530,135" zPosition="4" size="85,28" text="NEXT" font="Regular;24" halign="center" foregroundColor="#0077d8e6" transparent="1"/>
-		<widget name="next_button" pixmap="icons/pointer1.png" position="615,142" zPosition="3" size="26,16" alphatest="on"/>
-		<widget name="next_button_sel" pixmap="icons/pointer.png" position="615,142" zPosition="3" size="26,16" alphatest="on"/>		
-		<widget name="more_text" position="670,135" zPosition="4" size="85,28" text="MORE" font="Regular;24" halign="center" foregroundColor="#0077d8e6" transparent="1"/>	
+		<widget name="now_text" position="355,135" zPosition="4" size="85,28" text="NOW" font="Regular;24" halign="center" foregroundColor="#0077d8e6" transparent="1"/>
+		<widget name="now_button" pixmap="icons/pointer1.png" position="455,142" zPosition="3" size="26,16" alphatest="on"/>		
+		<widget name="now_button_sel" pixmap="icons/pointer.png" position="455,142" zPosition="3" size="26,16" alphatest="on"/>		
+		<widget name="next_text" position="475,135" zPosition="4" size="185,28" text="NEXT" font="Regular;24" halign="center" foregroundColor="#0077d8e6" transparent="1"/>
+		<widget name="next_button" pixmap="icons/pointer1.png" position="640,142" zPosition="3" size="26,16" alphatest="on"/>
+		<widget name="next_button_sel" pixmap="icons/pointer.png" position="640,142" zPosition="3" size="26,16" alphatest="on"/>		
+		<widget name="more_text" position="680,135" zPosition="4" size="85,28" text="MORE" font="Regular;24" halign="center" foregroundColor="#0077d8e6" transparent="1"/>	
 		<widget name="more_button" pixmap="icons/pointer1.png" position="760,142" zPosition="3" size="26,16" alphatest="on"/>
 		<widget name="more_button_sel" pixmap="icons/pointer.png" position="760,142" zPosition="3" size="26,16" alphatest="on"/>		
 		<widget name="number" position="150,30" size="300,28" font="Regular;24" valign="center" halign="center" foregroundColor="#0077d8e6" backgroundColor="black" transparent="1"/>
