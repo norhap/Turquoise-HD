@@ -1281,8 +1281,8 @@ self.autoResize()
             <convert type="ClockToText">Format:%H:%M :%S</convert>
         </widget>	
 		<ePixmap pixmap="buttons/key_red.png" position="830,65" zPosition="0" size="35,25" transparent="1" alphatest="blend"/>	
-        <widget name="languagetext" zPosition="15" position="875,47" size="500,55" font="Regular;20" halign="left" valign="center" transparent="1"/>
-        <widget name="text" position="250,170" size="625,450" zPosition="15" font="Regular;23" halign="center" valign="center" transparent="1"/>		
+        <widget name="languagetext" zPosition="15" position="875,47" size="500,55" font="Regular;20" backgroundColor="#03424a" halign="left" valign="center" transparent="1"/>
+        <widget name="text" position="250,170" size="625,450" zPosition="15" font="Regular;23" backgroundColor="#03424a" halign="center" valign="center" transparent="1"/>		
 		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="1095,100" zPosition="11" size="154,500" alphatest="blend" transparent="1"/>
 		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
@@ -1297,11 +1297,7 @@ self.autoResize()
 		</widget>
 		<widget name="config" zPosition="1" position="15,50" size="755,600" backgroundColor="#03424a" scrollbarMode="showOnDemand" transparent="1"/>
 		<widget name="key_red" position="55,612" size="150,45" font="Regular;19" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
-    </screen>
-	<screen name="InstallWizardIpkgUpdater" position="fill" backgroundColor="#0003424a" flags="wfNoBorder">
-        <ePixmap pixmap="icons/input_info.png" position="605,275" size="1280,720" alphatest="blend"/>	
-		<widget source="statusbar" render="Label" position="280,350" size="720,75" foregroundColor="#00ffffff" zPosition="2" transparent="1" font="Regular;25" halign="center"/>
-	</screen>	
+    </screen>	
     <!-- Network MacAdress Setup -->
 	<screen name="NetworkMacSetup" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaConfig_s4_ButtonsRG"/>	
@@ -1852,8 +1848,8 @@ self.autoResize()
             <convert type="ClockToText">Format:%H:%M :%S</convert>
         </widget>	
 		<ePixmap pixmap="buttons/key_red.png" position="830,65" zPosition="0" size="35,25" transparent="1" alphatest="blend"/>	
-        <widget name="languagetext" zPosition="15" position="870,50" size="500,55" font="Regular;20" halign="left" valign="center" transparent="1"/>
-        <widget name="text" position="400,350" size="620,300" zPosition="15" font="Regular;23" halign="center" valign="center" transparent="1"/>		
+        <widget name="languagetext" zPosition="15" position="870,50" size="500,55" font="Regular;20" backgroundColor="#03424a" halign="left" valign="center" transparent="1"/>
+        <widget name="text" position="400,350" size="620,300" zPosition="15" font="Regular;23" backgroundColor="#03424a" halign="center" valign="center" transparent="1"/>		
 		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="1060,60" zPosition="11" size="154,500" alphatest="blend" transparent="1"/>
 		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
@@ -1875,7 +1871,7 @@ self.autoResize()
             <convert type="ClockToText">Format:%H:%M :%S</convert>
         </widget>	
 		<ePixmap pixmap="buttons/key_red.png" position="830,45" zPosition="0" size="35,25" transparent="1" alphatest="blend"/>	
-        <widget name="languagetext" zPosition="15" position="870,30" size="500,55" font="Regular;20" halign="left" valign="center" transparent="1"/>
+        <widget name="languagetext" zPosition="15" position="870,30" size="500,55" font="Regular;20" backgroundColor="#03424a" halign="left" valign="center" transparent="1"/>
         <widget name="text" position="770,125" size="315,460" zPosition="15" font="Regular;21" halign="center" valign="center" backgroundColor="#03424a" transparent="1"/>		
 		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="1090,60" zPosition="11" size="154,500" alphatest="blend" transparent="1"/>
 		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
