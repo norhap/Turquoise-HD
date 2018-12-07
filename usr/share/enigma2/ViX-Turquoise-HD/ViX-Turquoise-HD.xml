@@ -1891,10 +1891,10 @@ self.autoResize()
 		<widget source="list" render="Listbox" position="10,80" size="770,600" transparent="1" backgroundColor="black" scrollbarMode="showOnDemand" zPosition="3">
 			<convert type="StringList"/>
 		</widget>
-		<widget name="config" zPosition="1" position="10,65" size="770,600" backgroundColor="black" scrollbarMode="showOnDemand" transparent="1"/> 
+		<widget name="config" zPosition="1" position="10,40" size="770,600" backgroundColor="black" scrollbarMode="showOnDemand" transparent="1"/> 
     </screen>
 	<screen name="InstallWizard" position="15,70" size="1280,720" zPosition="-1" backgroundColor="#03424a" title="Welcome...">
-		<widget name="config" zPosition="1" position="10,65" size="770,600" backgroundColor="black" scrollbarMode="showOnDemand" transparent="1"/> 
+		<widget name="config" zPosition="1" position="10,40" size="770,600" backgroundColor="black" scrollbarMode="showOnDemand" transparent="1"/> 
     </screen>
 	<screen name="InstallWizardIpkgUpdater" position="fill" backgroundColor="#0003424a" flags="wfNoBorder">
         <ePixmap pixmap="icons/input_info.png" position="605,275" size="1280,720" alphatest="blend"/>
