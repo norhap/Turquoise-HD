@@ -1896,6 +1896,7 @@ self.autoResize()
         <ePixmap pixmap="icons/input_info.png" position="605,275" size="1280,720" alphatest="blend"/>
 		<widget source="statusbar" render="Label" position="280,350" size="720,75" foregroundColor="#00ffffff" zPosition="2" transparent="1" font="Regular;25" halign="center"/>
 	</screen>
+	<!-- ####### MENSAJE RESTAURACION BACKUP + COMPLEMENTOS ####### -->	
 	<screen name="MessageBoxWizard" position="25,70" size="1225,720" zPosition="-1" backgroundColor="#03424a" title="Restore Wizard">
 		<widget source="global.CurrentTime" render="Label" position="800,5" size="350,25" font="LCD;24" foregroundColor="#004ccbde" backgroundColor="#03424a" transparent="1" zPosition="1">
 		    <convert type="ClockToText">Date</convert>
