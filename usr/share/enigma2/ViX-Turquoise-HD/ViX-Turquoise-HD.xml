@@ -4145,8 +4145,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 				"itemHeight": 30
 				}
 			</convert>
-		</widget>
-		<widget position="600,625" size="250,36" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
+		</widget>		
 	</screen>
 
 	<!-- Order List -->
@@ -4166,8 +4165,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 				"itemHeight": 30
 			    }
 			</convert>
-		</widget>
-		<widget position="600,625" size="250,36" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
+		</widget>		
 	</screen>
 	<!-- DESCARGA MODO BARRA CROSSEPG -->	
 	<screen name="downloader" position="0,0" size="1280,35" backgroundColor="#0003424a" flags="wfNoBorder">
