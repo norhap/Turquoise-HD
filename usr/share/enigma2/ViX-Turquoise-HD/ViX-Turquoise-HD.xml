@@ -6261,8 +6261,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-		<widget name="lab1" position="80,145" size="670,50" font="Regular;20" zPosition="2" transparent="0" halign="center"/>
-		<widget name="list" position="80,230" size="722,350" selectionPixmap="ViX-Turquoise-HD/icons/ls705x38.png" font="Regular;22" backgroundColor="black" transparent="0" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black" enableWrapAround="1"/>
+		<widget name="lab1" position="80,130" size="670,30" font="Regular;20" backgroundColor="black" foregroundColor="#004ccbde" zPosition="2" transparent="0" halign="center"/>
+		<widget name="list" position="80,180" size="722,385" selectionPixmap="ViX-Turquoise-HD/icons/ls705x38.png" font="Regular;22" backgroundColor="black" transparent="0" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black" enableWrapAround="1"/>
 		<applet type="onLayoutFinish">
 			self["list"].instance.setItemHeight(30)
 		</applet>
