@@ -481,7 +481,7 @@
         <panel name="Title_not_menu_path"/>
 		<panel name="ScrollBarTemplate"/>
 	<!-- events list -->
-		<widget name="list" position="60,148" size="742,420" zPosition="3" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black" transparent="0"/>
+		<widget name="list" position="60,148" size="747,420" zPosition="3" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="0"/>
 		<!--widget source="Service" render="PiconBg" position="690,15" size="104,63" zPosition="5" alphatest="blend" backgroundColor="#000c0d0e"/-->
 		<widget source="Service" render="Picon" position="692,30" size="100,60" zPosition="5" alphatest="blend" backgroundColor="#000c0d0e">
 			<convert type="ServiceName">Reference</convert>
@@ -505,7 +505,7 @@
         <panel name="Title_not_menu_path"/>
 		<panel name="ScrollBarTemplate"/>
 	<!-- events list -->
-		<widget name="list" position="60,148" size="742,420" zPosition="3" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black" transparent="0"/>
+		<widget name="list" position="60,148" size="747,420" zPosition="3" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="0"/>
 		<!--widget source="Service" render="PiconBg" position="690,15" size="104,63" zPosition="5" alphatest="blend" backgroundColor="#000c0d0e"/-->
 		<widget source="Service" render="Picon" position="692,30" size="100,60" zPosition="5" alphatest="blend" backgroundColor="#000c0d0e">
 			<convert type="ServiceName">Reference</convert>
@@ -809,7 +809,7 @@
 		<panel name="ScrollBarTemplate"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 	<!-- channels lists -->
-		<widget name="list" position="75,161" size="727,400" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black" transparent="1"/>
+		<widget name="list" position="75,161" size="732,400" scrollbarMode="showOnDemand" transparent="1"/>
 		<widget name="bouquetlist" position="78,161" size="1130,400" foregroundColorSelected="#0000fafa" scrollbarMode="showNever" zPosition="2" transparent="0"/>
 		<widget name="lab1" position="78,150" size="1130,400" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0"/>
 	<!-- events -->
