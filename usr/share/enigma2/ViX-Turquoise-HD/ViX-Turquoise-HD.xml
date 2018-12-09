@@ -163,7 +163,7 @@
 		    <convert type="ServiceOrbitalPosition"/>
 		</widget>
 	<!-- channels lists -->		
-		<widget name="list" position="68,140" zPosition="1" size="740,450" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black" serviceItemHeight="28"
+		<widget name="list" position="68,140" zPosition="1" size="745,450" scrollbarMode="showOnDemand" serviceItemHeight="28"
 			serviceNumberFont="Regular;22" serviceNameFont="Regular;26" serviceInfoFont="Regular;20" colorServiceDescription="#004ccbde"
 			picServiceEventProgressbar="icons/pl.png" selectionPixmap="ViX-Turquoise-HD/icons/ls715x30.png" transparent="1" 
 			foregroundColorEventSelected="#a1d1ff"/>			
@@ -372,7 +372,7 @@
 		<panel name="BotonGreenAncho"/>
 		<panel name="BotonYellowAncho"/>
 		<panel name="BotonBlueAncho"/>	
-		<widget name="list" position="0,0" size="555,420" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black" serviceItemHeight="28"
+		<widget name="list" position="0,0" size="560,420" scrollbarMode="showOnDemand" serviceItemHeight="28"
 			serviceNumberFont="Regular;22" serviceNameFont="Regular;26" serviceInfoFont="Regular;20" colorServiceDescription="#004ccbde"
 			picServiceEventProgressbar="icons/pl.png" transparent="1" 
 			foregroundColorEventSelected="#a1d1ff"/>
