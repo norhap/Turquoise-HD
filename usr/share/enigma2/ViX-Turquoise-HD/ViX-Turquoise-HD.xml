@@ -1822,7 +1822,7 @@ self.autoResize()
 		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>		
 		<widget name="text" position="600,150" size="450,240" zPosition="10" font="Regular;23" halign="center" valign="center" transparent="1"/>
-		<widget source="languages" render="Listbox" position="100,135" size="497,450" zPosition="10" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black" transparent="1">
+		<widget source="languages" render="Listbox" position="100,135" size="502,450" zPosition="10" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				MultiContentEntryText(pos = (80, 10), size = (200, 50), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
