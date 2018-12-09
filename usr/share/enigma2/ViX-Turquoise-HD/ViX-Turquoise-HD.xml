@@ -5369,8 +5369,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget name="audioLabel" position="940,667" size="105,30" zPosition="1" font="Regular;19" halign="right" foregroundColor="#0000baff" backgroundColor="#00292729" transparent="1"/>
 	    <!-- Subtitel Label only for DVD -->
 	    <widget name="subtitleLabel" position="875,667" size="70,19" zPosition="1" font="Regular;19" halign="left" foregroundColor="#0000baff" backgroundColor="#00292729" transparent="1"/>
-        <widget name="anglePix" position="950,667" size="70,19" zPosition="1" halign="left" backgroundColor="#00292729" transparent="1"/>
-        <widget name="angleLabel" position="1025,667" size="70,19" zPosition="1" halign="left" backgroundColor="#00292729" transparent="1"/>		
+        <widget name="anglePix" position="950,667" size="70,19" zPosition="1" backgroundColor="#00292729" transparent="1"/>
+        <widget name="angleLabel" position="1025,667" size="70,19" zPosition="1" backgroundColor="#00292729" transparent="1"/>		
 		<widget name="Cover" position="80,75" size="100,150" zPosition="1" alphatest="on"/>
     </screen>	
 	<!-- EMC-MENU->Menu seleccion de Pelicula y opciones de la Lista de reproduccion -->
