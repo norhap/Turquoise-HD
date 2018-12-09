@@ -2651,7 +2651,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>		
-		<widget name="loglist" position="62,155" size="735,425" font="Regular;16" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black" transparent="1"/>
+		<widget name="loglist" position="62,155" size="740,425" font="Regular;16" scrollbarMode="showOnDemand" transparent="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
         <widget name="logentry" position="845,435" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>		
 	</screen>	
@@ -4218,7 +4218,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="lab2" position="80,168" size="150,30" font="Regular;20" foregroundColor="#004ccbde" valign="center" transparent="0"/>
 		<widget name="labstop" position="265,168" size="150,30" font="Regular;20" valign="center" halign="center" backgroundColor="red"/>
 		<widget name="labrun" position="265,168" size="150,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green"/>
-		<widget source="list" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black" position="80,210" size="722,350" font="Regular;18" transparent="1">
+		<widget source="list" render="Listbox" scrollbarMode="showOnDemand" position="80,210" size="727,350" font="Regular;18" transparent="1">
 		    <convert type="StringList"/>
 		</widget>
 		<widget name="key" position="82,560" size="690,20" font="Regular;18" transparent="1" foregroundColor="#0000fafa" backgroundColor="black"/>
