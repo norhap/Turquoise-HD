@@ -1718,7 +1718,7 @@ self.autoResize()
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
         <!--widget name="windowtitle" position="80,580" size="0,0" font="Regular;22" transparent="1"/-->				
 		<panel name="ScrollBarTemplate"/>		
-		<widget name="list" position="75,145" size="728,350" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black" selectionPixmap="icons/ls700x30-h.png" transparent="1"/>
+		<widget name="list" position="75,145" size="733,350" scrollbarMode="showOnDemand" selectionPixmap="icons/ls700x30-h.png" transparent="1"/>
 		<widget name="text" position="75,440" size="555,335" font="Regular;20" transparent="1"/>
 	    <ePixmap position="835,390" zPosition="2" size="40,35" pixmap="icons/ram.png" alphatest="blend"/>
 		<widget source="session.CurrentService" render="Label" position="780,10" size="500,62" halign="center" valign="center" font="Regular;18" transparent="1" foregroundColor="#0000fafa" backgroundColor="black" zPosition="1">
@@ -2391,7 +2391,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
 		<ePixmap pixmap="icons/key_menu1.png" position="8,640" size="40,22" alphatest="blend"/>		
-		<widget name="list" position="73,137" size="730,400" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black" selectionPixmap="ViX-Turquoise-HD/icons/ls680x50.png" transparent="1"/>
+		<widget name="list" position="73,137" size="735,400" scrollbarMode="showOnDemand" selectionPixmap="ViX-Turquoise-HD/icons/ls680x50.png" transparent="1"/>
 	</screen>
 	<!--  ####### PLUGINS DOWNLOAD ####### -->
 	<screen name="PluginDownloadBrowser" position="center,center" size="800,460" title="Downloadable plugins">
@@ -4880,7 +4880,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title_not_menu_path"/>
         <panel name="PIG"/>	
-		<widget name="list" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black" position="80,145" size="723,420" backgroundColor="black" transparent="1"/>		
+		<widget name="list" scrollbarMode="showOnDemand" position="80,145" size="728,420" backgroundColor="black" transparent="1"/>		
 	</screen>
 
 	<!-- EPG Import Log -->
@@ -4889,7 +4889,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title_not_menu_path"/>
         <panel name="PIG"/>	
-		<widget name="list" position="75,145" size="727,420" scrollbarSliderForegroundColor="black" font="Regular;16" backgroundColor="black" transparent="1"/>
+		<widget name="list" position="75,145" size="732,420" font="Regular;16" backgroundColor="black" transparent="1"/>
 		<ePixmap pixmap="icons/key_menu1.png" position="8,640" size="40,22" alphatest="blend"/>		
 	</screen>
 	<!-- IGNORAR SERVICIOS DE LA LISTA -->	
@@ -6375,7 +6375,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-		<widget name="list" position="80,145" size="722,425" font="Regular;14" scrollbarSliderForegroundColor="black" backgroundColor="black" transparent="0"/>
+		<widget name="list" position="80,145" size="727,425" font="Regular;14" backgroundColor="black" transparent="0"/>
 	</screen>
 	<screen name="VIXAutoStartCam" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaConfig"/>
@@ -6392,7 +6392,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-		<panel name="HalfscreenConfig532"/>
 	</screen>
 	<screen name="VIXStartCam" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaConfig"/>
@@ -6419,7 +6418,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title_not_menu_path"/>
         <panel name="PIG"/>
 		<widget name="LogsSize" position="180,135" halign="center" size="503,25" zPosition="1" font="Regular;20" valign="top" transparent="0"/>
-		<widget name="list" position="80,175" size="722,375" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black" selectionPixmap="icons/ls700x30-h.png" transparent="1"/>		
+		<widget name="list" position="80,175" size="728,375" scrollbarMode="showOnDemand" selectionPixmap="icons/ls700x30-h.png" transparent="1"/>		
 	</screen>
 	<screen name="LogManagerViewLog" position="5,55" size="1265,720" backgroundColor="#03424a" title="">
 		<widget name="list" position="10,0" backgroundColor="#03424a" scrollbarSliderForegroundColor="#0000fafa" transparent="1" size="1250,600" font="Regular;20"/>
