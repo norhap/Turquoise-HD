@@ -376,7 +376,7 @@
 			serviceNumberFont="Regular;22" serviceNameFont="Regular;26" serviceInfoFont="Regular;20" colorServiceDescription="#004ccbde"
 			picServiceEventProgressbar="icons/pl.png" transparent="1" 
 			foregroundColorEventSelected="#a1d1ff"/>
-		<ePixmap position="532,0" zPosition="3" size="27,435" pixmap="ViX-Turquoise-HD/icons/barra435.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="538,0" zPosition="3" size="27,435" pixmap="ViX-Turquoise-HD/icons/barra435.png" alphatest="blend" transparent="1"/>
 	    <eLabel position="5,420" size="526,1" backgroundColor="#0000fafa" zPosition="0"/>
 	    <eLabel position="5,421" size="1,19" backgroundColor="#0000fafa" zPosition="0"/>		
 	    <eLabel position="5,440" size="526,1" backgroundColor="#0000fafa" zPosition="0"/>
@@ -1087,7 +1087,7 @@ self.autoResize()
         <panel name="PIG"/>
         <panel name="ScrollBarTemplate"/>
         <panel name="sRGY"/>		
-		<widget name="checkList" position="75,140" size="728,425" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black" selectionPixmap="ViX-Turquoise-HD/icons/ls700x30-h.png" transparent="1"/>		
+		<widget name="checkList" position="75,140" size="733,425" scrollbarMode="showOnDemand" selectionPixmap="ViX-Turquoise-HD/icons/ls700x30-h.png" transparent="1"/>		
 	</screen>
 	<!-- ####### MANEJAR SOFTWARE->Opciones Avandas->Manejo de paquetes ####### -->
 	<screen name="PacketManager" position="fill" flags="wfNoBorder">
@@ -6234,7 +6234,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-		<widget name="checkList" position="75,140" size="728,425" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black" selectionPixmap="ViX-Turquoise-HD/icons/ls700x30-h.png" transparent="1"/>		
+		<widget name="checkList" position="75,140" size="733,425" scrollbarMode="showOnDemand" selectionPixmap="ViX-Turquoise-HD/icons/ls700x30-h.png" transparent="1"/>		
 	</screen>
 	<screen name="RestoreMenu" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaConfig"/>	
@@ -6262,7 +6262,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
 		<widget name="lab1" position="80,130" size="670,30" font="Regular;20" backgroundColor="black" foregroundColor="#004ccbde" zPosition="2" transparent="0" halign="center"/>
-		<widget name="list" position="80,180" size="727,385" selectionPixmap="ViX-Turquoise-HD/icons/ls705x38.png" font="Regular;22" backgroundColor="black" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1"/>
+		<widget name="list" position="80,180" size="727,390" selectionPixmap="ViX-Turquoise-HD/icons/ls705x38.png" font="Regular;22" backgroundColor="black" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1"/>
 		<applet type="onLayoutFinish">
 			self["list"].instance.setItemHeight(30)
 		</applet>
