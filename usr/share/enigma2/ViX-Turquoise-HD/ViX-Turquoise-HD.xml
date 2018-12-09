@@ -1132,7 +1132,7 @@ self.autoResize()
 	    <panel name="Title"/>
 		<panel name="PIG"/>
 		<panel name="ScrollBarTemplate"/>
-		<widget source="list" render="Listbox" position="80,140" size="722,375" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black" transparent="1">
+		<widget source="list" render="Listbox" position="80,140" size="727,375" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				MultiContentEntryText(pos = (0, 0), size = (550, 30), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the essid
@@ -1157,7 +1157,7 @@ self.autoResize()
 		<panel name="PIG"/>
         <panel name="sRGB"/>
 		<panel name="ScrollBarTemplate"/>		
-		<widget source="list" render="Listbox" position="80,140" size="722,375" zPosition="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black" transparent="1">
+		<widget source="list" render="Listbox" position="80,140" size="727,375" zPosition="1" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="TemplatedMultiContent"> <!-- iface, name, description, interfacepng, defaultpng, activepng, divpng -->
 				{"template": [
 				MultiContentEntryText(pos = (85, 6), size = (410, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1), # index 1 is the interfacename
@@ -1387,7 +1387,7 @@ self.autoResize()
 		<widget source="legend1" render="Label" position="80,110"  zPosition="1" size="130,60" foregroundColor="#004ccbde" font="Regular;20" halign="center" valign="center" transparent="1"/>
 		<widget source="legend2" render="Label" position="175,122" zPosition="1" size="400,60" foregroundColor="#004ccbde" font="Regular;20" halign="center" valign="center" transparent="1"/>
 		<widget source="legend3" render="Label" position="630,110" zPosition="1" size="120,60" foregroundColor="#004ccbde" font="Regular;20" halign="center" valign="center" transparent="1"/>
-		<widget source="config" render="Listbox" position="80,170" size="722,425" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black" transparent="1">
+		<widget source="config" render="Listbox" position="80,170" size="727,425" scrollbarMode="showOnDemand" transparent="1">
 		    <convert type="TemplatedMultiContent">
 			    {"template": [
 				MultiContentEntryPixmapAlphaTest(pos = (40, 6), size = (48, 48), png = 0), # index 0 is the isMounted pixmap
@@ -2128,7 +2128,7 @@ self.autoResize()
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-		<widget name="nimlist" position="80,145" size="722,450" font="Regular;18" backgroundColor="black" transparent="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black"/>
+		<widget name="nimlist" position="80,145" size="727,450" font="Regular;18" backgroundColor="black" transparent="1" scrollbarMode="showOnDemand"/>
 	</screen>	
 	<!--  ####### Configuracion sintonizador->sintonizar boton rojo #######  -->	
 	<screen name="TunerScreen" position="fill" title="Tuner Screen" flags="wfNoBorder">
@@ -2198,7 +2198,7 @@ self.autoResize()
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title_not_menu_path"/>
         <panel name="PIG"/>
-		<widget name="servicesfound" position="80,145" size="722,450" font="Regular;18" backgroundColor="black" transparent="1"/>
+		<widget name="servicesfound" position="80,145" size="727,450" font="Regular;18" backgroundColor="black" transparent="1"/>
 	</screen>	
 	<!-- ####### MessageBox Template para ambos Mensajes sistema ####### -->	
 	<screen name="MessageBoxTemplate" position="fill" flags="wfNoBorder">
@@ -2459,8 +2459,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
         <panel name="Title_not_menu_path"/>
 		<panel name="ScrollBarTemplate"/>
-		<widget name="menu_list" position="80,145" size="722,100" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black"/>		
-		<widget name="file_list" position="80,255" size="722,325" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black" selectionPixmap="ViX-Turquoise-HD/icons/ls700x30-h.png"/>		
+		<widget name="menu_list" position="80,145" size="727,100" scrollbarMode="showOnDemand"/>		
+		<widget name="file_list" position="80,255" size="727,325" scrollbarMode="showOnDemand" selectionPixmap="ViX-Turquoise-HD/icons/ls700x30-h.png"/>		
 	</screen>
 	<!--####### SubsSupport DVB player ->AMARILLO####### -->	
 	<screen name="SubsDownloadedSelection" position="fill" flags="wfNoBorder">
@@ -2663,8 +2663,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
 		<widget name="timer1" position="80,140" size="690,50" scrollbarMode="showNever"/>
-		<widget name="timer2" position="80,220" size="690,50" scrollbarMode="showNever"/>
-		<widget name="list" position="80,350" size="722,250" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black" transparent="1"/>		
+		<widget name="timer2" position="80,220" size="727,50" scrollbarMode="showOnDemand"/>
+		<widget name="list" position="80,350" size="727,250" scrollbarMode="showOnDemand" transparent="1"/>		
 	</screen>
 	<!-- ####### TIMER SELECTION #######  -->
 	<screen name="TimerSelection" position="fill" title="Timer selection" backgroundColor="black" flags="wfNoBorder">
@@ -3103,8 +3103,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>		
-		<widget name="text" position="95,137" size="722,32" font="Regular;24" transparent="1" foregroundColor="#004ccbde" backgroundColor="black"/>  
-		<widget name="entries" position="80,177" size="732,400" zPosition="0" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black" transparent="1" backgroundColor="black"/>  
+		<widget name="text" position="95,137" size="710,32" font="Regular;24" transparent="1" foregroundColor="#004ccbde" backgroundColor="black"/>  
+		<widget name="entries" position="80,177" size="727,400" zPosition="0" scrollbarMode="showOnDemand" transparent="1" backgroundColor="black"/>  
 	</screen>
 	 <!-- ####### CIselectMainMenu ####### -->
 	<screen name="CIselectMainMenu" position="center,center" size="710,240" title="CI Assignment">
@@ -3208,7 +3208,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <widget name="description" position="845,415" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>				
 	</screen>		
 	<!--####### InputDeviceSelection (Dispositivos de Entrada) #######-->
-	<screen name="InputDeviceSelection" position="center,center" size="1280,720" flags="wfNoBorder">
+	<screen name="InputDeviceSelection" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaConfig_s4_ButtonsRG"/>
 		<panel name="ScrollBarTemplate"/>
 	    <panel name="Title"/>
@@ -3230,12 +3230,12 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="introduction" render="Label" position="845,435" size="380,160" halign="center" valign="center" font="Regular;21" foregroundColor="#004ccbde" backgroundColor="#030303" transparent="1" zPosition="2"/>
 	</screen>
 	<!-- ####### Seleccionar Dispositivo OK ####### -->	
-	<screen name="InputDeviceSetup" position="center,center" size="1280,720" flags="wfNoBorder">
+	<screen name="InputDeviceSetup" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaConfig_s4_ButtonsRG"/>
 		<panel name="ScrollBarTemplate"/>
 	    <panel name="Title"/>
 	    <panel name="PIG"/>		
-		<widget name="config" position="80,138" size="722,400" scrollbarMode="showAlways" scrollbarSliderForegroundColor="black"/>
+		<widget name="config" position="80,138" size="722,400" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 		<widget source="introduction" render="Label" position="845,435" size="380,160" zPosition="2" halign="center" valign="center" font="Regular;21" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 	</screen>
@@ -5940,7 +5940,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title_not_menu_path"/>		
         <panel name="PIG"/>
-		<widget source="list" render="Listbox" position="75,145" size="727,410" selectionPixmap="ViX-Turquoise-HD/icons/ls700x38.png" scrollbarMode="showOnDemand">
+		<widget source="list" render="Listbox" position="75,145" size="732,410" selectionPixmap="ViX-Turquoise-HD/icons/ls700x38.png" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				MultiContentEntryText(pos = (50, 5), size = (440, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
@@ -5959,7 +5959,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title_not_menu_path"/>		
         <panel name="PIG"/>		
-		<widget source="list" render="Listbox" position="80,138" size="722,410" selectionPixmap="ViX-Turquoise-HD/icons/ls700x38.png" scrollbarMode="showOnDemand">
+		<widget source="list" render="Listbox" position="80,138" size="727,410" selectionPixmap="ViX-Turquoise-HD/icons/ls700x38.png" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				MultiContentEntryPixmapAlphaBlend(pos = (15, 5), size = (32, 32), png = 0),
@@ -5978,7 +5978,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title_not_menu_path"/>		
         <panel name="PIG"/>		
-		<widget name="list" position="80,140" size="722,420" font="Regular;18"/>
+		<widget name="list" position="80,140" size="727,420" font="Regular;18"/>
 	</screen>
     <!-- ## AutoBouquetsMaker Acerca de ## -->	
 	<screen name="AutoBouquetsMaker_About" position="fill" flags="wfNoBorder">
@@ -6207,7 +6207,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
 		<widget name="lab1" position="80,145" size="670,50" font="Regular;20" zPosition="2" transparent="0" halign="center"/>
-		<widget name="list" position="80,230" size="722,350" selectionPixmap="ViX-Turquoise-HD/icons/ls705x38.png" font="Regular;22" backgroundColor="black" transparent="0" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black" enableWrapAround="1"/>
+		<widget name="list" position="80,230" size="727,350" selectionPixmap="ViX-Turquoise-HD/icons/ls705x38.png" font="Regular;22" backgroundColor="black" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1"/>
 		<ePixmap pixmap="icons/key_menu1.png" position="10,638" size="40,22" alphatest="blend"/>		
         <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>			
 		<widget name="backupstatus" position="835,460" size="390,25" foregroundColor="#004ccbde" font="Regular;20" backgroundColor="black" transparent="1" halign="center" valign="center"/>
@@ -6241,7 +6241,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-		<widget name="filelist" position="80,145" size="722,400" backgroundColor="black" transparent="0" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black"/>
+		<widget name="filelist" position="80,145" size="727,400" backgroundColor="black" transparent="0" scrollbarMode="showOnDemand"/>
 	</screen>	
 	<screen name="VIXImageManager" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaConfig"/>	
@@ -6249,7 +6249,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
 		<widget name="lab1" position="80,145" size="670,50" font="Regular;20" zPosition="2" transparent="0" halign="center"/>
-		<widget name="list" position="80,230" size="722,350" selectionPixmap="ViX-Turquoise-HD/icons/ls705x38.png" font="Regular;22" backgroundColor="black" transparent="0" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black" enableWrapAround="1"/>
+		<widget name="list" position="80,230" size="727,350" selectionPixmap="ViX-Turquoise-HD/icons/ls705x38.png" font="Regular;22" backgroundColor="black" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1"/>
 		<widget name="backupstatus" position="835,460" size="390,25" foregroundColor="#004ccbde" font="Regular;20" backgroundColor="black" transparent="1" halign="center" valign="center"/>
 		<applet type="onLayoutFinish">
 			self["list"].instance.setItemHeight(30)
@@ -6262,7 +6262,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
 		<widget name="lab1" position="80,130" size="670,30" font="Regular;20" backgroundColor="black" foregroundColor="#004ccbde" zPosition="2" transparent="0" halign="center"/>
-		<widget name="list" position="80,180" size="722,385" selectionPixmap="ViX-Turquoise-HD/icons/ls705x38.png" font="Regular;22" backgroundColor="black" transparent="0" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black" enableWrapAround="1"/>
+		<widget name="list" position="80,180" size="727,385" selectionPixmap="ViX-Turquoise-HD/icons/ls705x38.png" font="Regular;22" backgroundColor="black" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1"/>
 		<applet type="onLayoutFinish">
 			self["list"].instance.setItemHeight(30)
 		</applet>
@@ -6273,7 +6273,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
 		<widget name="lab1" position="80,145" size="670,50" font="Regular;20" zPosition="2" transparent="0" halign="center"/>
-		<widget name="list" position="80,230" size="722,350" selectionPixmap="ViX-Turquoise-HD/icons/ls705x38.png" backgroundColor="black" transparent="0" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black" enableWrapAround="1"/>
+		<widget name="list" position="80,230" size="727,350" selectionPixmap="ViX-Turquoise-HD/icons/ls705x38.png" backgroundColor="black" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1"/>
 		<applet type="onLayoutFinish">
 			self["list"].instance.setItemHeight(30)
 		</applet>
@@ -6284,7 +6284,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-		<widget source="list" render="Listbox" position="80,145" size="722,420" backgroundColor="black" selectionPixmap="icons/ls700x90.png" transparent="0" scrollbarMode="showOnDemand">
+		<widget source="list" render="Listbox" position="80,145" size="727,420" backgroundColor="black" selectionPixmap="icons/ls700x90.png" transparent="0" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				MultiContentEntryText(pos = (160, 10), size = (413, 30), font=0, text = 0),
@@ -6312,7 +6312,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>	
-		<widget source="list" render="Listbox" position="60,150" size="722,420" selectionPixmap="icons/ls530x30.png" backgroundColor="black" transparent="0" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black" enableWrapAround="1">
+		<widget source="list" render="Listbox" position="60,150" size="727,420" selectionPixmap="icons/ls530x30.png" backgroundColor="black" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				MultiContentEntryText(pos = (90, 0), size = (368, 30), font=0, text = 0),
@@ -6333,7 +6333,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
 		<ePixmap pixmap="icons/key_menu1.png" position="10,638" size="40,22" alphatest="blend"/>		
-		<widget name="list" position="80,145" size="722,420" selectionPixmap="icons/ls530x30.png" backgroundColor="black" transparent="0" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black" enableWrapAround="1"/>
+		<widget name="list" position="80,145" size="727,420" selectionPixmap="icons/ls530x30.png" backgroundColor="black" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1"/>
 	</screen>
 	<screen name="VIXSwap" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaConfig"/>
