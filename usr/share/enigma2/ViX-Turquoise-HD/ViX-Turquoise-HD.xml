@@ -1971,7 +1971,7 @@ self.autoResize()
         <panel name="Title"/>
         <panel name="PIG"/>		
         <panel name="sRGY"/>		
-		<widget source="nimlist" render="Listbox" position="80,138" size="715,400" selectionPixmap="icons/ls700x90.png" transparent="1">
+		<widget source="nimlist" render="Listbox" position="80,138" size="725,400" scrollbarMode="showOnDemand" selectionPixmap="icons/ls700x90.png" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				MultiContentEntryText(pos = (10,3), size = (860,23), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
@@ -1989,7 +1989,7 @@ self.autoResize()
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>	
-		<widget name="config" position="63,160" size="738,400" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black" transparent="1"/>
+		<widget name="config" position="63,160" size="743,400" scrollbarMode="showOnDemand" transparent="1"/>
         <widget name="description" position="845,415" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 	</screen>
@@ -4362,7 +4362,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title_not_menu_path"/>
         <panel name="PIG"/>
-  		<widget source="menu" render="Listbox" position="80,140" size="723,440" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black" selectionPixmap="ViX-Turquoise-HD/icons/ls700x110.png" backgroundColor="black" transparent="1" zPosition="-1">
+  		<widget source="menu" render="Listbox" position="80,140" size="728,440" scrollbarMode="showOnDemand" selectionPixmap="ViX-Turquoise-HD/icons/ls700x110.png" backgroundColor="black" transparent="1" zPosition="-1">
   		    <convert type="TemplatedMultiContent">
                 {"template": [
 				MultiContentEntryText(pos = (80, 0), size = (10, 60), font = 2, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
