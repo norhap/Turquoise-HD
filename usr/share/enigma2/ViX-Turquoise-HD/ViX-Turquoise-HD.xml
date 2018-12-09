@@ -123,7 +123,7 @@
 	<!-- ChannelList Menu OK -->
 	<screen name="ChannelContextMenu" position="fill" flags="wfNoBorder">
         <panel name="PantallaPieTV"/>
-	    <widget name="menu" position="80,138" size="718,450" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black" selectionPixmap="ViX-Turquoise-HD/icons/ls680x28.png" itemHeight="30" font="Regular;22" backgroundColor="black" transparent="1"/>
+	    <widget name="menu" position="80,138" size="727,450" scrollbarMode="showOnDemand" selectionPixmap="ViX-Turquoise-HD/icons/ls680x28.png" itemHeight="30" font="Regular;22" backgroundColor="black" transparent="1"/>
 	    <ePixmap pixmap="icons/key_menu1.png" position="60,640" size="40,22" alphatest="blend" transparent="1" zPosition="1"/>		
 	</screen>
     <!-- ## Configurar Ruta picons lista Canales->Menu->use custom picons in service list active->ruta picon OK ->## -->
@@ -5428,7 +5428,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title_not_menu_path"/>		
         <panel name="PIG"/>	
-	    <widget name="config" position="60,142" size="743,425" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black" backgroundColor="black" transparent="1" zPosition="1"/>
+	    <widget name="config" position="60,142" size="748,425" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" zPosition="1"/>
         <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 	    <widget source="help" render="Label" position="845,425" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 	</screen>
@@ -5439,7 +5439,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title_not_menu_path"/>
 		<panel name="PIG"/>
 	<!-- Lista de Peliculas y caratulas encontradas -->	
-		<widget name="menulist" position="60,155" size="743,400" font="Regular;14" zPosition="2" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black" transparent="1" enableWrapAround="on"/>
+		<widget name="menulist" position="60,155" size="748,400" font="Regular;14" zPosition="2" scrollbarMode="showOnDemand" transparent="1" enableWrapAround="on"/>
 	<!-- Info: Amount of searched Covers -->
 
 	<!-- datos de la busqueda de caratulas -->
@@ -5471,7 +5471,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title_not_menu_path"/>
 		<panel name="PIG"/>
 	<!-- Movie Listbox -->	
-		<widget name="menulist" position="80,160" size="700,365" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black" transparent="1" enableWrapAround="on"/>
+		<widget name="menulist" position="80,160" size="727,365" scrollbarMode="showOnDemand" transparent="1" enableWrapAround="on"/>
 	<!-- aktual movie name -->
 		<widget name="m_info" position="230,105" size="400,25" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1"/>		
 	<!-- Info: Amount of searched Covers -->
