@@ -2459,8 +2459,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
         <panel name="Title_not_menu_path"/>
 		<panel name="ScrollBarTemplate"/>
-		<widget name="menu_list" position="80,145" size="727,100" scrollbarMode="showOnDemand"/>		
-		<widget name="file_list" position="80,255" size="727,325" scrollbarMode="showOnDemand" selectionPixmap="ViX-Turquoise-HD/icons/ls700x30-h.png"/>		
+		<widget name="menu_list" position="80,130" size="727,85" scrollbarMode="showOnDemand"/>		
+		<widget name="file_list" position="80,215" size="727,345" scrollbarMode="showOnDemand" selectionPixmap="ViX-Turquoise-HD/icons/ls700x30-h.png"/>		
 	</screen>
 	<!--####### SubsSupport DVB player ->AMARILLO####### -->	
 	<screen name="SubsDownloadedSelection" position="fill" flags="wfNoBorder">
@@ -2472,7 +2472,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
             <widget source="header_name" render="Label" position="80,145" size="360,25" font="Regular;18"/>
             <widget source="header_provider" render="Label" position="405,145" size="165,25" font="Regular;18"/>
             <widget source="header_date" render="Label" position="640,145" size="200,25" font="Regular;18"/>
-            <widget source="subtitles" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black" position="80,190" size="717,410" zPosition="3" transparent="1">
+            <widget source="subtitles" render="Listbox" scrollbarMode="showOnDemand" position="80,190" size="722,410" zPosition="3" transparent="1">
                 <convert type="TemplatedMultiContent">
                     {"templates":
                         {"default": (50, [
@@ -2514,7 +2514,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
             <widget source="header_release" render="Label" position= "225,295" size="335,25" font="Regular;18"/>
             <widget source="header_provider" render="Label" position= "585,295" size="135,25" font="Regular;18"/>
             <widget source="header_sync" render="Label" position="705,295" size="20,25" font="Regular;18"/>
-            <widget source="subtitles" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black" position="85,325" size="717,255" zPosition="3" transparent="1">
+            <widget source="subtitles" render="Listbox" scrollbarMode="showOnDemand" position="85,325" size="722,255" zPosition="3" transparent="1">
                 <convert type="TemplatedMultiContent">
                     {"templates":
                         {"default": (23, [
@@ -2559,7 +2559,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
         <panel name="Title_not_menu_path"/>
 		<panel name="ScrollBarTemplate"/>
-            <widget source="menuList" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black" backgroundPixmap="ViX-Turquoise-HD/icons/butselection1.png" selectionPixmap="ViX-Turquoise-HD/icons/lsmenu.png" position="70,145" size="732,400" zPosition="3" transparent="1" >
+            <widget source="menuList" render="Listbox" scrollbarMode="showOnDemand" backgroundPixmap="ViX-Turquoise-HD/icons/butselection1.png" selectionPixmap="ViX-Turquoise-HD/icons/lsmenu.png" position="70,145" size="738,400" zPosition="3" transparent="1" >
                 <convert type="TemplatedMultiContent">
 			        {"template": [ 
 			        MultiContentEntryText(pos = (51,0), size = (600,38), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	),
