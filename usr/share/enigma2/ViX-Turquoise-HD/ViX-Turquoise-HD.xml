@@ -139,7 +139,7 @@
 	<screen name="ChannelSelection" position="fill" title="Channel Selection" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="PantallaListaCanales"/>
         <panel name="Titlechannellist"/>
-		<ePixmap position="790,120" zPosition="3" size="25,470" pixmap="ViX-Turquoise-HD/icons/barra470.png" alphatest="blend" transparent="1"/>		
+		<ePixmap position="795,120" zPosition="3" size="25,470" pixmap="ViX-Turquoise-HD/icons/barra470.png" alphatest="blend" transparent="1"/>		
 	<!-- Pig -->			
 		<widget source="session.VideoPicture" render="Pig" position="840,215" size="370,215" zPosition="3" backgroundColor="#df0b1300"/>
 		<eLabel position="840,410" size="370,20" backgroundColor="#20101010" zPosition="3"/>
@@ -376,7 +376,7 @@
 			serviceNumberFont="Regular;22" serviceNameFont="Regular;26" serviceInfoFont="Regular;20" colorServiceDescription="#004ccbde"
 			picServiceEventProgressbar="icons/pl.png" transparent="1" 
 			foregroundColorEventSelected="#a1d1ff"/>
-		<ePixmap position="538,0" zPosition="3" size="27,435" pixmap="ViX-Turquoise-HD/icons/barra435.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="542,0" zPosition="3" size="27,435" pixmap="ViX-Turquoise-HD/icons/barra435.png" alphatest="blend" transparent="1"/>
 	    <eLabel position="5,420" size="526,1" backgroundColor="#0000fafa" zPosition="0"/>
 	    <eLabel position="5,421" size="1,19" backgroundColor="#0000fafa" zPosition="0"/>		
 	    <eLabel position="5,440" size="526,1" backgroundColor="#0000fafa" zPosition="0"/>
@@ -771,7 +771,7 @@
 		<widget source="global.CurrentTime" render="Label" position="1148,8" size="100,28" font="Regular;22" foregroundColor="#0000fafa" backgroundColor="#0003424a" halign="right" transparent="1" zPosition="1">
 		    <convert type="ClockToText">Format %H:%M:%S</convert>
 		</widget>
-		<widget name="list" position="15,42" size="762,120" foregroundColor="#004ccbde" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="#0003424a" font="Regular;20" backgroundColor="black"/>
+		<widget name="list" position="15,42" size="762,120" foregroundColor="#004ccbde" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="#0000fafa" font="Regular;20" backgroundColor="black"/>
 		<widget source="Service" render="Picon" position="30,0" size="70,42" backgroundColor="#0003424a" zPosition="2" alphatest="blend">
 		    <convert type="ServiceName">Reference</convert>
 		</widget>		
@@ -890,7 +890,7 @@ self.autoResize()
 		<widget name="long_key" position="680,100" zPosition="2" size="250,25" foregroundColor="#004ccbde" font="Regular;18" halign="center" backgroundColor="black" transparent="1"/>
 		
 	<!-- options lists -->
-		<widget name="list" position="80,130" zPosition="1" size="848,457" scrollbarMode="showOnDemand" selectionPixmap="ViX-Turquoise-HD/icons/ls800x38.png" transparent="1"/>
+		<widget name="list" position="80,130" zPosition="1" size="843,457" scrollbarMode="showOnDemand" selectionPixmap="ViX-Turquoise-HD/icons/ls800x38.png" transparent="1"/>
 		
 	<!-- scrollbar background -->
 		<ePixmap position="905,124" zPosition="2" size="33,470" pixmap="ViX-Turquoise-HD/icons/barra470.png" alphatest="blend" transparent="1"/>
@@ -1822,7 +1822,7 @@ self.autoResize()
 		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>		
 		<widget name="text" position="600,150" size="450,240" zPosition="10" font="Regular;23" halign="center" valign="center" transparent="1"/>
-		<widget source="languages" render="Listbox" position="100,135" size="502,450" zPosition="10" scrollbarMode="showOnDemand" transparent="1">
+		<widget source="languages" render="Listbox" position="100,135" size="497,450" zPosition="10" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				MultiContentEntryText(pos = (80, 10), size = (200, 50), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
@@ -2371,7 +2371,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>			
-		<widget name="config" position="69,137" size="705,400" transparent="1"/>
+		<widget name="config" position="59,155" size="748,425" transparent="1"/>
 	</screen>
 	<!--####### INTRODUCE PIN ####### -->
 	<screen name="PinInput" position="fill" flags="wfNoBorder">
@@ -2604,7 +2604,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title_not_menu_path"/>
         <panel name="PIG"/>		
-		<widget name="list" position="80,138" size="723,450" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black" transparent="1"/>
+		<widget name="list" position="80,138" size="727,450" scrollbarMode="showOnDemand" transparent="1"/>
 		<ePixmap pixmap="icons/key_epg_single.png" position="645,680" size="40,22" alphatest="blend"/>		
 		<ePixmap pixmap="icons/key_info.png" position="690,680" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_ok.png" position="735,680" size="40,22" alphatest="blend"/>
@@ -4113,7 +4113,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
 		<panel name="Title_not_menu_path"/>
         <ePixmap position="860,414" size="370,204" zPosition="1" pixmap="ViX-Turquoise-HD/menu/ico_crossepg.png" alphatest="on"/>		
-		<widget source="list" render="Listbox" position="66,145" size="730,440" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black" enableWrapAround="1" backgroundColor="#00333333" transparent="1">
+		<widget source="list" render="Listbox" position="66,145" size="740,425" scrollbarMode="showOnDemand"  enableWrapAround="1" backgroundColor="black" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				MultiContentEntryPixmapAlphaTest(pos = (20, 5), size = (32, 32), png = 0),
@@ -4133,7 +4133,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
 		<panel name="ScrollBarTemplate"/>		
 	    <ePixmap position="860,414" size="370,204" zPosition="1" pixmap="ViX-Turquoise-HD/menu/ico_crossepg.png" alphatest="on"/>		
-		<widget source="list" render="Listbox" position="66,145" size="690,450" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black" enableWrapAround="1" backgroundColor="black" transparent="1">
+		<widget source="list" render="Listbox" position="66,150" size="740,425" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="black" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				MultiContentEntryText(pos = (18, 0), size = (700, 32), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
@@ -4153,7 +4153,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>		
 		<panel name="Title_not_menu_path"/>		
 		<ePixmap position="860,414" size="370,204" zPosition="1" pixmap="ViX-Turquoise-HD/menu/ico_crossepg.png" alphatest="on"/>
-		<widget source="list" render="Listbox" position="60,145" size="730,450" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black" enableWrapAround="1" backgroundColor="#00333333" transparent="1">
+		<widget source="list" render="Listbox" position="60,145" size="747,425" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="#00333333" transparent="1">
 			<convert type="TemplatedMultiContent">
 			    {"template": [
 			    MultiContentEntryText(pos = (18, 0), size = (700, 32), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
@@ -5122,7 +5122,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         </widget>		
 	<!-- Lista  -->
 		<widget name="waitingtext" position="415,90" size="435,20" font="Regular;20" foregroundColor="yellow" backgroundColor="black" transparent="1" halign="center" valign="top"/>
-		<widget name="list" zPosition="1" position="55,162" size="853,342" scrollbarMode="showOnDemand" transparent="0"/>
+		<widget name="list" zPosition="1" position="55,162" size="848,342" scrollbarMode="showOnDemand" transparent="0"/>
 		<ePixmap position="885,112" zPosition="3" size="25,470" pixmap="icons/barra400.png" alphatest="blend" transparent="1"/>
         <widget name="TrashcanSize" position="380,70" size="300,120" font="Regular;20" foregroundColor="#0000fafa" backgroundColor="black" halign="center" valign="center" zPosition="2" transparent="1"/>	
 		<widget source="session.VideoPicture" render="Pig" position="903,150" size="320,165" zPosition="3" backgroundColor="#df0b1300"/>
@@ -5240,7 +5240,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <widget name="CoverBg" backgroundColor="#df0b1300" position="0,0" size="0,0" zPosition="0"/>
         <widget name="Video" backgroundColor="#df0b1300" position="955,185" size="255,172" zPosition="0"/>		
 		<!--widget name="list" position="50,145" size="598,350" itemHeight="25" CoolFont="Regular;20" CoolSelectFont="Regular;18" CoolDateFont="Regular;20" CoolMoviePos="35" CoolMovieSize="990" CoolFolderSize="990" CoolTitleColor="0" CoolDatePos="1000" CoolDateWidth="160" CoolDateColor="0" CoolHighlightColor="0" CoolProgressPos="1600" CoolBarPos="890" CoolBarHPos="8" CoolBarSize="55,10" CoolBarSizeSa="110,16" DefaultColor="#00FFFFFF" UnwatchedColor="#0000fafa" WatchingColor="#00FFFFFF" FinishedColor="red" RecordingColor="#009F1313" BackColorSel="#000a4b32" foregroundColorSelected="#004ccbde" backgroundColor="black" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black" transparent="1" zPosition="1"/-->
-		<widget name="list" position="70,167" size="880,333" CoolDirInfoWidth="110" CoolCSPos="680" CoolBarHPos="9" CoolBarPos="530" CoolBarSizeSa="85,16" CoolDateColor="1" CoolDateFont="Regular;14" CoolDateHPos="5" CoolDatePos="630" CoolDateWidth="160" CoolFolderSize="620" CoolFont="Regular;16" CoolHighlightColor="1" CoolIconPos="5" CoolIconSize="35,26" CoolMovieHPos="4" CoolMoviePiconPos="100" CoolMoviePiconSize="520" CoolMoviePos="40" CoolMovieSize="470" CoolPiconHPos="2" CoolPiconHeight="20" CoolPiconPos="13" CoolProgressPos="1600" CoolSelNumTxtWidth="10" CoolSelectFont="Regular;12" CoolTitleColor="1" DefaultColor="foreground" itemHeight="30" enableWrapAround="1" scrollbarMode="showOnDemand"/>
+		<widget name="list" position="70,167" size="875,333" CoolDirInfoWidth="110" CoolCSPos="680" CoolBarHPos="9" CoolBarPos="530" CoolBarSizeSa="85,16" CoolDateColor="1" CoolDateFont="Regular;14" CoolDateHPos="5" CoolDatePos="630" CoolDateWidth="160" CoolFolderSize="620" CoolFont="Regular;16" CoolHighlightColor="1" CoolIconPos="5" CoolIconSize="35,26" CoolMovieHPos="4" CoolMoviePiconPos="100" CoolMoviePiconSize="520" CoolMoviePos="40" CoolMovieSize="470" CoolPiconHPos="2" CoolPiconHeight="20" CoolPiconPos="13" CoolProgressPos="1600" CoolSelNumTxtWidth="10" CoolSelectFont="Regular;12" CoolTitleColor="1" DefaultColor="foreground" itemHeight="30" enableWrapAround="1" scrollbarMode="showOnDemand"/>
 		<ePixmap position="927,110" zPosition="3" size="25,470" pixmap="icons/barra400.png" alphatest="blend" transparent="1"/>
 	</screen>	
 	<!-- PVRState -->
@@ -5379,7 +5379,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title_not_menu_path"/>		
         <panel name="PIG"/>		
-		<widget source="menu" render="Listbox" position="80,138" size="723,400" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black" transparent="1" zPosition="1">
+		<widget source="menu" render="Listbox" position="80,138" size="727,400" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1" zPosition="1">
 			<convert type="StringList"/>
 		</widget>
 	</screen>
@@ -5929,7 +5929,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title_not_menu_path"/>		
         <panel name="PIG"/>
-        <widget name="config" position="65,145" zPosition="0" size="735,427" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black"/>
+        <widget name="config" position="65,145" zPosition="0" size="739,427" scrollbarMode="showOnDemand"/>
         <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 		<widget name="description" position="845,415" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 		<widget name="pleasewait" position="845,425" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>

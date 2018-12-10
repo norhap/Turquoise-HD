@@ -36,7 +36,7 @@
 
 	<!-- ####### SCROLLBAR BASE TEMPLATE ####### -->
 	<screen name="ScrollBarTemplate">
-		<ePixmap position="785,120" zPosition="3" size="25,470" pixmap="ViX-Turquoise-HD/icons/barra470.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="790,120" zPosition="3" size="25,470" pixmap="ViX-Turquoise-HD/icons/barra470.png" alphatest="blend" transparent="1"/>
 	</screen>	
 	<!-- ### TEMPLATE TITULOS -->
 	<screen name="Title">
