@@ -4133,7 +4133,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
 		<panel name="ScrollBarTemplate"/>		
 	    <ePixmap position="860,414" size="370,204" zPosition="1" pixmap="ViX-Turquoise-HD/menu/ico_crossepg.png" alphatest="on"/>		
-		<widget source="list" render="Listbox" position="66,150" size="740,425" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="black" transparent="1">
+		<widget source="list" render="Listbox" position="66,150" size="742,415" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="black" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				MultiContentEntryText(pos = (18, 0), size = (700, 32), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
@@ -4153,7 +4153,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>		
 		<panel name="Title_not_menu_path"/>		
 		<ePixmap position="860,414" size="370,204" zPosition="1" pixmap="ViX-Turquoise-HD/menu/ico_crossepg.png" alphatest="on"/>
-		<widget source="list" render="Listbox" position="60,145" size="747,425" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="#00333333" transparent="1">
+		<widget source="list" render="Listbox" position="60,145" size="747,420" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="black" transparent="1">
 			<convert type="TemplatedMultiContent">
 			    {"template": [
 			    MultiContentEntryText(pos = (18, 0), size = (700, 32), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
@@ -4243,7 +4243,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
-		<widget name="AboutScrollLabel" position="100,140" size="702,420" font="Regular;21" backgroundColor="black" transparent="1"/>
+		<widget name="AboutScrollLabel" position="100,140" size="708,420" font="Regular;21" backgroundColor="black" transparent="1"/>
         <widget name="HintText" position="845,415" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>		
 	</screen>	
 	<!--  About OK->Info->OK -->
@@ -5019,7 +5019,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title_not_menu_path"/>		
         <panel name="PIG"/>
-		<widget name="config" position="60,145" size="742,420" font="Regular;18" itemHeight="28" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black" backgroundColor="black"/>
+		<widget name="config" position="60,145" size="748,420" font="Regular;18" itemHeight="28" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="black"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 		<widget source="help" render="Label" position="865,435" size="320,500" font="Regular;18" halign="center" transparent="1" foregroundColor="#004ccbde" backgroundColor="black"/>
 	</screen>	
@@ -5031,7 +5031,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title_not_menu_path"/>
         <panel name="sRGYB"/>		
         <panel name="PIG"/>
-		<widget name="config" position="60,145" size="742,425" font="Regular;18" itemHeight="30" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="black" backgroundColor="black"/>
+		<widget name="config" position="60,145" size="748,425" font="Regular;18" itemHeight="30" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="black"/>
 		<widget source="help" render="Label" position="865,435" size="320,500" font="Regular;18" halign="center" transparent="1" foregroundColor="#004ccbde" backgroundColor="black"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 	</screen>
