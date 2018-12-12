@@ -2197,7 +2197,8 @@ self.autoResize()
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title_not_menu_path"/>
         <panel name="PIG"/>
-		<widget name="servicesfound" position="80,145" size="727,450" font="Regular;18" backgroundColor="black" transparent="1"/>
+        <widget name="legend" position="290,110" size="590,80" zPosition="10" backgroundColor="black" font="Regular;18" transparent="1"/>		
+		<widget name="servicesfound" position="80,180" size="727,450" font="Regular;18" backgroundColor="black" transparent="1"/>
 	</screen>	
 	<!-- ####### MessageBox Template para ambos Mensajes sistema ####### -->	
 	<screen name="MessageBoxTemplate" position="fill" flags="wfNoBorder">
