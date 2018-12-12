@@ -65,7 +65,7 @@
 	    <widget source="session.VideoPicture" render="Pig" position="840,115" size="370,215" zPosition="3" backgroundColor="#df0b1300"/>
 		<eLabel position="840,310" size="370,20" backgroundColor="#20101010" zPosition="3"/>
 	<!-- Nombre del Canal - Service Name -->		
-		<widget source="session.CurrentService" render="Label" position="838,310" size="382,25" zPosition="4" foregroundColor="#0000fafa" font="Regular;20" valign="center" halign="center" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="838,310" size="382,25" zPosition="4" foregroundColor="#0000fafa" backgroundColor="#20101010" font="Regular;20" valign="center" halign="center" transparent="1">
 		    <convert type="ServiceName">Name</convert>
 		</widget>		
 	<!-- Barra Progresso -->
