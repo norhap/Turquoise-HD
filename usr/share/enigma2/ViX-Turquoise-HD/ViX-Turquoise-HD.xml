@@ -2693,7 +2693,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- ####### TEMPORIZADORES + TEMPORIZADORES DE ALIMENTACION ####### -->
 	<screen name="TimerEditList" position="fill" backgroundColor="black" flags="wfNoBorder">
-		<panel name="PantallaGenericaConfig_s4_ButtonsRGY"/>		
+		<panel name="PantallaGenericaConfig"/>		
 		<panel name="ScrollBarTemplate"/>
 		<panel name="Title_not_menu_path"/>
 		<panel name="PIG"/>
