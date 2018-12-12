@@ -1,1 +1,1 @@
-# ViX-Turquoise-HD
+# Skin ViX-Turquoise-HD for OpenViX
