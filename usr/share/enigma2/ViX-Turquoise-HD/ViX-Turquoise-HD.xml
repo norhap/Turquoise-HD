@@ -163,10 +163,10 @@
 		    <convert type="ServiceOrbitalPosition"/>
 		</widget>
 	<!-- channels lists -->		
-		<widget name="list" position="68,140" zPosition="1" size="740,450" scrollbarMode="showOnDemand" serviceItemHeight="28"
-			serviceNumberFont="Regular;22" serviceNameFont="Regular;26" serviceInfoFont="Regular;20" colorServiceDescription="#004ccbde"
+		<widget name="list" position="68,140" zPosition="1" size="740,450" backgroundColor="black" scrollbarMode="showOnDemand" serviceItemHeight="28"
+			serviceNumberFont="Regular;22" serviceNameFont="Regular;26" serviceInfoFont="xRegular;17" colorServiceDescription="#004ccbde"
 			picServiceEventProgressbar="icons/pl.png" selectionPixmap="ViX-Turquoise-HD/icons/ls715x30.png" transparent="1" 
-			foregroundColorEventSelected="#a1d1ff"/>			
+			foregroundColorEventSelected="#00a1d1ff"/>			
 	<!-- current event start, end and progress -->
 		<widget source="ServiceEvent" render="Label" position="840,188" size="67,27" zPosition="2" halign="left" font="Regular;15" noWrap="1" transparent="1" foregroundColor="#0000fafa" backgroundColor="background">
 			<convert type="EventTime">StartTime</convert>
@@ -372,10 +372,10 @@
 		<panel name="BotonGreenAncho"/>
 		<panel name="BotonYellowAncho"/>
 		<panel name="BotonBlueAncho"/>	
-		<widget name="list" position="0,0" size="560,420" scrollbarMode="showOnDemand" serviceItemHeight="28"
+		<widget name="list" position="0,0" size="560,420" backgroundColor="black" scrollbarMode="showOnDemand" serviceItemHeight="28"
 			serviceNumberFont="Regular;22" serviceNameFont="Regular;26" serviceInfoFont="Regular;20" colorServiceDescription="#004ccbde"
 			picServiceEventProgressbar="icons/pl.png" transparent="1" 
-			foregroundColorEventSelected="#a1d1ff"/>
+			foregroundColorEventSelected="#00a1d1ff"/>
 		<ePixmap position="542,0" zPosition="3" size="27,435" pixmap="ViX-Turquoise-HD/icons/barra435.png" alphatest="blend" transparent="1"/>
 	    <eLabel position="5,420" size="526,1" backgroundColor="#0000fafa" zPosition="0"/>
 	    <eLabel position="5,421" size="1,19" backgroundColor="#0000fafa" zPosition="0"/>		
@@ -851,8 +851,8 @@
 	    <eLabel position="354,0" size="1,55" backgroundColor="#0000fafa" zPosition="1"/>
         <widget name="description" position="75,505" size="728,70" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>		
 		<!--widget name="windowtitle" position="230,15" foregroundColor="#00bab329" backgroundColor="#0003424a" size="200,25" font="Regular;20"/-->
-		<widget name="text" position="0,0" size="0,0" font="Regular;22"/>
-		<widget name="list" position="0,3" size="210,50" backgroundColor="#0003424a" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="#0000fafa" transparent="1"/>		
+		<widget name="text" position="0,2" size="0,0" font="Regular;22"/>
+		<widget name="list" position="0,2" size="353,50" backgroundColor="#0003424a" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="#0000fafa" transparent="1"/>		
 	</screen>
 	<screen name="RemoveTimerQuestion" position="center,center" size="355,55" backgroundColor="#0003424a" zPosition="5" flags="wfNoBorder">
 	    <eLabel position="0,0" size="355,1" backgroundColor="#0000fafa" zPosition="1"/>
@@ -860,9 +860,8 @@
 	    <eLabel position="0,54" size="355,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="354,0" size="1,55" backgroundColor="#0000fafa" zPosition="1"/>	
 		<!--widget name="windowtitle" position="230,15" foregroundColor="#00bab329" backgroundColor="#0003424a" size="200,25" font="Regular;20"/-->
-		<widget name="text" position="0,0" size="0,0" font="Regular;22"/>
-		<widget name="list" position="0,3" size="210,50" backgroundColor="#0003424a" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="#0000fafa" borderWidth="1"/>
-        <ePixmap position="195,0" zPosition="3" size="20,55" pixmap="ViX-Turquoise-HD/icons/barra20-55.png" alphatest="blend"/>	
+		<widget name="text" position="0,2" size="0,0" font="Regular;22"/>
+		<widget name="list" position="0,2" size="353,50" backgroundColor="#0003424a" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="#0000fafa"/>	
 		<applet type="onLayoutFinish">
 self.autoResize()
 		</applet>
