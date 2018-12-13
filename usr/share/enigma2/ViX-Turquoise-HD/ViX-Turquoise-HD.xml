@@ -619,14 +619,14 @@
             <convert type="ClockToText">Format:%H:%M :%S</convert>
         </widget>
 		<widget source="Title" render="Label" position="40,15" size="400,43" font="Regular;32" transparent="1" foregroundColor="#004ccbde" backgroundColor="black" zPosition="1"/>		
-		<widget source="Event" render="Label" position="280,232" size="100,28" font="Regular;20" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1">
+		<widget source="Event" render="Label" position="300,232" size="100,28" font="Regular;20" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1">
 		    <convert type="EventTime">StartTime</convert>
 		    <convert type="ClockToText">Format:%H:%M </convert>
 		</widget>
-		<widget source="Event" render="Progress" pixmap="icons/tv_b_bar.png" position="280,251" size="340,2" backgroundColor="grey" borderWidth="0" transparent="0" zPosition="1">
+		<widget source="Event" render="Progress" pixmap="icons/tv_b_bar.png" position="300,251" size="340,2" backgroundColor="grey" borderWidth="0" transparent="0" zPosition="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-		<widget  source="Event" render="Label" position="540,232" size="80,28" font="Regular;20" halign="right" foregroundColor="#00a1d1ff" backgroundColor="black" transparent="1">
+		<widget  source="Event" render="Label" position="560,232" size="80,28" font="Regular;20" halign="right" foregroundColor="#00a1d1ff" backgroundColor="black" transparent="1">
 		    <convert type="EventTime">EndTime</convert>
 		    <convert type="ClockToText">Format:%H:%M</convert>
 		</widget>		
@@ -634,7 +634,7 @@
 		    <convert type="EventTime">StartTime</convert>
 		    <convert type="ClockToText">Format:%a %d/%m/%y</convert>
 		</widget>		
-		<widget source="Event" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="110,105" size="690,120" zPosition="2" font="Regular;17" halign="center" valign="center" foregroundColor="#00a1d1ff" backgroundColor="black" transparent="0">
+		<widget source="Event" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="130,105" size="690,120" zPosition="2" font="Regular;17" halign="center" valign="center" foregroundColor="#00a1d1ff" backgroundColor="black" transparent="0">
 		     <convert type="EventName">ExtendedDescription</convert>
 		</widget>	
 	<!--panel name="FullscreenTitlePanel" /-->
