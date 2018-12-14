@@ -3383,7 +3383,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
             <convert type="ClockToText">Format::%S</convert>
         </widget>
     <!-- Data - Date -->
-        <widget source="global.CurrentTime" render="Label" position="1100,677" size="124,26" zPosition="2" font="LCD;22" halign="left" backgroundColor="background" foregroundColor="#00a1d1ff" transparent="1">
+        <widget source="global.CurrentTime" render="Label" position="1100,677" size="124,26" zPosition="2" font="LCD;22" halign="left" backgroundColor="#000d0d0d" foregroundColor="#00a1d1ff" transparent="1">
             <convert type="ClockToText">Format:%d.%m.%Y</convert>
         </widget>
     <!-- Nombre del Canal - Service Name -->
@@ -3456,7 +3456,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</widget-->	
 
     <!-- TUNERS DISPONIBLES + DISPOSICION -->
-	    <widget source="session.FrontendInfo" render="Label" position="1100,577" size="80,21" font="LCD;19" halign="center" noWrap="1" zPosition="2" backgroundColor="background" transparent="1">
+	    <widget source="session.FrontendInfo" render="Label" position="1100,577" size="80,21" font="LCD;19" halign="center" noWrap="1" zPosition="2" backgroundColor="#00393939" transparent="1">
 		    <convert type="FrontendInfo">STRING</convert>
 	    </widget>		
     <!-- Sezione Numero di cannale - Numero di cannale Section -->
@@ -3476,8 +3476,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>	   
     <!-- Sezione SNR - SNR Section -->
     <!-- eLabel text="Snr :" zPosition="1" position="220,684" size="60,20" halign="left" font="Regular;18" transparent="1" backgroundColor="transpBlack" -->
-        <eLabel text="CPU" zPosition="2" position="740,561" foregroundColor="#0000fafa" backgroundColor="black" size="30,10" font="xRegular;10"/>
-	    <widget source="session.CurrentService" render="Label" position="705,567" size="90,22" halign="center" valign="center" font="Regular;16" transparent="1" foregroundColor="#004ccbde" backgroundColor="background" zPosition="2">
+        <eLabel text="CPU" zPosition="2" position="740,561" foregroundColor="#0000fafa" backgroundColor="#0001030a" size="30,10" font="xRegular;10"/>
+	    <widget source="session.CurrentService" render="Label" position="705,567" size="90,22" halign="center" valign="center" font="Regular;16" transparent="1" foregroundColor="#004ccbde" backgroundColor="#0001030a" zPosition="2">
 		    <convert type="CpuUsage">$0</convert>
 	    </widget>		
 	<!--  Streaming -->	
@@ -3492,15 +3492,15 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		    <convert type="FrontendInfo">AGC</convert>
 	    </widget>	
     <!-- ePixmap position="273,693" zPosition="2" size="200,6" pixmap="ViX-Turquoise-HD/bar_snr_osd.png" alphatest="on" -->
-        <widget source="session.FrontendStatus" render="Label" position="971,562" zPosition="3" size="55,12" halign="left" font="Regular;14" foregroundColor="#004ccbde" transparent="1" backgroundColor="#00333333">
+        <widget source="session.FrontendStatus" render="Label" position="971,562" zPosition="3" size="55,12" halign="left" font="Regular;14" foregroundColor="#004ccbde" transparent="1" backgroundColor="#0012161b">
             <convert type="FrontendInfo">SNR</convert>
         </widget>
-        <widget source="session.FrontendStatus" render="Label" position="971,573" zPosition="3" size="55,12" halign="left" font="Regular;14" foregroundColor="#004ccbde" transparent="1" backgroundColor="#00333333">
+        <widget source="session.FrontendStatus" render="Label" position="971,573" zPosition="3" size="55,12" halign="left" font="Regular;14" foregroundColor="#004ccbde" transparent="1" backgroundColor="#0012161b">
             <convert type="FrontendInfo">AGC</convert>
         </widget>
-	    <eLabel text="SNR" zPosition="2" position="1018,564" foregroundColor="#0000fafa" backgroundColor="black" size="22,10" font="Regular;11"/>
-	    <eLabel text="AGC" zPosition="2" position="1018,575" foregroundColor="#0000fafa" backgroundColor="black" size="22,10" font="Regular;11"/>		
-		<widget source="session.CurrentService" render="Label" zPosition="4" position="95,681" size="93,22" halign="right" font="LCD;19" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
+	    <eLabel text="SNR" zPosition="2" position="1018,564" foregroundColor="#0000fafa" backgroundColor="#0012161b" size="22,10" font="Regular;11"/>
+	    <eLabel text="AGC" zPosition="2" position="1018,575" foregroundColor="#0000fafa" backgroundColor="#0012161b" size="22,10" font="Regular;11"/>		
+		<widget source="session.CurrentService" render="Label" zPosition="4" position="95,681" size="93,22" halign="right" font="LCD;19" foregroundColor="#00a1d1ff" backgroundColor="#000b0b0b" transparent="1">
 	        <convert type="PliExtraInfo">ResolutionString</convert>
 	    </widget>	
     <!-- Selezione Dolby System -->
@@ -3537,10 +3537,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		    <convert type="ServiceInfo">SubservicesAvailable</convert>
 		    <convert type="ConditionalShowHide"/>
         </widget>
-	    <widget source="session.CurrentService" render="Label" position="235,677" size="400,60" font="Regular;14" valign="top" halign="left" foregroundColor="#004ccbde" backgroundColor="#11404040" transparent="1" zPosition="5">
+	    <widget source="session.CurrentService" render="Label" position="235,677" size="400,60" font="Regular;14" valign="top" halign="left" foregroundColor="#004ccbde" backgroundColor="#000b0b0b" transparent="1" zPosition="5">
 		    <convert type="CryptoInfo">VerboseInfo</convert>
 	    </widget>		
-	    <widget source="session.CurrentService" render="Label" position="480,690" size="250,24" font="Regular;15" valign="top" halign="right" foregroundColor="#00a1d1ff" backgroundColor="#11404040" transparent="1" zPosition="5">
+	    <widget source="session.CurrentService" render="Label" position="480,690" size="250,24" font="Regular;15" valign="top" halign="right" foregroundColor="#00a1d1ff" backgroundColor="#000b0b0b" transparent="1" zPosition="5">
  		    <convert type="PliExtraInfo">CryptoSpecial</convert>
  	    </widget>	
 	    <widget 
@@ -3548,7 +3548,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		render="Label" 
 		position="800,690" 
 		size="60,50" 
-		backgroundColor="#11404040" 
+		backgroundColor="#000b0b0b" 
 		foregroundColor="#004ccbde" 
 	    font="Regular;15" 
 		halign="left" 
@@ -3563,7 +3563,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		render="Label" 
 		position="860,690" 
 		size="60,15" 
-		backgroundColor="#11404040" 
+		backgroundColor="#000b0b0b" 
 		foregroundColor="foreground" 
 	    font="Regular;15" 
 		halign="left" 
@@ -3578,7 +3578,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		render="Label" 
 		position="920,690" 
 		size="18,15" 
-		backgroundColor="#11404040" 
+		backgroundColor="#000b0b0b" 
 		foregroundColor="foreground" 
 	    font="Regular;15" 
 		halign="left" 
@@ -3593,7 +3593,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		render="Label" 
 		position="935,690" 
 		size="65,50" 
-		backgroundColor="#11404040" 
+		backgroundColor="#000b0b0b" 
 		foregroundColor="#004ccbde" 
 	    font="Regular;15" 
 		halign="left" 
@@ -3608,7 +3608,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		render="Label" 
 		position="985,690" 
 		size="37,15" 
-		backgroundColor="#11404040" 
+		backgroundColor="#000b0b0b" 
 		foregroundColor="foreground" 
 	    font="Regular;15" 
 		halign="left" 
@@ -3623,7 +3623,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		render="Label" 
 		position="1020,690" 
 		size="60,50" 
-		backgroundColor="#11404040" 
+		backgroundColor="#000b0b0b" 
 		foregroundColor="#004ccbde" 
 	    font="Regular;15" 
 		halign="left" 
@@ -3647,7 +3647,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
             <convert type="ClockToText">Format::%S</convert>
         </widget>
     <!-- Data - Date -->
-        <widget source="global.CurrentTime" render="Label" position="1100,677" size="124,26" zPosition="2" font="LCD;22" halign="left" backgroundColor="background" foregroundColor="#00a1d1ff" transparent="1">
+        <widget source="global.CurrentTime" render="Label" position="1100,677" size="124,26" zPosition="2" font="LCD;22" halign="left" backgroundColor="#000d0d0d" foregroundColor="#00a1d1ff" transparent="1">
             <convert type="ClockToText">Format:%d.%m.%Y</convert>
         </widget>
     <!-- Nombre del Canal - Service Name -->
@@ -3713,7 +3713,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</widget-->	
 
     <!-- TUNERS DISPONIBLES + DISPOSICION -->
-	    <widget source="session.FrontendInfo" render="Label" position="1100,577" size="80,21" font="LCD;19" halign="center" noWrap="1" zPosition="2" backgroundColor="background" transparent="1">
+	    <widget source="session.FrontendInfo" render="Label" position="1100,577" size="80,21" font="LCD;19" halign="center" noWrap="1" zPosition="2" backgroundColor="#00393939" transparent="1">
 		    <convert type="FrontendInfo">STRING</convert>
 	    </widget>
     <!-- Sezione Numero di cannale - Numero di cannale Section -->
@@ -3733,8 +3733,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>	   
     <!-- Sezione SNR - SNR Section -->
     <!-- eLabel text="Snr :" zPosition="1" position="220,684" size="60,20" halign="left" font="Regular;18" transparent="1" backgroundColor="transpBlack" -->
-        <eLabel text="CPU" zPosition="2" position="740,561" foregroundColor="#0000fafa" backgroundColor="black" size="30,10" font="xRegular;10"/>
-	    <widget source="session.CurrentService" render="Label" position="705,567" size="90,22" halign="center" valign="center" font="Regular;16" transparent="1" foregroundColor="#004ccbde" backgroundColor="background" zPosition="2">
+        <eLabel text="CPU" zPosition="2" position="740,561" foregroundColor="#0000fafa" backgroundColor="#0001030a" size="30,10" font="xRegular;10"/>
+	    <widget source="session.CurrentService" render="Label" position="705,567" size="90,22" halign="center" valign="center" font="Regular;16" transparent="1" foregroundColor="#004ccbde" backgroundColor="#0001030a" zPosition="2">
 		    <convert type="CpuUsage">$0</convert>
 	    </widget>	
 		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/tuner.png" position="778,564" size="18,18" zPosition="2" alphatest="on">
@@ -3748,14 +3748,14 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		    <convert type="FrontendInfo">AGC</convert>
 	    </widget>	
     <!-- ePixmap position="273,693" zPosition="2" size="200,6" pixmap="ViX-Turquoise-HD/bar_snr_osd.png" alphatest="on" -->
-        <widget source="session.FrontendStatus" render="Label" position="971,562" zPosition="3" size="55,12" halign="left" font="Regular;14" foregroundColor="#004ccbde" transparent="1" backgroundColor="#00333333">
+        <widget source="session.FrontendStatus" render="Label" position="971,562" zPosition="3" size="55,12" halign="left" font="Regular;14" foregroundColor="#004ccbde" transparent="1" backgroundColor="#0012161b">
             <convert type="FrontendInfo">SNR</convert>
         </widget>
-        <widget source="session.FrontendStatus" render="Label" position="971,573" zPosition="3" size="55,12" halign="left" font="Regular;14" foregroundColor="#004ccbde" transparent="1" backgroundColor="#00333333">
+        <widget source="session.FrontendStatus" render="Label" position="971,573" zPosition="3" size="55,12" halign="left" font="Regular;14" foregroundColor="#004ccbde" transparent="1" backgroundColor="#0012161b">
             <convert type="FrontendInfo">AGC</convert>
         </widget>
-	    <eLabel text="SNR" zPosition="2" position="1018,564" foregroundColor="#0000fafa" backgroundColor="black" size="22,10" font="Regular;11"/>
-	    <eLabel text="AGC" zPosition="2" position="1018,575" foregroundColor="#0000fafa" backgroundColor="black" size="22,10" font="Regular;11"/>	
+	    <eLabel text="SNR" zPosition="2" position="1018,564" foregroundColor="#0000fafa" backgroundColor="#0012161b" size="22,10" font="Regular;11"/>
+	    <eLabel text="AGC" zPosition="2" position="1018,575" foregroundColor="#0000fafa" backgroundColor="#0012161b" size="22,10" font="Regular;11"/>	
     <!-- ePixmap position="273,693" zPosition="2" size="200,6" pixmap="ViX-Turquoise-HD/bar_snr_osd.png" alphatest="on" -->
     <!-- eLabel text="Ber :" zPosition="3" position="545,683" size="70,24" font="Regular;18" foregroundColor="#c0c0c0" backgroundColor="transpBlack" transparent="1" 
 		<widget source="session.FrontendStatus" render="Label" position="600,683" zPosition="3" size="70,24" font="Regular;19" foregroundColor="#c0c0c0" backgroundColor="transpBlack" transparent="1">
@@ -3779,7 +3779,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
             <convert type="ConditionalShowHide"/>
         </widget>
     <!-- Risoluzione Video - Video Resolution -->
-	    <widget source="session.CurrentService" render="Label" zPosition="4" position="95,681" size="93,22" halign="right" font="LCD;19" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
+	    <widget source="session.CurrentService" render="Label" zPosition="4" position="95,681" size="93,22" halign="right" font="LCD;19" foregroundColor="#00a1d1ff" backgroundColor="#000b0b0b" transparent="1">
 	        <convert type="PliExtraInfo">ResolutionString</convert>
 	    </widget>	
     <!-- FrameRate Video 
@@ -3821,10 +3821,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		    <convert type="ServiceInfo">SubservicesAvailable</convert>
 		    <convert type="ConditionalShowHide"/>
         </widget>
-	    <widget source="session.CurrentService" render="Label" position="235,677" size="400,60" font="Regular;14" valign="top" halign="left" foregroundColor="#004ccbde" backgroundColor="#11404040" transparent="1" zPosition="5">
+	    <widget source="session.CurrentService" render="Label" position="235,677" size="400,60" font="Regular;14" valign="top" halign="left" foregroundColor="#004ccbde" backgroundColor="#000b0b0b" transparent="1" zPosition="5">
 		    <convert type="CryptoInfo">VerboseInfo</convert>
 	    </widget>		
-	    <widget source="session.CurrentService" render="Label" position="480,690" size="250,24" font="Regular;15" valign="top" halign="right" foregroundColor="#00a1d1ff" backgroundColor="#11404040" transparent="1" zPosition="5">
+	    <widget source="session.CurrentService" render="Label" position="480,690" size="250,24" font="Regular;15" valign="top" halign="right" foregroundColor="#00a1d1ff" backgroundColor="#000b0b0b" transparent="1" zPosition="5">
  		    <convert type="PliExtraInfo">CryptoSpecial</convert>
  	    </widget>	
 	    <widget 
@@ -3832,7 +3832,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		render="Label" 
 		position="800,690" 
 		size="60,50" 
-		backgroundColor="#11404040" 
+		backgroundColor="#000b0b0b" 
 		foregroundColor="#004ccbde" 
 	    font="Regular;15" 
 		halign="left" 
@@ -3847,7 +3847,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		render="Label" 
 		position="860,690" 
 		size="60,15" 
-		backgroundColor="#11404040" 
+		backgroundColor="#000b0b0b" 
 		foregroundColor="foreground" 
 	    font="Regular;15" 
 		halign="left" 
@@ -3862,7 +3862,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		render="Label" 
 		position="920,690" 
 		size="18,15" 
-		backgroundColor="#11404040" 
+		backgroundColor="#000b0b0b" 
 		foregroundColor="foreground" 
 	    font="Regular;15" 
 		halign="left" 
@@ -3877,7 +3877,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		render="Label" 
 		position="935,690" 
 		size="65,50" 
-		backgroundColor="#11404040" 
+		backgroundColor="#000b0b0b" 
 		foregroundColor="#004ccbde" 
 	    font="Regular;15" 
 		halign="left" 
@@ -3892,7 +3892,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		render="Label" 
 		position="985,690" 
 		size="37,15" 
-		backgroundColor="#11404040" 
+		backgroundColor="#000b0b0b" 
 		foregroundColor="foreground" 
 	    font="Regular;15" 
 		halign="left" 
@@ -3907,7 +3907,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		render="Label" 
 		position="1020,690" 
 		size="60,50" 
-		backgroundColor="#11404040" 
+		backgroundColor="#000b0b0b" 
 		foregroundColor="#004ccbde" 
 	    font="Regular;15" 
 		halign="left" 
@@ -3990,7 +3990,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		position="345,527" 
 		size="30,15"  
 	    font="LCD;13" 
-		backgroundColor="#00000000"
+		backgroundColor="#00080808"
 		halign="center" 
 		transparent="1" 
 		zPosition="3"
@@ -4001,7 +4001,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		render="Label" 
 		position="370,529" 
 		size="50,50" 
-		backgroundColor="#00000000" 
+		backgroundColor="#00080808" 
 		foregroundColor="#0000fafa" 
 	    font="Regular;12" 
 		halign="left" 
@@ -4017,7 +4017,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		size="30,15"  
 	    font="LCD;13" 
 		halign="center" 
-		backgroundColor="#00000000" 
+		backgroundColor="#00080808" 
 		transparent="1" 
 		zPosition="3"
 	    />
@@ -4026,7 +4026,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		render="Label" 
 		position="370,540" 
 		size="50,50" 
-		backgroundColor="#00000000" 
+		backgroundColor="#00080808" 
 		foregroundColor="#0000fafa" 
 	    font="Regular;12" 
 		halign="left" 
@@ -4042,7 +4042,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		size="40,50"  
 	    font="LCD;13" 
 		halign="center" 
-		backgroundColor="#00000000" 
+		backgroundColor="#00080808" 
 		transparent="1" 
 		zPosition="3"
 	    />
@@ -4051,7 +4051,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		render="Label" 
 		position="892,528" 
 		size="50,50" 
-		backgroundColor="#00000000" 
+		backgroundColor="#00080808" 
 		foregroundColor="#0000fafa" 
 	    font="Regular;12" 
 		halign="left" 
@@ -4067,7 +4067,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		size="40,50"  
 	    font="LCD;13" 
 		halign="center" 
-		backgroundColor="#00000000" 
+		backgroundColor="#00080808" 
 		transparent="1" 
 		zPosition="3"
 	    />
@@ -4076,7 +4076,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		render="Label" 
 		position="892,540" 
 		size="50,50" 
-		backgroundColor="#00000000" 
+		backgroundColor="#00080808" 
 		foregroundColor="#0000fafa" 
 	    font="Regular;12" 
 		halign="left" 
