@@ -390,15 +390,15 @@
     </screen>	
 	<!-- ####### PANTALLA PARA 1 BOTON ROJO + SOURCE ####### -->
 	<screen name="PantallaGenericaR">
-         <widget position="5,625" size="250,36" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="#00060a0a" transparent="1" zPosition="2"/>
-		 <panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+        <widget position="5,625" size="250,36" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="#00060a0a" transparent="1" zPosition="2"/>
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 	<!-- boton rojo -->
 		<ePixmap position="60,635" zPosition="1" size="140,35" pixmap="ViX-Turquoise-HD/menu/colorbarR.png" alphatest="blend" transparent="1"/>
     </screen>
 	<!-- ####### PANTALLA PARA 1 BOTON ROJO + LABEL EXIT ####### -->
 	<screen name="PantallaGenericaRexit">
-	     <panel name="Template-exit"/>
-		 <panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+	    <panel name="Template-exit"/>
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 	<!-- boton rojo -->
 		<ePixmap position="60,635" zPosition="1" size="140,35" pixmap="ViX-Turquoise-HD/menu/colorbarR.png" alphatest="blend" transparent="1"/>
     </screen>

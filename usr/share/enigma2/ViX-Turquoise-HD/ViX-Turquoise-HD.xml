@@ -548,7 +548,6 @@
     <screen name="GraphicalEPG" position="fill" backgroundColor="#00030303" flags="wfNoBorder">
 		<ePixmap pixmap="menu/fr_main_help.png" position="fill" zPosition="-1"/>
 		<ePixmap pixmap="icons/clock.png" position="1187,30" zPosition="1" size="20,20" alphatest="blend"/>
-    <!-- digital clock -->
 	<!-- current time -->	
 		<widget source="global.CurrentTime" render="Label" position="690,20" size="350,25" halign="right" font="LCD;24" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1" zPosition="1">
 		    <convert type="ClockToText">Date</convert>
@@ -698,17 +697,13 @@
 		</widget>
 		<widget source="Event" render="Progress" pixmap="icons/tv_b_bar.png" position="475,25" size="225,2" backgroundColor="white" borderWidth="0" transparent="0" zPosition="1">
 			<convert type="EventTime">Progress</convert>
-		</widget>		
-		<!--ePixmap pixmap="buttons/key_8_epg.png" position="710,2" size="35,15" alphatest="blend" zPosition="2"/-->
+		</widget>
 		<eLabel text="8" position="725,0" size="10,17" backgroundColor="#0003424a" zPosition="1" transparent="1" font="Regular;16" halign="left"/>		
 		<widget name="page" position="740,2" size="200,25" font="Regular;16" foregroundColor="#004ccbde" zPosition="1" backgroundColor="#0003424a" transparent="1"/>
-		<eLabel text="9" position="725,16" size="10,17" backgroundColor="#0003424a" zPosition="1" transparent="1" font="Regular;16" halign="left"/>		
-		<!--ePixmap pixmap="buttons/key_9_epg.png" position="710,17" size="35,15" alphatest="blend" zPosition="2"/-->
+		<eLabel text="9" position="725,16" size="10,17" backgroundColor="#0003424a" zPosition="1" transparent="1" font="Regular;16" halign="left"/>
 		<widget name="primetime" position="740,17" size="250,25" font="Regular;16" zPosition="1" foregroundColor="#004ccbde" backgroundColor="#0003424a" transparent="1"/>
-		<!--ePixmap pixmap="buttons/key_prev_next.png" position="960,17" size="35,15" alphatest="blend" zPosition="2"/-->
 		<eLabel text="C H" position="955,5" size="20,17" backgroundColor="#0003424a" zPosition="1" transparent="1" font="Regular;13" halign="left"/>		
-		<widget name="jump" position="985,2" size="200,25" font="Regular;16" zPosition="1" foregroundColor="#004ccbde" backgroundColor="#0003424a" transparent="1"/>
-		<!--ePixmap pixmap="buttons/key_ch.png" position="960,2" size="35,15" alphatest="blend" zPosition="2"/-->		
+		<widget name="jump" position="985,2" size="200,25" font="Regular;16" zPosition="1" foregroundColor="#004ccbde" backgroundColor="#0003424a" transparent="1"/>		
 		<eLabel text="PREV NEXT" position="955,20" size="80,17" backgroundColor="#0003424a" zPosition="1" transparent="1" font="Regular;13" halign="left"/>
 		<widget name="change_bouquet" position="1025,17" size="200,25" font="Regular;16" zPosition="1" foregroundColor="#004ccbde" backgroundColor="#0003424a" transparent="1"/>		
 		<widget name="number" position="475,0" size="400,40" zPosition="1" font="Regular;18" foregroundColor="#0000fafa" transparent="1"/>		
