@@ -396,11 +396,9 @@
 		<ePixmap position="60,635" zPosition="1" size="140,35" pixmap="ViX-Turquoise-HD/menu/colorbarR.png" alphatest="blend" transparent="1"/>
     </screen>
 	<!-- ####### PANTALLA PARA 1 BOTON ROJO + LABEL EXIT ####### -->
-	<screen name="PantallaGenericaRexit">
-	    <panel name="Template-exit"/>
-		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
-	<!-- boton rojo -->
-		<ePixmap position="60,635" zPosition="1" size="140,35" pixmap="ViX-Turquoise-HD/menu/colorbarR.png" alphatest="blend" transparent="1"/>
+	<screen name="ExitPantallaPieTV">
+        <eLabel text="Exit" position="5,635" size="250,20" font="Regular;20" halign="center" valign="center" backgroundColor="#00060a0a" transparent="1" zPosition="1"/>
+		<ePixmap position="60,635" zPosition="1" size="140,35" pixmap="ViX-Turquoise-HD/menu/colorbarR.png" alphatest="blend"/>	
     </screen>
 	<screen name="TemplateOK">
 		<ePixmap position="245,625" zPosition="1" size="349,45" pixmap="menu/colorbarG.png" alphatest="blend" transparent="1"/>	

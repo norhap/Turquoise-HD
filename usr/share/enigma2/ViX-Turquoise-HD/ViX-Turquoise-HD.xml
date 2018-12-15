@@ -1759,7 +1759,7 @@ self.autoResize()
 	<!-- ####### Console ver log backup full instalacion plugins etc  ####### -->
 	<screen name="Console" position="fill">
         <panel name="PantallaPieTV"/>	
-		<widget name="text" position="110,125" size="693,430" font="Regular;14" transparent="0"/>
+		<widget name="text" position="110,125" size="698,430" font="Regular;14" transparent="0"/>
 	</screen>	
 	<!-- ####### clock Display ####### -->
 	<screen name="clockDisplay" position="420,230" size="340,300" title="Clock">
@@ -2310,7 +2310,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
 		<panel name="sRGYB"/>
-		<widget name="config" position="69,137" size="733,427" zPosition="2" scrollbarMode="showAlways" scrollbarSliderForegroundColor="#00030303"/> transparent="1"/>
+		<widget name="config" position="69,137" size="733,427" zPosition="2" scrollbarMode="showAlways" scrollbarSliderForegroundColor="#00030303"/>
 		<widget name="description" position="845,415" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
         <widget name="footnote" position="80,500" size="503,25" zPosition="1" font="Regular;20" foregroundColor="#00bab329" backgroundColor="#00030303" halign="left" transparent="1" valign="top"/>				
@@ -5526,7 +5526,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title_not_menu_path"/>
 		<widget source="Path" render="Label" position="150,100" valign="center" halign="center" foregroundColor="#004ccbde" font="Regular;22" size="500,50" transparent="1" zPosition="2"/>
 		<widget name="Path" position="150,100" valign="center" halign="center" foregroundColor="#004ccbde" font="Regular;22" size="500,50" transparent="1" zPosition="2"/>		
-		<widget name="config" position="55,200" font="Regular;16" size="747,370" scrollbarMode="showAlways" scrollbarSliderForegroundColor="#00030303"/> transparent="1"/>
+		<widget name="config" position="55,200" font="Regular;16" size="747,370" scrollbarMode="showAlways" scrollbarSliderForegroundColor="#00030303"/>
 		<widget name="HelpWindow" position="682,599" size="1,1" pixmap="/usr/share/enigma2/skin_default/buttons/vkey_icon.png" transparent="1" zPosition="1" alphatest="blend"/>
 		<widget name="VKeyIcon" position="640,680" zPosition="2" size="0,0" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
@@ -5808,7 +5808,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title_not_menu_path"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="sRG"/>		
-		<widget name="config" position="56,155" size="746,425" font="Regular;18" scrollbarMode="showAlways" scrollbarSliderForegroundColor="#00030303"/> transparent="1"/>
+		<widget name="config" position="56,155" size="746,425" font="Regular;18" scrollbarMode="showAlways" scrollbarSliderForegroundColor="#00030303"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
         <widget name="description" position="845,415" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>
 	</screen>	
@@ -6202,19 +6202,25 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
 		<widget name="lab1" position="80,145" size="670,50" font="Regular;20" zPosition="2" transparent="0" halign="center"/>
 		<widget name="list" position="80,230" size="727,350" selectionPixmap="ViX-Turquoise-HD/icons/ls705x38.png" font="Regular;22" backgroundColor="#00030303" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1"/>
-		<ePixmap pixmap="icons/key_menu1.png" position="10,638" size="40,22" alphatest="blend"/>		
+		<ePixmap pixmap="icons/key_menu1.png" position="685,680" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_info.png" position="730,680" size="40,22" alphatest="blend"/>		
         <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>			
 		<widget name="backupstatus" position="835,460" size="390,25" foregroundColor="#004ccbde" font="Regular;20" backgroundColor="#00030303" transparent="1" halign="center" valign="center"/>
 		<applet type="onLayoutFinish">
 			self["list"].instance.setItemHeight(30)
 		</applet>
 	</screen>
+	<screen name="VIXBackupManagerLogView" position="fill" flags="wfNoBorder">
+		<panel name="PantallaPieTV"/>
+		<panel name="ExitPantallaPieTV"/>		
+		<widget name="list" position="110,125" size="698,430" backgroundColor="#00030303" font="Regular;14" transparent="0"/>		
+	</screen>	
 	<screen name="VIXBackupManagerMenu" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-		<widget name="config" position="60,155" size="742,425" font="Regular;18" scrollbarMode="showAlways" scrollbarSliderForegroundColor="#00030303"/> transparent="1"/>		
+		<widget name="config" position="60,155" size="742,425" font="Regular;18" scrollbarMode="showAlways" scrollbarSliderForegroundColor="#00030303"/>		
 		<widget name="HelpWindow" position="682,599" size="1,1" pixmap="/usr/share/enigma2/skin_default/buttons/vkey_icon.png" transparent="1" zPosition="1" alphatest="blend"/>
 		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,680" zPosition="2" size="40,22" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
@@ -6330,8 +6336,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="list" position="80,145" size="727,420" selectionPixmap="icons/ls530x30.png" backgroundColor="#00030303" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1"/>
 	</screen>
 	<screen name="VIXSwap" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaConfig"/>
-		<!--panel name="sRGB"/-->		
+		<panel name="PantallaGenericaConfig"/>		
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -6348,8 +6353,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="active" position="230,393" size="100,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green"/>
 	</screen>
 	<screen name="VIXSoftcamManager" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaConfig"/>
-		<!--panel name="sRGB"/-->		
+		<panel name="PantallaGenericaConfig"/>		
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -6364,16 +6368,14 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</applet>
 	</screen>
 	<screen name="VIXSoftcamLog" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaConfig_s4_ButtonsR"/>
-		<!--panel name="sRGB"/-->		
+		<panel name="PantallaGenericaConfig_s4_ButtonsR"/>		
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
 		<widget name="list" position="80,145" size="727,425" font="Regular;14" backgroundColor="#00030303" transparent="0"/>
 	</screen>
 	<screen name="VIXAutoStartCam" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaConfig"/>
-		<!--panel name="sRGB"/-->		
+		<panel name="PantallaGenericaConfig"/>		
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -6381,15 +6383,13 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="lab1" position="80,133" halign="center" size="503,60" zPosition="1" font="Regular;20" valign="top" transparent="0"/>
 	</screen>
 	<screen name="VIXSoftcamMenu" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaConfig"/>
-		<!--panel name="sRGB"/-->		
+		<panel name="PantallaGenericaConfig"/>		
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
 	</screen>
 	<screen name="VIXStartCam" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaConfig"/>
-		<!--panel name="sRGB"/-->		
+		<panel name="PantallaGenericaConfig"/>		
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -6397,8 +6397,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="lab1" position="80,145" halign="center" size="503,60" zPosition="1" font="Regular;20" valign="top" transparent="0"/>
 	</screen>
 	<screen name="VIXStopCam" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaConfig"/>
-		<!--panel name="sRGB"/-->		
+		<panel name="PantallaGenericaConfig"/>		
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -6406,8 +6405,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="lab1" position="80,145" halign="center" size="503,60" zPosition="1" font="Regular;20" valign="top" transparent="0"/>
 	</screen>
 	<screen name="LogManager" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaConfig"/>
-		<!--panel name="sRGB"/-->		
+		<panel name="PantallaGenericaConfig"/>		
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title_not_menu_path"/>
         <panel name="PIG"/>
@@ -6417,6 +6415,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<screen name="LogManagerViewLog" position="5,55" size="1265,720" backgroundColor="#03424a" title="">
 		<widget name="list" position="10,0" backgroundColor="#03424a" scrollbarSliderForegroundColor="#0000fafa" transparent="1" size="1250,600" font="Regular;20"/>
         <eLabel text="Exit" position="5,605" size="250,20" font="Regular;20" halign="center" valign="center" backgroundColor="#03424a" transparent="1" zPosition="1"/>
-		<ePixmap position="60,605" zPosition="1" size="140,35" pixmap="ViX-Turquoise-HD/menu/colorbarR.png" alphatest="blend"/>		
+		<ePixmap position="60,605" zPosition="1" size="140,35" pixmap="ViX-Turquoise-HD/menu/colorbarR.png" alphatest="blend"/>	
 	</screen>	
 </skin>
