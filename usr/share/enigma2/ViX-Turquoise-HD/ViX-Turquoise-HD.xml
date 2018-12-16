@@ -1133,7 +1133,7 @@ self.autoResize()
 				MultiContentEntryText(pos = (275, 30), size = (175, 20), font=1, flags = RT_HALIGN_LEFT, text = 4), # index 0 is the encryption
 				MultiContentEntryText(pos = (500, 0), size = (200, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 0 is the signal
 				MultiContentEntryText(pos = (500, 30), size = (200, 20), font=1, flags = RT_HALIGN_LEFT, text = 3), # index 0 is the maxrate
-				MultiContentEntryPixmapAlphaTest(pos = (0, 52), size = (550, 2), png = 6), # index 6 is the div pixmap
+				MultiContentEntryPixmapAlphaTest(pos = (0, 52), size = (700, 2), png = 6), # index 6 is the div pixmap
 				],
 				"fonts": [gFont("Regular", 26),gFont("Regular", 18)],
 				"itemHeight": 54
@@ -4228,7 +4228,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="lab1" render="Label" position="235,110" size="400,25" font="Regular;24" foregroundColor="#0000fafa" backgroundColor="#00030303" halign="center" valign="center" transparent="1" zPosition="3"/>
 		<widget source="lab2" render="Label" position="235,145" size="400,25" font="Regular;22" foregroundColor="#0000baff" backgroundColor="#00030303" halign="center" valign="center" transparent="1" zPosition="3"/>
 		<widget source="lab3" render="Label" position="190,175" size="500,25" font="Regular;22" backgroundColor="#00030303" halign="center" valign="center" transparent="1" zPosition="3"/>		
-		<widget name="AboutScrollLabel" position="100,220" size="702,420" font="Regular;21" backgroundColor="#00030303" transparent="1"/>			
+		<widget name="AboutScrollLabel" position="100,220" size="702,360" font="Regular;21" backgroundColor="#00030303" transparent="1"/>			
 	</screen>
 	<!-- OE-A Core boton azul Acerda de -->
 	<screen name="CommitInfo" position="fill" flags="wfNoBorder">
@@ -4284,9 +4284,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-		<widget name="lab1" position="360,140" size="585,40" font="Regular;24" halign="left" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>
-	<!--widget source="lab2" render="Label" position="40,130" size="585,26" font="Regular;20" halign="left" backgroundColor="#00030303" transparent="1"/-->
-		<widget name="AboutScrollLabel" position="100,140" size="718,450" font="Regular;22" zPosition="1" backgroundColor="#00030303" transparent="1"/>
+		<widget source="lab1" render="Label" position="235,110" size="400,25" font="Regular;24" foregroundColor="#0000fafa" backgroundColor="#00030303" halign="center" valign="center" transparent="1" zPosition="3"/>
+		<widget source="lab2" render="Label" position="235,145" size="400,25" font="Regular;22" foregroundColor="#0000baff" backgroundColor="#00030303" halign="center" valign="center" transparent="1" zPosition="3"/>
+		<widget source="lab3" render="Label" position="190,175" size="500,25" font="Regular;22" backgroundColor="#00030303" halign="center" valign="center" transparent="1" zPosition="3"/>		
+		<widget name="AboutScrollLabel" position="100,220" size="702,360" font="Regular;21" backgroundColor="#00030303" transparent="1"/>
 		<ePixmap position="933,416" zPosition="1" size="200,200" pixmap="ViX-Turquoise-HD/menu/ico_flash.png" alphatest="blend"/>
 	</screen>		
 		
@@ -4296,7 +4297,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-		<widget name="AboutScrollLabel" position="80,230" size="690,450" font="Regular;22" backgroundColor="#00030303" transparent="1"/>
+		<widget name="AboutScrollLabel" position="80,230" size="458,350" font="Regular;20" backgroundColor="#00030303" transparent="1"/>
 		<widget source="IFtext" render="Label" position="80,135" size="120,25" font="Regular;22" halign="left" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>
 		<widget source="IF" render="Label" position="230,135" size="400,25" font="Regular;22" halign="left" transparent="1" backgroundColor="#00030303" zPosition="10"/>
 		<widget source="Statustext" render="Label" position="80,185" size="120,25" font="Regular;22" halign="left" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>
