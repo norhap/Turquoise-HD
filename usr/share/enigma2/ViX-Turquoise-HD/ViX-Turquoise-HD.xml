@@ -1133,7 +1133,7 @@ self.autoResize()
 				MultiContentEntryText(pos = (275, 30), size = (175, 20), font=1, flags = RT_HALIGN_LEFT, text = 4), # index 0 is the encryption
 				MultiContentEntryText(pos = (500, 0), size = (200, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 0 is the signal
 				MultiContentEntryText(pos = (500, 30), size = (200, 20), font=1, flags = RT_HALIGN_LEFT, text = 3), # index 0 is the maxrate
-				MultiContentEntryPixmapAlphaTest(pos = (0, 52), size = (700, 2), png = 6), # index 6 is the div pixmap
+				MultiContentEntryPixmapAlphaTest(pos = (0, 52), size = (710, 2), png = 6), # index 6 is the div pixmap
 				],
 				"fonts": [gFont("Regular", 26),gFont("Regular", 18)],
 				"itemHeight": 54
