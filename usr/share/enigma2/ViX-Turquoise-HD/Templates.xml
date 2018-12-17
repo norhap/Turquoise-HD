@@ -77,7 +77,7 @@
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-	    <widget font="Regular;20" halign="left" position="835,352" size="390,25" render="RunningText" options="movetype=running,startpoint=0,startdelay=3000,wrap=0,always=0,repeat=2,oneshot=1" noWrap="1" source="session.Event_Now" foregroundColor="#0000baff" backgroundColor="#040404" transparent="0" zPosition="2">
+	    <widget font="Regular;20" halign="left" position="835,352" size="390,25" render="RunningText" options="movetype=running,startpoint=0,startdelay=3000,wrap=0,always=0,repeat=2,oneshot=1" noWrap="1" source="session.Event_Now" foregroundColor="#0000baff" backgroundColor="#00040404" transparent="1" zPosition="2">
 		    <convert type="EventName">Name</convert>
 	    </widget>			
 		<widget source="session.Event_Now" render="Label" position="1150,315" zPosition="4" foregroundColor="#00a1d1ff" size="70,30" font="Regular;18" halign="right" backgroundColor="black" transparent="1">
