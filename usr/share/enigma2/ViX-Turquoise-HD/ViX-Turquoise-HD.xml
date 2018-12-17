@@ -1182,7 +1182,7 @@ self.autoResize()
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 		<widget name="description" position="845,415" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>
 		<widget source="Statustext" render="Label" position="70,500" foregroundColor="#004ccbde" backgroundColor="#00030303" size="150,40" zPosition="10" font="Regular;24" transparent="0"/>
-		<widget name="statuspic" position="195,502" size="25,24" pixmaps="ViX-Turquoise-HD/icons/lock_on.png,ViX-Turquoise-HD/icons/lock_off.png" zPosition="10" transparent="1" alphatest="blend"/>
+		<widget name="statuspic" position="195,502" size="25,24" pixmaps="skin_default/icons/lock_on.png,icons/lock_error.png" zPosition="10" transparent="1" alphatest="blend"/>
 	</screen>	
 	<!-- Configuracion del Adaptador->OK WLAN O LAN RED LOCAL -->
 	<screen name="AdapterSetup" position="fill" flags="wfNoBorder">
@@ -1222,7 +1222,7 @@ self.autoResize()
 		<widget source="introduction" render="Label" position="845,435" size="380,160" halign="center" valign="center" font="Regular;21" foregroundColor="#004ccbde" backgroundColor="#030303" transparent="1" zPosition="2"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,400" size="74,36" zPosition="2" alphatest="blend"/>
 	</screen>	
-	<!-- ####### NETWORK ADAPTER TEST  ######## -->
+	<!-- ####### NETWORK PRUEBA DE RED  ######## -->
 	<screen name="NetworkAdapterTest" position="fill" flags="wfNoBorder">
 	    <panel name="Title"/>
 		<panel name="PIG"/>
@@ -1322,7 +1322,7 @@ self.autoResize()
 		<widget source="enc" render="Label" position="390,455" size="495,37" valign="center" font="Regular;20" backgroundColor="#00030303" transparent="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 		<widget source="Statustext" render="Label" position="80,530" foregroundColor="#004ccbde" backgroundColor="#00030303" size="150,40" zPosition="10" font="Regular;24" transparent="1"/>
-		<widget name="statuspic" position="385,530" size="25,24" pixmaps="ViX-Turquoise-HD/icons/lock_on.png,ViX-Turquoise-HD/icons/lock_off.png" zPosition="10" transparent="1" alphatest="on"/>
+		<widget name="statuspic" position="385,530" size="25,24" pixmaps="skin_default/icons/lock_on.png,icons/lock_error.png" zPosition="10" transparent="1" alphatest="on"/>
 	</screen>
 	
 	<!--  Configuracion de Montajes OK -->
@@ -3037,7 +3037,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="key_red" render="Label" position="33,460" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
 		<widget source="key_green" render="Label" position="316,460" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
 		<widget source="author" render="Label" position="10,50" size="500,25" zPosition="10" font="Regular;21" transparent="1"/>
-		<widget name="statuspic" position="550,40" size="48,48" alphatest="on"/>
+		<widget name="statuspic" position="550,40" size="25,24" pixmaps="skin_default/icons/lock_on.png,icons/lock_error.png" zPosition="10" transparent="1" alphatest="blend"/>
 		<widget name="divpic" position="0,80" size="600,2" alphatest="on"/>
 		<widget name="detailtext" position="10,90" size="270,330" zPosition="10" font="Regular;21" transparent="1" halign="left" valign="top"/>
 		<widget name="screenshot" position="290,90" size="300,330" alphatest="on"/>
@@ -4302,7 +4302,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="IF" render="Label" position="230,135" size="400,25" font="Regular;22" halign="left" transparent="1" backgroundColor="#00030303" zPosition="10"/>
 		<widget source="Statustext" render="Label" position="80,185" size="120,25" font="Regular;22" halign="left" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>
 		<widget name="devicepic" position="525,125" size="40,40" pixmaps="icons/network_wired.png,icons/network_wireless.png,icons/network_wired-active.png,icons/network_wired-inactive.png,icons/network_wireless-active.png,icons/network_wireless-inactive.png" zPosition="10" alphatest="blend" transparent="1"/>		
-		<widget name="statuspic" position="230,185" size="25,24" pixmaps="ViX-Turquoise-HD/icons/lock_on.png,ViX-Turquoise-HD/icons/lock_off.png" alphatest="on" transparent="1"/>
+		<widget name="statuspic" position="230,185" size="25,24" pixmaps="skin_default/icons/lock_on.png,icons/lock_error.png" alphatest="on" transparent="1"/>
 		<ePixmap position="925,414" size="256,256" pixmap="menu/ico_wlan.png" alphatest="blend"/>
 	</screen>
 	<!-- ####### CANAL SERVICE INFO - INFORMATIONS #######  -->
