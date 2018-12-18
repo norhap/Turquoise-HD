@@ -85,7 +85,7 @@
 			<convert type="ClockToText">Default</convert>
 		</widget>			
                 <!-- digital clock -->
-		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00121212" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="949,55" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00121212" transparent="1">
             <convert type="ClockToText">Format:%H:%M :%S</convert>
         </widget>
 	</screen>
