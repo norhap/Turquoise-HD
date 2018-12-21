@@ -3541,7 +3541,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <panel name="SecondInfobarPanelEvents"/>
 		<panel name="InfoBar"/>
 		<ePixmap position="0,0" zPosition="0" size="1280,100" pixmap="icons/extrabar.png" transparent="1"/>		
-        <eLabel position="58,91" backgroundColor="transpBlack" size="1161,431"/>
+        <eLabel position="58,91" zPosition="1" backgroundColor="transpBlack" size="1161,431"/>
 	    <eLabel position="58,91" size="1,431" backgroundColor="#0000fafa" zPosition="1"/>		
 	    <eLabel position="58,91" size="1161,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="58,521" size="1161,1" backgroundColor="#0000fafa" zPosition="1"/>
