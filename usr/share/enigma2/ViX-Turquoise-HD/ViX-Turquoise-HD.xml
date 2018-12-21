@@ -3465,7 +3465,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="session.CurrentService" render="FixedLabel" text="SUBSERVICES" position="105,672" zPosition="4" size="75,26" font="LCD;15" halign="center" valign="center" backgroundColor="#000b0b0b" foregroundColor="#00a1d1ff" transparent="1">
 		    <convert type="ServiceInfo">SubservicesAvailable</convert>
 		    <convert type="ConditionalShowHide"/>
-        </widget>	
+        </widget>
+        <widget source="session.CurrentService" render="FixedLabel" text="4K" position="70,691" size="25,22" zPosition="2" font="LCD;19" backgroundColor="#000b0b0b" halign="center" foregroundColor="#00a1d1ff" transparent="1">
+            <convert type="ServiceInfo">Is4K</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>		
 		<widget source="session.CurrentService" render="Label" zPosition="4" position="95,691" size="93,22" halign="center" valign="center" font="LCD;19" foregroundColor="#00a1d1ff" backgroundColor="#000b0b0b" transparent="1">
 	        <convert type="PliExtraInfo">ResolutionString</convert>
 	    </widget>
@@ -3517,14 +3521,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget source="session.CurrentService" render="Label" position="1020,690" size="60,50" backgroundColor="#000b0b0b" foregroundColor="#004ccbde" font="Regular;15" halign="left" valign="top" zPosition="5" transparent="1">   
  	        <convert type="PliExtraInfo">TransponderModulation</convert>
 	    </widget>
-		<widget source="session.CurrentService" render="FixedLabel" text="HBBTV" position="1100,665" size="50,22" zPosition="2" font="LCD;18" halign="center" foregroundColor="#00a1d1ff" backgroundColor="#000d0d0d" transparent="1">
+		<widget source="session.CurrentService" render="FixedLabel" text="HBBTV" position="1115,665" size="50,22" zPosition="2" font="LCD;18" halign="center" foregroundColor="#00a1d1ff" backgroundColor="#000d0d0d" transparent="1">
 		    <convert type="ServiceInfo">HasHBBTV</convert>
 		    <convert type="ConditionalShowHide"/>
-	    </widget>		
-        <widget source="session.CurrentService" render="FixedLabel" text="4K" position="1150,665" size="25,22" zPosition="2" font="LCD;18" backgroundColor="#000d0d0d" halign="center" foregroundColor="#00a1d1ff" transparent="1">
-            <convert type="ServiceInfo">Is4K</convert>
-            <convert type="ConditionalShowHide"/>
-        </widget>
+	    </widget>
         <widget source="global.CurrentTime" render="Label" position="1071,616" size="84,48" zPosition="2" font="LCD;34" valign="top" halign="right" foregroundColor="#00dcdcdc" backgroundColor="#00333333" transparent="1">
             <convert type="ClockToText">Default</convert>
         </widget>	
