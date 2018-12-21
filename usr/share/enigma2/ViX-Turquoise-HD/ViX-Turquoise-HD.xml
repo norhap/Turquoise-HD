@@ -3953,7 +3953,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		    <convert type="EventTime">Remaining</convert>
 		    <convert type="RemainingToText">NoSeconds</convert>
 		</widget>
-		<widget source="session.Event_Next" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=70000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="690,125" size="510,383" zPosition="2" font="Regular;20" halign="left" foregroundColor="#00a1d1ff" backgroundColor="transpBlack" transparent="0">
+		<widget source="session.Event_Next" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=100000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="690,125" size="510,383" zPosition="2" font="Regular;20" halign="left" foregroundColor="#00a1d1ff" backgroundColor="transpBlack" transparent="0">
 		    <convert type="EventName">ExtendedDescription</convert>
 		</widget>		
     </screen>
