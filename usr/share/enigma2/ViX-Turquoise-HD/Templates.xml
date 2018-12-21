@@ -629,16 +629,16 @@
   	    <widget source="session.Event_Now" render="RunningText" options="movetype=running,startpoint=0,startdelay=5000,wrap=0,always=0,repeat=2,oneshot=1" position="78,55" size="520,24" font="Regular;22" halign="left" noWrap="1" foregroundColor="#004ccbde" backgroundColor="#101011" transparent="1" zPosition="2">
 		    <convert type="EventName">NameNow</convert>
 		</widget>		
-		<widget source="session.Event_Now" render="Label" position="60,95" size="70,35" font="Regular;22" foregroundColor="#004ccbde" backgroundColor="#101011" transparent="1" zPosition="2" halign="right" noWrap="1" valign="top">
+		<widget source="session.Event_Now" render="Label" position="60,95" size="70,35" font="Regular;22" foregroundColor="#004ccbde" backgroundColor="transpBlack" transparent="1" zPosition="2" halign="right" noWrap="1" valign="top">
 		    <convert type="EventTime">StartTime</convert>
 		    <convert type="ClockToText">
 		</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="135,95" size="80,45" font="Regular;22" foregroundColor="#004ccbde" backgroundColor="#101011" transparent="1" zPosition="2" noWrap="1" valign="top">
+		<widget source="session.Event_Now" render="Label" position="135,95" size="80,45" font="Regular;22" foregroundColor="#004ccbde" backgroundColor="transpBlack" transparent="1" zPosition="2" noWrap="1" valign="top">
 		    <convert type="EventTime">EndTime</convert>
 		    <convert type="ClockToText">Format:- %H:%M</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="175,90" size="200,35" font="Regular;22" foregroundColor="#004ccbde" backgroundColor="#101011" halign="right" valign="center" transparent="1" zPosition="2">
+		<widget source="session.Event_Now" render="Label" position="175,90" size="200,35" font="Regular;22" foregroundColor="#004ccbde" backgroundColor="transpBlack" halign="right" valign="center" transparent="1" zPosition="2">
 		    <convert type="EventTime">Remaining</convert>
 		    <convert type="RemainingToText">NoSeconds</convert>
 		</widget>
@@ -652,16 +652,16 @@
 		<!--widget font="Regular;22" halign="left" valign="center" position="775,60" render="RunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" size="415,24" source="session.Event_Next" foregroundColor="#00a1d1ff" backgroundColor="background" transparent="0" zPosition="1">
 			<convert type="EventName">Name</convert>
 		</widget-->		
-		<widget source="session.Event_Next" render="Label" position="675,95" size="70,35" font="Regular;22" foregroundColor="#00a1d1ff" backgroundColor="#101011" transparent="1" zPosition="2" halign="right" noWrap="1" valign="top">
+		<widget source="session.Event_Next" render="Label" position="675,95" size="70,35" font="Regular;22" foregroundColor="#00a1d1ff" backgroundColor="transpBlack" transparent="1" zPosition="2" halign="right" noWrap="1" valign="top">
 		    <convert type="EventTime">StartTime</convert>
 		    <convert type="ClockToText">
 		</convert>
 		</widget>
-		<widget source="session.Event_Next" render="Label" position="750,95" size="80,45" font="Regular;22" foregroundColor="#00a1d1ff" backgroundColor="#101011" transparent="1" zPosition="2" noWrap="1" valign="top">
+		<widget source="session.Event_Next" render="Label" position="750,95" size="80,45" font="Regular;22" foregroundColor="#00a1d1ff" backgroundColor="transpBlack" transparent="1" zPosition="2" noWrap="1" valign="top">
 		    <convert type="EventTime">EndTime</convert>
 		    <convert type="ClockToText">Format:- %H:%M</convert>
 		</widget>
-		<widget source="session.Event_Next" render="Label" position="790,90" size="200,35" font="Regular;22" foregroundColor="#00a1d1ff" backgroundColor="#101011" halign="right" valign="center" transparent="1" zPosition="2">
+		<widget source="session.Event_Next" render="Label" position="790,90" size="200,35" font="Regular;22" foregroundColor="#00a1d1ff" backgroundColor="transpBlack" halign="right" valign="center" transparent="1" zPosition="2">
 		    <convert type="EventTime">Remaining</convert>
 		    <convert type="RemainingToText">NoSeconds</convert>
 		</widget>

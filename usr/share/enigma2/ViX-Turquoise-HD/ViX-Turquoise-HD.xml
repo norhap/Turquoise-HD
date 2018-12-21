@@ -3541,11 +3541,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <panel name="SecondInfobarPanelEvents"/>
 		<panel name="InfoBar"/>
 		<ePixmap position="0,0" zPosition="0" size="1280,100" pixmap="icons/extrabar.png" transparent="1"/>		
-        <eLabel position="58,91" zPosition="1" backgroundColor="transpBlack" size="1161,431"/>
-	    <eLabel position="58,91" size="1,431" backgroundColor="#0000fafa" zPosition="1"/>		
-	    <eLabel position="58,91" size="1161,1" backgroundColor="#0000fafa" zPosition="1"/>
-	    <eLabel position="58,521" size="1161,1" backgroundColor="#0000fafa" zPosition="1"/>
-	    <eLabel position="1218,91" size="1,431" backgroundColor="#0000fafa" zPosition="1"/>	
+        <eLabel position="64,85" zPosition="1" backgroundColor="transpBlack" size="1148,438"/>
+	    <eLabel position="64,85" size="1,438" backgroundColor="#0000fafa" zPosition="1"/>		
+	    <eLabel position="64,85" size="1148,1" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="64,522" size="1148,1" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="1212,85" size="1,438" backgroundColor="#0000fafa" zPosition="1"/>	
 	    <widget name="key_red" position="0,0" size="0,0" zPosition="1" transparent="1" valign="center" noWrap="1" backgroundColor="#00030303"/>
 	    <widget name="key_green" position="0,0" size="0,0" zPosition="1" transparent="1" valign="center" noWrap="1" backgroundColor="#00030303"/>
 	    <widget name="key_yellow" position="0,0" size="0,0" zPosition="1" transparent="1" valign="center" noWrap="1" backgroundColor="#00030303"/>
