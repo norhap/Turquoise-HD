@@ -3910,12 +3910,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		zPosition="5" 
 		transparent="1">   
  	    <convert type="PliExtraInfo">TransponderModulation</convert>
-	    </widget>
-	    <eLabel position="57,55" size="58,24" backgroundColor="#101011" zPosition="1" transparent="1"/>		
+	    </widget>		
   	    <widget source="session.Event_Now" render="RunningText" options="movetype=running,startpoint=0,startdelay=5000,wrap=0,always=0,repeat=2,oneshot=1" position="78,55" size="520,24" font="Regular;22" halign="left" noWrap="1" foregroundColor="#004ccbde" backgroundColor="#101011" transparent="1" zPosition="2">
 		    <convert type="EventName">NameNow</convert>
-		</widget>
-	    <eLabel position="548,55" size="144,24" backgroundColor="#101011" zPosition="1" transparent="1"/>		
+		</widget>		
 		<!--widget font="Regular;22" halign="left" valign="center" position="150,60" render="RunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" size="465,24" source="session.Event_Now" foregroundColor="#004ccbde" backgroundColor="background" transparent="0" zPosition="1">
 			<convert type="EventName">Name</convert>
 		</widget-->		
@@ -3936,7 +3934,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		    <convert type="EventName">ExtendedDescription</convert>
 		</widget>		
 	<!-- Event Next -->
-		<widget source="session.Event_Next" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=25000,wrap=0,always=0,repeat=2,oneshot=1" position="692,55" size="520,24" font="Regular;22" halign="left" foregroundColor="#00a1d1ff" backgroundColor="#101011" noWrap="1" transparent="1" zPosition="1">
+		<widget source="session.Event_Next" render="RunningText" options="movetype=running,startpoint=0,startdelay=25000,wrap=0,always=0,repeat=2,oneshot=1" position="692,55" size="520,24" font="Regular;22" halign="left" foregroundColor="#00a1d1ff" backgroundColor="#101011" noWrap="1" transparent="1" zPosition="1">
 		    <convert type="EventName">NameNext</convert>
 		</widget>
 		<!--widget font="Regular;22" halign="left" valign="center" position="775,60" render="RunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" size="415,24" source="session.Event_Next" foregroundColor="#00a1d1ff" backgroundColor="background" transparent="0" zPosition="1">
