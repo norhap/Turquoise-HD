@@ -3361,13 +3361,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
     <!-- INFOBAR OSD -->
     <screen name="InfoBar" flags="wfNoBorder" position="fill" title="InfoBar" backgroundColor="transparent">
         <ePixmap position="0,515" zPosition="1" size="1292,253" pixmap="icons/infobar_light.png" transparent="1"/>
-
 	    <widget name="key_red" position="0,0" size="0,0" zPosition="1" transparent="1" valign="center" noWrap="1" backgroundColor="#00030303"/>
-
 	    <widget name="key_green" position="0,0" size="0,0" zPosition="1" transparent="1" valign="center" noWrap="1" backgroundColor="#00030303"/>
-
 	    <widget name="key_yellow" position="0,0" size="0,0" zPosition="1" transparent="1" valign="center" noWrap="1" backgroundColor="#00030303"/>
-
 	    <widget name="key_blue" position="0,0" size="0,0" zPosition="1" transparent="1" valign="center" noWrap="1" backgroundColor="#00030303"/>
     <!-- Orologio Digitale - Digital Clock -->
         <widget source="global.CurrentTime" render="Label" position="1071,616" size="84,48" zPosition="2" font="LCD;34" valign="top" halign="right" foregroundColor="#00dcdcdc" backgroundColor="#00333333" transparent="1">
@@ -3445,9 +3441,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
               <convert type="ValueRange">2,2</convert>
               <convert type="ConditionalShowHide"/>
         </widget>
-	<!--widget source="session.CurrentService" render="Label" position="1050,572" size="80,21" font="LCD;19" halign="left" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1" zPosition="2">
-		<convert type="PliExtraInfo">TunerSystem</convert>
-	</widget-->	
 
     <!-- TUNERS DISPONIBLES + DISPOSICION -->
 	    <widget source="session.FrontendInfo" render="Label" position="1100,577" size="80,21" font="LCD;19" halign="center" noWrap="1" zPosition="2" backgroundColor="#00393939" transparent="1">
@@ -3469,7 +3462,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>	   
     <!-- Sezione SNR - SNR Section -->
-    <!-- eLabel text="Snr :" zPosition="1" position="220,684" size="60,20" halign="left" font="Regular;18" transparent="1" backgroundColor="transpBlack" -->
         <eLabel text="CPU" zPosition="2" position="740,561" foregroundColor="#0000fafa" backgroundColor="#0001030a" size="30,10" font="xRegular;10"/>
 	    <widget source="session.CurrentService" render="Label" position="705,567" size="90,22" halign="center" valign="center" font="Regular;16" transparent="1" foregroundColor="#004ccbde" backgroundColor="#0001030a" zPosition="2">
 		    <convert type="CpuUsage">$0</convert>
@@ -3485,17 +3477,19 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="session.FrontendStatus" render="Progress" position="822,578" size="130,5" zPosition="2" pixmap="icons/bar_snr.png" transparent="1">
 		    <convert type="FrontendInfo">AGC</convert>
 	    </widget>	
-    <!-- ePixmap position="273,693" zPosition="2" size="200,6" pixmap="ViX-Turquoise-HD/bar_snr_osd.png" alphatest="on" -->
-        <widget source="session.FrontendStatus" render="Label" position="971,562" zPosition="3" size="55,12" halign="left" font="Regular;14" foregroundColor="#004ccbde" transparent="1" backgroundColor="#0012161b">
+        <widget source="session.FrontendStatus" render="Label" position="971,562" zPosition="3" size="55,12" halign="left" font="Regular;14" foregroundColor="#004ccbde" transparent="1" backgroundColor="#00010309">
             <convert type="FrontendInfo">SNR</convert>
         </widget>
-        <widget source="session.FrontendStatus" render="Label" position="971,573" zPosition="3" size="55,12" halign="left" font="Regular;14" foregroundColor="#004ccbde" transparent="1" backgroundColor="#0012161b">
+        <widget source="session.FrontendStatus" render="Label" position="971,573" zPosition="3" size="55,12" halign="left" font="Regular;14" foregroundColor="#004ccbde" transparent="1" backgroundColor="#00010309">
             <convert type="FrontendInfo">AGC</convert>
         </widget>
-	    <eLabel text="SNR" zPosition="2" position="1018,564" foregroundColor="#0000fafa" backgroundColor="#0012161b" size="22,10" font="Regular;11"/>
-	    <eLabel text="AGC" zPosition="2" position="1018,575" foregroundColor="#0000fafa" backgroundColor="#0012161b" size="22,10" font="Regular;11"/>
-    <!-- Subtitles -->	
-		<widget source="session.CurrentService" render="FixedLabel" text="SUBTITLES" position="110,672" zPosition="4" size="65,26" font="LCD;15" halign="center" valign="center" backgroundColor="#000b0b0b" foregroundColor="#00a1d1ff" transparent="1">
+	    <eLabel text="SNR" zPosition="2" position="1015,564" foregroundColor="#0000fafa" backgroundColor="#00010309" transparent="1" size="22,10" font="Regular;11"/>
+	    <eLabel text="AGC" zPosition="2" position="1015,575" foregroundColor="#0000fafa" backgroundColor="#00010309" transparent="1" size="22,10" font="Regular;11"/>
+		<!--widget source="session.FrontendStatus" render="Label" position="1030,566" zPosition="3" size="70,24" font="Regular;15" foregroundColor="#004ccbde" transparent="1" backgroundColor="#00010309">
+			<convert type="FrontendInfo">BER</convert> 
+		</widget-->
+    <!-- Subsservicios disponibles -->	
+		<widget source="session.CurrentService" render="FixedLabel" text="SUBSERVICES" position="105,672" zPosition="4" size="75,26" font="LCD;15" halign="center" valign="center" backgroundColor="#000b0b0b" foregroundColor="#00a1d1ff" transparent="1">
 		    <convert type="ServiceInfo">SubservicesAvailable</convert>
 		    <convert type="ConditionalShowHide"/>
         </widget>
@@ -3629,7 +3623,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    </widget>
     </screen>
 	
-
 	<!-- PANEL EVENTOS SEGUNDA BARRA INFOBAR-->  
   	<screen name="SecondInfobarPanelEvents">
         <ePixmap position="0,515" zPosition="0" size="1280,250" pixmap="icons/infobar_light.png"/>
@@ -3676,8 +3669,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
     <!-- Tempo Trascorso - Progress Bar -->
         <widget source="session.Event_Now" render="Progress" pixmap="icons/p_bar1.png" position="231,631" size="815,9" zPosition="7" transparent="1">
             <convert type="EventTime">Progress</convert>
-        </widget>		
-    <!-- ePixmap position="235,613" zPosition="2" size="885,6" pixmap="icons/po_bar.png" alphatest="on" -->
+        </widget>
     <!-- Posizione Picon - Picon Position -->
         <widget source="session.CurrentService" render="Picon" position="90,605" size="100,60" zPosition="10" transparent="1" alphatest="blend">
             <convert type="ServiceName">Reference</convert>
@@ -3702,10 +3694,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
               <convert type="FrontendInfo">TYPE</convert>
               <convert type="ValueRange">2,2</convert>
               <convert type="ConditionalShowHide"/>
-        </widget>
-	<!--widget source="session.CurrentService" render="Label" position="1050,572" size="80,21" font="LCD;19" halign="left" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1" zPosition="2">
-		<convert type="PliExtraInfo">TunerSystem</convert>
-	</widget-->	
+        </widget>	
 
     <!-- TUNERS DISPONIBLES + DISPOSICION -->
 	    <widget source="session.FrontendInfo" render="Label" position="1100,577" size="80,21" font="LCD;19" halign="center" noWrap="1" zPosition="2" backgroundColor="#00393939" transparent="1">
@@ -3725,9 +3714,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>
 		<widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="/usr/share/enigma2/skin_default/icons/icon_unstableupdate.png" position="385,564" size="20,20" zPosition="5" alphatest="blend">
 			<convert type="ConditionalShowHide">Blink</convert>
-		</widget>	   
-    <!-- Sezione SNR - SNR Section -->
-    <!-- eLabel text="Snr :" zPosition="1" position="220,684" size="60,20" halign="left" font="Regular;18" transparent="1" backgroundColor="transpBlack" -->
+		</widget>
         <eLabel text="CPU" zPosition="2" position="740,561" foregroundColor="#0000fafa" backgroundColor="#0001030a" size="30,10" font="xRegular;10"/>
 	    <widget source="session.CurrentService" render="Label" position="705,567" size="90,22" halign="center" valign="center" font="Regular;16" transparent="1" foregroundColor="#004ccbde" backgroundColor="#0001030a" zPosition="2">
 		    <convert type="CpuUsage">$0</convert>
@@ -3741,22 +3728,18 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         </widget>
 		<widget source="session.FrontendStatus" render="Progress" position="822,578" size="130,5" zPosition="2" pixmap="icons/bar_snr.png" transparent="1">
 		    <convert type="FrontendInfo">AGC</convert>
-	    </widget>	
-    <!-- ePixmap position="273,693" zPosition="2" size="200,6" pixmap="ViX-Turquoise-HD/bar_snr_osd.png" alphatest="on" -->
-        <widget source="session.FrontendStatus" render="Label" position="971,562" zPosition="3" size="55,12" halign="left" font="Regular;14" foregroundColor="#004ccbde" transparent="1" backgroundColor="#0012161b">
+	    </widget>
+        <widget source="session.FrontendStatus" render="Label" position="971,562" zPosition="3" size="55,12" halign="left" font="Regular;14" foregroundColor="#004ccbde" transparent="1" backgroundColor="#00010309">
             <convert type="FrontendInfo">SNR</convert>
         </widget>
-        <widget source="session.FrontendStatus" render="Label" position="971,573" zPosition="3" size="55,12" halign="left" font="Regular;14" foregroundColor="#004ccbde" transparent="1" backgroundColor="#0012161b">
+        <widget source="session.FrontendStatus" render="Label" position="971,573" zPosition="3" size="55,12" halign="left" font="Regular;14" foregroundColor="#004ccbde" transparent="1" backgroundColor="#00010309">
             <convert type="FrontendInfo">AGC</convert>
         </widget>
-	    <eLabel text="SNR" zPosition="2" position="1018,564" foregroundColor="#0000fafa" backgroundColor="#0012161b" size="22,10" font="Regular;11"/>
-	    <eLabel text="AGC" zPosition="2" position="1018,575" foregroundColor="#0000fafa" backgroundColor="#0012161b" size="22,10" font="Regular;11"/>	
-    <!-- ePixmap position="273,693" zPosition="2" size="200,6" pixmap="ViX-Turquoise-HD/bar_snr_osd.png" alphatest="on" -->
-    <!-- eLabel text="Ber :" zPosition="3" position="545,683" size="70,24" font="Regular;18" foregroundColor="#c0c0c0" backgroundColor="transpBlack" transparent="1" 
-		<widget source="session.FrontendStatus" render="Label" position="600,683" zPosition="3" size="70,24" font="Regular;19" foregroundColor="#c0c0c0" backgroundColor="transpBlack" transparent="1">
+	    <eLabel text="SNR" zPosition="2" position="1015,564" foregroundColor="#0000fafa" backgroundColor="#00010309" transparent="1" size="22,10" font="Regular;11"/>
+	    <eLabel text="AGC" zPosition="2" position="1015,575" foregroundColor="#0000fafa" backgroundColor="#00010309" transparent="1" size="22,10" font="Regular;11"/>
+		<!--widget source="session.FrontendStatus" render="Label" position="1030,566" zPosition="3" size="70,24" font="Regular;15" foregroundColor="#004ccbde" transparent="1" backgroundColor="#00010309">
 			<convert type="FrontendInfo">BER</convert> 
-		</widget> 	
-	-->
+		</widget-->
 		<eLabel position="100,565" size="50,1" backgroundColor="grey" zPosition="5"/>
 	    <eLabel position="100,565" size="1,22" backgroundColor="grey" zPosition="5"/>
 	    <eLabel position="100,586" size="50,1" backgroundColor="grey" zPosition="5"/>
@@ -3773,8 +3756,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
             <convert type="ServiceInfo">Is4K</convert>
             <convert type="ConditionalShowHide"/>
         </widget>
-    <!-- Subtitles -->	
-		<widget source="session.CurrentService" render="FixedLabel" text="SUBTITLES" position="110,672" zPosition="4" size="65,26" font="LCD;15" halign="center" valign="center" backgroundColor="#000b0b0b" foregroundColor="#00a1d1ff" transparent="1">
+    <!-- Subsservicios disponibles -->	
+		<widget source="session.CurrentService" render="FixedLabel" text="SUBSERVICES" position="105,672" zPosition="4" size="75,26" font="LCD;15" halign="center" valign="center" backgroundColor="#000b0b0b" foregroundColor="#00a1d1ff" transparent="1">
 		    <convert type="ServiceInfo">SubservicesAvailable</convert>
 		    <convert type="ConditionalShowHide"/>
         </widget>
@@ -3914,9 +3897,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
   	    <widget source="session.Event_Now" render="RunningText" options="movetype=running,startpoint=0,startdelay=5000,wrap=0,always=0,repeat=2,oneshot=1" position="78,55" size="520,24" font="Regular;22" halign="left" noWrap="1" foregroundColor="#004ccbde" backgroundColor="#101011" transparent="1" zPosition="2">
 		    <convert type="EventName">NameNow</convert>
 		</widget>		
-		<!--widget font="Regular;22" halign="left" valign="center" position="150,60" render="RunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" size="465,24" source="session.Event_Now" foregroundColor="#004ccbde" backgroundColor="background" transparent="0" zPosition="1">
-			<convert type="EventName">Name</convert>
-		</widget-->		
 		<widget source="session.Event_Now" render="Label" position="60,95" size="70,35" font="Regular;22" foregroundColor="#004ccbde" backgroundColor="#101011" transparent="1" zPosition="1" halign="right" noWrap="1" valign="top">
 		    <convert type="EventTime">StartTime</convert>
 		    <convert type="ClockToText">
@@ -3978,7 +3958,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		position="345,527" 
 		size="30,15"  
 	    font="LCD;13" 
-		backgroundColor="#00080808"
+		backgroundColor="#00070707"
 		halign="center" 
 		transparent="1" 
 		zPosition="3"
@@ -3987,11 +3967,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="370,529" 
+		position="370,527" 
 		size="50,50" 
-		backgroundColor="#00080808" 
+		backgroundColor="#00070707" 
 		foregroundColor="#0000fafa" 
-	    font="Regular;12" 
+	    font="Regular;14" 
 		halign="left" 
 		valign="top" 
 		zPosition="5" 
@@ -4005,18 +3985,18 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		size="30,15"  
 	    font="LCD;13" 
 		halign="center" 
-		backgroundColor="#00080808" 
+		backgroundColor="#00070707" 
 		transparent="1" 
 		zPosition="3"
 	    />
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="370,540" 
+		position="370,538" 
 		size="50,50" 
-		backgroundColor="#00080808" 
+		backgroundColor="#00070707" 
 		foregroundColor="#0000fafa" 
-	    font="Regular;12" 
+	    font="Regular;14" 
 		halign="left" 
 		valign="top" 
 		zPosition="5" 
@@ -4030,18 +4010,18 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		size="40,50"  
 	    font="LCD;13" 
 		halign="center" 
-		backgroundColor="#00080808" 
+		backgroundColor="#00070707" 
 		transparent="1" 
 		zPosition="3"
 	    />
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="892,528" 
+		position="892,526" 
 		size="50,50" 
-		backgroundColor="#00080808" 
+		backgroundColor="#00070707" 
 		foregroundColor="#0000fafa" 
-	    font="Regular;12" 
+	    font="Regular;14" 
 		halign="left" 
 		valign="top" 
 		zPosition="5" 
@@ -4055,18 +4035,18 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		size="40,50"  
 	    font="LCD;13" 
 		halign="center" 
-		backgroundColor="#00080808" 
+		backgroundColor="#00070707" 
 		transparent="1" 
 		zPosition="3"
 	    />
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="892,540" 
+		position="892,538" 
 		size="50,50" 
-		backgroundColor="#00080808" 
+		backgroundColor="#00070707" 
 		foregroundColor="#0000fafa" 
-	    font="Regular;12" 
+	    font="Regular;14" 
 		halign="left" 
 		valign="top" 
 		zPosition="5" 
@@ -4075,12 +4055,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    </widget>		
 	</screen>
 
-
     <!-- ############ CROSSEPG ############ -->
-
-
   	<!-- CrossEPG Configuration -->
-
 	<screen name="CrossEPG_Setup" position="fill" title="CrossEPG Configuration" flags="wfNoBorder">
 		<panel name="PantallaGenericaConfig_s4_ButtonsRG"/>
         <panel name="PIG"/>
