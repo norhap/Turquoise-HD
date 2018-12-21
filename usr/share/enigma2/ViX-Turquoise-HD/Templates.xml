@@ -623,7 +623,52 @@
 		<widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Label" position="385,625" size="300,36" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
 		<widget objectTypes="key_blue,Label,Button" name="key_blue" position="600,620" size="250,45" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
 		<widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="600,620" size="250,45" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
-	</screen>
+	</screen>	
+	<!-- PANEL EVENTOS SEGUNDA BARRA INFOBAR-->  
+  	<screen name="SecondInfobarPanelEvents">		
+  	    <widget source="session.Event_Now" render="RunningText" options="movetype=running,startpoint=0,startdelay=5000,wrap=0,always=0,repeat=2,oneshot=1" position="78,55" size="520,24" font="Regular;22" halign="left" noWrap="1" foregroundColor="#004ccbde" backgroundColor="#101011" transparent="1" zPosition="2">
+		    <convert type="EventName">NameNow</convert>
+		</widget>		
+		<widget source="session.Event_Now" render="Label" position="60,95" size="70,35" font="Regular;22" foregroundColor="#004ccbde" backgroundColor="#101011" transparent="1" zPosition="1" halign="right" noWrap="1" valign="top">
+		    <convert type="EventTime">StartTime</convert>
+		    <convert type="ClockToText">
+		</convert>
+		</widget>
+		<widget source="session.Event_Now" render="Label" position="135,95" size="80,45" font="Regular;22" foregroundColor="#004ccbde" backgroundColor="#101011" transparent="1" zPosition="1" noWrap="1" valign="top">
+		    <convert type="EventTime">EndTime</convert>
+		    <convert type="ClockToText">Format:- %H:%M</convert>
+		</widget>
+		<widget source="session.Event_Now" render="Label" position="175,90" size="200,35" font="Regular;22" foregroundColor="#004ccbde" backgroundColor="#101011" halign="right" valign="center" transparent="1" zPosition="1">
+		    <convert type="EventTime">Remaining</convert>
+		    <convert type="RemainingToText">NoSeconds</convert>
+		</widget>
+		<widget source="session.Event_Now" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=25000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="75,125" size="570,383" zPosition="2" font="Regular;20" halign="left" foregroundColor="#004ccbde" backgroundColor="transpBlack" transparent="0">
+		    <convert type="EventName">ExtendedDescription</convert>
+		</widget>		
+	<!-- Event Next -->
+		<widget source="session.Event_Next" render="RunningText" options="movetype=running,startpoint=0,startdelay=25000,wrap=0,always=0,repeat=2,oneshot=1" position="692,55" size="520,24" font="Regular;22" halign="left" foregroundColor="#00a1d1ff" backgroundColor="#101011" noWrap="1" transparent="1" zPosition="1">
+		    <convert type="EventName">NameNext</convert>
+		</widget>
+		<!--widget font="Regular;22" halign="left" valign="center" position="775,60" render="RunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" size="415,24" source="session.Event_Next" foregroundColor="#00a1d1ff" backgroundColor="background" transparent="0" zPosition="1">
+			<convert type="EventName">Name</convert>
+		</widget-->		
+		<widget source="session.Event_Next" render="Label" position="675,95" size="70,35" font="Regular;22" foregroundColor="#00a1d1ff" backgroundColor="#101011" transparent="1" zPosition="1" halign="right" noWrap="1" valign="top">
+		    <convert type="EventTime">StartTime</convert>
+		    <convert type="ClockToText">
+		</convert>
+		</widget>
+		<widget source="session.Event_Next" render="Label" position="750,95" size="80,45" font="Regular;22" foregroundColor="#00a1d1ff" backgroundColor="#101011" transparent="1" zPosition="1" noWrap="1" valign="top">
+		    <convert type="EventTime">EndTime</convert>
+		    <convert type="ClockToText">Format:- %H:%M</convert>
+		</widget>
+		<widget source="session.Event_Next" render="Label" position="790,90" size="200,35" font="Regular;22" foregroundColor="#00a1d1ff" backgroundColor="#101011" halign="right" valign="center" transparent="1" zPosition="1">
+		    <convert type="EventTime">Remaining</convert>
+		    <convert type="RemainingToText">NoSeconds</convert>
+		</widget>
+		<widget source="session.Event_Next" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=100000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="690,125" size="510,383" zPosition="2" font="Regular;20" halign="left" foregroundColor="#00a1d1ff" backgroundColor="transpBlack" transparent="0">
+		    <convert type="EventName">ExtendedDescription</convert>
+		</widget>		
+    </screen>	
 	<!--  ####### DESCARGA MODO BARRA #######  -->	
 	<screen name="DownloadBar">
 		<widget name="action" position="5,3" size="335,25" font="Regular;22" backgroundColor="#0003424a"/>
