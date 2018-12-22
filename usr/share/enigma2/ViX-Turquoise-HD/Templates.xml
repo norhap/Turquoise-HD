@@ -625,7 +625,8 @@
 		<widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="600,620" size="250,45" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
 	</screen>	
 	<!-- PANEL EVENTOS SEGUNDA BARRA INFOBAR-->  
-  	<screen name="SecondInfobarPanelEvents">		
+  	<screen name="SecondInfobarPanelEvents">
+		<ePixmap position="0,0" zPosition="0" size="1280,100" pixmap="icons/extrabar.png" transparent="1"/>	
   	    <widget source="session.Event_Now" render="RunningText" options="movetype=running,startpoint=0,startdelay=5000,wrap=0,always=0,repeat=2,oneshot=1" position="78,55" size="520,24" font="Regular;22" halign="left" noWrap="1" foregroundColor="#004ccbde" backgroundColor="#101011" transparent="1" zPosition="2">
 		    <convert type="EventName">NameNow</convert>
 		</widget>		
