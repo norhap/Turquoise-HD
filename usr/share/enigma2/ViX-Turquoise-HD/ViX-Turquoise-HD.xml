@@ -2462,25 +2462,25 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
         <panel name="Title_not_menu_path"/>
 		<panel name="ScrollBarTemplate"/>
-            <widget source="header_name" render="Label" position="80,145" size="360,25" font="Regular;18"/>
-            <widget source="header_provider" render="Label" position="405,145" size="165,25" font="Regular;18"/>
-            <widget source="header_date" render="Label" position="640,145" size="200,25" font="Regular;18"/>
-            <widget source="subtitles" render="Listbox" scrollbarMode="showOnDemand" position="80,190" size="722,410" zPosition="3" transparent="1">
-                <convert type="TemplatedMultiContent">
-                    {"templates":
-                        {"default": (50, [
-                            MultiContentEntryPixmapAlphaBlend(pos = (0, 15),   size = (24, 24), png=0), # key,
-                            MultiContentEntryText(pos = (105, 0),   size = (325, 50),  font = 0, flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER|RT_WRAP, text=1, color=0xFF000004), # name,
-                            MultiContentEntryText(pos = (440, 0),  size = (165, 50),  font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,  text = 2, color=0xFF000004), # provider,
-                            MultiContentEntryText(pos = (605, 0), size = (170, 50), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,  text = 3, color=0xFF000004), # date,
-                        ], True, "showOnDemand"),
-                        },
-                    "fonts": [gFont("Regular", 19), gFont("Regular", 16)],
-                    "itemHeight": 50
-                    }
-                </convert>
-            </widget>
-            <widget source="entries_sum" render="Label" position="845,415" size="380,160" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>	
+        <widget source="header_name" render="Label" position="80,145" size="360,25" font="Regular;18"/>
+        <widget source="header_provider" render="Label" position="405,145" size="165,25" font="Regular;18"/>
+        <widget source="header_date" render="Label" position="640,145" size="200,25" font="Regular;18"/>
+        <widget source="subtitles" render="Listbox" scrollbarMode="showOnDemand" position="80,190" size="722,410" zPosition="3" transparent="1">
+            <convert type="TemplatedMultiContent">
+                {"templates":
+                {"default": (50, [
+                MultiContentEntryPixmapAlphaBlend(pos = (0, 15),   size = (24, 24), png=0), # key,
+                MultiContentEntryText(pos = (105, 0),   size = (325, 50),  font = 0, flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER|RT_WRAP, text=1, color=0xFF000004), # name,
+                MultiContentEntryText(pos = (440, 0),  size = (165, 50),  font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,  text = 2, color=0xFF000004), # provider,
+                MultiContentEntryText(pos = (605, 0), size = (170, 50), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,  text = 3, color=0xFF000004), # date,
+                ], True, "showOnDemand"),
+                },
+                "fonts": [gFont("Regular", 19), gFont("Regular", 16)],
+                "itemHeight": 50
+                }
+            </convert>
+        </widget>
+        <widget source="entries_sum" render="Label" position="845,415" size="380,160" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>	
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 	</screen>	
 	<!--####### SubsSupport downloader ####### -->
@@ -2490,45 +2490,45 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
         <panel name="Title_not_menu_path"/>
 		<panel name="ScrollBarTemplate"/>
-            <widget source="search_info" render="Listbox" position="80,145" size="717,150" zPosition="3" scrollbarMode="showNever" transparent="1" >
-                <convert type="TemplatedMultiContent">
-                    {"templates":
-                        {"default": (22, [
-                            MultiContentEntryText(pos = (0, 0),   size = (200, 22),  font = 0, color = 0xDAA520, flags = RT_HALIGN_LEFT,  text = 0), # langname,
-                            MultiContentEntryText(pos = (205, 0),   size = (400, 22),  font = 0, flags = RT_HALIGN_LEFT,  text = 1)
-                        ], False, "showNever"),
-                        },
-                    "fonts": [gFont("Regular", 18)],
-                    "itemHeight":22,
-                    }
-                </convert>
-            </widget>
-            <widget source="header_country" render="Label" position= "85,295" size="120,25" font="Regular;18"/>
-            <widget source="header_release" render="Label" position= "225,295" size="335,25" font="Regular;18"/>
-            <widget source="header_provider" render="Label" position= "585,295" size="135,25" font="Regular;18"/>
-            <widget source="header_sync" render="Label" position="705,295" size="20,25" font="Regular;18"/>
-            <widget source="subtitles" render="Listbox" scrollbarMode="showOnDemand" position="85,325" size="722,255" zPosition="3" transparent="1">
-                <convert type="TemplatedMultiContent">
-                    {"templates":
-                        {"default": (23, [
-                            MultiContentEntryPixmapAlphaBlend(pos = (0, 0),   size = (24, 24), png=0), # key,
-                            MultiContentEntryText(pos = (30, 0),   size = (100, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # language,
-                            MultiContentEntryText(pos = (140, 0),  size = (335, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # filename,
-                            MultiContentEntryText(pos = (500, 0), size = (135, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 3), # size,
-                            MultiContentEntryPixmapAlphaBlend(pos = (645, 0),   size = (24, 24), png=4), # syncPng,
-                        ], True, "showOnDemand"),
-                        },
-                    "fonts": [gFont("Regular", 18), gFont("Regular", 16)],
-                    "itemHeight": 23
-                    }
-                </convert>
-            </widget>
-            <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>			
-            <widget name="loadmessage" position="845,415" size="380,160" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1" zPosition="4"/>
-            <widget name="errormessage" position="845,415" size="380,160" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1" zPosition="5"/>	
-            <widget source="key_menu_img" render="Pixmap" pixmap="icons/key_menu1.png" position="8,640" size="40,22" transparent="1" alphatest="on">
-                <convert type="ConditionalShowHide"/>
-            </widget>	
+        <widget source="search_info" render="Listbox" position="80,145" size="717,150" zPosition="3" scrollbarMode="showNever" transparent="1" >
+            <convert type="TemplatedMultiContent">
+                {"templates":
+                {"default": (22, [
+                MultiContentEntryText(pos = (0, 0),   size = (200, 22),  font = 0, color = 0xDAA520, flags = RT_HALIGN_LEFT,  text = 0), # langname,
+                MultiContentEntryText(pos = (205, 0),   size = (400, 22),  font = 0, flags = RT_HALIGN_LEFT,  text = 1)
+                ], False, "showNever"),
+                },
+                "fonts": [gFont("Regular", 18)],
+                "itemHeight":22,
+                }
+            </convert>
+        </widget>
+        <widget source="header_country" render="Label" position= "85,295" size="120,25" font="Regular;18"/>
+        <widget source="header_release" render="Label" position= "225,295" size="335,25" font="Regular;18"/>
+        <widget source="header_provider" render="Label" position= "585,295" size="135,25" font="Regular;18"/>
+        <widget source="header_sync" render="Label" position="705,295" size="20,25" font="Regular;18"/>
+        <widget source="subtitles" render="Listbox" scrollbarMode="showOnDemand" position="85,325" size="722,255" zPosition="3" transparent="1">
+            <convert type="TemplatedMultiContent">
+                {"templates":
+                {"default": (23, [
+                MultiContentEntryPixmapAlphaBlend(pos = (0, 0),   size = (24, 24), png=0), # key,
+                MultiContentEntryText(pos = (30, 0),   size = (100, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # language,
+                MultiContentEntryText(pos = (140, 0),  size = (335, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # filename,
+                MultiContentEntryText(pos = (500, 0), size = (135, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 3), # size,
+                MultiContentEntryPixmapAlphaBlend(pos = (645, 0),   size = (24, 24), png=4), # syncPng,
+                ], True, "showOnDemand"),
+                },
+                "fonts": [gFont("Regular", 18), gFont("Regular", 16)],
+                "itemHeight": 23
+                }
+            </convert>
+        </widget>
+        <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>			
+        <widget name="loadmessage" position="845,415" size="380,160" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1" zPosition="4"/>
+        <widget name="errormessage" position="845,415" size="380,160" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1" zPosition="5"/>	
+        <widget source="key_menu_img" render="Pixmap" pixmap="icons/key_menu1.png" position="8,640" size="40,22" transparent="1" alphatest="on">
+            <convert type="ConditionalShowHide"/>
+        </widget>	
 	</screen>
 	<!--####### SubsSupport downloader busqueda->tecla MENU ####### -->	
     <screen name="SubsSearchContextMenu" position="835,387" size="393,244" zPosition="5" flags="wfNoBorder">
@@ -2536,12 +2536,12 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <widget source="context_menu" render="Listbox" position="5,60" size="390,285" scrollbarMode="showNever" zPosition="1">
             <convert type="TemplatedMultiContent">
                 {"templates":
-                    {"default": (22, [
-                    MultiContentEntryText(pos = (5, 0),   size = (380, 22),  font = 0, color = 0xffffff, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,  text = 0), # langname,
-                    ], True, "showOnDemand"),
-                    },
+                {"default": (22, [
+                MultiContentEntryText(pos = (5, 0),   size = (380, 22),  font = 0, color = 0xffffff, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,  text = 0), # langname,
+                ], True, "showOnDemand"),
+                },
                 "fonts": [gFont("Regular", 19)],
-                    "itemHeight":22,
+                "itemHeight":22,
                 }
             </convert>
         </widget>
@@ -2552,16 +2552,16 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
         <panel name="Title_not_menu_path"/>
 		<panel name="ScrollBarTemplate"/>
-            <widget source="menuList" render="Listbox" scrollbarMode="showOnDemand" backgroundPixmap="ViX-Turquoise-HD/icons/butselection1.png" selectionPixmap="ViX-Turquoise-HD/icons/lsmenu.png" position="70,145" size="738,400" zPosition="3" transparent="1" >
-                <convert type="TemplatedMultiContent">
-			        {"template": [ 
-			        MultiContentEntryText(pos = (51,0), size = (600,38), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	),
-			        ],
-			       "fonts": [gFont("Regular",29)],
-			       "itemHeight": 40
-			        }
-                </convert>
-            </widget>
+        <widget source="menuList" render="Listbox" scrollbarMode="showOnDemand" backgroundPixmap="ViX-Turquoise-HD/icons/butselection1.png" selectionPixmap="ViX-Turquoise-HD/icons/lsmenu.png" position="70,145" size="738,400" zPosition="3" transparent="1" >
+            <convert type="TemplatedMultiContent">
+			    {"template": [ 
+			    MultiContentEntryText(pos = (51,0), size = (600,38), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	),
+			    ],
+			    "fonts": [gFont("Regular",29)],
+			    "itemHeight": 40
+			    }
+            </convert>
+        </widget>
     </screen>	
 	<!-- ####### Channel selection - Radio ####### -->
 	<screen name="ChannelSelectionRadio" position="60,80" size="1160,410" title="Channel Selection">
@@ -3208,7 +3208,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <panel name="PIG"/>				
 		<widget source="list" render="Listbox" position="80,145" size="722,427" zPosition="2" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="#00030303" transparent="1" backgroundColor="#00030303">
 		    <convert type="TemplatedMultiContent">
-		<!-- device, description, devicepng, divpng -->
 			    {"template": [
 			    MultiContentEntryPixmapAlphaTest(pos = (2, 8), size = (54, 54), png = 2), # index 3 is the interface pixmap
 			    MultiContentEntryText(pos = (85, 6), size = (717, 54), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text = 1), # index 1 is the interfacename
@@ -3408,19 +3407,19 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <eLabel position="1105,579" size="65,1" backgroundColor="grey" zPosition="5"/>
 	    <eLabel position="1169,560" size="1,20" backgroundColor="grey" zPosition="5"/>		
         <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-S2" position="1105,560" zPosition="3" size="65,20" font="LCD;17" halign="center" foregroundColor="#00a1d1ff" transparent="0">
-              <convert type="FrontendInfo">TYPE</convert>
-              <convert type="ValueRange">0,0</convert>
-              <convert type="ConditionalShowHide"/>
+            <convert type="FrontendInfo">TYPE</convert>
+            <convert type="ValueRange">0,0</convert>
+            <convert type="ConditionalShowHide"/>
         </widget>
         <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-C" position="1105,560" zPosition="3" size="65,20" font="LCD;17" halign="center" foregroundColor="#00a1d1ff" transparent="0">
-              <convert type="FrontendInfo">TYPE</convert>
-              <convert type="ValueRange">1,1</convert>
-              <convert type="ConditionalShowHide"/>
+            <convert type="FrontendInfo">TYPE</convert>
+            <convert type="ValueRange">1,1</convert>
+            <convert type="ConditionalShowHide"/>
         </widget>
         <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-T/T2" position="1105,560" zPosition="3" size="65,20" font="LCD;17" halign="center" foregroundColor="#00a1d1ff" transparent="0">
-              <convert type="FrontendInfo">TYPE</convert>
-              <convert type="ValueRange">2,2</convert>
-              <convert type="ConditionalShowHide"/>
+            <convert type="FrontendInfo">TYPE</convert>
+            <convert type="ValueRange">2,2</convert>
+            <convert type="ConditionalShowHide"/>
         </widget>
 	    <widget source="session.FrontendInfo" render="Label" position="1100,577" size="80,21" font="LCD;19" halign="center" noWrap="1" zPosition="2" backgroundColor="#00393939" transparent="1">
 		    <convert type="FrontendInfo">STRING</convert>
@@ -5223,7 +5222,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			<convert type="MSNWeather">weekday,day3</convert>
 		</widget>
 		<widget noWrap="1" backgroundColor="background" font="Regular;16" render="Label" position="740,13" size="40,26" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="#00a1d1ff">
-		<convert type="MSNWeather">temperature_high,day3</convert>
+		    <convert type="MSNWeather">temperature_high,day3</convert>
 	    </widget>
 		<widget noWrap="1" backgroundColor="background" font="Regular;16" render="Label" position="740,30" size="40,26" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="#004ccbde">
 			<convert type="MSNWeather">temperature_low,day3</convert>
