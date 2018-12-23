@@ -55,7 +55,7 @@
 	</colors>	
 	<!-- Fonts -->
 	<fonts>
-	    <font filename="/usr/share/enigma2/ViX-Turquoise-HD/fonts/Verdana_R.ttf" name="Regular" scale="84"/>
+	    <font filename="/usr/share/enigma2/ViX-Turquoise-HD/fonts/Verdana_R.ttf" name="Regular" scale="80"/>
         <font filename="/usr/share/enigma2/ViX-Turquoise-HD/fonts/digital-Bold.ttf" name="LCD2" scale="100"/>
 		<font filename="/usr/share/enigma2/ViX-Turquoise-HD/fonts/digital-watch.ttf" name="LCD" scale="100"/>
 		<font filename="/usr/share/enigma2/ViX-Turquoise-HD/fonts/nmsbd2.ttf" name="oledRegular" scale="90"/>

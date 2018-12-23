@@ -45,7 +45,7 @@
 		<ePixmap pixmap="ViX-Turquoise-HD/menu/border_title.png" zPosition="0" position="110,5" size="580,90"/>
 	</screen>
 	<screen name="menu_path_compressed">
-	    <widget source="menu_path_compressed" render="Label" zPosition="2" position="70,53" size="725,32" transparent="1" font="Regular;17" halign="center" valign="center" foregroundColor="#0000fafa" backgroundColor="#00000000"/>
+	    <widget source="menu_path_compressed" render="Label" zPosition="2" position="70,53" size="725,32" transparent="1" font="Regular;18" halign="center" valign="center" foregroundColor="#0000fafa" backgroundColor="#00000000"/>
 	</screen>		
 	<screen name="Title_not_menu_path">
 		<widget source="Title" render="Label" zPosition="2" position="78,20" foregroundColor="#0000fafa" backgroundColor="#040404" size="700,40" transparent="1" font="Regular;24" halign="center" valign="center"/>		
