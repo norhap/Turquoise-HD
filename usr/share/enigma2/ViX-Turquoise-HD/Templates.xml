@@ -166,8 +166,8 @@
 		<widget source="key_yellow" objectTypes="key_yellow,StaticText" render="Pixmap" pixmap="menu/colorbarY.png" position="460,635" size="140,35" alphatest="blend" transparent="1">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget name="key_yellow" objectTypes="key_yellow,Label,Button" position="470,614" size="125,50" font="Regular;20" halign="center" valign="center" backgroundColor="#000b0d0e" transparent="1" zPosition="2"/>
-		<widget source="key_yellow" render="Label" objectTypes="key_yellow,StaticText" position="470,614" size="125,50" font="Regular;20" halign="center" valign="center" backgroundColor="#000b0d0e" transparent="1" zPosition="2"/>
+		<widget name="key_yellow" objectTypes="key_yellow,Label,Button" position="455,614" size="150,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000b0d0e" transparent="1" zPosition="2"/>
+		<widget source="key_yellow" render="Label" objectTypes="key_yellow,StaticText" position="455,614" size="150,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000b0d0e" transparent="1" zPosition="2"/>
 		<!-- Azul button -->			
 		<ePixmap objectTypes="key_blue,Button,Label" pixmap="menu/colorbarB.png" position="660,634" size="140,35" alphatest="blend" transparent="1"/>
 		<widget source="key_blue" objectTypes="key_blue,StaticText" render="Pixmap" pixmap="menu/colorbarB.png" position="660,634" size="140,35" alphatest="blend" transparent="1">
