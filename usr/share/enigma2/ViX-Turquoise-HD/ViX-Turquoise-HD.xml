@@ -2067,7 +2067,7 @@ self.autoResize()
 	<screen name="CableScanStatus" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
-        <panel name="Title"/>
+        <panel name="Title_not_menu_path"/>
         <panel name="PIG"/>	
 		<widget name="scan_state" position="80,235" zPosition="2" size="520,30" font="Regular;25"/>
 		<widget name="scan_progress" position="80,325" size="690,15" pixmap="icons/progress_big.png" borderWidth="2" borderColor="#004ccbde"/>
