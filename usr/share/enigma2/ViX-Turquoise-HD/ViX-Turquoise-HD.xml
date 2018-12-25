@@ -1796,9 +1796,9 @@ self.autoResize()
 	<screen name="LanguageWizard" position="fill" flags="wfNoBorder">
 		<panel name="Title"/>
 		<ePixmap pixmap="buttons/red.png" position="170,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
-		<widget name="key_red" position="205,665" size="150,85" backgroundColor="#00030303" zPosition="1" transparent="1" font="Regular;23"/>
+		<widget name="key_red" position="210,665" size="150,85" backgroundColor="#00030303" zPosition="1" transparent="1" font="Regular;23"/>
 		<ePixmap pixmap="buttons/green.png" position="420,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
-		<widget name="key_green" position="395,635" size="200,85" halign="center" valign="center" backgroundColor="#00030303" zPosition="1" transparent="1" font="Regular;23"/>		
+		<widget name="key_green" position="390,635" size="200,85" halign="center" valign="center" backgroundColor="#00030303" zPosition="1" transparent="1" font="Regular;23"/>		
 	    <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="menu/fr_main_help.png"/>
 		<widget source="global.CurrentTime" render="Label" position="640,43" size="350,25" halign="right" font="LCD;24" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1" zPosition="1">
 		    <convert type="ClockToText">Date</convert>
@@ -1855,8 +1855,8 @@ self.autoResize()
 		<widget source="global.CurrentTime" render="Label" position="900,0" size="350,25" font="LCD;24" foregroundColor="#004ccbde" backgroundColor="#03424a" transparent="1" zPosition="1">
 		    <convert type="ClockToText">Date</convert>
 		</widget>
-		<ePixmap pixmap="icons/clock.png" position="1190,40" zPosition="1" size="20,20" alphatest="blend"/>
-		<widget source="global.CurrentTime" render="Label" position="1060,30" size="160,25" zPosition="2" font="LCD;24" halign="center" foregroundColor="#004ccbde" backgroundColor="#03424a" transparent="1">
+		<ePixmap pixmap="icons/clock.png" position="1195,40" zPosition="1" size="20,20" alphatest="blend"/>
+		<widget source="global.CurrentTime" render="Label" position="1065,30" size="160,25" zPosition="2" font="LCD;24" halign="center" foregroundColor="#004ccbde" backgroundColor="#03424a" transparent="1">
             <convert type="ClockToText">Format:%H:%M :%S</convert>
         </widget>	
 		<ePixmap pixmap="buttons/key_red.png" position="830,45" zPosition="0" size="35,25" transparent="1" alphatest="blend"/>	
