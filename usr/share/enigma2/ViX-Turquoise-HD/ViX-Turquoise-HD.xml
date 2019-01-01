@@ -764,7 +764,7 @@
 		<widget source="global.CurrentTime" render="Label" position="1148,8" size="100,28" font="Regular;23" foregroundColor="#0000fafa" backgroundColor="#0003424a" halign="right" transparent="1" zPosition="1">
 		    <convert type="ClockToText">Format %H:%M:%S</convert>
 		</widget>
-		<widget name="list" position="15,42" size="762,120" foregroundColor="#004ccbde" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="#0000fafa" font="Regular;21" backgroundColor="#00030303"/>
+		<widget name="list" position="15,42" size="762,120" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="#0000fafa" font="Regular;21" backgroundColor="#00030303"/>
 		<widget source="Service" render="Picon" position="30,0" size="70,42" backgroundColor="#0003424a" zPosition="2" alphatest="blend">
 		    <convert type="ServiceName">Reference</convert>
 		</widget>		
