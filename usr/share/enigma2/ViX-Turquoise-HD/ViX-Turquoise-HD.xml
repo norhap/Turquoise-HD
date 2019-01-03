@@ -2092,8 +2092,8 @@ self.autoResize()
 		<eLabel text="BER:" position="80,420" size="80,24" font="Regular;22" backgroundColor="#00030303" transparent="1"/>
 		<widget name="ber_bar" position="150,420" size="280,20" borderWidth="1" pixmap="icons/bar_snr_finder.png" backgroundColor="#00030303" transparent="1"/>
 		<widget name="ber_value" position="440,420" size="80,24" font="Regular;22" backgroundColor="#00030303" transparent="1"/>
-		<eLabel text="Lock:" position="80,450" size="80,24" font="Regular;22" backgroundColor="#00030303" transparent="1"/>
-		<widget name="lock_state" position="150,450" size="200,24" font="Regular;22" backgroundColor="#00030303" transparent="1"/>
+		<eLabel text="Lock:" position="80,450" size="90,24" font="Regular;22" backgroundColor="#00030303" transparent="1"/>
+		<widget name="lock_state" position="205,450" size="200,24" foregroundColor="#0000fafa" font="Regular;22" backgroundColor="#00030303" transparent="1"/>
 		<eLabel text="Frequency:" position="505,360" size="150,24" font="Regular;22" backgroundColor="#00030303" transparent="1"/>
 		<widget name="frequency_value" position="660,360" size="100,24" font="Regular;22" backgroundColor="#00030303" transparent="1"/>
 		<eLabel text="Symbolrate:" position="505,390" size="150,24" font="Regular;22" backgroundColor="#00030303" transparent="1"/>
