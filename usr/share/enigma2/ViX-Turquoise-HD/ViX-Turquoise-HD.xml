@@ -147,7 +147,7 @@
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="835,410" size="382,25" zPosition="4" foregroundColor="#0000fafa" backgroundColor="#20101010" font="Regular;20" valign="center" halign="center" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="835,410" size="382,20" zPosition="4" foregroundColor="#0000fafa" backgroundColor="#20101010" font="Regular;20" valign="center" halign="center" transparent="1">
 		    <convert type="ServiceName">Name</convert>
 		</widget>
 		<widget source="session.Event_Now" render="Label" position="1150,415" zPosition="4" foregroundColor="#00a1d1ff" size="70,30" font="Regular;19" halign="right" backgroundColor="#00030303" transparent="1">
@@ -3363,7 +3363,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget name="key_green" position="0,0" size="0,0" zPosition="1" transparent="1" valign="center" noWrap="1" backgroundColor="#00030303"/>
 	    <widget name="key_yellow" position="0,0" size="0,0" zPosition="1" transparent="1" valign="center" noWrap="1" backgroundColor="#00030303"/>
 	    <widget name="key_blue" position="0,0" size="0,0" zPosition="1" transparent="1" valign="center" noWrap="1" backgroundColor="#00030303"/>
-        <widget source="session.CurrentService" render="Label" position="350,526" size="563,31" zPosition="2" font="Regular;25" halign="center" noWrap="1" transparent="1" foregroundColor="#004ccbde" backgroundColor="background">
+        <widget source="session.CurrentService" render="Label" position="420,524" size="420,31" zPosition="2" font="Regular;25" valign="center" halign="center" noWrap="1" transparent="1" foregroundColor="#004ccbde" backgroundColor="background">
             <convert type="ServiceName">Name</convert>
         </widget>		
 		<widget font="Regular;25" halign="left" position="317,597" render="Label" noWrap="1" size="620,29" source="session.Event_Now" foregroundColor="#0077d8e6" backgroundColor="background" transparent="1" zPosition="2">
