@@ -592,9 +592,9 @@
 		<widget name="timeline5" pixmap="epg/timeline.png" position="0,388" size="0,0" zPosition="-1"/>
 		<ePixmap pixmap="icons/key_help.png" position="10,669" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_text.png" position="55,669" size="40,22" alphatest="blend"/>	
-		<ePixmap pixmap="icons/key_menu1.png" position="1145,669" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_epg_single.png" position="1190,669" size="40,22" alphatest="blend"/>		
-		<ePixmap pixmap="icons/key_info.png" position="1235,669" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_menu1.png" position="1140,669" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_epg_single.png" position="1185,669" size="40,22" alphatest="blend"/>		
+		<ePixmap pixmap="icons/key_info.png" position="1230,669" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="buttons/red.png" position="170,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
 		<widget name="key_red" position="170,635" size="150,85" backgroundColor="#00030303" zPosition="1" transparent="1" font="Regular;21"/>
 		<ePixmap pixmap="buttons/green.png" position="420,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
@@ -658,9 +658,9 @@
 		<widget name="timeline5" pixmap="epg/timeline.png" position="0,388" size="0,0" zPosition="-1"/>
 		<ePixmap pixmap="icons/key_help.png" position="10,669" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_text.png" position="55,669" size="40,22" alphatest="blend"/>	
-		<ePixmap pixmap="icons/key_menu1.png" position="1145,669" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_epg_single.png" position="1190,669" size="40,22" alphatest="blend"/>		
-		<ePixmap pixmap="icons/key_info.png" position="1235,669" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_menu1.png" position="1140,669" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_epg_single.png" position="1185,669" size="40,22" alphatest="blend"/>		
+		<ePixmap pixmap="icons/key_info.png" position="1230,669" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="buttons/red.png" position="170,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
 		<widget name="key_red" position="170,635" size="150,85" backgroundColor="#00030303" zPosition="1" transparent="1" font="Regular;21"/>
 		<ePixmap pixmap="buttons/green.png" position="420,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
