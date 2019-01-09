@@ -5678,7 +5678,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>
 	</screen>
 	<screen name="VIXBackupManager" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGY"/>	
+		<panel name="PantallaGenericaConfig_s4_ButtonsRGY"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
