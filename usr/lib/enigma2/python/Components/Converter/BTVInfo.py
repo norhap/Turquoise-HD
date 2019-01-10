@@ -102,7 +102,7 @@ class BTVInfo(Poll, Converter, object):
                 uptime += str(hours) + ' ' + (hours == 1 and 'hora' or 'horas') + ', '
             if len(uptime) > 0 or minutes > 0:
                 uptime += str(minutes) + ' ' + (minutes == 1 and 'minuto' or 'minutos')
-            return 'Tiempo Actividad: %s' % uptime
+            return 'Time Activity: %s' % uptime
 
     def getTempSensor(self):
         if 'dm7020hd' not in HardwareInfo().get_device_name():
