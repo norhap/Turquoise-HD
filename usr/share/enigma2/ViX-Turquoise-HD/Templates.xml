@@ -96,7 +96,7 @@
         <panel name="PIG"/>
         <panel name="Title"/>
 		<panel name="ScrollBarTemplate"/>
-		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
+		<ePixmap pixmap="buttons/key_info1.png" position="990,390" size="74,36" zPosition="2" alphatest="blend"/>		
 		<widget name="config" position="59,155" size="748,425" font="Regular;21" backgroundColor="#00030303" scrollbarMode="showAlways" transparent="1"/>
         <widget name="description" objectTypes="description,Button,Label" position="845,415" size="380,160" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>
         <widget source="description" render="Label" objectTypes="description,StaticText" position="845,415" size="380,160" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>
