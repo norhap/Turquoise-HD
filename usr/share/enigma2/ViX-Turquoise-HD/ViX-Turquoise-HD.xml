@@ -823,9 +823,9 @@
 		<ePixmap pixmap="icons/key_text.png" position="780,680" size="40,22" alphatest="blend"/>		
 		<ePixmap pixmap="icons/key_help.png" position="825,680" size="40,22" alphatest="blend"/>
 		<eLabel text="PREV NEXT" position="925,490" size="150,17" zPosition="1" transparent="1" font="Regular;19" halign="left"/>
-		<eLabel text="Change Bouquet" position="1020,490" size="150,25" font="Regular;19" zPosition="1" foregroundColor="#004ccbde" transparent="1"/>
+		<eLabel text="CHANGE BOUQUET" position="1020,490" size="150,20" font="Regular;19" zPosition="1" foregroundColor="#004ccbde" transparent="1"/>
 		<eLabel text="C H" position="980,515" size="80,17" zPosition="1" transparent="1" font="Regular;19" halign="left"/>
-		<eLabel text="Page" position="1020,515" size="100,25" font="Regular;19" zPosition="1" foregroundColor="#004ccbde" transparent="1"/>		
+		<eLabel text="PAGE UP/DOWN" position="1020,515" size="200,20" font="Regular;19" zPosition="1" foregroundColor="#004ccbde" transparent="1"/>		
 	</screen>
 	<!-- ####### BOUQUET SELECTOR Seleccion de grupo ver grupos desde GraphicalEPG #######-->
 	<screen name="BouquetSelector" position="fill" flags="wfNoBorder">
