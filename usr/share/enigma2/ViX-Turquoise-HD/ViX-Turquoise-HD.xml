@@ -5666,7 +5666,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			    }
 			</convert>
 		</widget>
-		<widget source="menu" render="Listbox" position="845,450" size="380,60" backgroundColor="#00030303" foregroundColor="#0000fafa" scrollbarMode="showNever" selectionDisabled="1" transparent="1">
+		<widget source="menu" render="Listbox" position="845,450" size="380,60" backgroundColor="#00030303" foregroundColor="#004ccbde" scrollbarMode="showNever" selectionDisabled="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				MultiContentEntryText(pos = (0,0),size = (450,60),flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,text = 2),# index 0 is the MenuText,
