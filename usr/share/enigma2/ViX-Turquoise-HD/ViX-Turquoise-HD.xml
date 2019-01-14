@@ -648,8 +648,8 @@
 		<widget source="session.VideoPicture" render="Pig" position="848,98" size="360,170" zPosition="0" backgroundColor="#df0b1300"/>		
 		<widget name="timeline_text" position="65,255" size="1297,35" backgroundColor="#00030303" foregroundColor="#004ccbde" transparent="1" zPosition="2"/>
 		<widget name="bouquetlist" position="65,280" size="1142,343" foregroundColorSelected="#0000fafa" scrollbarMode="showNever" zPosition="2" transparent="0"/>
-		<widget name="list" position="65,288" size="1142,340" backgroundColor="#00030303" RecordForegroundColorSelected="yellow" scrollbarMode="showNever" zPosition="1" transparent="1"/>
-		<widget name="timeline_now" position="0,287" zPosition="3" size="25,593" pixmap="epg/timeline-now-pig.png" alphatest="blend"/>
+		<widget name="list" position="65,285" size="1142,340" backgroundColor="#00030303" RecordForegroundColorSelected="yellow" scrollbarMode="showNever" zPosition="1" transparent="1"/>
+		<widget name="timeline_now" position="0,285" zPosition="3" size="25,593" pixmap="epg/timeline-now-pig.png" alphatest="blend"/>
 		<widget name="timeline0" pixmap="epg/timeline.png" position="0,388" size="0,0" zPosition="-1"/>
 		<widget name="timeline1" pixmap="epg/timeline.png" position="0,388" size="0,0" zPosition="-1"/>
 		<widget name="timeline2" pixmap="epg/timeline.png" position="0,388" size="0,0" zPosition="-1"/>
