@@ -4638,7 +4638,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="buttons/yellow.png" position="685,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
 		<widget name="key_yellow" position="715,665" size="240,25" backgroundColor="#00030303" zPosition="1" transparent="1" font="Regular;23" halign="left"/>
 		<ePixmap pixmap="buttons/blue.png" position="935,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
-		<widget name="key_blue" position="970,665" size="440,25" backgroundColor="#00030303" zPosition="1" transparent="1" font="Regular;23" halign="left"/>		
+		<widget name="key_blue" position="785,665" size="440,25" backgroundColor="#00030303" zPosition="1" transparent="1" font="Regular;23" valign= "center" halign="center"/>		
 	</screen>	
 	<!-- Template para Plugin EMC LISTA DE PELICULAS -->
 	<screen name="EMC" title="Movie Selection" position="fill" flags="wfNoBorder">
