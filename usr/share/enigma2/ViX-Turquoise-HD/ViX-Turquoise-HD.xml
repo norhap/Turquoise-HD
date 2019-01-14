@@ -1752,7 +1752,7 @@ self.autoResize()
         <widget source="session.CurrentService" render="Label" position="885,610" size="450,26" halign="left" valign="center" font="Regular;16" transparent="1" backgroundColor="background" zPosition="6">
 		    <convert type="BTVDevicesInfo">UsbInfo</convert>
 		</widget>
-		<widget name="description" conditional="description" position="845,415" size="380,160" font="Regular;19" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>/>		
+		<widget name="description" conditional="description" position="250,115" size="380,25" font="Regular;19" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>/>		
 	</screen>
 	<!-- ####### Console ver log backup full instalacion plugins etc  ####### -->
 	<screen name="Console" position="fill">
