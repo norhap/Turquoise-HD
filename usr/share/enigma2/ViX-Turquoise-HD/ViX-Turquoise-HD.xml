@@ -2655,7 +2655,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
 		<widget name="timer1" position="80,140" size="690,50" scrollbarMode="showNever"/>
-		<widget name="timer2" position="80,220" size="727,50" scrollbarMode="showOnDemand"/>
+		<widget name="timer2" position="80,220" size="725,50" scrollbarMode="showOnDemand"/>
 		<widget name="list" position="80,350" size="727,250" scrollbarMode="showOnDemand" transparent="1"/>		
 	</screen>
 	<!-- ####### TIMER SELECTION #######  -->
