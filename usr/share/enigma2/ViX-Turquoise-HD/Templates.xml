@@ -90,40 +90,7 @@
             <convert type="ClockToText">Format:%H:%M :%S</convert>
         </widget>
 	</screen>
-	<!-- ####### PIG PARA MENU HELP ####### -->	
-		<screen name="MenuHelpPIG">
-		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="ViX-Turquoise-HD/menu/fr_main_help.png"/>
-		<widget source="global.CurrentTime" render="Label" position="690,25" size="350,25" halign="right" font="LCD;24" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1" zPosition="1">
-		    <convert type="ClockToText">Date</convert>
-		</widget>
-		<ePixmap pixmap="icons/clock.png" position="1195,35" zPosition="1" size="20,20" alphatest="blend"/>
-		<widget source="global.CurrentTime" render="Label" position="1055,25" size="160,25" zPosition="2" font="LCD;24" halign="center" foregroundColor="#004ccbde" backgroundColor="#00040404" transparent="1">
-            <convert type="ClockToText">Format:%H:%M :%S</convert>
-        </widget>	
-	<!-- PIG -->	
-	    <widget source="session.VideoPicture" render="Pig" position="840,180" size="370,215" zPosition="3" backgroundColor="#df0b1300"/>
-	<!-- Nombre del Canal - Service Name -->		
-		<widget source="session.CurrentService" render="Label" position="838,390" size="382,25" zPosition="4" foregroundColor="#0000fafa" backgroundColor="#20101010" font="Regular;20" valign="center" halign="center" transparent="1">
-		    <convert type="ServiceName">Name</convert>
-		</widget>		
-	<!-- Barra Progresso -->
-		<widget source="session.Event_Now" render="Progress" pixmap="icons/tv_b_bar.png" size="340,2" position="837,418" zPosition="5"  backgroundColor="darkgrey" transparent="1">
-			<convert type="EventTime">Progress</convert>
-		</widget>
-	<!-- Evento Ahora -->
-		<widget source="session.Event_Now" render="Label" position="838,395" size="70,25" zPosition="4" halign="left" font="Regular;18" foregroundColor="#0000fafa" backgroundColor="background" transparent="1">
-			<convert type="EventTime">StartTime</convert>
-			<convert type="ClockToText">Default</convert>
-		</widget>
-	    <widget font="Regular;20" halign="left" position="838,428" size="370,25" render="RunningText" options="movetype=running,startpoint=0,startdelay=3000,wrap=0,always=0,repeat=2,oneshot=1" noWrap="1" source="session.Event_Now" foregroundColor="#0000baff" backgroundColor="#00040404" transparent="1" zPosition="2">
-		    <convert type="EventName">Name</convert>
-	    </widget>			
-		<widget source="session.Event_Now" render="Label" position="1130,395" zPosition="4" foregroundColor="#00a1d1ff" size="70,25" font="Regular;18" halign="right" backgroundColor="black" transparent="1">
-			<convert type="EventTime">EndTime</convert>
-			<convert type="ClockToText">Default</convert>
-		</widget>
-	</screen>	
-	<!-- GENERICO CON PANTALLA CONFIG -->
+	<!-- Generic full width config screen -->
 	<screen name="SetupPanel">
 		<panel name="PantallaGenericaConfig"/>
         <panel name="PIG"/>
@@ -209,39 +176,7 @@
 		</widget>
 		<widget name="key_blue" objectTypes="key_blue,Label,Button" position="650,614" size="165,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000b0d0e" transparent="1" zPosition="2"/>
 		<widget source="key_blue" render="Label" objectTypes="key_blue,StaticText" position="650,614" size="165,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000b0d0e" transparent="1" zPosition="2"/>
-	<!-- ####### PANTALLA PARA SETUP MENU HELP ####### -->		
     </screen>
-		<screen name="PantallaGenericaConfigHelp">
-		<ePixmap pixmap="menu/fr_main_help.png" position="0,0" zPosition="-1" size="1280,720" alphatest="on" transparent="1"/> 
-		<!-- Rojo button -->		
-		<ePixmap objectTypes="key_red,Button,Label" pixmap="menu/colorbarR.png" position="40,665" size="140,35" alphatest="blend" transparent="1"/>
-		<widget source="key_red" objectTypes="key_red,StaticText" render="Pixmap" pixmap="menu/colorbarR.png" position="40,665" size="140,35" alphatest="blend" transparent="1">
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget name="key_red" objectTypes="key_red,Label,Button" position="35,649" size="150,45" font="Regular;20" halign="center" valign="center" backgroundColor="#00060a0a" transparent="1" zPosition="2"/>
-		<widget source="key_red" render="Label" objectTypes="key_red,StaticText" position="35,649" size="150,45" font="Regular;20" halign="center" valign="center" backgroundColor="#00060a0a" transparent="1" zPosition="2"/>
-		<!-- Verde button -->
-		<ePixmap objectTypes="key_green,Button,Label" pixmap="menu/colorbarG.png" position="240,665" size="140,35" alphatest="blend" transparent="1"/>
-		<widget source="key_green" objectTypes="key_green,StaticText" render="Pixmap" pixmap="menu/colorbarG.png" position="240,665" size="140,35" alphatest="blend" transparent="1">
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget name="key_green" objectTypes="key_green,Label,Button" position="235,649" size="150,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000a0a0a" transparent="1" zPosition="2"/>
-		<widget source="key_green" render="Label" objectTypes="key_green,StaticText" position="235,649" size="150,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000a0a0a" transparent="1" zPosition="2"/>
-		<!-- Amarillo button -->			
-		<ePixmap objectTypes="key_yellow,Button,Label" pixmap="menu/colorbarY.png" position="440,665" size="140,35" alphatest="blend" transparent="1"/>
-		<widget source="key_yellow" objectTypes="key_yellow,StaticText" render="Pixmap" pixmap="menu/colorbarY.png" position="440,665" size="140,35" alphatest="blend" transparent="1">
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget name="key_yellow" objectTypes="key_yellow,Label,Button" position="435,649" size="150,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000b0d0e" transparent="1" zPosition="2"/>
-		<widget source="key_yellow" render="Label" objectTypes="key_yellow,StaticText" position="435,649" size="150,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000b0d0e" transparent="1" zPosition="2"/>
-		<!-- Azul button -->			
-		<ePixmap objectTypes="key_blue,Button,Label" pixmap="menu/colorbarB.png" position="640,665" size="140,35" alphatest="blend" transparent="1"/>
-		<widget source="key_blue" objectTypes="key_blue,StaticText" render="Pixmap" pixmap="menu/colorbarB.png" position="640,665" size="140,35" alphatest="blend" transparent="1">
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget name="key_blue" objectTypes="key_blue,Label,Button" position="630,649" size="165,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000b0d0e" transparent="1" zPosition="2"/>
-		<widget source="key_blue" render="Label" objectTypes="key_blue,StaticText" position="630,649" size="165,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000b0d0e" transparent="1" zPosition="2"/>
-    </screen>	
 	<!-- ####### PANTALLAS PARA SETUP ESPECIFICAS BOTONES ROJO + 4 TECLAS SOURCE + NAME ####### -->		
 	<screen name="PantallaGenericaConfig_s4_ButtonsR">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>

@@ -796,35 +796,36 @@
 	</screen>	
 	<!--####### EPG SELECTION MULTI #######-->
 	<screen name="EPGSelectionMulti" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaConfigHelp"/>		
-        <panel name="MenuHelpPIG"/>
+		<panel name="PantallaGenericaConfig"/>		
+        <panel name="PIG"/>
         <panel name="Title_not_menu_path"/>
-		<ePixmap pixmap="buttons/key_info1.png" position="990,460" size="74,36" zPosition="2" alphatest="blend"/>		
+		<panel name="ScrollBarTemplate"/>
+		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 	<!-- channels lists -->
-		<widget name="list" position="75,125" size="760,450" scrollbarSliderForegroundColor="#0000fafa" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="list" position="75,161" size="732,400" scrollbarMode="showOnDemand" transparent="1"/>
 		<widget name="bouquetlist" position="78,161" size="1130,400" foregroundColorSelected="#0000fafa" scrollbarMode="showNever" zPosition="2" transparent="0"/>
 		<widget name="lab1" position="78,150" size="1130,400" font="Regular;25" halign="center" valign="center" zPosition="20" backgroundColor="#00030303" transparent="0"/>
 	<!-- events -->
-		<widget name="date" position="110,100" size="150,28" font="Regular;25" halign="left" foregroundColor="#0077d8e6" backgroundColor="#00030303" transparent="1"/>		
-		<widget name="now_text" position="390,100" zPosition="4" size="85,28" text="Now" font="Regular;25" halign="center" foregroundColor="#0077d8e6" transparent="1"/>
-		<widget name="now_button" pixmap="icons/pointer1.png" position="490,107" zPosition="3" size="26,16" alphatest="on"/>		
-		<widget name="now_button_sel" pixmap="icons/pointer.png" position="490,107" zPosition="3" size="26,16" alphatest="on"/>		
-		<widget name="next_text" position="510,100" zPosition="4" size="185,28" text="Next" font="Regular;25" halign="center" foregroundColor="#0077d8e6" transparent="1"/>
-		<widget name="next_button" pixmap="icons/pointer1.png" position="675,107" zPosition="3" size="26,16" alphatest="on"/>
-		<widget name="next_button_sel" pixmap="icons/pointer.png" position="675,107" zPosition="3" size="26,16" alphatest="on"/>		
-		<widget name="more_text" position="715,100" zPosition="4" size="85,28" text="More" font="Regular;25" halign="center" foregroundColor="#0077d8e6" transparent="1"/>	
-		<widget name="more_button" pixmap="icons/pointer1.png" position="795,107" zPosition="3" size="26,16" alphatest="on"/>
-		<widget name="more_button_sel" pixmap="icons/pointer.png" position="795,107" zPosition="3" size="26,16" alphatest="on"/>		
+		<widget name="date" position="75,135" size="150,28" font="Regular;25" halign="left" foregroundColor="#0077d8e6" backgroundColor="#00030303" transparent="1"/>		
+		<widget name="now_text" position="355,135" zPosition="4" size="85,28" text="Now" font="Regular;25" halign="center" foregroundColor="#0077d8e6" transparent="1"/>
+		<widget name="now_button" pixmap="icons/pointer1.png" position="455,142" zPosition="3" size="26,16" alphatest="on"/>		
+		<widget name="now_button_sel" pixmap="icons/pointer.png" position="455,142" zPosition="3" size="26,16" alphatest="on"/>		
+		<widget name="next_text" position="475,135" zPosition="4" size="185,28" text="Next" font="Regular;25" halign="center" foregroundColor="#0077d8e6" transparent="1"/>
+		<widget name="next_button" pixmap="icons/pointer1.png" position="640,142" zPosition="3" size="26,16" alphatest="on"/>
+		<widget name="next_button_sel" pixmap="icons/pointer.png" position="640,142" zPosition="3" size="26,16" alphatest="on"/>		
+		<widget name="more_text" position="680,135" zPosition="4" size="85,28" text="More" font="Regular;25" halign="center" foregroundColor="#0077d8e6" transparent="1"/>	
+		<widget name="more_button" pixmap="icons/pointer1.png" position="760,142" zPosition="3" size="26,16" alphatest="on"/>
+		<widget name="more_button_sel" pixmap="icons/pointer.png" position="760,142" zPosition="3" size="26,16" alphatest="on"/>		
 		<widget name="number" position="150,30" size="300,28" font="Regular;25" valign="center" halign="center" foregroundColor="#0077d8e6" backgroundColor="#00030303" transparent="1"/>
-		<ePixmap pixmap="icons/key_epg_single.png" position="905,680" size="40,22" alphatest="blend"/>		
-		<ePixmap pixmap="icons/key_menu1.png" position="950,680" size="40,22" alphatest="blend"/>		
-		<ePixmap pixmap="icons/key_info.png" position="995,680" size="40,22" alphatest="blend"/>		
-		<ePixmap pixmap="icons/key_text.png" position="1040,680" size="40,22" alphatest="blend"/>		
-		<ePixmap pixmap="icons/key_help.png" position="1085,680" size="40,22" alphatest="blend"/>
-		<eLabel text="PREV NEXT" position="925,510" size="150,17" zPosition="1" transparent="1" font="Regular;19" halign="left"/>
-		<eLabel text="CHANGE BOUQUET" position="1020,510" size="150,20" font="Regular;19" zPosition="1" foregroundColor="#004ccbde" transparent="1"/>
-		<eLabel text="C H" position="980,535" size="80,17" zPosition="1" transparent="1" font="Regular;19" halign="left"/>
-		<eLabel text="PAGE UP/DOWN" position="1020,535" size="200,20" font="Regular;19" zPosition="1" foregroundColor="#004ccbde" transparent="1"/>		
+		<ePixmap pixmap="icons/key_epg_single.png" position="645,680" size="40,22" alphatest="blend"/>		
+		<ePixmap pixmap="icons/key_menu1.png" position="690,680" size="40,22" alphatest="blend"/>		
+		<ePixmap pixmap="icons/key_info.png" position="735,680" size="40,22" alphatest="blend"/>		
+		<ePixmap pixmap="icons/key_text.png" position="780,680" size="40,22" alphatest="blend"/>		
+		<ePixmap pixmap="icons/key_help.png" position="825,680" size="40,22" alphatest="blend"/>
+		<eLabel text="PREV NEXT" position="925,490" size="150,17" zPosition="1" transparent="1" font="Regular;19" halign="left"/>
+		<eLabel text="CHANGE BOUQUET" position="1020,490" size="150,20" font="Regular;19" zPosition="1" foregroundColor="#004ccbde" transparent="1"/>
+		<eLabel text="C H" position="980,515" size="80,17" zPosition="1" transparent="1" font="Regular;19" halign="left"/>
+		<eLabel text="PAGE UP/DOWN" position="1020,515" size="200,20" font="Regular;19" zPosition="1" foregroundColor="#004ccbde" transparent="1"/>		
 	</screen>
 	<!-- ####### BOUQUET SELECTOR Seleccion de grupo ver grupos desde GraphicalEPG #######-->
 	<screen name="BouquetSelector" position="fill" flags="wfNoBorder">
