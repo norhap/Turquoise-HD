@@ -807,13 +807,13 @@
 		<widget name="lab1" position="78,150" size="1130,400" font="Regular;25" halign="center" valign="center" zPosition="20" backgroundColor="#00030303" transparent="0"/>
 	<!-- events -->
 		<widget name="date" position="75,135" size="150,28" font="Regular;25" halign="left" foregroundColor="#0077d8e6" backgroundColor="#00030303" transparent="1"/>		
-		<widget name="now_text" position="355,135" zPosition="4" size="85,28" text="Now" font="Regular;25" halign="center" foregroundColor="#0077d8e6" transparent="1"/>
+		<widget name="now_text" position="355,135" zPosition="4" size="65,28" text="Now, use the contrast setting to turn up the brightness of the background as much as possible, but make sure that you can still see the difference between the two brightest levels of shades.If you have done that, press OK." font="Regular;25" halign="center" foregroundColor="#0077d8e6" transparent="1"/>
 		<widget name="now_button" pixmap="icons/pointer1.png" position="455,142" zPosition="3" size="26,16" alphatest="on"/>		
 		<widget name="now_button_sel" pixmap="icons/pointer.png" position="455,142" zPosition="3" size="26,16" alphatest="on"/>		
 		<widget name="next_text" position="475,135" zPosition="4" size="185,28" text="Next" font="Regular;25" halign="center" foregroundColor="#0077d8e6" transparent="1"/>
 		<widget name="next_button" pixmap="icons/pointer1.png" position="640,142" zPosition="3" size="26,16" alphatest="on"/>
 		<widget name="next_button_sel" pixmap="icons/pointer.png" position="640,142" zPosition="3" size="26,16" alphatest="on"/>		
-		<widget name="more_text" position="680,135" zPosition="4" size="85,28" text="More" font="Regular;25" halign="center" foregroundColor="#0077d8e6" transparent="1"/>	
+		<widget name="more_text" position="680,135" zPosition="4" size="85,28" text="Other" font="Regular;25" halign="center" foregroundColor="#0077d8e6" transparent="1"/>	
 		<widget name="more_button" pixmap="icons/pointer1.png" position="760,142" zPosition="3" size="26,16" alphatest="on"/>
 		<widget name="more_button_sel" pixmap="icons/pointer.png" position="760,142" zPosition="3" size="26,16" alphatest="on"/>		
 		<widget name="number" position="150,30" size="300,28" font="Regular;25" valign="center" halign="center" foregroundColor="#0077d8e6" backgroundColor="#00030303" transparent="1"/>
