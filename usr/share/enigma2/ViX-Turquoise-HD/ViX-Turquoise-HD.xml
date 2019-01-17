@@ -995,7 +995,7 @@ self.autoResize()
 		</widget>	
 	</screen>
 	<!-- ####### WIZARD DESDE EL PLUGIN GESTION DE SOFTWARE (RESTAURACION DE SOFTWARE) ####### -->
-	<screen name="ImageWizard" position="fill" title="Bienvenido..." flags="wfNoBorder">
+	<screen name="ImageWizard" position="fill" title="Welcome..." flags="wfNoBorder">
 	    <panel name="Title"/>	
 	<!-- background -->
 		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="ViX-Turquoise-HD/menu/fr_main_help.png"/>
@@ -1260,7 +1260,7 @@ self.autoResize()
 	</screen>
 
 	<!-- ####### WIZARD ASISTENTE BASICO NO RESTAURACION Y ASISTENTE DE RED ####### -->	
-    <screen name="NetworkWizard" position="5,55" size="1265,720" zPosition="-1" backgroundColor="#03424a" title="Bienvenido...">
+    <screen name="NetworkWizard" position="5,55" size="1265,720" zPosition="-1" backgroundColor="#03424a" title="Welcome...">
 		<panel name="HelpWindow"/>	
 		<widget source="global.CurrentTime" render="Label" position="830,5" size="350,25" font="LCD;24" foregroundColor="#004ccbde" backgroundColor="#03424a" transparent="1" zPosition="1">
 		    <convert type="ClockToText">Date</convert>
@@ -1828,7 +1828,7 @@ self.autoResize()
         <widget name="wizard" pixmap="icons/wizard.png" position="850,350" zPosition="10" size="140,188" alphatest="blend"/>		
 	</screen>
 	<!-- ####### HDMI Y COMPONENTES ####### -->	
-	<screen name="VideoWizard" position="25,70" size="1225,720" zPosition="-1" backgroundColor="#03424a" title="Bienvenido...">
+	<screen name="VideoWizard" position="25,70" size="1225,720" zPosition="-1" backgroundColor="#03424a" title="Welcome...">
 		<widget source="global.CurrentTime" render="Label" position="900,0" size="350,25" font="LCD;24" foregroundColor="#004ccbde" backgroundColor="#03424a" transparent="1" zPosition="1">
 		    <convert type="ClockToText">Date</convert>
 		</widget>
@@ -1851,7 +1851,7 @@ self.autoResize()
 		<widget name="portpic" position="300,300" zPosition="10" size="150,150" transparent="1" alphatest="on"/>
     </screen>	 	
 	<!-- ####### COMIENZO DEL ASISTENTE HASTA INICIAR IMAGEN ####### -->	
-    <screen name="StartWizard" position="25,70" size="1225,720" zPosition="-1" backgroundColor="#03424a" title="Bienvenido...">
+    <screen name="StartWizard" position="25,70" size="1225,720" zPosition="-1" backgroundColor="#03424a" title="Welcome...">
 		<widget source="global.CurrentTime" render="Label" position="900,0" size="350,25" font="LCD;24" foregroundColor="#004ccbde" backgroundColor="#03424a" transparent="1" zPosition="1">
 		    <convert type="ClockToText">Date</convert>
 		</widget>
@@ -1878,7 +1878,7 @@ self.autoResize()
 		</widget>
 		<widget name="config" zPosition="1" position="10,40" size="770,600" backgroundColor="#00030303" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="#00030303" transparent="1"/> 
     </screen>
-	<screen name="InstallWizard" position="15,70" size="1280,720" zPosition="-1" backgroundColor="#03424a" title="Bienvenido...">
+	<screen name="InstallWizard" position="15,70" size="1280,720" zPosition="-1" backgroundColor="#03424a" title="Welcome...">
 		<widget name="config" zPosition="1" position="10,40" size="770,600" backgroundColor="#00030303" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="#00030303" transparent="1"/> 
     </screen>
 	<screen name="InstallWizardIpkgUpdater" position="fill" backgroundColor="#0003424a" flags="wfNoBorder">
@@ -2991,7 +2991,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="input" position="10,55" size="550,25" font="Regular;21"/>
 	</screen>
 	<!-- ####### Dream Package Wizard ####### -->
-	<screen name="DreamPackageWizard" position="280,70" size="1280,720" title="Bienvenido..." flags="wfNoBorder">
+	<screen name="DreamPackageWizard" position="280,70" size="1280,720" title="Welcome..." flags="wfNoBorder">
 		<widget name="text" position="153,50" size="340,270" font="Regular;24"/>
 		<widget source="list" render="Listbox" position="50,300" size="440,200" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="#00030303" transparent="1">
 			<convert type="StringList"/>
