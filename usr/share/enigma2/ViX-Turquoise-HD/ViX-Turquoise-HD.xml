@@ -1695,11 +1695,11 @@ self.autoResize()
 		</widget>
 	</screen>
 	<!--  Menu Rapido Subtitulos con subtitulos activado Subtitulos ok-> boton rojo-->
-		<screen name="QuickSubtitlesConfigMenu" position="30,75" size="560,290" title="Subtitle settings">
+		<screen name="QuickSubtitlesConfigMenu" position="30,75" size="560,290" title="Subtitles settings">
 		<ePixmap pixmap="ViX-Turquoise-HD/menu/backbox.png" zPosition="-1" position="0,0" size="600,300" alphatest="on"/>
 		<ePixmap pixmap="ViX-Turquoise-HD/buttons/button_red.png" position="15,0" size="15,16" alphatest="on"/>
         <eLabel text="Exit" position="35,2" size="250,25" font="xRegular;13" zPosition="1" transparent="1"/>		
-		<widget name="config" position="30,15" size="575,275" itemHeight="25" font="xRegular;16" foregroundColor="#004ccbde" zPosition="1" transparent="1"/>
+		<widget name="config" position="30,15" size="575,275" itemHeight="25" font="xRegular;16" zPosition="1" transparent="1"/>
 		<widget name="videofps" position="10,255" size="570,20" backgroundColor="transpBlack" transparent="1" zPosition="1" font="xRegular;15" valign="center" halign="left" foregroundColor="bluette"/>
 	</screen>
 	<!-- ####### Choice Box Boton azul Menu Extensiones#######-->
