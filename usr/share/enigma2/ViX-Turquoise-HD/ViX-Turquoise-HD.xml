@@ -2395,6 +2395,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<screen name="RadioInfoBar" position="0,504" size="1280,216" title="InfoBar" flags="wfNoBorder" zPosition="-1">
 		<ePixmap position="4,-30" zPosition="-10" size="1280,720" pixmap="icons/radiobar.png" transparent="1"/>
 		<ePixmap position="298,128" zPosition="2" size="919,6" pixmap="icons/po_bar1.png" alphatest="on"/>
+		<ePixmap pixmap="icons/key_menu1.png" position="90,8" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_epg_single.png" position="135,8" size="40,22" alphatest="blend"/>		
+		<ePixmap pixmap="icons/key_info.png" position="180,8" size="40,22" alphatest="blend"/>			
 		<ePixmap position="140,85" zPosition="1" size="43,59" pixmap="icons/nota_musica.png" alphatest="blend"/>
         <widget source="session.RecordState" render="Pixmap" pixmap="ViX-Turquoise-HD/icons/icon_rec_light.png" position="260,47" zPosition="3" size="22,22" alphatest="on">
             <convert type="ConditionalShowHide">Blink</convert>
