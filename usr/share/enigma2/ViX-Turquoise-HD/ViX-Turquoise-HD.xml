@@ -5039,8 +5039,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title_not_menu_path"/>
         <panel name="PIG"/>	
 		<widget name="config" position="80,140" size="590,200" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="#00030303" backgroundColor="#00030303" transparent="1"/>
-		<widget name="info" position="90,340" size="585,325" foregroundColor="#00a1d1ff" font="Regular;21" backgroundColor="#00030303" transparent="1"/>
-		<widget position="600,625" size="0,0" name="key_blue" font="Regular;21" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>  		
+		<widget name="info" position="90,340" size="585,325" foregroundColor="#00a1d1ff" font="Regular;21" backgroundColor="#00030303" transparent="1"/> 		
 	</screen>
     <!-- ********** FrontPanelUpgrade ********** -->
 	<screen name="FirmwareUpgrade" position="fill" title="FirmwareUpgrade" flags="wfNoBorder">
