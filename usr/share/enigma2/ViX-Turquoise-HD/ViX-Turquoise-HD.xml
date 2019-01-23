@@ -3990,7 +3990,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="Title_not_menu_path"/>
 		<panel name="PIG"/>		
 		<widget source="job_name" render="Label" position="80,140" size="715,80" font="Regular;25" foregroundColor="#0000fafa" backgroundColor="#00000000" transparent="1"/>
-		<widget source="job_task" render="Label" position="80,340" size="585,80" font="Regular;25" foregroundColor="#004ccbde" backgroundColor="#00000000" transparent="1"/>
+		<widget source="job_task" render="Label" position="80,340" size="685,80" font="Regular;25" foregroundColor="#004ccbde" backgroundColor="#00000000" transparent="1"/>
 		<eLabel position="80,300" size="560,2" backgroundColor="#004ccbde"/>
 		<eLabel position="80,300" size="2,40" backgroundColor="#004ccbde"/>
 		<eLabel position="80,338" size="560,2" backgroundColor="#004ccbde"/>
