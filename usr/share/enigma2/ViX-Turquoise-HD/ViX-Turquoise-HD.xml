@@ -4724,7 +4724,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<screen name="PVRState" position="265,523" size="125,24" backgroundColor="black" zPosition="2" flags="wfNoBorder">
 		<widget name="statusicon" position="10,2" zPosition="3" size="0,0" alphatest="blend" transparent="0" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png"/>
-		<widget name="speed" position="35,3" size="80,20" font="xRegular;18" halign="left" foregroundColor="#0000fafa" backgroundColor="#00030303" transparent="1" zPosition="4"/>	
+		<widget name="speed" position="35,3" size="80,20" font="xRegular;18" halign="left" foregroundColor="#0000fafa" backgroundColor="#00030303" transparent="1" zPosition="1"/>	
 		<widget name="state" position="0,0" size="125,20" transparent="0" zPosition="3" borderWidth="2" foregroundColor="#0000fafa" font="Regular;20" borderColor="black" halign="left"/>
 		<widget name="eventname" position="370,70" size="0,0" font="xRegular;19" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1" zPosition="2"/>		
 	</screen>	
