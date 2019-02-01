@@ -3950,9 +3950,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		 <widget source="session.CurrentService" render="Progress" position="400,128" size="515,10" zPosition="3" pixmap="icons/p_bar1_timeshift.png" transparent="1">
 			<convert type="ServicePosition">Position,ShowHours</convert>
 		</widget>
-		<widget name="statusicon" position="10,2" zPosition="3" size="0,0" alphatest="blend" transparent="0" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png"/>
-		<widget name="speed" position="265,25" size="0,0" font="xRegular;18" halign="left" foregroundColor="#0000fafa" backgroundColor="#00030303" transparent="1" zPosition="4"/>	
-		<widget name="state" position="265,25" size="125,20" transparent="0" zPosition="3" borderWidth="2" foregroundColor="#0000fafa" font="Regular;20" borderColor="black" halign="left"/>
+		<widget name="statusicon" position="122,125" zPosition="4" size="50,55" alphatest="blend" transparent="0" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png"/>
+		<widget name="speed" position="117,148" size="125,20" font="xRegular;16" halign="left" foregroundColor="#0000fafa" backgroundColor="#00030303" transparent="1" zPosition="4"/>	
+		<widget name="state" position="150,50" size="0,0" transparent="0" zPosition="3" borderWidth="2" foregroundColor="#0000fafa" font="xRegular;18" borderColor="black" halign="left"/>
 		<widget source="session.CurrentService" render="Label" position="370,43" size="563,31" zPosition="2" font="xRegular;19" halign="center" valign="center" noWrap="1" transparent="1" foregroundColor="#0000baff" backgroundColor="#00333333">
             <convert type="ServiceName">Name</convert>
         </widget>
@@ -4723,19 +4723,19 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap position="927,110" zPosition="3" size="25,470" pixmap="icons/barra400.png" alphatest="blend" transparent="1"/>
 	</screen>
 	<screen name="PVRState" position="265,523" size="125,24" backgroundColor="black" zPosition="2" flags="wfNoBorder">
-		<widget name="statusicon" position="10,2" zPosition="3" size="0,0" alphatest="blend" transparent="0" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png"/>
+		<widget name="statusicon" position="10,2" zPosition="3" size="50,55" alphatest="blend" transparent="0" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png"/>
 		<widget name="speed" position="35,3" size="80,20" font="xRegular;18" halign="left" foregroundColor="#0000fafa" backgroundColor="#00030303" transparent="1" zPosition="1"/>	
-		<widget name="state" position="0,0" size="125,20" transparent="0" zPosition="3" borderWidth="2" foregroundColor="#0000fafa" font="Regular;20" borderColor="black" halign="left"/>
+		<widget name="state" position="0,0" size="0,0" transparent="0" zPosition="3" borderWidth="2" foregroundColor="#0000fafa" font="Regular;20" borderColor="black" halign="left"/>
 		<widget name="eventname" position="370,70" size="0,0" font="xRegular;19" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1" zPosition="2"/>		
 	</screen>	
 	<!-- ####### MoviePlayer Standard Reproductor ####### -->
-	<screen name="MoviePlayer" position="fill" title="InfoBar" backgroundColor="transparent2" flags="wfNoBorder">
+	<screen name="MoviePlayer" position="fill" title="InfoBar" backgroundColor="transparent2" flags="wfNoBorder">	
 	    <eLabel position="265,523" size="125,24" backgroundColor="#00030303" zPosition="0"/>
-		<widget name="statusicon" position="275,523" zPosition="1" size="50,55" alphatest="blend" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png"/>
-		<widget name="speed" position="305,523" size="80,25" font="xRegular;18" halign="left" foregroundColor="#0000fafa" transparent="1" zPosition="1"/>
-		<widget name="state" position="250,520" size="0,0" font="xRegular;18" halign="left" foregroundColor="#0000fafa" transparent="0" zPosition="0"/>
-		<widget name="eventname" position="370,70" size="0,0" font="xRegular;19" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1" zPosition="2"/>
-		<ePixmap position="0,500" zPosition="-1" size="1280,218" pixmap="icons/moviebar.png"/>	
+		<ePixmap position="0,500" zPosition="-1" size="1280,218" pixmap="icons/moviebar.png"/>
+		<widget name="statusicon" position="265,525" zPosition="3" size="50,55" alphatest="blend" transparent="0" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png"/>
+		<widget name="speed" position="290,525" size="80,20" font="xRegular;18" halign="left" foregroundColor="#0000fafa" backgroundColor="#00030303" transparent="1" zPosition="1"/>
+		<widget name="state" position="0,0" size="0,0" transparent="0" zPosition="3" borderWidth="2" foregroundColor="#0000fafa" font="Regular;20" borderColor="black" halign="left"/>
+		<widget name="eventname" position="370,70" size="0,0" font="xRegular;19" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1" zPosition="2"/>		
 		<widget source="global.CurrentTime" render="Label" position="1050,570" size="130,24" zPosition="2" font="LCD;24" valign="top" halign="right" foregroundColor="#00a1d1ff" backgroundColor="#00232525" transparent="1">
 			<convert type="ClockToText">Format:%d/%m/%y</convert>
 		</widget>
