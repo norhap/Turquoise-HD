@@ -2232,11 +2232,15 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- ####### MessageBox ####### -->	
 	<screen name="MessageBox" position="fill" flags="wfNoBorder">
-		<panel name= "MessageBoxTemplate"/>
+		<panel name="MessageBoxTemplate"/>
 	</screen>
+	<screen name="autoresize" position="fill" flags="wfNoBorder">
+		<widget name="autoresize" position="20,20" size="560,300" transparent="1"/>
+	</screen>	
 	<!-- ####### MessageBoxSimple ####### -->		
 	<screen name="MessageBoxSimple" position="fill" flags="wfNoBorder">
-		<panel name= "MessageBoxTemplate"/>
+		<panel name="MessageBoxTemplate"/>
+		<panel name="autoresize"/>		
 	</screen>
 	<!--####### Movie Context Menu ####### -->
 	<screen name="MovieContextMenu" position="center,center" size="600,340"  title="Movielist menu">
@@ -4732,7 +4736,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<screen name="MoviePlayer" position="fill" title="InfoBar" backgroundColor="transparent2" flags="wfNoBorder">
 		<ePixmap position="0,500" zPosition="-1" size="1280,218" pixmap="icons/moviebar.png"/>
 		<widget name="statusicon" position="122,625" zPosition="3" size="50,55" alphatest="blend" transparent="0" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png"/>
-		<widget name="speed" position="122,640" size="80,20" font="xRegular;18" halign="left" foregroundColor="#0000fafa" backgroundColor="#00030303" transparent="1" zPosition="1"/>
+		<widget name="speed" position="122,625" size="0,0" font="xRegular;18" halign="left" foregroundColor="#0000fafa" backgroundColor="#00030303" transparent="1" zPosition="3"/>
 		<widget name="state" position="0,0" size="0,0" transparent="0" zPosition="3" borderWidth="2" foregroundColor="#0000fafa" font="Regular;20" borderColor="black" halign="left"/>
 		<widget name="eventname" position="370,70" size="0,0" font="xRegular;19" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1" zPosition="2"/>		
 		<widget source="global.CurrentTime" render="Label" position="1050,570" size="130,24" zPosition="2" font="LCD;24" valign="top" halign="right" foregroundColor="#00a1d1ff" backgroundColor="#00232525" transparent="1">
