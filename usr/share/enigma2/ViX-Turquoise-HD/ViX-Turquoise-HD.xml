@@ -3954,7 +3954,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		 <widget source="session.CurrentService" render="Progress" position="400,128" size="515,10" zPosition="3" pixmap="icons/p_bar1_timeshift.png" transparent="1">
 			<convert type="ServicePosition">Position,ShowHours</convert>
 		</widget>
-		<widget name="statusicon" position="122,125" zPosition="4" size="50,55" alphatest="blend"  backgroundColor="#004b4f52" transparent="0" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png"/>
+		<widget name="statusicon" position="122,125" zPosition="4" size="50,55" alphatest="blend" backgroundColor="#004b4f52" transparent="0" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png"/>
 		<widget name="speed" position="117,148" size="125,20" font="Regular;17" halign="left" foregroundColor="#0000fafa" backgroundColor="#00414141" transparent="1" zPosition="4"/>	
 		<widget name="state" position="150,50" size="0,0" transparent="0" zPosition="3" borderWidth="2" foregroundColor="#0000fafa" font="xRegular;18" borderColor="black" halign="left"/>
 		<widget source="session.CurrentService" render="Label" position="370,43" size="563,31" zPosition="2" font="xRegular;19" halign="center" valign="center" noWrap="1" transparent="1" foregroundColor="#0000baff" backgroundColor="#00333333">
