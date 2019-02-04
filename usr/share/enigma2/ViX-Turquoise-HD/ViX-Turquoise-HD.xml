@@ -1708,9 +1708,9 @@ self.autoResize()
 		<panel name="PIG"/>		
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
         <!--widget name="windowtitle" position="80,580" size="0,0" font="Regular;23" transparent="1"/-->				
-		<panel name="ScrollBarTemplate"/>		
-		<widget name="list" position="75,145" size="733,350" scrollbarMode="showOnDemand" selectionPixmap="icons/ls700x30-h.png" transparent="1"/>
-		<widget name="text" position="75,440" size="555,335" font="Regular;21" transparent="1"/>
+		<panel name="ScrollBarTemplate"/>
+		<widget name="text" position="150,105" size="555,50" foregroundColor="#004ccbde" backgroundColor="#00030303" halign="center" valign="center" font="Regular;21" transparent="1"/>		
+		<widget name="list" position="75,180" size="733,315" backgroundColor="#00030303" scrollbarMode="showOnDemand" selectionPixmap="icons/ls700x30-h.png" transparent="1"/>
 	    <ePixmap position="835,390" zPosition="2" size="40,35" pixmap="icons/ram.png" alphatest="blend"/>
 		<widget source="session.CurrentService" render="Label" position="780,10" size="500,62" halign="center" valign="center" font="Regular;19" transparent="1" foregroundColor="#0000fafa" backgroundColor="#00030303" zPosition="1">
 			<convert type="BTVInfo">Actividad</convert>
@@ -1752,7 +1752,7 @@ self.autoResize()
         <widget source="session.CurrentService" render="Label" position="885,610" size="450,26" halign="left" valign="center" font="Regular;16" transparent="1" backgroundColor="background" zPosition="6">
 		    <convert type="BTVDevicesInfo">UsbInfo</convert>
 		</widget>
-		<widget name="description" conditional="description" position="250,115" size="380,25" font="Regular;19" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>/>		
+		<widget name="description" conditional="description" position="575,145" size="380,25" font="Regular;19" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>/>		
 	</screen>
 	<!-- ####### Console ver log backup full instalacion plugins etc  ####### -->
 	<screen name="Console" position="fill">
