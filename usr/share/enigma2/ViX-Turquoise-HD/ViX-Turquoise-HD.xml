@@ -3954,8 +3954,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		 <widget source="session.CurrentService" render="Progress" position="400,128" size="515,10" zPosition="3" pixmap="icons/p_bar1_timeshift.png" transparent="1">
 			<convert type="ServicePosition">Position,ShowHours</convert>
 		</widget>
-		<widget name="statusicon" position="122,125" zPosition="4" size="50,55" alphatest="blend" transparent="0" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png"/>
-		<widget name="speed" position="117,148" size="125,20" font="Regular;17" halign="left" foregroundColor="#0000fafa" backgroundColor="#00030303" transparent="1" zPosition="4"/>	
+		<widget name="statusicon" position="122,125" zPosition="4" size="50,55" alphatest="blend"  backgroundColor="#004b4f52" transparent="0" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png"/>
+		<widget name="speed" position="117,148" size="125,20" font="Regular;17" halign="left" foregroundColor="#0000fafa" backgroundColor="#00414141" transparent="1" zPosition="4"/>	
 		<widget name="state" position="150,50" size="0,0" transparent="0" zPosition="3" borderWidth="2" foregroundColor="#0000fafa" font="xRegular;18" borderColor="black" halign="left"/>
 		<widget source="session.CurrentService" render="Label" position="370,43" size="563,31" zPosition="2" font="xRegular;19" halign="center" valign="center" noWrap="1" transparent="1" foregroundColor="#0000baff" backgroundColor="#00333333">
             <convert type="ServiceName">Name</convert>
@@ -4725,18 +4725,22 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<!--widget name="list" position="50,145" size="598,350" itemHeight="25" CoolFont="Regular;21" CoolSelectFont="Regular;19" CoolDateFont="Regular;21" CoolMoviePos="35" CoolMovieSize="990" CoolFolderSize="990" CoolTitleColor="0" CoolDatePos="1000" CoolDateWidth="160" CoolDateColor="0" CoolHighlightColor="0" CoolProgressPos="1600" CoolBarPos="890" CoolBarHPos="8" CoolBarSize="55,10" CoolBarSizeSa="110,16" DefaultColor="#00FFFFFF" UnwatchedColor="#0000fafa" WatchingColor="#00FFFFFF" FinishedColor="red" RecordingColor="#009F1313" BackColorSel="#000a4b32" foregroundColorSelected="#004ccbde" backgroundColor="#00030303" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="#00030303" transparent="1" zPosition="1"/-->
 		<widget name="list" position="70,167" size="875,333" CoolDirInfoWidth="110" CoolCSPos="680" CoolBarHPos="9" CoolBarPos="530" CoolBarSizeSa="85,16" CoolDateColor="1" CoolDateFont="Regular;15" CoolDateHPos="5" CoolDatePos="630" CoolDateWidth="160" CoolFolderSize="620" CoolFont="Regular;17" CoolHighlightColor="1" CoolIconPos="5" CoolIconSize="35,26" CoolMovieHPos="4" CoolMoviePiconPos="100" CoolMoviePiconSize="520" CoolMoviePos="40" CoolMovieSize="470" CoolPiconHPos="2" CoolPiconHeight="20" CoolPiconPos="13" CoolProgressPos="1600" CoolSelNumTxtWidth="10" CoolSelectFont="Regular;13" CoolTitleColor="1" DefaultColor="foreground" itemHeight="30" enableWrapAround="1" scrollbarMode="showOnDemand"/>
 		<ePixmap position="927,110" zPosition="3" size="25,470" pixmap="icons/barra400.png" alphatest="blend" transparent="1"/>
-	</screen>
-	<screen name="PVRState" position="265,523" size="125,24" backgroundColor="black" zPosition="2" flags="wfNoBorder">
-		<widget name="statusicon" position="10,2" zPosition="3" size="50,55" alphatest="blend" transparent="0" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png"/>
-		<widget name="speed" position="35,3" size="80,20" font="xRegular;18" halign="left" foregroundColor="#0000fafa" backgroundColor="#00030303" transparent="1" zPosition="1"/>	
+	</screen>	
+	<screen name="PVRState" position="265,523" size="125,24" backgroundColor="#0003424a" zPosition="2" flags="wfNoBorder">
+		<eLabel position="0,0" size="125,1" backgroundColor="#0000fafa" zPosition="3"/>
+	    <eLabel position="0,0" size="1,22" backgroundColor="#0000fafa" zPosition="3"/>
+	    <eLabel position="0,22" size="125,1" backgroundColor="#0000fafa" zPosition="3"/>
+	    <eLabel position="124,0" size="1,22" backgroundColor="#0000fafa" zPosition="3"/>
+		<widget name="statusicon" position="10,2" zPosition="3" size="50,55" alphatest="blend" backgroundColor="#0003424a" transparent="0" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png"/>
+		<widget name="speed" position="35,3" size="80,20" font="xRegular;18" halign="left" foregroundColor="#0000fafa" backgroundColor="#0003424a" transparent="1" zPosition="1"/>	
 		<widget name="state" position="0,0" size="0,0" transparent="0" zPosition="3" borderWidth="2" foregroundColor="#0000fafa" font="Regular;20" borderColor="black" halign="left"/>
-		<widget name="eventname" position="370,70" size="0,0" font="xRegular;19" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1" zPosition="2"/>		
+		<widget name="eventname" position="370,70" size="0,0" font="xRegular;19" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#0003424a" transparent="1" zPosition="2"/>		
 	</screen>	
 	<!-- ####### MoviePlayer Standard Reproductor ####### -->
 	<screen name="MoviePlayer" position="fill" title="InfoBar" backgroundColor="transparent2" flags="wfNoBorder">
 		<ePixmap position="0,500" zPosition="-1" size="1280,218" pixmap="icons/moviebar.png"/>
-		<widget name="statusicon" position="122,625" zPosition="3" size="50,55" alphatest="blend" transparent="0" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png"/>
-		<widget name="speed" position="122,625" size="0,0" font="xRegular;18" halign="left" foregroundColor="#0000fafa" backgroundColor="#00030303" transparent="1" zPosition="3"/>
+		<widget name="statusicon" position="122,625" zPosition="3" size="50,55" alphatest="blend" backgroundColor="#004b4f52" transparent="0" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png"/>
+		<widget name="speed" position="122,625" size="0,0" font="xRegular;18" halign="left" foregroundColor="#0000fafa" backgroundColor="#0003424a" transparent="1" zPosition="3"/>
 		<widget name="state" position="0,0" size="0,0" transparent="0" zPosition="3" borderWidth="2" foregroundColor="#0000fafa" font="Regular;20" borderColor="black" halign="left"/>
 		<widget name="eventname" position="370,70" size="0,0" font="xRegular;19" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1" zPosition="2"/>		
 		<widget source="global.CurrentTime" render="Label" position="1050,570" size="130,24" zPosition="2" font="LCD;24" valign="top" halign="right" foregroundColor="#00a1d1ff" backgroundColor="#00232525" transparent="1">
