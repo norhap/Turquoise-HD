@@ -2229,13 +2229,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 #newwidth = wsize[0]
 #self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		</applet>
-	</screen>
+	</screen>	
 	<!-- ####### MessageBox ####### -->	
 	<screen name="MessageBox" position="fill" flags="wfNoBorder">
 		<panel name="MessageBoxTemplate"/>
-	</screen>
-	<screen name="autoresize" position="fill" flags="wfNoBorder">
-		<widget name="autoresize" position="20,20" size="560,300" transparent="1"/>
+		<panel name="autoresize"/>
 	</screen>	
 	<!-- ####### MessageBoxSimple ####### -->		
 	<screen name="MessageBoxSimple" position="fill" flags="wfNoBorder">
