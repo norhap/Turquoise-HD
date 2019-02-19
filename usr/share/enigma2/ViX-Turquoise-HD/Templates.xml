@@ -63,25 +63,25 @@
 	<!-- ### TEMPLATE PIG + Nombre Evento + Progreso + Reloj LCD 2 Pantallas Izquierda ### -->
 	<screen name="PIG">
 	<!-- PIG -->	
-	    <widget source="session.VideoPicture" render="Pig" position="835,115" size="380,220" zPosition="3" backgroundColor="#df0b1300"/>
-		<eLabel position="835,318" size="390,20" backgroundColor="#20101010" zPosition="3"/>
+	    <widget source="session.VideoPicture" render="Pig" position="835,115" size="380,220" zPosition="1" backgroundColor="#df0b1300"/>
+		<eLabel position="835,315" size="390,20" backgroundColor="#20101010" zPosition="2"/>
 	<!-- Nombre del Canal - Service Name -->		
-		<widget source="session.CurrentService" render="RunningText" options="movetype=running,startpoint=0,startdelay=3000,wrap=0,always=0,repeat=2,oneshot=1" noWrap="1" position="883,315" size="292,20" zPosition="4" foregroundColor="#0000fafa" backgroundColor="#20101010" font="Regular;20" valign="center" halign="center" transparent="1">
+		<widget source="session.CurrentService" render="RunningText" options="movetype=running,startpoint=0,startdelay=3000,wrap=0,always=0,repeat=2,oneshot=1" noWrap="1" position="883,311" size="292,20" zPosition="3" foregroundColor="#0000fafa" backgroundColor="#20101010" font="Regular;20" valign="center" halign="center" transparent="1">
 		    <convert type="ServiceName">Name</convert>
 		</widget>		
 	<!-- Barra Progresso -->
-		<widget source="session.Event_Now" render="Progress" pixmap="icons/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="darkgrey" transparent="1">
+		<widget source="session.Event_Now" render="Progress" pixmap="icons/tv_b_bar.png" size="340,2" position="860,338" backgroundColor="grey" transparent="0">
 			<convert type="EventTime">Progress</convert>
 		</widget>
 	<!-- Evento Ahora -->
-		<widget source="session.Event_Now" render="Label" position="838,317" size="70,30" zPosition="4" halign="left" font="Regular;18" foregroundColor="#0000fafa" backgroundColor="background" transparent="1">
+		<widget source="session.Event_Now" render="Label" position="838,313" size="70,20" zPosition="3" halign="left" font="Regular;18" foregroundColor="#0000fafa" backgroundColor="background" transparent="1">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
 	    <widget font="Regular;20" halign="left" position="835,352" size="390,25" render="RunningText" options="movetype=running,startpoint=0,startdelay=3000,wrap=0,always=0,repeat=2,oneshot=1" noWrap="1" source="session.Event_Now" foregroundColor="#0000baff" backgroundColor="#00040404" transparent="1" zPosition="2">
 		    <convert type="EventName">Name</convert>
 	    </widget>			
-		<widget source="session.Event_Now" render="Label" position="1150,317" zPosition="4" foregroundColor="#00a1d1ff" size="70,30" font="Regular;18" halign="right" backgroundColor="black" transparent="1">
+		<widget source="session.Event_Now" render="Label" position="1150,313" size="70,20" zPosition="3" foregroundColor="#00a1d1ff" font="Regular;18" halign="right" backgroundColor="black" transparent="1">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>			

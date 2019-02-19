@@ -3460,8 +3460,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <widget source="session.FrontendStatus" render="Label" position="971,573" zPosition="3" size="55,12" halign="left" font="Regular;14" foregroundColor="#004ccbde" transparent="1" backgroundColor="#00010309">
             <convert type="FrontendInfo">AGC</convert>
         </widget>
-	    <eLabel text="SNR" zPosition="2" position="1015,564" foregroundColor="#0000fafa" backgroundColor="#00010309" transparent="1" size="22,10" font="Regular;12"/>
-	    <eLabel text="AGC" zPosition="2" position="1015,575" foregroundColor="#0000fafa" backgroundColor="#00010309" transparent="1" size="22,10" font="Regular;12"/>
+	    <eLabel text="SNR" zPosition="2" position="1015,563" foregroundColor="#0000fafa" backgroundColor="#00010309" transparent="1" size="22,10" font="Regular;12"/>
+	    <eLabel text="AGC" zPosition="2" position="1015,574" foregroundColor="#0000fafa" backgroundColor="#00010309" transparent="1" size="22,10" font="Regular;12"/>
 		<!--widget source="session.FrontendStatus" render="Label" position="1030,566" zPosition="3" size="70,24" font="Regular;16" foregroundColor="#004ccbde" transparent="1" backgroundColor="#00010309">
 			<convert type="FrontendInfo">BER</convert> 
 		</widget-->	
