@@ -63,7 +63,7 @@
 	<!-- ### TEMPLATE PIG + Nombre Evento + Progreso + Reloj LCD 2 Pantallas Izquierda ### -->
 	<screen name="PIG">
 	<!-- PIG -->	
-	    <widget source="session.VideoPicture" render="Pig" position="835,115" size="380,220" zPosition="1" backgroundColor="#df0b1300"/>
+	    <widget source="session.VideoPicture" render="Pig" position="835,110" size="385,210" zPosition="1" backgroundColor="#df0b1300"/>
 		<eLabel position="835,315" size="390,20" backgroundColor="#20101010" zPosition="2"/>
 	<!-- Nombre del Canal - Service Name -->		
 		<widget source="session.CurrentService" render="RunningText" options="movetype=running,startpoint=0,startdelay=3000,wrap=0,always=0,repeat=2,oneshot=1" noWrap="1" position="883,311" size="292,20" zPosition="3" foregroundColor="#0000fafa" backgroundColor="#20101010" font="Regular;20" valign="center" halign="center" transparent="1">
