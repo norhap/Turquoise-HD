@@ -140,14 +140,14 @@
         <panel name="Titlechannellist"/>
 		<ePixmap position="791,120" zPosition="3" size="25,470" pixmap="ViX-Turquoise-HD/icons/barra470.png" alphatest="blend" transparent="1"/>		
 	<!-- Pig -->			
-		<widget source="session.VideoPicture" render="Pig" position="840,215" size="370,215" zPosition="3" backgroundColor="#df0b1300"/>
-		<eLabel position="840,410" size="370,20" backgroundColor="#20101010" zPosition="3"/>
+		<widget source="session.VideoPicture" render="Pig" position="830,210" size="385,210" zPosition="3" backgroundColor="#df0b1300"/>
+		<eLabel position="840,415" size="390,20" backgroundColor="#20101010" zPosition="3"/>
 	<!-- Nombre del Canal - Service Name -->
 		<widget source="session.Event_Now" render="Label" position="835,415" size="70,30" zPosition="4" halign="left" font="Regular;19" foregroundColor="#0000fafa" backgroundColor="background" transparent="1">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="835,410" size="382,20" zPosition="4" foregroundColor="#0000fafa" backgroundColor="#20101010" font="Regular;20" valign="center" halign="center" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="835,415" size="382,20" zPosition="4" foregroundColor="#0000fafa" backgroundColor="#20101010" font="Regular;20" valign="center" halign="center" transparent="1">
 		    <convert type="ServiceName">Name</convert>
 		</widget>
 		<widget source="session.Event_Now" render="Label" position="1150,415" zPosition="4" foregroundColor="#00a1d1ff" size="70,30" font="Regular;19" halign="right" backgroundColor="#00030303" transparent="1">
@@ -178,7 +178,7 @@
 		    <convert type="EventTime">Remaining</convert>
 		    <convert type="RemainingToText">NoSeconds</convert>
 		</widget>
-        <widget source="session.Event_Now" render="Progress" pixmap="icons/tv_b_bar.png" size="340,2" position="837,439" zPosition="5" backgroundColor="darkgrey" transparent="1">
+        <widget source="session.Event_Now" render="Progress" pixmap="icons/tv_b_bar.png" size="340,2" position="860,439" zPosition="5" backgroundColor="grey" transparent="0">
             <convert type="EventTime">Progress</convert>
         </widget>	
 		<widget source="ServiceEvent" render="RunningText" options="movetype=running,startpoint=0,startdelay=3000,wrap=0,always=0,repeat=2,oneshot=1" position="833,54" size="393,25" zPosition="2" halign="center" font="Regular;20" foregroundColor="#004ccbde" transparent="0" backgroundColor="#00020202">
