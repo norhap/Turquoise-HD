@@ -140,8 +140,8 @@
         <panel name="Titlechannellist"/>
 		<ePixmap position="791,120" zPosition="3" size="25,470" pixmap="ViX-Turquoise-HD/icons/barra470.png" alphatest="blend" transparent="1"/>		
 	<!-- Pig -->			
-		<widget source="session.VideoPicture" render="Pig" position="830,210" size="385,210" zPosition="3" backgroundColor="#df0b1300"/>
-		<eLabel position="840,415" size="390,20" backgroundColor="#20101010" zPosition="3"/>
+		<widget source="session.VideoPicture" render="Pig" position="835,210" size="385,200" zPosition="3" backgroundColor="#df0b1300"/>
+		<eLabel position="835,415" size="390,20" backgroundColor="#20101010" zPosition="3"/>
 	<!-- Nombre del Canal - Service Name -->
 		<widget source="session.Event_Now" render="Label" position="835,415" size="70,30" zPosition="4" halign="left" font="Regular;19" foregroundColor="#0000fafa" backgroundColor="background" transparent="1">
 			<convert type="EventTime">StartTime</convert>
