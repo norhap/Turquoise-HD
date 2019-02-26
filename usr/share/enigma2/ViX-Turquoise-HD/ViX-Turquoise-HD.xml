@@ -5923,5 +5923,14 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="list" position="10,0" backgroundColor="#03424a" scrollbarSliderForegroundColor="#0000fafa" transparent="1" size="1250,600" font="Regular;21"/>
         <eLabel text="Exit" position="5,605" size="250,20" font="Regular;21" halign="center" valign="center" backgroundColor="#03424a" transparent="1" zPosition="1"/>
 		<ePixmap position="60,605" zPosition="1" size="140,35" pixmap="ViX-Turquoise-HD/menu/colorbarR.png" alphatest="blend"/>	
+	</screen>
+	<screen name="MultiBoot" position="fill" flags="wfNoBorder">
+	    <panel name="PantallaGenericaConfig"/>		
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title_not_menu_path"/>
+        <panel name="PIG"/>
+		<widget source="labe14" render="Label" position="60,150" size="730,40" halign="center" font="Regular; 22" backgroundColor="#00000000" foregroundColor="#00ffffff"/>
+		<widget source="labe15" render="Label" position="80,220" size="730,25" halign="center" font="Regular; 22" backgroundColor="#00000000" foregroundColor="#00ffffff"/>
+		<widget name="config" position="80,275" size="715,250" backgroundColor="#00030303" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="#00030303"/>
 	</screen>	
 </skin>
