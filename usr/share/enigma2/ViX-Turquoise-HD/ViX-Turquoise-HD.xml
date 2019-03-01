@@ -2273,7 +2273,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="channel" position="2,23" size="75,25" zPosition="1" halign="left" font="Regular;25" backgroundColor="#0003424a" foregroundColor="#00a1d1ff"/>
 		<widget name="servicename" position="85,23" size="335,28" zPosition="1" halign="center" valign="center" font="Regular;25" backgroundColor="#0003424a" foregroundColor="#00a1d1ff"/>		
 	</screen>
-	<!-- ######## Numerical Text Input Help Dialog ####### -->
+	<!-- ######## TEXTO TECLADO VIRTUAL ####### -->
 	<screen name="NumericalTextInputHelpDialog" position="682,599" title="Help" size="550,108" zPosition="10" flags="wfNoBorder">
 		<ePixmap position="0,0" zPosition="-1" size="550,108" pixmap="icons/NumericalTextInputHelpDialog.png"/>
 		<widget name="key1" position="0,7" size="200,20" font="Console;17" halign="left" valign="top" backgroundColor="transpBlack" transparent="1"/>
@@ -2282,12 +2282,12 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="key4" position="15,35" size="200,20" font="Console;20" halign="left" valign="top" backgroundColor="transpBlack" transparent="1"/>
 		<widget name="key5" position="170,35" size="200,20" font="Console;20" halign="center" valign="top" backgroundColor="transpBlack" transparent="1"/>
 		<widget name="key6" position="365,35" size="200,20" font="Console;20" halign="center" valign="top" backgroundColor="transpBlack" transparent="1"/>
-		<widget name="key7" position="15,63" size="200,20" font="Console;20" halign="left" valign="top" backgroundColor="transpBlack" transparent="1"/>
-		<widget name="key8" position="170,63" size="200,20" font="Console;20" halign="center" valign="top" backgroundColor="transpBlack" transparent="1"/>
-		<widget name="key9" position="365,63" size="200,20" font="Console;20" halign="center" valign="top" backgroundColor="transpBlack" transparent="1"/>
-		<widget name="help1" position="10,88" size="130,20" font="Console;20" halign="center" valign="top" backgroundColor="transpBlack" transparent="1"/>
-		<widget name="key0" position="163,88" size="209,15" font="Console;17" halign="center" valign="top" backgroundColor="transpBlack" transparent="1"/>
-		<widget name="help2" position="395,88" size="130,20" font="Console;20" halign="center" valign="top" backgroundColor="transpBlack" transparent="1"/>		
+		<widget name="key7" position="15,65" size="200,20" font="Console;20" halign="left" valign="top" backgroundColor="transpBlack" transparent="1"/>
+		<widget name="key8" position="170,65" size="200,20" font="Console;20" halign="center" valign="top" backgroundColor="transpBlack" transparent="1"/>
+		<widget name="key9" position="365,65" size="200,20" font="Console;20" halign="center" valign="top" backgroundColor="transpBlack" transparent="1"/>
+		<widget name="help1" position="10,86" size="130,20" font="Console;20" halign="center" valign="top" backgroundColor="transpBlack" transparent="1"/>
+		<widget name="key0" position="165,86" size="209,15" font="Console;17" halign="center" valign="top" backgroundColor="transpBlack" transparent="1"/>
+		<widget name="help2" position="395,86" size="130,20" font="Console;20" halign="center" valign="top" backgroundColor="transpBlack" transparent="1"/>		
 	</screen>
 	<!-- ####### CrashlogAutoSubmitConfiguration ####### -->
 	<screen name="CrashlogAutoSubmitConfiguration" position="center,center" size="1130,520" title="CrashlogAutoSubmit settings...">
