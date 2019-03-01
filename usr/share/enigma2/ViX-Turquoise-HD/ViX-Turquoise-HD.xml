@@ -158,10 +158,10 @@
 		<ePixmap pixmap="icons/key_menu1.png" position="715,680" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_info.png" position="760,680" size="40,22" alphatest="blend"/>		
 	<!-- Servicio Orbital -->
-		<widget source="ServiceEvent" render="Label" position="147,110" size="100,24" font="LCD;20" zPosition="1" foregroundColor="#0000baff" backgroundColor="#00030303" transparent="1">
-		    <convert type="ServiceOrbitalPosition"/>
+		<widget source="ServiceEvent" render="Label" position="240,110" size="660,26" font="Regular;18" zPosition="1" foregroundColor="#00ffb300" backgroundColor="#00030303" transparent="1">
+			<convert type="TransponderInfo"></convert>
 		</widget>
-	<!-- channels lists -->		
+	<!-- channels lists -->
 		<widget name="list" position="68,140" zPosition="1" size="740,450" backgroundColor="#00030303" scrollbarMode="showOnDemand" serviceItemHeight="28"
 			serviceNumberFont="Regular;23" serviceNameFont="Regular;27" serviceInfoFont="xRegular;18" colorServiceDescription="#004ccbde"
 			picServiceEventProgressbar="icons/pl.png" selectionPixmap="ViX-Turquoise-HD/icons/ls715x30.png" transparent="1"/>			
