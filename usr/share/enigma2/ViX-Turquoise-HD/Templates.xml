@@ -90,6 +90,47 @@
             <convert type="ClockToText">Format:%H:%M :%S</convert>
         </widget>
 	</screen>
+	<screen name="PIG-MHELP">	
+		<widget source="session.VideoPicture" render="Pig" position="845,103" size="360,180" zPosition="0" backgroundColor="#df0b1300"/>		
+		<widget source="session.CurrentService" render="Label" position="845,75" size="382,15" zPosition="4" foregroundColor="#0000fafa" backgroundColor="#00040505" font="Regular;14" valign="center" halign="center" transparent="1">
+		    <convert type="ServiceName">Name</convert>
+		</widget>
+	</screen>
+    <screen name="WidgetSource_RGYB">	
+		<widget objectTypes="key_red,StaticText" source="key_red" render="Label" position="5,620" size="250,45" zPosition="2" transparent="1" font="Regular;18" halign="center" valign="center"/>	
+		<widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="255,620" size="150,45" zPosition="2" transparent="1" font="Regular;18" halign="center" valign="center"/>		
+		<widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Label" position="385,625" size="300,36" zPosition="2" transparent="1" font="Regular;18" halign="center" valign="center"/>
+		<widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="600,620" size="385,625" zPosition="2" transparent="1" font="Regular;18" halign="center" valign="center"/>
+	</screen>
+    <screen name="WidgetSource_MainHelp">	
+		<widget objectTypes="key_red,StaticText" source="key_red" render="Label" position="50,650" size="150,45" backgroundColor="#000b0d0e" zPosition="2" transparent="1" font="Regular;18" valign="center" halign="center"/>
+		<widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="250,650" size="150,45" backgroundColor="#000b0d0e" zPosition="2" transparent="1" font="Regular;18" valign="center" halign="center"/>		
+		<widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Label" position="450,650" size="150,45" backgroundColor="#000b0d0e" zPosition="2" transparent="1" font="Regular;18" valign="center" halign="center"/>
+		<widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="650,650" size="150,45" backgroundColor="#000b0d0e" zPosition="2" transparent="1" font="Regular;18" halign="center" valign="center"/>
+	</screen>	
+    <screen name="WidgetName_RGYB">	
+		<widget name="key_red" objectTypes="key_red,Label,Button" position="55,614" size="150,45" font="Regular;18" halign="center" valign="center" backgroundColor="#00040404" transparent="1" zPosition="2"/>
+		<widget name="key_green" objectTypes="key_green,Label,Button" position="255,614" size="150,45" font="Regular;18" halign="center" valign="center" backgroundColor="#000a0a0a" transparent="1" zPosition="2"/>
+		<widget name="key_yellow" objectTypes="key_yellow,Label,Button" position="455,614" size="150,45" font="Regular;18" halign="center" valign="center" backgroundColor="#000a0a0e" transparent="1" zPosition="2"/>
+        <widget name="key_blue" objectTypes="key_blue,Label,Button" position="650,614" size="165,45" font="Regular;18" halign="center" valign="center" backgroundColor="#000a0a0e" transparent="1" zPosition="2"/>		
+	</screen>
+    <screen name="WidgetName_MainHelp">	
+		<widget name="key_red" objectTypes="key_red,Label,Button" position="50,650" size="150,45" backgroundColor="#000b0d0e" font="Regular;18" halign="center" valign="center" transparent="1" zPosition="2"/>
+		<widget name="key_green" objectTypes="key_green,Label,Button" position="265,645" size="140,45" backgroundColor="#000b0d0e" font="Regular;18" halign="center" valign="center" transparent="1" zPosition="2"/>
+		<widget name="key_yellow" objectTypes="key_yellow,Label,Button" position="450,650" size="150,45" backgroundColor="#000b0d0e" font="Regular;18" halign="center" valign="center" transparent="1" zPosition="2"/>
+        <widget name="key_blue" objectTypes="key_blue,Label,Button" position="650,645" size="150,45" backgroundColor="#000b0d0e" font="Regular;18" halign="center" valign="center" transparent="1" zPosition="2"/>		
+	</screen>
+	<!-- PANEL EVENTOS SEGUNDA BARRA INFOBAR-->  
+  	<screen name="MainHelp">	
+        <ePixmap pixmap="menu/fr_main_help.png" position="fill" zPosition="-1"/>
+		<widget source="global.CurrentTime" render="Label" position="640,30" size="350,25" halign="right" font="LCD;24" foregroundColor="#004ccbde" backgroundColor="#00040404" transparent="1" zPosition="1">
+		    <convert type="ClockToText">Date</convert>
+		</widget>
+		<ePixmap pixmap="icons/clock.png" position="1195,40" zPosition="1" size="20,20" alphatest="blend"/>
+		<widget source="global.CurrentTime" render="Label" position="1055,30" size="160,25" zPosition="2" font="LCD;24" halign="center" foregroundColor="#004ccbde" backgroundColor="#00040404" transparent="1">
+            <convert type="ClockToText">Format:%H:%M :%S</convert>
+        </widget>
+    </screen>	
 	<!-- Generic full width config screen -->
 	<screen name="SetupPanel">
 		<panel name="PantallaGenericaConfig"/>
