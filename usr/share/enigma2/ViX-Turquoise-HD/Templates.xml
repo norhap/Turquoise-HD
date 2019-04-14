@@ -41,23 +41,23 @@
 	<!-- ### TEMPLATE TITULOS -->
 	<screen name="Title">
 	    <panel name="menu_path_compressed" conditional="menu_path_compressed"/>
-		<widget source="Title" render="Label" zPosition="2" position="78,35" foregroundColor="#0000fafa" backgroundColor="#040404" size="700,50" transparent="1" font="Regular;24" halign="center" valign="top"/>		
+		<widget source="Title" render="Label" zPosition="2" position="78,35" foregroundColor="#0000fafa" backgroundColor="#00040404" size="700,50" transparent="1" font="Regular;24" halign="center" valign="top"/>		
 		<ePixmap pixmap="ViX-Turquoise-HD/menu/border_title.png" zPosition="0" position="110,5" size="580,90"/>
 	</screen>
 	<screen name="menu_path_compressed">
 	    <widget source="menu_path_compressed" render="Label" zPosition="2" position="65,10" size="725,32" transparent="1" font="Regular;18" halign="center" valign="center" foregroundColor="#0000fafa" backgroundColor="#00040404"/>
 	</screen>		
 	<screen name="Title_not_menu_path">
-		<widget source="Title" render="Label" zPosition="2" position="78,20" foregroundColor="#0000fafa" backgroundColor="#040404" size="700,40" transparent="1" font="Regular;24" halign="center" valign="center"/>
-		<widget name="Title" conditional="Title" zPosition="2" position="78,20" foregroundColor="#0000fafa" backgroundColor="#040404" size="0,0" transparent="1" font="Regular;24" halign="center" valign="center"/>		
+		<widget source="Title" render="Label" zPosition="2" position="78,20" foregroundColor="#0000fafa" backgroundColor="#00040404" size="700,40" transparent="1" font="Regular;24" halign="center" valign="center"/>
+		<widget name="Title" conditional="Title" zPosition="2" position="78,20" foregroundColor="#0000fafa" backgroundColor="#00040404" size="0,0" transparent="1" font="Regular;24" halign="center" valign="center"/>		
 		<ePixmap pixmap="ViX-Turquoise-HD/menu/border_title.png" zPosition="0" position="110,0" size="580,90"/>
 	</screen>	
 	<screen name="Titlerunning">
-		<widget source="Title" render="RunningText" options="movetype=running,startpoint=0,startdelay=3000,wrap=0,always=0,repeat=2,oneshot=1" zPosition="2" position="120,25" foregroundColor="#0000fafa" backgroundColor="#040404" size="615,50" transparent="0" font="Regular;24" halign="center" valign="center"/>		
+		<widget source="Title" render="RunningText" options="movetype=running,startpoint=0,startdelay=3000,wrap=0,always=0,repeat=2,oneshot=1" zPosition="2" position="120,25" foregroundColor="#0000fafa" backgroundColor="#00040404" size="615,50" transparent="0" font="Regular;24" halign="center" valign="center"/>		
 		<ePixmap pixmap="ViX-Turquoise-HD/menu/border_title.png" zPosition="1" position="110,5" size="580,90" alphatest="blend"/>
 	</screen>	
 	<screen name="Titlechannellist">
-		<widget source="Title" render="Label" zPosition="1" position="78,22" foregroundColor="#0000fafa" backgroundColor="#040404" size="615,50" transparent="1" font="Regular;21" halign="center" valign="center"/>		
+		<widget source="Title" render="Label" zPosition="1" position="78,22" foregroundColor="#0000fafa" backgroundColor="#00040404" size="615,50" transparent="1" font="Regular;21" halign="center" valign="center"/>		
 		<ePixmap pixmap="ViX-Turquoise-HD/menu/border_title.png" zPosition="0" position="58,2" size="580,90" alphatest="blend"/>
 	</screen>	
 	<!-- ### TEMPLATE PIG + Nombre Evento + Progreso + Reloj LCD 2 Pantallas Izquierda ### -->
@@ -74,14 +74,14 @@
 			<convert type="EventTime">Progress</convert>
 		</widget>
 	<!-- Evento Ahora -->
-		<widget source="session.Event_Now" render="Label" position="838,313" size="70,20" zPosition="3" halign="left" font="Regular;18" foregroundColor="#0000fafa" backgroundColor="background" transparent="1">
+		<widget source="session.Event_Now" render="Label" position="838,313" size="70,20" zPosition="3" halign="left" font="Regular;18" foregroundColor="#0000fafa" backgroundColor="#00030303" transparent="1">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
 	    <widget font="Regular;20" halign="left" position="835,352" size="390,25" render="RunningText" options="movetype=running,startpoint=0,startdelay=3000,wrap=0,always=0,repeat=2,oneshot=1" noWrap="1" source="session.Event_Now" foregroundColor="#0000baff" backgroundColor="#00040404" transparent="1" zPosition="2">
 		    <convert type="EventName">Name</convert>
 	    </widget>			
-		<widget source="session.Event_Now" render="Label" position="1150,313" size="70,20" zPosition="3" foregroundColor="#00a1d1ff" font="Regular;18" halign="right" backgroundColor="black" transparent="1">
+		<widget source="session.Event_Now" render="Label" position="1150,313" size="70,20" zPosition="3" foregroundColor="#00a1d1ff" font="Regular;18" halign="right" backgroundColor="#00030303" transparent="1">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>			
@@ -594,7 +594,7 @@
     <screen name="acciones_teclas_colores">	
 		<widget objectTypes="key_red,Label,Button" name="key_red" position="5,620" size="250,45" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
 		<widget objectTypes="key_red,StaticText" source="key_red" render="Label" position="5,620" size="250,45" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
-		<widget objectTypes="key_green,Label,Button" name="key_green" position="255,610" size="150,45" backgroundColor="black" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
+		<widget objectTypes="key_green,Label,Button" name="key_green" position="255,610" size="150,45" backgroundColor="#00030303" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
 		<widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="255,610" size="150,45" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
 		<widget objectTypes="key_yellow,Label,Button" name="key_yellow" position="385,625" size="300,36" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
 		<widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Label" position="385,625" size="300,36" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
