@@ -801,14 +801,15 @@
         <panel name="Title_not_menu_path"/>
         <panel name="PIG-MHELP"/>	
 		<ePixmap position="57,660" zPosition="1" size="750,38" pixmap="menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
-        <eLabel position="65,138" size="805,2" backgroundColor="#004ccbde" zPosition="1"/>	
-        <eLabel position="65,140" size="805,136" backgroundColor="#0003424a" zPosition="1"/>
+        <eLabel position="65,140" size="805,140" backgroundColor="#0003424a" zPosition="1"/>
+        <eLabel position="115,97" size="755,43" backgroundColor="#0003424a" zPosition="1"/>
+        <ePixmap pixmap="icons/parche.png" position="45,90" size="70,78" zPosition="2" alphatest="blend"/>
 		<widget name="bouquetlist" position="78,161" size="1130,400" foregroundColorSelected="#0000fafa" scrollbarMode="showNever" zPosition="2" transparent="0"/>
 		<widget name="lab1" position="78,150" size="1130,400" font="Regular;25" halign="center" valign="center" zPosition="20" backgroundColor="#00030303" transparent="0"/>
 		<widget name="number" position="150,30" size="300,28" font="Regular;25" valign="center" halign="center" foregroundColor="#0077d8e6" backgroundColor="#00030303" transparent="1"/>		
-		<widget name="list" position="65,276" zPosition="1" size="1158,353" backgroundColor="#0003424a" enableWrapAround="1" scrollbarMode="showOnDemand"/>
-        <eLabel position="65,615" size="1139,2" backgroundColor="#004ccbde" zPosition="1"/>		
-        <ePixmap position="1205,271" zPosition="2" size="27,400" pixmap="icons/barra348.png" alphatest="blend" transparent="1"/>
+		<widget name="list" position="65,280" zPosition="1" size="1158,353" backgroundColor="#0003424a" enableWrapAround="1" scrollbarMode="showOnDemand"/>
+        <eLabel position="65,619" size="1139,2" backgroundColor="#004ccbde" zPosition="1"/>		
+        <ePixmap position="1205,273" zPosition="2" size="27,400" pixmap="icons/barra348.png" alphatest="blend" transparent="1"/>
 		<widget name="now_button" pixmap="icons/pointer1.png" position="570,148" zPosition="3" size="26,16" alphatest="on"/>		
 		<widget name="now_button_sel" pixmap="icons/pointer.png" position="570,148" zPosition="3" size="26,16" alphatest="on"/>
 		<widget name="next_button" pixmap="icons/pointer1.png" position="570,180" zPosition="3" size="26,16" alphatest="on"/>
@@ -816,18 +817,18 @@
 		<widget name="more_button" pixmap="icons/pointer1.png" position="570,210" zPosition="3" size="26,16" alphatest="on"/>		
 		<widget name="more_button_sel" pixmap="icons/pointer.png" position="570,210" zPosition="3" size="26,16" alphatest="on"/>
 		<widget name="now_text" position="350,143" zPosition="4" size="250,28" text="live broadcast" font="Regular;24" halign="center" foregroundColor="#0077d8e6" backgroundColor="#00040404" transparent="1"/>
-		<widget name="next_text" position="360,173" zPosition="4" size="250,28" text="Next" font="Regular;24" halign="center" foregroundColor="#0077d8e6" backgroundColor="#00040404" transparent="1"/>
-		<widget name="more_text" position="335,203" zPosition="4" size="250,28" text="Other" font="Regular;24" halign="center" foregroundColor="#0077d8e6" backgroundColor="#00040404" transparent="1"/>
+		<widget name="next_text" position="345,173" zPosition="4" size="250,28" text="Next" font="Regular;24" halign="center" foregroundColor="#0077d8e6" backgroundColor="#00040404" transparent="1"/>
+		<widget name="more_text" position="323,203" zPosition="4" size="250,28" text="Other" font="Regular;24" halign="center" foregroundColor="#0077d8e6" backgroundColor="#00040404" transparent="1"/>
 		<widget name="date" position="78,165" size="300,28" font="Regular;24" valign="center" halign="center" foregroundColor="#0000fafa" backgroundColor="#00040404" transparent="1"/>		
 		<ePixmap pixmap="icons/key_epg_single.png" position="910,685" size="40,22" alphatest="blend"/>		
 		<ePixmap pixmap="icons/key_menu1.png" position="955,685" size="40,22" alphatest="blend"/>		
 		<ePixmap pixmap="icons/key_info.png" position="1000,685" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_text.png" position="1045,685" size="40,22" alphatest="blend"/>		
 		<ePixmap pixmap="icons/key_help.png" position="1090,685" size="40,22" alphatest="blend"/>		
-		<eLabel text="PREV NEXT" position="200,105" size="150,17" zPosition="1" backgroundColor="#00020303" transparent="1" font="Regular;19" halign="left"/>
-		<eLabel text="CHANGE BOUQUET" position="295,105" size="150,20" font="Regular;19" zPosition="1" foregroundColor="#004ccbde" backgroundColor="#00020303" transparent="1"/>
-		<eLabel text="C H" position="450,105" size="80,17" zPosition="1" transparent="1" font="Regular;19" backgroundColor="#00020303" halign="left"/>
-		<eLabel text="PAGE UP/DOWN" position="490,105" size="200,20" font="Regular;19" zPosition="1" foregroundColor="#004ccbde" backgroundColor="#00020303" transparent="1"/>		
+		<eLabel text="PREV NEXT" position="200,105" size="150,17" zPosition="1" backgroundColor="#0003424a" transparent="1" font="Regular;19" halign="left"/>
+		<eLabel text="CHANGE BOUQUET" position="295,105" size="150,20" font="Regular;19" zPosition="1" foregroundColor="#004ccbde" backgroundColor="#0003424a" transparent="1"/>
+		<eLabel text="C H" position="450,105" size="80,17" zPosition="1" transparent="1" font="Regular;19" backgroundColor="#0003424a" halign="left"/>
+		<eLabel text="PAGE UP/DOWN" position="490,105" size="200,20" font="Regular;19" zPosition="1" foregroundColor="#004ccbde" backgroundColor="#0003424a" transparent="1"/>		
 	</screen>	
 	<!-- ####### BOUQUET SELECTOR Seleccion de grupo ver grupos desde GraphicalEPG #######-->
 	<screen name="BouquetSelector" position="fill" flags="wfNoBorder">
@@ -866,12 +867,13 @@ self.autoResize()
         <panel name="MainHelp"/>	
         <panel name="Title_not_menu_path"/>
         <panel name="PIG-MHELP"/>
-		<widget name="rc" position="135,130" size="154,500" pixmaps="skin_default/rc.png,skin_default/rcold.png" zPosition="10" alphatest="blend"/>
+		<widget name="rc" position="135,115" size="154,500" pixmaps="skin_default/rc.png,skin_default/rcold.png" zPosition="10" alphatest="blend"/>
 		<widget name="long_key" position="309,200" zPosition="2" size="250,25" foregroundColor="#0000fafa" font="Regular;18" backgroundColor="#0003424a" transparent="1"/>
-        <eLabel position="65,138" size="805,2" backgroundColor="#004ccbde" zPosition="1"/>	
-        <eLabel position="65,140" size="805,475" backgroundColor="#0003424a" zPosition="0"/>	
-		<widget name="list" position="309,275" zPosition="1" size="913,342" backgroundColor="#0003424a" enableWrapAround="1" scrollbarMode="showOnDemand"/>		
-        <eLabel position="65,615" size="1139,2" backgroundColor="#004ccbde" zPosition="1"/>		
+        <eLabel position="65,97" size="805,183" backgroundColor="#0003424a" zPosition="1"/>
+        <eLabel position="65,275" size="244,345" backgroundColor="#0003424a" zPosition="1"/>
+        <ePixmap pixmap="icons/parche.png" position="45,90" size="70,78" zPosition="2" alphatest="blend"/>	
+		<widget name="list" position="309,280" zPosition="1" size="913,342" backgroundColor="#0003424a" enableWrapAround="1" scrollbarMode="showOnDemand"/>		
+        <eLabel position="65,620" size="1139,2" backgroundColor="#004ccbde" zPosition="1"/>		
         <ePixmap position="1204,275" zPosition="2" size="27,400" pixmap="icons/barra348.png" alphatest="blend" transparent="1"/>
 		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2/skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2/skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
@@ -5064,19 +5066,20 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG-MHELP"/>
 		<panel name="WidgetSource_MainHelp"/>
         <ePixmap position="1204,270" zPosition="2" size="27,400" pixmap="icons/barra348.png" alphatest="blend" transparent="1"/>		
-		<widget source="Titel" render="Label" position="100,150" zPosition="3" size="725,85" font="Regular;18" valign="center" halign="center" transparent="1" foregroundColor="#004ccbde" backgroundColor="#0003424a"/>
+		<widget source="Titel" render="Label" position="100,150" zPosition="3" size="725,85" font="Regular;20" valign="center" halign="center" transparent="1" foregroundColor="#004ccbde" backgroundColor="#0003424a"/>
 		<widget source="Titel2" render="Label" position="250,150" zPosition="2" size="900,60" font="Regular;20" valign="center" halign="center" transparent="1" foregroundColor="#006da6ff" backgroundColor="#0003424a"/>
-		<widget source="key_menu" render="Label" position="200,100" zPosition="2" size="85,40" foregroundColor="#0000fafa" font="Regular;20" valign="center" halign="left" transparent="1"/>
-		<widget source="key_info" render="Label" position="350,100" zPosition="2" size="85,40" foregroundColor="#0000fafa" font="Regular;20" valign="center" halign="left" transparent="1"/>		
-		<widget source="key_ok" render="Label" position="520,100" zPosition="2" size="70,40" foregroundColor="#0000fafa" font="Regular;20" valign="center" halign="left" transparent="1"/>
-        <eLabel position="65,138" size="805,2" backgroundColor="#004ccbde" zPosition="1"/>	
-        <eLabel position="65,140" size="805,135" backgroundColor="#0003424a" zPosition="1"/>		
+		<widget source="key_menu" render="Label" position="200,100" zPosition="2" size="85,40" foregroundColor="#0000fafa" backgroundColor="#0003424a" font="Regular;20" valign="center" halign="left" transparent="1"/>
+		<widget source="key_info" render="Label" position="350,100" zPosition="2" size="85,40" foregroundColor="#0000fafa" backgroundColor="#0003424a" font="Regular;20" valign="center" halign="left" transparent="1"/>		
+		<widget source="key_ok" render="Label" position="520,100" zPosition="2" size="70,40" foregroundColor="#0000fafa" backgroundColor="#0003424a" font="Regular;20" valign="center" halign="left" transparent="1"/>	
+        <eLabel position="65,140" size="805,135" backgroundColor="#0003424a" zPosition="1"/>
+        <eLabel position="115,97" size="755,43" backgroundColor="#0003424a" zPosition="1"/>
+        <ePixmap pixmap="icons/parche.png" position="45,90" size="70,78" zPosition="2" alphatest="blend"/>		
 		<widget name="MainList" position="64,270" zPosition="1" size="1158,348" backgroundColor="#0003424a" enableWrapAround="1" scrollbarMode="showOnDemand"/>
         <eLabel position="65,618" size="1139,2" backgroundColor="#004ccbde" zPosition="1"/>		
-		<ePixmap pixmap="icons/key_menu1.png" position="150,108" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_info.png" position="300,108" size="40,22" alphatest="blend"/>		
-		<ePixmap pixmap="icons/key_ok.png" position="470,108" size="40,22" alphatest="blend"/>		
-		<ePixmap pixmap="icons/key_help.png" position="600,108" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_menu1.png" position="150,108" size="40,22" zPosition="2" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_info.png" position="300,108" size="40,22" zPosition="2" alphatest="blend"/>		
+		<ePixmap pixmap="icons/key_ok.png" position="470,108" size="40,22" zPosition="2" alphatest="blend"/>		
+		<ePixmap pixmap="icons/key_help.png" position="600,108" size="40,22" zPosition="2" alphatest="blend"/>
         <ePixmap position="57,660" zPosition="1" size="750,38" pixmap="menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>		
 	</screen>	
 	<screen name="ForecaPreviewCache" position="40,20" size="48,48" flags="wfNoBorder" backgroundColor="#00000000">
