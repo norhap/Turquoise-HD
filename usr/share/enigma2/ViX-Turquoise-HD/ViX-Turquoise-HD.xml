@@ -808,7 +808,7 @@
 		<widget name="lab1" position="78,150" size="1130,400" font="Regular;25" halign="center" valign="center" zPosition="20" backgroundColor="#00030303" transparent="0"/>
 		<widget name="number" position="150,30" size="300,28" font="Regular;25" valign="center" halign="center" foregroundColor="#0077d8e6" backgroundColor="#00030303" transparent="1"/>		
 		<widget name="list" position="65,280" zPosition="1" size="1158,353" backgroundColor="#0003424a" enableWrapAround="1" scrollbarMode="showOnDemand"/>
-        <eLabel position="65,619" size="1139,2" backgroundColor="#004ccbde" zPosition="1"/>		
+        <eLabel position="65,619" size="1139,2" backgroundColor="#0003424a" zPosition="1"/>		
         <ePixmap position="1205,273" zPosition="2" size="27,400" pixmap="icons/barra348.png" alphatest="blend" transparent="1"/>
 		<widget name="now_button" pixmap="icons/pointer1.png" position="570,148" zPosition="3" size="26,16" alphatest="on"/>		
 		<widget name="now_button_sel" pixmap="icons/pointer.png" position="570,148" zPosition="3" size="26,16" alphatest="on"/>
@@ -873,7 +873,7 @@ self.autoResize()
         <eLabel position="65,275" size="244,345" backgroundColor="#0003424a" zPosition="1"/>
         <ePixmap pixmap="icons/parche.png" position="45,90" size="70,78" zPosition="2" alphatest="blend"/>	
 		<widget name="list" position="309,280" zPosition="1" size="913,342" backgroundColor="#0003424a" enableWrapAround="1" scrollbarMode="showOnDemand"/>		
-        <eLabel position="65,620" size="1139,2" backgroundColor="#004ccbde" zPosition="1"/>		
+        <eLabel position="65,620" size="1139,2" backgroundColor="#0003424a" zPosition="1"/>		
         <ePixmap position="1204,275" zPosition="2" size="27,400" pixmap="icons/barra348.png" alphatest="blend" transparent="1"/>
 		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2/skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2/skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
@@ -5075,7 +5075,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <eLabel position="65,140" size="805,135" backgroundColor="#0003424a" zPosition="1"/>
         <ePixmap pixmap="icons/parche.png" position="45,90" size="70,78" zPosition="2" alphatest="blend"/>		
 		<widget name="MainList" position="64,270" zPosition="1" size="1158,348" backgroundColor="#0003424a" enableWrapAround="1" scrollbarMode="showOnDemand"/>
-        <eLabel position="65,618" size="1139,2" backgroundColor="#004ccbde" zPosition="1"/>		
+        <eLabel position="65,618" size="1139,3" backgroundColor="#0003424a" zPosition="1"/>		
 		<ePixmap pixmap="icons/key_menu1.png" position="150,108" size="40,22" zPosition="2" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_info.png" position="300,108" size="40,22" zPosition="2" alphatest="blend"/>		
 		<ePixmap pixmap="icons/key_ok.png" position="470,108" size="40,22" zPosition="2" alphatest="blend"/>		
