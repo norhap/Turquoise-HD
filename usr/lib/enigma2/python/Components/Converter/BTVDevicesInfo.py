@@ -79,7 +79,7 @@ class BTVDevicesInfo(Poll, Converter):
             else:
                 list = self.getMemInfo(entry[0])
             if list[0] == 0:
-                text = '%s: No Disponible' % entry[1]
+                text = '%s: No' % entry[1]
             elif self.shortFormat:
                 text = '%s: %s, en uso: %s%%' % (entry[1], self.getSizeStr(list[0]), list[3])
             elif self.fullFormat:
