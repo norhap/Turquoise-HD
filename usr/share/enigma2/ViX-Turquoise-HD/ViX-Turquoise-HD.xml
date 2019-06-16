@@ -91,10 +91,10 @@
 		<widget name="language" position="5,0" size="0,0" font="Regular;21" backgroundColor="#0003424a" halign="right" transparent="1" valign="center"/>
 		<ePixmap pixmap="buttons/key_red.png" position="10,410" size="35,25" alphatest="blend" transparent="1"/>		
 		<widget source="key_red" render="Label" position="50,410" size="125,24" backgroundColor="#0003424a" font="Regular;21" halign="left" noWrap="1" transparent="1" valign="center" zPosition="2"/>
-		<ePixmap pixmap="buttons/key_green.png" position="169,410" size="35,25" alphatest="blend" transparent="1"/>
-		<widget source="key_green" render="Label" position="210,410" size="125,24" backgroundColor="#0003424a" font="Regular;21" halign="left" noWrap="1" transparent="1" valign="center" zPosition="2"/>
-		<ePixmap pixmap="buttons/key_yellow.png" position="300,410" size="35,25" alphatest="blend" transparent="1"/>
-		<widget source="key_yellow" render="Label" position="340,410" size="140,24" backgroundColor="#0003424a" font="Regular;21" halign="left" noWrap="1" transparent="1" valign="center" zPosition="2"/>
+		<ePixmap pixmap="buttons/key_green.png" position="180,410" size="35,25" alphatest="blend" transparent="1"/>
+		<widget source="key_green" render="Label" position="221,410" size="125,24" backgroundColor="#0003424a" font="Regular;21" halign="left" noWrap="1" transparent="1" valign="center" zPosition="2"/>
+		<ePixmap pixmap="buttons/key_yellow.png" position="340,410" size="35,25" alphatest="blend" transparent="1"/>
+		<widget source="key_yellow" render="Label" position="380,410" size="140,24" backgroundColor="#0003424a" font="Regular;21" halign="left" noWrap="1" transparent="1" valign="center" zPosition="2"/>
 		<ePixmap pixmap="buttons/key_blue.png" position="500,410" size="35,25" alphatest="blend" transparent="1"/>
 		<widget source="key_blue" render="Label" position="540,410" size="125,24" font="Regular;21" backgroundColor="#0003424a" halign="left" noWrap="1" transparent="1" valign="center" zPosition="2"/>		
     </screen>	
