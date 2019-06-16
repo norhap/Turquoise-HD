@@ -804,21 +804,39 @@
         <eLabel position="115,97" size="755,43" backgroundColor="#0003424a" zPosition="1"/>
         <eLabel position="65,140" size="805,140" backgroundColor="#0003424a" zPosition="1"/>
         <ePixmap pixmap="icons/parche.png" position="45,90" size="70,78" zPosition="2" alphatest="blend"/>
-		<widget name="bouquetlist" position="78,161" size="1130,400" foregroundColorSelected="#0000fafa" scrollbarMode="showNever" zPosition="2" transparent="0"/>
-		<widget name="lab1" position="78,150" size="1130,400" font="Regular;25" halign="center" valign="center" zPosition="20" backgroundColor="#00030303" transparent="0"/>
-		<widget name="number" position="150,30" size="300,28" font="Regular;25" valign="center" halign="center" foregroundColor="#0077d8e6" backgroundColor="#00030303" transparent="1"/>		
+		<widget name="bouquetlist" position="65,280" size="1140,340" foregroundColorSelected="#0000fafa" scrollbarMode="showNever" zPosition="3" transparent="0"/>
+		<widget name="lab1" position="78,150" size="1130,400" font="Regular;25" halign="center" valign="center" zPosition="20" backgroundColor="#0003424a" transparent="0"/>
+		<widget name="number" position="150,30" size="300,28" font="Regular;25" valign="center" halign="center" foregroundColor="#0077d8e6" backgroundColor="#0003424a" transparent="1"/>		
 		<widget name="list" position="65,280" zPosition="1" size="1158,353" backgroundColor="#0003424a" enableWrapAround="1" scrollbarMode="showOnDemand"/>
         <eLabel position="65,619" size="1139,2" backgroundColor="#0003424a" zPosition="1"/>		
         <ePixmap position="1205,273" zPosition="2" size="27,400" pixmap="icons/barra348.png" alphatest="blend" transparent="1"/>
-		<widget name="now_button" pixmap="icons/pointer1.png" position="570,148" zPosition="3" size="26,16" alphatest="on"/>		
-		<widget name="now_button_sel" pixmap="icons/pointer.png" position="570,148" zPosition="3" size="26,16" alphatest="on"/>
-		<widget name="next_button" pixmap="icons/pointer1.png" position="570,180" zPosition="3" size="26,16" alphatest="on"/>
-		<widget name="next_button_sel" pixmap="icons/pointer.png" position="570,180" zPosition="3" size="26,16" alphatest="on"/>
-		<widget name="more_button" pixmap="icons/pointer1.png" position="570,210" zPosition="3" size="26,16" alphatest="on"/>		
-		<widget name="more_button_sel" pixmap="icons/pointer.png" position="570,210" zPosition="3" size="26,16" alphatest="on"/>
-		<widget name="now_text" position="350,143" zPosition="4" size="250,28" text="live broadcast" font="Regular;24" halign="center" foregroundColor="#0077d8e6" backgroundColor="#00040404" transparent="1"/>
-		<widget name="next_text" position="345,173" zPosition="4" size="250,28" text="Next" font="Regular;24" halign="center" foregroundColor="#0077d8e6" backgroundColor="#00040404" transparent="1"/>
-		<widget name="more_text" position="323,203" zPosition="4" size="250,28" text="Other" font="Regular;24" halign="center" foregroundColor="#0077d8e6" backgroundColor="#00040404" transparent="1"/>
+		<widget source="Event" render="Label" position="70,221" zPosition="2" size="100,28" font="Regular;21" halign="left" foregroundColor="#004ccbde" backgroundColor="#0003424a" transparent="1">
+		    <convert type="EventTime">StartTime</convert>
+		    <convert type="ClockToText">Format:%H:%M </convert>
+		</widget>
+		<widget source="Event" render="Label" position="200,221" size="250,20" zPosition="2" font="Regular;15" foregroundColor="#0000baff" backgroundColor="#0003424a" transparent="1">
+		    <convert type="EventTime">StartTime</convert>
+		    <convert type="ClockToText">Format:%a %d/%m/%y</convert>
+		</widget>		
+		<widget source="Event" render="Progress" pixmap="icons/tv_b_bar.png" position="70,240" size="340,2" backgroundColor="grey" borderWidth="0" transparent="0" zPosition="2">
+			<convert type="EventTime">Progress</convert>
+		</widget>
+		<widget  source="Event" render="Label" position="330,221" zPosition="2" size="80,28" font="Regular;21" halign="right" foregroundColor="#00a1d1ff" backgroundColor="#0003424a" transparent="1">
+		    <convert type="EventTime">EndTime</convert>
+		    <convert type="ClockToText">Format:%H:%M</convert>
+		</widget>		
+		<widget name="now_button" pixmap="icons/pointer1.png" position="205,255" zPosition="3" size="26,16" alphatest="on"/>		
+		<widget name="now_button_sel" pixmap="icons/pointer.png" position="205,255" zPosition="3" size="26,16" alphatest="on"/>
+		<widget name="next_button" pixmap="icons/pointer1.png" position="515,255" zPosition="3" size="26,16" alphatest="on"/>
+		<widget name="next_button_sel" pixmap="icons/pointer.png" position="515,255" zPosition="3" size="26,16" alphatest="on"/>
+		<widget name="more_button" pixmap="icons/pointer1.png" position="750,255" zPosition="3" size="26,16" alphatest="on"/>		
+		<widget name="more_button_sel" pixmap="icons/pointer.png" position="750,255" zPosition="3" size="26,16" alphatest="on"/>
+		<widget name="now_text" position="0,250" zPosition="4" size="250,28" text="live broadcast" font="Regular;24" halign="center" foregroundColor="#0077d8e6" backgroundColor="#0003424a" transparent="1"/>
+		<widget name="next_text" position="320,250" zPosition="4" size="250,28" text="Next" font="Regular;24" halign="center" foregroundColor="#0077d8e6" backgroundColor="#0003424a" transparent="1"/>
+		<widget name="more_text" position="580,250" zPosition="4" size="250,28" text="Other" font="Regular;24" halign="center" foregroundColor="#0077d8e6" backgroundColor="#0003424a" transparent="1"/>
+		<widget source="Event" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="130,105" size="690,120" zPosition="2" font="Regular;18" halign="center" valign="center" foregroundColor="#00a1d1ff" backgroundColor="#0003424a" transparent="0">
+		    <convert type="EventName">ExtendedDescription</convert>
+		</widget>
 		<widget name="date" position="78,165" size="300,28" font="Regular;24" valign="center" halign="center" foregroundColor="#0000fafa" backgroundColor="#00040404" transparent="1"/>		
 		<ePixmap pixmap="icons/key_epg_single.png" position="910,685" size="40,22" alphatest="blend"/>		
 		<ePixmap pixmap="icons/key_menu1.png" position="955,685" size="40,22" alphatest="blend"/>		
