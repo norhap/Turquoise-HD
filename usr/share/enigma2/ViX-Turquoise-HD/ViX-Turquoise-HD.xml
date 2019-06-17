@@ -834,7 +834,7 @@
 		<widget name="now_text" position="0,250" zPosition="4" size="250,28" text="live broadcast" font="Regular;24" halign="center" foregroundColor="#0077d8e6" backgroundColor="#0003424a" transparent="1"/>
 		<widget name="next_text" position="320,250" zPosition="4" size="250,28" text="Next" font="Regular;24" halign="center" foregroundColor="#0077d8e6" backgroundColor="#0003424a" transparent="1"/>
 		<widget name="more_text" position="580,250" zPosition="4" size="250,28" text="Other" font="Regular;24" halign="center" foregroundColor="#0077d8e6" backgroundColor="#0003424a" transparent="1"/>
-		<widget source="Event" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="130,105" size="690,120" zPosition="2" font="Regular;18" halign="center" valign="center" foregroundColor="#00a1d1ff" backgroundColor="#0003424a" transparent="0">
+		<widget source="Event" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=15000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="130,100" size="690,120" zPosition="2" font="Regular;18" halign="center" valign="center" foregroundColor="#00a1d1ff" backgroundColor="#0003424a" transparent="0">
 		    <convert type="EventName">ExtendedDescription</convert>
 		</widget>
 		<widget name="date" position="78,165" size="300,28" font="Regular;24" valign="center" halign="center" foregroundColor="#0000fafa" backgroundColor="#00040404" transparent="1"/>		
