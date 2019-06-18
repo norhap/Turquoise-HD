@@ -840,7 +840,7 @@
 		<ePixmap pixmap="icons/key_text.png" position="1045,685" size="40,22" alphatest="blend"/>		
 		<ePixmap pixmap="icons/key_help.png" position="1090,685" size="40,22" alphatest="blend"/>
 		<eLabel text="C H" position="430,225" size="80,17" zPosition="1" transparent="1" font="Regular;19" backgroundColor="#0003424a" halign="left"/>
-		<eLabel text="PAGE UP/DOWN" position="460,225" size="200,20" font="Regular;19" zPosition="1" foregroundColor="#0000fafa" backgroundColor="#0003424a" transparent="1"/>		
+		<eLabel text="PAGE UP/DOWN" position="460,225" size="200,20" font="Regular;19" zPosition="1" foregroundColor="#0000fafa" backgroundColor="#0003424a" transparent="1"/>	
 		<eLabel text="PREV NEXT" position="580,225" size="150,17" zPosition="1" backgroundColor="#0003424a" transparent="1" font="Regular;19" halign="right"/>
 		<eLabel text="CHANGE BOUQUET" position="735,225" size="150,20" font="Regular;19" zPosition="1" foregroundColor="#0000fafa" backgroundColor="#0003424a" transparent="1"/>		
 	</screen>	
