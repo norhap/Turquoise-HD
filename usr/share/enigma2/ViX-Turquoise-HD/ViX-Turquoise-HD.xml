@@ -1758,7 +1758,8 @@ self.autoResize()
         <widget source="session.CurrentService" render="Label" position="885,611" size="450,26" halign="left" valign="center" font="Regular;15" transparent="1" backgroundColor="background" zPosition="6">
 		    <convert type="BTVDevicesInfo">SwapLibre</convert>
 		</widget>
-		<widget name="description" conditional="description" position="575,145" size="380,25" font="Regular;19" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>		
+		<widget name="description" conditional="description" position="575,145" size="380,25" font="Regular;19" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>
+	    <ePixmap pixmap="icons/key_prev_next.png" position="60,640" size="40,22" transparent="1" zPosition="1"/>		
 	</screen>
 	<!-- ####### Console ver log backup full instalacion plugins etc  ####### -->
 	<screen name="Console" position="fill">
@@ -2392,6 +2393,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
 		<ePixmap pixmap="icons/key_menu1.png" position="8,640" size="40,22" alphatest="blend"/>		
 		<widget name="list" position="73,137" size="735,400" scrollbarMode="showOnDemand" selectionPixmap="ViX-Turquoise-HD/icons/ls680x50.png" transparent="1"/>
+	    <ePixmap pixmap="icons/key_prev_next.png" position="690,680" size="40,22" transparent="1" zPosition="1"/>
+	    <ePixmap pixmap="icons/key_cero.png" position="735,680" size="40,22" transparent="1" zPosition="1"/>		
 	</screen>
 	<!--  ####### PLUGINS DOWNLOAD ####### -->
 	<screen name="PluginDownloadBrowser" position="center,center" size="800,460" title="Downloadable plugins">
