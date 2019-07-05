@@ -4590,7 +4590,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="year" position="864,450" size="150,22" foregroundColor="#004ccbde" font="Regular;21" valign="top" transparent="1"/>
 		<widget name="genretext" position="784,475" size="74,22" foregroundColor="#004ccbde" font="Regular;21" valign="top" transparent="1"/>
 		<widget name="genre" position="864,475" size="150,22" foregroundColor="#004ccbde" font="Regular;21" valign="top" transparent="1"/>
-		<widget name="repeat" position="1190,295" size="23,20" pixmaps="ViX-Turquoise-HD/icons/repeat_off.png,ViX-Turquoise-HD/icons/repeat_on.png" transparent="1" alphatest="blend"/>
+		<widget name="repeat" position="660,125" size="50,30" pixmaps="ViX-Turquoise-HD/icons/repeat_off.png,ViX-Turquoise-HD/icons/repeat_on.png" transparent="1" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_menu1.png" position="20,676" size="40,22" alphatest="blend" transparent="1" zPosition="1"/>
         <widget name="PositionGauge" position="377,628" size="0,0" pointer="icons/pointer.png:13,3" seek_pointer="icons/pointer.png:13,3" zPosition="3" transparent="1"/>		
 	</screen>
@@ -5301,7 +5301,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title_not_menu_path"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="sRG"/>		
-		<widget name="config" position="56,155" size="746,425" font="Regular;19" scrollbarMode="showAlways" scrollbarSliderForegroundColor="#00030303"/>
+		<widget name="config" position="60,155" size="748,425" font="Regular;19" scrollbarMode="showAlways"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
         <widget name="description" position="845,415" size="380,160" font="Regular;19" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>
 	</screen>	
