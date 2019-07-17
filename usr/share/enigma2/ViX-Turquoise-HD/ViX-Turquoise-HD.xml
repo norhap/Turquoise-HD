@@ -1711,8 +1711,8 @@ self.autoResize()
 	</screen>
 	<screen name="ExtensionsList" title="" position="fill" flags="wfNoBorder">
 		<panel name="choicebox"/>
-		<ePixmap position="645,670" zPosition="1" size="45,22" pixmap="icons/key_prev_next.png" alphatest="blend" transparent="1"/>
-		<eLabel text="Move Up/Down" position="695,660" size="100,40" backgroundColor="#000b0d0e" zPosition="1" transparent="1" font="Regular;19" halign="left"/>
+		<ePixmap position="645,635" zPosition="1" size="45,22" pixmap="icons/key_prev_next.png" alphatest="blend" transparent="1"/>
+		<eLabel text="Move Up/Down" position="695,625" size="140,40" backgroundColor="#000b0d0e" zPosition="1" transparent="1" font="Regular;19" halign="left"/>
 	</screen>	
 	<!-- ####### Console ver log backup full instalacion plugins etc  ####### -->
 	<screen name="Console" position="fill">
@@ -2346,10 +2346,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
 		<ePixmap pixmap="icons/key_menu1.png" position="8,640" size="40,22" alphatest="blend"/>		
 		<widget name="list" position="73,137" size="735,400" scrollbarMode="showOnDemand" selectionPixmap="ViX-Turquoise-HD/icons/ls680x50.png" transparent="1"/>
-		<ePixmap position="445,671" zPosition="1" size="45,22" pixmap="icons/key_prev_next.png" alphatest="blend" transparent="1"/>		
-		<eLabel text="Move Up/Down" position="495,661" size="100,40" backgroundColor="#000b0d0e" zPosition="1" transparent="1" font="Regular;19" halign="left"/>	
-	    <ePixmap pixmap="icons/key_cero.png" position="645,671" size="40,22" transparent="1" zPosition="1"/>
-		<eLabel text="Cancel" position="690,671" size="100,40" backgroundColor="#000b0d0e" zPosition="1" transparent="1" font="Regular;19" halign="left"/>		
+		<ePixmap position="445,635" zPosition="1" size="45,22" pixmap="icons/key_prev_next.png" alphatest="blend" transparent="1"/>		
+		<eLabel text="Move Up/Down" position="495,625" size="100,40" backgroundColor="#000b0d0e" zPosition="1" transparent="1" font="Regular;19" halign="left"/>	
+	    <ePixmap pixmap="icons/key_cero.png" position="645,635" size="40,22" transparent="1" zPosition="1"/>
+		<eLabel text="Cancel" position="690,635" size="100,40" backgroundColor="#000b0d0e" zPosition="1" transparent="1" font="Regular;19" halign="left"/>		
 	</screen>
 	<!--  ####### PLUGINS DOWNLOAD ####### -->
 	<screen name="PluginDownloadBrowser" position="center,center" size="800,460" title="Downloadable plugins">
