@@ -79,7 +79,7 @@
 	<!-- ####### VirtualKeyBoard ####### -->
 	<screen name="VirtualKeyBoard" position="590,165" size="660,450" backgroundColor="#0003424a" zPosition="99" title="Virtual KeyBoard">
 		<!--ePixmap pixmap="icons/vkey_text.png" position="9,35" zPosition="-4" size="642,52" alphatest="on"/-->
-		<widget name="prompt" position="15,4" size="500,26" font="Regular;23" backgroundColor="#0003424a" transparent="1" noWrap="1"/>
+		<widget name="prompt" position="15,4" size="600,26" font="Regular;23" backgroundColor="#0003424a" transparent="1" noWrap="1"/>
 		<widget name="text" position="15,40" size="630,38" font="Regular;32" backgroundColor="#0003424a" transparent="1" noWrap="1" halign="right"/>
 		<eLabel position="15,37" size="630,1" backgroundColor="#0000fafa" zPosition="1"/>		
 	    <eLabel position="15,37" size="1,43" backgroundColor="#0000fafa" zPosition="1"/>		
