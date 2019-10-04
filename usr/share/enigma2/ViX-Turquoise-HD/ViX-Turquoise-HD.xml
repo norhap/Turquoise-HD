@@ -3864,10 +3864,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="config" zPosition="2" position="60,140" size="720,400" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="#00030303" transparent="1"/>
 		<widget name="description" position="845,415" size="380,160" font="Regular;19" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>
 		<widget name="text" position="845,465" size="380,160" font="Regular;23" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>
-		<widget name="HelpTextHeader1" position="60,275" size="730,50" font="Regular;21" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>
-		<widget name="HelpText1" position="60,300" size="715,150" font="Regular;18" halign="left" foregroundColor="#00a1d1ff" backgroundColor="#00030303" transparent="1"/>
-		<widget name="HelpTextHeader2" position="60,465" size="730,50" font="Regular;21" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>
-		<widget name="HelpText2" position="60,495" size="715,50" font="Regular;18" halign="left" foregroundColor="#00a1d1ff" backgroundColor="#00030303" transparent="1"/>
+		<widget name="HelpTextHeader1" position="60,295" size="730,50" font="Regular;21" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>
+		<widget name="HelpText1" position="60,330" size="715,150" font="Regular;18" halign="left" foregroundColor="#00a1d1ff" backgroundColor="#00030303" transparent="1"/>
+		<widget name="HelpTextHeader2" position="60,475" size="730,50" font="Regular;21" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>
+		<widget name="HelpText2" position="60,505" size="715,50" font="Regular;18" halign="left" foregroundColor="#00a1d1ff" backgroundColor="#00030303" transparent="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 	</screen>
 	<!-- OpenWebIf -->
