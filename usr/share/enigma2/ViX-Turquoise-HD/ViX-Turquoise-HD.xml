@@ -900,7 +900,7 @@ self.autoResize()
 		<panel name="Title"/>
 		<panel name="PIG"/>
 		<panel name="ScrollBarTemplate"/>
-		<ePixmap position="860,414" zPosition="1" size="300,220" pixmap="ViX-Turquoise-HD/menu/ico_flags.png" alphatest="blend" transparent="1"/>
+		<panel name="description-info"/>
 	<!-- languages list -->
 		<widget source="languages" render="Listbox" position="77,135" size="730,400" zPosition="1" scrollbarMode="showOnDemand" selectionPixmap="ViX-Turquoise-HD/icons/ls680x50.png" transparent="1">
 			<convert type="TemplatedMultiContent">
@@ -1174,13 +1174,12 @@ self.autoResize()
 		<panel name="ScrollBarTemplate"/>
 		<panel name="PIG"/>
 		<panel name="Title"/>
+		<panel name="description-info"/>
 		<ePixmap pixmap="icons/key_help.png" position="8,640" size="40,22" alphatest="blend"/>
 		<widget source="IFtext" render="Label" position="69,140" size="140,24" zPosition="10" font="Regular;25" backgroundColor="#00030303" transparent="0"/>
 		<widget source="IF" render="Label" position="186,140" size="400,24" zPosition="10" font="Regular;25" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="0"/>
 		<widget name="devicepic" position="525,130" size="40,40" pixmaps="icons/network_wired.png,icons/network_wireless.png,icons/network_wired-active.png,icons/network_wired-inactive.png,icons/network_wireless-active.png,icons/network_wireless-inactive.png" zPosition="10" alphatest="blend" transparent="1"/>
 		<widget name="menulist" position="70,200" size="710,375" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="#00030303" selectionPixmap="ViX-Turquoise-HD/icons/ls680x26.png" transparent="1"/>
-		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
-		<widget name="description" position="845,415" size="380,160" font="Regular;19" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>
 		<widget source="Statustext" render="Label" position="70,500" foregroundColor="#004ccbde" backgroundColor="#00030303" size="150,40" zPosition="10" font="Regular;25" transparent="0"/>
 		<widget name="statuspic" position="195,502" size="25,24" pixmaps="skin_default/icons/lock_on.png,icons/lock_error.png" zPosition="10" transparent="1" alphatest="blend"/>
 	</screen>
@@ -3160,14 +3159,13 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="Title"/>
 		<panel name="PIG"/>
 		<panel name="ScrollBarTemplate"/>
+		<panel name="description-info"/>
 		<widget name="config" position="60,145" size="720,418" zPosition="2" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="#00030303" backgroundColor="#00030303" transparent="1"/>
 		<widget name="HelpWindow" position="682,599" size="1,1" pixmap="/usr/share/enigma2/skin_default/buttons/vkey_icon.png" transparent="1" zPosition="1" alphatest="blend"/>
 		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,680" zPosition="2" size="40,22" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<widget name="footnote" position="80,600" size="300,50" zPosition="1" font="Regular;21" foregroundColor="#00bab329" backgroundColor="#00030303" halign="left" transparent="1" valign="top"/>
-		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
-		<widget name="description" position="845,415" size="380,160" font="Regular;19" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>
 	</screen>
 	<!--####### InputDeviceSelection (Dispositivos de Entrada) #######-->
 	<screen name="InputDeviceSelection" position="fill" flags="wfNoBorder">
@@ -5257,9 +5255,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="Title_not_menu_path"/>
 		<panel name="ScrollBarTemplate"/>
 		<panel name="sRG"/>
+		<panel name="description-info"/>
 		<widget name="config" position="60,155" size="748,425" font="Regular;19" scrollbarMode="showAlways"/>
-		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
-		<widget name="description" position="845,415" size="380,160" font="Regular;19" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>
 	</screen>
 	<!-- INTERNET RADIO -->
 	<screen name="InternetRadioScreen" position="fill" title="Internet Radio" size="1280,720" flags="wfNoBorder">
@@ -5372,9 +5369,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
 		<panel name="Title_not_menu_path"/>
 		<panel name="PIG"/>
+		<panel name="description-info"/>
 		<widget name="config" position="65,145" zPosition="0" size="740,427" scrollbarMode="showOnDemand"/>
-		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
-		<widget name="description" position="845,415" size="380,160" font="Regular;19" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>
 		<widget name="pleasewait" position="845,425" size="380,160" font="Regular;19" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>
 	</screen>
 	<!-- ## AutoBouquetsMaker Orden Proveedores## -->
@@ -5688,13 +5684,12 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
 		<panel name="Title"/>
 		<panel name="PIG"/>
+		<panel name="description-info"/>
 		<widget name="config" position="60,155" size="742,425" font="Regular;19" backgroundColor="#00030303" scrollbarMode="showAlways" scrollbarSliderForegroundColor="#00030303"/>
 		<widget name="HelpWindow" position="682,599" size="1,1" pixmap="/usr/share/enigma2/skin_default/buttons/vkey_icon.png" transparent="1" zPosition="1" alphatest="blend"/>
 		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,680" zPosition="2" size="40,22" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
-		<widget name="description" position="845,415" size="380,160" font="Regular;19" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>
 		<widget name="footnote" position="880,610" size="300,50" zPosition="1" font="Regular;21" foregroundColor="#00bab329" backgroundColor="#00030303" halign="center" transparent="1" valign="top"/>
 	</screen>
 	<screen name="XtraPluginsSelection" position="fill" flags="wfNoBorder">
