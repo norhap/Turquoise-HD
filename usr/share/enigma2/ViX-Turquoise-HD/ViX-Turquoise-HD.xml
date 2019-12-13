@@ -1225,8 +1225,7 @@ self.autoResize()
 	<screen name="NetworkAdapterTest" position="fill" flags="wfNoBorder">
 		<panel name="Title"/>
 		<panel name="PIG"/>
-		<panel name="sRGY"/>
-		<panel name="PantallaGenerica_sRGY"/>
+		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 		<widget name="AdapterInfo_OK" position="290,152" size="38,31" zPosition="2" pixmap="skin_default/icons/lock_on.png" alphatest="blend"/>
@@ -1559,7 +1558,7 @@ self.autoResize()
 
 	<!-- NetWork NFS Setup -->
 	<screen name="NetworkNfs" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGY"/>
+		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
 		<panel name="Title"/>
 		<panel name="PIG"/>
@@ -1598,7 +1597,7 @@ self.autoResize()
 
 	<!-- Network Service Setup Configuracion TELNET-->
 	<screen name="NetworkServiceSetup" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaGY"/>
+		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
 		<panel name="Title"/>
 		<panel name="PIG"/>
@@ -1607,8 +1606,6 @@ self.autoResize()
 		<widget name="lab2" position="80,200" size="250,40" font="Regular;23" foregroundColor="#004ccbde" valign="center" transparent="0" zPosition="2"/>
 		<widget name="labstop" position="365,200" size="200,40" font="Regular;23" halign="center" valign="center" backgroundColor="red" zPosition="1"/>
 		<widget name="labrun" position="365,200" size="200,40" font="Regular;23" halign="center" valign="center" backgroundColor="green" zPosition="2"/>
-		<widget position="5,625" size="0,0" name="key_red" font="Regular;21" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget position="600,625" size="0,0" name="key_blue" font="Regular;21" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 	</screen>
 
 	<!-- NetWork uShare OK -->
@@ -2634,7 +2631,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap position="260,0" zPosition="1" size="570,69" pixmap="ViX-Turquoise-HD/menu/tx_timer.png"/>
 		<widget name="timerlist" position="79,141" size="1120,350" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="#00030303" transparent="1"/>
 	</screen>
-	<!--  #######  PANTALLA AÑADIR TEMPORIZADOR DE EVENTOS EN EPG ####### -->
+	<!--  #######  PANTALLA AÑADIR TEMPORIZADOR DE EVENTOS EN EPG Y AÑADIR UN TEMPORIZADOR NUEVO ####### -->
 	<screen name="TimerEntry" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
@@ -2653,24 +2650,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 	</screen>
-	<!-- #######  PANTALLA AÑADIR TEMPORIZADOR DE ALIMENTACION ####### -->
-	<screen name="PowerTimerEntry" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaConfig"/>
-		<panel name="ScrollBarTemplate"/>
-			  <panel name="PIG"/>
-		<panel name="Title"/>
-		<widget name="cancel" pixmap="menu/colorbarR.png" position="60,635" size="140,35" alphatest="blend" backgroundColor="#00030303"/>
-		<widget name="ok" position="410,635" size="140,35" backgroundColor="#00030303"/>
-		<widget name="config" position="60,145" size="725,450" font="Regular;20" itemHeight="30" transparent="1"/>
-			  <widget name="description" objectTypes="description,Button,Label" position="845,415" size="380,160" font="Regular;23" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>
-			  <widget source="description" render="Label" objectTypes="description,StaticText" position="845,415" size="380,160" font="Regular;23" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>
-		<widget name="HelpWindow" conditional="HelpWindow" position="682,599" size="1,1" pixmap="/usr/share/enigma2/skin_default/buttons/vkey_icon.png" transparent="1" zPosition="1" alphatest="blend"/>
-		<widget source="VKeyIcon" conditional="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,680" zPosition="2" size="40,22" transparent="1" alphatest="on">
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
-	</screen>
-	<!-- ####### TEMPORIZADORES DE GRABACION ####### -->
+	<!-- ####### TEMPORIZADORES + TEMPORIZADORES DE ALIMENTACION ####### -->
 	<screen name="TimerEditList" position="fill" backgroundColor="#00030303" flags="wfNoBorder">
 		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
@@ -4709,8 +4689,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="state" position="0,0" size="0,0" transparent="0" zPosition="3" borderWidth="2" foregroundColor="#0000fafa" font="Regular;20" borderColor="black" halign="left"/>
 		<widget name="eventname" position="370,70" size="0,0" font="xRegular;19" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#0003424a" transparent="1" zPosition="2"/>
 	</screen>
-	<!-- **********BufferIndicator********** -->
-	<screen name="BufferIndicator" title="Channel" position="450,500" size="320,35" backgroundColor="#0003424a" flags="wfNoBorder">
+	<screen name="BufferIndicator" title="Channel" position="500,500" size="320,35" backgroundColor="#0003424a" flags="wfNoBorder">
 		<eLabel position="0,0" size="320,1" backgroundColor="#0000fafa" zPosition="3"/>
 		<eLabel position="0,0" size="1,33" backgroundColor="#0000fafa" zPosition="3"/>
 		<eLabel position="0,33" size="320,1" backgroundColor="#0000fafa" zPosition="3"/>
