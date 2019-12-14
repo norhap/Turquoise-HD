@@ -3958,24 +3958,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>
 		<widget source="job_status" render="Label" position="80,380" size="585,26" font="Regular;24" backgroundColor="#00030303" transparent="1"/>
 		<widget name="config" position="80,320" size="590,24" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="#00030303" backgroundColor="#00030303" transparent="1"/>
-		<widget source="cancelable" render="Pixmap" pixmap="menu/colorbarR.png" position="65,630" size="140,40" alphatest="blend">
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget source="cancelable" render="FixedLabel" text="Cancel" position="90,630" size="220,28" font="Regular;25" halign="left" backgroundColor="#00030303" zPosition="1" transparent="1">
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget source="finished" render="Pixmap" pixmap="menu/colorbarG.png" position="290,630" size="140,40" alphatest="blend">
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget source="finished" render="FixedLabel" text="OK" position="340,630" size="220,28" font="Regular;25" halign="left" backgroundColor="#00030303" zPosition="1" transparent="1">
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget source="backgroundable" render="Pixmap" pixmap="menu/colorbarB.png" position="640,632" size="140,40" alphatest="blend">
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget source="backgroundable" render="FixedLabel" text="Continuar Segundo Plano" position="650,605" size="175,52" font="Regular;24" valign="center" halign="left" backgroundColor="#00030303" zPosition="1" transparent="1">
-			<convert type="ConditionalShowHide"/>
-		</widget>
 	</screen>
 	<!-- ########################### PANTALLAS PLUGINS ################################## -->
 
