@@ -1819,7 +1819,7 @@ self.autoResize()
 		<ePixmap pixmap="buttons/key_red.png" position="830,45" zPosition="0" size="35,25" transparent="1" alphatest="blend"/>
 		<widget name="languagetext" zPosition="15" position="870,30" size="500,55" font="Regular;21" backgroundColor="#03424a" halign="left" valign="center" transparent="1"/>
 		<widget name="text" position="770,125" size="315,460" zPosition="15" font="Regular;22" halign="center" valign="center" backgroundColor="#03424a" transparent="1"/>
-		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="1090,60" zPosition="11" size="154,500" alphatest="blend" transparent="1"/>
+		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="1085,60" zPosition="11" size="154,500" alphatest="blend" transparent="1"/>
 		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
