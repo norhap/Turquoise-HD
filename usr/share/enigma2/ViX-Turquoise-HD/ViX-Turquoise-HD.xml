@@ -1912,11 +1912,11 @@ self.autoResize()
 	</screen>
 	<!--####### TUNER SELECTION CHOOSE TUNER####### -->
 	<screen name="NimSelection" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenerica_sRGY"/>
+		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
 		<panel name="Title"/>
 		<panel name="PIG"/>
-		<panel name="sRGY"/>
+		<ePixmap pixmap="icons/key_info.png" position="8,640" size="40,22" alphatest="blend"/>
 		<widget source="nimlist" render="Listbox" position="80,138" size="725,400" scrollbarMode="showOnDemand" selectionPixmap="icons/ls700x90.png" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
