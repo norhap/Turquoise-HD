@@ -5614,7 +5614,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<!-- ####### MENUS VIX-CORE ####### -->
 
 	<screen name="VIXMenu" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaConfig_s4_ButtonsR"/>
+		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
 		<panel name="Title"/>
 		<panel name="PIG"/>
@@ -5641,7 +5641,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>
 	</screen>
 	<screen name="VIXBackupManager" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaConfig_s4_ButtonsRGY"/>
+		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
 		<panel name="Title"/>
 		<panel name="PIG"/>
@@ -5674,7 +5674,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="footnote" position="880,610" size="300,50" zPosition="1" font="Regular;21" foregroundColor="#00bab329" backgroundColor="#00030303" halign="center" transparent="1" valign="top"/>
 	</screen>
 	<screen name="XtraPluginsSelection" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaConfig_s4_ButtonsRG"/>
+		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
 		<panel name="Title"/>
 		<panel name="PIG"/>
@@ -5712,7 +5712,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</applet>
 	</screen>
 	<screen name="VIXIPKInstaller" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGY"/>
+		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
 		<panel name="Title"/>
 		<panel name="PIG"/>
@@ -5771,8 +5771,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="lab1" position="80,145" size="670,50" font="Regular;21" zPosition="2" transparent="1" halign="center"/>
 	</screen>
 	<screen name="VIXScriptRunner" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenerica_sRGB"/>
-		<panel name="sRGB"/>
+		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
 		<panel name="Title"/>
 		<panel name="PIG"/>
