@@ -438,7 +438,7 @@
 		<widget name="FullDescription" position="85,122" size="0,0" font="Regular;23" halign="left"	 zPosition="3" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1"/>
 		<widget name="epg_description" position="85,122" size="0,0" font="Regular;23" halign="left"	 zPosition="3" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1"/>
 		<widget name="summary_description" position="85,122" size="0,0" font="Regular;23" halign="left"	 zPosition="3" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1"/>
-		<widget source="Event" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" zPosition="1" position="70,210" font="Regular;21" size="710,350" backgroundColor="#00030303" transparent="0">
+		<widget source="Event" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" zPosition="1" position="70,210" font="Regular;21" size="710,345" backgroundColor="#00030303" transparent="0">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 		<widget name="datetime" position="205,165" size="380,28" font="Regular;25" halign="center" valign="center"	zPosition="3" backgroundColor="#00030303" transparent="1"/>
