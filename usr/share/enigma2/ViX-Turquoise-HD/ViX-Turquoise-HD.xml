@@ -1659,7 +1659,7 @@ self.autoResize()
 		<widget source="key_blue" render="Pixmap" pixmap="buttons/key_blue.png" position="85,243" size="35,25" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="streams" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="#00030303" itemHeight="30" selectionPixmap="icons/ls700x30-h.png" position="70,280" size="695,375" zPosition="3" transparent="1">
+		<widget source="streams" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="#00030303" itemHeight="30" selectionPixmap="icons/ls700x30-h.png" position="70,300" size="695,375" zPosition="3" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"templates":
 				{"default": (25, [
