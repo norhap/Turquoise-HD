@@ -802,8 +802,8 @@
 		<panel name="Title_not_menu_path"/>
 		<panel name="PIG-MHELP"/>
 		<ePixmap position="57,660" zPosition="1" size="750,38" pixmap="menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
-		<eLabel position="115,97" size="755,43" backgroundColor="#0003424a" zPosition="1"/>
-		<eLabel position="65,140" size="805,140" backgroundColor="#0003424a" zPosition="1"/>
+		<eLabel position="115,97" size="725,43" backgroundColor="#0003424a" zPosition="1"/>
+		<eLabel position="65,140" size="775,140" backgroundColor="#0003424a" zPosition="1"/>
 		<ePixmap pixmap="icons/parche.png" position="45,90" size="70,78" zPosition="2" alphatest="blend"/>
 		<widget name="bouquetlist" position="65,280" size="1140,340" foregroundColorSelected="#0000fafa" scrollbarMode="showNever" zPosition="3" transparent="0"/>
 		<widget name="lab1" position="78,150" size="1130,400" font="Regular;25" halign="center" valign="center" zPosition="20" backgroundColor="#0003424a" transparent="0"/>
@@ -840,10 +840,10 @@
 		<ePixmap pixmap="icons/key_info.png" position="1000,685" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_text.png" position="1045,685" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_help.png" position="1090,685" size="40,22" alphatest="blend"/>
-		<eLabel text="C H" position="430,225" size="80,17" zPosition="1" transparent="1" font="Regular;19" backgroundColor="#0003424a" halign="left"/>
-		<eLabel text="PAGE UP/DOWN" position="460,225" size="200,20" font="Regular;19" zPosition="1" foregroundColor="#0000fafa" backgroundColor="#0003424a" transparent="1"/>
-		<eLabel text="PREV NEXT" position="580,225" size="150,17" zPosition="1" backgroundColor="#0003424a" transparent="1" font="Regular;19" halign="right"/>
-		<eLabel text="CHANGE BOUQUET" position="735,225" size="150,20" font="Regular;19" zPosition="1" foregroundColor="#0000fafa" backgroundColor="#0003424a" transparent="1"/>
+		<eLabel text="C H" position="430,230" size="80,17" zPosition="1" transparent="1" font="Regular;16" backgroundColor="#0003424a" halign="left"/>
+		<eLabel text="PAGE UP/DOWN" position="460,230" size="200,20" font="Regular;16" zPosition="1" foregroundColor="#0000fafa" backgroundColor="#0003424a" transparent="1"/>
+		<eLabel text="PREV NEXT" position="565,230" size="150,17" zPosition="1" backgroundColor="#0003424a" transparent="1" font="Regular;16" halign="right"/>
+		<eLabel text="CHANGE BOUQUET" position="725,230" size="150,20" font="Regular;16" zPosition="1" foregroundColor="#0000fafa" backgroundColor="#0003424a" transparent="1"/>
 	</screen>
 	<!-- ####### BOUQUET SELECTOR Seleccion de grupo ver grupos desde GraphicalEPG #######-->
 	<screen name="BouquetSelector" position="fill" flags="wfNoBorder">
@@ -884,7 +884,7 @@ self.autoResize()
 		<panel name="PIG-MHELP"/>
 		<widget name="rc" position="135,115" size="154,500" pixmaps="skin_default/rc.png,skin_default/rcold.png" zPosition="10" alphatest="blend"/>
 		<widget name="long_key" position="309,200" zPosition="2" size="250,25" foregroundColor="#0000fafa" font="Regular;18" backgroundColor="#0003424a" transparent="1"/>
-		<eLabel position="65,97" size="803,183" backgroundColor="#0003424a" zPosition="1"/>
+		<eLabel position="65,97" size="775,183" backgroundColor="#0003424a" zPosition="1"/>
 		<eLabel position="65,275" size="244,345" backgroundColor="#0003424a" zPosition="1"/>
 		<ePixmap pixmap="icons/parche.png" position="45,90" size="70,78" zPosition="2" alphatest="blend"/>
 		<widget name="list" position="309,280" zPosition="1" size="913,342" backgroundColor="#0003424a" enableWrapAround="1" scrollbarMode="showOnDemand"/>
@@ -4995,17 +4995,16 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="Title_not_menu_path"/>
 		<panel name="PIG-MHELP"/>
 		<panel name="WidgetSource_MainHelp"/>
-		<ePixmap position="1204,270" zPosition="2" size="27,400" pixmap="icons/barra348.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="1204,275" zPosition="2" size="27,400" pixmap="icons/barra348.png" alphatest="blend" transparent="1"/>
 		<widget source="Titel" render="Label" position="100,150" zPosition="3" size="725,85" font="Regular;20" valign="center" halign="center" transparent="1" foregroundColor="#004ccbde" backgroundColor="#0003424a"/>
 		<widget source="Titel2" render="Label" position="250,150" zPosition="2" size="900,60" font="Regular;20" valign="center" halign="center" transparent="1" foregroundColor="#006da6ff" backgroundColor="#0003424a"/>
 		<widget source="key_menu" render="Label" position="200,100" zPosition="2" size="85,40" foregroundColor="#0000fafa" backgroundColor="#0003424a" font="Regular;20" valign="center" halign="left" transparent="1"/>
 		<widget source="key_info" render="Label" position="350,100" zPosition="2" size="85,40" foregroundColor="#0000fafa" backgroundColor="#0003424a" font="Regular;20" valign="center" halign="left" transparent="1"/>
 		<widget source="key_ok" render="Label" position="520,100" zPosition="2" size="70,40" foregroundColor="#0000fafa" backgroundColor="#0003424a" font="Regular;20" valign="center" halign="left" transparent="1"/>
-		<eLabel position="115,97" size="755,43" backgroundColor="#0003424a" zPosition="1"/>
-		<eLabel position="65,140" size="805,135" backgroundColor="#0003424a" zPosition="1"/>
+		<eLabel position="115,97" size="725,43" backgroundColor="#0003424a" zPosition="1"/>
+		<eLabel position="65,140" size="775,135" backgroundColor="#0003424a" zPosition="1"/>
 		<ePixmap pixmap="icons/parche.png" position="45,90" size="70,78" zPosition="2" alphatest="blend"/>
-		<widget name="MainList" position="64,270" zPosition="1" size="1158,348" backgroundColor="#0003424a" enableWrapAround="1" scrollbarMode="showOnDemand"/>
-		<eLabel position="65,618" size="1139,3" backgroundColor="#0003424a" zPosition="1"/>
+		<widget name="MainList" position="64,275" zPosition="1" size="1158,348" backgroundColor="#0003424a" enableWrapAround="1" scrollbarMode="showOnDemand"/>
 		<ePixmap pixmap="icons/key_menu1.png" position="150,108" size="40,22" zPosition="2" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_info.png" position="300,108" size="40,22" zPosition="2" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_ok.png" position="470,108" size="40,22" zPosition="2" alphatest="blend"/>
