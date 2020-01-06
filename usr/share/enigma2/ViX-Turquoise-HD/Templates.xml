@@ -169,6 +169,10 @@
 	<screen name="PantallaGenericaSinBarraColor2Pantallas">
 		<ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="menu/fr_main_channels.png"/>
 	</screen>
+	<screen name="PantallaGenerica_sY">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<ePixmap position="460,635" zPosition="1" size="140,35" pixmap="Vision-Turquoise-HD/menu/colorbarY.png" alphatest="blend" transparent="1"/>
+	</screen>
 	<!-- ####### BOTONES COLORES +NAME+ SOURCES	 ####### -->
 	<screen name="Colors_sn_RGYB">
 		<widget name="red" position="60,635" zPosition="1" size="140,35" pixmap="menu/colorbarR.png" alphatest="blend"/>

@@ -4829,7 +4829,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- Escaneo automatico caratulas Buscar caratula EMC lista de peliculas -->
 	<screen name="EMCImdbScan" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaConfig"/>
+		<panel name="PantallaGenerica_sY"/>
 		<panel name="ScrollBarTemplate"/>
 		<panel name="Title_not_menu_path"/>
 		<panel name="PIG"/>
