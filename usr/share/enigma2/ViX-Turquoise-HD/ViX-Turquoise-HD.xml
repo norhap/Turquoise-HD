@@ -45,6 +45,10 @@
 	<!--  ####### SETUP #######	 -->
 	<screen name="Setup" position="fill" backgroundColor="#00030303" flags="wfNoBorder">
 		<panel name="SetupPanel"/>
+		<widget text="LOCK" source="Frontend" render="FixedLabel" position="980,430" size="75,25" zPosition="10" font="Regular;23" halign="right" valign="center" foregroundColor="green" backgroundColor="#00030303" transparent="1">
+			<convert type="FrontendInfo">LOCK</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
 	</screen>
 	<!--  Harddisk selection -->
 	<screen name="HarddiskSelection" position="fill" flags="wfNoBorder">
@@ -1962,6 +1966,17 @@ self.autoResize()
 		<panel name="PIG"/>
 		<widget name="config" position="75,150" size="695,400" transparent="1"/>
 		<widget name="introduction" position="845,435" size="380,160" zPosition="10" font="Regular;21" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>
+		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
+	</screen>
+	<!-- ####### Estatus Busqueda ciega ####### -->
+	<screen name="BlindscanState" position="fill" flags="wfNoBorder">
+		<panel name="PantallaGenericaConfig"/>
+		<panel name="ScrollBarTemplate"/>
+		<panel name="Title"/>
+		<panel name="PIG"/>
+		<widget name="config" position="60,150" size="748,400" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="progress" position="845,430" size="380,95" zPosition="10" font="Regular;21" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>
+		<widget name="post_action" position="845,520" size="380,85" zPosition="10" font="Regular;21" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 	</screen>
 	<!-- ####### Servicio escaneo canales barra progreso ####### -->
