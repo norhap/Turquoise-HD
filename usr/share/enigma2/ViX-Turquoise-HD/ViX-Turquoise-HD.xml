@@ -1964,7 +1964,7 @@ self.autoResize()
 		<panel name="ScrollBarTemplate"/>
 		<panel name="Title"/>
 		<panel name="PIG"/>
-		<widget name="config" position="75,150" size="695,400" transparent="1"/>
+		<widget name="config" position="90,121" size="695,475" transparent="1"/>
 		<widget name="introduction" position="845,435" size="380,160" zPosition="10" font="Regular;21" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 	</screen>
@@ -2134,7 +2134,7 @@ self.autoResize()
 			<convert type="FrontendInfo">LOCK</convert>
 			<convert type="ConditionalShowHide">Invert</convert>
 		</widget>
-		<widget name="config" position="75,110" size="725,480" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="#00030303" transparent="1"/>
+		<widget name="config" position="90,121" size="695,475" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="#00030303" transparent="1"/>
 		<eLabel text="TSID:" position="810,250" size="80,22" zPosition="2" font="Regular;20" transparent="1" halign="right"/>
 		<widget source="tsid" render="Label" position="920,250" size="100,25" font="Regular;22" foregroundColor="#004ccbde" backgroundColor="#00030303" halign="left" transparent="1" zPosition="3"/>
 		<eLabel text="ONID:" position="810,275" size="80,25" zPosition="2" font="Regular;20" transparent="1" halign="right"/>
