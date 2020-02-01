@@ -2108,21 +2108,21 @@ self.autoResize()
 		<widget source="Frontend" render="Progress" position="880,145" size="280,20" zPosition="2" pixmap="icons/bar_snr_finder.png" borderWidth="2" transparent="1" borderColor="#00cccccc">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
-		<widget source="Frontend" render="Label" position="1175,145" size="70,22" zPosition="2" font="Regular;19" transparent="1">
+		<widget source="Frontend" render="Label" position="1165,145" size="70,22" zPosition="2" font="Regular;19" transparent="1">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
 		<eLabel name="agc" text="AGC:" position="820,170" size="60,22" zPosition="2" font="Regular;19" halign="right" transparent="1"/>
 		<widget source="Frontend" render="Progress" position="880,170" size="280,20" zPosition="2" pixmap="icons/bar_snr_finder.png" borderWidth="2" transparent="1" borderColor="#00cccccc">
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
-		<widget source="Frontend" render="Label" position="1175,170" size="70,22" zPosition="2" font="Regular;19" transparent="1">
+		<widget source="Frontend" render="Label" position="1165,170" size="70,22" zPosition="2" font="Regular;19" transparent="1">
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
 		<eLabel name="ber" text="BER:" position="820,195" size="60,22" zPosition="2" font="Regular;19" halign="right" transparent="1"/>
 		<widget source="Frontend" render="Progress" position="880,195" size="280,20" zPosition="2" pixmap="icons/bar_ber_finder.png" borderWidth="2" transparent="1" borderColor="#00cccccc">
 			<convert type="FrontendInfo">BER</convert>
 		</widget>
-		<widget source="Frontend" render="Label" position="1175,195" size="60,22" zPosition="2" font="Regular;19" transparent="1">
+		<widget source="Frontend" render="Label" position="1165,195" size="60,22" zPosition="2" font="Regular;19" transparent="1">
 			<convert type="FrontendInfo">BER</convert>
 		</widget>
 		<eLabel name="lock" text="Lock:" position="835,225" size="80,25" font="Regular;21" zPosition="2" halign="right" transparent="1"/>
