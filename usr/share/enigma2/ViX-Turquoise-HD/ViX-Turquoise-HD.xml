@@ -5826,7 +5826,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<eLabel text="Exit" position="5,605" size="250,20" font="Regular;21" halign="center" valign="center" backgroundColor="#03424a" transparent="1" zPosition="1"/>
 		<ePixmap position="60,605" zPosition="1" size="140,35" pixmap="menu/colorbarR.png" alphatest="blend"/>
 	</screen>
-	<screen name="MultiBoot" position="fill" flags="wfNoBorder">
+	<screen name="MultiBootSelector" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
 		<panel name="Title_not_menu_path"/>
