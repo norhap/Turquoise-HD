@@ -5834,6 +5834,13 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
 		<panel name="Title_not_menu_path"/>
 		<panel name="PIG"/>
+		<widget name="config" position="80,225" size="715,300" backgroundColor="#00030303" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="#00030303"/>
+	</screen>
+	<screen name="MultiBoot" position="fill" flags="wfNoBorder">
+		<panel name="PantallaGenericaConfig"/>
+		<panel name="ScrollBarTemplate"/>
+		<panel name="Title_not_menu_path"/>
+		<panel name="PIG"/>
 		<widget source="labe15" render="Label" position="240,125" size="380,100" halign="center" font="Regular; 22" backgroundColor="#000c0d0e" transparent="1"/>
 		<widget name="config" position="80,225" size="715,300" backgroundColor="#00030303" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="#00030303"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
