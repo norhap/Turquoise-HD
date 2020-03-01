@@ -651,7 +651,7 @@
 		<widget name="number" position="0,193" size="100,25" foregroundColor="#004ccbde" transparent="1"/>
 		<widget name="lab1" position="0,70" size="1280,615" font="Regular;25" halign="center" valign="center" zPosition="20" backgroundColor="#00030303" transparent="0"/>
 		<widget source="session.VideoPicture" render="Pig" position="848,98" size="360,170" zPosition="0" backgroundColor="#df0b1300"/>
-		<widget name="timeline_text" position="65,255" size="1297,35" backgroundColor="#00030303" foregroundColor="#004ccbde" transparent="1" zPosition="2"/>
+		<widget name="timeline_text" position="65,260" size="1297,30" backgroundColor="#00030303" foregroundColor="#004ccbde" transparent="1" zPosition="2"/>
 		<widget name="bouquetlist" position="65,280" size="1142,343" foregroundColorSelected="#0000fafa" scrollbarMode="showNever" zPosition="2" transparent="0"/>
 		<widget name="list" position="65,285" size="1142,340" backgroundColor="#00030303" RecordForegroundColorSelected="yellow" scrollbarMode="showNever" zPosition="1" transparent="1"/>
 		<widget name="timeline_now" position="0,285" zPosition="3" size="25,593" pixmap="epg/timeline-now-pig.png" alphatest="blend"/>
