@@ -570,25 +570,25 @@
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
-		<widget source="Event" render="Label" position="90,110" size="350,20" font="Regular;19" foregroundColor="#0000fafa" backgroundColor="#00030303" transparent="1">
+		<widget source="Event" render="Label" position="70,135" size="350,20" font="Regular;19" foregroundColor="#0000fafa" backgroundColor="#00030303" transparent="1">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Format:%a %d/%m/%y</convert>
 		</widget>
 	<!--panel name="FullscreenTitlePanel" /-->
-		<eLabel text="8" position="300,55" size="10,17" backgroundColor="#00030303" zPosition="1" transparent="1" font="Regular;18" halign="left"/>
-		<widget name="page" position="330,55" size="200,25" font="Regular;16" foregroundColor="#0000fafa" backgroundColor="#00030303" transparent="1"/>
-		<eLabel text="9" position="530,55" size="10,17" backgroundColor="#00030303" zPosition="1" transparent="1" font="Regular;18" halign="left"/>
-		<widget name="primetime" position="560,55" size="250,25" font="Regular;16" foregroundColor="#0000fafa" backgroundColor="#00030303" transparent="1"/>
-		<eLabel text="PREV NEXT" position="300,75" size="80,17" backgroundColor="#00030303" zPosition="1" transparent="1" font="Regular;15" halign="left"/>
-		<widget name="change_bouquet" position="380,75" size="200,25" font="Regular;16" foregroundColor="#0000fafa" backgroundColor="#00030303" transparent="1"/>
-		<eLabel text="C H" position="530,75" size="25,17" backgroundColor="#00030303" zPosition="1" transparent="1" font="Regular;15" halign="left"/>
-		<widget name="jump" position="560,75" size="200,25" font="Regular;16" foregroundColor="#0000fafa" backgroundColor="#00030303" transparent="1"/>
+		<eLabel text="8" position="650,105" size="10,17" backgroundColor="#00030303" zPosition="1" transparent="1" font="Regular;18" halign="left"/>
+		<widget name="page" position="680,105" size="200,25" font="Regular;16" foregroundColor="#0000fafa" backgroundColor="#00030303" transparent="1"/>
+		<eLabel text="9" position="880,105" size="10,17" backgroundColor="#00030303" zPosition="1" transparent="1" font="Regular;18" halign="left"/>
+		<widget name="primetime" position="910,105" size="250,25" font="Regular;16" foregroundColor="#0000fafa" backgroundColor="#00030303" transparent="1"/>
+		<eLabel text="PREV NEXT" position="650,125" size="80,17" backgroundColor="#00030303" zPosition="1" transparent="1" font="Regular;15" halign="left"/>
+		<widget name="change_bouquet" position="730,125" size="200,25" font="Regular;16" foregroundColor="#0000fafa" backgroundColor="#00030303" transparent="1"/>
+		<eLabel text="C H" position="880,125" size="25,17" backgroundColor="#00030303" zPosition="1" transparent="1" font="Regular;15" halign="left"/>
+		<widget name="jump" position="910,125" size="200,25" font="Regular;16" foregroundColor="#0000fafa" backgroundColor="#00030303" transparent="1"/>
 		<widget name="number" position="0,193" size="100,25" foregroundColor="#004ccbde" transparent="1"/>
 		<widget name="lab1" position="0,70" size="1280,615" font="Regular;25" halign="center" valign="center" zPosition="20" backgroundColor="#00030303" transparent="0"/>
-		<widget name="timeline_text" position="90,130" size="1280,35" backgroundColor="#00030303" foregroundColor="#004ccbde" transparent="1" zPosition="0"/>
-		<widget name="bouquetlist" position="90,160" size="1100,440" foregroundColorSelected="#0000fafa" scrollbarMode="showNever" zPosition="2" transparent="0"/>
-		<widget name="list" position="90,160" size="1100,440" backgroundColor="#00030303" RecordForegroundColorSelected="yellow" scrollbarMode="showNever" zPosition="1" transparent="1"/>
-		<widget name="timeline_now" position="0,157" zPosition="3" size="25,593" pixmap="epg/timeline-now.png" alphatest="blend"/>
+		<widget name="timeline_text" position="70,155" size="1300,30" backgroundColor="#00030303" foregroundColor="#004ccbde" transparent="1" zPosition="0"/>
+		<widget name="bouquetlist" position="70,180" size="1140,440" foregroundColorSelected="#0000fafa" scrollbarMode="showNever" zPosition="2" transparent="0"/>
+		<widget name="list" position="70,180" size="1140,440" backgroundColor="#00030303" RecordForegroundColorSelected="yellow" scrollbarMode="showNever" zPosition="1" transparent="1"/>
+		<widget name="timeline_now" position="0,180" zPosition="3" size="25,593" pixmap="epg/timeline-now.png" alphatest="blend"/>
 		<widget name="timeline0" pixmap="epg/timeline.png" position="0,388" size="0,0" zPosition="-1"/>
 		<widget name="timeline1" pixmap="epg/timeline.png" position="0,388" size="0,0" zPosition="-1"/>
 		<widget name="timeline2" pixmap="epg/timeline.png" position="0,388" size="0,0" zPosition="-1"/>
