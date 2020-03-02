@@ -2221,7 +2221,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="blue" position="660,634" zPosition="1" size="140,35" pixmap="menu/colorbarB.png" alphatest="blend"/>
 	</screen>
 	<!--####### NumberZap ####### -->
-	<screen name="NumberZap" position="center,center" size="425,50" title="Channel" flags="wfNoBorder" backgroundColor="#0003424a">
+	<screen name="NumberZap" position="center,10" size="425,50" title="Channel" flags="wfNoBorder" backgroundColor="#0003424a">
 		<eLabel position="0,0" size="425,1" backgroundColor="#0000fafa" zPosition="1"/>
 		<eLabel position="0,0" size="1,50" backgroundColor="#0000fafa" zPosition="1"/>
 		<eLabel position="0,49" size="425,1" backgroundColor="#0000fafa" zPosition="1"/>
