@@ -575,9 +575,9 @@
 			<convert type="ClockToText">Format:%a %d/%m/%y</convert>
 		</widget>
 	<!--panel name="FullscreenTitlePanel" /-->
-		<eLabel text="8" position="650,105" size="10,17" backgroundColor="#00030303" zPosition="1" transparent="1" font="Regular;18" halign="left"/>
+		<eLabel text="8" position="650,104" size="10,17" backgroundColor="#00030303" zPosition="1" transparent="1" font="Regular;18" halign="left"/>
 		<widget name="page" position="675,105" size="200,25" font="Regular;16" foregroundColor="#0000fafa" backgroundColor="#00030303" transparent="1"/>
-		<eLabel text="9" position="650,125" size="10,17" backgroundColor="#00030303" zPosition="1" transparent="1" font="Regular;18" halign="left"/>
+		<eLabel text="9" position="650,124" size="10,17" backgroundColor="#00030303" zPosition="1" transparent="1" font="Regular;18" halign="left"/>
 		<widget name="primetime" position="675,125" size="250,25" font="Regular;16" foregroundColor="#0000fafa" backgroundColor="#00030303" transparent="1"/>
 		<eLabel text="PREV NEXT" position="880,105" size="80,17" backgroundColor="#00030303" zPosition="1" transparent="1" font="Regular;15" halign="left"/>
 		<widget name="change_bouquet" position="960,105" size="200,25" font="Regular;16" foregroundColor="#0000fafa" backgroundColor="#00030303" transparent="1"/>
@@ -640,9 +640,9 @@
 			 <convert type="EventName">ExtendedDescription</convert>
 		</widget>
 	<!--panel name="FullscreenTitlePanel" /-->
-		<eLabel text="8" position="300,55" size="10,17" backgroundColor="#00030303" zPosition="1" transparent="1" font="Regular;18" halign="left"/>
+		<eLabel text="8" position="300,54" size="10,17" backgroundColor="#00030303" zPosition="1" transparent="1" font="Regular;18" halign="left"/>
 		<widget name="page" position="325,55" size="200,25" font="Regular;16" foregroundColor="#0000fafa" backgroundColor="#00030303" transparent="1"/>
-		<eLabel text="9" position="300,75" size="10,17" backgroundColor="#00030303" zPosition="1" transparent="1" font="Regular;18" halign="left"/>
+		<eLabel text="9" position="300,74" size="10,17" backgroundColor="#00030303" zPosition="1" transparent="1" font="Regular;18" halign="left"/>
 		<widget name="primetime" position="325,75" size="250,25" font="Regular;16" foregroundColor="#0000fafa" backgroundColor="#00030303" transparent="1"/>
 		<eLabel text="PREV NEXT" position="530,55" size="80,17" backgroundColor="#00030303" zPosition="1" transparent="1" font="Regular;15" halign="left"/>
 		<widget name="change_bouquet" position="610,55" size="200,25" font="Regular;16" foregroundColor="#0000fafa" backgroundColor="#00030303" transparent="1"/>
