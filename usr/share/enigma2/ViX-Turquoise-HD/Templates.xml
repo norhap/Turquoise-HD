@@ -363,7 +363,7 @@
 			<convert type="BTVCpuUsage">$0</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="885,440" size="325,50" halign="left" valign="center" font="Regular;15" transparent="1" backgroundColor="background" zPosition="6">
-			<convert type="BTVCpuUsage">CPU En Uso:$0 (Core #1: $1 Core #2: $2 Core #3: $3 Core #4: $4)</convert>
+			<convert type="BTVCpuUsage">CPU:$0 (Core #1: $1 Core #2: $2 Core #3: $3 Core #4: $4)</convert>
 		</widget>
 		<ePixmap position="835,475" zPosition="2" size="40,40" pixmap="icons/flash.png" alphatest="blend"/>
 		<widget source="session.Event_Now" render="Progress" position="885,485" size="340,8" foregroundColor="#004ccbde" transparent="1" borderWidth="1" zPosition="6">
