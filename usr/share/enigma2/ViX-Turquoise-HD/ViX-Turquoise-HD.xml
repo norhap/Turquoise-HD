@@ -469,7 +469,7 @@
 		<widget name="summary_description" position="10,62" size="0,0" font="Regular;19" valign="center" halign="center" zPosition="3" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1"/>
 		<eLabel position="5,38" size="66,25" backgroundColor="#14101010" zPosition="0"/>
 		<widget name="datetime" position="70,45" size="251,26" font="xRegular;18" foregroundColor="#006da6ff" backgroundColor="#14101010" transparent="0" noWrap="1" valign="top" halign="left"/>
-		<widget name="duration" position="235,45" size="151,26" font="xRegular;18" foregroundColor="#006da6ff" backgroundColor="#14101010" transparent="0" noWrap="1" valign="top" halign="left"/>
+		<widget name="duration" position="275,45" size="151,26" font="xRegular;18" foregroundColor="yellow" backgroundColor="#14101010" transparent="0" noWrap="1" valign="top" halign="left"/>
 	<!--widget name="FullDescription" render="Label" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="10,50" size="1260,140" font="Regular;23" foregroundColor="#00ffffff" backgroundColor="#00030303" transparent="1"/-->
 		<widget source="Event" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="5,62" size="356,180" zPosition="2" font="Regular;19" valign="center" halign="center" foregroundColor="#00a1d1ff" backgroundColor="#14101010" transparent="0">
 			<convert type="EventName">ExtendedDescription</convert>
@@ -576,13 +576,13 @@
 		</widget>
 	<!--panel name="FullscreenTitlePanel" /-->
 		<eLabel text="8" position="650,105" size="10,17" backgroundColor="#00030303" zPosition="1" transparent="1" font="Regular;18" halign="left"/>
-		<widget name="page" position="680,105" size="200,25" font="Regular;16" foregroundColor="#0000fafa" backgroundColor="#00030303" transparent="1"/>
-		<eLabel text="9" position="880,105" size="10,17" backgroundColor="#00030303" zPosition="1" transparent="1" font="Regular;18" halign="left"/>
-		<widget name="primetime" position="910,105" size="250,25" font="Regular;16" foregroundColor="#0000fafa" backgroundColor="#00030303" transparent="1"/>
-		<eLabel text="PREV NEXT" position="650,125" size="80,17" backgroundColor="#00030303" zPosition="1" transparent="1" font="Regular;15" halign="left"/>
-		<widget name="change_bouquet" position="730,125" size="200,25" font="Regular;16" foregroundColor="#0000fafa" backgroundColor="#00030303" transparent="1"/>
+		<widget name="page" position="675,105" size="200,25" font="Regular;16" foregroundColor="#0000fafa" backgroundColor="#00030303" transparent="1"/>
+		<eLabel text="9" position="650,125" size="10,17" backgroundColor="#00030303" zPosition="1" transparent="1" font="Regular;18" halign="left"/>
+		<widget name="primetime" position="675,125" size="250,25" font="Regular;16" foregroundColor="#0000fafa" backgroundColor="#00030303" transparent="1"/>
+		<eLabel text="PREV NEXT" position="880,105" size="80,17" backgroundColor="#00030303" zPosition="1" transparent="1" font="Regular;15" halign="left"/>
+		<widget name="change_bouquet" position="960,105" size="200,25" font="Regular;16" foregroundColor="#0000fafa" backgroundColor="#00030303" transparent="1"/>
 		<eLabel text="C H" position="880,125" size="25,17" backgroundColor="#00030303" zPosition="1" transparent="1" font="Regular;15" halign="left"/>
-		<widget name="jump" position="910,125" size="200,25" font="Regular;16" foregroundColor="#0000fafa" backgroundColor="#00030303" transparent="1"/>
+		<widget name="jump" position="960,125" size="200,25" font="Regular;16" foregroundColor="#0000fafa" backgroundColor="#00030303" transparent="1"/>
 		<widget name="number" position="0,193" size="100,25" foregroundColor="#004ccbde" transparent="1"/>
 		<widget name="lab1" position="0,70" size="1280,615" font="Regular;25" halign="center" valign="center" zPosition="20" backgroundColor="#00030303" transparent="0"/>
 		<widget name="timeline_text" position="70,155" size="1300,30" backgroundColor="#00030303" foregroundColor="#004ccbde" transparent="1" zPosition="0"/>
@@ -641,13 +641,13 @@
 		</widget>
 	<!--panel name="FullscreenTitlePanel" /-->
 		<eLabel text="8" position="300,55" size="10,17" backgroundColor="#00030303" zPosition="1" transparent="1" font="Regular;18" halign="left"/>
-		<widget name="page" position="330,55" size="200,25" font="Regular;16" foregroundColor="#0000fafa" backgroundColor="#00030303" transparent="1"/>
-		<eLabel text="9" position="530,55" size="10,17" backgroundColor="#00030303" zPosition="1" transparent="1" font="Regular;18" halign="left"/>
-		<widget name="primetime" position="560,55" size="250,25" font="Regular;16" foregroundColor="#0000fafa" backgroundColor="#00030303" transparent="1"/>
-		<eLabel text="PREV NEXT" position="300,75" size="80,17" backgroundColor="#00030303" zPosition="1" transparent="1" font="Regular;15" halign="left"/>
-		<widget name="change_bouquet" position="380,75" size="200,25" font="Regular;16" foregroundColor="#0000fafa" backgroundColor="#00030303" transparent="1"/>
+		<widget name="page" position="325,55" size="200,25" font="Regular;16" foregroundColor="#0000fafa" backgroundColor="#00030303" transparent="1"/>
+		<eLabel text="9" position="300,75" size="10,17" backgroundColor="#00030303" zPosition="1" transparent="1" font="Regular;18" halign="left"/>
+		<widget name="primetime" position="325,75" size="250,25" font="Regular;16" foregroundColor="#0000fafa" backgroundColor="#00030303" transparent="1"/>
+		<eLabel text="PREV NEXT" position="530,55" size="80,17" backgroundColor="#00030303" zPosition="1" transparent="1" font="Regular;15" halign="left"/>
+		<widget name="change_bouquet" position="610,55" size="200,25" font="Regular;16" foregroundColor="#0000fafa" backgroundColor="#00030303" transparent="1"/>
 		<eLabel text="C H" position="530,75" size="25,17" backgroundColor="#00030303" zPosition="1" transparent="1" font="Regular;15" halign="left"/>
-		<widget name="jump" position="560,75" size="200,25" font="Regular;16" foregroundColor="#0000fafa" backgroundColor="#00030303" transparent="1"/>
+		<widget name="jump" position="610,75" size="200,25" font="Regular;16" foregroundColor="#0000fafa" backgroundColor="#00030303" transparent="1"/>
 		<widget name="number" position="0,193" size="100,25" foregroundColor="#004ccbde" transparent="1"/>
 		<widget name="lab1" position="0,70" size="1280,615" font="Regular;25" halign="center" valign="center" zPosition="20" backgroundColor="#00030303" transparent="0"/>
 		<widget source="session.VideoPicture" render="Pig" position="848,98" size="360,170" zPosition="0" backgroundColor="#df0b1300"/>
