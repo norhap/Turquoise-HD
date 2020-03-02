@@ -34,11 +34,11 @@ class BTVDevicesInfo(Poll, Converter):
             self.type = self.LOADAVG
         elif 'MemoriaTotal' in type:
             self.type = self.MEMTOTAL
-        elif 'MemoriaLibre' in type:
+        elif 'MemoriaFree' in type:
             self.type = self.MEMFREE
         elif 'SwapTotal' in type:
             self.type = self.SWAPTOTAL
-        elif 'SwapLibre' in type:
+        elif 'SwapFree' in type:
             self.type = self.SWAPFREE
         elif 'UsbInfo' in type:
             self.type = self.USBINFO
@@ -83,13 +83,13 @@ class BTVDevicesInfo(Poll, Converter):
             elif self.shortFormat:
                 text = '%s: %s, en uso: %s%%' % (entry[1], self.getSizeStr(list[0]), list[3])
             elif self.fullFormat:
-                text = '%s: %s Libre:%s Usada:%s (%s%%)' % (entry[1],
+                text = '%s: %s Free:%s Used:%s (%s%%)' % (entry[1],
                  self.getSizeStr(list[0]),
                  self.getSizeStr(list[2]),
                  self.getSizeStr(list[1]),
                  list[3])
             else:
-                text = '%s: %s Usada:%s Libre:%s' % (entry[1],
+                text = '%s: %s Used:%s Free:%s' % (entry[1],
                  self.getSizeStr(list[0]),
                  self.getSizeStr(list[1]),
                  self.getSizeStr(list[2]))

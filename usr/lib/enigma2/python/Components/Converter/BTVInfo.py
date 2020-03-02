@@ -83,7 +83,7 @@ class BTVInfo(Poll, Converter, object):
             with open('/proc/uptime', 'r') as file:
                 uptime_info = file.read().split()
         except:
-            return 'Funcionamiento: N/A'
+            return 'Start: N/A'
             uptime_info = None
 
         if uptime_info is not None:
@@ -97,12 +97,12 @@ class BTVInfo(Poll, Converter, object):
             seconds = int(total_seconds % MINUTE)
             uptime = ''
             if days > 0:
-                uptime += str(days) + ' ' + (days == 1 and 'dia' or 'dias') + ', '
+                uptime += str(days) + ' ' + (days == 1 and 'd' or 'd') + ', '
             if len(uptime) > 0 or hours > 0:
-                uptime += str(hours) + ' ' + (hours == 1 and 'hora' or 'horas') + ', '
+                uptime += str(hours) + ' ' + (hours == 1 and 'h' or 'h') + ', '
             if len(uptime) > 0 or minutes > 0:
-                uptime += str(minutes) + ' ' + (minutes == 1 and 'minuto' or 'minutos')
-            return 'Funcionamiento Receptor: %s' % uptime
+                uptime += str(minutes) + ' ' + (minutes == 1 and 'm' or 'm')
+            return 'Start: %s' % uptime
 
     def getTempSensor(self):
         if 'dm7020hd' not in HardwareInfo().get_device_name():
