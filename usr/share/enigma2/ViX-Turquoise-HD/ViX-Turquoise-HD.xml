@@ -2551,10 +2551,20 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="PIG"/>
 		<panel name="Title"/>
 		<panel name="ScrollBarTemplate"/>
-		<widget name="SkinList" position="87,147" size="720,380" scrollbarMode="showOnDemand" selectionPixmap="icons/ls680x28.png" transparent="1"/>
-		<widget name="Preview" position="838,388" size="385,240" alphatest="on" zPosition="5"/>
-		<ePixmap pixmap="icons/key_info.png" position="8,640" size="40,22" alphatest="blend"/>
-		<widget source="introduction" render="Label" position="169,500" size="600,28" zPosition="10" font="Regular;25" halign="left" valign="center" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1"/>
+		<widget name="preview" position="838,388" size="385,240" alphatest="blend"/>
+		<widget source="skins" render="Listbox" position="87,147" size="677,388" enableWrapAround="1" scrollbarMode="showOnDemand">
+			<convert type="TemplatedMultiContent">
+				{
+				"template": [
+					MultiContentEntryText(pos = (22, 0), size = (600, 25), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1),
+					MultiContentEntryText(pos = (22, 30), size = (600, 25), font = 0, flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 2)
+				],
+				"fonts": [gFont("Regular",22)],
+				"itemHeight": 30
+				}
+			</convert>
+		</widget>
+		<widget source="description" render="Label" position="169,500" size="600,28" font="Regular;20" valign="center"/>
 	</screen>
 	<!-- ####### AÑADIR DE LISTA DE CANALES UN CANAL PARA AUTOTEMPORIZADOR (eventos en amarillo) ####### -->
 	<screen name="SimpleChannelSelection" position="fill" flags="wfNoBorder">
