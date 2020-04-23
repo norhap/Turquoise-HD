@@ -5483,7 +5483,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
 		<panel name="Title_not_menu_path"/>
 		<panel name="PIG"/>
-		<panel name="keyRojoCCcam"/>
 		<widget name="text" position="80,145" size="727,427" font="Regular;19" backgroundColor="#00030303" transparent="1"/>
 	</screen>
 	<screen name="CCcamInfoEcmInfoSelection" position="fill" flags="wfNoBorder">
@@ -5491,7 +5490,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
 		<panel name="Title_not_menu_path"/>
 		<panel name="PIG"/>
-		<panel name="keyRojoCCcam"/>
 		<widget name="list" position="80,145" size="727,427" font="Regular;19" backgroundColor="#00030303" transparent="1"/>
 	</screen>
 	<screen name="CCcamInfoMenuConfig" position="fill" flags="wfNoBorder">
@@ -5499,7 +5497,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
 		<panel name="Title_not_menu_path"/>
 		<panel name="PIG"/>
-		<panel name="keyRojoCCcam"/>
 		<widget name="list" position="80,145" size="727,423" scrollbarMode="showOnDemand" backgroundColor="#00030303" font="Regular;19" transparent="1"/>
 	</screen>
 	<screen name="CCcamInfoSubMenu" position="fill" flags="wfNoBorder">
@@ -5516,7 +5513,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
 		<panel name="Title_not_menu_path"/>
 		<panel name="PIG"/>
-		<panel name="keyRojoCCcam"/>
 		<widget name="list" position="80,145" size="727,425" scrollbarMode="showOnDemand" transparent="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 		<widget name="info" position="845,425" size="380,160" font="Regular;19" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>
@@ -5526,13 +5522,12 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
 		<panel name="Title_not_menu_path"/>
 		<panel name="PIG"/>
-		<panel name="keyRojoCCcam"/>
-		<widget name="uphops" position="80,145" size="695,45" font="Regular;19" backgroundColor="#00030303" transparent="1"/>
-		<widget name="providers" position="80,200" size="695,45" font="Regular;19" backgroundColor="#00030303" transparent="1"/>
-		<widget name="list" position="80,255" size="700,45" backgroundColor="#00030303" transparent="1"/>
-		<widget name="reshare" position="80,310" size="695,45" backgroundColor="#00030303" font="Regular;19" transparent="1"/>
-		<widget name="cards" position="80,365" size="695,45" backgroundColor="#00030303" font="Regular;19" transparent="1"/>
-		<widget name="title" position="80,420" size="695,45" backgroundColor="#00030303" font="Regular;19" transparent="1"/>
+		<widget name="uphops" position="80,140" size="695,25" font="Regular;19" backgroundColor="#00030303" transparent="1"/>
+		<widget name="providers" position="80,170" size="695,25" font="Regular;19" backgroundColor="#00030303" transparent="1"/>
+		<widget name="cards" position="80,200" size="700,25" font="Regular;19" backgroundColor="#00030303" transparent="1"/>
+		<widget name="reshare" position="80,230" size="695,25" font="Regular;19" backgroundColor="#00030303" transparent="1"/>
+		<widget name="title" position="80,260" size="695,100" backgroundColor="#00030303" font="Regular;19" transparent="1"/>
+		<widget name="list" position="80,285" size="727,275" backgroundColor="#00030303" font="Regular;19" scrollbarMode="showOnDemand" transparent="1"/>
 	</screen>
 	<screen name="CCcamInfoShareInfo" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaConfig"/>
