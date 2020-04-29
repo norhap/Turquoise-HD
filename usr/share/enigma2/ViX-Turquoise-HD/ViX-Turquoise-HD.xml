@@ -170,11 +170,12 @@
 			serviceNumberFont="Regular;23" serviceNameFont="Regular;27" serviceInfoFont="xRegular;18" colorServiceDescription="#004ccbde"
 			picServiceEventProgressbar="icons/pl.png" selectionPixmap="icons/ls715x30.png" transparent="1"/>
 	<!-- current event start, end and progress -->
-		<widget source="ServiceEvent" render="Label" position="840,188" size="67,27" zPosition="2" halign="left" font="Regular;16" noWrap="1" transparent="1" foregroundColor="#0000fafa" backgroundColor="background">
+         <widget source="ServiceEvent" render="poster" position="833,60" size="85,125" zPosition="4"/>
+		<widget source="ServiceEvent" render="Label" position="835,188" size="67,27" zPosition="2" halign="left" font="Regular;16" noWrap="1" transparent="1" foregroundColor="#0000fafa" backgroundColor="background">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="883,188" zPosition="1" size="75,27" font="Regular;16" halign="left" noWrap="1" transparent="1" foregroundColor="#0000fafa" backgroundColor="background">
+		<widget source="ServiceEvent" render="Label" position="878,188" zPosition="1" size="75,27" font="Regular;16" halign="left" noWrap="1" transparent="1" foregroundColor="#0000fafa" backgroundColor="background">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:-  %H:%M</convert>
 		</widget>
@@ -185,7 +186,7 @@
 		<widget source="session.Event_Now" render="Progress" pixmap="icons/tv_b_bar.png" size="340,2" position="860,439" zPosition="5" backgroundColor="grey" transparent="0">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-		<widget source="ServiceEvent" render="RunningText" options="movetype=running,startpoint=0,startdelay=3000,wrap=0,always=0,repeat=2,oneshot=1" position="833,54" size="393,25" zPosition="2" halign="center" font="Regular;20" foregroundColor="#004ccbde" transparent="0" backgroundColor="#00020202">
+		<widget source="ServiceEvent" render="RunningText" options="movetype=running,startpoint=0,startdelay=3000,wrap=0,always=0,repeat=2,oneshot=1" position="920,54" size="305,25" zPosition="2" halign="center" font="Regular;20" foregroundColor="#004ccbde" transparent="1" backgroundColor="#00020202">
 			<convert type="EventName">Name</convert>
 		</widget>
 	<!--widget source="ServiceEvent" render="SingleEpgList" position="840,500" size="387,200" font="Regular;17" halign="left" transparent="1" foregroundColor="#0000baff" backgroundColor="background" zPosition="2" noWrap="1" valign="top"/-->
@@ -358,7 +359,7 @@
 		<convert type="BTVRunning14Events">Event14,onlyStart</convert>
 		</widget>
 	<!-- epg descripcion -->
-		<widget source="ServiceEvent" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="833,78" size="393,110" zPosition="2" font="Regular;19" halign="center" valign="center" foregroundColor="#00a1d1ff" backgroundColor="#00040404" transparent="0">
+		<widget source="ServiceEvent" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="915,75" size="311,115" zPosition="2" font="Regular;21" halign="center" valign="center" foregroundColor="grey" backgroundColor="background" transparent="1">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 	<!-- digital clock -->
