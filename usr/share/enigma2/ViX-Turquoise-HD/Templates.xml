@@ -136,7 +136,7 @@
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<widget name="introduction" conditional="introduction" position="0,0" size="0,0"/>
-		<widget name="footnote" conditional="footnote" position="880,595" size="300,50" zPosition="1" font="Regular;20" foregroundColor="#00bab329" backgroundColor="#00030303" halign="center" transparent="1" valign="top"/>
+		<widget name="footnote" conditional="footnote" position="880,593" size="300,50" zPosition="1" font="Regular;20" foregroundColor="#00bab329" backgroundColor="#00030303" halign="center" transparent="1" valign="top"/>
 	</screen>
 	<!-- GUISkin -->
 	<screen name="autoresize" position="fill" flags="wfNoBorder">
